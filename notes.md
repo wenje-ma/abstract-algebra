@@ -24,19 +24,19 @@
 
 **定义 1.2.1**（子群）
 
-设 $H$ 是群 $G$ 的一个非空子集, 如果 $H$ 对于 $G$ 的运算也构成群, 则称 $H$ 为 $G$ 的子群, 记作 $H<G$.
+设 $H$ 是群 $G$ 的一个非空子集, 如果 $H$ 对于 $G$ 的运算也构成群, 则称 $H$ 为 $G$ 的子群, 记作 $H< G$.
 
 **定理 1.2.2**（子群判别法）
 
-设 $H$ 是群 $G$ 的非空子集, 则 $H<G$ 当且仅当对任意 $a,b\in H$ 有 $ab^{-1}\in H$.
+设 $H$ 是群 $G$ 的非空子集, 则 $H< G$ 当且仅当对任意 $a,b\in H$ 有 $ab^{-1}\in H$.
 
 **定理 1.2.22**（拉格朗日定理）
 
-设 $G$ 是有限群, $H<G$, 则 $|G|=[G:H]\cdot|H|$, 其中 $[G:H]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $|G|$ 的因子.
+设 $G$ 是有限群, $H< G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
 
 **推论 1.2.23**（指数的乘法）
 
-设 $G$ 是有限群, $K<H<G$, 则有 $[G:K]=[G:H]\cdot[H:K]$.
+设 $G$ 是有限群, $K< H< G$, 则有 $\left[G:K\right]=\left[G:H\right]\cdot\left[H:K\right]$.
 
 **基础知识**（对称差）
 
@@ -70,7 +70,7 @@ $$
 
 **定理 1.3.5**（正规子群的等价条件）
 
-设 $G$ 是群, $H<G$, 则下列条件等价: （1）$H\triangleleft G$; （2）对任意 $g\in G$, $gH=Hg$; （3）对任意 $a,b\in G$, $aH\cdot bH=abH$.
+设 $G$ 是群, $H< G$, 则下列条件等价: （1）$H\triangleleft G$; （2）对任意 $g\in G$, $gH=Hg$; （3）对任意 $a,b\in G$, $aH\cdot bH=abH$.
 
 **定理 1.3.6**（商群）
 
@@ -258,11 +258,15 @@ $$
 
 **基础知识**（幺环中可逆元的性质）
 
-设 $R$ 为幺环, $e$ 为幺元. 若 $u,v\in R$ 可逆, 则 $uv$ 可逆, 且 $\left(uv\right)^{-1}=v^{-1}u^{-1}$. 若 $x^{m}=0$, 则有限几何级数给出 $\left(e+x\right)^{-1}=e-x+x^{2}-\cdots+\left(-1\right)^{m-1}x^{m-1}$.
+设 $R$ 为幺环, $e$ 为幺元. 若 $u,v\in R$ 可逆, 则 $uv$ 可逆, 且 $\left(uv\right)^{-1}=v^{-1}u^{-1}$. 若 $x^{m}=0$, 则有限几何级数给出
+
+$$
+\left(e+x\right)^{-1}=e-x+x^{2}-\cdots+\left(-1\right)^{m-1}x^{m-1}.
+$$
 
 **基础知识**（四元数与共轭）
 
-四元数体中元素写成 $\alpha=a+bi+cj+dk$, $a,b,c,d\in\mathbb R$, 其共轭为 $\bar\alpha=a-bi-cj-dk$, 范数 $N\left(\alpha\right)=\alpha\bar\alpha=a^2+b^2+c^2+d^2\in\mathbb R$. 共轭满足 $\overline{\alpha+\beta}=\bar\alpha+\bar\beta$, $\overline{\alpha\beta}=\bar\beta\bar\alpha$, $\overline{\bar\alpha}=\alpha$, 且实数的共轭为其自身.
+四元数体中元素写成 $\alpha=a+bi+cj+dk$, $a,b,c,d\in\mathbb R$, 其共轭为 $\overline\alpha=a-bi-cj-dk$, 范数 $N\left(\alpha\right)=\alpha\overline\alpha=a^2+b^2+c^2+d^2\in\mathbb R$. 共轭满足 $\overline{\alpha+\beta}=\overline\alpha+\overline\beta$, $\overline{\alpha\beta}=\overline\beta\overline\alpha$, $\overline{\overline\alpha}=\alpha$, 且实数的共轭为其自身.
 
 ## 唯一分解整环与欧几里得环
 
@@ -296,7 +300,7 @@ $$
 
 **定义 2.7.9**（欧几里得环）
 
-设 $R$ 为一个整环, 如果存在从 $R^*$ 到非负整数集的一个映射 $\delta$, 使得对任何 $a,b\in R$, $b\ne0$, 存在 $q,r\in R$ 使得 $a=qb+r$, 其中 $r=0$ 或 $\delta\left(r\right)<\delta\left(b\right)$, 则称 $\left(R,\delta\right)$ 为欧几里得环.
+设 $R$ 为一个整环, 如果存在从 $R^*$ 到非负整数集的一个映射 $\delta$, 使得对任何 $a,b\in R$, $b\ne0$, 存在 $q,r\in R$ 使得 $a=qb+r$, 其中 $r=0$ 或 $\delta\left(r\right)< \delta\left(b\right)$, 则称 $\left(R,\delta\right)$ 为欧几里得环.
 
 **基础知识**（唯一分解整环）
 
@@ -304,13 +308,13 @@ $$
 
 **基础知识**（代数整数环的范数）
 
-设 $d>0$ 为无平方因子整数, $\omega=\dfrac{1+\sqrt{-d}}{2}$ 满足 $\omega^2-\omega+\dfrac{1+d}{4}=0$ 当 $d\equiv3\pmod4$. 对 $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, 定义范数 $N\left(\alpha\right)=\alpha\bar\alpha=a^2+ab+b^2\omega\bar\omega$, 它是乘性函数且 $N\left(\alpha\right)=0$ 当且仅当 $\alpha=0$.
+设 $d> 0$ 为无平方因子整数, $\omega=\frac{1+\sqrt{-d}}{2}$ 满足 $\omega^2-\omega+\frac{1+d}{4}=0$ 当 $d\equiv3\pmod4$. 对 $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, 定义范数 $N\left(\alpha\right)=\alpha\overline\alpha=a^2+ab+b^2\omega\overline\omega$, 它是乘性函数且 $N\left(\alpha\right)=0$ 当且仅当 $\alpha=0$.
 
 ## 多项式与幂级数
 
 **基础知识**（多项式带余除法）
 
-设 $R$ 为交换幺环, $f\left(x\right),g\left(x\right)\in R\left[x\right]$, 且 $g\left(x\right)$ 的首项系数为 $R$ 中的单位, 则存在唯一 $q\left(x\right),r\left(x\right)\in R\left[x\right]$ 使 $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, 其中 $r=0$ 或 $\deg r<\deg g$. 特别地, 除式为一次首一多项式 $x-a$ 时余式为常数.
+设 $R$ 为交换幺环, $f\left(x\right),g\left(x\right)\in R\left[x\right]$, 且 $g\left(x\right)$ 的首项系数为 $R$ 中的单位, 则存在唯一 $q\left(x\right),r\left(x\right)\in R\left[x\right]$ 使 $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, 其中 $r=0$ 或 $\deg r< \deg g$. 特别地, 除式为一次首一多项式 $x-a$ 时余式为常数.
 
 **基础知识**（形式幂级数环）
 
@@ -362,7 +366,7 @@ $$
 
 **定理 3.5.2**（有限交换群的分类数）
 
-设自然数 $n$ 有素因数分解 $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, 其中 $p_1,p_2,\cdots,p_s$ 为互不相同的素数, $m_i>0$, 则在同构意义下 $n$ 阶交换群的个数为 $\prod_{i=1}^s p\left(m_i\right)$, 其中 $p\left(m\right)$ 表示自然数 $m$ 的不同分划的个数.
+设自然数 $n$ 有素因数分解 $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, 其中 $p_1,p_2,\cdots,p_s$ 为互不相同的素数, $m_i> 0$, 则在同构意义下 $n$ 阶交换群的个数为 $\prod_{i=1}^s p\left(m_i\right)$, 其中 $p\left(m\right)$ 表示自然数 $m$ 的不同分划的个数.
 
 **定理 3.6.3**（约当标准形）
 
@@ -402,7 +406,7 @@ $$
 
 **定义 4.1.15**（扩张次数）
 
-设 $E$ 为 $F$ 的扩张, $E$ 作为 $F$-线性空间的维数称为 $E$ 对 $F$ 的扩张次数, 记为 $\left[E:F\right]$. 若 $\left[E:F\right]<\infty$, 称 $E$ 为 $F$ 的有限扩张; 否则称 $E$ 为 $F$ 的无限扩张.
+设 $E$ 为 $F$ 的扩张, $E$ 作为 $F$-线性空间的维数称为 $E$ 对 $F$ 的扩张次数, 记为 $\left[E:F\right]$. 若 $\left[E:F\right]< \infty$, 称 $E$ 为 $F$ 的有限扩张; 否则称 $E$ 为 $F$ 的无限扩张.
 
 **定理 4.1.16**（扩张次数的望远镜法则）
 
@@ -418,7 +422,7 @@ $$
 
 **基础知识**（分式域的泛性质）
 
-设 $R$ 为整环, $E$ 为其分式域. 任给 $R$ 的自同构 $\sigma$, 定义映射 $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$, 则 $\bar\sigma$ 良定义且为 $E$ 的自同构.
+设 $R$ 为整环, $E$ 为其分式域. 任给 $R$ 的自同构 $\sigma$, 定义映射 $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$, 则 $\overline\sigma$ 良定义且为 $E$ 的自同构.
 
 **基础知识**（特征 $p$ 下的弗罗贝尼乌斯映射）
 

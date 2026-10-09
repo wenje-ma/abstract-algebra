@@ -10,7 +10,7 @@
 
 > **定理 1.6.9**（交错群的单性）当 $n\ge 5$ 时, $A_{n}$ 是单群.
 
-> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $|G|=[G:H]\cdot|H|$.
+> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
 
 ### 习题一
 
@@ -33,7 +33,7 @@ $$
 记 $\sigma=\left(12\dots n\right)$. 由共轭公式, 对 $k=1,2,\dots,n-1$,
 
 $$
-\begin{aligned}&\quad\;\sigma^{k-1}\left(12\right)\sigma^{-(k-1)}\\&=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)\\&=\left(k,k+1\right).\end{aligned}
+\begin{aligned}&\quad\;\sigma^{k-1}\left(12\right)\sigma^{-\left(k-1\right)}\\&=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)\\&=\left(k,k+1\right).\end{aligned}
 $$
 
 故相邻对换 $\left(12\right),\left(23\right),\dots,\left(n-1,n\right)$ 均属于 $\left\langle\left(12\right),\sigma\right\rangle$. 而相邻对换生成 $S_{n}$, 故 $\left\langle\left(12\right),\sigma\right\rangle=S_{n}$.

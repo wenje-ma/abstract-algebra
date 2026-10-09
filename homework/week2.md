@@ -4,9 +4,9 @@
 
 > **定理 1.2.2**（子群判别法）设 $H$ 是群 $G$ 的非空子集, 则 $H<G$ 当且仅当对任意 $a,b\in H$ 有 $ab^{-1}\in H$.
 
-> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $|G|=[G:H]\cdot|H|$, 其中 $[G:H]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $|G|$ 的因子.
+> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
 
-> **推论 1.2.23**（指数的乘法）设 $G$ 是有限群, $K<H<G$, 则有 $[G:K]=[G:H]\cdot[H:K]$.
+> **推论 1.2.23**（指数的乘法）设 $G$ 是有限群, $K<H<G$, 则有 $\left[G:K\right]=\left[G:H\right]\cdot\left[H:K\right]$.
 
 > **基础知识**（元素的阶）设 $G$ 为群, $a\in G$, 则 $\left\langle a\right\rangle=\left\{a^{n}\mid n\in\mathbb Z\right\}$ 是 $G$ 的子群, 称为由 $a$ 生成的子群. 该子群的阶称为元素 $a$ 的阶.
 

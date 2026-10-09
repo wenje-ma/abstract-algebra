@@ -12,14 +12,14 @@
 
 （习题 2.1-3）设集合 $R=\left\{a,b,c\right\}$, 在 $R$ 上定义加法和乘法. 若加法 $+$ 和乘法 $\cdot$ 的运算表分别为
 $$
-\begin{array}{c|ccc}
+\begin{array}{c\left|ccc}
 + & a & b & c\\ \hline
 a & a & b & c\\
 b & b & c & a\\
 c & c & a & b
 \end{array}
 \quad
-\begin{array}{c|ccc}
+\begin{array}{c\right|ccc}
 \cdot & a & b & c\\ \hline
 a & a & a & a\\
 b & a & a & a\\
@@ -30,7 +30,7 @@ $$
 
 ### 解答 习题一
 
-由加法表可见, $a$ 是加法零元, 且 $(R,+)\cong\mathbb Z_3$ (对应 $a\mapsto0$, $b\mapsto1$, $c\mapsto2$), 故 $(R,+)$ 是交换群, 满足**定义 2.1.1**（环）的条件 (1).
+由加法表可见, $a$ 是加法零元, 且 $\left(R,+\right)\cong\mathbb Z_3$ (对应 $a\mapsto0$, $b\mapsto1$, $c\mapsto2$), 故 $\left(R,+\right)$ 是交换群, 满足**定义 2.1.1**（环）的条件 (1).
 
 下面检验分配律. 取 $x=b$, $y=c$, $z=b$. 由加法表, $b+c=a$. 由乘法表, $a\cdot b=a$, $b\cdot b=a$, $c\cdot b=b$.
 

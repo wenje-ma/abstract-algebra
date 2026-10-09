@@ -6,7 +6,7 @@
 
 > **定理 1.5.8**（循环群的子群存在唯一性）设 $G$ 是 $n$ 阶循环群, $k\mid n$, 则存在 $G$ 的唯一的 $k$ 阶子群.
 
-> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $|G|=[G:H]\cdot|H|$. 特别地, 任何元素的阶也是 $|G|$ 的因子.
+> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$. 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
 
 > **基础知识**（欧拉函数）$\varphi\left(n\right)$ 为与 $n$ 互素且不超过 $n$ 的正整数的个数. 对正整数 $n$, 有 $\sum_{d\mid n}\varphi\left(d\right)=n$. $n$ 阶循环群中恰有 $\varphi\left(n\right)$ 个生成元.
 
