@@ -11,7 +11,7 @@
 **必要性** 设 $x^p-c$ 在 $F$ 中有根 $\alpha$, 即 $\alpha^p=c$, $\alpha\in F$. 由**基础知识**（特征 $p$ 下的弗罗贝尼乌斯映射）,
 
 $$
-\begin{aligned}&\quad\;x^p-c\\&=x^p-\alpha^p\\&=\left(x-\alpha\right)^p.\end{aligned}
+\begin{aligned}x^p-c&=x^p-\alpha^p\\&=\left(x-\alpha\right)^p.\end{aligned}
 $$
 
 因 $p\geqslant2$, 上式给出 $x^p-c$ 在 $F\left[x\right]$ 中的非平凡分解, 故 $x^p-c$ 可约. 因而不可约必有根的反面成立, 即不可约推出 $x^p-c$ 在 $F$ 中无根.

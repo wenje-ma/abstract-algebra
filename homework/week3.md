@@ -25,7 +25,7 @@
 **传递性** 若 $aRb$, $bRc$, 即存在 $g,h\in G$ 使 $b=gag^{-1}$, $c=hbh^{-1}$, 则
 
 $$
-\begin{aligned}&\quad\;c\\&=hbh^{-1}\\&=h\left(gag^{-1}\right)h^{-1}\\&=\left(hg\right)a\left(hg\right)^{-1},\end{aligned}
+\begin{aligned}c&=hbh^{-1}\\&=h\left(gag^{-1}\right)h^{-1}\\&=\left(hg\right)a\left(hg\right)^{-1},\end{aligned}
 $$
 
 故 $aRc$.
@@ -43,7 +43,7 @@ $$
 由**定理 1.3.5**（正规子群的等价条件）, 对任意 $k\in K$ 有 $kH=Hk$. 于是
 
 $$
-\begin{aligned}&\quad\;KH\\&=\bigcup_{k\in K}kH\\&=\bigcup_{k\in K}Hk\\&=HK,\end{aligned}
+\begin{aligned}KH&=\bigcup_{k\in K}kH\\&=\bigcup_{k\in K}Hk\\&=HK,\end{aligned}
 $$
 
 即 $HK=KH$. 由**基础知识**（子群乘积）, $HK<G$.
@@ -53,7 +53,7 @@ $$
 由上述, $HK<G$. 下证正规性. 对任意 $g\in G$, $hk\in HK$, 有
 
 $$
-\begin{aligned}&\quad\;g\left(hk\right)g^{-1}\\&=\left(ghg^{-1}\right)\left(gkg^{-1}\right).\end{aligned}
+\begin{aligned}g\left(hk\right)g^{-1}&=\left(ghg^{-1}\right)\left(gkg^{-1}\right).\end{aligned}
 $$
 
 因 $H\triangleleft G$, 故 $ghg^{-1}\in H$; 因 $K\triangleleft G$, 故 $gkg^{-1}\in K$. 因此 $g\left(hk\right)g^{-1}\in HK$. 由 $g,hk$ 的任意性, $g\left(HK\right)g^{-1}\subseteq HK$. 由**定义 1.3.1**（正规子群）, $HK\triangleleft G$. $\blacksquare$

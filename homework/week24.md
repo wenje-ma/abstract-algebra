@@ -25,7 +25,7 @@
 另一方面, 因 $\left(\sqrt2+\sqrt3\right)\left(\sqrt3-\sqrt2\right)=3-2=1$, 故 $\alpha^{-1}=\sqrt3-\sqrt2$. 于是
 
 $$
-\begin{aligned}&\quad\;\sqrt2\\&=\frac{\alpha-\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right),\end{aligned}
+\begin{aligned}\sqrt2&=\frac{\alpha-\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right),\end{aligned}
 $$
 
 同理 $\sqrt3=\dfrac{\alpha+\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right)$, 故 $\mathbb Q\left(\sqrt2,\sqrt3\right)\subseteq\mathbb Q\left(\alpha\right)$. 因而 $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$.
@@ -35,7 +35,7 @@ $$
 于是 $\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]=2$. 又 $\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]=2$（因 $x^2-3$ 不可约）. 由**定理 4.1.16**（扩张次数的望远镜法则）,
 
 $$
-\begin{aligned}&\quad\;\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\right]\\&=\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]\\&=2\times2\\&=4.\end{aligned}
+\begin{aligned}\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\right]&=\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]\\&=2\times2\\&=4.\end{aligned}
 $$
 
 （1）因 $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$, 故 $\left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\right]=4$.
@@ -65,7 +65,7 @@ $$
 **良定义** 设 $ab^{-1}=cd^{-1}$, $a,b,c,d\in R$, $b,d\ne0$. 则 $ad=bc$. 由 $\sigma$ 为环同态,
 
 $$
-\begin{aligned}&\quad\;\sigma\left(a\right)\sigma\left(d\right)\\&=\sigma\left(ad\right)\\&=\sigma\left(bc\right)\\&=\sigma\left(b\right)\sigma\left(c\right),\end{aligned}
+\begin{aligned}\sigma\left(a\right)\sigma\left(d\right)&=\sigma\left(ad\right)\\&=\sigma\left(bc\right)\\&=\sigma\left(b\right)\sigma\left(c\right),\end{aligned}
 $$
 
 故 $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, 即 $\bar\sigma\left(ab^{-1}\right)=\bar\sigma\left(cd^{-1}\right)$. 定义与代表元选取无关.
@@ -73,13 +73,13 @@ $$
 **环同态** 对 $x=ab^{-1}$, $y=cd^{-1}\in E$, 有
 
 $$
-\begin{aligned}&\quad\;\bar\sigma\left(xy\right)\\&=\bar\sigma\left(ac\left(bd\right)^{-1}\right)\\&=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}\\&=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}\\&=\bar\sigma\left(x\right)\bar\sigma\left(y\right),\end{aligned}
+\begin{aligned}\bar\sigma\left(xy\right)&=\bar\sigma\left(ac\left(bd\right)^{-1}\right)\\&=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}\\&=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}\\&=\bar\sigma\left(x\right)\bar\sigma\left(y\right),\end{aligned}
 $$
 
 且
 
 $$
-\begin{aligned}&\quad\;\bar\sigma\left(x+y\right)\\&=\bar\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)\\&=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}\\&=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}\\&=\bar\sigma\left(x\right)+\bar\sigma\left(y\right).\end{aligned}
+\begin{aligned}\bar\sigma\left(x+y\right)&=\bar\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)\\&=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}\\&=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}\\&=\bar\sigma\left(x\right)+\bar\sigma\left(y\right).\end{aligned}
 $$
 
 又 $\bar\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, 故 $\bar\sigma$ 为环同态.
@@ -87,7 +87,7 @@ $$
 **双射** 因 $\sigma$ 是 $R$ 的自同构, 其逆 $\tau=\sigma^{-1}$ 亦为 $R$ 的自同构. 直接验证可知 $\bar\tau$ 为 $\bar\sigma$ 的逆映射: 对 $x=ab^{-1}\in E$,
 
 $$
-\begin{aligned}&\quad\;\bar\tau\circ\bar\sigma\left(x\right)\\&=\bar\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)\\&=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}\\&=ab^{-1}\\&=x.\end{aligned}
+\begin{aligned}\bar\tau\circ\bar\sigma\left(x\right)&=\bar\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)\\&=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}\\&=ab^{-1}\\&=x.\end{aligned}
 $$
 
 同理 $\bar\sigma\circ\bar\tau=\mathrm{id}$. 故 $\bar\sigma$ 可逆, 为 $E$ 的自同构. $\blacksquare$
@@ -103,7 +103,7 @@ $$
 下证 $\sigma$ 保持序. 设 $x>0$, 则存在 $y\in\mathbb R$, $y\ne0$, 使 $x=y^2$. 于是
 
 $$
-\begin{aligned}&\quad\;\sigma\left(x\right)\\&=\sigma\left(y^2\right)\\&=\sigma\left(y\right)^2>0,\end{aligned}
+\begin{aligned}\sigma\left(x\right)&=\sigma\left(y^2\right)\\&=\sigma\left(y\right)^2>0,\end{aligned}
 $$
 
 其中 $\sigma\left(y\right)\ne0$（因 $\sigma$ 单射且 $y\ne0$）. 故 $\sigma$ 把正数映为正数, 从而当 $a<b$ 即 $b-a>0$ 时 $\sigma\left(b\right)-\sigma\left(a\right)=\sigma\left(b-a\right)>0$, 即 $\sigma\left(a\right)<\sigma\left(b\right)$. 因而 $\sigma$ 是保序映射.

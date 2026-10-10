@@ -24,7 +24,7 @@ V_{\lambda}=\left\{v\in V\mid\sigma v=\lambda\left(\sigma\right)v,\;\forall\sigm
 $$
 因 $G^{\prime}\trianglelefteq G$, 对任意 $\tau\in G$, $\sigma\in G^{\prime}$ 及 $v\in V_{\lambda}$, 由**引理 1.8.3**（换位子性质）$\tau\sigma\tau^{-1}\in G^{\prime}$, 且
 $$
-\begin{aligned}&\quad\;\sigma\left(\tau v\right)\\&=\tau\left(\tau^{-1}\sigma\tau\right)v\\&=\tau\lambda\left(\tau^{-1}\sigma\tau\right)v\\&=\lambda\left(\tau^{-1}\sigma\tau\right)\tau v,\end{aligned}
+\begin{aligned}\sigma\left(\tau v\right)&=\tau\left(\tau^{-1}\sigma\tau\right)v\\&=\tau\lambda\left(\tau^{-1}\sigma\tau\right)v\\&=\lambda\left(\tau^{-1}\sigma\tau\right)\tau v,\end{aligned}
 $$
 故 $\tau v\in V_{\lambda^{\tau}}$, 其中 $\lambda^{\tau}\left(\sigma\right)=\lambda\left(\tau^{-1}\sigma\tau\right)$. 由于 $G/G^{\prime}$ 交换, $G$ 在 $G^{\prime}$ 的特征标上的作用轨道有限, 取其中一个轨道对应的特征子空间之和, 即得一个非零的 $G$-不变子空间 $W$.
 
@@ -36,7 +36,7 @@ $$
 
 事实上, 设 $A\in N$, 即 $A$ 是对角线元全为 $1$ 的复上三角矩阵, 则 $A=I+M$, 其中 $M$ 是严格上三角矩阵, 从而 $M$ 是幂零矩阵, 即存在 $r$ 使 $M^{r}=0$. 若 $A$ 是有限阶元, 即存在正整数 $k$ 使 $A^{k}=I$, 则
 $$
-\begin{aligned}&\quad\;\left(I+M\right)^{k}-I\\&=kM+\binom{k}{2}M^{2}+\cdots+M^{k}\\&=0.\end{aligned}
+\begin{aligned}\left(I+M\right)^{k}-I&=kM+\binom{k}{2}M^{2}+\cdots+M^{k}\\&=0.\end{aligned}
 $$
 设 $s$ 是使 $M^{s}\ne0$ 的最小正整数, 则上式左端最低次项为 $kM^{s}$. 因 $k\ne0$ 在 $\mathbb C$ 中可逆, 故 $M^{s}=0$, 矛盾. 因此 $M=0$, 即 $A=I$.
 

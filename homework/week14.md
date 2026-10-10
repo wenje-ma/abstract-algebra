@@ -15,7 +15,7 @@
 因 $i^2=-1$, 故
 
 $$
-\begin{aligned}&\quad\;u^2\\&=\varphi\left(i\right)^2\\&=\varphi\left(i^2\right)\\&=\varphi\left(-1\right)\\&=-1.\end{aligned}
+\begin{aligned}u^2&=\varphi\left(i\right)^2\\&=\varphi\left(i^2\right)\\&=\varphi\left(-1\right)\\&=-1.\end{aligned}
 $$
 
 即 $\left(a+bi\right)^2=a^2-b^2+2abi=-1$. 比较实部、虚部得 $2ab=0$, $a^2-b^2=-1$. 若 $b=0$, 则 $a^2=-1$, 在 $\mathbb Q$ 中无解; 故 $a=0$, $b^2=1$, $b=\pm1$. 于是 $u=i$ 或 $u=-i$.
@@ -51,19 +51,19 @@ $$
 **保加法**
 
 $$
-\begin{aligned}&\quad\;\varphi\left(\left(a+bi\right)+\left(c+di\right)\right)\\&=\varphi\left(\left(a+c\right)+\left(b+d\right)i\right)\\&=\left(a+c\right)-\left(b+d\right)i\\&=\left(a-bi\right)+\left(c-di\right)\\&=\varphi\left(a+bi\right)+\varphi\left(c+di\right).\end{aligned}
+\begin{aligned}\varphi\left(\left(a+bi\right)+\left(c+di\right)\right)&=\varphi\left(\left(a+c\right)+\left(b+d\right)i\right)\\&=\left(a+c\right)-\left(b+d\right)i\\&=\left(a-bi\right)+\left(c-di\right)\\&=\varphi\left(a+bi\right)+\varphi\left(c+di\right).\end{aligned}
 $$
 
 **保乘法**
 
 $$
-\begin{aligned}&\quad\;\varphi\left(\left(a+bi\right)\left(c+di\right)\right)\\&=\varphi\left(\left(ac-bd\right)+\left(ad+bc\right)i\right)\\&=\left(ac-bd\right)-\left(ad+bc\right)i,\end{aligned}
+\begin{aligned}\varphi\left(\left(a+bi\right)\left(c+di\right)\right)&=\varphi\left(\left(ac-bd\right)+\left(ad+bc\right)i\right)\\&=\left(ac-bd\right)-\left(ad+bc\right)i,\end{aligned}
 $$
 
 而
 
 $$
-\begin{aligned}&\quad\;\varphi\left(a+bi\right)\varphi\left(c+di\right)\\&=\left(a-bi\right)\left(c-di\right)\\&=ac-bd-\left(ad+bc\right)i.\end{aligned}
+\begin{aligned}\varphi\left(a+bi\right)\varphi\left(c+di\right)&=\left(a-bi\right)\left(c-di\right)\\&=ac-bd-\left(ad+bc\right)i.\end{aligned}
 $$
 
 两者相等. 又连续两次作用后回到自身, 即 $\varphi$ 为双射. 由**定义 2.4.1**（环同态与同构）, $\varphi$ 是 $\mathbb C$ 的自同构. $\blacksquare$
@@ -112,7 +112,7 @@ $$
 即 $ac\cdot b'd'=bd\cdot a'c'$, 故 $\left(a,b\right)\left(c,d\right)\sim\left(a',b'\right)\left(c',d'\right)$. 加法同理:
 
 $$
-\begin{aligned}&\quad\;\left(ad+bc\right)b'd'\\&=ab'dd'+cd'bb'\\&=a'bdd'+c'dbb'\\&=bd\left(a'd'+b'c'\right),\end{aligned}
+\begin{aligned}\left(ad+bc\right)b'd'&=ab'dd'+cd'bb'\\&=a'bdd'+c'dbb'\\&=bd\left(a'd'+b'c'\right),\end{aligned}
 $$
 
 故和亦等价. 因而运算在等价类上定义合理.
@@ -122,11 +122,11 @@ $$
 （4）作 $\iota:R\to F$, $\iota\left(a\right)=a/1$. 则
 
 $$
-\begin{aligned}&\quad\;\iota\left(a+b\right)\\&=\frac{a+b}{1}\\&=\frac{a}{1}+\frac{b}{1}\\&=\iota\left(a\right)+\iota\left(b\right),\end{aligned}
+\begin{aligned}\iota\left(a+b\right)&=\frac{a+b}{1}\\&=\frac{a}{1}+\frac{b}{1}\\&=\iota\left(a\right)+\iota\left(b\right),\end{aligned}
 $$
 
 $$
-\begin{aligned}&\quad\;\iota\left(ab\right)\\&=\frac{ab}{1}\\&=\frac{a}{1}\cdot\frac{b}{1}\\&=\iota\left(a\right)\iota\left(b\right).\end{aligned}
+\begin{aligned}\iota\left(ab\right)&=\frac{ab}{1}\\&=\frac{a}{1}\cdot\frac{b}{1}\\&=\iota\left(a\right)\iota\left(b\right).\end{aligned}
 $$
 
 且 $a/1=0/1$ 当且仅当 $a=0$, 故 $\iota$ 为单同态. 由此可把 $R$ 等同于 $\iota\left(R\right)\subseteq F$. 对任意 $a/b\in F$, 有 $a/b=\left(a/1\right)\left(b/1\right)^{-1}$, 即 $F$ 中每一元均可写为 $R$ 中两元之商, 故 $F$ 是 $R$ 的分式域.

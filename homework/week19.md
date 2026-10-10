@@ -25,25 +25,25 @@ $$
 它是良定义的: 若 $m+M_1=m'+M_1$, 则 $m-m'\in M_1\subset M_2$, 故 $m+M_2=m'+M_2$. 它显然是模满同态. 求其核:
 
 $$
-\begin{aligned}&\quad\;\ker\pi\\&=\left\{m+M_1\mid m\in M_2\right\}\\&=M_2/M_1.\end{aligned}
+\begin{aligned}\ker\pi&=\left\{m+M_1\mid m\in M_2\right\}\\&=M_2/M_1.\end{aligned}
 $$
 
 由**定理 3.1.17**（模的同态基本定理）,
 
 $$
-\begin{aligned}&\quad\;\left(M/M_1\right)/\left(M_2/M_1\right)\\&=M/\ker\pi\\&\cong\operatorname{Im}\pi\\&=M/M_2.\end{aligned}
+\begin{aligned}\left(M/M_1\right)/\left(M_2/M_1\right)&=M/\ker\pi\\&\cong\operatorname{Im}\pi\\&=M/M_2.\end{aligned}
 $$
 
 （2）考虑商映射 $\rho:M_1+M_2\to\left(M_1+M_2\right)/M_2$ 在子模 $M_1$ 上的限制 $\rho|_{M_1}$. 它是满同态: 任一元素 $m_1+m_2+M_2=m_1+M_2$ 都是 $m_1\in M_1$ 的像. 其核为
 
 $$
-\begin{aligned}&\quad\;\ker\rho|_{M_1}\\&=\left\{m_1\in M_1\mid m_1\in M_2\right\}\\&=M_1\cap M_2.\end{aligned}
+\begin{aligned}\ker\rho|_{M_1}&=\left\{m_1\in M_1\mid m_1\in M_2\right\}\\&=M_1\cap M_2.\end{aligned}
 $$
 
 因 $M=M_1\oplus M_2$ 为内直和, 由**定理 3.1.10**（直和判据）, $M_1\cap M_2=\left\{0\right\}$. 再由**定理 3.1.17**,
 
 $$
-\begin{aligned}&\quad\;M_1/\left(M_1\cap M_2\right)\\&=M_1\\&\cong\left(M_1+M_2\right)/M_2.\end{aligned}
+\begin{aligned}M_1/\left(M_1\cap M_2\right)&=M_1\\&\cong\left(M_1+M_2\right)/M_2.\end{aligned}
 $$
 
 同理, $M_2\cong\left(M_1+M_2\right)/M_1$. $\blacksquare$
@@ -61,13 +61,13 @@ $$
 再求核. 由**命题 3.1.16**（同态的核与像）,
 
 $$
-\begin{aligned}&\quad\;\ker\phi\\&=\left\{m_1\in M_1\mid m_1\in M_2\right\}\\&=M_1\cap M_2.\end{aligned}
+\begin{aligned}\ker\phi&=\left\{m_1\in M_1\mid m_1\in M_2\right\}\\&=M_1\cap M_2.\end{aligned}
 $$
 
 由**定理 3.1.17**（模的同态基本定理）,
 
 $$
-\begin{aligned}&\quad\;M_1/\ker\phi\\&=M_1/\left(M_1\cap M_2\right)\\&\cong\left(M_1+M_2\right)/M_2.\end{aligned}
+\begin{aligned}M_1/\ker\phi&=M_1/\left(M_1\cap M_2\right)\\&\cong\left(M_1+M_2\right)/M_2.\end{aligned}
 $$
 
 此即第二同构定理. $\blacksquare$
@@ -89,7 +89,7 @@ $$
 设 $j$ 为最大的使 $m_j\ne0$ 的下标, 则 $j\ge2$（否则 $m_1=0$）. 移项得
 
 $$
-\begin{aligned}&\quad\;m_j\\&=-\left(m_1+\cdots+m_{j-1}\right)\\&\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)\\&=\left\{0\right\},\end{aligned}
+\begin{aligned}m_j&=-\left(m_1+\cdots+m_{j-1}\right)\\&\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)\\&=\left\{0\right\},\end{aligned}
 $$
 
 故 $m_j=0$, 矛盾. 因此所有 $m_i=0$, 零元素表示唯一. 由**定理 3.1.10**（直和判据）, $M=M_1\oplus\cdots\oplus M_s$. $\blacksquare$
@@ -139,7 +139,7 @@ $$
 求核. 由**命题 3.1.16**（同态的核与像）,
 
 $$
-\begin{aligned}&\quad\;\ker\phi\\&=\left\{m_1+\cdots+m_s\mid m_i+N_i=0,\ 1\le i\le s\right\}\\&=\left\{m_1+\cdots+m_s\mid m_i\in N_i\right\}\\&=N_1\oplus\cdots\oplus N_s\\&=N.\end{aligned}
+\begin{aligned}\ker\phi&=\left\{m_1+\cdots+m_s\mid m_i+N_i=0,\ 1\le i\le s\right\}\\&=\left\{m_1+\cdots+m_s\mid m_i\in N_i\right\}\\&=N_1\oplus\cdots\oplus N_s\\&=N.\end{aligned}
 $$
 
 由**定理 3.1.17**（模的同态基本定理）,

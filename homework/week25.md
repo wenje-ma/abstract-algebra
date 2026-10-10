@@ -41,13 +41,13 @@
 由题设 $\alpha\ne0$, 计算得
 
 $$
-\begin{aligned}&\quad\;\alpha^2\\&=a+b+2\sqrt{ab},\end{aligned}
+\begin{aligned}\alpha^2&=a+b+2\sqrt{ab},\end{aligned}
 $$
 
 故 $\sqrt{ab}=\dfrac{\alpha^2-a-b}{2}\in\mathbb Q\left(\alpha\right)$. 又
 
 $$
-\begin{aligned}&\quad\;\sqrt a-\sqrt b\\&=\frac{\left(\sqrt a-\sqrt b\right)\left(\sqrt a+\sqrt b\right)}{\sqrt a+\sqrt b}\\&=\frac{a-b}{\alpha}\in\mathbb Q\left(\alpha\right).\end{aligned}
+\begin{aligned}\sqrt a-\sqrt b&=\frac{\left(\sqrt a-\sqrt b\right)\left(\sqrt a+\sqrt b\right)}{\sqrt a+\sqrt b}\\&=\frac{a-b}{\alpha}\in\mathbb Q\left(\alpha\right).\end{aligned}
 $$
 
 于是
@@ -83,7 +83,7 @@ $f\left(x\right)$ 中 $x^{k-1}$ 的系数为 $-k\theta$. 因 $f\in E\left[x\righ
 （2）在 $E\left(\theta\right)$ 中, 由**基础知识**（特征 $p$ 下的弗罗贝尼乌斯映射）,
 
 $$
-\begin{aligned}&\quad\;x^p-t\\&=x^p-\theta^p\\&=\left(x-\theta\right)^p.\end{aligned}
+\begin{aligned}x^p-t&=x^p-\theta^p\\&=\left(x-\theta\right)^p.\end{aligned}
 $$
 
 其中 $x-\theta$ 已是一次多项式, 自然不可约. 故 $x^p-t$ 在 $E\left(\theta\right)$ 上的不可约分解为 $\left(x-\theta\right)^p$. $\blacksquare$

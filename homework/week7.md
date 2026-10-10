@@ -39,13 +39,13 @@ $$
 
 （1）由 $G_2H_2=G$ 及**基础知识**（第二同构定理）,
 $$
-\begin{aligned}&\quad\;G_2/K_3\\&=G_2/\left(G_2\cap H_2\right)\\&\cong G_2H_2/H_2\\&=G/H_2,\end{aligned}
+\begin{aligned}G_2/K_3&=G_2/\left(G_2\cap H_2\right)\\&\cong G_2H_2/H_2\\&=G/H_2,\end{aligned}
 $$
 而 $G/H_2$ 是合成因子, 为单群, 故 $G_2/K_3$ 为单群.
 
 同理,
 $$
-\begin{aligned}&\quad\;H_2/K_3\\&=H_2/\left(G_2\cap H_2\right)\\&\cong G_2H_2/G_2\\&=G/G_2,\end{aligned}
+\begin{aligned}H_2/K_3&=H_2/\left(G_2\cap H_2\right)\\&\cong G_2H_2/G_2\\&=G/G_2,\end{aligned}
 $$
 亦为单群.
 

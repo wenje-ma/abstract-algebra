@@ -22,7 +22,7 @@
 
 （1）验证作用: 对 $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ 及 $1$ 维子空间 $W=\mathbb Rv$,
 $$
-\begin{aligned}&\quad\;\rho\left(\tau\left(W\right)\right)\\&=\rho\left(\tau\left(\mathbb Rv\right)\right)\\&=\mathbb R\rho\tau\left(v\right)\\&=\left(\rho\tau\right)\left(W\right),\end{aligned}
+\begin{aligned}\rho\left(\tau\left(W\right)\right)&=\rho\left(\tau\left(\mathbb Rv\right)\right)\\&=\mathbb R\rho\tau\left(v\right)\\&=\left(\rho\tau\right)\left(W\right),\end{aligned}
 $$
 且单位矩阵 $I$ 满足 $I\left(W\right)=W$. 由**定义 1.9.1**（群作用）, 这是一个作用.
 
@@ -120,7 +120,7 @@ g=\begin{pmatrix}\sqrt y & x/\sqrt y\\ 0 & 1/\sqrt y\end{pmatrix},
 $$
 其行列式为 $1$, 且
 $$
-\begin{aligned}&\quad\;g\circ i\\&=\frac{\sqrt y\cdot i+x/\sqrt y}{1/\sqrt y}\\&=yi+x\\&=z.\end{aligned}
+\begin{aligned}g\circ i&=\frac{\sqrt y\cdot i+x/\sqrt y}{1/\sqrt y}\\&=yi+x\\&=z.\end{aligned}
 $$
 故 $i$ 可映到任意 $z\in H$, 作用可递.
 
@@ -128,7 +128,7 @@ $$
 
 $i$ 的迷向子群: 由 $g\circ i=i$, 即
 $$
-\begin{aligned}&\quad\;\frac{ai+b}{ci+d}=i,\\&\Longrightarrow\;ai+b\\&=i\left(ci+d\right)\\&=-c+di.\end{aligned}
+\begin{aligned}\frac{ai+b}{ci+d}=i,\\&\Longrightarrow\;ai+b&=i\left(ci+d\right)\\&=-c+di.\end{aligned}
 $$
 比较实虚部得 $b=-c$, $a=d$. 又 $\det g=ad-bc=a^{2}+c^{2}=1$. 故
 $$
@@ -160,7 +160,7 @@ $$
 
 先验证 $p_1$ 定义了 $\mathbb Z_2$ 的作用. $p_1$ 交换 $y,z$, 显然 $p_1^{2}=\mathrm{id}$, 且
 $$
-\begin{aligned}&\quad\;x^{2}+4zy\\&=x^{2}+4yz\\&=p,\end{aligned}
+\begin{aligned}x^{2}+4zy&=x^{2}+4yz\\&=p,\end{aligned}
 $$
 故 $p_1\left(X\right)\subseteq X$. 因此 $p_1$ 是 $X$ 上的二阶对合, 定义了 $\mathbb Z_2=\left\{1,p_1\right\}$ 在 $X$ 上的作用.
 
@@ -172,7 +172,7 @@ $$
 
 情况二 $y-z\le x<2y$: $2y-x=x$ 给出 $x=y$; 第三坐标 $x-y+z=z$ 自动成立. 代入方程:
 $$
-\begin{aligned}&\quad\;x^{2}+4xz\\&=x\left(x+4z\right)\\&=p.\end{aligned}
+\begin{aligned}x^{2}+4xz&=x\left(x+4z\right)\\&=p.\end{aligned}
 $$
 因 $p$ 为素数且 $x,x+4z$ 均为正整数, 故 $x=1$, $x+4z=p$, 即 $z=\left(p-1\right)/4=k$. 对应不动点为 $\left(1,1,k\right)$.
 
@@ -232,7 +232,7 @@ $$
 
 将 $X$ 分解为互不相交的轨道之并. 设 $X$ 共有 $t$ 个轨道 $O_1,\cdots,O_t$. 对轨道 $O_i$ 中的任意 $x$, $\left|Ox\right|=\left|O_i\right|$, 故 $\left|F_x\right|=\left|G\right|/\left|O_i\right|$. 于是
 $$
-\begin{aligned}&\quad\;\sum_{x\in X}\left|F_x\right|\\&=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|\\&=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}\\&=\sum_{i=1}^{t}\left|G\right|\\&=t\left|G\right|.\end{aligned}
+\begin{aligned}\sum_{x\in X}\left|F_x\right|&=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|\\&=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}\\&=\sum_{i=1}^{t}\left|G\right|\\&=t\left|G\right|.\end{aligned}
 $$
 
 综合两种计数方式, 得

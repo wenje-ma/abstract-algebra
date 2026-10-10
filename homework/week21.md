@@ -45,11 +45,11 @@ $$
 考察 $a=2-3i$ 是否整除 $b,c$:
 
 $$
-\begin{aligned}&\quad\;\frac{b}{a}\\&=\frac{3\left(2+3i\right)\left(2+3i\right)}{13}\\&=\frac{3\left(-5+12i\right)}{13}\\&\notin\mathbb Z\left[i\right],\end{aligned}
+\begin{aligned}\frac{b}{a}&=\frac{3\left(2+3i\right)\left(2+3i\right)}{13}\\&=\frac{3\left(-5+12i\right)}{13}\\&\notin\mathbb Z\left[i\right],\end{aligned}
 $$
 
 $$
-\begin{aligned}&\quad\;\frac{c}{a}\\&=\frac{-18i\left(2+3i\right)}{13}\\&=\frac{54-36i}{13}\\&\notin\mathbb Z\left[i\right].\end{aligned}
+\begin{aligned}\frac{c}{a}&=\frac{-18i\left(2+3i\right)}{13}\\&=\frac{54-36i}{13}\\&\notin\mathbb Z\left[i\right].\end{aligned}
 $$
 
 故 $a\nmid b$, $a\nmid c$. 而 $a$ 的非平凡因子只有其相伴元（$a$ 不可约）, 所以 $a$ 不是 $b,c$ 的公因子. 同理 $2+3i$ 也不整除 $a$. 于是 $a,b,c$ 的最大公因子是 $D$ 中的单位 $1$.
@@ -85,7 +85,7 @@ $$
 反之, 若 $x\in M\left(a\right)\cap M\left(b\right)$, 则 $ax=bx=0$. 由**定理 2.7.7**（贝祖等式）, 存在 $u,v\in D$ 使 $d=ua+vb$. 于是
 
 $$
-\begin{aligned}&\quad\;dx\\&=\left(ua+vb\right)x\\&=uax+vbx\\&=0,\end{aligned}
+\begin{aligned}dx&=\left(ua+vb\right)x\\&=uax+vbx\\&=0,\end{aligned}
 $$
 
 故 $x\in M\left(d\right)$. 因此 $M\left(a\right)\cap M\left(b\right)=M\left(d\right)=M\left(\left(a,b\right)\right)$.
@@ -97,13 +97,13 @@ $$
 最后证 $M\left(ab\right)\subset M\left(a\right)+M\left(b\right)$. 由 $\left(a,b\right)=1$ 及**定理 2.7.7**, 存在 $u,v$ 使 $ua+vb=1$. 对任意 $x\in M\left(ab\right)$, $abx=0$. 写
 
 $$
-\begin{aligned}&\quad\;x\\&=\left(ua+vb\right)x\\&=uax+vb x.\end{aligned}
+\begin{aligned}x&=\left(ua+vb\right)x\\&=uax+vb x.\end{aligned}
 $$
 
 记 $x_1=vb x$, $x_2=uax$. 则
 
 $$
-\begin{aligned}&\quad\;ax_1\\&=avb x\\&=vab x\\&=0,\quad &\quad\;bx_2\\&=bua x\\&=uab x\\&=0,\end{aligned}
+\begin{aligned}ax_1&=avb x\\&=vab x\\&=0,\quad bx_2&=bua x\\&=uab x\\&=0,\end{aligned}
 $$
 
 故 $x_1\in M\left(a\right)$, $x_2\in M\left(b\right)$, 从而 $x=x_1+x_2\in M\left(a\right)+M\left(b\right)$.

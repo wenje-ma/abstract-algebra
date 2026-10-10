@@ -36,12 +36,12 @@ $$
 
 先算左边:
 $$
-\begin{aligned}&\quad\;\left(x+y\right)z\\&=\left(b+c\right)b\\&=a\cdot b\\&=a.\end{aligned}
+\begin{aligned}\left(x+y\right)z&=\left(b+c\right)b\\&=a\cdot b\\&=a.\end{aligned}
 $$
 
 再算右边:
 $$
-\begin{aligned}&\quad\;xz+yz\\&=bb+cb\\&=a+b\\&=b.\end{aligned}
+\begin{aligned}xz+yz&=bb+cb\\&=a+b\\&=b.\end{aligned}
 $$
 
 因 $a\ne b$, 故
@@ -51,11 +51,11 @@ $$
 
 左分配律不成立. 此外, 乘法的结合律亦不成立: 取 $x=c$, $y=c$, $z=b$, 由乘法表 $c\cdot c=a$, $c\cdot b=b$, $a\cdot b=a$, 则
 $$
-\begin{aligned}&\quad\;\left(c\cdot c\right)\cdot b\\&=a\cdot b\\&=a,\end{aligned}
+\begin{aligned}\left(c\cdot c\right)\cdot b&=a\cdot b\\&=a,\end{aligned}
 $$
 而
 $$
-\begin{aligned}&\quad\;c\cdot\left(c\cdot b\right)\\&=c\cdot b\\&=b.\end{aligned}
+\begin{aligned}c\cdot\left(c\cdot b\right)&=c\cdot b\\&=b.\end{aligned}
 $$
 二者不等.
 
@@ -74,12 +74,12 @@ $$
 
 计算乘积:
 $$
-\begin{aligned}&\quad\;\left(e+a\right)b\\&=\left(e+a\right)\left(e-a+a^{2}-\cdots+\left(-1\right)^{m-1}a^{m-1}\right)\\&=e+\left(-1\right)^{m-1}a^{m}\\&=e,\end{aligned}
+\begin{aligned}\left(e+a\right)b&=\left(e+a\right)\left(e-a+a^{2}-\cdots+\left(-1\right)^{m-1}a^{m-1}\right)\\&=e+\left(-1\right)^{m-1}a^{m}\\&=e,\end{aligned}
 $$
 
 中间项全部抵消, 而 $a^{m}=0$. 同理,
 $$
-\begin{aligned}&\quad\;b\left(e+a\right)\\&=e+\left(-1\right)^{m-1}a^{m}\\&=e.\end{aligned}
+\begin{aligned}b\left(e+a\right)&=e+\left(-1\right)^{m-1}a^{m}\\&=e.\end{aligned}
 $$
 
 故 $b$ 是 $e+a$ 的逆元, 即 $e+a$ 为可逆元. $\blacksquare$
@@ -97,12 +97,12 @@ $$
 
 验证 $d$ 是 $e-ba$ 的逆元:
 $$
-\begin{aligned}&\quad\;\left(e-ba\right)d\\&=\left(e-ba\right)\left(e+bca\right)\\&=e-ba+bca-babca\\&=e-ba+b\left(e-ab\right)ca\\&=e-ba+ba\\&=e,\end{aligned}
+\begin{aligned}\left(e-ba\right)d&=\left(e-ba\right)\left(e+bca\right)\\&=e-ba+bca-babca\\&=e-ba+b\left(e-ab\right)ca\\&=e-ba+ba\\&=e,\end{aligned}
 $$
 
 其中用到 $\left(e-ab\right)c=e$. 同理,
 $$
-\begin{aligned}&\quad\;d\left(e-ba\right)\\&=\left(e+bca\right)\left(e-ba\right)\\&=e-ba+bca-bcaba\\&=e-ba+bc\left(e-ab\right)a\\&=e-ba+ba\\&=e,\end{aligned}
+\begin{aligned}d\left(e-ba\right)&=\left(e+bca\right)\left(e-ba\right)\\&=e-ba+bca-bcaba\\&=e-ba+bc\left(e-ab\right)a\\&=e-ba+ba\\&=e,\end{aligned}
 $$
 
 其中用到 $c\left(e-ab\right)=e$. 故 $d=e+bca$ 是 $e-ba$ 的逆元, $e-ba$ 可逆.
@@ -138,12 +138,12 @@ $$
 
 计算乘积:
 $$
-\begin{aligned}&\quad\;\left(bX^{-1}-a^{-1}\right)\cdot a\left(ba-e\right)\\&=bX^{-1}a\left(ba-e\right)-a^{-1}a\left(ba-e\right)\\&=\left[bX^{-1}a-e\right]\left(ba-e\right).\end{aligned}
+\begin{aligned}\left(bX^{-1}-a^{-1}\right)\cdot a\left(ba-e\right)&=bX^{-1}a\left(ba-e\right)-a^{-1}a\left(ba-e\right)\\&=\left[bX^{-1}a-e\right]\left(ba-e\right).\end{aligned}
 $$
 
 由习题三的华罗庚恒等式, $\left(e-ba\right)^{-1}=e+b\left(e-ab\right)^{-1}a$. 注意到 $X=ab-e=-\left(e-ab\right)$, 故 $X^{-1}=-\left(e-ab\right)^{-1}$, 于是
 $$
-\begin{aligned}&\quad\;bX^{-1}a\\&=-b\left(e-ab\right)^{-1}a\\&=-\left[\left(e-ba\right)^{-1}-e\right]\\&=e-\left(e-ba\right)^{-1}.\end{aligned}
+\begin{aligned}bX^{-1}a&=-b\left(e-ab\right)^{-1}a\\&=-\left[\left(e-ba\right)^{-1}-e\right]\\&=e-\left(e-ba\right)^{-1}.\end{aligned}
 $$
 
 因此
@@ -153,7 +153,7 @@ $$
 
 又 $ba-e=-\left(e-ba\right)$, 故
 $$
-\begin{aligned}&\quad\;\left[bX^{-1}a-e\right]\left(ba-e\right)\\&=\left(-\left(e-ba\right)^{-1}\right)\cdot\left(-\left(e-ba\right)\right)\\&=\left(e-ba\right)^{-1}\left(e-ba\right)\\&=e.\end{aligned}
+\begin{aligned}\left[bX^{-1}a-e\right]\left(ba-e\right)&=\left(-\left(e-ba\right)^{-1}\right)\cdot\left(-\left(e-ba\right)\right)\\&=\left(e-ba\right)^{-1}\left(e-ba\right)\\&=e.\end{aligned}
 $$
 
 同理可验另一方向乘积为 $e$. 故 $a\left(ba-e\right)=aba-a$ 是 $bX^{-1}-a^{-1}=\left(a-b^{-1}\right)^{-1}-a^{-1}$ 的逆元, 即
