@@ -75,7 +75,7 @@ $$
 于是任何非零非单位元素 $f$ 都可写成
 
 $$
-f=t^k\,u,\quad u\text{ 为单位},
+f=t^k\,u,\  u\text{ 为单位},
 $$
 
 其中 $k=\operatorname{ord}\left(f\right)$ 被 $f$ 唯一确定. 即 $f$ 在相伴意义下唯一分解为不可约元素 $t$ 的 $k$ 次幂乘以单位. 又 $t$ 是素元素（$t\mid fg\Rightarrow\operatorname{ord}\left(fg\right)\ge1\Rightarrow\operatorname{ord}\left(f\right)\ge1$ 或 $\operatorname{ord}\left(g\right)\ge1$, 即 $t\mid f$ 或 $t\mid g$）.

@@ -68,11 +68,11 @@ $$
 
 先证 $S_3$ 与 $S_4$ 同构. $S_3$ 的因子为
 $$
-G/G_2,\quad G_2/K_3\cong G/H_2,\quad K_3/K_4,\quad\cdots,\quad K_{r-1}/K_r;
+G/G_2,\  G_2/K_3\cong G/H_2,\  K_3/K_4,\ \cdots,\  K_{r-1}/K_r;
 $$
 $S_4$ 的因子为
 $$
-G/H_2,\quad H_2/K_3\cong G/G_2,\quad K_3/K_4,\quad\cdots,\quad K_{r-1}/K_r.
+G/H_2,\  H_2/K_3\cong G/G_2,\  K_3/K_4,\ \cdots,\  K_{r-1}/K_r.
 $$
 两组因子作为多重集合仅前两项次序不同, 而 $G/G_2$ 与 $G/H_2$ 恰互换位置, 其余因子完全相同. 由**定义 1.7.12**（同构序列）, $S_3$ 与 $S_4$ 同构.
 

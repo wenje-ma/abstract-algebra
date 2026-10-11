@@ -2,7 +2,15 @@
 
 > **定义 1.3.1**（正规子群）设 $H$ 是群 $G$ 的子群. 如果对任意 $g\in G$, $h\in H$, 有 $ghg^{-1}\in H$, 则称 $H$ 为 $G$ 的一个正规子群, 记为 $H\triangleleft G$.
 
-> **定理 1.3.5**（正规子群的等价条件）设 $G$ 是群, $H<G$, 则下列条件等价: （1）$H\triangleleft G$; （2）对任意 $g\in G$, $gH=Hg$; （3）对任意 $a,b\in G$, $aH\cdot bH=abH$.
+> **定理 1.3.5**（正规子群的等价条件）
+>
+> 设 $G$ 是群, $H<G$, 则下列条件等价:
+>
+> （1）$H\triangleleft G$;
+>
+> （2）对任意 $g\in G$, $gH=Hg$;
+>
+> （3）对任意 $a,b\in G$, $aH\cdot bH=abH$.
 
 > **定理 1.3.6**（商群）设 $G$ 是群, $H\triangleleft G$, 则 $G/H$ 对陪集乘法 $aH\cdot bH=abH$ 构成一个群, 称为 $G$ 对 $H$ 的商群.
 
@@ -69,7 +77,7 @@ $$
 首先, $gHg^{-1}$ 是 $G$ 的子群. 事实上, 映射
 
 $$
-\varphi:H\to gHg^{-1},\quad h\mapsto ghg^{-1}
+\varphi:H\to gHg^{-1},\  h\mapsto ghg^{-1}
 $$
 
 是双射（其逆为 $x\mapsto g^{-1}xg$）, 且保持乘法运算: $\varphi\left(h_{1}h_{2}\right)=gh_{1}h_{2}g^{-1}=\left(gh_{1}g^{-1}\right)\left(gh_{2}g^{-1}\right)=\varphi\left(h_{1}\right)\varphi\left(h_{2}\right)$. 故 $gHg^{-1}<G$.

@@ -87,7 +87,7 @@ $$
 （习题 1.1-16）设 $A\in\mathbb R^{n\times n}$, $B\in\mathbb R^n$, 定义 $\mathbb R^n$ 上的变换 $T\left(A,B\right)$ 为
 
 $$
-T\left(A,B\right)\left(\alpha\right)=A\alpha+B,\quad\forall\alpha\in\mathbb R^n.
+T\left(A,B\right)\left(\alpha\right)=A\alpha+B,\ \forall\alpha\in\mathbb R^n.
 $$
 
 （1）证明: 当 $\left|A\right|\ne0$ 时, $T\left(A,B\right)$ 是双射;

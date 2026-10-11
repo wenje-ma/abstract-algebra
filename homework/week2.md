@@ -117,7 +117,7 @@ $$
 先证不等式. 考虑映射
 
 $$
-\varphi:G/\left(H_{1}\cap H_{2}\right)\to G/H_{1}\times G/H_{2},\quad g\left(H_{1}\cap H_{2}\right)\mapsto\left(gH_{1},gH_{2}\right).
+\varphi:G/\left(H_{1}\cap H_{2}\right)\to G/H_{1}\times G/H_{2},\  g\left(H_{1}\cap H_{2}\right)\mapsto\left(gH_{1},gH_{2}\right).
 $$
 
 **良定义** 若 $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$, 则 $g^{-1}g'\in H_{1}\cap H_{2}\subseteq H_{1}$ 且 $\subseteq H_{2}$, 故 $gH_{1}=g'H_{1}$, $gH_{2}=g'H_{2}$.

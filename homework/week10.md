@@ -66,7 +66,7 @@ $\blacksquare$
 
 由**引理 1.7.7** (正规子群交换条件), $P,Q$ 都是 $G$ 的正规子群且 $P\cap Q=\left\{e\right\}$, 故对任意 $a\in P$, $b\in Q$ 有 $ab=ba$. 于是映射
 $$
-P\times Q\to G,\quad\left(a,b\right)\mapsto ab
+P\times Q\to G,\ \left(a,b\right)\mapsto ab
 $$
 是群同构, 即 $G\cong P\times Q$.
 

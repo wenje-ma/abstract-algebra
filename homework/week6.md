@@ -97,7 +97,7 @@ $S_{4}$ 的正规子群只有 $\left\{e\right\},K_{4},A_{4},S_{4}$. 故非平凡
 考虑 $G$ 的左正则表示: 由凯莱定理, 映射
 
 $$
-\lambda:G\to S_{G},\quad g\mapsto L_{g},
+\lambda:G\to S_{G},\  g\mapsto L_{g},
 $$
 
 其中 $L_{g}\left(x\right)=gx$, 是单同态. 视 $\lambda$ 为 $G$ 到 $S_{2n}$ 的单同态.

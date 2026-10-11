@@ -87,7 +87,7 @@ $$
 因 $8=2^3$, 指数 $3$ 的分划为 $3$, $2+1$, $1+1+1$, 共 $p\left(3\right)=3$ 种. 由**定理 3.5.2**（有限交换群的分类数）, $8$ 阶交换群在同构意义下共有 $3$ 类, 分别为
 
 $$
-\mathbb Z_8,\quad\mathbb Z_4\times\mathbb Z_2,\quad\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2.
+\mathbb Z_8,\ \mathbb Z_4\times\mathbb Z_2,\ \mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2.
 $$
 
 下面分别决定它们到 $\mathbb Q^*$ 的同态. 设 $\varphi:G\to\mathbb Q^*$ 为群同态. 因 $G$ 有限, $\varphi\left(G\right)$ 是 $\mathbb Q^*$ 的有限子群. 由**基础知识**（有理数乘法群的有限子群）, $\mathbb Q^*$ 的唯一有限子群为 $\left\{\pm1\right\}$, 故 $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$, 即每个生成元的像只能取 $1$ 或 $-1$.

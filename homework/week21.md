@@ -103,7 +103,7 @@ $$
 记 $x_1=vb x$, $x_2=uax$. 则
 
 $$
-\begin{aligned}ax_1&=avb x\\&=vab x\\&=0,\quad bx_2&=bua x\\&=uab x\\&=0,\end{aligned}
+\begin{aligned}ax_1&=avb x\\&=vab x\\&=0,\  bx_2&=bua x\\&=uab x\\&=0,\end{aligned}
 $$
 
 故 $x_1\in M\left(a\right)$, $x_2\in M\left(b\right)$, 从而 $x=x_1+x_2\in M\left(a\right)+M\left(b\right)$.

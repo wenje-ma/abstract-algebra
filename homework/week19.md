@@ -4,7 +4,13 @@
 
 > **命题 3.1.16**（同态的核与像）模同态 $\phi:M_1\to M_2$ 的核 $\ker\phi$ 是 $M_1$ 的子模, 同态像 $\operatorname{Im}\phi$ 是 $M_2$ 的子模.
 
-> **定理 3.1.10**（直和判据）设 $M_1,\cdots,M_s$ 为 $R$-模 $M$ 的子模, 则 $M=M_1\oplus\cdots\oplus M_s$ 当且仅当 (1) $M=M_1+\cdots+M_s$; (2) 对任何 $2\le j\le s$, $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
+> **定理 3.1.10**（直和判据）
+>
+> 设 $M_1,\cdots,M_s$ 为 $R$-模 $M$ 的子模, 则 $M=M_1\oplus\cdots\oplus M_s$ 当且仅当
+>
+> (1) $M=M_1+\cdots+M_s$;
+>
+> (2) 对任何 $2\le j\le s$, $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
 
 ### 习题一
 
@@ -74,7 +80,11 @@ $$
 
 ### 习题三
 
-（习题 3.1-13）设 $M$ 为模, $M_1,M_2,\cdots,M_s$ 为 $M$ 的子模. 试证明 $M=M_1\oplus\cdots\oplus M_s$ 当且仅当 (1) $M=M_1+M_2+\cdots+M_s$; (2) 对任何 $2\le j\le s$, $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
+（习题 3.1-13）设 $M$ 为模, $M_1,M_2,\cdots,M_s$ 为 $M$ 的子模. 试证明 $M=M_1\oplus\cdots\oplus M_s$ 当且仅当
+
+(1) $M=M_1+M_2+\cdots+M_s$;
+
+(2) 对任何 $2\le j\le s$, $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
 
 ### 解答 习题三
 
@@ -83,7 +93,7 @@ $$
 **充分性** 设 (1)(2) 成立. 只需证 $M$ 中零元素的表示唯一. 设
 
 $$
-m_1+m_2+\cdots+m_s=0,\quad m_i\in M_i.
+m_1+m_2+\cdots+m_s=0,\  m_i\in M_i.
 $$
 
 设 $j$ 为最大的使 $m_j\ne0$ 的下标, 则 $j\ge2$（否则 $m_1=0$）. 移项得
@@ -107,7 +117,7 @@ $$
 它们都是 $M$ 的一维子空间. 任意两个不同的一维子空间之交为零, 即
 
 $$
-M_i\cap M_j=\left\{0\right\},\quad i\ne j.
+M_i\cap M_j=\left\{0\right\},\  i\ne j.
 $$
 
 且 $M_1+M_2+M_3=\mathbb R e_1+\mathbb R e_2=M$, 即条件 (1) 成立. 但存在非平凡关系
@@ -129,7 +139,7 @@ $$
 任一 $m\in M$ 可唯一写成 $m=m_1+\cdots+m_s$, $m_i\in M_i$. 定义映射
 
 $$
-\phi:M\to M_1/N_1\oplus\cdots\oplus M_s/N_s,\quad \phi\left(m_1+\cdots+m_s\right)=\left(m_1+N_1,\cdots,m_s+N_s\right).
+\phi:M\to M_1/N_1\oplus\cdots\oplus M_s/N_s,\  \phi\left(m_1+\cdots+m_s\right)=\left(m_1+N_1,\cdots,m_s+N_s\right).
 $$
 
 由直和分解的唯一性, $\phi$ 是良定义的模同态.

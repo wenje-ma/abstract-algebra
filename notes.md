@@ -55,7 +55,7 @@
 对 $f,g\in S$, 狄利克雷卷积定义为
 
 $$
-\begin{aligned}&\quad\;\left(f*g\right)\left(n\right)\\
+\begin{aligned}&\;\;\left(f*g\right)\left(n\right)\\
 &=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\
 &=\sum_{ab=n}f\left(a\right)g\left(b\right).
 \end{aligned}
@@ -69,7 +69,13 @@ $$
 
 **定理 1.3.5**（正规子群的等价条件）
 
-设 $G$ 是群, $H< G$, 则下列条件等价: （1）$H\triangleleft G$; （2）对任意 $g\in G$, $gH=Hg$; （3）对任意 $a,b\in G$, $aH\cdot bH=abH$.
+设 $G$ 是群, $H< G$, 则下列条件等价:
+
+（1）$H\triangleleft G$;
+
+（2）对任意 $g\in G$, $gH=Hg$;
+
+（3）对任意 $a,b\in G$, $aH\cdot bH=abH$.
 
 **定理 1.3.6**（商群）
 
@@ -121,7 +127,13 @@ $$
 
 **基础知识**（欧拉函数）
 
-$\varphi\left(n\right)$ 为与 $n$ 互素且不超过 $n$ 的正整数的个数. 对正整数 $n$, 有 $\sum_{d\mid n}\varphi\left(d\right)=n$. $n$ 阶循环群中恰有 $\varphi\left(n\right)$ 个生成元.
+$\varphi\left(n\right)$ 为与 $n$ 互素且不超过 $n$ 的正整数的个数. 对正整数 $n$, 有
+
+$$
+\sum_{d\mid n}\varphi\left(d\right)=n.
+$$
+
+$n$ 阶循环群中恰有 $\varphi\left(n\right)$ 个生成元.
 
 ## 置换群与可解性
 
@@ -307,7 +319,13 @@ $$
 
 **基础知识**（代数整数环的范数）
 
-设 $d> 0$ 为无平方因子整数, $\omega=\frac{1+\sqrt{-d}}{2}$ 满足 $\omega^2-\omega+\frac{1+d}{4}=0$ 当 $d\equiv3\pmod4$. 对 $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, 定义范数 $N\left(\alpha\right)=\alpha\overline\alpha=a^2+ab+b^2\omega\overline\omega$, 它是乘性函数且 $N\left(\alpha\right)=0$ 当且仅当 $\alpha=0$.
+设 $d> 0$ 为无平方因子整数, 当 $d\equiv3\pmod4$ 时,
+
+$$
+\omega=\frac{1+\sqrt{-d}}{2},\ \omega^2-\omega+\frac{1+d}{4}=0.
+$$
+
+对 $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, 定义范数 $N\left(\alpha\right)=\alpha\overline\alpha=a^2+ab+b^2\omega\overline\omega$, 它是乘性函数且 $N\left(\alpha\right)=0$ 当且仅当 $\alpha=0$.
 
 ## 多项式与幂级数
 
@@ -327,7 +345,11 @@ $$
 
 **定理 3.1.10**（直和判据）
 
-设 $M_1,\cdots,M_s$ 为 $R$-模 $M$ 的子模, 则 $M=M_1\oplus\cdots\oplus M_s$ 当且仅当 （1）$M=M_1+\cdots+M_s$; （2）对任何 $2\le j\le s$, $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
+设 $M_1,\cdots,M_s$ 为 $R$-模 $M$ 的子模, 则 $M=M_1\oplus\cdots\oplus M_s$ 当且仅当
+
+（1）$M=M_1+\cdots+M_s$;
+
+（2）对任何 $2\le j\le s$, $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
 
 **命题 3.1.16**（同态的核与像）
 
@@ -339,7 +361,11 @@ $$
 
 **定理 3.3.6**（基的刻画）
 
-设 $M$ 为幺环 $R$ 上的模, $u_1,\cdots,u_m$ 为 $M$ 中元素, 则 $M$ 为自由模且 $u_1,\cdots,u_m$ 为一组基当且仅当 （1）$u_1,\cdots,u_m$ 是 $M$ 的一组生成元; （2）$u_1,\cdots,u_m$ 线性无关.
+设 $M$ 为幺环 $R$ 上的模, $u_1,\cdots,u_m$ 为 $M$ 中元素, 则 $M$ 为自由模且 $u_1,\cdots,u_m$ 为一组基当且仅当
+
+（1）$u_1,\cdots,u_m$ 是 $M$ 的一组生成元;
+
+（2）$u_1,\cdots,u_m$ 线性无关.
 
 **推论 3.3.10**（自由模秩的唯一性）
 
@@ -388,7 +414,7 @@ $$
 设 $A$ 为 $n$ 阶方阵, $a$ 为 $A$ 的一个特征值. 记
 
 $$
-\begin{aligned}&\quad\;\nu_k\\
+\begin{aligned}&\;\;\nu_k\\
 &=\dim\ker\left(aI_n-A\right)^k\\
 &=n-\mathrm{rank}\left(aI_n-A\right)^k,
 \end{aligned}
