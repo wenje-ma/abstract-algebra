@@ -54,9 +54,9 @@ $$
 
 ### 习题二
 
-（习题 2.5-10）设 $R=\mathbb Z\left[\omega\right]$, 其中 $\omega=\dfrac{1+\sqrt{-3}}{2}$（即 $\mathbb Q\left(\sqrt{-3}\right)$ 的代数整数环）.
+（习题 2.5-10）设 $R=\mathbb Z\left[\omega\right]$, 其中 $\omega=\frac{1+\sqrt{-3}}{2}$（即 $\mathbb Q\left(\sqrt{-3}\right)$ 的代数整数环）.
 （1）证明 $R$ 在数的加法和乘法下构成一个整环;
-（2）证明 $R$ 的所有单位是 $\pm1$, $\dfrac{\pm1\pm\sqrt{-3}}{2}$;
+（2）证明 $R$ 的所有单位是 $\pm1$, $\frac{\pm1\pm\sqrt{-3}}{2}$;
 （3）证明在 $R$ 中 $2$ 与 $1+\sqrt{-3}$ 相伴.
 
 ### 解答 习题二
@@ -71,13 +71,13 @@ $$
 \begin{aligned}N\left(m+n\omega\right)&=\left(m+n\omega\right)\left(m+n\bar\omega\right)\\&=m^2+mn+n^2,\end{aligned}
 $$
 
-其中 $\bar\omega=\dfrac{1-\sqrt{-3}}{2}$. 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$. 解 $m^2+mn+n^2=1$ 得
+其中 $\bar\omega=\frac{1-\sqrt{-3}}{2}$. 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$. 解 $m^2+mn+n^2=1$ 得
 
 $$
 \left(m,n\right)=\left(\pm1,0\right),\;\left(0,\pm1\right),\;\left(1,-1\right),\;\left(-1,1\right).
 $$
 
-对应元素为 $\pm1$, $\pm\omega=\dfrac{\pm1\pm\sqrt{-3}}{2}$, $\pm\left(1-\omega\right)=\dfrac{\pm1\mp\sqrt{-3}}{2}$. 故 $R$ 的全部单位为 $\pm1$ 及 $\dfrac{\pm1\pm\sqrt{-3}}{2}$.
+对应元素为 $\pm1$, $\pm\omega=\frac{\pm1\pm\sqrt{-3}}{2}$, $\pm\left(1-\omega\right)=\frac{\pm1\mp\sqrt{-3}}{2}$. 故 $R$ 的全部单位为 $\pm1$ 及 $\frac{\pm1\pm\sqrt{-3}}{2}$.
 
 （3）因 $1+\sqrt{-3}=2\omega$, 而 $\omega$ 是单位, 由**定义 2.5.2**（相伴）, $2$ 与 $1+\sqrt{-3}$ 相伴. $\blacksquare$
 

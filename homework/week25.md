@@ -44,7 +44,7 @@ $$
 \begin{aligned}\alpha^2&=a+b+2\sqrt{ab},\end{aligned}
 $$
 
-故 $\sqrt{ab}=\dfrac{\alpha^2-a-b}{2}\in\mathbb Q\left(\alpha\right)$. 又
+故 $\sqrt{ab}=\frac{\alpha^2-a-b}{2}\in\mathbb Q\left(\alpha\right)$. 又
 
 $$
 \begin{aligned}\sqrt a-\sqrt b&=\frac{\left(\sqrt a-\sqrt b\right)\left(\sqrt a+\sqrt b\right)}{\sqrt a+\sqrt b}\\&=\frac{a-b}{\alpha}\in\mathbb Q\left(\alpha\right).\end{aligned}

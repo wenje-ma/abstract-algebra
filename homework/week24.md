@@ -28,7 +28,7 @@ $$
 \begin{aligned}\sqrt2&=\frac{\alpha-\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right),\end{aligned}
 $$
 
-同理 $\sqrt3=\dfrac{\alpha+\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right)$, 故 $\mathbb Q\left(\sqrt2,\sqrt3\right)\subseteq\mathbb Q\left(\alpha\right)$. 因而 $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$.
+同理 $\sqrt3=\frac{\alpha+\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right)$, 故 $\mathbb Q\left(\sqrt2,\sqrt3\right)\subseteq\mathbb Q\left(\alpha\right)$. 因而 $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$.
 
 再证 $\sqrt2\notin\mathbb Q\left(\sqrt3\right)$. 反设 $\sqrt2=a+b\sqrt3$, $a,b\in\mathbb Q$. 两边平方得 $2=a^2+3b^2+2ab\sqrt3$. 因 $1,\sqrt3$ 在 $\mathbb Q$ 上线性无关, 故 $ab=0$. 若 $b=0$, 则 $2=a^2$, 无有理解; 若 $a=0$, 则 $2=3b^2$, 即 $b^2=2/3$, 亦无有理解. 故 $\sqrt2\notin\mathbb Q\left(\sqrt3\right)$.
 
