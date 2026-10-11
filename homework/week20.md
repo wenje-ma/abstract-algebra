@@ -46,11 +46,11 @@ $$
 \begin{aligned}\det\left(A\right)\det\left(B\right)&=\det\left(I_m\right)\\&=1.\end{aligned}
 $$
 
-故 $\det A$ 是 $R$ 中的单位. 由行列式的基础知识, $A$ 可逆, 即存在 $A^{-1}$ 使 $AA^{-1}=I_m$. 因而 $\phi$ 既是满同态又是单同态（$\ker\phi=0$）, 是双射, 故 $\phi$ 为模同构. $\blacksquare$
+故 $\det A$ 是 $R$ 中的单位. 由行列式的基础知识, $A$ 可逆, 即存在 $A^{-1}$ 使 $AA^{-1}=I_m$. 因而 $\phi$ 既是满同态又是单同态($\ker\phi=0$), 是双射, 故 $\phi$ 为模同构. $\blacksquare$
 
 ### 习题三
 
-（习题 3.3-8）条件同上题, 如果 $R$ 是域且 $\phi$ 是单同态, 证明 $\phi$ 是同构. 这个结论对于一般的交换幺环成立吗？
+（习题 3.3-8）条件同上题, 如果 $R$ 是域且 $\phi$ 是单同态, 证明 $\phi$ 是同构. 这个结论对于一般的交换幺环成立吗?
 
 ### 解答 习题三
 
@@ -58,7 +58,7 @@ $$
 
 这个结论对于一般的交换幺环不成立.
 
-反例. 取 $R=\mathbb Z$（交换幺环）, $m=1$, 定义 $\phi:\mathbb Z\to\mathbb Z$ 为
+反例. 取 $R=\mathbb Z$(交换幺环), $m=1$, 定义 $\phi:\mathbb Z\to\mathbb Z$ 为
 
 $$
 \phi\left(n\right)=2n.

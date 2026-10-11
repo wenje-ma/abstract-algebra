@@ -12,7 +12,7 @@
 
 ### 解答 习题一
 
-设 $p\in R^*\setminus U$（$p$ 为零元或单位时结论平凡, 不予讨论）.
+设 $p\in R^*\setminus U$($p$ 为零元或单位时结论平凡, 不予讨论).
 
 **必要性** 设 $p$ 为不可约元素. 因 $R$ 是唯一分解整环, 由**定理 2.5.15**（唯一分解整环的等价条件）, $p$ 是素元素, 即 $p\mid ab$ 可推出 $p\mid a$ 或 $p\mid b$. 注意到 $ab\in\left(p\right)$ 等价于 $p\mid ab$, $a\in\left(p\right)$ 等价于 $p\mid a$. 故 $ab\in\left(p\right)$ 可推出 $a\in\left(p\right)$ 或 $b\in\left(p\right)$. 又 $p$ 非单位, $1\notin\left(p\right)$, 故 $\left(p\right)\ne R$. 由**定义 2.6.1**（素理想）, $\left(p\right)$ 是素理想.
 

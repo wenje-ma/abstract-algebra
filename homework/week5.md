@@ -44,7 +44,7 @@ $$
 
 **断言** $f\left(d\right)$ 要么为 $0$, 要么为 $\varphi\left(d\right)$.
 
-事实上, 若 $f\left(d\right)=0$, 断言显然成立. 若 $f\left(d\right)>0$, 取 $a\in G$ 使 $\mathrm{ord}\left(a\right)=d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶子群. 由唯一性, $\left\langle a\right\rangle=H_{d}$, 故 $H_{d}$ 是循环群. 又 $G$ 中任意 $d$ 阶元 $b$ 生成的子群 $\left\langle b\right\rangle$ 也是 $d$ 阶的, 故 $\left\langle b\right\rangle=H_{d}$. 因此 $G$ 中所有 $d$ 阶元都在 $H_{d}$ 中, 而 $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元（即 $d$ 阶元）, 故 $f\left(d\right)=\varphi\left(d\right)$.
+事实上, 若 $f\left(d\right)=0$, 断言显然成立. 若 $f\left(d\right)>0$, 取 $a\in G$ 使 $\mathrm{ord}\left(a\right)=d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶子群. 由唯一性, $\left\langle a\right\rangle=H_{d}$, 故 $H_{d}$ 是循环群. 又 $G$ 中任意 $d$ 阶元 $b$ 生成的子群 $\left\langle b\right\rangle$ 也是 $d$ 阶的, 故 $\left\langle b\right\rangle=H_{d}$. 因此 $G$ 中所有 $d$ 阶元都在 $H_{d}$ 中, 而 $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元(即 $d$ 阶元), 故 $f\left(d\right)=\varphi\left(d\right)$.
 
 于是对每个 $d\mid n$, 有 $f\left(d\right)\le\varphi\left(d\right)$.
 
@@ -70,7 +70,7 @@ $$
 
 ### 解答 习题三
 
-设 $\left|G\right|=n$. 由题设, 对每个正整数 $d$, $G$ 中至多有一个 $d$ 阶子群（若有两个子阶相同, 则与题设矛盾）.
+设 $\left|G\right|=n$. 由题设, 对每个正整数 $d$, $G$ 中至多有一个 $d$ 阶子群(若有两个子阶相同, 则与题设矛盾).
 
 对每个 $d\mid n$, 令 $f\left(d\right)$ 为 $G$ 中阶恰为 $d$ 的元素的个数.
 

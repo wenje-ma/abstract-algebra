@@ -1,6 +1,6 @@
 # 作业 26
 
-> **基础知识**（特征 $p$ 下的弗罗贝尼乌斯映射）设域 $F$ 的特征为素数 $p$, 则对任意 $a,b\in F$ 有 $\left(a+b\right)^p=a^p+b^p$. 因而对任意 $c\in F$, 若 $\alpha$ 是 $x^p-c$ 在某分裂域中的根（即 $\alpha^p=c$）, 则 $x^p-c=\left(x-\alpha\right)^p$, 即 $x^p-c$ 在其分裂域中只有一个 $p$ 重根.
+> **基础知识**（特征 $p$ 下的弗罗贝尼乌斯映射）设域 $F$ 的特征为素数 $p$, 则对任意 $a,b\in F$ 有 $\left(a+b\right)^p=a^p+b^p$. 因而对任意 $c\in F$, 若 $\alpha$ 是 $x^p-c$ 在某分裂域中的根(即 $\alpha^p=c$), 则 $x^p-c=\left(x-\alpha\right)^p$, 即 $x^p-c$ 在其分裂域中只有一个 $p$ 重根.
 
 ### 习题一
 
