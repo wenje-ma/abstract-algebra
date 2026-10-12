@@ -125,7 +125,7 @@ $$
 再求交. 由 (3),
 
 $$
-M\left(a\right)\cap M\left(b\right)=M\left(\left(a,b\right)\right)=M\left(1\right)=\left\{0\right\}\ \text{(用 (1))}.
+M\left(a\right)\cap M\left(b\right)=M\left(\left(a,b\right)\right)=M\left(1\right)=\left\{0\right\}\ \text{\left(用 \left(1\right)\right)}.
 $$
 
 最后证 $M\left(ab\right)\subset M\left(a\right)+M\left(b\right)$. 由 $\left(a,b\right)=1$ 及**定理 2.7.7**, 存在 $u,v$ 使 $ua+vb=1$. 对任意 $x\in M\left(ab\right)$, $abx=0$. 写
