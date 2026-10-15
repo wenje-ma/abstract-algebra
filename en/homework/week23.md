@@ -1,0 +1,149 @@
+# Assignment 23
+
+> **Theorem 3.6.3** (Jordan Canonical Form) Let $F$ be an algebraically closed field of characteristic zero, $V$ an $F$-dimensional vector space over $n$, and $A$ a linear transformation on $V$. Then there exists a basis of $V$ in which the matrix of $A$ is a block-diagonal matrix $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, where each $J_i$ is a Jordan block. Two $F$ matrices over $n\times n$ are similar if and only if they have the same Jordan canonical form.
+
+> **Basic Knowledge** (Reverse Transpose Matrix) Let $P$ be the $n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries $0$), then $PNP=N^T$, and hence $PN$ is symmetric.
+
+> **Basic Knowledge** (Nilpotent Kernel and Count of Jordan Blocks) Let $A$ be an $n$ matrix, and let $a$ be an eigenvalue of $A$. Write
+>
+> $$
+> \begin{aligned}\nu_k&=\dim\ker\left(aI_n-A\right)^k\\&=n-\mathrm{rank}\left(aI_n-A\right)^k,\end{aligned}
+> $$
+>
+> with the convention $\nu_0=0$. Then the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s-\nu_{s-1}$. Hence the sequence $\left\{\nu_k\right\}_{k\geqslant0}$ completely determines the sizes and number of Jordan blocks at $a$.
+
+### Problem 1
+
+(Problem 3.6-9) Let $F$ be an algebraically closed field of characteristic zero. Prove that every Jordan block over $F$ can be written as a product of two symmetric matrices.
+
+### Solution to Problem 1
+
+Let $J$ be an $F$ Jordan block over $n$, with eigenvalue $\lambda\in F$. Then $J=\lambda I_n+N$, where $N$ is the $n$ nilpotent shift matrix.
+
+Let $P$ be the $n$ reversal matrix. By **Basic Knowledge** (Reverse Transpose Matrix), $P$ is symmetric, $P^2=I_n$, and $PN$ is symmetric. Set
+
+$$
+\begin{aligned}A&=PJ\\&=\lambda P+PN.\end{aligned}
+$$
+
+Since both $P$ and $PN$ are symmetric, $A$ is symmetric. Also $P^2=I_n$, so $P^{-1}=P$, and hence
+
+$$
+\begin{aligned}J&=P^{-1}A\\&=PA.\end{aligned}
+$$
+
+Here both $P$ and $A$ are symmetric matrices over $F$. Hence every Jordan block can be written as a product of two symmetric matrices. $\blacksquare$
+
+### Problem 2
+
+(Problem 3.6-10) Prove that every square matrix over an algebraically closed field $F$ of characteristic zero can be written as a product of two symmetric matrices over $F$.
+
+### Solution to Problem 2
+
+Let $A$ be an $F$ matrix over $n$. By **Theorem 3.6.3** (Jordan Canonical Form), there exists an invertible matrix $S$ such that
+
+$$
+\begin{aligned}S^{-1}AS&=J\\&=\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right),\end{aligned}
+$$
+
+where $J_1,J_2,\cdots,J_s$ are all Jordan blocks.
+
+By the conclusion of **Problem 1**, each Jordan block $J_i$ can be written as $J_i=P_iQ_i$, where $P_i,Q_i$ are both symmetric. Set
+
+$$
+P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right),
+$$
+
+$$
+Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right),
+$$
+
+Then $P,Q$ are both symmetric, and $J=PQ$.
+
+Hence
+
+$$
+\begin{aligned}A&=SJS^{-1}\\&=SPQS^{-1}\\&=\left(SPS^T\right)\left(S^{-T}QS^{-1}\right).\end{aligned}
+$$
+
+Here $SPS^T$ is symmetric, since its transpose is
+
+$$
+\left(SPS^T\right)^T=SP^TS^T=SPS^T;
+$$
+similarly,
+
+$$
+S^{-T}QS^{-1}=\left(S^{-1}\right)^TQS^{-1}
+$$
+
+is also symmetric. Hence $A$ is a product of two symmetric matrices. $\blacksquare$
+
+### Problem 3
+
+(Problem 3.6-11) Let $A$ be a linear transformation on a real vector space $V$. Prove that there exists a basis of $V$ in which the matrix of $A$ has the block form
+
+$$
+\begin{pmatrix}B_1&B_2\\0&B_3\end{pmatrix}
+$$
+
+where $B_1$ is a $1$ or $2$ matrix.
+
+### Solution to Problem 3
+
+We induct on $\dim V=n$. When $n=1$, the conclusion is clear. Assume the conclusion holds in dimensions less than $n$, and consider the $n$-dimensional case.
+
+**Case 1: $A$ has a real eigenvalue $\lambda$** Take a corresponding real eigenvector $v_1$, and extend it to a basis $V$ of $v_1,v_2,\cdots,v_n$. Since the one-dimensional subspace spanned by $v_1$ is $A$-invariant, the matrix of $A$ in this basis has the form
+
+$$
+\begin{pmatrix}\lambda&*\\0&A'\end{pmatrix},
+$$
+
+where $\lambda$ is a $1$ block and $A'$ is an $n-1$ real matrix. By the induction hypothesis, $A'$ is similar to the required block upper-triangular form, and hence so is $A$.
+
+**Case 2: $A$ has no real eigenvalues** Then the characteristic polynomial of $A$ has no linear factors over $\mathbb R\left[x\right]$, so it factors as a product of irreducible quadratic polynomials with negative discriminant. Take one of them, $p\left(x\right)=x^2+bx+c$, with $b^2-4c<0$.
+
+By the structure theory of finitely generated torsion modules over the principal ideal domain $\mathbb R\left[x\right]$ (i.e. the primary decomposition of $V$ as an $\mathbb R\left[x\right]$-module), the primary subspace corresponding to $p\left(x\right)$ is nonzero. Take a vector $u$ in it such that $p\left(A\right)u=0$ and $u\ne0$. Since $p\left(x\right)$ has no real roots, $u$ and $Au$ must be linearly independent (otherwise $Au=au$ with $a\in\mathbb R$, and then $a$ would be a real root of $p$, a contradiction). Let $W=\mathrm{span}\left\{u,Au\right\}$. From $p\left(A\right)u=0$, i.e. $A^2u+bAu+cu=0$, we get
+
+$$
+\begin{aligned}A\left(Au\right)&=A^2u\\&=-cu-bAu\in W,\end{aligned}
+$$
+
+so $W$ is a two-dimensional $2$-invariant subspace. Take a basis of $A$ and extend it to a basis of $W$; then the matrix of $V$ in this basis has the form$A$where 
+
+$$
+\begin{pmatrix}B_1&B_2\\0&A'\end{pmatrix},
+$$
+
+ is a $B_1$ matrix (the restriction of $2$ to $A$) and $W$ is an $A'$ real matrix. By the induction hypothesis, $n-2$ can be put in the required block upper-triangular form, and hence so can $A'$.$A$ in which the matrix of 
+
+ $V$ has the required block upper-triangular form. $A$### Problem 4$\blacksquare$
+
+ matrices 
+
+ $n\times n$ over an algebraically closed field of characteristic zero are similar if and only if, for every $A,B$ and $a\in F$, the matrices $k\in\mathbb N$ and $\left(aI_n-A\right)^k$ have the same rank.$\left(aI_n-B\right)^k$ and 
+
+ 
+
+ $A$ are similar, then there exists an invertible matrix $B$ with $P$. Hence$B=P^{-1}AP$Similar matrices have the same rank, so
+
+$$
+\begin{aligned}\left(aI_n-B\right)^k&=\left(aI_n-P^{-1}AP\right)^k\\&=P^{-1}\left(aI_n-A\right)^kP.\end{aligned}
+$$
+
+**Sufficiency** Suppose that for every 
+
+$$
+\mathrm{rank}\left(aI_n-A\right)^k=\mathrm{rank}\left(aI_n-B\right)^k.
+$$
+
+ and $a\in F$, the corresponding powers of the two matrices have the same rank. By **Theorem 3.6.3** (Jordan Canonical Form), both $k\in\mathbb N$ and $A,B$ are similar to their Jordan canonical forms; it suffices to prove that their Jordan canonical forms are the same.
+
+For any $a\in F$, write
+
+$$
+\begin{aligned}\nu_k\left(A\right)&=\dim\ker\left(aI_n-A\right)^k\\&=n-\mathrm{rank}\left(aI_n-A\right)^k,\end{aligned}
+$$
+
+with the convention $\nu_0\left(A\right)=0$. By hypothesis, $\nu_k\left(A\right)=\nu_k\left(B\right)$ for all $k$. By **Basic Knowledge** (Nilpotent Kernel and Count of Jordan Blocks), the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, and similarly for $B$. Hence the sizes and number of Jordan blocks at $a$ agree completely for 
+ $F$ and $A,B$.$F$ is algebraically closed, all eigenvalues of $a$ lie in $A$, and the above conclusion holds for every eigenvalue $B$. Hence the Jordan canonical forms of $A$ and $B$ are identical, and therefore $\blacksquare$
