@@ -4,7 +4,7 @@
 
 **Definition 1.1.4** (Semigroup and Monoid)
 
-Let $S$ be a nonempty set on which a binary operation $*$ satisfying the associative law is defined; then $\left[S;*\right]$ is called a semigroup. If there exists an identity element $e$ in the semigroup, i.e. $a\in S$ for any $ea=ae=a$, then the semigroup is called a monoid; if the operation also satisfies the commutative law, it is called a commutative monoid.
+Let $S$ be a nonempty set on which a binary operation $*$ satisfying the associative law is defined; then $\left[S;*\right]$ is called a semigroup. If there exists an identity element $e$ in the semigroup, i.e. for any $a\in S$, $ea=ae=a$, then the semigroup is called a monoid; if the operation also satisfies the commutative law, it is called a commutative monoid.
 
 **Example 1.1.7** (Transformation Monoid)
 
@@ -28,7 +28,7 @@ Let $H$ be a nonempty subset of a group $G$. If $H$ itself forms a group under t
 
 **Theorem 1.2.2** (Subgroup Criterion)
 
-Let $H$ be a nonempty subset of a group $G$. Then $H< G$ if and only if $a,b\in H$ for any $ab^{-1}\in H$.
+Let $H$ be a nonempty subset of a group $G$. Then $H< G$ if and only if for any $a,b\in H$, $ab^{-1}\in H$.
 
 **Theorem 1.2.22** (Lagrange's Theorem)
 
@@ -107,7 +107,7 @@ then $f$ is called a group homomorphism from $G$ to $G'$. If the homomorphism $f
 
 **Definition 1.4.9** (Left Translation and Right Translation)
 
-For any $a\in G$, the transformations $G$ on $L_{a},R_{a}$ are defined by $L_{a}\left(g\right)=ag$, $R_{a}\left(g\right)=ga$, $\forall g\in G$. They are called the left translation and right translation determined by $a$, respectively.
+For any $a\in G$, the transformations $L_{a},R_{a}$ on $G$ are defined by $L_{a}\left(g\right)=ag$, $R_{a}\left(g\right)=ga$, $\forall g\in G$. They are called the left translation and right translation determined by $a$, respectively.
 
 **Definition 1.4.11** (Kernel and Image of a Homomorphism)
 
@@ -133,11 +133,11 @@ Every subgroup of a cyclic group $G=\left\langle a\right\rangle$ is of the form 
 
 **Theorem 1.5.8** (Existence and Uniqueness of Subgroups of Cyclic Groups)
 
-Let $G$ be a cyclic group of order $n$ and $k\mid n$. Then there exists a unique subgroup of order $G$ in $k$.
+Let $G$ be a cyclic group of order $n$ and $k\mid n$. Then there exists a unique subgroup of order $k$ of $G$.
 
 **Basic Knowledge** (Conjugate Elements and Conjugacy Classes)
 
-Two elements $G$ in $a,b$ are said to be conjugate if there exists $g\in G$ such that $b=gag^{-1}$. The set of all elements conjugate to $a$ is called the conjugacy class of $a$.
+Two elements $a,b$ in $G$ are said to be conjugate if there exists $g\in G$ such that $b=gag^{-1}$. The set of all elements conjugate to $a$ is called the conjugacy class of $a$.
 
 **Basic Knowledge** (Product of Subgroups)
 
@@ -165,7 +165,7 @@ $$
 \sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
-$n$ has exactly $\varphi\left(n\right)$ generators.
+A cyclic group of order $n$ has exactly $\varphi\left(n\right)$ generators.
 
 ## Permutation Groups and Solvability
 
@@ -177,315 +177,377 @@ $$
 \left\{i_{1},i_{2},\dots,i_{r}\right\}\subseteq\left\{1,2,\dots,n\right\}.
 $$
 
-If $\sigma\in S_{n}$ satisfies $\sigma\left(i_{1}\right)=i_{2}$, $\sigma\left(i_{2}\right)=i_{3}$, ..., $\sigma\left(i_{r}\right)=i_{1}$ and fixes the remaining letters, then $\sigma$ is called an $\sigma$-cycle, denoted $r$. In particular, a $\sigma=\left(i_{1}i_{2}\dots i_{r}\right)$-cycle is called a transposition.$2$ can be expressed as a product of pairwise disjoint cycles in 
+If $\sigma\in S_{n}$ satisfies $\sigma\left(i_{1}\right)=i_{2}$, $\sigma\left(i_{2}\right)=i_{3}$, ..., $\sigma\left(i_{r}\right)=i_{1}$ and fixes the remaining letters, then $\sigma$ is called an $r$-cycle, denoted $\sigma=\left(i_{1}i_{2}\dots i_{r}\right)$. In particular, a $2$-cycle is called a transposition.
 
- 
+**Theorem 1.6.4** (Cycle Decomposition)
 
-$S_{n}$. Up to the order of the factors, the expression is unique.$S_{n}$-cycle can be written as a product of 
+Every element of $S_{n}$ can be expressed as a product of pairwise disjoint cycles in $S_{n}$. Up to the order of the factors, the expression is unique.
 
- 
+**Lemma 1.6.7** (Decomposition of a Cycle into Transpositions)
 
- $r$ transpositions:$r-1$**Theorem 1.6.9** (Simplicity of the Alternating Group)
+Any $r$-cycle can be written as a product of $r-1$ transpositions:
 
 $$
 \left(i_{1}i_{2}\dots i_{r}\right)=\left(i_{1}i_{r}\right)\left(i_{1}i_{r-1}\right)\dots\left(i_{1}i_{3}\right)\left(i_{1}i_{2}\right).
 $$
 
-, 
+**Theorem 1.6.9** (Simplicity of the Alternating Group)
 
- $n\ge 5$ is a simple group.$A_{n}$ 
+When $n\ge 5$, $A_{n}$ is a simple group.
 
- 
+**Definition 1.7.9** (Subnormal Series and Composition Series)
 
- $G$is called a subnormal series if 
+A sequence of subgroups of a group $G$
 
 $$
 G=G_1\trianglerighteq G_2\trianglerighteq\cdots\trianglerighteq G_t\trianglerighteq G_{t+1}=\left\{e\right\}
 $$
 
-, and the $G_{i+1}\trianglelefteq G_i$ are called its factors. If all the factors $G_i/G_{i+1}$ are simple groups, the subnormal series is called a composition series of $G_i/G_{i+1}$, and the $G$ are called the composition factors of $G_i/G_{i+1}$.$G$ are called isomorphic if there is a bijection between the factor sets of the two series such that corresponding factors are isomorphic.
+is called a subnormal series if $G_{i+1}\trianglelefteq G_i$, and the quotients $G_i/G_{i+1}$ are called its factors. If all the factors $G_i/G_{i+1}$ are simple groups, the subnormal series is called a composition series of $G$, and the $G_i/G_{i+1}$ are called the composition factors of $G$.
+
+**Definition 1.7.12** (Isomorphic Series)
+
+Two subnormal series of a group $G$ are called isomorphic if there is a bijection between the factor sets of the two series such that corresponding factors are isomorphic.
 
 **Theorem 1.7.13** (Jordan–Hölder Theorem)
 
-If a group $G$ has a composition series, then any two composition series of 
+If a group $G$ has a composition series, then any two composition series of $G$ are isomorphic.
 
- 
+**Definition 1.8.1** (Commutator and Commutator Subgroup)
 
- $G$ are isomorphic.$G$. The element 
-
- 
-
- $g,h\in G$ is called the commutator of $g^{-1}h^{-1}gh$, denoted $g,h$. If $\left[g,h\right]$ are both subgroups of $H,K$, then$G$is called the commutator subgroup of 
+Let $g,h\in G$. The element $g^{-1}h^{-1}gh$ is called the commutator of $g,h$, denoted $\left[g,h\right]$. If $H,K$ are both subgroups of $G$, then
 
 $$
 \left[H,K\right]=\left\langle\left[h,k\right]\mid h\in H,k\in K\right\rangle
 $$
 
-. In particular, $H,K$ is called the commutator subgroup of $\left[G,G\right]$.$G$, the derived series is defined inductively by 
+is called the commutator subgroup of $H,K$. In particular, $\left[G,G\right]$ is called the commutator subgroup of $G$.
 
- 
+**Definition 1.8.7** (Solvable Groups and Nilpotent Groups)
 
- $G$, $G^{\left(0\right)}=G$. If there exists $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$ such that $t$, then $G^{\left(t\right)}=\left\{e\right\}$ is called a solvable group. The lower central series is defined inductively by $G$, $G^{1}=G$; if there exists $G^{k+1}=\left[G,G^{k}\right]$ such that $t$, then $G^{t}=\left\{e\right\}$ is called a nilpotent group.$G$ and both 
+In a group $G$, the derived series is defined inductively by $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. If there exists $t$ such that $G^{\left(t\right)}=\left\{e\right\}$, then $G$ is called a solvable group. The lower central series is defined inductively by $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$; if there exists $t$ such that $G^{t}=\left\{e\right\}$, then $G$ is called a nilpotent group.
 
- 
+**Lemma 1.8.8** (Heredity of Solvable Groups)
 
- $N\trianglelefteq G$ and $N$ are solvable, then $G/N$ is solvable.$G$ of all even permutations on 
+Subgroups and quotient groups of a solvable group are solvable; conversely, if $N\trianglelefteq G$ and both $N$ and $G/N$ are solvable, then $G$ is solvable.
 
- 
+**Basic Knowledge** (Alternating Group)
 
- $n$ letters is a normal subgroup of $A_{n}$, called the alternating group on $S_{n}$ letters, and $n$.$\left|A_{n}\right|=\left|S_{n}\right|/2=n!/2$ be a solvable subgroup of 
+When a permutation can be expressed as a product of an odd (even) number of transpositions, it is called an odd permutation (even permutation). The set $A_{n}$ of all even permutations on $n$ letters is a normal subgroup of $S_{n}$, called the alternating group on $n$ letters, and $\left|A_{n}\right|=\left|S_{n}\right|/2=n!/2$.
 
- 
+**Basic Knowledge** (Key Lemma of Lie's Theorem)
 
- $G$, where $\mathrm{GL}\left(V\right)$ is a finite-dimensional vector space over the complex field. Then $V$ has a common eigenvector on $G$, i.e. there exists a one-dimensional subspace of $V$ invariant under the action of $V$. Repeated application of this conclusion shows that $G$ can be simultaneously upper-triangularized, i.e. $G$ is conjugate to a subgroup of the group $G$ of invertible upper-triangular matrices.$B$ be a group and 
+Let $G$ be a solvable subgroup of $\mathrm{GL}\left(V\right)$, where $V$ is a finite-dimensional vector space over the complex field. Then $G$ has a common eigenvector on $V$, i.e. there exists a one-dimensional subspace of $V$ invariant under the action of $G$. Repeated application of this conclusion shows that $G$ can be simultaneously upper-triangularized, i.e. $G$ is conjugate to a subgroup of the group $B$ of invertible upper-triangular matrices.
 
- 
+## Group Actions and Sylow Theorems
 
- 
+**Definition 1.9.1** (Group Action)
 
- $G$ a nonempty set. If a map $X$ satisfies $f:G\times X\to X$ and$f\left(e,x\right)=x$then 
+Let $G$ be a group and $X$ a nonempty set. If a map $f:G\times X\to X$ satisfies $f\left(e,x\right)=x$ and
 
 $$
 f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right),
 $$
 
- determines an action of $f$ on $G$, written $X$.$f\left(g,x\right)=gx$ there exists 
+then $f$ determines an action of $G$ on $X$, written $f\left(g,x\right)=gx$.
 
- 
+**Definition 1.9.7** (Transitive Action and Effective Action)
 
- $x,y\in X$ such that $g\in G$, the action is called transitive, and $gx=y$ is called a homogeneous space of $X$. If $G$ for all $gx=x$ implies $x\in X$, the action is called effective.$g=e$ act on 
+If for any $x,y\in X$ there exists $g\in G$ such that $gx=y$, the action is called transitive, and $X$ is called a homogeneous space of $G$. If $gx=x$ for all $x\in X$ implies $g=e$, the action is called effective.
 
- 
+**Definition 1.9.9** (Orbit and Isotropy Subgroup)
 
- $G$ and $X$. The set $x\in X$ is called the orbit of $Ox=\left\{gx\mid g\in G\right\}$. The set $x$ is called the isotropy subgroup of $F_x=\left\{g\in G\mid gx=x\right\}$.$x$. Then 
+Let $G$ act on $X$ and $x\in X$. The set $Ox=\left\{gx\mid g\in G\right\}$ is called the orbit of $x$. The set $F_x=\left\{g\in G\mid gx=x\right\}$ is called the isotropy subgroup of $x$.
 
- 
+**Lemma 1.9.11** (Conjugacy of Isotropy Subgroups)
 
- $y=gx\in Ox$.$F_y=gF_xg^{-1}$ act on 
+Let $y=gx\in Ox$. Then $F_y=gF_xg^{-1}$.
 
- 
+**Corollary 1.9.15** (Orbit-Isotropy Theorem)
 
- $G$ and $X$. Then $x\in X$, and hence $\left|Ox\right|=\left[G:F_x\right]$ divides $\left|Ox\right|$.$\left|G\right|$ be a divisor of 
+Let a group $G$ act on $X$ and $x\in X$. Then $\left|Ox\right|=\left[G:F_x\right]$, and hence $\left|Ox\right|$ divides $\left|G\right|$.
 
- 
+**Theorem 1.10.1** (Cauchy's Theorem)
 
- $p$. Then $\left|G\right|$ contains an element of order $G$.$p$, where 
+Let a prime $p$ be a divisor of $\left|G\right|$. Then $G$ contains an element of order $p$.
 
- 
+**Theorem 1.10.5** (First Sylow Theorem)
 
- $\left|G\right|=p^{l}m$ is prime, $p$, and $l\ge1$. Then for any $\left(p,m\right)=1$, $k\le l$ contains a subgroup of order $G$. In particular, $p^{k}$ contains a Sylow $G$-subgroup (a subgroup of order $p$).$p^{l}$ be a Sylow 
+Let $\left|G\right|=p^{l}m$, where $p$ is prime, $l\ge1$, and $\left(p,m\right)=1$. Then for any $k\le l$, $G$ contains a subgroup of order $p^{k}$. In particular, $G$ contains a Sylow $p$-subgroup (a subgroup of order $p^{l}$).
 
- 
+**Theorem 1.10.8** (Second Sylow Theorem)
 
- $P$-subgroup of $G$ and $p$ a subgroup of $H$ of order $G$ with $p^{k}$. Then there exists $k\le l$ such that $g\in G$. In particular, all Sylow $H\subseteq gPg^{-1}$-subgroups of $G$ are conjugate.$p$-subgroups of 
+Let $P$ be a Sylow $p$-subgroup of $G$ and $H$ a subgroup of $G$ of order $p^{k}$ with $k\le l$. Then there exists $g\in G$ such that $H\subseteq gPg^{-1}$. In particular, all Sylow $p$-subgroups of $G$ are conjugate.
 
- 
+**Theorem 1.10.10** (Third Sylow Theorem)
 
- $G$ be $p$. Then $n_p$ and $n_p\mid m$. Moreover, a Sylow $n_p\equiv1\pmod p$-subgroup is normal if and only if $p$.$n_p=1$ be a nonempty set on which two binary operations 
+Let the number of Sylow $p$-subgroups of $G$ be $n_p$. Then $n_p\mid m$ and $n_p\equiv1\pmod p$. Moreover, a Sylow $p$-subgroup is normal if and only if $n_p=1$.
 
- 
+## Rings and Ideals
 
- 
+**Definition 2.1.1** (Ring)
 
- $R$ and $R$ are defined, satisfying:$+$ is an abelian group;$\cdot$ is a semigroup (multiplication is associative);
+Let $R$ be a nonempty set on which two binary operations $+$ and $\cdot$ are defined, satisfying:
 
-(3) multiplication is left and right distributive over addition: $\left[R;+\right]$, 
+(1) $\left[R;+\right]$ is an abelian group;
 
- $\left[R;\cdot\right]$.
+(2) $\left[R;\cdot\right]$ is a semigroup (multiplication is associative);
 
-Then $a\left(b+c\right)=ab+ac$ is called a ring.$\left(a+b\right)c=ac+bc$ is not the zero ring and has no zero divisors, then 
+(3) multiplication is left and right distributive over addition: $a\left(b+c\right)=ab+ac$, $\left(a+b\right)c=ac+bc$.
 
- $R$ is called a ring without zero divisors.
+Then $R$ is called a ring.
+
+**Definition 2.1.8** (Ring Without Zero Divisors)
+
+If a ring $R$ is not the zero ring and has no zero divisors, then $R$ is called a ring without zero divisors.
 
 **Proposition 2.2.11** (Ideal Criterion)
 
-Let $R$ be a ring and $R$ a nonempty subset of 
+Let $R$ be a ring and $I$ a nonempty subset of $R$. Then $I$ is an ideal of $R$ if and only if for any $a,b\in I$, $a-b\in I$, and for any $a\in I$ and $\alpha,\gamma\in R$, $\alpha a,a\gamma\in I$.
 
- 
+**Theorem 2.2.16** (Quotient Ring)
 
- $R$. Then $I$ is an ideal of $R$ if and only if $I$ for any $R$, and $a,b\in I$ for any $a-b\in I$ and $a\in I$.$\alpha,\gamma\in R$ be a ring and $\alpha a,a\gamma\in I$ an ideal of 
+Let $R$ be a ring and $I$ an ideal of $R$. Then the quotient additive group $R/I$ forms a ring under the multiplication $\left(a+I\right)\left(b+I\right)=ab+I$, called the quotient ring of $R$ by $I$.
 
- 
+**Definition 2.2.20** (Integral Domain, Division Ring, and Field)
 
- $R$. Then the quotient additive group $I$ forms a ring under the multiplication $R$, called the quotient ring of $R/I$ by $\left(a+I\right)\left(b+I\right)=ab+I$.$R$ satisfies that $I$ forms a group under multiplication (
+A commutative ring with identity and no zero divisors is called an integral domain; if a ring with identity $R$ satisfies that $R^*$ forms a group under multiplication ($R^*=R\setminus\left\{0\right\}$), then $R$ is called a division ring; a commutative division ring is called a field.
 
- 
+**Definition 2.4.1** (Ring Homomorphism and Isomorphism)
 
- $R$), then $R^*$ is called a division ring; a commutative division ring is called a field.$R^*=R\setminus\left\{0\right\}$ be two rings and $R$ a map from 
+Let $R_1,R_2$ be two rings and $f$ a map from $R_1$ to $R_2$. If for any $a,b\in R_1$ we have $f\left(a+b\right)=f\left(a\right)+f\left(b\right)$ and $f\left(ab\right)=f\left(a\right)f\left(b\right)$, then $f$ is called a homomorphism; an injective homomorphism is called a monomorphism, a surjective homomorphism an epimorphism, and a bijective homomorphism an isomorphism.
 
- 
+**Basic Knowledge** (Properties of Invertible Elements in a Ring with Identity)
 
- $R_1,R_2$ to $f$. If for any $R_1$ we have $R_2$ and $a,b\in R_1$, then $f\left(a+b\right)=f\left(a\right)+f\left(b\right)$ is called a homomorphism; an injective homomorphism is called a monomorphism, a surjective homomorphism an epimorphism, and a bijective homomorphism an isomorphism.$f\left(ab\right)=f\left(a\right)f\left(b\right)$ be a ring with identity and $f$ its identity element. If 
-
- 
-
- $R$ are invertible, then $e$ is invertible and $u,v\in R$. If $uv$, the finite geometric series gives$\left(uv\right)^{-1}=v^{-1}u^{-1}$**Basic Knowledge** (Quaternions and Conjugation)$x^{m}=0$, 
+Let $R$ be a ring with identity and $e$ its identity element. If $u,v\in R$ are invertible, then $uv$ is invertible and $\left(uv\right)^{-1}=v^{-1}u^{-1}$. If $x^{m}=0$, the finite geometric series gives
 
 $$
 \left(e+x\right)^{-1}=e-x+x^{2}-\cdots+\left(-1\right)^{m-1}x^{m-1}.
 $$
 
-, with conjugate 
+**Basic Knowledge** (Quaternions and Conjugation)
 
- $\alpha=a+bi+cj+dk$ and norm$a,b,c,d\in\mathbb R$Conjugation satisfies $\overline\alpha=a-bi-cj-dk$, 
+An element of the quaternion division algebra is written $\alpha=a+bi+cj+dk$, $a,b,c,d\in\mathbb R$, with conjugate $\overline\alpha=a-bi-cj-dk$ and norm
 
 $$
 N\left(\alpha\right)=\alpha\overline\alpha=a^2+b^2+c^2+d^2\in\mathbb R.
 $$
 
-, $\overline{\alpha+\beta}=\overline\alpha+\overline\beta$, and the conjugate of a real number is itself.$\overline{\alpha\beta}=\overline\beta\overline\alpha$ be an integral domain and $\overline{\overline\alpha}=\alpha$. If there exists a unit 
+Conjugation satisfies $\overline{\alpha+\beta}=\overline\alpha+\overline\beta$, $\overline{\alpha\beta}=\overline\beta\overline\alpha$, $\overline{\overline\alpha}=\alpha$, and the conjugate of a real number is itself.
 
- 
+## Unique Factorization Domains and Euclidean Rings
 
- 
+**Definition 2.5.2** (Associates)
 
- $R$ in $a,b\in R$ such that $R$, then $u$ and $a=ub$ are called associates, denoted $a$.$b$ be an integral domain and $a\sim b$. If 
+Let $R$ be an integral domain and $a,b\in R$. If there exists a unit $u\in R$ such that $a=ub$, then $a$ and $b$ are called associates, denoted $a\sim b$.
 
- 
+**Definition 2.5.6** (Irreducible Element)
 
- $R$ has no nontrivial factors, then $\alpha\in R^*\setminus U$ is called an irreducible element; otherwise it is called a reducible element.$\alpha$ be an integral domain and $\alpha$. If $\alpha$ divides all the 
+Let $R$ be an integral domain and $\alpha\in R^*\setminus U$. If $\alpha$ has no nontrivial factors, then $\alpha$ is called an irreducible element; otherwise it is called a reducible element.
 
- 
+**Definition 2.5.14** (Common Divisor and Greatest Common Divisor)
 
- $R$, then $a_1,a_2,\cdots,a_n\in R$ is called a common divisor of them; if a common divisor $c\in R$ is divisible by any common divisor, then $a_i$ is called a greatest common divisor.$c$ is a unique factorization domain if and only if $d$ satisfies the divisor chain condition and the prime condition, i.e. in a unique factorization domain every irreducible element is prime: $d$ implies 
+Let $R$ be an integral domain and $a_1,a_2,\cdots,a_n\in R$. If $c\in R$ divides all the $a_i$, then $c$ is called a common divisor of them; if a common divisor $d$ is divisible by any common divisor, then $d$ is called a greatest common divisor.
 
- 
+**Theorem 2.5.15** (Equivalent Conditions for a Unique Factorization Domain)
 
- $R$ or $R$.$p\mid ab$ be an ideal of a ring $p\mid a$ with $p\mid b$. If 
+An integral domain $R$ is a unique factorization domain if and only if $R$ satisfies the divisor chain condition and the prime condition, i.e. in a unique factorization domain every irreducible element is prime: $p\mid ab$ implies $p\mid a$ or $p\mid b$.
 
- 
+**Definition 2.6.1** (Prime Ideal)
 
- $I$ implies $R$ or $I\ne R$, then $ab\in I$ is called a prime ideal of $a\in I$.$b\in I$ be a principal ideal domain, $I$, and $R$ a greatest common divisor of 
+Let $I$ be an ideal of a ring $R$ with $I\ne R$. If $ab\in I$ implies $a\in I$ or $b\in I$, then $I$ is called a prime ideal of $R$.
 
- 
+**Theorem 2.7.6** (Principal Ideal Domains Are Unique Factorization Domains)
 
- 
+A principal ideal domain is necessarily a unique factorization domain; in particular, a Euclidean ring is a principal ideal domain, and hence also a unique factorization domain.
 
- 
+**Theorem 2.7.7** (Bézout's Identity)
 
- $R$. Then there exist $a,b\in R$ such that $d$.$a,b$ be an integral domain. If there exists a map $u,v\in R$ from $d=ua+vb$ to the set of nonnegative integers such that for any 
+Let $R$ be a principal ideal domain, $a,b\in R$, and $d$ a greatest common divisor of $a,b$. Then there exist $u,v\in R$ such that $d=ua+vb$.
 
- 
+**Definition 2.7.9** (Euclidean Ring)
 
- $R$ with $R^*$, there exist $\delta$ with $a,b\in R$, where $b\ne0$ or $q,r\in R$, then $a=qb+r$ is called a Euclidean ring.$r=0$ is called a unique factorization domain if every nonzero nonunit element of $\delta\left(r\right)< \delta\left(b\right)$ can be factored into a finite product of irreducible elements, uniquely up to associates.$\left(R,\delta\right)$ be a square-free integer. When 
+Let $R$ be an integral domain. If there exists a map $\delta$ from $R^*$ to the set of nonnegative integers such that for any $a,b\in R$ with $b\ne0$, there exist $q,r\in R$ with $a=qb+r$, where $r=0$ or $\delta\left(r\right)< \delta\left(b\right)$, then $\left(R,\delta\right)$ is called a Euclidean ring.
 
- 
+**Basic Knowledge** (Unique Factorization Domain)
 
- $R$,$R$For 
+An integral domain $R$ is called a unique factorization domain if every nonzero nonunit element of $R$ can be factored into a finite product of irreducible elements, uniquely up to associates.
 
- 
+**Basic Knowledge** (Norm of Algebraic Integer Rings)
 
- $d> 0$, the norm is defined by$d\equiv3\pmod4$which is a multiplicative function, and 
+Let $d> 0$ be a square-free integer. When $d\equiv3\pmod4$,
 
 $$
 \omega=\frac{1+\sqrt{-d}}{2},\omega^2-\omega+\frac{1+d}{4}=0.
 $$
 
- if and only if $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$.
+For $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, the norm is defined by
 
 $$
 N\left(\alpha\right)=\alpha\overline\alpha=a^2+ab+b^2\omega\overline\omega,
 $$
 
- be a commutative ring with identity and $N\left(\alpha\right)=0$, where the leading coefficient of $\alpha=0$ is a unit in 
+which is a multiplicative function, and $N\left(\alpha\right)=0$ if and only if $\alpha=0$.
 
- 
+## Polynomials and Power Series
 
- 
+**Basic Knowledge** (Polynomial Division with Remainder)
 
- $R$. Then there exist unique $f\left(x\right),g\left(x\right)\in R\left[x\right]$ such that $g\left(x\right)$, where $R$ or $q\left(x\right),r\left(x\right)\in R\left[x\right]$. In particular, when the divisor is a monic linear polynomial $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, the remainder is a constant.$r=0$ over a field $\deg r< \deg g$ consists of all $x-a$, and its units are precisely the power series with nonzero constant term.
+Let $R$ be a commutative ring with identity and $f\left(x\right),g\left(x\right)\in R\left[x\right]$, where the leading coefficient of $g\left(x\right)$ is a unit in $R$. Then there exist unique $q\left(x\right),r\left(x\right)\in R\left[x\right]$ such that $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, where $r=0$ or $\deg r< \deg g$. In particular, when the divisor is a monic linear polynomial $x-a$, the remainder is a constant.
+
+**Basic Knowledge** (Formal Power Series Ring)
+
+The formal power series ring $k\left[\!\left[t\right]\!\right]$ over a field $k$ consists of all $\sum_{n=0}^{\infty}a_nt^n$, and its units are precisely the power series with nonzero constant term.
 
 **Basic Knowledge** (Eisenstein's Criterion)
 
-Let$k$If there exists a prime $k\left[\!\left[t\right]\!\right]$ such that $\sum_{n=0}^{\infty}a_nt^n$, 
-
- 
-
- 
+Let
 
 $$
 f\left(x\right)=a_nx^n+\cdots+a_0\in\mathbb Z\left[x\right],
 $$
 
- for $p$, but $p\nmid a_n$, then $p\mid a_i$ is irreducible over $i=0,1,\cdots,n-1$.$p^2\nmid a_0$ be submodules of an $f\left(x\right)$-module $\mathbb Q\left[x\right]$. Then 
+If there exists a prime $p$ such that $p\nmid a_n$, $p\mid a_i$ for $i=0,1,\cdots,n-1$, but $p^2\nmid a_0$, then $f\left(x\right)$ is irreducible over $\mathbb Q\left[x\right]$.
 
- 
+## Modules and Module Homomorphisms
 
- 
+**Theorem 3.1.10** (Direct Sum Criterion)
 
- $M_1,\cdots,M_s$ if and only if$R$;$M$,$M=M_1\oplus\cdots\oplus M_s$**Proposition 3.1.16** (Kernel and Image of a Homomorphism)
+Let $M_1,\cdots,M_s$ be submodules of an $R$-module $M$. Then $M=M_1\oplus\cdots\oplus M_s$ if and only if
 
-The kernel $M=M_1+\cdots+M_s$ of a module homomorphism 
+(1) $M=M_1+\cdots+M_s$;
 
- $2\le j\le s$ is a submodule of 
+(2) for any $2\le j\le s$,
 
 $$
 M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}.
 $$
 
-, and the image 
+**Proposition 3.1.16** (Kernel and Image of a Homomorphism)
 
- $\phi:M_1\to M_2$ is a submodule of $\ker\phi$.$M_1$ be a surjective homomorphism from a module $\operatorname{Im}\phi$ to $M_2$. Then the quotient module 
+The kernel $\ker\phi$ of a module homomorphism $\phi:M_1\to M_2$ is a submodule of $M_1$, and the image $\operatorname{Im}\phi$ is a submodule of $M_2$.
 
- 
+**Theorem 3.1.17** (Fundamental Homomorphism Theorem for Modules)
 
- $\phi$ is isomorphic to $M_1$; moreover, if $M_2$ is a submodule of $M_1/\ker\phi$ containing $M_2$, then $N_1$.$M_1$ be a module over a ring with identity $\ker\phi$, and let $M_1/N_1\cong M_2/\phi\left(N_1\right)$ be elements of 
+Let $\phi$ be a surjective homomorphism from a module $M_1$ to $M_2$. Then the quotient module $M_1/\ker\phi$ is isomorphic to $M_2$; moreover, if $N_1$ is a submodule of $M_1$ containing $\ker\phi$, then $M_1/N_1\cong M_2/\phi\left(N_1\right)$.
 
- 
+**Theorem 3.3.6** (Characterization of a Basis)
 
- $M$. Then $R$ is a free module and $u_1,\cdots,u_m$ form a basis if and only if$M$ generate $M$;$u_1,\cdots,u_m$ are linearly independent.
+Let $M$ be a module over a ring with identity $R$, and let $u_1,\cdots,u_m$ be elements of $M$. Then $M$ is a free module and $u_1,\cdots,u_m$ form a basis if and only if
 
-**Corollary 3.3.10** (Uniqueness of the Rank of a Free Module)$u_1,\cdots,u_m$ be a commutative ring with identity. Then $M$ if and only if 
+(1) $u_1,\cdots,u_m$ generate $M$;
 
- $u_1,\cdots,u_m$, where 
+(2) $u_1,\cdots,u_m$ are linearly independent.
 
- 
+**Corollary 3.3.10** (Uniqueness of the Rank of a Free Module)
 
- $R$ denotes the external direct sum of $R^m\cong R^n$ copies of $m=n$.$R^m$ over a commutative ring with identity $m$ is invertible if and only if its determinant $R$ is a unit in 
- $R$.$A$ over a principal ideal domain $\det A$ has a decomposition $R$, where
- $D$and $M$. The $M=Dy_1\oplus\cdots\oplus Dy_s$ corresponding to the nonzero annihilators (
+Let $R$ be a commutative ring with identity. Then $R^m\cong R^n$ if and only if $m=n$, where $R^m$ denotes the external direct sum of $m$ copies of $R$.
+
+**Basic Knowledge** (Determinant)
+
+A square matrix $A$ over a commutative ring with identity $R$ is invertible if and only if its determinant $\det A$ is a unit in $R$.
+
+## Finitely Generated Modules Over Principal Ideal Domains
+
+**Theorem 3.4.5** (Structure Theorem)
+
+Any finitely generated module $M$ over a principal ideal domain $D$ has a decomposition $M=Dy_1\oplus\cdots\oplus Dy_s$, where
+
 $$
 \operatorname{ann}\left(y_1\right)\supset\operatorname{ann}\left(y_2\right)\supset\cdots\supset\operatorname{ann}\left(y_s\right),
 $$
-) are called invariant factors; their decompositions into powers of irreducible elements are called elementary divisors.$y_j\ne0$-Primary Decomposition)$d_i$ be a finitely generated torsion module over a principal ideal domain $\operatorname{ann}\left(y_i\right)=\left(d_i\right)$. Then there exist finitely many pairwise non-associate irreducible elements 
- $p$ such that 
- $M$, where$D$is the $p_1,\cdots,p_m$-primary component. In particular, if $M=M_{p_1}\oplus\cdots\oplus M_{p_m}$ and 
+
+and $y_j\ne0$. The $d_i$ corresponding to nonzero annihilators ($\operatorname{ann}\left(y_i\right)=\left(d_i\right)$) are called invariant factors; their decompositions into powers of irreducible elements are called elementary divisors.
+
+**Theorem 3.4.9** ($p$-Primary Decomposition)
+
+Let $M$ be a finitely generated torsion module over a principal ideal domain $D$. Then there exist finitely many pairwise non-associate irreducible elements $p_1,\cdots,p_m$ such that $M=M_{p_1}\oplus\cdots\oplus M_{p_m}$, where
+
 $$
 M_p=\left\{x\in M\mid \exists e,p^ex=0\right\}
 $$
- are coprime, then $p$, $\operatorname{ann}\left(y\right)=\left(ab\right)$, $a,b$.$Dy=Dy_1\oplus Dy_2$ be finitely generated modules over a principal ideal domain $\operatorname{ann}\left(y_1\right)=\left(a\right)$. Then $\operatorname{ann}\left(y_2\right)=\left(b\right)$ if and only if they have the same rank and invariant factors, which holds if and only if they have the same rank and elementary divisors.
+
+is the $p$-primary component. In particular, if $\operatorname{ann}\left(y\right)=\left(ab\right)$ and $a,b$ are coprime, then $Dy=Dy_1\oplus Dy_2$, $\operatorname{ann}\left(y_1\right)=\left(a\right)$, $\operatorname{ann}\left(y_2\right)=\left(b\right)$.
+
+**Corollary 3.4.12** (Isomorphism Criterion)
+
+Let $M_1,M_2$ be finitely generated modules over a principal ideal domain $D$. Then $M_1\cong M_2$ if and only if they have the same rank and invariant factors, which holds if and only if they have the same rank and elementary divisors.
+
 **Theorem 3.5.2** (Number of Isomorphism Classes of Finite Abelian Groups)
-Let a natural number $M_1,M_2$ have the prime factorization $D$, where $M_1\cong M_2$ are distinct primes and 
- $n$. Then the number of abelian groups of order $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$ up to isomorphism is$p_1,p_2,\cdots,p_s$where $m_i> 0$ denotes the number of distinct partitions of the natural number $n$.
+
+Let a natural number $n$ have the prime factorization $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, where $p_1,p_2,\cdots,p_s$ are distinct primes and $m_i> 0$. Then the number of abelian groups of order $n$ up to isomorphism is
+
 $$
 \prod_{i=1}^s p\left(m_i\right),
 $$
- be an algebraically closed field of characteristic zero, $p\left(m\right)$ an $m$-dimensional vector space over 
- $F$, and $V$ a linear transformation on $F$. Then there exists a basis of $n$ such that the matrix of $A$ under this basis is a block-diagonal matrix $V$, where each $V$ is a Jordan block. Two $A$ matrices over $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$ are similar if and only if they have the same Jordan canonical form.$J_i$ be a direct product of finite abelian groups and $F$. Then$n\times n$In particular, 
- $G=H_1\times H_2\times\cdots\times H_s$ if and only if $g=\left(h_1,h_2,\cdots,h_s\right)$ for every 
+
+where $p\left(m\right)$ denotes the number of distinct partitions of the natural number $m$.
+
+**Theorem 3.6.3** (Jordan Canonical Form)
+
+Let $F$ be an algebraically closed field of characteristic zero, $V$ an $n$-dimensional vector space over $F$, and $A$ a linear transformation on $V$. Then there exists a basis of $V$ such that the matrix of $A$ under this basis is a block-diagonal matrix $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, where each $J_i$ is a Jordan block. Two $n\times n$ matrices over $F$ are similar if and only if they have the same Jordan canonical form.
+
+**Basic Knowledge** (Order of an Element in a Direct Product)
+
+Let $G=H_1\times H_2\times\cdots\times H_s$ be a direct product of finite abelian groups and $g=\left(h_1,h_2,\cdots,h_s\right)$. Then
+
 $$
 o\left(g\right)=\mathrm{lcm}\left(o\left(h_1\right),o\left(h_2\right),\cdots,o\left(h_s\right)\right).
 $$
-.$o\left(g\right)\mid q$ has finite order if and only if it is $o\left(h_i\right)\mid q$ or $i$; i.e. the unique finite subgroup of 
- $\mathbb Q^*$ is $1$. Indeed, if $-1$ (in lowest terms) satisfies $\mathbb Q^*$, then $\left\{\pm1\right\}$, so $r=p/q\in\mathbb Q^*$, i.e. $r^n=1$.$p^n=q^n$ be the $p=\pm q$ reversal matrix, i.e. $r=\pm1$ and all other entries are 
- $P$. Then $n$ is symmetric, $P_{i,n+1-i}=1$, and $0$. If $P$ is the $P^2=I_n$ nilpotent shift matrix (i.e. $P^{-1}=P$ and all other entries are $N$), then $n$, and hence $N_{i,i+1}=1$ is symmetric.$0$ be an $PNP=N^T$ matrix and $PN$ an eigenvalue of 
- $A$. Write$n$with the convention $a$. Then the number of Jordan blocks of $A$ with eigenvalue 
+
+In particular, $o\left(g\right)\mid q$ if and only if $o\left(h_i\right)\mid q$ for every $i$.
+
+**Basic Knowledge** (Finite Subgroups of the Multiplicative Group of Rationals)
+
+An element of the multiplicative group $\mathbb Q^*$ has finite order if and only if it is $1$ or $-1$; i.e. the unique finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$. Indeed, if $r=p/q\in\mathbb Q^*$ (in lowest terms) satisfies $r^n=1$, then $p^n=q^n$, so $p=\pm q$, i.e. $r=\pm1$.
+
+**Basic Knowledge** (Reversal Transpose Matrix)
+
+Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries are $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n\times n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries are $0$), then $PNP=N^T$, and hence $PN$ is symmetric.
+
+**Basic Knowledge** (Nilpotent Kernel and Counting Jordan Blocks)
+
+Let $A$ be an $n\times n$ matrix and $a$ an eigenvalue of $A$. Write
+
 $$
 \begin{aligned}&\;\;\nu_k\\
 &=\dim\ker\left(aI_n-A\right)^k\\
 &=n-\mathrm{rank}\left(aI_n-A\right)^k,
 \end{aligned}
 $$
- and size at least $\nu_0=0$ is $A$. Thus the sequence $a$ completely determines the sizes and number of Jordan blocks at $s$.$\nu_s-\nu_{s-1}$ is necessarily injective. In particular, a field automorphism preserves the operations and $\left\{\nu_k\right\}_{k\geqslant0}$ in the field, and hence fixes every element of the prime field ($a$ or 
- $\varphi:F\to E$).$1$ be an extension of $\mathbb Q$. The dimension of $\mathbb F_p$ as an 
- $E$-vector space is called the degree of $F$ over $E$, denoted $F$. If $E$, $F$ is called a finite extension of $\left[E:F\right]$; otherwise $\left[E:F\right]< \infty$ is called an infinite extension of $E$.$F$ and $E$ are finite extensions, then $F$ is also a finite extension, and
- $K/F$**Lemma 4.2.1** (Finite Extensions Are Necessarily Algebraic)$E/K$ be a finite extension. Then every element of $E/F$ is algebraic over 
+
+with the convention $\nu_0=0$. Then the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s-\nu_{s-1}$. Thus the sequence $\left\{\nu_k\right\}_{k\geqslant0}$ completely determines the sizes and number of Jordan blocks at $a$.
+
+## Field Theory
+
+**Lemma 4.1.9** (Field Homomorphisms Are Injective)
+
+A field homomorphism $\varphi:F\to E$ is necessarily injective. In particular, a field automorphism preserves the operations and $1$ in the field, and hence fixes every element of the prime field ($\mathbb Q$ or $\mathbb F_p$).
+
+**Definition 4.1.15** (Degree of an Extension)
+
+Let $E$ be an extension of $F$. The dimension of $E$ as an $F$-vector space is called the degree of $E$ over $F$, denoted $\left[E:F\right]$. If $\left[E:F\right]< \infty$, $E$ is called a finite extension of $F$; otherwise $E$ is called an infinite extension of $F$.
+
+**Theorem 4.1.16** (Telescoping Rule for Extension Degree)
+
+If $K/F$ and $E/K$ are both finite extensions, then $E/F$ is also a finite extension, and
+
 $$
 \left[E:F\right]=\left[E:K\right]\left[K:F\right].
 $$
-. In other words, if 
- $E/F$ contains a transcendental element over $E$, then $F$ must be an infinite extension.$E$ of a field $F$ is necessarily isomorphic to $E/F$. Let 
- $F$. Then the dimension of $F\left(\alpha\right)$ as an $F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right)$-vector space is $\deg\left(\alpha,F\right)=n$, and $F\left(\alpha\right)$ form an $F$-basis.$n$ be an integral domain and $1,\alpha,\alpha^2,\cdots,\alpha^{n-1}$ its field of fractions. Given any automorphism $F$ of 
- $R$, define a map $E$. Then $R$ is well defined and is an automorphism of $\sigma$.$\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$)$\overline\sigma$ be a prime $E$. Then for any 
- $p$, 
- $F$, and hence $p$. Therefore, for any $a,b\in F$, if $\left(a+b\right)^p=a^p+b^p$ is a root of $\left(x-a\right)^p=x^p-a^p$ in some splitting field (i.e. $c\in F$), then $\alpha$; that is, $x^p-c$ has only one root, of multiplicity $\alpha^p=c$, in its splitting field.$x^p-c=\left(x-\alpha\right)^p$, i.e. $x^p-c$ has only one root of multiplicity $p$ in its splitting field.
+
+**Lemma 4.2.1** (Finite Extensions Are Necessarily Algebraic)
+
+Let $E/F$ be a finite extension. Then every element of $E$ is algebraic over $F$. In other words, if $E$ contains a transcendental element over $F$, then $E/F$ must be an infinite extension.
+
+**Theorem 4.2.13** (Structure of Simple Algebraic Extensions)
+
+A simple algebraic extension $F\left(\alpha\right)$ of a field $F$ is necessarily isomorphic to $F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right)$. Let $\deg\left(\alpha,F\right)=n$. Then $F\left(\alpha\right)$ has dimension $n$ as an $F$-vector space, and $1,\alpha,\alpha^2,\cdots,\alpha^{n-1}$ form an $F$-basis.
+
+**Basic Knowledge** (Universal Property of the Field of Fractions)
+
+Let $R$ be an integral domain and $E$ its field of fractions. Given any automorphism $\sigma$ of $R$, define a map $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$. Then $\overline\sigma$ is well defined and is an automorphism of $E$.
+
+**Basic Knowledge** (Frobenius Map in Characteristic $p$)
+
+Let a field $F$ have characteristic a prime $p$. Then for any $a,b\in F$, $\left(a+b\right)^p=a^p+b^p$, and hence $\left(x-a\right)^p=x^p-a^p$. Therefore for any $c\in F$, if $\alpha$ is a root of $x^p-c$ in some splitting field (i.e. $\alpha^p=c$), then $x^p-c=\left(x-\alpha\right)^p$; that is, $x^p-c$ has only one root, of multiplicity $p$, in its splitting field.

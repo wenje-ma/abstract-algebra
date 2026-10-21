@@ -14,7 +14,7 @@ $$
 
 ### Solution to Problem 1
 
-Write 
+Write
 
  $i=\sqrt{-1}$. Let $\varphi:\mathbb Q\left[i\right]\to\mathbb Q\left[i\right]$ be an automorphism. By **Definition 2.4.1** (Ring Homomorphism and Isomorphism), $\varphi\left(1\right)=1$, so $\varphi$ is the identity on $\mathbb Q$. Write $\varphi\left(i\right)=u=a+bi$ with $a,b\in\mathbb Q$.
 

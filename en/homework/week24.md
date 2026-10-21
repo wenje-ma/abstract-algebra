@@ -1,62 +1,62 @@
 # Assignment 24
 
-> **Definition 4.1.15** (Degree of an Extension) Let $E$ be an extension of $F$. The dimension of $E$ as an $F$-vector space is called the degree of $E$ over $F$, denoted $\left[E:F\right]$. If $\left[E:F\right]<\infty$, $E$ is called a finite extension of $F$; otherwise it is called an infinite extension.$E$ and $F$ are finite extensions, then 
+> **Definition 4.1.15** (Degree of an Extension) Let $E$ be an extension of $F$. The dimension of $E$ as an $F$-vector space is called the degree of $E$ over $F$, denoted $\left[E:F\right]$. If $\left[E:F\right]<\infty$, then $E$ is called a finite extension of $F$; otherwise $E$ is called an infinite extension.
 
- $K/F$ is also a finite extension, and $E/K$.$E/F$ be a finite extension. Then every element of $\left[E:F\right]=\left[E:K\right]\left[K:F\right]$ is algebraic over 
+> **Theorem 4.1.16** (Telescope Rule for Degrees) If both $K/F$ and $E/K$ are finite extensions, then $E/F$ is also a finite extension, and $\left[E:F\right]=\left[E:K\right]\left[K:F\right]$.
 
- $E/F$. Equivalently, if $E$ contains an element transcendental over $F$, then $E$ must be an infinite extension.$F$ is always injective. In particular, a field automorphism preserves the field operations and $E/F$, and hence fixes every element of the prime field (
+> **Lemma 4.2.1** (Finite Extensions Are Algebraic) Let $E/F$ be a finite extension. Then every element of $E$ is algebraic over $F$. Equivalently, if $E$ contains an element transcendental over $F$, then $E/F$ must be an infinite extension.
 
- $\varphi:F\to E$ or $1$).$\mathbb Q$ be an integral domain and $\mathbb F_p$ its field of fractions. Given any automorphism 
+> **Lemma 4.1.9** (Field Homomorphisms Are Injective) A field homomorphism $\varphi:F\to E$ is always injective. In particular, a field automorphism preserves the field operations and $1$, and hence fixes every element of the prime field ($\mathbb Q$ or $\mathbb F_p$).
 
- $R$ of $E$, define the map $R$; then $\sigma$ is well defined and is an automorphism of $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$.$\bar\sigma$;$E$### Solution to Problem 1
+> **Basic Knowledge** (Universal Property of the Field of Fractions) Let $R$ be an integral domain and $E$ its field of fractions. Given any automorphism $\sigma$ of $R$, define the map $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$; then $\bar\sigma$ is well defined and is an automorphism of $E$.
 
-Write 
+### Problem 1
 
- 
- $\left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\right]$. First prove that 
- 
+(Problem 4.1-4) Find the degrees of the following field extensions:
+(1) $\left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\right]$;
+(2)
 
 $$
 \left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right].
 $$
 
-.
+### Solution to Problem 1
 
-On the one hand, $\alpha=\sqrt2+\sqrt3$, so $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$.
+Write $\alpha=\sqrt2+\sqrt3$. We first prove that $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$.
 
-On the other hand, since$\alpha\in\mathbb Q\left(\sqrt2,\sqrt3\right)$we have $\mathbb Q\left(\alpha\right)\subseteq\mathbb Q\left(\sqrt2,\sqrt3\right)$. Hence
+On the one hand, $\alpha\in\mathbb Q\left(\sqrt2,\sqrt3\right)$, so $\mathbb Q\left(\alpha\right)\subseteq\mathbb Q\left(\sqrt2,\sqrt3\right)$.
 
- 
+On the other hand, since
 
 $$
 \left(\sqrt2+\sqrt3\right)\left(\sqrt3-\sqrt2\right)=3-2=1,
 $$
 
-and similarly $\alpha^{-1}=\sqrt3-\sqrt2$, so 
+we have $\alpha^{-1}=\sqrt3-\sqrt2$. Hence
 
 $$
 \sqrt2=\frac{\alpha-\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right),
 $$
 
-. Therefore $\sqrt3=\frac{\alpha+\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right)$.$\mathbb Q\left(\sqrt2,\sqrt3\right)\subseteq\mathbb Q\left(\alpha\right)$. Suppose, for contradiction, that $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$ with 
+and similarly $\sqrt3=\frac{\alpha+\alpha^{-1}}{2}\in\mathbb Q\left(\alpha\right)$, so $\mathbb Q\left(\sqrt2,\sqrt3\right)\subseteq\mathbb Q\left(\alpha\right)$. Therefore $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$.
 
- $\sqrt2\notin\mathbb Q\left(\sqrt3\right)$. Squaring gives $\sqrt2=a+b\sqrt3$. Since $a,b\in\mathbb Q$ are linearly independent over $2=a^2+3b^2+2ab\sqrt3$, we must have $1,\sqrt3$. If $\mathbb Q$, then $ab=0$, which has no rational solution; if $b=0$, then $2=a^2$, i.e. $a=0$, which also has no rational solution. Hence $2=3b^2$.$b^2=2/3$Also $\sqrt2\notin\mathbb Q\left(\sqrt3\right)$ (since 
+We next prove that $\sqrt2\notin\mathbb Q\left(\sqrt3\right)$. Suppose, for contradiction, that $\sqrt2=a+b\sqrt3$ with $a,b\in\mathbb Q$. Squaring both sides gives $2=a^2+3b^2+2ab\sqrt3$. Since $1,\sqrt3$ are linearly independent over $\mathbb Q$, we must have $ab=0$. If $b=0$, then $2=a^2$, which has no rational solution; if $a=0$, then $2=3b^2$, i.e. $b^2=2/3$, which also has no rational solution. Hence $\sqrt2\notin\mathbb Q\left(\sqrt3\right)$.
 
- 
+Consequently,
 
 $$
 \left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]=2.
 $$
 
- is irreducible). By **Theorem 4.1.16** (Telescope Rule for Degrees),$\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]=2$(1) Since $x^2-3$, we have 
+Also $\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]=2$ (since $x^2-3$ is irreducible). By **Theorem 4.1.16** (Telescope Rule for Degrees),
 
 $$
 \begin{aligned}\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\right]&=\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]\\&=2\times2\\&=4.\end{aligned}
 $$
 
-.$\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$ $\left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\right]=4$### Problem 2
+(1) Since $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$, we have $\left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\right]=4$.
 
-(Problem 4.1-10) Prove that 
+(2) Similarly,
 
 $$
 \left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]=2.
@@ -64,74 +64,82 @@ $$
 
 $\blacksquare$
 
- is transcendental over 
+### Problem 2
 
- $\mathbb R/\mathbb Q$ (Lindemann's theorem), i.e. 
+(Problem 4.1-10) Prove that $\mathbb R/\mathbb Q$ is an infinite extension.
 
- 
+### Solution to Problem 2
 
- $\pi\in\mathbb R$ is not a root of any nonzero polynomial with rational coefficients.$\mathbb Q$ were a finite extension, then by **Lemma 4.2.1** (Finite Extensions Are Algebraic), every element of $\pi$ would be algebraic over 
+The number $\pi\in\mathbb R$ is transcendental over $\mathbb Q$ (Lindemann's theorem), i.e. $\pi$ is not a root of any nonzero polynomial with rational coefficients.
 
- $\mathbb R/\mathbb Q$; in particular, $\mathbb R$ would be algebraic over $\mathbb Q$, a contradiction.$\pi$ is not a finite extension, i.e. $\mathbb Q$ is an infinite extension. 
+If $\mathbb R/\mathbb Q$ were a finite extension, then by **Lemma 4.2.1** (Finite Extensions Are Algebraic), every element of $\mathbb R$ would be algebraic over $\mathbb Q$; in particular, $\pi$ would be algebraic over $\mathbb Q$, a contradiction.
 
- $\mathbb R/\mathbb Q$### Problem 3$\mathbb R/\mathbb Q$ be the field of fractions of an integral domain $\blacksquare$
+Hence $\mathbb R/\mathbb Q$ is not a finite extension, i.e. $\mathbb R/\mathbb Q$ is an infinite extension. $\blacksquare$
 
-. For any automorphism 
+### Problem 3
 
- $E$ of $R$, define $R$. Prove that $\sigma$ is an automorphism of $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\left(\sigma\left(b\right)\right)^{-1}$.$\bar\sigma$, with $E$ and 
+(Problem 4.1-11) Let $E$ be the field of fractions of an integral domain $R$. For any automorphism $\sigma$ of $R$, define $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\left(\sigma\left(b\right)\right)^{-1}$. Prove that $\bar\sigma$ is an automorphism of $E$.
 
- 
+### Solution to Problem 3
 
- 
+By **Basic Knowledge** (Universal Property of the Field of Fractions), we verify in three steps.
 
- $ab^{-1}=cd^{-1}$. Then $a,b,c,d\in R$. Since $b,d\ne0$ is a ring homomorphism,$ad=bc$so $\sigma$, i.e. 
+**Well defined.** Suppose $ab^{-1}=cd^{-1}$ with $a,b,c,d\in R$ and $b,d\ne0$. Then $ad=bc$. Since $\sigma$ is a ring homomorphism,
 
 $$
 \begin{aligned}\sigma\left(a\right)\sigma\left(d\right)&=\sigma\left(ad\right)\\&=\sigma\left(bc\right)\\&=\sigma\left(b\right)\sigma\left(c\right),\end{aligned}
 $$
 
-. The definition is independent of the choice of representative.$\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$ and $\bar\sigma\left(ab^{-1}\right)=\bar\sigma\left(cd^{-1}\right)$,
+so $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, i.e. $\bar\sigma\left(ab^{-1}\right)=\bar\sigma\left(cd^{-1}\right)$. The definition is independent of the choice of representative.
 
- $x=ab^{-1}$and$y=cd^{-1}\in E$Also 
+**Ring homomorphism.** For $x=ab^{-1}$ and $y=cd^{-1}$ in $E$, we have
 
 $$
 \begin{aligned}\bar\sigma\left(xy\right)&=\bar\sigma\left(ac\left(bd\right)^{-1}\right)\\&=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}\\&=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}\\&=\bar\sigma\left(x\right)\bar\sigma\left(y\right),\end{aligned}
 $$
 
-, so 
+and
 
 $$
 \begin{aligned}\bar\sigma\left(x+y\right)&=\bar\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)\\&=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}\\&=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}\\&=\bar\sigma\left(x\right)+\bar\sigma\left(y\right).\end{aligned}
 $$
 
- is a ring homomorphism.$\bar\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$ is an automorphism of $\bar\sigma$, its inverse 
+Also $\bar\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, so $\bar\sigma$ is a ring homomorphism.
 
- $\sigma$ is also an automorphism of $R$. A direct check shows that $\tau=\sigma^{-1}$ is the inverse of $R$: for $\bar\tau$,$\bar\sigma$Symmetrically, $x=ab^{-1}\in E$. Hence 
+**Bijection.** Since $\sigma$ is an automorphism of $R$, its inverse $\tau=\sigma^{-1}$ is also an automorphism of $R$. A direct check shows that $\bar\tau$ is the inverse map of $\bar\sigma$: for $x=ab^{-1}\in E$,
 
 $$
 \begin{aligned}\bar\tau\circ\bar\sigma\left(x\right)&=\bar\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)\\&=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}\\&=ab^{-1}\\&=x.\end{aligned}
 $$
 
- is invertible and is an automorphism of $\bar\sigma\circ\bar\tau=\mathrm{id}$. $\bar\sigma$### Problem 4$E$ is the trivial group.$\blacksquare$
+Similarly $\bar\sigma\circ\bar\tau=\mathrm{id}$. Hence $\bar\sigma$ is invertible and is an automorphism of $E$. $\blacksquare$
 
-. By **Lemma 4.1.9** (Field Homomorphisms Are Injective), 
+### Problem 4
 
- $\mathrm{Aut}\left(\mathbb R\right)$ is a field automorphism and preserves the multiplicative identity, so 
+(Problem 4.1-13) Prove that $\mathrm{Aut}\left(\mathbb R\right)$ is the trivial group.
 
- 
+### Solution to Problem 4
 
- $\sigma\in\mathrm{Aut}\left(\mathbb R\right)$. Hence for any $\sigma$, $\sigma\left(1\right)=1$; and for any $n\in\mathbb Z$, $\sigma\left(n\right)=n$, i.e. $m/n\in\mathbb Q$ fixes every element of $\sigma\left(m/n\right)=m/n$.$\sigma$ preserves order. If $\mathbb Q$, then there exists 
+Let $\sigma\in\mathrm{Aut}\left(\mathbb R\right)$. By **Lemma 4.1.9** (Field Homomorphisms Are Injective), $\sigma$ is a field automorphism and preserves the multiplicative identity, so $\sigma\left(1\right)=1$. Hence for every $n\in\mathbb Z$, $\sigma\left(n\right)=n$; and for every $m/n\in\mathbb Q$, $\sigma\left(m/n\right)=m/n$, i.e. $\sigma$ fixes every element of $\mathbb Q$.
 
- $\sigma$, $x>0$, with $y\in\mathbb R$. Hence$y\ne0$where $x=y^2$ (since 
+We now show that $\sigma$ preserves the order. If $x>0$, then there exists $y\in\mathbb R$ with $y\ne0$ such that $x=y^2$. Hence
+
 $$
 \begin{aligned}\sigma\left(x\right)&=\sigma\left(y^2\right)\\&=\sigma\left(y\right)^2>0,\end{aligned}
 $$
- is injective and $\sigma\left(y\right)\ne0$). Hence $\sigma$ sends positive numbers to positive numbers; therefore, when $y\ne0$, i.e. $\sigma$,$a<b$i.e. $b-a>0$. Thus 
+
+where $\sigma\left(y\right)\ne0$ (since $\sigma$ is injective and $y\ne0$). Hence $\sigma$ sends positive numbers to positive numbers; therefore, when $a<b$, i.e. $b-a>0$,
+
 $$
 \sigma\left(b\right)-\sigma\left(a\right)=\sigma\left(b-a\right)>0,
 $$
- is order-preserving.$\sigma\left(a\right)<\sigma\left(b\right)$; then there exists $\sigma$ with 
- $\sigma\ne\mathrm{id}$.$x\in\mathbb R$, by the density of $\sigma\left(x\right)\ne x$ in 
- $\sigma\left(x\right)>x$, choose $\mathbb Q$ with $\mathbb R$. Since $q\in\mathbb Q$ is order-preserving, $x<q<\sigma\left(x\right)$ gives $\sigma$, contradicting $x<q$.$\sigma\left(x\right)<\sigma\left(q\right)=q$, symmetrically choose $q<\sigma\left(x\right)$ with 
- $\sigma\left(x\right)<x$. From $q\in\mathbb Q$ we get $\sigma\left(x\right)<q<x$, contradicting $q<x$.$q=\sigma\left(q\right)<\sigma\left(x\right)$ for all $\sigma\left(x\right)<q$, i.e. 
- $\sigma\left(x\right)=x$. Therefore $x\in\mathbb R$ contains only the identity element and is the trivial group. $\sigma=\mathrm{id}$ $\mathrm{Aut}\left(\mathbb R\right)$ contains only the identity element and is the trivial group. $\blacksquare$
+
+i.e. $\sigma\left(a\right)<\sigma\left(b\right)$. Thus $\sigma$ is order-preserving.
+
+Suppose, for contradiction, that $\sigma\ne\mathrm{id}$; then there exists $x\in\mathbb R$ such that $\sigma\left(x\right)\ne x$.
+
+If $\sigma\left(x\right)>x$, then by the density of $\mathbb Q$ in $\mathbb R$ we can choose $q\in\mathbb Q$ such that $x<q<\sigma\left(x\right)$. Since $\sigma$ is order-preserving, $x<q$ gives $\sigma\left(x\right)<\sigma\left(q\right)=q$, contradicting $q<\sigma\left(x\right)$.
+
+If $\sigma\left(x\right)<x$, similarly choose $q\in\mathbb Q$ such that $\sigma\left(x\right)<q<x$. From $q<x$ we get $q=\sigma\left(q\right)<\sigma\left(x\right)$, contradicting $\sigma\left(x\right)<q$.
+
+Hence $\sigma\left(x\right)=x$ for every $x\in\mathbb R$, i.e. $\sigma=\mathrm{id}$. Therefore $\mathrm{Aut}\left(\mathbb R\right)$ contains only the identity element and is the trivial group. $\blacksquare$

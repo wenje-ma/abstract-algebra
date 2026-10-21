@@ -15,7 +15,7 @@
 > A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right).
 > $$
 
-> **Basic Knowledge** (Dirichlet Convolution) For $f,g\in S$, the Dirichlet convolution is defined as 
+> **Basic Knowledge** (Dirichlet Convolution) For $f,g\in S$, the Dirichlet convolution is defined as
 >
 > $$
 > \begin{aligned}\left(f*g\right)\left(n\right)&=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\&=\sum_{ab=n}f\left(a\right)g\left(b\right).\end{aligned}

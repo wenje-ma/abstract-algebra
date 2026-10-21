@@ -1,7 +1,7 @@
 # Assignment 7
 
-> **Definition 1.7.9** (Subnormal Series and Composition Series) A sequence of subgroups in a group $G$> 
- $$
+> **Definition 1.7.9** (Subnormal Series and Composition Series) A sequence of subgroups in a group $G$
+> $$
 > G=G_1\trianglerighteq G_2\trianglerighteq\cdots\trianglerighteq G_t\trianglerighteq G_{t+1}=\left\{e\right\}
 > $$
 > is called a subnormal series if $G_{i+1}\trianglelefteq G_i$, and the $G_i/G_{i+1}$ are called its factors. If all the factors $G_i/G_{i+1}$ are simple groups, the subnormal series is called a composition series of $G$, and the $G_i/G_{i+1}$ are called the composition factors of $G$.
@@ -22,7 +22,7 @@ and
 $$
 \begin{aligned}&G=H_1\triangleright H_2\triangleright\cdots\triangleright H_s\\&=\left\{e\right\},\end{aligned}
 $$
-be two composition series of $G$, with $G_2\ne H_2$. Set $K_3=G_2\cap H_2$. Take any composition series of $K_3$ 
+be two composition series of $G$, with $G_2\ne H_2$. Set $K_3=G_2\cap H_2$. Take any composition series of $K_3$
 $$
 K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}.
 $$

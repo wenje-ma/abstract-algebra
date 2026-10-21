@@ -8,7 +8,7 @@
 > $$
 > In particular, $o\left(g\right)\mid q$ if and only if $o\left(h_i\right)\mid q$ for every $i$.
 
-> **Basic Knowledge** (Finite Subgroups of the Rational Multiplicative Group) In the multiplicative group $\mathbb Q^*$, every element has finite order if and only if it is $1$ or $-1$; that is, the only finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$. Indeed, if $r=p/q\in\mathbb Q^*$ (in lowest terms) satisfies $r^n=1$, then $p^n=q^n$, so $p=\pm q$, i.e. $r=\pm1$.
+> **Basic Knowledge** (Finite Subgroups of the Rational Multiplicative Group) In the multiplicative group $\mathbb Q^*$, an element has finite order if and only if it is $1$ or $-1$; that is, the only finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$. Indeed, if $r=p/q\in\mathbb Q^*$ (in lowest terms) satisfies $r^n=1$, then $p^n=q^n$, so $p=\pm q$, i.e. $r=\pm1$.
 
 ### Problem 1
 
@@ -32,86 +32,90 @@ $$
 \begin{aligned}p\left(3\right)p\left(2\right)p\left(1\right)&=3\times2\times1\\&=6.\end{aligned}
 $$
 
-Hence there are $936$ isomorphism classes of abelian groups of order $6$. $\blacksquare$
+Hence there are $6$ isomorphism classes of abelian groups of order $936$. $\blacksquare$
 
 ### Problem 2
 
-(Problem 3.5-8) (1) Let $G=\mathbb Z_{p^e}$, where $p$ is prime and $e>0$. Write $G$ for the order of an element $g$. Prove that if $o\left(g\right)$, then $l\leqslant e$; and if $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l$, then $l>e$.$\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^e$ be finite abelian groups, and let 
+(Problem 3.5-8) (1) Let $G=\mathbb Z_{p^e}$, where $p$ is prime and $e>0$. Write $o\left(g\right)$ for the order of an element $g\in G$. Prove that if $l\leqslant e$, then $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l$; and if $l>e$, then $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^e$.
 
- $H_1,H_2,\cdots,H_s$ be a natural number. Set$q$and 
+(2) Let $H_1,H_2,\cdots,H_s$ be finite abelian groups, let $q$ be a natural number, and set
 
 $$
-m_i=\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|,
+m_i=\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|.
 $$
-$G=H_1\times H_2\times\cdots\times H_s$(3) Determine how many elements in 
+
+Let $G=H_1\times H_2\times\cdots\times H_s$. Then
 
 $$
 \left|\left\{g\in G\mid o\left(g\right)\mid q\right\}\right|=m_1m_2\cdots m_s.
 $$
 
- have order dividing $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$.$4$ as an additive cyclic group, whose elements are 
+(3) Determine how many elements in $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$ have order dividing $4$.
 
- 
+### Solution to Problem 2
 
- $G=\mathbb Z_{p^e}$ modulo $0,1,2,\cdots,p^e-1$. For $p^e$,$g=k\in\mathbb Z_{p^e}$Thus 
+(1) Regard $G=\mathbb Z_{p^e}$ as an additive cyclic group, whose elements are $0,1,2,\cdots,p^e-1$ modulo $p^e$. For $g=k\in\mathbb Z_{p^e}$, we have
 
 $$
 o\left(g\right)=\frac{p^e}{\gcd\left(k,p^e\right)}.
 $$
 
- is equivalent to $o\left(g\right)\mid p^l$, i.e. $p^l g=0$.$p^l k\equiv0\pmod{p^e}$, this is equivalent to 
+Thus $o\left(g\right)\mid p^l$ is equivalent to $p^l g=0$, i.e. $p^l k\equiv0\pmod{p^e}$.
 
- $l\leqslant e$ being divisible by $k$. Among the residue classes modulo $p^{e-l}$, exactly $p^e$ are divisible by $p^{e-l}$, so$p^l$When 
+When $l\leqslant e$, this is equivalent to $k$ being divisible by $p^{e-l}$. Among the residue classes modulo $p^e$, exactly $p^l$ are divisible by $p^{e-l}$, so
 
 $$
 \left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l.
 $$
 
-, $l>e$ is a multiple of $p^l$, so $p^e$ automatically for all $p^l g=0$; hence this set is $g\in G$ itself, with $G$ elements.$p^e$. By **Basic Knowledge** (Order of an Element in a Direct Product), 
+When $l>e$, $p^l$ is a multiple of $p^e$, so $p^l g=0$ holds automatically for every $g\in G$; hence this set is $G$ itself, which has $p^e$ elements.
 
- $g=\left(h_1,h_2,\cdots,h_s\right)\in G$ if and only if $o\left(g\right)\mid q$ for every $o\left(h_i\right)\mid q$ simultaneously. Hence the set of $i$ satisfying the condition is exactly the direct product of the sets $g$; by the multiplication principle,$\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$(3) In 
+(2) Take any $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. By **Basic Knowledge** (Order of an Element in a Direct Product), $o\left(g\right)\mid q$ if and only if $o\left(h_i\right)\mid q$ simultaneously for every $i$. Hence the elements $g$ satisfying the condition are exactly the direct product of the corresponding sets $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$; by the multiplication principle,
 
 $$
 \begin{aligned}\left|\left\{g\in G\mid o\left(g\right)\mid q\right\}\right|&=\prod_{i=1}^s\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|\\&=m_1m_2\cdots m_s.\end{aligned}
 $$
 
-, we want elements whose order divides $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$, i.e. $4$. Compute the number of choices for each component.$4g=0$, the group order is 
+(3) In $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$, we want elements whose order divides $4$, i.e. $4g=0$. Compute the number of choices for each component.
 
- $\mathbb Z_4$, so $4$ holds for all $4g=0$ elements; $4$.$m_1=4$, 
+For $\mathbb Z_4$, the group order is $4$, so $4g=0$ holds for all $4$ elements; hence $m_1=4$.
 
- $\mathbb Z_8$ is equivalent to $4k\equiv0\pmod 8$ being even, i.e. $k$, giving $k\in\left\{0,2,4,6\right\}$ choices; $4$.$m_2=4$, 
+For $\mathbb Z_8$, $4k\equiv0\pmod 8$ is equivalent to $k$ being even, i.e. $k\in\left\{0,2,4,6\right\}$, which gives $4$ choices; hence $m_2=4$.
 
- $\mathbb Z_{16}$ is equivalent to $4k\equiv0\pmod{16}$, i.e. $k\equiv0\pmod 4$, giving $k\in\left\{0,4,8,12\right\}$ choices; $4$.$m_3=4$Hence there are 
+For $\mathbb Z_{16}$, $4k\equiv0\pmod{16}$ is equivalent to $k\equiv0\pmod 4$, i.e. $k\in\left\{0,4,8,12\right\}$, which gives $4$ choices; hence $m_3=4$.
 
- 
+By (2), the desired number of elements is
 
 $$
 \begin{aligned}m_1m_2m_3&=4\times4\times4\\&=64.\end{aligned}
 $$
 
- elements in $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$ whose order divides $64$. $4$### Problem 3$\blacksquare$
+Hence there are $64$ elements in $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$ whose order divides $4$. $\blacksquare$
 
-, and determine all homomorphisms from each of these groups to 
+### Problem 3
 
- $8$.$\mathbb Q^*$, the partitions of exponent 
+(Problem 3.5-12) Give the classification of abelian groups of order $8$, and determine all homomorphisms from each of these groups to $\mathbb Q^*$.
 
- 
+### Solution to Problem 3
 
- $8=2^3$ are $3$, $3$, $2+1$, giving $1+1+1$. By **Theorem 3.5.2** (Number of Isomorphism Classes of Finite Abelian Groups), there are $p\left(3\right)=3$ isomorphism classes of abelian groups of order $8$, namely$3$We now determine their homomorphisms to 
+Since $8=2^3$, the partitions of exponent $3$ are $3$, $2+1$, $1+1+1$, giving $p\left(3\right)=3$. By **Theorem 3.5.2** (Number of Isomorphism Classes of Finite Abelian Groups), there are $3$ isomorphism classes of abelian groups of order $8$, namely
 
 $$
-\mathbb Z_8,\mathbb Z_4\times\mathbb Z_2,\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2.
+\mathbb Z_8,\ \mathbb Z_4\times\mathbb Z_2,\ \mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2.
 $$
 
-. Let $\mathbb Q^*$ be a group homomorphism. Since $\varphi:G\to\mathbb Q^*$ is finite, $G$ is a finite subgroup of $\varphi\left(G\right)$. By **Basic Knowledge** (Finite Subgroups of the Rational Multiplicative Group), the only finite subgroup of $\mathbb Q^*$ is $\mathbb Q^*$, so $\left\{\pm1\right\}$; i.e. the image of each generator can only be $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$ or $1$.$-1$** Let 
+We now determine their homomorphisms to $\mathbb Q^*$. Let $\varphi:G\to\mathbb Q^*$ be a group homomorphism. Since $G$ is finite, $\varphi\left(G\right)$ is a finite subgroup of $\mathbb Q^*$. By **Basic Knowledge** (Finite Subgroups of the Rational Multiplicative Group), the only finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$, so $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$; that is, the image of each generator can only be $1$ or $-1$.
 
- $G=\mathbb Z_8$ be a generator of $g$, with $G$. The homomorphism $o\left(g\right)=8$ is uniquely determined by $\varphi$, and $\varphi\left(g\right)\in\left\{\pm1\right\}$ holds automatically for both $\varphi\left(g\right)^8=1$. Hence there are $\pm1$ homomorphisms.$2$** Let 
+**Case 1: $G=\mathbb Z_8$.** Let $g$ be a generator of $G$, with $o\left(g\right)=8$. The homomorphism $\varphi$ is uniquely determined by $\varphi\left(g\right)\in\left\{\pm1\right\}$, and the condition $\varphi\left(g\right)^8=1$ holds automatically for both $\pm1$. Hence there are $2$ homomorphisms.
 
- $G=\mathbb Z_4\times\mathbb Z_2$ generate $g_1$ and $\mathbb Z_4$ generate $g_2$. The homomorphism is uniquely determined by $\mathbb Z_2$, and the constraints $\varphi\left(g_1\right),\varphi\left(g_2\right)\in\left\{\pm1\right\}$, $\varphi\left(g_1\right)^4=1$ are automatically satisfied for $\varphi\left(g_2\right)^2=1$. Hence there are $\pm1$ homomorphisms.$2\times2=4$** Let 
+**Case 2: $G=\mathbb Z_4\times\mathbb Z_2$.** Let $g_1$ be a generator of $\mathbb Z_4$ and $g_2$ a generator of $\mathbb Z_2$. The homomorphism is uniquely determined by $\varphi\left(g_1\right),\varphi\left(g_2\right)\in\left\{\pm1\right\}$, and the constraints $\varphi\left(g_1\right)^4=1$ and $\varphi\left(g_2\right)^2=1$ are automatically satisfied for $\pm1$. Hence there are $2\times2=4$ homomorphisms.
 
- $G=\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$ be three generators of order $g_1,g_2,g_3$. The homomorphism is uniquely determined by$2$and all constraints are automatically satisfied. Hence there are 
+**Case 3: $G=\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.** Let $g_1,g_2,g_3$ be three generators of order $2$. The homomorphism is uniquely determined by
+
 $$
-\varphi\left(g_1\right),\varphi\left(g_2\right),\varphi\left(g_3\right)\in\left\{\pm1\right\}
+\varphi\left(g_1\right),\varphi\left(g_2\right),\varphi\left(g_3\right)\in\left\{\pm1\right\},
 $$
- homomorphisms.$2^3=8$ classes of abelian groups of order 
- $8$, and the numbers of homomorphisms from them to $3$ are respectively $\mathbb Q^*$, $2$, and $4$. $8$ $\blacksquare$
+
+and all constraints are automatically satisfied. Hence there are $2^3=8$ homomorphisms.
+
+In summary, the abelian groups of order $8$ fall into $3$ classes, and the numbers of homomorphisms from them to $\mathbb Q^*$ are respectively $2$, $4$, and $8$. $\blacksquare$
