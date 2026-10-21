@@ -100,7 +100,7 @@ $$
 \begin{pmatrix}\lambda&*\\0&A'\end{pmatrix},
 $$
 
-where $\lambda$ is a $1\times1$ block and $A'$ is an $(n-1)\times(n-1)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block upper-triangular form, and hence so can $A$.
+where $\lambda$ is a $1\times1$ block and $A'$ is an $\left(n-1\right)\times\left(n-1\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block upper-triangular form, and hence so can $A$.
 
 **Case 2: $A$ has no real eigenvalues.** Then the characteristic polynomial of $A$ has no linear factors over $\mathbb R\left[x\right]$, so it factors as a product of irreducible quadratic polynomials with negative discriminant. Take one of them, $p\left(x\right)=x^2+bx+c$, with $b^2-4c<0$.
 
@@ -116,7 +116,7 @@ $$
 \begin{pmatrix}B_1&B_2\\0&A'\end{pmatrix},
 $$
 
-where $B_1$ is a $2\times2$ block (the restriction of $A$ to $W$) and $A'$ is an $(n-2)\times(n-2)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block upper-triangular form, and hence so can $A$.
+where $B_1$ is a $2\times2$ block (the restriction of $A$ to $W$) and $A'$ is an $\left(n-2\right)\times\left(n-2\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block upper-triangular form, and hence so can $A$.
 
 In summary, by induction there exists a basis of $V$ in which the matrix of $A$ has the required block upper-triangular form. $\blacksquare$
 
