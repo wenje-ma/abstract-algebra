@@ -46,9 +46,9 @@ $$
 
 设 $\varphi:\mathbb R\to\mathbb R$ 为域自同构. 首先 $\varphi$ 保持有理数: $\varphi\left(1\right)=1$, 故 $\varphi\left(n\right)=n$, $\varphi\left(m/n\right)=m/n$.
 
-**保序性** 若 $x>0$, 则存在 $y\ne0$ 使 $x=y^2$, 于是 $\varphi\left(x\right)=\varphi\left(y\right)^2>0$. 因而当 $x>y$ 时, $x-y>0$ 给出 $\varphi\left(x\right)-\varphi\left(y\right)>0$, 即 $\varphi$ 严格递增.
+**保序性** 若 $x> 0$, 则存在 $y\ne0$ 使 $x=y^2$, 于是 $\varphi\left(x\right)=\varphi\left(y\right)^2> 0$. 因而当 $x> y$ 时, $x-y> 0$ 给出 $\varphi\left(x\right)-\varphi\left(y\right)> 0$, 即 $\varphi$ 严格递增.
 
-**恒等性** 反设存在 $x$ 使 $\varphi\left(x\right)\ne x$. 若 $\varphi\left(x\right)>x$, 由有理数在 $\mathbb R$ 中的稠密性, 取 $q\in\mathbb Q$ 使 $x<q<\varphi\left(x\right)$. 由 $x<q$ 及 $\varphi$ 递增得 $\varphi\left(x\right)<\varphi\left(q\right)=q$, 与 $q<\varphi\left(x\right)$ 矛盾. 若 $\varphi\left(x\right)<x$, 同理取 $q$ 使 $\varphi\left(x\right)<q<x$, 由 $\varphi$ 递增得 $q=\varphi\left(q\right)<\varphi\left(x\right)$, 矛盾.
+**恒等性** 反设存在 $x$ 使 $\varphi\left(x\right)\ne x$. 若 $\varphi\left(x\right)> x$, 由有理数在 $\mathbb R$ 中的稠密性, 取 $q\in\mathbb Q$ 使 $x< q< \varphi\left(x\right)$. 由 $x< q$ 及 $\varphi$ 递增得 $\varphi\left(x\right)< \varphi\left(q\right)=q$, 与 $q< \varphi\left(x\right)$ 矛盾. 若 $\varphi\left(x\right)< x$, 同理取 $q$ 使 $\varphi\left(x\right)< q< x$, 由 $\varphi$ 递增得 $q=\varphi\left(q\right)< \varphi\left(x\right)$, 矛盾.
 
 故 $\varphi\left(x\right)=x$ 对一切 $x\in\mathbb R$ 成立, 即 $\varphi$ 为恒等同构. $\blacksquare$
 

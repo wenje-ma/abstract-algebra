@@ -103,7 +103,7 @@ $\blacksquare$
 
 ### 解答 习题四
 
-(1)反设 $x^p-t$ 在 $E\left[x\right]$ 中非平凡分解, $x^p-t=f\left(x\right)g\left(x\right)$, 其中 $f,g$ 首一, $1\leq\deg f=k<p$.
+(1)反设 $x^p-t$ 在 $E\left[x\right]$ 中非平凡分解, $x^p-t=f\left(x\right)g\left(x\right)$, 其中 $f,g$ 首一, $1\leq\deg f=k< p$.
 
 设 $\theta$ 为 $x^p-t$ 在某分裂域中的根, 则 $\theta^p=t$. 由**基础知识**（特征 $p$ 下的弗罗贝尼乌斯映射）,
 
@@ -113,7 +113,7 @@ $$
 
 故在分裂域中 $x^p-t=\left(x-\theta\right)^p$, 从而 $f\left(x\right)=\left(x-\theta\right)^k$.
 
-$f\left(x\right)$ 中 $x^{k-1}$ 的系数为 $-k\theta$. 因 $f\in E\left[x\right]$, 该系数属于 $E$, 故 $k\theta\in E$. 又 $1\leq k<p$, 在特征 $p$ 域中 $k\ne0$, 故 $k$ 可逆, 从而 $\theta\in E$.
+$f\left(x\right)$ 中 $x^{k-1}$ 的系数为 $-k\theta$. 因 $f\in E\left[x\right]$, 该系数属于 $E$, 故 $k\theta\in E$. 又 $1\leq k< p$, 在特征 $p$ 域中 $k\ne0$, 故 $k$ 可逆, 从而 $\theta\in E$.
 
 但 $\theta\in E=\mathbb F_p\left(t\right)$ 意味着存在互素多项式 $f_0\left(t\right),g_0\left(t\right)\in\mathbb F_p\left[t\right]$ 使 $\theta=f_0\left(t\right)/g_0\left(t\right)$. 由 $\theta^p=t$ 得 $f_0\left(t\right)^p=t\,g_0\left(t\right)^p$. 比较两边次数: 左端次数为 $p\deg f_0$, 右端次数为 $1+p\deg g_0$. 左端被 $p$ 整除, 右端模 $p$ 余 $1$, 矛盾. 故 $\theta\notin E$, 从而 $x^p-t$ 在 $E\left[x\right]$ 中不可约.
 
@@ -151,7 +151,7 @@ $$
 
 下证 $h\left(x\right)\ne0$. 反设 $h\left(x\right)=0$, 则在 $F\left(u\right)\left[x\right]$ 中有 $u\,g\left(x\right)=f\left(x\right)$.
 
-若 $g\left(x\right)$ 为常数多项式, 则 $f\left(x\right)$ 必非常数(否则 $u=f/g\in F$, 矛盾), 此时 $\deg\left(u\,g\right)=0$ 而 $\deg f>0$, 与 $ug=f$ 矛盾.
+若 $g\left(x\right)$ 为常数多项式, 则 $f\left(x\right)$ 必非常数(否则 $u=f/g\in F$, 矛盾), 此时 $\deg\left(u\,g\right)=0$ 而 $\deg f> 0$, 与 $ug=f$ 矛盾.
 
 若 $g\left(x\right)$ 非常数, 则 $\deg\left(ug\right)=\deg g$($u$ 为 $F\left(u\right)$ 中非零元, 不改变多项式次数). 由 $ug=f$ 得 $\deg f=\deg g$, 比较首项系数得 $u\cdot\mathrm{lc}\left(g\right)=\mathrm{lc}\left(f\right)$, 即 $u=\mathrm{lc}\left(f\right)/\mathrm{lc}\left(g\right)\in F$, 与 $u\notin F$ 矛盾.
 

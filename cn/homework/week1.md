@@ -238,7 +238,7 @@ $$
 
 两者同为三重和 $\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$, 故 $\left(f*g\right)*h=f*\left(g*h\right)$.
 
-**单位元** 定义 $e\in S$ 为 $e\left(1\right)=1$, 且当 $n>1$ 时 $e\left(n\right)=0$. 则
+**单位元** 定义 $e\in S$ 为 $e\left(1\right)=1$, 且当 $n> 1$ 时 $e\left(n\right)=0$. 则
 
 $$
 \begin{aligned}\left(e*f\right)\left(n\right)&=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)\\&=e\left(1\right)f\left(n\right)\\&=f\left(n\right),\end{aligned}
@@ -256,19 +256,19 @@ $$
 
 故 $f\left(1\right)g\left(1\right)=1$, 特别地 $f\left(1\right)\ne0$.
 
-**充分性** 设 $f\left(1\right)\ne0$. 归纳构造 $g\in S$: 令 $g\left(1\right)=f\left(1\right)^{-1}$. 对 $n>1$, 要求 $\left(f*g\right)\left(n\right)=0$, 即
+**充分性** 设 $f\left(1\right)\ne0$. 归纳构造 $g\in S$: 令 $g\left(1\right)=f\left(1\right)^{-1}$. 对 $n> 1$, 要求 $\left(f*g\right)\left(n\right)=0$, 即
 
 $$
-f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid n\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
+f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid n\\d> 1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
 $$
 
 解得
 
 $$
-g\left(n\right)=-f\left(1\right)^{-1}\sum_{\substack{d\mid n\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right).
+g\left(n\right)=-f\left(1\right)^{-1}\sum_{\substack{d\mid n\\d> 1}}f\left(d\right)g\left(\frac{n}{d}\right).
 $$
 
-右端只涉及下标 $n/d<n$ 处已定义的 $g$, 故可递归定义出 $g\in S$ 使 $f*g=e$. 由**定义 1.1.10**（逆元）, $f$ 可逆.
+右端只涉及下标 $n/d< n$ 处已定义的 $g$, 故可递归定义出 $g\in S$ 使 $f*g=e$. 由**定义 1.1.10**（逆元）, $f$ 可逆.
 
 (3)记 $F$ 为非零积性函数全体.
 

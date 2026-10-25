@@ -3,13 +3,13 @@
 > **定义 1.3.1**（正规子群）设 $H$ 是群 $G$ 的子群. 如果对任意 $g\in G$, $h\in H$, 有 $ghg^{-1}\in H$, 则称 $H$ 为 $G$ 的一个正规子群, 记为 $H\triangleleft G$.
 
 > **定理 1.3.5**（正规子群的等价条件）
->
-> 设 $G$ 是群, $H<G$, 则下列条件等价:
->
+> 
+> 设 $G$ 是群, $H< G$, 则下列条件等价:
+> 
 > (1)$H\triangleleft G$;
->
+> 
 > (2)对任意 $g\in G$, $gH=Hg$;
->
+> 
 > (3)对任意 $a,b\in G$, $aH\cdot bH=abH$.
 
 > **定理 1.3.6**（商群）设 $G$ 是群, $H\triangleleft G$, 则 $G/H$ 对陪集乘法 $aH\cdot bH=abH$ 构成一个群, 称为 $G$ 对 $H$ 的商群.
@@ -46,11 +46,11 @@ $$
 
 ### 习题二
 
-（习题 1.3-9）设 $H,K$ 是群 $G$ 的两个子群. 证明: $H,K$ 中有一个是 $G$ 的正规子群, 则 $HK<G$; 若 $H,K$ 均是 $G$ 的正规子群, 则 $HK\triangleleft G$.
+（习题 1.3-9）设 $H,K$ 是群 $G$ 的两个子群. 证明: $H,K$ 中有一个是 $G$ 的正规子群, 则 $HK< G$; 若 $H,K$ 均是 $G$ 的正规子群, 则 $HK\triangleleft G$.
 
 ### 解答 习题二
 
-先证 $H,K$ 中有一个正规则 $HK<G$. 不妨设 $H\triangleleft G$.
+先证 $H,K$ 中有一个正规则 $HK< G$. 不妨设 $H\triangleleft G$.
 
 由**定理 1.3.5**（正规子群的等价条件）, 对任意 $k\in K$ 有 $kH=Hk$. 于是
 
@@ -58,11 +58,11 @@ $$
 \begin{aligned}KH&=\bigcup_{k\in K}kH\\&=\bigcup_{k\in K}Hk\\&=HK,\end{aligned}
 $$
 
-即 $HK=KH$. 由**基础知识**（子群乘积）, $HK<G$.
+即 $HK=KH$. 由**基础知识**（子群乘积）, $HK< G$.
 
 再证 $H,K$ 均正规则 $HK\triangleleft G$.
 
-由上述, $HK<G$. 下证正规性. 对任意 $g\in G$, $hk\in HK$, 有
+由上述, $HK< G$. 下证正规性. 对任意 $g\in G$, $hk\in HK$, 有
 
 $$
 g\left(hk\right)g^{-1}=\left(ghg^{-1}\right)\left(gkg^{-1}\right).
@@ -90,7 +90,7 @@ $$
 \varphi\left(h_{1}h_{2}\right)=gh_{1}h_{2}g^{-1}=\left(gh_{1}g^{-1}\right)\left(gh_{2}g^{-1}\right)=\varphi\left(h_{1}\right)\varphi\left(h_{2}\right).
 $$
 
-故 $gHg^{-1}<G$.
+故 $gHg^{-1}< G$.
 
 其次, 由 $\varphi$ 是双射, $\left|gHg^{-1}\right|=\left|H\right|=m$.
 

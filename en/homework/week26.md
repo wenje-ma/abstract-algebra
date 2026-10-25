@@ -16,11 +16,11 @@ $$
 
 Since $p\geqslant2$, this gives a nontrivial decomposition of $x^p-c$ in $F\left[x\right]$, so $x^p-c$ is reducible. Hence the contrapositive holds: irreducibility implies that $x^p-c$ has no root in $F$.
 
-**Sufficiency.** Suppose, for contradiction, that $x^p-c$ has no root in $F$ but is reducible in $F\left[x\right]$; i.e. there exist nonconstant monic polynomials $f\left(x\right),g\left(x\right)\in F\left[x\right]$ such that $x^p-c=f\left(x\right)g\left(x\right)$, where $1\leq\deg f=k<p$.
+**Sufficiency.** Suppose, for contradiction, that $x^p-c$ has no root in $F$ but is reducible in $F\left[x\right]$; i.e. there exist nonconstant monic polynomials $f\left(x\right),g\left(x\right)\in F\left[x\right]$ such that $x^p-c=f\left(x\right)g\left(x\right)$, where $1\leq\deg f=k< p$.
 
 Let $E$ be a splitting field of $x^p-c$, and let $\alpha\in E$ be a root of it. By **Basic Knowledge** (Frobenius Map in Characteristic $p$), in $E\left[x\right]$ we have $x^p-c=\left(x-\alpha\right)^p$. Since $f$ is monic, comparing the decompositions gives $f\left(x\right)=\left(x-\alpha\right)^k$.
 
-In $f\left(x\right)=\left(x-\alpha\right)^k$, the coefficient of $x^{k-1}$ is $-k\alpha$. Since $f\in F\left[x\right]$, this coefficient lies in $F$, so $k\alpha\in F$. Also $1\leq k<p$, and in a field of characteristic $p$, $k\ne0$, so $k$ is invertible in $F$; hence $\alpha=\left(k\alpha\right)\cdot k^{-1}\in F$.
+In $f\left(x\right)=\left(x-\alpha\right)^k$, the coefficient of $x^{k-1}$ is $-k\alpha$. Since $f\in F\left[x\right]$, this coefficient lies in $F$, so $k\alpha\in F$. Also $1\leq k< p$, and in a field of characteristic $p$, $k\ne0$, so $k$ is invertible in $F$; hence $\alpha=\left(k\alpha\right)\cdot k^{-1}\in F$.
 
 Thus $\alpha^p=c$, i.e. $\alpha$ is a root of $x^p-c$ in $F$, contradicting the assumption. Hence when $x^p-c$ has no root in $F$, it must be irreducible.
 

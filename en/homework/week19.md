@@ -5,11 +5,11 @@
 > **Proposition 3.1.16** (Kernel and Image of a Homomorphism) For a module homomorphism $\phi:M_1\to M_2$, the kernel $\ker\phi$ is a submodule of $M_1$, and the image $\operatorname{Im}\phi$ is a submodule of $M_2$.
 
 > **Theorem 3.1.10** (Direct Sum Criterion)
->
+> 
 > Let $M_1,\cdots,M_s$ be submodules of an $R$-module $M$. Then $M=M_1\oplus\cdots\oplus M_s$ if and only if
->
+> 
 > (1) $M=M_1+\cdots+M_s$;
->
+> 
 > (2) for every $2\le j\le s$,
 > $$
 > M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}.

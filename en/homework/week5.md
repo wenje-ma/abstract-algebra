@@ -6,7 +6,7 @@
 
 > **Theorem 1.5.8** (Existence and Uniqueness of Subgroups of Cyclic Groups) Let $G$ be a cyclic group of order $n$ and $k\mid n$. Then there exists a unique subgroup of order $k$ of $G$.
 
-> **Theorem 1.2.22** (Lagrange's Theorem) Let $G$ be a finite group and $H<G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$. In particular, the order of any element also divides $\left|G\right|$.
+> **Theorem 1.2.22** (Lagrange's Theorem) Let $G$ be a finite group and $H< G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$. In particular, the order of any element also divides $\left|G\right|$.
 
 > **Basic Knowledge** (Euler's Totient Function) $\varphi\left(n\right)$ is the number of positive integers coprime to $n$ and not exceeding $n$. For a positive integer $n$, $\sum_{d\mid n}\varphi\left(d\right)=n$. A cyclic group of order $n$ has exactly $\varphi\left(n\right)$ generators.
 
@@ -44,7 +44,7 @@ For each $d\mid n$, let $f\left(d\right)$ be the number of elements in $G$ whose
 
 **Claim** $f\left(d\right)$ is either $0$ or $\varphi\left(d\right)$.
 
-Indeed, if $f\left(d\right)=0$, the claim is immediate. If $f\left(d\right)>0$, take $a\in G$ with $\mathrm{ord}\left(a\right)=d$; then $\left\langle a\right\rangle$ is a subgroup of $G$ of order $d$. By uniqueness, $\left\langle a\right\rangle=H_{d}$, so $H_{d}$ is cyclic. Also, any element $b\in G$ of order $d$ generates a subgroup $\left\langle b\right\rangle$ which is also of order $d$, so by uniqueness $\left\langle b\right\rangle=H_{d}$. Hence all elements of order $d$ in $G$ lie in $H_{d}$, and a cyclic group of order $d$ has exactly $\varphi\left(d\right)$ generators (i.e. elements of order $d$), so $f\left(d\right)=\varphi\left(d\right)$.
+Indeed, if $f\left(d\right)=0$, the claim is immediate. If $f\left(d\right)> 0$, take $a\in G$ with $\mathrm{ord}\left(a\right)=d$; then $\left\langle a\right\rangle$ is a subgroup of $G$ of order $d$. By uniqueness, $\left\langle a\right\rangle=H_{d}$, so $H_{d}$ is cyclic. Also, any element $b\in G$ of order $d$ generates a subgroup $\left\langle b\right\rangle$ which is also of order $d$, so by uniqueness $\left\langle b\right\rangle=H_{d}$. Hence all elements of order $d$ in $G$ lie in $H_{d}$, and a cyclic group of order $d$ has exactly $\varphi\left(d\right)$ generators (i.e. elements of order $d$), so $f\left(d\right)=\varphi\left(d\right)$.
 
 Thus for each $d\mid n$, $f\left(d\right)\le\varphi\left(d\right)$.
 
@@ -62,7 +62,7 @@ $$
 
 Since $f\left(d\right)\le\varphi\left(d\right)$ for every $d\mid n$ and the two sums are equal, we must have $f\left(d\right)=\varphi\left(d\right)$ for all $d\mid n$.
 
-In particular, $f\left(n\right)=\varphi\left(n\right)>0$, so $G$ contains an element of order $n$, and hence $G=\left\langle a\right\rangle$ is cyclic. $\blacksquare$
+In particular, $f\left(n\right)=\varphi\left(n\right)> 0$, so $G$ contains an element of order $n$, and hence $G=\left\langle a\right\rangle$ is cyclic. $\blacksquare$
 
 ### Problem 3
 
@@ -76,7 +76,7 @@ For each $d\mid n$, let $f\left(d\right)$ be the number of elements in $G$ whose
 
 **Claim** $f\left(d\right)\le\varphi\left(d\right)$.
 
-Indeed, if $f\left(d\right)=0$, the conclusion is immediate. If $f\left(d\right)>0$, take $a\in G$ with $\mathrm{ord}\left(a\right)=d$; then $\left\langle a\right\rangle$ is a cyclic subgroup of $G$ of order $d$. By the assumption, this is the unique subgroup of $G$ of order $d$. Hence any element $b\in G$ of order $d$ satisfies $\left\langle b\right\rangle=\left\langle a\right\rangle$, i.e. $b$ is a generator of this cyclic group of order $d$. A cyclic group of order $d$ has exactly $\varphi\left(d\right)$ generators, so $f\left(d\right)=\varphi\left(d\right)$.
+Indeed, if $f\left(d\right)=0$, the conclusion is immediate. If $f\left(d\right)> 0$, take $a\in G$ with $\mathrm{ord}\left(a\right)=d$; then $\left\langle a\right\rangle$ is a cyclic subgroup of $G$ of order $d$. By the assumption, this is the unique subgroup of $G$ of order $d$. Hence any element $b\in G$ of order $d$ satisfies $\left\langle b\right\rangle=\left\langle a\right\rangle$, i.e. $b$ is a generator of this cyclic group of order $d$. A cyclic group of order $d$ has exactly $\varphi\left(d\right)$ generators, so $f\left(d\right)=\varphi\left(d\right)$.
 
 By **Theorem 1.2.22** (Lagrange's Theorem), the order of every element of $G$ divides $n$, so
 
@@ -86,4 +86,4 @@ $$
 
 The two sides of the inequality are equal, so for each $d\mid n$ we must have $f\left(d\right)=\varphi\left(d\right)$.
 
-In particular, $f\left(n\right)=\varphi\left(n\right)>0$, so $G$ contains an element of order $n$, and hence $G$ is cyclic. $\blacksquare$
+In particular, $f\left(n\right)=\varphi\left(n\right)> 0$, so $G$ contains an element of order $n$, and hence $G$ is cyclic. $\blacksquare$

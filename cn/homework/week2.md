@@ -1,12 +1,12 @@
 # 作业 2
 
-> **定义 1.2.1**（子群）设 $H$ 是群 $G$ 的一个非空子集, 如果 $H$ 对于 $G$ 的运算也构成群, 则称 $H$ 为 $G$ 的子群, 记作 $H<G$.
+> **定义 1.2.1**（子群）设 $H$ 是群 $G$ 的一个非空子集, 如果 $H$ 对于 $G$ 的运算也构成群, 则称 $H$ 为 $G$ 的子群, 记作 $H< G$.
 
-> **定理 1.2.2**（子群判别法）设 $H$ 是群 $G$ 的非空子集, 则 $H<G$ 当且仅当对任意 $a,b\in H$ 有 $ab^{-1}\in H$.
+> **定理 1.2.2**（子群判别法）设 $H$ 是群 $G$ 的非空子集, 则 $H< G$ 当且仅当对任意 $a,b\in H$ 有 $ab^{-1}\in H$.
 
-> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
+> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H< G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
 
-> > **推论 1.2.23**（指数的乘法）设 $G$ 是有限群, $K<H<G$, 则有
+> > **推论 1.2.23**（指数的乘法）设 $G$ 是有限群, $K< H< G$, 则有
 > $$
 > \left[G:K\right]=\left[G:H\right]\cdot\left[H:K\right].
 > $$
@@ -68,9 +68,9 @@ $$
 \end{aligned},
 $$
 
-其交为 $\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. 而 $ab=\left(2,2\right)$, 满足 $2ab=\left(0,0\right)$, 故 $ab$ 的阶为 $2<\left[4,4\right]=4$.
+其交为 $\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. 而 $ab=\left(2,2\right)$, 满足 $2ab=\left(0,0\right)$, 故 $ab$ 的阶为 $2< \left[4,4\right]=4$.
 
-关于 $G$ 中是否一定存在 $\left[m,n\right]$ 阶元素, 答案是肯定的. 事实上, 由 $ab=ba$ 知子群 $H=\left\langle a,b\right\rangle$ 是交换群. 在交换群 $H$ 中, 设 $m=\prod p^{\alpha_{p}}$, $n=\prod p^{\beta_{p}}$ 为素因数分解. 对每个素数 $p$, 若 $\alpha_{p}\ge\beta_{p}$, 则取 $a^{m/p^{\alpha_{p}}}$, 其阶为 $p^{\alpha_{p}}$; 若 $\beta_{p}>\alpha_{p}$, 则取 $b^{n/p^{\beta_{p}}}$, 其阶为 $p^{\beta_{p}}$. 将所有这些元素相乘(因 $H$ 交换, 乘积有意义), 所得元素的阶即为 $\prod p^{\max\left(\alpha_{p},\beta_{p}\right)}=\left[m,n\right]$. 故 $G$ 中必存在 $\left[m,n\right]$ 阶元素. $\blacksquare$
+关于 $G$ 中是否一定存在 $\left[m,n\right]$ 阶元素, 答案是肯定的. 事实上, 由 $ab=ba$ 知子群 $H=\left\langle a,b\right\rangle$ 是交换群. 在交换群 $H$ 中, 设 $m=\prod p^{\alpha_{p}}$, $n=\prod p^{\beta_{p}}$ 为素因数分解. 对每个素数 $p$, 若 $\alpha_{p}\ge\beta_{p}$, 则取 $a^{m/p^{\alpha_{p}}}$, 其阶为 $p^{\alpha_{p}}$; 若 $\beta_{p}> \alpha_{p}$, 则取 $b^{n/p^{\beta_{p}}}$, 其阶为 $p^{\beta_{p}}$. 将所有这些元素相乘(因 $H$ 交换, 乘积有意义), 所得元素的阶即为 $\prod p^{\max\left(\alpha_{p},\beta_{p}\right)}=\left[m,n\right]$. 故 $G$ 中必存在 $\left[m,n\right]$ 阶元素. $\blacksquare$
 
 ### 习题二
 
@@ -90,7 +90,7 @@ $$
 \begin{aligned}\det\left(AB^{-1}\right)&=\det A\cdot\det\left(B^{-1}\right)\\&=\det A/\det B\\&=1/1\\&=1.\end{aligned}
 $$
 
-故 $AB^{-1}\in SL\left(n,\mathbb Z\right)$. 由**定理 1.2.2**（子群判别法）, $SL\left(n,\mathbb Z\right)<GL\left(n,\mathbb R\right)$.
+故 $AB^{-1}\in SL\left(n,\mathbb Z\right)$. 由**定理 1.2.2**（子群判别法）, $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
 
 (2)首先验证 $S,T,R,U$ 均属于 $SL\left(2,\mathbb Z\right)$: 各矩阵元素均为整数, 且行列式均为 $1$.
 
@@ -204,7 +204,7 @@ $$
 \left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[H_{1}:H_{1}\cap H_{2}\right].
 $$
 
-因 $H_{1}\cap H_{2}<H_{1}<G$ 及 $H_{1}\cap H_{2}<H_{2}<G$, 故 $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap H_{2}\right]$ 且 $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. 又 $\left[G:H_{1}\right]$ 与 $\left[G:H_{2}\right]$ 互素, 故其乘积
+因 $H_{1}\cap H_{2}< H_{1}< G$ 及 $H_{1}\cap H_{2}< H_{2}< G$, 故 $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap H_{2}\right]$ 且 $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. 又 $\left[G:H_{1}\right]$ 与 $\left[G:H_{2}\right]$ 互素, 故其乘积
 
 $$
 \left[G:H_{1}\right]\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right].

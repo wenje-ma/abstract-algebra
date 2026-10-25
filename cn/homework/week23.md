@@ -99,7 +99,7 @@ $$
 
 其中 $\lambda$ 为 $1$ 阶块, $A'$ 为 $n-1$ 阶实矩阵. 由归纳假设, $A'$ 可相似于所要求的分块上三角形式, 从而 $A$ 亦然.
 
-**情形二 $A$ 无实特征值** 此时 $A$ 的特征多项式在 $\mathbb R\left[x\right]$ 上没有一次因式, 故可分解为若干个判别式小于零的二次不可约多项式之积. 取其中一个 $p\left(x\right)=x^2+bx+c$, $b^2-4c<0$.
+**情形二 $A$ 无实特征值** 此时 $A$ 的特征多项式在 $\mathbb R\left[x\right]$ 上没有一次因式, 故可分解为若干个判别式小于零的二次不可约多项式之积. 取其中一个 $p\left(x\right)=x^2+bx+c$, $b^2-4c< 0$.
 
 由主理想整环 $\mathbb R\left[x\right]$ 上有限生成扭模的结构理论(即 $V$ 作为 $\mathbb R\left[x\right]$-模的准素分解), $p\left(x\right)$ 对应的准素子空间非零. 取其中向量 $u$ 使得 $p\left(A\right)u=0$ 且 $u\ne0$. 因 $p\left(x\right)$ 无实根, $u$ 与 $Au$ 必线性无关(否则 $Au=au$, $a\in\mathbb R$, 则 $a$ 为 $p$ 的实根, 矛盾). 令 $W=\mathrm{span}\left\{u,Au\right\}$. 由 $p\left(A\right)u=0$ 即 $A^2u+bAu+cu=0$ 得
 

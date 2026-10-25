@@ -1,6 +1,6 @@
 # Assignment 22
 
-> **Theorem 3.5.2** (Number of Isomorphism Classes of Finite Abelian Groups) Let the natural number $n$ have prime factorization $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, where $p_1,p_2,\cdots,p_s$ are distinct primes and $m_i>0$. Then the number of abelian groups of order $n$, up to isomorphism, is $\prod_{i=1}^s p\left(m_i\right)$, where $p\left(m\right)$ denotes the number of distinct partitions of the natural number $m$.
+> **Theorem 3.5.2** (Number of Isomorphism Classes of Finite Abelian Groups) Let the natural number $n$ have prime factorization $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, where $p_1,p_2,\cdots,p_s$ are distinct primes and $m_i> 0$. Then the number of abelian groups of order $n$, up to isomorphism, is $\prod_{i=1}^s p\left(m_i\right)$, where $p\left(m\right)$ denotes the number of distinct partitions of the natural number $m$.
 
 > **Basic Knowledge** (Order of an Element in a Direct Product) Let $G=H_1\times H_2\times\cdots\times H_s$ be a direct product of finite abelian groups, and let $g=\left(h_1,h_2,\cdots,h_s\right)$. Then
 > $$
@@ -36,7 +36,7 @@ Hence there are $6$ isomorphism classes of abelian groups of order $936$. $\blac
 
 ### Problem 2
 
-(Problem 3.5-8) (1) Let $G=\mathbb Z_{p^e}$, where $p$ is prime and $e>0$. Write $o\left(g\right)$ for the order of an element $g\in G$. Prove that if $l\leqslant e$, then $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l$; and if $l>e$, then $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^e$.
+(Problem 3.5-8) (1) Let $G=\mathbb Z_{p^e}$, where $p$ is prime and $e> 0$. Write $o\left(g\right)$ for the order of an element $g\in G$. Prove that if $l\leqslant e$, then $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l$; and if $l> e$, then $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^e$.
 
 (2) Let $H_1,H_2,\cdots,H_s$ be finite abelian groups, let $q$ be a natural number, and set
 
@@ -68,7 +68,7 @@ $$
 \left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l.
 $$
 
-When $l>e$, $p^l$ is a multiple of $p^e$, so $p^l g=0$ holds automatically for every $g\in G$; hence this set is $G$ itself, which has $p^e$ elements.
+When $l> e$, $p^l$ is a multiple of $p^e$, so $p^l g=0$ holds automatically for every $g\in G$; hence this set is $G$ itself, which has $p^e$ elements.
 
 (2) Take any $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. By **Basic Knowledge** (Order of an Element in a Direct Product), $o\left(g\right)\mid q$ if and only if $o\left(h_i\right)\mid q$ simultaneously for every $i$. Hence the elements $g$ satisfying the condition are exactly the direct product of the corresponding sets $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$; by the multiplication principle,
 

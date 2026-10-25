@@ -1,12 +1,12 @@
 # Assignment 2
 
-> **Definition 1.2.1** (Subgroup) Let $H$ be a nonempty subset of a group $G$. If $H$ itself forms a group under the operation of $G$, then $H$ is called a subgroup of $G$, denoted $H<G$.
+> **Definition 1.2.1** (Subgroup) Let $H$ be a nonempty subset of a group $G$. If $H$ itself forms a group under the operation of $G$, then $H$ is called a subgroup of $G$, denoted $H< G$.
 
-> **Theorem 1.2.2** (Subgroup Criterion) Let $H$ be a nonempty subset of a group $G$. Then $H<G$ if and only if $a,b\in H$ for any $ab^{-1}\in H$.
+> **Theorem 1.2.2** (Subgroup Criterion) Let $H$ be a nonempty subset of a group $G$. Then $H< G$ if and only if $a,b\in H$ for any $ab^{-1}\in H$.
 
-> **Theorem 1.2.22** (Lagrange's Theorem) Let $G$ be a finite group and $H<G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, where $\left[G:H\right]$ is the index of $H$ in $G$. Hence the order of the subgroup $H$ divides the order of the group $G$; in particular, the order of any element also divides $\left|G\right|$.
+> **Theorem 1.2.22** (Lagrange's Theorem) Let $G$ be a finite group and $H< G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, where $\left[G:H\right]$ is the index of $H$ in $G$. Hence the order of the subgroup $H$ divides the order of the group $G$; in particular, the order of any element also divides $\left|G\right|$.
 
-> > **Corollary 1.2.23** (Multiplicativity of Index) Let $G$ be a finite group and $K<H<G$. Then
+> > **Corollary 1.2.23** (Multiplicativity of Index) Let $G$ be a finite group and $K< H< G$. Then
 > $$
 > \left[G:K\right]=\left[G:H\right]\cdot\left[H:K\right].
 > $$
@@ -68,9 +68,9 @@ $$
 \end{aligned},
 $$
 
-whose intersection is $\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. Meanwhile $ab=\left(2,2\right)$ satisfies $2ab=\left(0,0\right)$, so the order of $ab$ is $2<\left[4,4\right]=4$.
+whose intersection is $\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. Meanwhile $ab=\left(2,2\right)$ satisfies $2ab=\left(0,0\right)$, so the order of $ab$ is $2< \left[4,4\right]=4$.
 
-As to whether $G$ necessarily contains an element of order $\left[m,n\right]$, the answer is yes. In fact, from $ab=ba$ the subgroup $H=\left\langle a,b\right\rangle$ is abelian. In the abelian group $H$, write $m=\prod p^{\alpha_{p}}$, $n=\prod p^{\beta_{p}}$ as prime factorizations. For each prime $p$, if $\alpha_{p}\ge\beta_{p}$, take $a^{m/p^{\alpha_{p}}}$, whose order is $p^{\alpha_{p}}$; if $\beta_{p}>\alpha_{p}$, take $b^{n/p^{\beta_{p}}}$, whose order is $p^{\beta_{p}}$. Multiply all these elements together (the product is well-defined since $H$ is abelian); the resulting element has order $\prod p^{\max\left(\alpha_{p},\beta_{p}\right)}=\left[m,n\right]$. Hence $G$ necessarily contains an element of order $\left[m,n\right]$. $\blacksquare$
+As to whether $G$ necessarily contains an element of order $\left[m,n\right]$, the answer is yes. In fact, from $ab=ba$ the subgroup $H=\left\langle a,b\right\rangle$ is abelian. In the abelian group $H$, write $m=\prod p^{\alpha_{p}}$, $n=\prod p^{\beta_{p}}$ as prime factorizations. For each prime $p$, if $\alpha_{p}\ge\beta_{p}$, take $a^{m/p^{\alpha_{p}}}$, whose order is $p^{\alpha_{p}}$; if $\beta_{p}> \alpha_{p}$, take $b^{n/p^{\beta_{p}}}$, whose order is $p^{\beta_{p}}$. Multiply all these elements together (the product is well-defined since $H$ is abelian); the resulting element has order $\prod p^{\max\left(\alpha_{p},\beta_{p}\right)}=\left[m,n\right]$. Hence $G$ necessarily contains an element of order $\left[m,n\right]$. $\blacksquare$
 
 ### Problem 2
 
@@ -90,7 +90,7 @@ $$
 \begin{aligned}\det\left(AB^{-1}\right)&=\det A\cdot\det\left(B^{-1}\right)\\&=\det A/\det B\\&=1/1\\&=1.\end{aligned}
 $$
 
-Hence $AB^{-1}\in SL\left(n,\mathbb Z\right)$. By **Theorem 1.2.2** (Subgroup Criterion), $SL\left(n,\mathbb Z\right)<GL\left(n,\mathbb R\right)$.
+Hence $AB^{-1}\in SL\left(n,\mathbb Z\right)$. By **Theorem 1.2.2** (Subgroup Criterion), $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
 
 (2) First verify that $S,T,R,U$ all belong to $SL\left(2,\mathbb Z\right)$: each matrix has integer entries and determinant $1$.
 
@@ -204,7 +204,7 @@ $$
 \left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[H_{1}:H_{1}\cap H_{2}\right].
 $$
 
-Since $H_{1}\cap H_{2}<H_{1}<G$ and $H_{1}\cap H_{2}<H_{2}<G$, we have $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap H_{2}\right]$ and $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. Since $\left[G:H_{1}\right]$ and $\left[G:H_{2}\right]$ are coprime, their product
+Since $H_{1}\cap H_{2}< H_{1}< G$ and $H_{1}\cap H_{2}< H_{2}< G$, we have $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap H_{2}\right]$ and $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. Since $\left[G:H_{1}\right]$ and $\left[G:H_{2}\right]$ are coprime, their product
 
 $$
 \left[G:H_{1}\right]\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right].

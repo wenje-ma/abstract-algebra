@@ -1,6 +1,6 @@
 # Assignment 24
 
-> **Definition 4.1.15** (Degree of an Extension) Let $E$ be an extension of $F$. The dimension of $E$ as an $F$-vector space is called the degree of $E$ over $F$, denoted $\left[E:F\right]$. If $\left[E:F\right]<\infty$, then $E$ is called a finite extension of $F$; otherwise $E$ is called an infinite extension.
+> **Definition 4.1.15** (Degree of an Extension) Let $E$ be an extension of $F$. The dimension of $E$ as an $F$-vector space is called the degree of $E$ over $F$, denoted $\left[E:F\right]$. If $\left[E:F\right]< \infty$, then $E$ is called a finite extension of $F$; otherwise $E$ is called an infinite extension.
 
 > **Theorem 4.1.16** (Telescope Rule for Degrees) If both $K/F$ and $E/K$ are finite extensions, then $E/F$ is also a finite extension, and $\left[E:F\right]=\left[E:K\right]\left[K:F\right]$.
 
@@ -122,24 +122,24 @@ Similarly $\bar\sigma\circ\bar\tau=\mathrm{id}$. Hence $\bar\sigma$ is invertibl
 
 Let $\sigma\in\mathrm{Aut}\left(\mathbb R\right)$. By **Lemma 4.1.9** (Field Homomorphisms Are Injective), $\sigma$ is a field automorphism and preserves the multiplicative identity, so $\sigma\left(1\right)=1$. Hence for every $n\in\mathbb Z$, $\sigma\left(n\right)=n$; and for every $m/n\in\mathbb Q$, $\sigma\left(m/n\right)=m/n$, i.e. $\sigma$ fixes every element of $\mathbb Q$.
 
-We now show that $\sigma$ preserves the order. If $x>0$, then there exists $y\in\mathbb R$ with $y\ne0$ such that $x=y^2$. Hence
+We now show that $\sigma$ preserves the order. If $x> 0$, then there exists $y\in\mathbb R$ with $y\ne0$ such that $x=y^2$. Hence
 
 $$
-\begin{aligned}\sigma\left(x\right)&=\sigma\left(y^2\right)\\&=\sigma\left(y\right)^2>0,\end{aligned}
+\begin{aligned}\sigma\left(x\right)&=\sigma\left(y^2\right)\\&=\sigma\left(y\right)^2> 0,\end{aligned}
 $$
 
-where $\sigma\left(y\right)\ne0$ (since $\sigma$ is injective and $y\ne0$). Hence $\sigma$ sends positive numbers to positive numbers; therefore, when $a<b$, i.e. $b-a>0$,
+where $\sigma\left(y\right)\ne0$ (since $\sigma$ is injective and $y\ne0$). Hence $\sigma$ sends positive numbers to positive numbers; therefore, when $a< b$, i.e. $b-a> 0$,
 
 $$
-\sigma\left(b\right)-\sigma\left(a\right)=\sigma\left(b-a\right)>0,
+\sigma\left(b\right)-\sigma\left(a\right)=\sigma\left(b-a\right)> 0,
 $$
 
-i.e. $\sigma\left(a\right)<\sigma\left(b\right)$. Thus $\sigma$ is order-preserving.
+i.e. $\sigma\left(a\right)< \sigma\left(b\right)$. Thus $\sigma$ is order-preserving.
 
 Suppose, for contradiction, that $\sigma\ne\mathrm{id}$; then there exists $x\in\mathbb R$ such that $\sigma\left(x\right)\ne x$.
 
-If $\sigma\left(x\right)>x$, then by the density of $\mathbb Q$ in $\mathbb R$ we can choose $q\in\mathbb Q$ such that $x<q<\sigma\left(x\right)$. Since $\sigma$ is order-preserving, $x<q$ gives $\sigma\left(x\right)<\sigma\left(q\right)=q$, contradicting $q<\sigma\left(x\right)$.
+If $\sigma\left(x\right)> x$, then by the density of $\mathbb Q$ in $\mathbb R$ we can choose $q\in\mathbb Q$ such that $x< q< \sigma\left(x\right)$. Since $\sigma$ is order-preserving, $x< q$ gives $\sigma\left(x\right)< \sigma\left(q\right)=q$, contradicting $q< \sigma\left(x\right)$.
 
-If $\sigma\left(x\right)<x$, similarly choose $q\in\mathbb Q$ such that $\sigma\left(x\right)<q<x$. From $q<x$ we get $q=\sigma\left(q\right)<\sigma\left(x\right)$, contradicting $\sigma\left(x\right)<q$.
+If $\sigma\left(x\right)< x$, similarly choose $q\in\mathbb Q$ such that $\sigma\left(x\right)< q< x$. From $q< x$ we get $q=\sigma\left(q\right)< \sigma\left(x\right)$, contradicting $\sigma\left(x\right)< q$.
 
 Hence $\sigma\left(x\right)=x$ for every $x\in\mathbb R$, i.e. $\sigma=\mathrm{id}$. Therefore $\mathrm{Aut}\left(\mathbb R\right)$ contains only the identity element and is the trivial group. $\blacksquare$

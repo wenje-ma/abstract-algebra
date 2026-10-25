@@ -17,7 +17,7 @@
 
 > **Theorem 1.6.9** (Simplicity of the Alternating Group) When $n\ge 5$, $A_{n}$ is a simple group.
 
-> **Theorem 1.2.22** (Lagrange's Theorem) Let $G$ be a finite group and $H<G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
+> **Theorem 1.2.22** (Lagrange's Theorem) Let $G$ be a finite group and $H< G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
 
 ### Problem 1
 

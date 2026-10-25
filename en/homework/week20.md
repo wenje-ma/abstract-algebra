@@ -3,11 +3,11 @@
 > **Corollary 3.3.10** (Uniqueness of the Rank of a Free Module) Let $R$ be a commutative ring with identity. Then $R^m\cong R^n$ if and only if $m=n$, where $R^m$ denotes the external direct sum of $m$ copies of $R$.
 
 > **Theorem 3.3.6** (Characterization of a Basis)
->
+> 
 > Let $M$ be a module over a ring $R$ with identity, and let $u_1,\cdots,u_m$ be elements of $M$. Then $M$ is free and $u_1,\cdots,u_m$ form a basis if and only if
->
+> 
 > (1) $u_1,\cdots,u_m$ generate $M$;
->
+> 
 > (2) $u_1,\cdots,u_m$ are linearly independent.
 
 > **Basic Knowledge** (Determinant) A square matrix $A$ over a commutative ring $R$ with identity is invertible if and only if its determinant $\det A$ is a unit in $R$.

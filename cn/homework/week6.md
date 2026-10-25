@@ -17,7 +17,7 @@
 
 > **定理 1.6.9**（交错群的单性）当 $n\ge 5$ 时, $A_{n}$ 是单群.
 
-> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
+> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H< G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
 
 ### 习题一
 

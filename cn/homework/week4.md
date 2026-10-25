@@ -123,15 +123,15 @@ $$
 
 故 $G\ltimes H$ 是群.
 
-下证 $G_{1}<G\ltimes H$. $\left(e_{G},e_{H}\right)\in G_{1}$. 对 $\left(g_{1},e_{H}\right),\left(g_{2},e_{H}\right)\in G_{1}$,
+下证 $G_{1}< G\ltimes H$. $\left(e_{G},e_{H}\right)\in G_{1}$. 对 $\left(g_{1},e_{H}\right),\left(g_{2},e_{H}\right)\in G_{1}$,
 
 $$
 \left(g_{1},e_{H}\right)\left(g_{2},e_{H}\right)^{-1}=\left(g_{1},e_{H}\right)\left(g_{2}^{-1},\varphi\left(g_{2}\right)\left(e_{H}\right)\right)=\left(g_{1}g_{2}^{-1},e_{H}\right)\in G_{1}.
 $$
 
-故 $G_{1}<G\ltimes H$.
+故 $G_{1}< G\ltimes H$.
 
-最后证 $H_{1}\triangleleft G\ltimes H$. 先证 $H_{1}<G\ltimes H$: 对 $\left(e_{G},h_{1}\right),\left(e_{G},h_{2}\right)\in H_{1}$,
+最后证 $H_{1}\triangleleft G\ltimes H$. 先证 $H_{1}< G\ltimes H$: 对 $\left(e_{G},h_{1}\right),\left(e_{G},h_{2}\right)\in H_{1}$,
 
 $$
 \left(e_{G},h_{1}\right)\left(e_{G},h_{2}\right)^{-1}=\left(e_{G},h_{1}\right)\left(e_{G},h_{2}^{-1}\right)=\left(e_{G},h_{1}h_{2}^{-1}\right)\in H_{1}.

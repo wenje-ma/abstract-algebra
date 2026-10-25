@@ -1,6 +1,6 @@
 # Assignment 18
 
-> **Basic Knowledge** (Polynomial Division with Remainder) Let $R$ be a commutative ring with identity, $f\left(x\right),g\left(x\right)\in R\left[x\right]$, and suppose the leading coefficient of $g\left(x\right)$ is a unit in $R$. Then there exist unique $q\left(x\right),r\left(x\right)\in R\left[x\right]$ such that $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, where $r=0$ or $\deg r<\deg g$. In particular, when the divisor is a monic linear polynomial $x-a$, the remainder is a constant.
+> **Basic Knowledge** (Polynomial Division with Remainder) Let $R$ be a commutative ring with identity, $f\left(x\right),g\left(x\right)\in R\left[x\right]$, and suppose the leading coefficient of $g\left(x\right)$ is a unit in $R$. Then there exist unique $q\left(x\right),r\left(x\right)\in R\left[x\right]$ such that $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, where $r=0$ or $\deg r< \deg g$. In particular, when the divisor is a monic linear polynomial $x-a$, the remainder is a constant.
 
 > **Basic Knowledge** (Unique Factorization Domain) An integral domain $R$ is called a unique factorization domain if every nonzero, non-unit element of $R$ can be factored as a finite product of irreducible elements, and the factorization is unique up to associates.
 

@@ -16,7 +16,7 @@
 
 ### Solution to Problem 1
 
-Without loss of generality, assume $p<q$. By **Theorem 1.10.10** (Third Sylow Theorem), the number $n_q$ of Sylow $q$-subgroups satisfies $n_q\mid p$ and $n_q\equiv1\pmod q$. Since $p<q$, $n_q$ as a positive divisor of $p$ can only be $1$ or $p$. If $n_q=p$, then $p\equiv1\pmod q$, i.e. $q\mid p-1$, but $p<q$ implies $p-1<q$, a contradiction. Hence $n_q=1$.
+Without loss of generality, assume $p< q$. By **Theorem 1.10.10** (Third Sylow Theorem), the number $n_q$ of Sylow $q$-subgroups satisfies $n_q\mid p$ and $n_q\equiv1\pmod q$. Since $p< q$, $n_q$ as a positive divisor of $p$ can only be $1$ or $p$. If $n_q=p$, then $p\equiv1\pmod q$, i.e. $q\mid p-1$, but $p< q$ implies $p-1< q$, a contradiction. Hence $n_q=1$.
 
 Thus the Sylow $q$-subgroup $Q$ of $G$ is unique, and by **Theorem 1.10.10**, $Q\trianglelefteq G$. Also $\left|Q\right|=q$ is prime, so $Q$ is cyclic and hence solvable. The quotient $G/Q$ has order $p$, also a cyclic group of prime order, and is solvable.
 
@@ -60,11 +60,11 @@ $\blacksquare$
 
 ### Problem 3
 
-(Problem 1.10-15) Let $p,q$ be primes with $p<q$ and $p\nmid\left(q-1\right)$. Prove that any group of order $pq$ is cyclic.
+(Problem 1.10-15) Let $p,q$ be primes with $p< q$ and $p\nmid\left(q-1\right)$. Prove that any group of order $pq$ is cyclic.
 
 ### Solution to Problem 3
 
-Let $\left|G\right|=pq$. By **Theorem 1.10.10** (Third Sylow Theorem), the number $n_q$ of Sylow $q$-subgroups satisfies $n_q\mid p$ and $n_q\equiv1\pmod q$. Since $p<q$, as in Problem 1, $n_q=1$. Hence the Sylow $q$-subgroup $Q$ of $G$ is unique, $Q\trianglelefteq G$, and $\left|Q\right|=q$.
+Let $\left|G\right|=pq$. By **Theorem 1.10.10** (Third Sylow Theorem), the number $n_q$ of Sylow $q$-subgroups satisfies $n_q\mid p$ and $n_q\equiv1\pmod q$. Since $p< q$, as in Problem 1, $n_q=1$. Hence the Sylow $q$-subgroup $Q$ of $G$ is unique, $Q\trianglelefteq G$, and $\left|Q\right|=q$.
 
 Now consider the number $n_p$ of Sylow $p$-subgroups. By **Theorem 1.10.10**, $n_p\mid q$ and $n_p\equiv1\pmod p$. Since $q$ is prime, $n_p=1$ or $q$. If $n_p=q$, then $q\equiv1\pmod p$, i.e. $p\mid\left(q-1\right)$, contradicting the assumption $p\nmid\left(q-1\right)$. Hence $n_p=1$.
 
@@ -106,12 +106,12 @@ Each Sylow $5$-subgroup is cyclic of order $5$ and contains $4$ elements of orde
 
 Now consider the number $n_2$ of Sylow $2$-subgroups. $n_2\mid15$ and $n_2\equiv1\pmod2$, so $n_2\in\left\{1,3,5,15\right\}$. Since $G$ is simple, $n_2\ne1$.
 
-If $n_2=3$, $G$ acts by conjugation on these $3$ Sylow $2$-subgroups, giving a homomorphism $\pi:G\to S_3$. Its kernel is a normal subgroup of $G$. Since $G$ is simple, $\ker\pi=\left\{e\right\}$ or $G$. The action is nontrivial, so $\ker\pi\ne G$; but if $\ker\pi=\left\{e\right\}$, then $G$ is isomorphic to a subgroup of $S_3$, while $\left|S_3\right|=6<60$, a contradiction. Hence $n_2\ne3$.
+If $n_2=3$, $G$ acts by conjugation on these $3$ Sylow $2$-subgroups, giving a homomorphism $\pi:G\to S_3$. Its kernel is a normal subgroup of $G$. Since $G$ is simple, $\ker\pi=\left\{e\right\}$ or $G$. The action is nontrivial, so $\ker\pi\ne G$; but if $\ker\pi=\left\{e\right\}$, then $G$ is isomorphic to a subgroup of $S_3$, while $\left|S_3\right|=6< 60$, a contradiction. Hence $n_2\ne3$.
 
 If $n_2=5$, $G$ acts by conjugation on the $5$ Sylow $2$-subgroups, giving a homomorphism $\pi:G\to S_5$. Similarly $\ker\pi=\left\{e\right\}$, so $G$ is isomorphic to a subgroup of $S_5$ of order $60$. Since $\left|S_5\right|=120$, a subgroup of index $2$ is necessarily normal, and $A_5$ is precisely the unique subgroup of index $2$ in $S_5$. Hence $G\cong A_5$.
 
 Finally, rule out $n_2=15$. If any two distinct Sylow $2$-subgroups intersect in $\left\{e\right\}$, then each Sylow $2$-subgroup of order $4$ contributes $3$ nonidentity elements, giving $15\times3=45$ elements of order $2$ or $4$; together with the $24$ elements of order $5$, the total exceeds $60$, a contradiction.
 
-Hence there exist two distinct Sylow $2$-subgroups $P,Q$ with $\left|P\cap Q\right|=2$. Write $P\cap Q=\left\{e,x\right\}$ where $x$ has order $2$. Since both $P,Q$ have order $4$ (and are abelian), each is normal in itself, so $P,Q\subseteq N_G\left(\left\langle x\right\rangle\right)$. Also $P\ne Q$, so $\left|N_G\left(\left\langle x\right\rangle\right)\right|>4$. Meanwhile $\left|N_G\left(\left\langle x\right\rangle\right)\right|\mid60$ and is divisible by $4$, so it can only be $12,20$ or $60$. If it is $60$, then $\left\langle x\right\rangle\trianglelefteq G$, contradicting the simplicity of $G$. Hence $\left|N_G\left(\left\langle x\right\rangle\right)\right|=12$ or $20$, corresponding to index $5$ or $3$.
+Hence there exist two distinct Sylow $2$-subgroups $P,Q$ with $\left|P\cap Q\right|=2$. Write $P\cap Q=\left\{e,x\right\}$ where $x$ has order $2$. Since both $P,Q$ have order $4$ (and are abelian), each is normal in itself, so $P,Q\subseteq N_G\left(\left\langle x\right\rangle\right)$. Also $P\ne Q$, so $\left|N_G\left(\left\langle x\right\rangle\right)\right|> 4$. Meanwhile $\left|N_G\left(\left\langle x\right\rangle\right)\right|\mid60$ and is divisible by $4$, so it can only be $12,20$ or $60$. If it is $60$, then $\left\langle x\right\rangle\trianglelefteq G$, contradicting the simplicity of $G$. Hence $\left|N_G\left(\left\langle x\right\rangle\right)\right|=12$ or $20$, corresponding to index $5$ or $3$.
 
 Index $3$ would give a homomorphism $G\to S_3$, contradicting the earlier argument, so the index must be $5$. Thus $G$ has a subgroup of index $5$, and $G$ acts by left translation on the $5$ cosets of this subgroup, giving a monomorphism $G\hookrightarrow S_5$. As above, the only subgroup of order $60$ in $S_5$ is $A_5$, so $G\cong A_5$. $\blacksquare$

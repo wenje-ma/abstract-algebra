@@ -97,7 +97,7 @@ $$
 $$
 G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
-都是 $G_2$ 的合成序列. 因 $\left|G_2\right|<\left|G\right|$, 对群的阶归纳, 由**定理 1.7.13**（若尔当-赫尔德定理）, $G_2$ 的这两个合成序列同构. 因而补上共同的首因子 $G/G_2$ 后, $S_1$ 与 $S_3$ 同构.
+都是 $G_2$ 的合成序列. 因 $\left|G_2\right|< \left|G\right|$, 对群的阶归纳, 由**定理 1.7.13**（若尔当-赫尔德定理）, $G_2$ 的这两个合成序列同构. 因而补上共同的首因子 $G/G_2$ 后, $S_1$ 与 $S_3$ 同构.
 
 同理, $S_2$ 与 $S_4$ 的首因子均为 $G/H_2$, 尾段 $H_2\triangleright\cdots\triangleright\left\{e\right\}$ 与 $H_2\triangleright K_3\triangleright\cdots\triangleright\left\{e\right\}$ 都是 $H_2$ 的合成序列, 由归纳假设它们同构, 故 $S_2$ 与 $S_4$ 同构.
 

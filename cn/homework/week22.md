@@ -1,6 +1,6 @@
 # 作业 22
 
-> **定理 3.5.2**（有限交换群的分类数）设自然数 $n$ 有素因数分解 $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, 其中 $p_1,p_2,\cdots,p_s$ 为互不相同的素数, $m_i>0$, 则在同构意义下 $n$ 阶交换群的个数为 $\prod_{i=1}^s p\left(m_i\right)$, 其中 $p\left(m\right)$ 表示自然数 $m$ 的不同分划的个数.
+> **定理 3.5.2**（有限交换群的分类数）设自然数 $n$ 有素因数分解 $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, 其中 $p_1,p_2,\cdots,p_s$ 为互不相同的素数, $m_i> 0$, 则在同构意义下 $n$ 阶交换群的个数为 $\prod_{i=1}^s p\left(m_i\right)$, 其中 $p\left(m\right)$ 表示自然数 $m$ 的不同分划的个数.
 
 > **基础知识**（直积中元素的阶）设 $G=H_1\times H_2\times\cdots\times H_s$ 为有限交换群的直积, $g=\left(h_1,h_2,\cdots,h_s\right)$, 则
 > $$
@@ -36,7 +36,7 @@ $$
 
 ### 习题二
 
-（习题 3.5-8）(1)设 $G=\mathbb Z_{p^e}$, $p$ 为素数, $e>0$. 记 $G$ 中元素 $g$ 的阶为 $o\left(g\right)$. 试证明: 若 $l\leqslant e$, 则 $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l$; 若 $l>e$, 则 $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^e$.
+（习题 3.5-8）(1)设 $G=\mathbb Z_{p^e}$, $p$ 为素数, $e> 0$. 记 $G$ 中元素 $g$ 的阶为 $o\left(g\right)$. 试证明: 若 $l\leqslant e$, 则 $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l$; 若 $l> e$, 则 $\left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^e$.
 
 (2)设 $H_1,H_2,\cdots,H_s$ 为有限交换群, $q$ 为自然数, 令
 
@@ -67,7 +67,7 @@ $$
 \left|\left\{g\in G\mid o\left(g\right)\mid p^l\right\}\right|=p^l.
 $$
 
-当 $l>e$ 时, $p^l$ 是 $p^e$ 的倍数, $p^l g=0$ 对一切 $g\in G$ 自动成立, 故该集合即 $G$ 本身, 其元素个数为 $p^e$.
+当 $l> e$ 时, $p^l$ 是 $p^e$ 的倍数, $p^l g=0$ 对一切 $g\in G$ 自动成立, 故该集合即 $G$ 本身, 其元素个数为 $p^e$.
 
 (2)任取 $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. 由**基础知识**（直积中元素的阶）, $o\left(g\right)\mid q$ 当且仅当 $o\left(h_i\right)\mid q$ 对每个 $i$ 同时成立. 因而满足条件的 $g$ 恰为各分量分别取自对应集合 $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$ 的直积, 由乘法原理得
 

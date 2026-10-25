@@ -5,11 +5,11 @@
 > **Basic Knowledge** (Reverse Transpose Matrix) Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n\times n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries $0$), then $PNP=N^T$, and hence $PN$ is symmetric.
 
 > **Basic Knowledge** (Nilpotent Kernel and Count of Jordan Blocks) Let $A$ be an $n\times n$ matrix, and let $a$ be an eigenvalue of $A$. Write
->
+> 
 > $$
 > \begin{aligned}\nu_k&=\dim\ker\left(aI_n-A\right)^k\\&=n-\mathrm{rank}\left(aI_n-A\right)^k,\end{aligned}
 > $$
->
+> 
 > with the convention $\nu_0=0$. Then the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s-\nu_{s-1}$. Hence the sequence $\left\{\nu_k\right\}_{k\geqslant0}$ completely determines the sizes and number of Jordan blocks at $a$.
 
 ### Problem 1
@@ -102,7 +102,7 @@ $$
 
 where $\lambda$ is a $1\times1$ block and $A'$ is an $\left(n-1\right)\times\left(n-1\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block upper-triangular form, and hence so can $A$.
 
-**Case 2: $A$ has no real eigenvalues.** Then the characteristic polynomial of $A$ has no linear factors over $\mathbb R\left[x\right]$, so it factors as a product of irreducible quadratic polynomials with negative discriminant. Take one of them, $p\left(x\right)=x^2+bx+c$, with $b^2-4c<0$.
+**Case 2: $A$ has no real eigenvalues.** Then the characteristic polynomial of $A$ has no linear factors over $\mathbb R\left[x\right]$, so it factors as a product of irreducible quadratic polynomials with negative discriminant. Take one of them, $p\left(x\right)=x^2+bx+c$, with $b^2-4c< 0$.
 
 By the structure theory of finitely generated torsion modules over the principal ideal domain $\mathbb R\left[x\right]$ (i.e. the primary decomposition of $V$ as an $\mathbb R\left[x\right]$-module), the primary subspace corresponding to $p\left(x\right)$ is nonzero. Take a vector $u$ in it such that $p\left(A\right)u=0$ and $u\ne0$. Since $p\left(x\right)$ has no real roots, $u$ and $Au$ must be linearly independent (otherwise $Au=au$ with $a\in\mathbb R$, and then $a$ would be a real root of $p$, a contradiction). Let $W=\mathrm{span}\left\{u,Au\right\}$. From $p\left(A\right)u=0$, i.e. $A^2u+bAu+cu=0$, we get
 

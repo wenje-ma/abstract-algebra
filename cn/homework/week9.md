@@ -118,7 +118,7 @@ $$
 
 （习题 1.9-8）设
 $$
-H=\left\{z=x+iy\in\mathbb C\mid y>0\right\},
+H=\left\{z=x+iy\in\mathbb C\mid y> 0\right\},
 $$
 称为庞加莱上半平面. 对任意
 
@@ -134,15 +134,15 @@ $$
 
 ### 解答 习题四
 
-先验证 $g\circ z\in H$. 对 $z=x+iy$, $y>0$, 直接计算虚部:
+先验证 $g\circ z\in H$. 对 $z=x+iy$, $y> 0$, 直接计算虚部:
 $$
-\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{y}{\left|cz+d\right|^{2}}>0,
+\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{y}{\left|cz+d\right|^{2}}> 0,
 $$
 故 $g\circ z\in H$.
 
 验证作用公理: 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又分式线性变换的复合对应矩阵乘法 (行列式为 $1$ 时), 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 故由**定义 1.9.1**（群作用）, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
 
-可递性: 任取 $z=x+iy\in H$, $y>0$, 取
+可递性: 任取 $z=x+iy\in H$, $y> 0$, 取
 $$
 g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
 $$
@@ -187,8 +187,8 @@ $$
 $$
 p_2:\left(x,y,z\right)\mapsto
 \begin{cases}
-\left(x+2z,\,z,\,y-x-z\right), & x<y-z,\\
-\left(2y-x,\,y,\,x-y+z\right), & y-z\le x<2y,\\
+\left(x+2z,\,z,\,y-x-z\right), & x< y-z,\\
+\left(2y-x,\,y,\,x-y+z\right), & y-z\le x< 2y,\\
 \left(x-2y,\,x-y+z,\,y\right), & x\ge 2y.
 \end{cases}
 $$
@@ -206,9 +206,9 @@ $$
 
 求 $p_2$ 的不动点. 对三种情况分别令 $p_2\left(x,y,z\right)=\left(x,y,z\right)$:
 
-情况一 $x<y-z$: $x+2z=x$ 给出 $z=0$, 与 $z\in\mathbb N^{+}$ 矛盾, 无不动点.
+情况一 $x< y-z$: $x+2z=x$ 给出 $z=0$, 与 $z\in\mathbb N^{+}$ 矛盾, 无不动点.
 
-情况二 $y-z\le x<2y$: $2y-x=x$ 给出 $x=y$; 第三坐标 $x-y+z=z$ 自动成立. 代入方程:
+情况二 $y-z\le x< 2y$: $2y-x=x$ 给出 $x=y$; 第三坐标 $x-y+z=z$ 自动成立. 代入方程:
 $$
 \begin{aligned}x^{2}+4xz&=x\left(x+4z\right)\\&=p.\end{aligned}
 $$

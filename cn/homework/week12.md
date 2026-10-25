@@ -94,7 +94,7 @@ $$
 \left(a-b\right)^{m+n-1}=\sum_{k=0}^{m+n-1}\binom{m+n-1}{k}a^k\left(-b\right)^{m+n-1-k}.
 $$
 
-对右端任一项, 若 $k\ge m$, 则 $a^k=a^m a^{k-m}\in I$; 若 $k<m$, 则 $m+n-1-k\ge n$, 故 $b^{m+n-1-k}=b^n b^{m-1-k}\in I$. 因而每一项均属于 $I$, 即 $\left(a-b\right)^{m+n-1}\in I$, 故 $a-b\in\sqrt{I}$.
+对右端任一项, 若 $k\ge m$, 则 $a^k=a^m a^{k-m}\in I$; 若 $k< m$, 则 $m+n-1-k\ge n$, 故 $b^{m+n-1-k}=b^n b^{m-1-k}\in I$. 因而每一项均属于 $I$, 即 $\left(a-b\right)^{m+n-1}\in I$, 故 $a-b\in\sqrt{I}$.
 
 又设 $a\in\sqrt{I}$, $r\in R$ 且 $a^n\in I$, 则 $\left(ra\right)^n=r^n a^n\in I$($R$ 交换, $I$ 为理想), 故 $ra\in\sqrt{I}$.
 

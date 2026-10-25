@@ -6,7 +6,7 @@
 
 > **定理 1.5.8**（循环群的子群存在唯一性）设 $G$ 是 $n$ 阶循环群, $k\mid n$, 则存在 $G$ 的唯一的 $k$ 阶子群.
 
-> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$. 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
+> **定理 1.2.22**（拉格朗日定理）设 $G$ 是有限群, $H< G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$. 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
 
 > **基础知识**（欧拉函数）$\varphi\left(n\right)$ 为与 $n$ 互素且不超过 $n$ 的正整数的个数. 对正整数 $n$, 有 $\sum_{d\mid n}\varphi\left(d\right)=n$. $n$ 阶循环群中恰有 $\varphi\left(n\right)$ 个生成元.
 
@@ -44,7 +44,7 @@ $$
 
 **断言** $f\left(d\right)$ 要么为 $0$, 要么为 $\varphi\left(d\right)$.
 
-事实上, 若 $f\left(d\right)=0$, 断言显然成立. 若 $f\left(d\right)>0$, 取 $a\in G$ 使 $\mathrm{ord}\left(a\right)=d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶子群. 由唯一性, $\left\langle a\right\rangle=H_{d}$, 故 $H_{d}$ 是循环群. 又 $G$ 中任意 $d$ 阶元 $b$ 生成的子群 $\left\langle b\right\rangle$ 也是 $d$ 阶的, 故 $\left\langle b\right\rangle=H_{d}$. 因此 $G$ 中所有 $d$ 阶元都在 $H_{d}$ 中, 而 $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元(即 $d$ 阶元), 故 $f\left(d\right)=\varphi\left(d\right)$.
+事实上, 若 $f\left(d\right)=0$, 断言显然成立. 若 $f\left(d\right)> 0$, 取 $a\in G$ 使 $\mathrm{ord}\left(a\right)=d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶子群. 由唯一性, $\left\langle a\right\rangle=H_{d}$, 故 $H_{d}$ 是循环群. 又 $G$ 中任意 $d$ 阶元 $b$ 生成的子群 $\left\langle b\right\rangle$ 也是 $d$ 阶的, 故 $\left\langle b\right\rangle=H_{d}$. 因此 $G$ 中所有 $d$ 阶元都在 $H_{d}$ 中, 而 $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元(即 $d$ 阶元), 故 $f\left(d\right)=\varphi\left(d\right)$.
 
 于是对每个 $d\mid n$, 有 $f\left(d\right)\le\varphi\left(d\right)$.
 
@@ -62,7 +62,7 @@ $$
 
 因对每个 $d\mid n$ 都有 $f\left(d\right)\le\varphi\left(d\right)$, 而两者之和相等, 故必有 $f\left(d\right)=\varphi\left(d\right)$ 对所有 $d\mid n$ 成立.
 
-特别地, $f\left(n\right)=\varphi\left(n\right)>0$, 故 $G$ 中存在 $n$ 阶元, 从而 $G=\left\langle a\right\rangle$ 是循环群. $\blacksquare$
+特别地, $f\left(n\right)=\varphi\left(n\right)> 0$, 故 $G$ 中存在 $n$ 阶元, 从而 $G=\left\langle a\right\rangle$ 是循环群. $\blacksquare$
 
 ### 习题三
 
@@ -76,7 +76,7 @@ $$
 
 **断言** $f\left(d\right)\le\varphi\left(d\right)$.
 
-事实上, 若 $f\left(d\right)=0$, 结论显然. 若 $f\left(d\right)>0$, 取 $a\in G$ 使 $\mathrm{ord}\left(a\right)=d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶循环子群. 由题设, $G$ 中仅有这一个 $d$ 阶子群. 于是 $G$ 中任意 $d$ 阶元 $b$ 都满足 $\left\langle b\right\rangle=\left\langle a\right\rangle$, 即 $b$ 是这个 $d$ 阶循环群的生成元. 而 $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元, 故 $f\left(d\right)=\varphi\left(d\right)\le\varphi\left(d\right)$.
+事实上, 若 $f\left(d\right)=0$, 结论显然. 若 $f\left(d\right)> 0$, 取 $a\in G$ 使 $\mathrm{ord}\left(a\right)=d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶循环子群. 由题设, $G$ 中仅有这一个 $d$ 阶子群. 于是 $G$ 中任意 $d$ 阶元 $b$ 都满足 $\left\langle b\right\rangle=\left\langle a\right\rangle$, 即 $b$ 是这个 $d$ 阶循环群的生成元. 而 $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元, 故 $f\left(d\right)=\varphi\left(d\right)\le\varphi\left(d\right)$.
 
 由**定理 1.2.22**（拉格朗日定理）, $G$ 中每个元素的阶都整除 $n$, 故
 
@@ -86,4 +86,4 @@ $$
 
 上述不等式两边相等, 故对每个 $d\mid n$, 必有 $f\left(d\right)=\varphi\left(d\right)$.
 
-特别地, $f\left(n\right)=\varphi\left(n\right)>0$, 故 $G$ 中存在 $n$ 阶元, 从而 $G$ 是循环群. $\blacksquare$
+特别地, $f\left(n\right)=\varphi\left(n\right)> 0$, 故 $G$ 中存在 $n$ 阶元, 从而 $G$ 是循环群. $\blacksquare$

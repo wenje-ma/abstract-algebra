@@ -83,7 +83,7 @@ $$
 \left(a-b\right)^{m+n-1}=\sum_{k=0}^{m+n-1}\binom{m+n-1}{k}a^k\left(-b\right)^{m+n-1-k}.
 $$
 
-For any term on the right-hand side: if $k\ge m$, then $a^k=a^m a^{k-m}\in I$; if $k<m$, then $m+n-1-k\ge n$, so $b^{m+n-1-k}=b^n b^{m-1-k}\in I$. Hence every term lies in $I$, i.e. $\left(a-b\right)^{m+n-1}\in I$, and thus $a-b\in\sqrt{I}$.
+For any term on the right-hand side: if $k\ge m$, then $a^k=a^m a^{k-m}\in I$; if $k< m$, then $m+n-1-k\ge n$, so $b^{m+n-1-k}=b^n b^{m-1-k}\in I$. Hence every term lies in $I$, i.e. $\left(a-b\right)^{m+n-1}\in I$, and thus $a-b\in\sqrt{I}$.
 
 Now let $a\in\sqrt{I}$, $r\in R$, and $a^n\in I$; then $\left(ra\right)^n=r^n a^n\in I$ (since $R$ is commutative and $I$ is an ideal), so $ra\in\sqrt{I}$.
 

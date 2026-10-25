@@ -46,9 +46,9 @@ Both preserve addition and multiplication and are bijective. Hence $\mathbb Q\le
 
 Let $\varphi:\mathbb R\to\mathbb R$ be a field automorphism. First, $\varphi$ fixes rationals: $\varphi\left(1\right)=1$, so $\varphi\left(n\right)=n$ and $\varphi\left(m/n\right)=m/n$.
 
-**Order preservation** If $x>0$, then there exists $y\ne0$ with $x=y^2$, so $\varphi\left(x\right)=\varphi\left(y\right)^2>0$. Hence when $x>y$, $x-y>0$ gives $\varphi\left(x\right)-\varphi\left(y\right)>0$, i.e. $\varphi$ is strictly increasing.
+**Order preservation** If $x> 0$, then there exists $y\ne0$ with $x=y^2$, so $\varphi\left(x\right)=\varphi\left(y\right)^2> 0$. Hence when $x> y$, $x-y> 0$ gives $\varphi\left(x\right)-\varphi\left(y\right)> 0$, i.e. $\varphi$ is strictly increasing.
 
-**Identity** Suppose, for contradiction, that there exists $x$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)>x$, by the density of rationals in $\mathbb R$, take $q\in\mathbb Q$ with $x<q<\varphi\left(x\right)$. From $x<q$ and the monotonicity of $\varphi$, we get $\varphi\left(x\right)<\varphi\left(q\right)=q$, contradicting $q<\varphi\left(x\right)$. If $\varphi\left(x\right)<x$, similarly take $q$ with $\varphi\left(x\right)<q<x$; from the monotonicity of $\varphi$, $q=\varphi\left(q\right)<\varphi\left(x\right)$, a contradiction.
+**Identity** Suppose, for contradiction, that there exists $x$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)> x$, by the density of rationals in $\mathbb R$, take $q\in\mathbb Q$ with $x< q< \varphi\left(x\right)$. From $x< q$ and the monotonicity of $\varphi$, we get $\varphi\left(x\right)< \varphi\left(q\right)=q$, contradicting $q< \varphi\left(x\right)$. If $\varphi\left(x\right)< x$, similarly take $q$ with $\varphi\left(x\right)< q< x$; from the monotonicity of $\varphi$, $q=\varphi\left(q\right)< \varphi\left(x\right)$, a contradiction.
 
 Hence $\varphi\left(x\right)=x$ for all $x\in\mathbb R$, i.e. $\varphi$ is the identity automorphism. $\blacksquare$
 

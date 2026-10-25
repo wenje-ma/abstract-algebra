@@ -16,7 +16,7 @@
 
 ### 解答 习题一
 
-不妨设 $p<q$. 由**定理 1.10.10**（西罗第三定理）, 西罗 $q$-子群的个数 $n_q$ 满足 $n_q\mid p$ 且 $n_q\equiv1\pmod q$. 因 $p<q$, $n_q$ 作为 $p$ 的正因子只能是 $1$ 或 $p$. 若 $n_q=p$, 则 $p\equiv1\pmod q$, 即 $q\mid p-1$, 但 $p<q$ 蕴含 $p-1<q$, 矛盾. 故 $n_q=1$.
+不妨设 $p< q$. 由**定理 1.10.10**（西罗第三定理）, 西罗 $q$-子群的个数 $n_q$ 满足 $n_q\mid p$ 且 $n_q\equiv1\pmod q$. 因 $p< q$, $n_q$ 作为 $p$ 的正因子只能是 $1$ 或 $p$. 若 $n_q=p$, 则 $p\equiv1\pmod q$, 即 $q\mid p-1$, 但 $p< q$ 蕴含 $p-1< q$, 矛盾. 故 $n_q=1$.
 
 于是 $G$ 的西罗 $q$-子群 $Q$ 唯一, 由**定理 1.10.10**, $Q\trianglelefteq G$. 又 $\left|Q\right|=q$ 为素数, 故 $Q$ 是循环群, 从而是可解群. 商群 $G/Q$ 的阶为 $p$, 也是素数阶循环群, 亦是可解群.
 
@@ -52,11 +52,11 @@ $\blacksquare$
 
 ### 习题三
 
-（习题 1.10-15）设 $p,q$ 都是素数, $p<q$, $p\nmid\left(q-1\right)$, 证明 $pq$ 阶群一定是循环群.
+（习题 1.10-15）设 $p,q$ 都是素数, $p< q$, $p\nmid\left(q-1\right)$, 证明 $pq$ 阶群一定是循环群.
 
 ### 解答 习题三
 
-设 $\left|G\right|=pq$. 由**定理 1.10.10**（西罗第三定理）, 西罗 $q$-子群的个数 $n_q$ 满足 $n_q\mid p$ 且 $n_q\equiv1\pmod q$. 因 $p<q$, 如习题一所示, $n_q=1$. 故 $G$ 的西罗 $q$-子群 $Q$ 唯一, $Q\trianglelefteq G$, $\left|Q\right|=q$.
+设 $\left|G\right|=pq$. 由**定理 1.10.10**（西罗第三定理）, 西罗 $q$-子群的个数 $n_q$ 满足 $n_q\mid p$ 且 $n_q\equiv1\pmod q$. 因 $p< q$, 如习题一所示, $n_q=1$. 故 $G$ 的西罗 $q$-子群 $Q$ 唯一, $Q\trianglelefteq G$, $\left|Q\right|=q$.
 
 再考虑西罗 $p$-子群的个数 $n_p$. 由**定理 1.10.10**, $n_p\mid q$ 且 $n_p\equiv1\pmod p$. 因 $q$ 为素数, $n_p=1$ 或 $q$. 若 $n_p=q$, 则 $q\equiv1\pmod p$, 即 $p\mid\left(q-1\right)$, 与题设 $p\nmid\left(q-1\right)$ 矛盾. 故 $n_p=1$.
 
@@ -94,12 +94,12 @@ $$
 
 再考虑西罗 $2$-子群的个数 $n_2$. $n_2\mid15$ 且 $n_2\equiv1\pmod2$, 故 $n_2\in\left\{1,3,5,15\right\}$. 因 $G$ 单, $n_2\ne1$.
 
-若 $n_2=3$, $G$ 通过共轭作用在这 $3$ 个西罗 $2$-子群上, 给出同态 $\pi:G\to S_3$. 其核为 $G$ 的正规子群. 因 $G$ 单, $\ker\pi=\left\{e\right\}$ 或 $G$. 作用非平凡, 故 $\ker\pi\ne G$; 但若 $\ker\pi=\left\{e\right\}$, 则 $G$ 同构于 $S_3$ 的子群, 而 $\left|S_3\right|=6<60$, 矛盾. 故 $n_2\ne3$.
+若 $n_2=3$, $G$ 通过共轭作用在这 $3$ 个西罗 $2$-子群上, 给出同态 $\pi:G\to S_3$. 其核为 $G$ 的正规子群. 因 $G$ 单, $\ker\pi=\left\{e\right\}$ 或 $G$. 作用非平凡, 故 $\ker\pi\ne G$; 但若 $\ker\pi=\left\{e\right\}$, 则 $G$ 同构于 $S_3$ 的子群, 而 $\left|S_3\right|=6< 60$, 矛盾. 故 $n_2\ne3$.
 
 若 $n_2=5$, $G$ 共轭作用在 $5$ 个西罗 $2$-子群上, 给出同态 $\pi:G\to S_5$. 同理 $\ker\pi=\left\{e\right\}$, 故 $G$ 同构于 $S_5$ 的一个 $60$ 阶子群. $S_5$ 的阶为 $120$, 指数为 $2$ 的子群必正规, 而 $A_5$ 正是 $S_5$ 唯一的指数 $2$ 子群. 故 $G\cong A_5$.
 
 最后排除 $n_2=15$. 若任意两个不同的西罗 $2$-子群交为 $\left\{e\right\}$, 则每个 $4$ 阶西罗 $2$-子群贡献 $3$ 个非单位元, 共 $15\times3=45$ 个 $2$ 阶或 $4$ 阶元, 加上 $24$ 个 $5$ 阶元, 总数超过 $60$, 矛盾.
 
-故存在两个不同的西罗 $2$-子群 $P,Q$ 使 $\left|P\cap Q\right|=2$. 设 $P\cap Q=\left\{e,x\right\}$, $x$ 为 $2$ 阶元. 因 $P,Q$ 均为 $4$ 阶群 (交换), 都正规于自身, 故 $P,Q\subseteq N_G\left(\left\langle x\right\rangle\right)$. 又 $P\ne Q$, 故 $\left|N_G\left(\left\langle x\right\rangle\right)\right|>4$. 同时 $\left|N_G\left(\left\langle x\right\rangle\right)\right|\mid60$ 且被 $4$ 整除, 故只能为 $12,20$ 或 $60$. 若为 $60$, 则 $\left\langle x\right\rangle\trianglelefteq G$, 与 $G$ 单矛盾. 故 $\left|N_G\left(\left\langle x\right\rangle\right)\right|=12$ 或 $20$, 对应指数 $5$ 或 $3$.
+故存在两个不同的西罗 $2$-子群 $P,Q$ 使 $\left|P\cap Q\right|=2$. 设 $P\cap Q=\left\{e,x\right\}$, $x$ 为 $2$ 阶元. 因 $P,Q$ 均为 $4$ 阶群 (交换), 都正规于自身, 故 $P,Q\subseteq N_G\left(\left\langle x\right\rangle\right)$. 又 $P\ne Q$, 故 $\left|N_G\left(\left\langle x\right\rangle\right)\right|> 4$. 同时 $\left|N_G\left(\left\langle x\right\rangle\right)\right|\mid60$ 且被 $4$ 整除, 故只能为 $12,20$ 或 $60$. 若为 $60$, 则 $\left\langle x\right\rangle\trianglelefteq G$, 与 $G$ 单矛盾. 故 $\left|N_G\left(\left\langle x\right\rangle\right)\right|=12$ 或 $20$, 对应指数 $5$ 或 $3$.
 
 指数 $3$ 时同态 $G\to S_3$ 与前述矛盾, 故指数必为 $5$. 于是 $G$ 有指数 $5$ 的子群, $G$ 通过左平移作用在该子群的 $5$ 个陪集上, 给出单同态 $G\hookrightarrow S_5$. 如前所述, $S_5$ 的 $60$ 阶子群只能是 $A_5$, 故 $G\cong A_5$. $\blacksquare$

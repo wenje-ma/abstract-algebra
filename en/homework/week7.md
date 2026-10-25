@@ -97,7 +97,7 @@ and
 $$
 G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
-are both composition series of $G_2$. Since $\left|G_2\right|<\left|G\right|$, induction on the order of the group and **Theorem 1.7.13** (Jordan–Hölder Theorem) give that these two composition series of $G_2$ are isomorphic. Adjoining the common first factor $G/G_2$, $S_1$ and $S_3$ are isomorphic.
+are both composition series of $G_2$. Since $\left|G_2\right|< \left|G\right|$, induction on the order of the group and **Theorem 1.7.13** (Jordan–Hölder Theorem) give that these two composition series of $G_2$ are isomorphic. Adjoining the common first factor $G/G_2$, $S_1$ and $S_3$ are isomorphic.
 
 Symmetrically, both $S_2$ and $S_4$ have first factor $G/H_2$, and their tails $H_2\triangleright\cdots\triangleright\left\{e\right\}$ and $H_2\triangleright K_3\triangleright\cdots\triangleright\left\{e\right\}$ are both composition series of $H_2$; by the induction hypothesis they are isomorphic, so $S_2$ and $S_4$ are isomorphic.
 

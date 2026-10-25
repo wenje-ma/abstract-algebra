@@ -123,15 +123,15 @@ $$
 
 Hence $G\ltimes H$ is a group.
 
-We now prove $G_{1}<G\ltimes H$. $\left(e_{G},e_{H}\right)\in G_{1}$. For $\left(g_{1},e_{H}\right),\left(g_{2},e_{H}\right)\in G_{1}$,
+We now prove $G_{1}< G\ltimes H$. $\left(e_{G},e_{H}\right)\in G_{1}$. For $\left(g_{1},e_{H}\right),\left(g_{2},e_{H}\right)\in G_{1}$,
 
 $$
 \left(g_{1},e_{H}\right)\left(g_{2},e_{H}\right)^{-1}=\left(g_{1},e_{H}\right)\left(g_{2}^{-1},\varphi\left(g_{2}\right)\left(e_{H}\right)\right)=\left(g_{1}g_{2}^{-1},e_{H}\right)\in G_{1}.
 $$
 
-Hence $G_{1}<G\ltimes H$.
+Hence $G_{1}< G\ltimes H$.
 
-Finally prove $H_{1}\triangleleft G\ltimes H$. First show $H_{1}<G\ltimes H$: for $\left(e_{G},h_{1}\right),\left(e_{G},h_{2}\right)\in H_{1}$,
+Finally prove $H_{1}\triangleleft G\ltimes H$. First show $H_{1}< G\ltimes H$: for $\left(e_{G},h_{1}\right),\left(e_{G},h_{2}\right)\in H_{1}$,
 
 $$
 \left(e_{G},h_{1}\right)\left(e_{G},h_{2}\right)^{-1}=\left(e_{G},h_{1}\right)\left(e_{G},h_{2}^{-1}\right)=\left(e_{G},h_{1}h_{2}^{-1}\right)\in H_{1}.

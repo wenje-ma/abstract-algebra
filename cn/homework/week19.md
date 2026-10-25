@@ -5,11 +5,11 @@
 > **命题 3.1.16**（同态的核与像）模同态 $\phi:M_1\to M_2$ 的核 $\ker\phi$ 是 $M_1$ 的子模, 同态像 $\operatorname{Im}\phi$ 是 $M_2$ 的子模.
 
 > **定理 3.1.10**（直和判据）
->
+> 
 > 设 $M_1,\cdots,M_s$ 为 $R$-模 $M$ 的子模, 则 $M=M_1\oplus\cdots\oplus M_s$ 当且仅当
->
+> 
 > (1) $M=M_1+\cdots+M_s$;
->
+> 
 > (2) 对任何 $2\le j\le s$,
 > $$
 > M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}.

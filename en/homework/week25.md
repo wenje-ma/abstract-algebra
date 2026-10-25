@@ -103,7 +103,7 @@ $\blacksquare$
 
 ### Solution to Problem 4
 
-(1) Suppose, for contradiction, that $x^p-t$ has a nontrivial decomposition in $E\left[x\right]$, $x^p-t=f\left(x\right)g\left(x\right)$, with $f,g$ monic and $1\leq\deg f=k<p$.
+(1) Suppose, for contradiction, that $x^p-t$ has a nontrivial decomposition in $E\left[x\right]$, $x^p-t=f\left(x\right)g\left(x\right)$, with $f,g$ monic and $1\leq\deg f=k< p$.
 
 Let $\theta$ be a root of $x^p-t$ in some splitting field; then $\theta^p=t$. By **Basic Knowledge** (Frobenius Map in Characteristic $p$),
 
@@ -113,7 +113,7 @@ $$
 
 Hence in the splitting field, $x^p-t=\left(x-\theta\right)^p$, and therefore $f\left(x\right)=\left(x-\theta\right)^k$.
 
-$f\left(x\right)$ in $x^{k-1}$ is $-k\theta$. Since $f\in E\left[x\right]$, this coefficient lies in $E$, so $k\theta\in E$. Also $1\leq k<p$, and in a field of characteristic $p$, $k\ne0$, so $k$ is invertible, and thus $\theta\in E$.
+$f\left(x\right)$ in $x^{k-1}$ is $-k\theta$. Since $f\in E\left[x\right]$, this coefficient lies in $E$, so $k\theta\in E$. Also $1\leq k< p$, and in a field of characteristic $p$, $k\ne0$, so $k$ is invertible, and thus $\theta\in E$.
 
 But $\theta\in E=\mathbb F_p\left(t\right)$ means there exist coprime polynomials $f_0\left(t\right),g_0\left(t\right)\in\mathbb F_p\left[t\right]$ with $\theta=f_0\left(t\right)/g_0\left(t\right)$. From $\theta^p=t$ we get $f_0\left(t\right)^p=t\,g_0\left(t\right)^p$. Comparing degrees: the left-hand side has degree $p\deg f_0$, and the right-hand side has degree $1+p\deg g_0$. The left-hand side is divisible by $p$, while the right-hand side is congruent to $p$ modulo $1$, a contradiction. Hence $\theta\notin E$, and therefore $x^p-t$ is irreducible in $E\left[x\right]$.
 
@@ -151,7 +151,7 @@ $$
 
 We now prove that $h\left(x\right)\ne0$. Suppose, for contradiction, that $h\left(x\right)=0$; then in $F\left(u\right)\left[x\right]$ we have $u\,g\left(x\right)=f\left(x\right)$.
 
-If $g\left(x\right)$ is a constant polynomial, then $f\left(x\right)$ must be nonconstant (otherwise $u=f/g\in F$, a contradiction); in that case $\deg\left(u\,g\right)=0$ while $\deg f>0$, contradicting $ug=f$.
+If $g\left(x\right)$ is a constant polynomial, then $f\left(x\right)$ must be nonconstant (otherwise $u=f/g\in F$, a contradiction); in that case $\deg\left(u\,g\right)=0$ while $\deg f> 0$, contradicting $ug=f$.
 
 If $g\left(x\right)$ is nonconstant, then $\deg\left(ug\right)=\deg g$ (since $u$ is a nonzero element of $F\left(u\right)$, it does not change polynomial degree). From $ug=f$ we get $\deg f=\deg g$; comparing leading coefficients gives $u\cdot\mathrm{lc}\left(g\right)=\mathrm{lc}\left(f\right)$, i.e. $u=\mathrm{lc}\left(f\right)/\mathrm{lc}\left(g\right)\in F$, contradicting $u\notin F$.
 

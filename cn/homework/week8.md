@@ -22,7 +22,7 @@
 
 当 $\dim V=1$ 时, $\mathrm{GL}\left(V\right)$ 本身就是上三角矩阵群, 结论显然成立.
 
-设 $\dim V=n>1$. 由**定义 1.8.7**（可解群与幂零群）, $G$ 的换位子群 $G^{\prime}=\left[G,G\right]$ 是 $G$ 的真正规子群, 且 $G/G^{\prime}$ 为交换群. 由归纳假设, $G^{\prime}$ 在 $V$ 上有公共特征向量. 设 $\lambda$ 是 $G^{\prime}$ 的一个特征标, 记其特征子空间为
+设 $\dim V=n> 1$. 由**定义 1.8.7**（可解群与幂零群）, $G$ 的换位子群 $G^{\prime}=\left[G,G\right]$ 是 $G$ 的真正规子群, 且 $G/G^{\prime}$ 为交换群. 由归纳假设, $G^{\prime}$ 在 $V$ 上有公共特征向量. 设 $\lambda$ 是 $G^{\prime}$ 的一个特征标, 记其特征子空间为
 $$
 V_{\lambda}=\left\{v\in V\mid\sigma v=\lambda\left(\sigma\right)v,\;\forall\sigma\in G^{\prime}\right\}.
 $$

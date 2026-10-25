@@ -16,11 +16,11 @@
 > $$
 
 > **Basic Knowledge** (Dirichlet Convolution) For $f,g\in S$, the Dirichlet convolution is defined as
->
+> 
 > $$
 > \begin{aligned}\left(f*g\right)\left(n\right)&=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\&=\sum_{ab=n}f\left(a\right)g\left(b\right).\end{aligned}
 > $$
->
+> 
 
 ### Problem 1
 
@@ -240,7 +240,7 @@ $$
 
 both equal the triple sum $\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$, so $\left(f*g\right)*h=f*\left(g*h\right)$.
 
-**Identity** Define $e\in S$ by $e\left(1\right)=1$ and $n>1$ for $e\left(n\right)=0$. Then
+**Identity** Define $e\in S$ by $e\left(1\right)=1$ and $n> 1$ for $e\left(n\right)=0$. Then
 
 $$
 \begin{aligned}\left(e*f\right)\left(n\right)&=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)\\&=e\left(1\right)f\left(n\right)\\&=f\left(n\right),\end{aligned}
@@ -258,19 +258,19 @@ $$
 
 so $f\left(1\right)g\left(1\right)=1$; in particular $f\left(1\right)\ne0$.
 
-**Sufficiency** Suppose $f\left(1\right)\ne0$. Construct $g\in S$ inductively: set $g\left(1\right)=f\left(1\right)^{-1}$. For $n>1$, require $\left(f*g\right)\left(n\right)=0$, i.e.
+**Sufficiency** Suppose $f\left(1\right)\ne0$. Construct $g\in S$ inductively: set $g\left(1\right)=f\left(1\right)^{-1}$. For $n> 1$, require $\left(f*g\right)\left(n\right)=0$, i.e.
 
 $$
-f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid n\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
+f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid n\\d> 1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
 $$
 
 which gives
 
 $$
-g\left(n\right)=-f\left(1\right)^{-1}\sum_{\substack{d\mid n\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right).
+g\left(n\right)=-f\left(1\right)^{-1}\sum_{\substack{d\mid n\\d> 1}}f\left(d\right)g\left(\frac{n}{d}\right).
 $$
 
-The right-hand side only involves $n/d<n$ already defined at the smaller subscripts $g$, so $g\in S$ can be defined recursively with $f*g=e$. By **Definition 1.1.10** (Inverse Element), $f$ is invertible.
+The right-hand side only involves $n/d< n$ already defined at the smaller subscripts $g$, so $g\in S$ can be defined recursively with $f*g=e$. By **Definition 1.1.10** (Inverse Element), $f$ is invertible.
 
 (3) Let $F$ denote the set of all nonzero multiplicative functions.
 

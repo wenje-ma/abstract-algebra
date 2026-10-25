@@ -30,7 +30,7 @@ $$
 \begin{aligned}N\left(\xi\right)N\left(\eta\right)&=N\left(\gamma\right)\\&=9.\end{aligned}
 $$
 
-范数的取值为非负整数 $x^2+5y^2$. 不存在范数为 $3$ 的元素: $x^2+5y^2=3$ 在 $y=0$ 时要求 $x^2=3$, 非平方数; 在 $\left|y\right|\ge1$ 时 $5>3$. 故 $N\left(\xi\right),N\left(\eta\right)$ 只能取 $1$ 或 $9$. 若 $N\left(\xi\right)=1$, 则 $\xi$ 为单位; 若 $N\left(\xi\right)=9$, 则 $N\left(\eta\right)=1$, $\eta$ 为单位.
+范数的取值为非负整数 $x^2+5y^2$. 不存在范数为 $3$ 的元素: $x^2+5y^2=3$ 在 $y=0$ 时要求 $x^2=3$, 非平方数; 在 $\left|y\right|\ge1$ 时 $5> 3$. 故 $N\left(\xi\right),N\left(\eta\right)$ 只能取 $1$ 或 $9$. 若 $N\left(\xi\right)=1$, 则 $\xi$ 为单位; 若 $N\left(\xi\right)=9$, 则 $N\left(\eta\right)=1$, $\eta$ 为单位.
 
 因而 $\gamma$ 的任一分解中必有一个因子为单位, 由**定义 2.5.6**（不可约元素）, $\gamma$ 为不可约元素.
 

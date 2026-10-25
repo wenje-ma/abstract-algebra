@@ -22,7 +22,7 @@ We first prove the first part. Let $V$ be an $n$-dimensional vector space over $
 
 When $\dim V=1$, $\mathrm{GL}\left(V\right)$ itself is the group of upper-triangular matrices, so the conclusion is immediate.
 
-Suppose $\dim V=n>1$. By **Definition 1.8.7** (Solvable Groups and Nilpotent Groups), the commutator subgroup $G^{\prime}=\left[G,G\right]$ of $G$ is a proper normal subgroup, and $G/G^{\prime}$ is abelian. By the induction hypothesis, $G^{\prime}$ has a common eigenvector on $V$. Let $\lambda$ be a character of $G^{\prime}$ and denote its eigenspace by
+Suppose $\dim V=n> 1$. By **Definition 1.8.7** (Solvable Groups and Nilpotent Groups), the commutator subgroup $G^{\prime}=\left[G,G\right]$ of $G$ is a proper normal subgroup, and $G/G^{\prime}$ is abelian. By the induction hypothesis, $G^{\prime}$ has a common eigenvector on $V$. Let $\lambda$ be a character of $G^{\prime}$ and denote its eigenspace by
 
 $$
 V_{\lambda}=\left\{v\in V\mid\sigma v=\lambda\left(\sigma\right)v,\;\forall\sigma\in G^{\prime}\right\}.

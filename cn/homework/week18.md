@@ -1,6 +1,6 @@
 # 作业 18
 
-> **基础知识**（多项式带余除法）设 $R$ 为交换幺环, $f\left(x\right),g\left(x\right)\in R\left[x\right]$, 且 $g\left(x\right)$ 的首项系数为 $R$ 中的单位, 则存在唯一 $q\left(x\right),r\left(x\right)\in R\left[x\right]$ 使 $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, 其中 $r=0$ 或 $\deg r<\deg g$. 特别地, 除式为一次首一多项式 $x-a$ 时余式为常数.
+> **基础知识**（多项式带余除法）设 $R$ 为交换幺环, $f\left(x\right),g\left(x\right)\in R\left[x\right]$, 且 $g\left(x\right)$ 的首项系数为 $R$ 中的单位, 则存在唯一 $q\left(x\right),r\left(x\right)\in R\left[x\right]$ 使 $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, 其中 $r=0$ 或 $\deg r< \deg g$. 特别地, 除式为一次首一多项式 $x-a$ 时余式为常数.
 
 > **基础知识**（唯一分解整环）一个整环 $R$ 称为唯一分解整环, 如果 $R$ 中每个非零非单位元素都可分解为有限个不可约元素的乘积, 且在相伴意义下分解唯一.
 

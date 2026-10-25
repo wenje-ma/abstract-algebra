@@ -27,7 +27,7 @@ $$
 \begin{aligned}N\left(\xi\right)N\left(\eta\right)&=N\left(\gamma\right)\\&=9.\end{aligned}
 $$
 
-The norm takes values among the nonnegative integers $x^2+5y^2$. There is no element of norm $3$: the equation $x^2+5y^2=3$ requires $x^2=3$ when $y=0$, which is not a square; and when $\left|y\right|\ge1$, we have $5>3$. Hence $N\left(\xi\right),N\left(\eta\right)$ can only be $1$ or $9$. If $N\left(\xi\right)=1$, then $\xi$ is a unit; if $N\left(\xi\right)=9$, then $N\left(\eta\right)=1$ and $\eta$ is a unit.
+The norm takes values among the nonnegative integers $x^2+5y^2$. There is no element of norm $3$: the equation $x^2+5y^2=3$ requires $x^2=3$ when $y=0$, which is not a square; and when $\left|y\right|\ge1$, we have $5> 3$. Hence $N\left(\xi\right),N\left(\eta\right)$ can only be $1$ or $9$. If $N\left(\xi\right)=1$, then $\xi$ is a unit; if $N\left(\xi\right)=9$, then $N\left(\eta\right)=1$ and $\eta$ is a unit.
 
 Thus in any decomposition of $\gamma$, one factor must be a unit. By **Definition 2.5.6** (Irreducible Elements), $\gamma$ is irreducible.
 

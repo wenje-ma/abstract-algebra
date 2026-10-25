@@ -1,6 +1,6 @@
 # 作业 24
 
-> **定义 4.1.15**（扩张次数）设 $E$ 为 $F$ 的扩张, $E$ 作为 $F$-线性空间的维数称为 $E$ 对 $F$ 的扩张次数, 记为 $\left[E:F\right]$. 若 $\left[E:F\right]<\infty$, 称 $E$ 为 $F$ 的有限扩张; 否则称 $E$ 为 $F$ 的无限扩张.
+> **定义 4.1.15**（扩张次数）设 $E$ 为 $F$ 的扩张, $E$ 作为 $F$-线性空间的维数称为 $E$ 对 $F$ 的扩张次数, 记为 $\left[E:F\right]$. 若 $\left[E:F\right]< \infty$, 称 $E$ 为 $F$ 的有限扩张; 否则称 $E$ 为 $F$ 的无限扩张.
 
 > **定理 4.1.16**（扩张次数的望远镜法则）若 $K/F$ 与 $E/K$ 都是有限扩张, 则 $E/F$ 也是有限扩张, 且 $\left[E:F\right]=\left[E:K\right]\left[K:F\right]$.
 
@@ -122,24 +122,24 @@ $$
 
 设 $\sigma\in\mathrm{Aut}\left(\mathbb R\right)$. 由**引理 4.1.9**（域同态必单射）, $\sigma$ 为域自同构, 保持乘法单位元, 故 $\sigma\left(1\right)=1$. 于是对任意 $n\in\mathbb Z$, $\sigma\left(n\right)=n$; 对任意 $m/n\in\mathbb Q$, $\sigma\left(m/n\right)=m/n$, 即 $\sigma$ 保持 $\mathbb Q$ 中每个元素不动.
 
-下证 $\sigma$ 保持序. 设 $x>0$, 则存在 $y\in\mathbb R$, $y\ne0$, 使 $x=y^2$. 于是
+下证 $\sigma$ 保持序. 设 $x> 0$, 则存在 $y\in\mathbb R$, $y\ne0$, 使 $x=y^2$. 于是
 
 $$
-\begin{aligned}\sigma\left(x\right)&=\sigma\left(y^2\right)\\&=\sigma\left(y\right)^2>0,\end{aligned}
+\begin{aligned}\sigma\left(x\right)&=\sigma\left(y^2\right)\\&=\sigma\left(y\right)^2> 0,\end{aligned}
 $$
 
-其中 $\sigma\left(y\right)\ne0$(因 $\sigma$ 单射且 $y\ne0$). 故 $\sigma$ 把正数映为正数, 从而当 $a<b$ 即 $b-a>0$ 时
+其中 $\sigma\left(y\right)\ne0$(因 $\sigma$ 单射且 $y\ne0$). 故 $\sigma$ 把正数映为正数, 从而当 $a< b$ 即 $b-a> 0$ 时
 
 $$
-\sigma\left(b\right)-\sigma\left(a\right)=\sigma\left(b-a\right)>0,
+\sigma\left(b\right)-\sigma\left(a\right)=\sigma\left(b-a\right)> 0,
 $$
 
-即 $\sigma\left(a\right)<\sigma\left(b\right)$. 因而 $\sigma$ 是保序映射.
+即 $\sigma\left(a\right)< \sigma\left(b\right)$. 因而 $\sigma$ 是保序映射.
 
 反设 $\sigma\ne\mathrm{id}$, 则存在 $x\in\mathbb R$ 使 $\sigma\left(x\right)\ne x$.
 
-若 $\sigma\left(x\right)>x$, 由 $\mathbb Q$ 在 $\mathbb R$ 中稠密, 可取 $q\in\mathbb Q$ 使 $x<q<\sigma\left(x\right)$. 因 $\sigma$ 保序, 由 $x<q$ 得 $\sigma\left(x\right)<\sigma\left(q\right)=q$, 与 $q<\sigma\left(x\right)$ 矛盾.
+若 $\sigma\left(x\right)> x$, 由 $\mathbb Q$ 在 $\mathbb R$ 中稠密, 可取 $q\in\mathbb Q$ 使 $x< q< \sigma\left(x\right)$. 因 $\sigma$ 保序, 由 $x< q$ 得 $\sigma\left(x\right)< \sigma\left(q\right)=q$, 与 $q< \sigma\left(x\right)$ 矛盾.
 
-若 $\sigma\left(x\right)<x$, 同理取 $q\in\mathbb Q$ 使 $\sigma\left(x\right)<q<x$. 由 $q<x$ 得 $q=\sigma\left(q\right)<\sigma\left(x\right)$, 与 $\sigma\left(x\right)<q$ 矛盾.
+若 $\sigma\left(x\right)< x$, 同理取 $q\in\mathbb Q$ 使 $\sigma\left(x\right)< q< x$. 由 $q< x$ 得 $q=\sigma\left(q\right)< \sigma\left(x\right)$, 与 $\sigma\left(x\right)< q$ 矛盾.
 
 故 $\sigma\left(x\right)=x$ 对所有 $x\in\mathbb R$ 成立, 即 $\sigma=\mathrm{id}$. 因而 $\mathrm{Aut}\left(\mathbb R\right)$ 只含恒等元, 是平凡群. $\blacksquare$

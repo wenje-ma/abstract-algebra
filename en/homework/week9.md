@@ -112,7 +112,7 @@ Moreover, the transitivity of the actions of $\mathrm{SL}\left(n,\mathbb C\right
 
 (Problem 1.9-8) Let
 $$
-H=\left\{z=x+iy\in\mathbb C\mid y>0\right\},
+H=\left\{z=x+iy\in\mathbb C\mid y> 0\right\},
 $$
 called the Poincaré upper half-plane. For any
 $$
@@ -126,15 +126,15 @@ Verify that this defines an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $
 
 ### Solution to Problem 4
 
-First verify $g\circ z\in H$. For $z=x+iy$ with $y>0$, a direct computation of the imaginary part gives
+First verify $g\circ z\in H$. For $z=x+iy$ with $y> 0$, a direct computation of the imaginary part gives
 $$
-\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{y}{\left|cz+d\right|^{2}}>0,
+\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{y}{\left|cz+d\right|^{2}}> 0,
 $$
 so $g\circ z\in H$.
 
 Verify the action axioms: the identity matrix $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ gives $I\circ z=z$. Also, composition of fractional linear transformations corresponds to matrix multiplication (when the determinant is $1$), i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. Hence by **Definition 1.9.1** (Group Action), this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
 
-Transitivity: take any $z=x+iy\in H$ with $y>0$, and take
+Transitivity: take any $z=x+iy\in H$ with $y> 0$, and take
 $$
 g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
 $$
@@ -176,8 +176,8 @@ $$
 $$
 p_2:\left(x,y,z\right)\mapsto
 \begin{cases}
-\left(x+2z,\,z,\,y-x-z\right), & x<y-z,\\
-\left(2y-x,\,y,\,x-y+z\right), & y-z\le x<2y,\\
+\left(x+2z,\,z,\,y-x-z\right), & x< y-z,\\
+\left(2y-x,\,y,\,x-y+z\right), & y-z\le x< 2y,\\
 \left(x-2y,\,x-y+z,\,y\right), & x\ge 2y.
 \end{cases}
 $$
@@ -195,9 +195,9 @@ Now verify $p_2$. Direct substitution shows that in all three pieces, $p_2$ pres
 
 Find the fixed points of $p_2$. In each of the three cases, set $p_2\left(x,y,z\right)=\left(x,y,z\right)$:
 
-Case 1, $x<y-z$: $x+2z=x$ gives $z=0$, contradicting $z\in\mathbb N^{+}$; no fixed points.
+Case 1, $x< y-z$: $x+2z=x$ gives $z=0$, contradicting $z\in\mathbb N^{+}$; no fixed points.
 
-Case 2, $y-z\le x<2y$: $2y-x=x$ gives $x=y$; the third coordinate $x-y+z=z$ holds automatically. Substituting into the equation:
+Case 2, $y-z\le x< 2y$: $2y-x=x$ gives $x=y$; the third coordinate $x-y+z=z$ holds automatically. Substituting into the equation:
 $$
 \begin{aligned}x^{2}+4xz&=x\left(x+4z\right)\\&=p.\end{aligned}
 $$
