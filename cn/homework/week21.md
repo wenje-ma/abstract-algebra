@@ -49,7 +49,7 @@ $$
 $K=Dv$. 商模 $D^3/K$ 由 $1\times3$ 矩阵
 
 $$
-A=\begin{pmatrix}2-3i & 6+9i & -18i\end{pmatrix}
+A=\begin{bmatrix}2-3i & 6+9i & -18i\end{bmatrix}
 $$
 
 的史密斯标准形决定. 不变因子的第一个为 $A$ 三个元素的最大公因子(在相伴意义下).
@@ -68,7 +68,7 @@ $$
 
 故 $a\nmid b$, $a\nmid c$. 而 $a$ 的非平凡因子只有其相伴元($a$ 不可约), 所以 $a$ 不是 $b,c$ 的公因子. 同理 $2+3i$ 也不整除 $a$. 于是 $a,b,c$ 的最大公因子是 $D$ 中的单位 $1$.
 
-因此 $A$ 的史密斯标准形为 $\begin{pmatrix}1 & 0 & 0\end{pmatrix}$. 由**推论 3.4.12**（同构判定）,
+因此 $A$ 的史密斯标准形为 $\begin{bmatrix}1 & 0 & 0\end{bmatrix}$. 由**推论 3.4.12**（同构判定）,
 
 $$
 D^3/K\cong D/\left(1\right)\oplus D/\left(0\right)\oplus D/\left(0\right)\cong D^2.

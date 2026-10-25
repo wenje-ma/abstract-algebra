@@ -34,7 +34,7 @@ Transitivity: take any two lines $W_1=\mathbb Rv$ and $W_2=\mathbb Rw$ with $v,w
 
 Isotropy subgroup: take $W_0=\mathbb Re_1$, where $e_1=\left(1,0,\cdots,0\right)^{T}$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho e_1\in\mathbb Re_1$, i.e. the first column of $\rho$ is $\left(a,0,\cdots,0\right)^{T}$ with $a\ne0$. Hence the isotropy subgroup is
 $$
-F_{W_0}=\left\{\begin{pmatrix}a & *\\0 & A\end{pmatrix}\;\middle|\;a\in\mathbb R^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb R\right)\right\}.
+F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb R^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb R\right)\right\}.
 $$
 
 (2) The action is verified similarly: $\rho\left(\tau\left(W\right)\right)=\left(\rho\tau\right)\left(W\right)$.
@@ -43,7 +43,7 @@ Transitivity: take any two $k$-dimensional subspaces $W_1,W_2$; take bases $\lef
 
 Isotropy subgroup: take $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to the entries of the first $k$ columns of $\rho$ in rows $k+1,\cdots,n$ all being zero, i.e. $\rho$ is block upper-triangular:
 $$
-F_{W_0}=\left\{\begin{pmatrix}A & B\\0 & C\end{pmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb R\right),\;C\in\mathrm{GL}\left(n-k,\mathbb R\right),\;B\in\mathbb R^{k\times\left(n-k\right)}\right\}.
+F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb R\right),\;C\in\mathrm{GL}\left(n-k,\mathbb R\right),\;B\in\mathbb R^{k\times\left(n-k\right)}\right\}.
 $$
 
 (3) The actions of $\mathrm{SL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$ and $\mathrm{Gr}\left(k,n\right)$ are both transitive: in the above proof, if the determinant of the resulting map is not $1$, multiply the last row by a scalar to adjust the determinant to $1$, without changing the image subspace.
@@ -76,7 +76,7 @@ Hence the action is transitive.
 
 Isotropy subgroup: take the standard orthonormal set $\left(e_1,\cdots,e_k\right)$. The condition $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) means that $\rho$ is the identity on the first $k$ standard basis vectors, i.e. $\rho$ is block-diagonal:
 $$
-F=\left\{\begin{pmatrix}I_k & 0\\0 & A\end{pmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
+F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
 $$
 This is the isotropy subgroup of $\left(e_1,\cdots,e_k\right)$. $\blacksquare$
 
@@ -90,11 +90,11 @@ The complex projective space $P^{n-1}\left(\mathbb C\right)$ is the set of all $
 
 The isotropy subgroups are respectively
 $$
-F_{W_0}=\left\{\begin{pmatrix}a & *\\0 & A\end{pmatrix}\;\middle|\;a\in\mathbb C^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb C\right)\right\}
+F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb C^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb C\right)\right\}
 $$
 and
 $$
-F_{W_0}=\left\{\begin{pmatrix}A & B\\0 & C\end{pmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
+F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
 $$
 
 The complex Stiefel manifold $V_k\left(\mathbb C^n\right)$ is the set of all $k$-tuples of orthonormal vectors (with respect to the standard Hermitian inner product) in $\mathbb C^n$. $U\left(n\right)$ acts on it by
@@ -103,7 +103,7 @@ $$
 $$
 and unitary transformations preserve the Hermitian inner product, so the action is well defined. The action is transitive: extend two orthonormal $k$-tuples to orthonormal bases, and the corresponding unitary map is the desired element. The isotropy subgroup is
 $$
-F=\left\{\begin{pmatrix}I_k & 0\\0 & A\end{pmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
+F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
 $$
 
 Moreover, the transitivity of the actions of $\mathrm{SL}\left(n,\mathbb C\right)$, $U\left(n\right)$ and $\mathrm{SU}\left(n\right)$ on the above sets parallels the real case: $\mathrm{SL}\left(n,\mathbb C\right)$ acts transitively on complex projective space and the complex Grassmann manifold; $U\left(n\right)$ acts transitively on complex projective space, the complex Grassmann manifold and the complex Stiefel manifold; $\mathrm{SU}\left(n\right)$ also acts transitively on the corresponding sets when the dimension is sufficiently large. $\blacksquare$
@@ -116,7 +116,7 @@ H=\left\{z=x+iy\in\mathbb C\mid y>0\right\},
 $$
 called the Poincaré upper half-plane. For any
 $$
-g=\begin{pmatrix}a & b\\c & d\end{pmatrix}\in\mathrm{SL}\left(2,\mathbb R\right),
+g=\begin{bmatrix}a & b\\c & d\end{bmatrix}\in\mathrm{SL}\left(2,\mathbb R\right),
 $$
 and $z\in H$, define
 $$
@@ -132,11 +132,11 @@ $$
 $$
 so $g\circ z\in H$.
 
-Verify the action axioms: the identity matrix $I=\begin{pmatrix}1&0\\0&1\end{pmatrix}$ gives $I\circ z=z$. Also, composition of fractional linear transformations corresponds to matrix multiplication (when the determinant is $1$), i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. Hence by **Definition 1.9.1** (Group Action), this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
+Verify the action axioms: the identity matrix $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ gives $I\circ z=z$. Also, composition of fractional linear transformations corresponds to matrix multiplication (when the determinant is $1$), i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. Hence by **Definition 1.9.1** (Group Action), this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
 
 Transitivity: take any $z=x+iy\in H$ with $y>0$, and take
 $$
-g=\begin{pmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{pmatrix},
+g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
 $$
 which has determinant $1$ and satisfies
 $$
@@ -144,7 +144,7 @@ $$
 $$
 Hence $i$ can be mapped to any $z\in H$, and the action is transitive.
 
-Effectiveness: if $g\circ z=z$ for all $z\in H$, then the fractional linear transformation $\left(az+b\right)/\left(cz+d\right)$ has infinitely many fixed points, so it must be the identity transformation, i.e. $g=\pm I$. Here $-I=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}$ also satisfies $\left(-I\right)\circ z=z$ for all $z$. Therefore the kernel of the action is $\left\{\pm I\right\}$, and the action is not effective; its effective quotient is
+Effectiveness: if $g\circ z=z$ for all $z\in H$, then the fractional linear transformation $\left(az+b\right)/\left(cz+d\right)$ has infinitely many fixed points, so it must be the identity transformation, i.e. $g=\pm I$. Here $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ also satisfies $\left(-I\right)\circ z=z$ for all $z$. Therefore the kernel of the action is $\left\{\pm I\right\}$, and the action is not effective; its effective quotient is
 $$
 \mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
 $$
@@ -159,7 +159,7 @@ $$
 $$
 Hence
 $$
-F_i=\left\{\begin{pmatrix}a & b\\-b & a\end{pmatrix}\;\middle|\;a^{2}+b^{2}=1\right\}\cong SO\left(2\right).
+F_i=\left\{\begin{bmatrix}a & b\\-b & a\end{bmatrix}\;\middle|\;a^{2}+b^{2}=1\right\}\cong SO\left(2\right).
 $$
 $\blacksquare$
 

@@ -34,7 +34,7 @@ $$
 
 迷向子群: 取 $W_0=\mathbb Re_1$, 其中 $e_1=\left(1,0,\cdots,0\right)^{T}$. 条件 $\rho\left(W_0\right)=W_0$ 等价于 $\rho e_1\in\mathbb Re_1$, 即 $\rho$ 的第一列为 $\left(a,0,\cdots,0\right)^{T}$, $a\ne0$. 故迷向子群为
 $$
-F_{W_0}=\left\{\begin{pmatrix}a & *\\0 & A\end{pmatrix}\;\middle|\;a\in\mathbb R^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb R\right)\right\}.
+F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb R^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb R\right)\right\}.
 $$
 
 (2)验证作用同理: $\rho\left(\tau\left(W\right)\right)=\left(\rho\tau\right)\left(W\right)$.
@@ -43,7 +43,7 @@ $$
 
 迷向子群: 取 $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$. 条件 $\rho\left(W_0\right)=W_0$ 等价于 $\rho$ 的前 $k$ 列在第 $k+1,\cdots,n$ 行的分量均为零, 即 $\rho$ 为分块上三角阵
 $$
-F_{W_0}=\left\{\begin{pmatrix}A & B\\0 & C\end{pmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb R\right),\;C\in\mathrm{GL}\left(n-k,\mathbb R\right),\;B\in\mathbb R^{k\times\left(n-k\right)}\right\}.
+F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb R\right),\;C\in\mathrm{GL}\left(n-k,\mathbb R\right),\;B\in\mathbb R^{k\times\left(n-k\right)}\right\}.
 $$
 
 (3)$\mathrm{SL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 与 $\mathrm{Gr}\left(k,n\right)$ 上的作用均可递: 上述证明中, 若得到的映射行列式不为 $1$, 可在最后一行乘一个标量调整行列式为 $1$, 不改变子空间的像.
@@ -80,7 +80,7 @@ $$
 
 迷向子群: 取基准向量组 $\left(e_1,\cdots,e_k\right)$. 条件 $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) 意味着 $\rho$ 在前 $k$ 个标准基向量上为恒等映射, 即 $\rho$ 为分块对角阵
 $$
-F=\left\{\begin{pmatrix}I_k & 0\\0 & A\end{pmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
+F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
 $$
 这就是 $\left(e_1,\cdots,e_k\right)$ 的迷向子群. $\blacksquare$
 
@@ -94,11 +94,11 @@ $$
 
 迷向子群分别为:
 $$
-F_{W_0}=\left\{\begin{pmatrix}a & *\\0 & A\end{pmatrix}\;\middle|\;a\in\mathbb C^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb C\right)\right\}
+F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb C^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb C\right)\right\}
 $$
 与
 $$
-F_{W_0}=\left\{\begin{pmatrix}A & B\\0 & C\end{pmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
+F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
 $$
 
 复斯蒂弗尔流形 $V_k\left(\mathbb C^n\right)$ 为 $\mathbb C^n$ 中所有 $k$ 元标准正交向量组 (关于标准埃尔米特内积) 的全体. $U\left(n\right)$ 以
@@ -109,7 +109,7 @@ $$
 
 作用于其上, 酉变换保持埃尔米特内积, 故定义合理. 作用可递: 两组标准正交向量组分别扩充为标准正交基, 对应的酉映射即为所求. 迷向子群为
 $$
-F=\left\{\begin{pmatrix}I_k & 0\\0 & A\end{pmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
+F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
 $$
 
 此外, $\mathrm{SL}\left(n,\mathbb C\right)$, $U\left(n\right)$, $\mathrm{SU}\left(n\right)$ 在上述集合上的作用可递性与实情形平行: $\mathrm{SL}\left(n,\mathbb C\right)$ 在复射影空间与复格拉斯曼流形上可递; $U\left(n\right)$ 在复射影空间, 复格拉斯曼流形与复斯蒂弗尔流形上均可递; $\mathrm{SU}\left(n\right)$ 在相应集合上, 当维数足够时亦可递. $\blacksquare$
@@ -123,7 +123,7 @@ $$
 称为庞加莱上半平面. 对任意
 
 $$
-g=\begin{pmatrix}a & b\c & d\end{pmatrix}\in\mathrm{SL}\left(2,\mathbb R\right),
+g=\begin{bmatrix}a & b\c & d\end{bmatrix}\in\mathrm{SL}\left(2,\mathbb R\right),
 $$
 
 $z\in H$, 定义
@@ -140,11 +140,11 @@ $$
 $$
 故 $g\circ z\in H$.
 
-验证作用公理: 单位矩阵 $I=\begin{pmatrix}1&0\\0&1\end{pmatrix}$ 给出 $I\circ z=z$. 又分式线性变换的复合对应矩阵乘法 (行列式为 $1$ 时), 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 故由**定义 1.9.1**（群作用）, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
+验证作用公理: 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又分式线性变换的复合对应矩阵乘法 (行列式为 $1$ 时), 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 故由**定义 1.9.1**（群作用）, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
 
 可递性: 任取 $z=x+iy\in H$, $y>0$, 取
 $$
-g=\begin{pmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{pmatrix},
+g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
 $$
 其行列式为 $1$, 且
 $$
@@ -152,7 +152,7 @@ $$
 $$
 故 $i$ 可映到任意 $z\in H$, 作用可递.
 
-有效性: 若 $g\circ z=z$ 对一切 $z\in H$ 成立, 则分式线性变换 $\left(az+b\right)/\left(cz+d\right)$ 有无穷多个不动点, 故必为恒等变换, 即 $g=\pm I$. 其中 $-I=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ z=z$. 因此作用的核为 $\left\{\pm I\right\}$, 作用不是有效的; 其有效商群为
+有效性: 若 $g\circ z=z$ 对一切 $z\in H$ 成立, 则分式线性变换 $\left(az+b\right)/\left(cz+d\right)$ 有无穷多个不动点, 故必为恒等变换, 即 $g=\pm I$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ z=z$. 因此作用的核为 $\left\{\pm I\right\}$, 作用不是有效的; 其有效商群为
 
 $$
 \mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
@@ -170,7 +170,7 @@ $$
 
 故
 $$
-F_i=\left\{\begin{pmatrix}a & b\-b & a\end{pmatrix}\;\middle|\;a^{2}+b^{2}=1\right\}\cong SO\left(2\right).
+F_i=\left\{\begin{bmatrix}a & b\-b & a\end{bmatrix}\;\middle|\;a^{2}+b^{2}=1\right\}\cong SO\left(2\right).
 $$
 $\blacksquare$
 

@@ -78,7 +78,7 @@ $$
 
 (1)证明: $SL\left(n,\mathbb Z\right)$ 是 $GL\left(n,\mathbb R\right)$ 的子群;
 
-(2)设 $S=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, $T=\begin{pmatrix}1&1\\0&1\end{pmatrix}$, $R=\begin{pmatrix}0&-1\\1&1\end{pmatrix}$, $U=\begin{pmatrix}1&0\\1&1\end{pmatrix}$, 证明: 其中任两个元素都是 $SL\left(2,\mathbb Z\right)$ 的生成元.
+(2)设 $S=\begin{bmatrix}0&-1\\1&0\end{bmatrix}$, $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$, $R=\begin{bmatrix}0&-1\\1&1\end{bmatrix}$, $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$, 证明: 其中任两个元素都是 $SL\left(2,\mathbb Z\right)$ 的生成元.
 
 ### 解答 习题二
 
@@ -94,14 +94,14 @@ $$
 
 (2)首先验证 $S,T,R,U$ 均属于 $SL\left(2,\mathbb Z\right)$: 各矩阵元素均为整数, 且行列式均为 $1$.
 
-先证 $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$. 这是 $SL\left(2,\mathbb Z\right)$ 的标准生成元结果: 任一 $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in SL\left(2,\mathbb Z\right)$, 可通过左乘 $T^{k}=\begin{pmatrix}1&k\\0&1\end{pmatrix}$(对应行初等变换: 第一行加 $k$ 倍第二行)和 $U^{k}=\begin{pmatrix}1&0\\k&1\end{pmatrix}$(对应第二行加 $k$ 倍第一行)配合辗转相除法将 $A$ 化为对角形, 又由行列式为 $1$ 可知对角元必为 $\pm1$, 再由 $S$ 可将 $-I$ 表出. 故 $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
+先证 $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$. 这是 $SL\left(2,\mathbb Z\right)$ 的标准生成元结果: 任一 $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\in SL\left(2,\mathbb Z\right)$, 可通过左乘 $T^{k}=\begin{bmatrix}1&k\\0&1\end{bmatrix}$(对应行初等变换: 第一行加 $k$ 倍第二行)和 $U^{k}=\begin{bmatrix}1&0\\k&1\end{bmatrix}$(对应第二行加 $k$ 倍第一行)配合辗转相除法将 $A$ 化为对角形, 又由行列式为 $1$ 可知对角元必为 $\pm1$, 再由 $S$ 可将 $-I$ 表出. 故 $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 下面证明其余各对均与 $\left\langle S,T\right\rangle$ 相等.
 
 **$R=ST$** 直接计算:
 
 $$
-\begin{aligned}ST&=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}\\&=\begin{pmatrix}0&-1\\1&1\end{pmatrix}\\&=R.\end{aligned}
+\begin{aligned}ST&=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\\&=\begin{bmatrix}0&-1\\1&1\end{bmatrix}\\&=R.\end{aligned}
 $$
 
 故 $T=S^{-1}R$, 从而
@@ -118,7 +118,7 @@ $$
 **$U$ 与 $S$ 的关系** 计算 $S^{-1}TS$:
 
 $$
-\begin{aligned}S^{-1}TS&=\begin{pmatrix}0&1\\-1&0\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix}\\&=\begin{pmatrix}1&0\\-1&1\end{pmatrix}\\&=U^{-1}.\end{aligned}
+\begin{aligned}S^{-1}TS&=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}\\&=\begin{bmatrix}1&0\\-1&1\end{bmatrix}\\&=U^{-1}.\end{aligned}
 $$
 
 故 $T=SU^{-1}S^{-1}$, 从而 $\left\langle S,U\right\rangle\supseteq\left\langle S,T\right\rangle$. 又 $U=S^{-1}T^{-1}S\in\left\langle S,T\right\rangle$, 故
@@ -127,7 +127,7 @@ $$
 \left\langle S,U\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right).
 $$
 
-**$\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$** $T$ 与 $U$ 即为初等矩阵 $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ 与 $\begin{pmatrix}1&0\\1&1\end{pmatrix}$. 由上述辗转相除法, 仅用这两个初等变换即可将任意 $SL\left(2,\mathbb Z\right)$ 中元化为 $\pm I$, 故 $\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$.
+**$\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$** $T$ 与 $U$ 即为初等矩阵 $\begin{bmatrix}1&1\\0&1\end{bmatrix}$ 与 $\begin{bmatrix}1&0\\1&1\end{bmatrix}$. 由上述辗转相除法, 仅用这两个初等变换即可将任意 $SL\left(2,\mathbb Z\right)$ 中元化为 $\pm I$, 故 $\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 **$\left\langle R,U\right\rangle=SL\left(2,\mathbb Z\right)$** 由 $R=ST$ 及 $U^{-1}=S^{-1}TS$, 代入得
 
@@ -135,7 +135,7 @@ $$
 \begin{aligned}U^{-1}&=S^{-1}\left(S^{-1}R\right)S\\&=S^{-2}RS\\&=-IRS\\&=-RS,\end{aligned}
 $$
 
-其中 $S^{2}=-I$. 故 $S=-R^{-1}U^{-1}$. 又 $R^{3}=-I$(直接验证 $R^{3}=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}$), 所以 $-I=R^{3}\in\left\langle R,U\right\rangle$, 从而
+其中 $S^{2}=-I$. 故 $S=-R^{-1}U^{-1}$. 又 $R^{3}=-I$(直接验证 $R^{3}=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$), 所以 $-I=R^{3}\in\left\langle R,U\right\rangle$, 从而
 
 $$
 S=R^{3}R^{-1}U^{-1}=R^{2}U^{-1}\in\left\langle R,U\right\rangle.

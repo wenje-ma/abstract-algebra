@@ -85,7 +85,7 @@ is also symmetric. Hence $A$ is a product of two symmetric matrices. $\blacksqua
 (Problem 3.6-11) Let $A$ be a linear transformation on a real vector space $V$. Prove that there exists a basis of $V$ in which the matrix of $A$ has the block form
 
 $$
-\begin{pmatrix}B_1&B_2\\0&B_3\end{pmatrix}
+\begin{bmatrix}B_1&B_2\\0&B_3\end{bmatrix}
 $$
 
 where $B_1$ is a $1\times1$ or $2\times2$ block.
@@ -97,7 +97,7 @@ We induct on $\dim V=n$. When $n=1$, the conclusion is clear. Assume the conclus
 **Case 1: $A$ has a real eigenvalue $\lambda$.** Take a corresponding real eigenvector $v_1$, and extend it to a basis $v_1,v_2,\cdots,v_n$ of $V$. Since the one-dimensional subspace spanned by $v_1$ is $A$-invariant, the matrix of $A$ in this basis has the form
 
 $$
-\begin{pmatrix}\lambda&*\\0&A'\end{pmatrix},
+\begin{bmatrix}\lambda&*\\0&A'\end{bmatrix},
 $$
 
 where $\lambda$ is a $1\times1$ block and $A'$ is an $\left(n-1\right)\times\left(n-1\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block upper-triangular form, and hence so can $A$.
@@ -113,7 +113,7 @@ $$
 so $W$ is a two-dimensional $A$-invariant subspace. Take a basis of $W$ and extend it to a basis of $V$; then the matrix of $A$ in this basis has the form
 
 $$
-\begin{pmatrix}B_1&B_2\\0&A'\end{pmatrix},
+\begin{bmatrix}B_1&B_2\\0&A'\end{bmatrix},
 $$
 
 where $B_1$ is a $2\times2$ block (the restriction of $A$ to $W$) and $A'$ is an $\left(n-2\right)\times\left(n-2\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block upper-triangular form, and hence so can $A$.

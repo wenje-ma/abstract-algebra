@@ -78,7 +78,7 @@ As to whether $G$ necessarily contains an element of order $\left[m,n\right]$, t
 
 (1) Prove that $SL\left(n,\mathbb Z\right)$ is a subgroup of $GL\left(n,\mathbb R\right)$;
 
-(2) Let $S=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$, $T=\begin{pmatrix}1&1\\0&1\end{pmatrix}$, $R=\begin{pmatrix}0&-1\\1&1\end{pmatrix}$, $U=\begin{pmatrix}1&0\\1&1\end{pmatrix}$. Prove that any two of these elements generate $SL\left(2,\mathbb Z\right)$.
+(2) Let $S=\begin{bmatrix}0&-1\\1&0\end{bmatrix}$, $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$, $R=\begin{bmatrix}0&-1\\1&1\end{bmatrix}$, $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$. Prove that any two of these elements generate $SL\left(2,\mathbb Z\right)$.
 
 ### Solution to Problem 2
 
@@ -94,14 +94,14 @@ Hence $AB^{-1}\in SL\left(n,\mathbb Z\right)$. By **Theorem 1.2.2** (Subgroup Cr
 
 (2) First verify that $S,T,R,U$ all belong to $SL\left(2,\mathbb Z\right)$: each matrix has integer entries and determinant $1$.
 
-We first show $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$. This is the standard generator result for $SL\left(2,\mathbb Z\right)$: for any $A=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in SL\left(2,\mathbb Z\right)$, left-multiplying by $T^{k}=\begin{pmatrix}1&k\\0&1\end{pmatrix}$ (corresponding to the row operation: add $k$ times the second row to the first) and $U^{k}=\begin{pmatrix}1&0\\k&1\end{pmatrix}$ (corresponding to adding $k$ times the first row to the second), together with the Euclidean algorithm, reduces $A$ to diagonal form; since the determinant is $1$, the diagonal entries must be $\pm1$, and $S$ expresses $-I$. Hence $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
+We first show $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$. This is the standard generator result for $SL\left(2,\mathbb Z\right)$: for any $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\in SL\left(2,\mathbb Z\right)$, left-multiplying by $T^{k}=\begin{bmatrix}1&k\\0&1\end{bmatrix}$ (corresponding to the row operation: add $k$ times the second row to the first) and $U^{k}=\begin{bmatrix}1&0\\k&1\end{bmatrix}$ (corresponding to adding $k$ times the first row to the second), together with the Euclidean algorithm, reduces $A$ to diagonal form; since the determinant is $1$, the diagonal entries must be $\pm1$, and $S$ expresses $-I$. Hence $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 We now show that each of the remaining pairs also equals $\left\langle S,T\right\rangle$.
 
 **$R=ST$** A direct computation gives
 
 $$
-\begin{aligned}ST&=\begin{pmatrix}0&-1\\1&0\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}\\&=\begin{pmatrix}0&-1\\1&1\end{pmatrix}\\&=R.\end{aligned}
+\begin{aligned}ST&=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\\&=\begin{bmatrix}0&-1\\1&1\end{bmatrix}\\&=R.\end{aligned}
 $$
 
 Hence $T=S^{-1}R$, and therefore
@@ -118,7 +118,7 @@ $$
 **Relation between $U$ and $S$** Compute $S^{-1}TS$:
 
 $$
-\begin{aligned}S^{-1}TS&=\begin{pmatrix}0&1\\-1&0\end{pmatrix}\begin{pmatrix}1&1\\0&1\end{pmatrix}\begin{pmatrix}0&-1\\1&0\end{pmatrix}\\&=\begin{pmatrix}1&0\\-1&1\end{pmatrix}\\&=U^{-1}.\end{aligned}
+\begin{aligned}S^{-1}TS&=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}\\&=\begin{bmatrix}1&0\\-1&1\end{bmatrix}\\&=U^{-1}.\end{aligned}
 $$
 
 Hence $T=SU^{-1}S^{-1}$, so $\left\langle S,U\right\rangle\supseteq\left\langle S,T\right\rangle$. Also $U=S^{-1}T^{-1}S\in\left\langle S,T\right\rangle$, so
@@ -127,7 +127,7 @@ $$
 \left\langle S,U\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right).
 $$
 
-**$\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$** $T$ and $U$ are precisely the elementary matrices $\begin{pmatrix}1&1\\0&1\end{pmatrix}$ and $\begin{pmatrix}1&0\\1&1\end{pmatrix}$. By the Euclidean algorithm above, using only these two elementary transformations reduces any element of $SL\left(2,\mathbb Z\right)$ to $\pm I$, so $\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$.
+**$\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$** $T$ and $U$ are precisely the elementary matrices $\begin{bmatrix}1&1\\0&1\end{bmatrix}$ and $\begin{bmatrix}1&0\\1&1\end{bmatrix}$. By the Euclidean algorithm above, using only these two elementary transformations reduces any element of $SL\left(2,\mathbb Z\right)$ to $\pm I$, so $\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 **$\left\langle R,U\right\rangle=SL\left(2,\mathbb Z\right)$** From $R=ST$ and $U^{-1}=S^{-1}TS$, substituting gives
 
@@ -135,7 +135,7 @@ $$
 \begin{aligned}U^{-1}&=S^{-1}\left(S^{-1}R\right)S\\&=S^{-2}RS\\&=-IRS\\&=-RS,\end{aligned}
 $$
 
-where $S^{2}=-I$. Hence $S=-R^{-1}U^{-1}$. Also $R^{3}=-I$ (a direct check gives $R^{3}=\begin{pmatrix}-1&0\\0&-1\end{pmatrix}$), so $-I=R^{3}\in\left\langle R,U\right\rangle$, and thus
+where $S^{2}=-I$. Hence $S=-R^{-1}U^{-1}$. Also $R^{3}=-I$ (a direct check gives $R^{3}=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$), so $-I=R^{3}\in\left\langle R,U\right\rangle$, and thus
 
 $$
 S=R^{3}R^{-1}U^{-1}=R^{2}U^{-1}\in\left\langle R,U\right\rangle.

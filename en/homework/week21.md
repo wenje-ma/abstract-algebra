@@ -49,7 +49,7 @@ $$
 so that $K=Dv$. The quotient module $D^3/K$ is determined by the Smith normal form of the $1\times3$ matrix
 
 $$
-A=\begin{pmatrix}2-3i & 6+9i & -18i\end{pmatrix}.
+A=\begin{bmatrix}2-3i & 6+9i & -18i\end{bmatrix}.
 $$
 
 The first invariant factor is the greatest common divisor (up to associates) of the three entries of $A$.
@@ -68,7 +68,7 @@ $$
 
 Hence $a\nmid b$ and $a\nmid c$. The only nontrivial divisors of $a$ are its associates (since $a$ is irreducible), so $a$ is not a common divisor of $b,c$. Symmetrically, $2+3i$ does not divide $a$ either. Therefore the greatest common divisor of $a,b,c$ is the unit $1$ in $D$.
 
-Thus the Smith normal form of $A$ is $\begin{pmatrix}1 & 0 & 0\end{pmatrix}$. By **Corollary 3.4.12** (Isomorphism Criterion),
+Thus the Smith normal form of $A$ is $\begin{bmatrix}1 & 0 & 0\end{bmatrix}$. By **Corollary 3.4.12** (Isomorphism Criterion),
 
 $$
 D^3/K\cong D/\left(1\right)\oplus D/\left(0\right)\oplus D/\left(0\right)\cong D^2.
