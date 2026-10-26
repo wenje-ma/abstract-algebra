@@ -2,7 +2,7 @@
 
 > **Theorem 3.6.3** (Jordan Canonical Form) Let $F$ be an algebraically closed field of characteristic zero, let $V$ be an $n$-dimensional vector space over $F$, and let $A$ be a linear transformation on $V$. Then there exists a basis of $V$ in which the matrix of $A$ is a block-diagonal matrix $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, where each $J_i$ is a Jordan block. Two $n\times n$ matrices over $F$ are similar if and only if they have the same Jordan canonical form.
 
-> **Basic Knowledge** (Reverse Transpose Matrix) Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n\times n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries $0$), then $PNP=N^T$, and hence $PN$ is symmetric.
+> **Basic Knowledge** (Reverse Transpose Matrix) Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n\times n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries $0$), then $PNP=N^\top$, and hence $PN$ is symmetric.
 
 > **Basic Knowledge** (Nilpotent Kernel and Count of Jordan Blocks) Let $A$ be an $n\times n$ matrix, and let $a$ be an eigenvalue of $A$. Write
 > 
@@ -63,19 +63,19 @@ Then both $P,Q$ are symmetric, and $J=PQ$.
 Hence
 
 $$
-A=SJS^{-1}=SPQS^{-1}=\left(SPS^T\right)\left(S^{-T}QS^{-1}\right).
+A=SJS^{-1}=SPQS^{-1}=\left(SPS^\top\right)\left(S^{-T}QS^{-1}\right).
 $$
 
-Here $SPS^T$ is symmetric, since its transpose is
+Here $SPS^\top$ is symmetric, since its transpose is
 
 $$
-\left(SPS^T\right)^T=SP^TS^T=SPS^T;
+\left(SPS^\top\right)^\top=SP^\topS^\top=SPS^\top;
 $$
 
 similarly,
 
 $$
-S^{-T}QS^{-1}=\left(S^{-1}\right)^TQS^{-1}
+S^{-T}QS^{-1}=\left(S^{-1}\right)^\topQS^{-1}
 $$
 
 is also symmetric. Hence $A$ is a product of two symmetric matrices. $\blacksquare$

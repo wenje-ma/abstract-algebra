@@ -32,7 +32,7 @@ and the identity matrix $I$ satisfies $I\left(W\right)=W$. By **Definition 1.9.1
 
 Transitivity: take any two lines $W_1=\mathbb Rv$ and $W_2=\mathbb Rw$ with $v,w\ne0$. There exists an invertible matrix $\rho$ with $\rho v=w$ (extend $v,w$ to bases and define a linear map), so $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7** (Transitive Action and Effective Action), the action is transitive.
 
-Isotropy subgroup: take $W_0=\mathbb Re_1$, where $e_1=\left(1,0,\cdots,0\right)^{T}$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho e_1\in\mathbb Re_1$, i.e. the first column of $\rho$ is $\left(a,0,\cdots,0\right)^{T}$ with $a\ne0$. Hence the isotropy subgroup is
+Isotropy subgroup: take $W_0=\mathbb Re_1$, where $e_1=\left(1,0,\cdots,0\right)^{\top}$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho e_1\in\mathbb Re_1$, i.e. the first column of $\rho$ is $\left(a,0,\cdots,0\right)^{\top}$ with $a\ne0$. Hence the isotropy subgroup is
 $$
 F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb R^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb R\right)\right\}.
 $$
@@ -267,7 +267,7 @@ i.e. $\left|F_x\right|=\left|G\right|/\left|Ox\right|$.
 
 Decompose $X$ into a disjoint union of orbits. Let $X$ have $t$ orbits $O_1,\cdots,O_t$. For any $x$ in orbit $O_i$, $\left|Ox\right|=\left|O_i\right|$, so $\left|F_x\right|=\left|G\right|/\left|O_i\right|$. Hence
 $$
-\sum_{x\in X}\left|F_x\right|=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}=\sum_{i=1}^{t}\left|G\right|=t\left|G\right|.
+\sum_{x\in X}\left|F_x\right|=\sum_{i=1}^{\top}\sum_{x\in O_i}\left|F_x\right|=\sum_{i=1}^{\top}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}=\sum_{i=1}^{\top}\left|G\right|=t\left|G\right|.
 $$
 
 Combining the two counting methods gives

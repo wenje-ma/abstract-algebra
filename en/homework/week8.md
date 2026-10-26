@@ -6,7 +6,7 @@
 > $$
 > is called the commutator subgroup of $H,K$. In particular, $\left[G,G\right]$ is called the commutator subgroup of $G$.
 
-> **Definition 1.8.7** (Solvable Groups and Nilpotent Groups) In a group $G$, the derived series is defined inductively by $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. If there exists $t$ such that $G^{\left(t\right)}=\left\{e\right\}$, then $G$ is called a solvable group. The lower central series is defined inductively by $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$; if there exists $t$ such that $G^{t}=\left\{e\right\}$, then $G$ is called a nilpotent group.
+> **Definition 1.8.7** (Solvable Groups and Nilpotent Groups) In a group $G$, the derived series is defined inductively by $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. If there exists $t$ such that $G^{\left(t\right)}=\left\{e\right\}$, then $G$ is called a solvable group. The lower central series is defined inductively by $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$; if there exists $t$ such that $G^{\top}=\left\{e\right\}$, then $G$ is called a nilpotent group.
 
 > **Lemma 1.8.8** (Heredity of Solvable Groups) Subgroups and quotient groups of a solvable group are solvable; conversely, if $N\trianglelefteq G$ and both $N$ and $G/N$ are solvable, then $G$ is solvable.
 

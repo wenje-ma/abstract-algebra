@@ -32,7 +32,7 @@ $$
 
 可递性: 任取两条直线 $W_1=\mathbb Rv$, $W_2=\mathbb Rw$, 其中 $v,w\ne0$. 存在可逆矩阵 $\rho$ 使 $\rho v=w$ (将 $v,w$ 分别扩充为基并定义线性映射), 故 $\rho\left(W_1\right)=W_2$. 由**定义 1.9.7**（可递作用与有效作用）, 作用可递.
 
-迷向子群: 取 $W_0=\mathbb Re_1$, 其中 $e_1=\left(1,0,\cdots,0\right)^{T}$. 条件 $\rho\left(W_0\right)=W_0$ 等价于 $\rho e_1\in\mathbb Re_1$, 即 $\rho$ 的第一列为 $\left(a,0,\cdots,0\right)^{T}$, $a\ne0$. 故迷向子群为
+迷向子群: 取 $W_0=\mathbb Re_1$, 其中 $e_1=\left(1,0,\cdots,0\right)^{\top}$. 条件 $\rho\left(W_0\right)=W_0$ 等价于 $\rho e_1\in\mathbb Re_1$, 即 $\rho$ 的第一列为 $\left(a,0,\cdots,0\right)^{\top}$, $a\ne0$. 故迷向子群为
 $$
 F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb R^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb R\right)\right\}.
 $$
@@ -282,7 +282,7 @@ $$
 
 将 $X$ 分解为互不相交的轨道之并. 设 $X$ 共有 $t$ 个轨道 $O_1,\cdots,O_t$. 对轨道 $O_i$ 中的任意 $x$, $\left|Ox\right|=\left|O_i\right|$, 故 $\left|F_x\right|=\left|G\right|/\left|O_i\right|$. 于是
 $$
-\sum_{x\in X}\left|F_x\right|=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}=\sum_{i=1}^{t}\left|G\right|=t\left|G\right|.
+\sum_{x\in X}\left|F_x\right|=\sum_{i=1}^{\top}\sum_{x\in O_i}\left|F_x\right|=\sum_{i=1}^{\top}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}=\sum_{i=1}^{\top}\left|G\right|=t\left|G\right|.
 $$
 
 综合两种计数方式, 得

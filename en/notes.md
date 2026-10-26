@@ -222,7 +222,7 @@ is called the commutator subgroup of $H,K$. In particular, $\left[G,G\right]$ is
 
 **Definition 1.8.7** (Solvable Groups and Nilpotent Groups)
 
-In a group $G$, the derived series is defined inductively by $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. If there exists $t$ such that $G^{\left(t\right)}=\left\{e\right\}$, then $G$ is called a solvable group. The lower central series is defined inductively by $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$; if there exists $t$ such that $G^{t}=\left\{e\right\}$, then $G$ is called a nilpotent group.
+In a group $G$, the derived series is defined inductively by $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. If there exists $t$ such that $G^{\left(t\right)}=\left\{e\right\}$, then $G$ is called a solvable group. The lower central series is defined inductively by $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$; if there exists $t$ such that $G^{\top}=\left\{e\right\}$, then $G$ is called a nilpotent group.
 
 **Lemma 1.8.8** (Heredity of Solvable Groups)
 
@@ -500,7 +500,7 @@ An element of the multiplicative group $\mathbb Q^*$ has finite order if and onl
 
 **Basic Knowledge** (Reversal Transpose Matrix)
 
-Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries are $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n\times n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries are $0$), then $PNP=N^T$, and hence $PN$ is symmetric.
+Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries are $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n\times n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries are $0$), then $PNP=N^\top$, and hence $PN$ is symmetric.
 
 **Basic Knowledge** (Nilpotent Kernel and Counting Jordan Blocks)
 
