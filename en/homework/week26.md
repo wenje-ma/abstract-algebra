@@ -11,7 +11,7 @@
 **Necessity.** Suppose $x^p-c$ has a root $\alpha$ in $F$, i.e. $\alpha^p=c$ with $\alpha\in F$. By **Basic Knowledge** (Frobenius Map in Characteristic $p$),
 
 $$
-\begin{aligned}x^p-c&=x^p-\alpha^p\\&=\left(x-\alpha\right)^p.\end{aligned}
+x^p-c=x^p-\alpha^p=\left(x-\alpha\right)^p.
 $$
 
 Since $p\geqslant2$, this gives a nontrivial decomposition of $x^p-c$ in $F\left[x\right]$, so $x^p-c$ is reducible. Hence the contrapositive holds: irreducibility implies that $x^p-c$ has no root in $F$.

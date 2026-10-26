@@ -43,7 +43,7 @@ $$
 where $I_m$ is the $m\times m$ identity matrix. Taking determinants on both sides and using multiplicativity of the determinant,
 
 $$
-\begin{aligned}\det\left(A\right)\det\left(B\right)&=\det\left(I_m\right)\\&=1.\end{aligned}
+\det\left(A\right)\det\left(B\right)=\det\left(I_m\right)=1.
 $$
 
 Hence $\det A$ is a unit in $R$. By the basic fact on determinants, $A$ is invertible, i.e. there exists $A^{-1}$ such that $AA^{-1}=I_m$. Thus $\phi$ is both an epimorphism and a monomorphism ($\ker\phi=0$), hence bijective, and so $\phi$ is an isomorphism of modules. $\blacksquare$

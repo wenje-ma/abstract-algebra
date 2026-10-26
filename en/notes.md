@@ -69,10 +69,7 @@ For positive integers $m,n$, $\left(m,n\right)$ denotes the greatest common divi
 For $f,g\in S$, the Dirichlet convolution is defined as
 
 $$
-\begin{aligned}&\;\;\left(f*g\right)\left(n\right)\\
-&=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\
-&=\sum_{ab=n}f\left(a\right)g\left(b\right).
-\end{aligned}
+\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right).
 $$
 
 ## Group Homomorphisms and the Structure of Groups
@@ -510,10 +507,7 @@ Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other e
 Let $A$ be an $n\times n$ matrix and $a$ an eigenvalue of $A$. Write
 
 $$
-\begin{aligned}&\;\;\nu_k\\
-&=\dim\ker\left(aI_n-A\right)^k\\
-&=n-\mathrm{rank}\left(aI_n-A\right)^k,
-\end{aligned}
+\nu_k=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k,
 $$
 
 with the convention $\nu_0=0$. Then the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s-\nu_{s-1}$. Thus the sequence $\left\{\nu_k\right\}_{k\geqslant0}$ completely determines the sizes and number of Jordan blocks at $a$.

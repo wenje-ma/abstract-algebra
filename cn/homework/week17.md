@@ -19,7 +19,7 @@
 记 $\omega=\frac{1+\sqrt{-3}}{2}$, 则 $\bar\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, 且 $\omega+\bar\omega=1$, $\omega\bar\omega=1$. 故对 $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$, 定义范数
 
 $$
-\begin{aligned}N\left(a+b\omega\right)&=\left(a+b\omega\right)\left(a+b\bar\omega\right)\\&=a^2+ab+b^2.\end{aligned}
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\bar\omega\right)=a^2+ab+b^2.
 $$
 
 该二次型正定, 且 $N\left(\alpha\beta\right)=N\left(\alpha\right)N\left(\beta\right)$. 下面验证在映射 $\delta=N$ 下 $R$ 满足**定义 2.7.9**（欧几里得环）的带余除法.
@@ -33,7 +33,7 @@ $$
 记 $u=x-m$, $v=y-n$, 则 $\left|u\right|\le\frac12$, $\left|v\right|\le\frac12$. 由范数的乘性,
 
 $$
-\begin{aligned}N\left(r\right)&=N\left(\beta\right)N\left(u+v\omega\right)\\&=N\left(\beta\right)\left(u^2+uv+v^2\right).\end{aligned}
+N\left(r\right)=N\left(\beta\right)N\left(u+v\omega\right)=N\left(\beta\right)\left(u^2+uv+v^2\right).
 $$
 
 而 $\left|u\right|,\left|v\right|\le\frac12$ 时, 正定二次型 $u^2+uv+v^2$ 在正方形边界上的最大值在 $\left(u,v\right)=\left(\pm\frac12,\pm\frac12\right)$ 处取得, 等于 $\frac14+\frac14+\frac14=\frac34$. 故
@@ -105,7 +105,7 @@ $$
 由 $\omega=\frac{1+\sqrt{-19}}{2}$ 得 $\bar\omega=\frac{1-\sqrt{-19}}{2}$, 且 $\omega+\bar\omega=1$, $\omega\bar\omega=5$. 故对 $\alpha=a+b\omega\in R$, 范数为
 
 $$
-\begin{aligned}N\left(a+b\omega\right)&=\left(a+b\omega\right)\left(a+b\bar\omega\right)\\&=a^2+ab+5b^2,\end{aligned}
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\bar\omega\right)=a^2+ab+5b^2,
 $$
 
 它是正定二次型且乘性. 注意到当 $\left|b\right|\ge1$ 时,
@@ -143,7 +143,7 @@ $$
 (5)若 $\left|v\right|\le\frac14$, 则
 
 $$
-\begin{aligned}N\left(z-q\right)&=u^2+uv+5v^2\\&\le u^2+\left|u\right|\left|v\right|+5v^2\\&\le\frac14+\frac18+\frac{5}{16}\\&=\frac{19}{16}> 1.\end{aligned}
+N\left(z-q\right)=u^2+uv+5v^2\le u^2+\left|u\right|\left|v\right|+5v^2\le\frac14+\frac18+\frac{5}{16}=\frac{19}{16}> 1.
 $$
 
 此估计偏大, 改用精确讨论: 因 $u^2+uv+5v^2$ 在 $\left|u\right|\le\frac12$ 内关于 $u$ 的最小值在 $u=-\frac v2$ 处取得, 最小值为 $\frac{19}{4}v^2$. 当 $\left|v\right|\le\frac{2}{\sqrt{19}}$ 时 $\frac{19}{4}v^2\le1$, 选 $m$ 为 $x+\frac v2$ 的最近整数即可使 $N\left(z-q\right)< 1$. 故存在整数 $m,n$ 使 $N\left(z-q\right)< 1$, 即

@@ -19,7 +19,7 @@
 考虑 $\mathbb Z_{m}\times\mathbb Z_{n}$ 中的元素 $\left(1,1\right)$. 设其阶为 $d$, 则
 
 $$
-\begin{aligned}d\left(1,1\right)&=\left(d\bmod m,d\bmod n\right)\\&=\left(0,0\right),\end{aligned}
+d\left(1,1\right)=\left(d\bmod m,d\bmod n\right)=\left(0,0\right),
 $$
 
 即 $m\mid d$ 且 $n\mid d$. 因 $\left(m,n\right)=1$, 故 $mn\mid d$.
@@ -51,13 +51,13 @@ $$
 另一方面, 由**定理 1.2.22**（拉格朗日定理）, $G$ 中每个元素的阶都是 $n$ 的因子, 故
 
 $$
-\begin{aligned}n&=\left|G\right|\\&=\sum_{d\mid n}f\left(d\right).\end{aligned}
+n=\left|G\right|=\sum_{d\mid n}f\left(d\right).
 $$
 
 又由数论中的恒等式 $\sum_{d\mid n}\varphi\left(d\right)=n$, 得
 
 $$
-\begin{aligned}\sum_{d\mid n}f\left(d\right)&=\sum_{d\mid n}\varphi\left(d\right)\\&=n.\end{aligned}
+\sum_{d\mid n}f\left(d\right)=\sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
 因对每个 $d\mid n$ 都有 $f\left(d\right)\le\varphi\left(d\right)$, 而两者之和相等, 故必有 $f\left(d\right)=\varphi\left(d\right)$ 对所有 $d\mid n$ 成立.
@@ -81,7 +81,7 @@ $$
 由**定理 1.2.22**（拉格朗日定理）, $G$ 中每个元素的阶都整除 $n$, 故
 
 $$
-\begin{aligned}n&=\left|G\right|\\&=\sum_{d\mid n}f\left(d\right)\\&\le\sum_{d\mid n}\varphi\left(d\right)\\&=n.\end{aligned}
+n=\left|G\right|=\sum_{d\mid n}f\left(d\right)\le\sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
 上述不等式两边相等, 故对每个 $d\mid n$, 必有 $f\left(d\right)=\varphi\left(d\right)$.

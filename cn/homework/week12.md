@@ -25,7 +25,7 @@ $$
 在 $\mathbb Z/6\mathbb Z$ 中,
 
 $$
-\begin{aligned}\left(2+6\mathbb Z\right)\left(3+6\mathbb Z\right)&=6+6\mathbb Z\\&=0+6\mathbb Z,\end{aligned}
+\left(2+6\mathbb Z\right)\left(3+6\mathbb Z\right)=6+6\mathbb Z=0+6\mathbb Z,
 $$
 
 但 $2\notin 6\mathbb Z$, $3\notin 6\mathbb Z$. 故 $2+6\mathbb Z$ 与 $3+6\mathbb Z$ 都是非零的零因子.
@@ -49,7 +49,7 @@ $$
 对任意 $x\in R$,
 
 $$
-\begin{aligned}\left(xe-x\right)a^m&=x\left(ea^m\right)-xa^m\\&=xa^m-xa^m\\&=0.\end{aligned}
+\left(xe-x\right)a^m=x\left(ea^m\right)-xa^m=xa^m-xa^m=0.
 $$
 
 因 $a^m\ne0$ 且 $R$ 无右零因子, 得 $xe-x=0$, 即 $xe=x$ 对一切 $x\in R$ 成立, 故 $e$ 是 $R$ 的右单位元, 且 $e\ne0$.
@@ -57,7 +57,7 @@ $$
 又对任意 $x\in R$,
 
 $$
-\begin{aligned}e\left(ex-x\right)&=e^2x-ex\\&=ex-ex\\&=0,\end{aligned}
+e\left(ex-x\right)=e^2x-ex=ex-ex=0,
 $$
 
 其中用到右单位元给出 $e^2=e$. 因 $e\ne0$ 且 $R$ 无左零因子, 得 $ex-x=0$, 即 $ex=x$. 故 $e$ 是 $R$ 的幺元.
@@ -65,7 +65,7 @@ $$
 再证每个非零元可逆. 任取 $0\ne x\in R$, 同理左理想降链 $Rx\supseteq Rx^2\supseteq\cdots$ 稳定, 存在 $n$ 使 $Rx^n=Rx^{n+1}$. 于是存在 $y\in R$ 使 $x^n=yx^{n+1}=\left(yx\right)x^n$, 即 $\left(e-yx\right)x^n=0$. 由 $x^n\ne0$ 消去得 $yx=e$, 即 $y$ 是 $x$ 的左逆. 又
 
 $$
-\begin{aligned}\left(xy-e\right)x&=xyx-ex\\&=x\left(yx\right)-x\\&=xe-x\\&=0,\end{aligned}
+\left(xy-e\right)x=xyx-ex=x\left(yx\right)-x=xe-x=0,
 $$
 
 由 $x\ne0$ 得 $xy=e$. 故 $x$ 有双侧逆元.
@@ -119,13 +119,13 @@ $$
 (1)对任意 $a,b,c\in R$,
 
 $$
-\begin{aligned}\left(a\circ b\right)\circ c&=\left(a+b-ab\right)\circ c\\&=\left(a+b-ab\right)+c-\left(a+b-ab\right)c\\&=a+b+c-ab-ac-bc+abc,\end{aligned}
+\left(a\circ b\right)\circ c=\left(a+b-ab\right)\circ c=\left(a+b-ab\right)+c-\left(a+b-ab\right)c=a+b+c-ab-ac-bc+abc,
 $$
 
 且
 
 $$
-\begin{aligned}a\circ\left(b\circ c\right)&=a\circ\left(b+c-bc\right)\\&=a+\left(b+c-bc\right)-a\left(b+c-bc\right)\\&=a+b+c-ab-ac-bc+abc.\end{aligned}
+a\circ\left(b\circ c\right)=a\circ\left(b+c-bc\right)=a+\left(b+c-bc\right)-a\left(b+c-bc\right)=a+b+c-ab-ac-bc+abc.
 $$
 
 两者相等, 故 $\circ$ 满足结合律. 又 $0\circ a=0+a-0\cdot a=a$. 此外因 $R$ 交换, $a\circ b=b\circ a$, 故 $\circ$ 也交换.
@@ -133,7 +133,7 @@ $$
 (2)作映射 $\psi:R\to R$, $\psi\left(x\right)=e-x$. 显然 $\psi$ 是双射, 且 $\psi\left(0\right)=e$, $\psi\left(e\right)=0$. 对任意 $a,b\in R$,
 
 $$
-\begin{aligned}\psi\left(a\right)\circ\psi\left(b\right)&=\left(e-a\right)\circ\left(e-b\right)\\&=\left(e-a\right)+\left(e-b\right)-\left(e-a\right)\left(e-b\right)\\&=e-ab\\&=\psi\left(ab\right).\end{aligned}
+\psi\left(a\right)\circ\psi\left(b\right)=\left(e-a\right)\circ\left(e-b\right)=\left(e-a\right)+\left(e-b\right)-\left(e-a\right)\left(e-b\right)=e-ab=\psi\left(ab\right).
 $$
 
 故 $\psi$ 把 $R$ 的乘法同态地搬移到 $\circ$ 运算上, 且 $\psi$ 限制为 $R\setminus\left\{0\right\}$ 到 $R\setminus\left\{e\right\}$ 的双射. 因而 $\left(R\setminus\left\{0\right\},\cdot\right)$ 为交换群当且仅当 $\left(R\setminus\left\{e\right\},\circ\right)$ 为交换群.

@@ -30,7 +30,7 @@
 (1)因 $ab=ba$, 故对任意整数 $k$ 有 $\left(ab\right)^{k}=a^{k}b^{k}$. 于是
 
 $$
-\begin{aligned}\left(ab\right)^{mn}&=a^{mn}b^{mn}\\&=\left(a^{m}\right)^{n}\left(b^{n}\right)^{m}\\&=e,\end{aligned}
+\left(ab\right)^{mn}=a^{mn}b^{mn}=\left(a^{m}\right)^{n}\left(b^{n}\right)^{m}=e,
 $$
 
 故 $ab$ 的阶整除 $mn$.
@@ -42,7 +42,7 @@ $$
 (2)设 $d=\left[m,n\right]$. 因 $m\mid d$, $n\mid d$, 故
 
 $$
-\begin{aligned}\left(ab\right)^{d}&=a^{d}b^{d}\\&=e,\end{aligned}
+\left(ab\right)^{d}=a^{d}b^{d}=e,
 $$
 
 故 $ab$ 的阶整除 $d$.
@@ -62,10 +62,8 @@ $$
 举例: 取 $G=\mathbb Z_{4}\times\mathbb Z_{4}$, $a=\left(1,0\right)$, $b=\left(1,2\right)$. 则 $a,b$ 均为 $4$ 阶元,
 
 $$
-\begin{aligned}
-\left\langle a\right\rangle&=\left\{\left(0,0\right),\left(1,0\right),\left(2,0\right),\left(3,0\right)\right\},\
-\left\langle b\right\rangle&=\left\{\left(0,0\right),\left(1,2\right),\left(2,0\right),\left(3,2\right)\right\}
-\end{aligned},
+\left\langle a\right\rangle=\left\{\left(0,0\right),\left(1,0\right),\left(2,0\right),\left(3,0\right)\right\},\
+\left\langle b\right\rangle=\left\{\left(0,0\right),\left(1,2\right),\left(2,0\right),\left(3,2\right)\right\},
 $$
 
 其交为 $\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. 而 $ab=\left(2,2\right)$, 满足 $2ab=\left(0,0\right)$, 故 $ab$ 的阶为 $2< \left[4,4\right]=4$.
@@ -87,7 +85,7 @@ $$
 对任意 $A,B\in SL\left(n,\mathbb Z\right)$, $A,B$ 的元素均为整数, 故 $AB^{-1}$ 的元素亦为整数, 且
 
 $$
-\begin{aligned}\det\left(AB^{-1}\right)&=\det A\cdot\det\left(B^{-1}\right)\\&=\det A/\det B\\&=1/1\\&=1.\end{aligned}
+\det\left(AB^{-1}\right)=\det A\cdot\det\left(B^{-1}\right)=\det A/\det B=1/1=1.
 $$
 
 故 $AB^{-1}\in SL\left(n,\mathbb Z\right)$. 由**定理 1.2.2**（子群判别法）, $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
@@ -101,7 +99,7 @@ $$
 **$R=ST$** 直接计算:
 
 $$
-\begin{aligned}ST&=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\\&=\begin{bmatrix}0&-1\\1&1\end{bmatrix}\\&=R.\end{aligned}
+ST=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}=\begin{bmatrix}0&-1\\1&1\end{bmatrix}=R.
 $$
 
 故 $T=S^{-1}R$, 从而
@@ -118,7 +116,7 @@ $$
 **$U$ 与 $S$ 的关系** 计算 $S^{-1}TS$:
 
 $$
-\begin{aligned}S^{-1}TS&=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}\\&=\begin{bmatrix}1&0\\-1&1\end{bmatrix}\\&=U^{-1}.\end{aligned}
+S^{-1}TS=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}=\begin{bmatrix}1&0\\-1&1\end{bmatrix}=U^{-1}.
 $$
 
 故 $T=SU^{-1}S^{-1}$, 从而 $\left\langle S,U\right\rangle\supseteq\left\langle S,T\right\rangle$. 又 $U=S^{-1}T^{-1}S\in\left\langle S,T\right\rangle$, 故
@@ -132,7 +130,7 @@ $$
 **$\left\langle R,U\right\rangle=SL\left(2,\mathbb Z\right)$** 由 $R=ST$ 及 $U^{-1}=S^{-1}TS$, 代入得
 
 $$
-\begin{aligned}U^{-1}&=S^{-1}\left(S^{-1}R\right)S\\&=S^{-2}RS\\&=-IRS\\&=-RS,\end{aligned}
+U^{-1}=S^{-1}\left(S^{-1}R\right)S=S^{-2}RS=-IRS=-RS,
 $$
 
 其中 $S^{2}=-I$. 故 $S=-R^{-1}U^{-1}$. 又 $R^{3}=-I$(直接验证 $R^{3}=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$), 所以 $-I=R^{3}\in\left\langle R,U\right\rangle$, 从而
@@ -195,7 +193,7 @@ $$
 因此 $\varphi$ 是单射, 故
 
 $$
-\begin{aligned}\left[G:H_{1}\cap H_{2}\right]&=\left|G/\left(H_{1}\cap H_{2}\right)\right|\\&\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|\\&=\left[G:H_{1}\right]\left[G:H_{2}\right].\end{aligned}
+\left[G:H_{1}\cap H_{2}\right]=\left|G/\left(H_{1}\cap H_{2}\right)\right|\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|=\left[G:H_{1}\right]\left[G:H_{2}\right].
 $$
 
 再证互素情形下的等号成立. 由**推论 1.2.23**（指数的乘法）,
@@ -237,7 +235,7 @@ $$
 代入得
 
 $$
-\begin{aligned}\left|H_{1}H_{2}\right|&=\frac{\left(\left|G\right|/\left[G:H_{1}\right]\right)\cdot\left(\left|G\right|/\left[G:H_{2}\right]\right)}{\left|G\right|/\left(\left[G:H_{1}\right]\left[G:H_{2}\right]\right)}\\&=\left|G\right|.\end{aligned}
+\left|H_{1}H_{2}\right|=\frac{\left(\left|G\right|/\left[G:H_{1}\right]\right)\cdot\left(\left|G\right|/\left[G:H_{2}\right]\right)}{\left|G\right|/\left(\left[G:H_{1}\right]\left[G:H_{2}\right]\right)}=\left|G\right|.
 $$
 
 因 $H_{1}H_{2}\subseteq G$ 且二者元素个数相同, 故 $G=H_{1}H_{2}$. $\blacksquare$

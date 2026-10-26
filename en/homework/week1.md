@@ -18,7 +18,7 @@
 > **Basic Knowledge** (Dirichlet Convolution) For $f,g\in S$, the Dirichlet convolution is defined as
 > 
 > $$
-> \begin{aligned}\left(f*g\right)\left(n\right)&=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\&=\sum_{ab=n}f\left(a\right)g\left(b\right).\end{aligned}
+> \left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right).
 > $$
 > 
 
@@ -65,7 +65,7 @@ We now verify the four group axioms one by one.
 **Associativity** By the associativity of addition modulo $2$,
 
 $$
-\begin{aligned}\chi_{\left(A\triangle B\right)\triangle C}&=\left(\chi_A+\chi_B\right)+\chi_C\\&=\chi_A+\left(\chi_B+\chi_C\right)\\&=\chi_{A\triangle\left(B\triangle C\right)},\end{aligned}
+\chi_{\left(A\triangle B\right)\triangle C}=\left(\chi_A+\chi_B\right)+\chi_C=\chi_A+\left(\chi_B+\chi_C\right)=\chi_{A\triangle\left(B\triangle C\right)},
 $$
 
 hence
@@ -139,7 +139,7 @@ i.e. $A\left(\alpha_1-\alpha_2\right)=0$. Since $A$ is invertible, multiplying o
 **Surjectivity** For any $\beta\in\mathbb R^n$, take $\alpha=A^{-1}\left(\beta-B\right)$. Then
 
 $$
-\begin{aligned}T\left(A,B\right)\left(\alpha\right)&=A\left(A^{-1}\left(\beta-B\right)\right)+B\\&=\beta.\end{aligned}
+T\left(A,B\right)\left(\alpha\right)=A\left(A^{-1}\left(\beta-B\right)\right)+B=\beta.
 $$
 
 Hence $T\left(A,B\right)$ is a bijection.
@@ -155,7 +155,7 @@ $$
 and any $\alpha\in\mathbb R^n$,
 
 $$
-\begin{aligned}T\left(A,B\right)\circ T\left(C,D\right)\left(\alpha\right)&=A\left(C\alpha+D\right)+B\\&=\left(AC\right)\alpha+\left(AD+B\right)\\&=T\left(AC,AD+B\right)\left(\alpha\right).\end{aligned}
+T\left(A,B\right)\circ T\left(C,D\right)\left(\alpha\right)=A\left(C\alpha+D\right)+B=\left(AC\right)\alpha+\left(AD+B\right)=T\left(AC,AD+B\right)\left(\alpha\right).
 $$
 
 Moreover, $\left|AC\right|=\left|A\right|\left|C\right|\ne0$, so
@@ -171,7 +171,7 @@ i.e. the operation is closed.
 **Identity** $T\left(I,0\right)$ is the identity transformation, and $\left|I\right|=1\ne0$, so $T\left(I,0\right)\in\mathrm{Aff}\left(n,\mathbb R\right)$. Moreover, for any $T\left(A,B\right)$,
 
 $$
-\begin{aligned}T\left(A,B\right)\circ T\left(I,0\right)&=T\left(AI,A\cdot0+B\right)\\&=T\left(A,B\right).\end{aligned}
+T\left(A,B\right)\circ T\left(I,0\right)=T\left(AI,A\cdot0+B\right)=T\left(A,B\right).
 $$
 
 **Inverse** For $T\left(A,B\right)\in\mathrm{Aff}\left(n,\mathbb R\right)$, since $\left|A^{-1}\right|\ne0$, we have
@@ -183,7 +183,7 @@ $$
 and
 
 $$
-\begin{aligned}T\left(A^{-1},-A^{-1}B\right)\circ T\left(A,B\right)&=T\left(A^{-1}A,A^{-1}B-A^{-1}B\right)\\&=T\left(I,0\right),\end{aligned}
+T\left(A^{-1},-A^{-1}B\right)\circ T\left(A,B\right)=T\left(A^{-1}A,A^{-1}B-A^{-1}B\right)=T\left(I,0\right),
 $$
 
 so $T\left(A^{-1},-A^{-1}B\right)$ is the inverse of $T\left(A,B\right)$.
@@ -195,7 +195,7 @@ In summary, by **Definition 1.1.14** (Group and Abelian Group), $\mathrm{Aff}\le
 (Problem 1.1-20) Let $S$ be the set of all number-theoretic functions (i.e. maps $\mathbb N\to\mathbb C$). For $f,g\in S$, the Dirichlet convolution is defined by
 
 $$
-\begin{aligned}\left(f*g\right)\left(n\right)&=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\&=\sum_{ab=n}f\left(a\right)g\left(b\right).\end{aligned}
+\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right).
 $$
 
 (1) Prove that $\left(S,*\right)$ is a commutative monoid;
@@ -221,7 +221,7 @@ $$
 interchanging the roles of $a,b$ gives
 
 $$
-\begin{aligned}\left(f*g\right)\left(n\right)&=\sum_{ba=n}g\left(b\right)f\left(a\right)\\&=\left(g*f\right)\left(n\right),\end{aligned}
+\left(f*g\right)\left(n\right)=\sum_{ba=n}g\left(b\right)f\left(a\right)=\left(g*f\right)\left(n\right),
 $$
 
 so $f*g=g*f$.
@@ -229,13 +229,13 @@ so $f*g=g*f$.
 **Associativity** For any $n$,
 
 $$
-\begin{aligned}\left(\left(f*g\right)*h\right)\left(n\right)&=\sum_{ab=n}\left(f*g\right)\left(a\right)h\left(b\right)\\&=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),\end{aligned}
+\left(\left(f*g\right)*h\right)\left(n\right)=\sum_{ab=n}\left(f*g\right)\left(a\right)h\left(b\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),
 $$
 
 and
 
 $$
-\begin{aligned}\left(f*\left(g*h\right)\right)\left(n\right)&=\sum_{ab=n}f\left(a\right)\left(g*h\right)\left(b\right)\\&=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),\end{aligned}
+\left(f*\left(g*h\right)\right)\left(n\right)=\sum_{ab=n}f\left(a\right)\left(g*h\right)\left(b\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),
 $$
 
 both equal the triple sum $\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$, so $\left(f*g\right)*h=f*\left(g*h\right)$.
@@ -243,7 +243,7 @@ both equal the triple sum $\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\ri
 **Identity** Define $e\in S$ by $e\left(1\right)=1$ and $n> 1$ for $e\left(n\right)=0$. Then
 
 $$
-\begin{aligned}\left(e*f\right)\left(n\right)&=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)\\&=e\left(1\right)f\left(n\right)\\&=f\left(n\right),\end{aligned}
+\left(e*f\right)\left(n\right)=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)=e\left(1\right)f\left(n\right)=f\left(n\right),
 $$
 
 and similarly $f*e=f$. Hence $e$ is the identity element.
@@ -253,7 +253,7 @@ By **Definition 1.1.4** (Semigroup and Monoid), $\left(S,*\right)$ is a commutat
 (2) **Necessity** If $f$ is invertible, there exists $g\in S$ such that $f*g=e$. Then
 
 $$
-\begin{aligned}\left(f*g\right)\left(1\right)&=f\left(1\right)g\left(1\right)\\&=e\left(1\right)\\&=1,\end{aligned}
+\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=e\left(1\right)=1,
 $$
 
 so $f\left(1\right)g\left(1\right)=1$; in particular $f\left(1\right)\ne0$.
@@ -277,7 +277,7 @@ The right-hand side only involves $n/d< n$ already defined at the smaller subscr
 First we show that a nonzero multiplicative function satisfies $f\left(1\right)=1$. Since $f\ne0$, there exists $m\in\mathbb N^+$ with $f\left(m\right)\ne0$. Also $\left(1,1\right)=1$, so multiplicativity gives $f\left(1\right)=f\left(1\cdot1\right)=f\left(1\right)^2$, hence $f\left(1\right)=0$ or $1$. If $f\left(1\right)=0$, then
 
 $$
-\begin{aligned}f\left(m\right)&=f\left(1\cdot m\right)\\&=f\left(1\right)f\left(m\right)\\&=0,\end{aligned}
+f\left(m\right)=f\left(1\cdot m\right)=f\left(1\right)f\left(m\right)=0,
 $$
 
 a contradiction. Hence $f\left(1\right)=1\ne0$.
@@ -285,7 +285,7 @@ a contradiction. Hence $f\left(1\right)=1\ne0$.
 **Closure** Let $f,g$ be multiplicative. For $\left(m,n\right)=1$, any $d\mid mn$ can be uniquely decomposed as $d=d_1d_2$ with $d_1\mid m$, $d_2\mid n$, in which case $\left(d_1,d_2\right)=1$ and $\left(m/d_1,n/d_2\right)=1$. Then
 
 $$
-\begin{aligned}\left(f*g\right)\left(mn\right)&=\sum_{d_1\mid m}\sum_{d_2\mid n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)\\&=\left(f*g\right)\left(m\right)\left(f*g\right)\left(n\right),\end{aligned}
+\left(f*g\right)\left(mn\right)=\sum_{d_1\mid m}\sum_{d_2\mid n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)=\left(f*g\right)\left(m\right)\left(f*g\right)\left(n\right),
 $$
 
 so $f*g$ is multiplicative. Also,
@@ -307,7 +307,7 @@ In summary, by **Definition 1.1.14** (Group and Abelian Group), $F$ forms an abe
 (4) It does not. In fact, the set of nonzero completely multiplicative functions is not closed under convolution. Take $f\left(n\right)=1$ (the constant function). For any $m,n\in\mathbb N^+$, $f\left(mn\right)=1=f\left(m\right)f\left(n\right)$, so $f$ is completely multiplicative. But
 
 $$
-\begin{aligned}\left(f*f\right)\left(n\right)&=\sum_{d\mid n}1\\&=\tau\left(n\right),\end{aligned}
+\left(f*f\right)\left(n\right)=\sum_{d\mid n}1=\tau\left(n\right),
 $$
 
 where $\tau\left(n\right)$ is the number of positive divisors of $n$. Take $n=4$; then $\tau\left(4\right)=3$, while $\tau\left(2\right)\tau\left(2\right)=4$, so $\tau\left(4\right)\ne\tau\left(2\right)\tau\left(2\right)$.

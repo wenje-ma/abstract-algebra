@@ -23,7 +23,7 @@ $$
 
 In $\mathbb Z/6\mathbb Z$,
 $$
-\begin{aligned}\left(2+6\mathbb Z\right)\left(3+6\mathbb Z\right)&=6+6\mathbb Z\\&=0+6\mathbb Z,\end{aligned}
+\left(2+6\mathbb Z\right)\left(3+6\mathbb Z\right)=6+6\mathbb Z=0+6\mathbb Z,
 $$
 but $2\notin 6\mathbb Z$ and $3\notin 6\mathbb Z$. Hence both $2+6\mathbb Z$ and $3+6\mathbb Z$ are nonzero zero divisors.
 
@@ -44,20 +44,20 @@ Since $R$ has only finitely many left ideals, this chain must stabilize, i.e. th
 
 For any $x\in R$,
 $$
-\begin{aligned}\left(xe-x\right)a^m&=x\left(ea^m\right)-xa^m\\&=xa^m-xa^m\\&=0.\end{aligned}
+\left(xe-x\right)a^m=x\left(ea^m\right)-xa^m=xa^m-xa^m=0.
 $$
 
 Since $a^m\ne0$ and $R$ has no right zero divisors, $xe-x=0$, i.e. $xe=x$ for all $x\in R$. Hence $e$ is a right identity of $R$, and $e\ne0$.
 
 Also, for any $x\in R$,
 $$
-\begin{aligned}e\left(ex-x\right)&=e^2x-ex\\&=ex-ex\\&=0,\end{aligned}
+e\left(ex-x\right)=e^2x-ex=ex-ex=0,
 $$
 where we used that the right identity gives $e^2=e$. Since $e\ne0$ and $R$ has no left zero divisors, $ex-x=0$, i.e. $ex=x$. Hence $e$ is the identity element of $R$.
 
 Now prove that every nonzero element is invertible. Take any $0\ne x\in R$; similarly the descending chain of left ideals $Rx\supseteq Rx^2\supseteq\cdots$ stabilizes, so there exists $n$ with $Rx^n=Rx^{n+1}$. Then there exists $y\in R$ with $x^n=yx^{n+1}=\left(yx\right)x^n$, i.e. $\left(e-yx\right)x^n=0$. Cancelling $x^n\ne0$ gives $yx=e$, i.e. $y$ is a left inverse of $x$. Also,
 $$
-\begin{aligned}\left(xy-e\right)x&=xyx-ex\\&=x\left(yx\right)-x\\&=xe-x\\&=0,\end{aligned}
+\left(xy-e\right)x=xyx-ex=x\left(yx\right)-x=xe-x=0,
 $$
 and $x\ne0$ gives $xy=e$. Hence $x$ has a two-sided inverse.
 
@@ -110,18 +110,18 @@ $$
 
 (1) For any $a,b,c\in R$,
 $$
-\begin{aligned}\left(a\circ b\right)\circ c&=\left(a+b-ab\right)\circ c\\&=\left(a+b-ab\right)+c-\left(a+b-ab\right)c\\&=a+b+c-ab-ac-bc+abc,\end{aligned}
+\left(a\circ b\right)\circ c=\left(a+b-ab\right)\circ c=\left(a+b-ab\right)+c-\left(a+b-ab\right)c=a+b+c-ab-ac-bc+abc,
 $$
 and
 $$
-\begin{aligned}a\circ\left(b\circ c\right)&=a\circ\left(b+c-bc\right)\\&=a+\left(b+c-bc\right)-a\left(b+c-bc\right)\\&=a+b+c-ab-ac-bc+abc.\end{aligned}
+a\circ\left(b\circ c\right)=a\circ\left(b+c-bc\right)=a+\left(b+c-bc\right)-a\left(b+c-bc\right)=a+b+c-ab-ac-bc+abc.
 $$
 
 The two are equal, so $\circ$ is associative. Also $0\circ a=0+a-0\cdot a=a$. Moreover, since $R$ is commutative, $a\circ b=b\circ a$, so $\circ$ is commutative as well.
 
 (2) Consider the map $\psi:R\to R$, $\psi\left(x\right)=e-x$. Clearly $\psi$ is a bijection, with $\psi\left(0\right)=e$ and $\psi\left(e\right)=0$. For any $a,b\in R$,
 $$
-\begin{aligned}\psi\left(a\right)\circ\psi\left(b\right)&=\left(e-a\right)\circ\left(e-b\right)\\&=\left(e-a\right)+\left(e-b\right)-\left(e-a\right)\left(e-b\right)\\&=e-ab\\&=\psi\left(ab\right).\end{aligned}
+\psi\left(a\right)\circ\psi\left(b\right)=\left(e-a\right)\circ\left(e-b\right)=\left(e-a\right)+\left(e-b\right)-\left(e-a\right)\left(e-b\right)=e-ab=\psi\left(ab\right).
 $$
 
 Thus $\psi$ transports multiplication on $R$ homomorphically to the operation $\circ$, and $\psi$ restricts to a bijection from $R\setminus\left\{0\right\}$ to $R\setminus\left\{e\right\}$. Therefore $\left(R\setminus\left\{0\right\},\cdot\right)$ is an abelian group if and only if $\left(R\setminus\left\{e\right\},\circ\right)$ is an abelian group.

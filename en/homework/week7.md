@@ -16,11 +16,11 @@
 
 (Problem 1.7-11) Let
 $$
-\begin{aligned}&G=G_1\triangleright G_2\triangleright\cdots\triangleright G_t\\&=\left\{e\right\},\end{aligned}
+G=G_1\triangleright G_2\triangleright\cdots\triangleright G_t=\left\{e\right\},
 $$
 and
 $$
-\begin{aligned}&G=H_1\triangleright H_2\triangleright\cdots\triangleright H_s\\&=\left\{e\right\},\end{aligned}
+G=H_1\triangleright H_2\triangleright\cdots\triangleright H_s=\left\{e\right\},
 $$
 be two composition series of $G$, with $G_2\ne H_2$. Set $K_3=G_2\cap H_2$. Take any composition series of $K_3$
 $$
@@ -30,10 +30,8 @@ Prove that:
 (1)
 
 $$
-\begin{aligned}
-G&=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\},\
-G&=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
-\end{aligned}
+G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\},\
+G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
 
 are also composition series of $G$;
@@ -52,31 +50,31 @@ $$
 
 (1) From $G_2H_2=G$ and **Basic Knowledge** (Second Isomorphism Theorem),
 $$
-\begin{aligned}G_2/K_3&=G_2/\left(G_2\cap H_2\right)\\&\cong G_2H_2/H_2\\&=G/H_2,\end{aligned}
+G_2/K_3=G_2/\left(G_2\cap H_2\right)\cong G_2H_2/H_2=G/H_2,
 $$
 and $G/H_2$ is a composition factor and hence simple, so $G_2/K_3$ is simple.
 
 Symmetrically,
 $$
-\begin{aligned}H_2/K_3&=H_2/\left(G_2\cap H_2\right)\\&\cong G_2H_2/G_2\\&=G/G_2,\end{aligned}
+H_2/K_3=H_2/\left(G_2\cap H_2\right)\cong G_2H_2/G_2=G/G_2,
 $$
 is also simple.
 
 Also $K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}$ is a composition series of $K_3$, so the factors $K_i/K_{i+1}$ ($i=3,\cdots,r-1$) are all simple. Therefore the series
 $$
-\begin{aligned}&G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r\\&=\left\{e\right\}\end{aligned}
+G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
 has all its factors $G/G_2$, $G_2/K_3$, $K_3/K_4,\cdots,K_{r-1}/K_r$ simple. By **Definition 1.7.9** (Subnormal Series and Composition Series), it is a composition series of $G$.
 
 Symmetrically, the series
 $$
-\begin{aligned}&G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r\\&=\left\{e\right\}\end{aligned}
+G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
 has factors $G/H_2$, $H_2/K_3$, $K_3/K_4,\cdots,K_{r-1}/K_r$ all simple, so it is also a composition series of $G$.
 
 (2) Denote the four composition series by
 $$
-\begin{aligned}&S_1:\;G\triangleright G_2\triangleright G_3\triangleright\cdots\triangleright G_t=\left\{e\right\},\\&S_2:\;G\triangleright H_2\triangleright H_3\triangleright\cdots\triangleright H_s=\left\{e\right\},\\&S_3:\;G\triangleright G_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\},\\&S_4:\;G\triangleright H_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\}.\end{aligned}
+S_1:\;G\triangleright G_2\triangleright G_3\triangleright\cdots\triangleright G_t=\left\{e\right\},;S_2:\;G\triangleright H_2\triangleright H_3\triangleright\cdots\triangleright H_s=\left\{e\right\},;S_3:\;G\triangleright G_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\},;S_4:\;G\triangleright H_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\}.
 $$
 
 We first show that $S_3$ and $S_4$ are isomorphic. The factors of $S_3$ are

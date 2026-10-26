@@ -17,7 +17,7 @@
 
 > **基础知识**（狄利克雷卷积）对 $f,g\in S$, 狄利克雷卷积定义为
 > $$
-> \begin{aligned}\left(f*g\right)\left(n\right)&=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\&=\sum_{ab=n}f\left(a\right)g\left(b\right).\end{aligned}
+> \left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right).
 > $$
 
 ### 习题一
@@ -63,7 +63,7 @@ $$
 **结合律** 由模 $2$ 加法的结合律,
 
 $$
-\begin{aligned}\chi_{\left(A\triangle B\right)\triangle C}&=\left(\chi_A+\chi_B\right)+\chi_C\\&=\chi_A+\left(\chi_B+\chi_C\right)\\&=\chi_{A\triangle\left(B\triangle C\right)},\end{aligned}
+\chi_{\left(A\triangle B\right)\triangle C}=\left(\chi_A+\chi_B\right)+\chi_C=\chi_A+\left(\chi_B+\chi_C\right)=\chi_{A\triangle\left(B\triangle C\right)},
 $$
 
 故
@@ -137,7 +137,7 @@ $$
 **满射** 对任意 $\beta\in\mathbb R^n$, 取 $\alpha=A^{-1}\left(\beta-B\right)$, 则
 
 $$
-\begin{aligned}T\left(A,B\right)\left(\alpha\right)&=A\left(A^{-1}\left(\beta-B\right)\right)+B\\&=\beta.\end{aligned}
+T\left(A,B\right)\left(\alpha\right)=A\left(A^{-1}\left(\beta-B\right)\right)+B=\beta.
 $$
 
 故 $T\left(A,B\right)$ 是双射.
@@ -153,7 +153,7 @@ $$
 对任意 $\alpha\in\mathbb R^n$,
 
 $$
-\begin{aligned}T\left(A,B\right)\circ T\left(C,D\right)\left(\alpha\right)&=A\left(C\alpha+D\right)+B\\&=\left(AC\right)\alpha+\left(AD+B\right)\\&=T\left(AC,AD+B\right)\left(\alpha\right).\end{aligned}
+T\left(A,B\right)\circ T\left(C,D\right)\left(\alpha\right)=A\left(C\alpha+D\right)+B=\left(AC\right)\alpha+\left(AD+B\right)=T\left(AC,AD+B\right)\left(\alpha\right).
 $$
 
 又 $\left|AC\right|=\left|A\right|\left|C\right|\ne0$, 故
@@ -169,7 +169,7 @@ $$
 **单位元** $T\left(I,0\right)$ 是恒等变换, 且 $\left|I\right|=1\ne0$, 故 $T\left(I,0\right)\in\mathrm{Aff}\left(n,\mathbb R\right)$, 且对任意 $T\left(A,B\right)$ 有
 
 $$
-\begin{aligned}T\left(A,B\right)\circ T\left(I,0\right)&=T\left(AI,A\cdot0+B\right)\\&=T\left(A,B\right).\end{aligned}
+T\left(A,B\right)\circ T\left(I,0\right)=T\left(AI,A\cdot0+B\right)=T\left(A,B\right).
 $$
 
 **逆元** 对 $T\left(A,B\right)\in\mathrm{Aff}\left(n,\mathbb R\right)$, 因 $\left|A^{-1}\right|\ne0$, 故
@@ -181,7 +181,7 @@ $$
 且
 
 $$
-\begin{aligned}T\left(A^{-1},-A^{-1}B\right)\circ T\left(A,B\right)&=T\left(A^{-1}A,A^{-1}B-A^{-1}B\right)\\&=T\left(I,0\right),\end{aligned}
+T\left(A^{-1},-A^{-1}B\right)\circ T\left(A,B\right)=T\left(A^{-1}A,A^{-1}B-A^{-1}B\right)=T\left(I,0\right),
 $$
 
 故 $T\left(A^{-1},-A^{-1}B\right)$ 是 $T\left(A,B\right)$ 的逆元.
@@ -193,7 +193,7 @@ $$
 （习题 1.1-20）设 $S$ 是所有数论函数(即 $\mathbb N\to\mathbb C$ 的映射)的全体. 对 $f,g\in S$, 定义狄利克雷卷积为
 
 $$
-\begin{aligned}\left(f*g\right)\left(n\right)&=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\&=\sum_{ab=n}f\left(a\right)g\left(b\right).\end{aligned}
+\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right).
 $$
 
 (1)证明: $\left(S,*\right)$ 为一个交换幺半群;
@@ -219,7 +219,7 @@ $$
 交换 $a,b$ 的次序得
 
 $$
-\begin{aligned}\left(f*g\right)\left(n\right)&=\sum_{ba=n}g\left(b\right)f\left(a\right)\\&=\left(g*f\right)\left(n\right),\end{aligned}
+\left(f*g\right)\left(n\right)=\sum_{ba=n}g\left(b\right)f\left(a\right)=\left(g*f\right)\left(n\right),
 $$
 
 故 $f*g=g*f$.
@@ -227,13 +227,13 @@ $$
 **结合律** 对任意 $n$,
 
 $$
-\begin{aligned}\left(\left(f*g\right)*h\right)\left(n\right)&=\sum_{ab=n}\left(f*g\right)\left(a\right)h\left(b\right)\\&=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),\end{aligned}
+\left(\left(f*g\right)*h\right)\left(n\right)=\sum_{ab=n}\left(f*g\right)\left(a\right)h\left(b\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),
 $$
 
 且
 
 $$
-\begin{aligned}\left(f*\left(g*h\right)\right)\left(n\right)&=\sum_{ab=n}f\left(a\right)\left(g*h\right)\left(b\right)\\&=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),\end{aligned}
+\left(f*\left(g*h\right)\right)\left(n\right)=\sum_{ab=n}f\left(a\right)\left(g*h\right)\left(b\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),
 $$
 
 两者同为三重和 $\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$, 故 $\left(f*g\right)*h=f*\left(g*h\right)$.
@@ -241,7 +241,7 @@ $$
 **单位元** 定义 $e\in S$ 为 $e\left(1\right)=1$, 且当 $n> 1$ 时 $e\left(n\right)=0$. 则
 
 $$
-\begin{aligned}\left(e*f\right)\left(n\right)&=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)\\&=e\left(1\right)f\left(n\right)\\&=f\left(n\right),\end{aligned}
+\left(e*f\right)\left(n\right)=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)=e\left(1\right)f\left(n\right)=f\left(n\right),
 $$
 
 同理 $f*e=f$. 故 $e$ 是单位元.
@@ -251,7 +251,7 @@ $$
 (2)**必要性** 若 $f$ 可逆, 则存在 $g\in S$ 使 $f*g=e$. 于是
 
 $$
-\begin{aligned}\left(f*g\right)\left(1\right)&=f\left(1\right)g\left(1\right)\\&=e\left(1\right)\\&=1,\end{aligned}
+\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=e\left(1\right)=1,
 $$
 
 故 $f\left(1\right)g\left(1\right)=1$, 特别地 $f\left(1\right)\ne0$.
@@ -275,7 +275,7 @@ $$
 先证非零积性函数满足 $f\left(1\right)=1$. 因 $f\ne0$, 存在 $m\in\mathbb N^+$ 使 $f\left(m\right)\ne0$. 又 $\left(1,1\right)=1$, 由积性得 $f\left(1\right)=f\left(1\cdot1\right)=f\left(1\right)^2$, 故 $f\left(1\right)=0$ 或 $1$. 若 $f\left(1\right)=0$, 则
 
 $$
-\begin{aligned}f\left(m\right)&=f\left(1\cdot m\right)\\&=f\left(1\right)f\left(m\right)\\&=0,\end{aligned}
+f\left(m\right)=f\left(1\cdot m\right)=f\left(1\right)f\left(m\right)=0,
 $$
 
 矛盾. 故 $f\left(1\right)=1\ne0$.
@@ -283,7 +283,7 @@ $$
 **封闭性** 设 $f,g$ 积性. 对 $\left(m,n\right)=1$, 任意 $d\mid mn$ 可唯一分解为 $d=d_1d_2$ 且 $d_1\mid m$, $d_2\mid n$, 此时 $\left(d_1,d_2\right)=1$, $\left(m/d_1,n/d_2\right)=1$. 于是
 
 $$
-\begin{aligned}\left(f*g\right)\left(mn\right)&=\sum_{d_1\mid m}\sum_{d_2\mid n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)\\&=\left(f*g\right)\left(m\right)\left(f*g\right)\left(n\right),\end{aligned}
+\left(f*g\right)\left(mn\right)=\sum_{d_1\mid m}\sum_{d_2\mid n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)=\left(f*g\right)\left(m\right)\left(f*g\right)\left(n\right),
 $$
 
 故 $f*g$ 积性. 又
@@ -305,7 +305,7 @@ $$
 (4)不构成. 事实上, 非零完全积性函数全体在卷积下不封闭. 取 $f\left(n\right)=1$(常数函数), 对任意 $m,n\in\mathbb N^+$ 有 $f\left(mn\right)=1=f\left(m\right)f\left(n\right)$, 故 $f$ 是完全积性的. 但
 
 $$
-\begin{aligned}\left(f*f\right)\left(n\right)&=\sum_{d\mid n}1\\&=\tau\left(n\right),\end{aligned}
+\left(f*f\right)\left(n\right)=\sum_{d\mid n}1=\tau\left(n\right),
 $$
 
 其中 $\tau\left(n\right)$ 为 $n$ 的正因子个数. 取 $n=4$, 则 $\tau\left(4\right)=3$, 而 $\tau\left(2\right)\tau\left(2\right)=4$, 故 $\tau\left(4\right)\ne\tau\left(2\right)\tau\left(2\right)$.

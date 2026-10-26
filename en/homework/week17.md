@@ -18,7 +18,7 @@
 
 Write $\omega=\frac{1+\sqrt{-3}}{2}$; then $\bar\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, with $\omega+\bar\omega=1$ and $\omega\bar\omega=1$. Hence for $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$, define the norm
 $$
-\begin{aligned}N\left(a+b\omega\right)&=\left(a+b\omega\right)\left(a+b\bar\omega\right)\\&=a^2+ab+b^2.\end{aligned}
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\bar\omega\right)=a^2+ab+b^2.
 $$
 
 This quadratic form is positive definite, and $N\left(\alpha\beta\right)=N\left(\alpha\right)N\left(\beta\right)$. We now verify that, with $\delta=N$, $R$ satisfies the division-with-remainder condition of **Definition 2.7.9** (Euclidean Ring).
@@ -30,7 +30,7 @@ $$
 
 Write $u=x-m$, $v=y-n$; then $\left|u\right|\le\frac12$, $\left|v\right|\le\frac12$. By multiplicativity of the norm,
 $$
-\begin{aligned}N\left(r\right)&=N\left(\beta\right)N\left(u+v\omega\right)\\&=N\left(\beta\right)\left(u^2+uv+v^2\right).\end{aligned}
+N\left(r\right)=N\left(\beta\right)N\left(u+v\omega\right)=N\left(\beta\right)\left(u^2+uv+v^2\right).
 $$
 
 When $\left|u\right|,\left|v\right|\le\frac12$, the positive-definite quadratic form $u^2+uv+v^2$ attains its maximum on the boundary of the square at $\left(u,v\right)=\left(\pm\frac12,\pm\frac12\right)$, equal to $\frac14+\frac14+\frac14=\frac34$. Hence
@@ -90,7 +90,7 @@ First divide $m$ by $2$, which shows $m=\pm2$ or $\pm3$; then divide $m$ by $\om
 
 From $\omega=\frac{1+\sqrt{-19}}{2}$, we have $\bar\omega=\frac{1-\sqrt{-19}}{2}$, with $\omega+\bar\omega=1$ and $\omega\bar\omega=5$. Hence for $\alpha=a+b\omega\in R$, the norm is
 $$
-\begin{aligned}N\left(a+b\omega\right)&=\left(a+b\omega\right)\left(a+b\bar\omega\right)\\&=a^2+ab+5b^2,\end{aligned}
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\bar\omega\right)=a^2+ab+5b^2,
 $$
 which is a positive-definite quadratic form and multiplicative. Note that when $\left|b\right|\ge1$,
 $$
@@ -122,7 +122,7 @@ Take integers $m,n$ as the nearest integers to $x,y$, and write $u=x-m$, $v=y-n$
 
 (5) If $\left|v\right|\le\frac14$, then
 $$
-\begin{aligned}N\left(z-q\right)&=u^2+uv+5v^2\\&\le u^2+\left|u\right|\left|v\right|+5v^2\\&\le\frac14+\frac18+\frac{5}{16}\\&=\frac{19}{16}> 1.\end{aligned}
+N\left(z-q\right)=u^2+uv+5v^2\le u^2+\left|u\right|\left|v\right|+5v^2\le\frac14+\frac18+\frac{5}{16}=\frac{19}{16}> 1.
 $$
 
 This estimate is too crude; we use a precise discussion instead: since $u^2+uv+5v^2$, for $\left|u\right|\le\frac12$, attains its minimum in $u$ at $u=-\frac v2$, with minimum value $\frac{19}{4}v^2$. When $\left|v\right|\le\frac{2}{\sqrt{19}}$, $\frac{19}{4}v^2\le1$; choosing $m$ as the nearest integer to $x+\frac v2$ gives $N\left(z-q\right)< 1$. Hence there exist integers $m,n$ with $N\left(z-q\right)< 1$, i.e.

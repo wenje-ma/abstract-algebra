@@ -19,7 +19,7 @@
 First factor $936$ into primes. We have
 
 $$
-\begin{aligned}936&=8\times117\\&=2^3\times3^2\times13.\end{aligned}
+936=8\times117=2^3\times3^2\times13.
 $$
 
 That is, $936=2^3\cdot3^2\cdot13^1$.
@@ -29,7 +29,7 @@ Compute the partition numbers of the exponents. The partitions of exponent $3$ a
 By **Theorem 3.5.2** (Number of Isomorphism Classes of Finite Abelian Groups), the number of abelian groups of order $936$, up to isomorphism, is
 
 $$
-\begin{aligned}p\left(3\right)p\left(2\right)p\left(1\right)&=3\times2\times1\\&=6.\end{aligned}
+p\left(3\right)p\left(2\right)p\left(1\right)=3\times2\times1=6.
 $$
 
 Hence there are $6$ isomorphism classes of abelian groups of order $936$. $\blacksquare$
@@ -73,7 +73,7 @@ When $l> e$, $p^l$ is a multiple of $p^e$, so $p^l g=0$ holds automatically for 
 (2) Take any $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. By **Basic Knowledge** (Order of an Element in a Direct Product), $o\left(g\right)\mid q$ if and only if $o\left(h_i\right)\mid q$ simultaneously for every $i$. Hence the elements $g$ satisfying the condition are exactly the direct product of the corresponding sets $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$; by the multiplication principle,
 
 $$
-\begin{aligned}\left|\left\{g\in G\mid o\left(g\right)\mid q\right\}\right|&=\prod_{i=1}^s\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|\\&=m_1m_2\cdots m_s.\end{aligned}
+\left|\left\{g\in G\mid o\left(g\right)\mid q\right\}\right|=\prod_{i=1}^s\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|=m_1m_2\cdots m_s.
 $$
 
 (3) In $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$, we want elements whose order divides $4$, i.e. $4g=0$. Compute the number of choices for each component.
@@ -87,7 +87,7 @@ For $\mathbb Z_{16}$, $4k\equiv0\pmod{16}$ is equivalent to $k\equiv0\pmod 4$, i
 By (2), the desired number of elements is
 
 $$
-\begin{aligned}m_1m_2m_3&=4\times4\times4\\&=64.\end{aligned}
+m_1m_2m_3=4\times4\times4=64.
 $$
 
 Hence there are $64$ elements in $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$ whose order divides $4$. $\blacksquare$

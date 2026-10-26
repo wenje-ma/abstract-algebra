@@ -72,7 +72,7 @@ $$
 so $\sqrt{ab}=\frac{\alpha^2-a-b}{2}\in\mathbb Q\left(\alpha\right)$. Also,
 
 $$
-\begin{aligned}\sqrt a-\sqrt b&=\frac{\left(\sqrt a-\sqrt b\right)\left(\sqrt a+\sqrt b\right)}{\sqrt a+\sqrt b}\\&=\frac{a-b}{\alpha}\in\mathbb Q\left(\alpha\right).\end{aligned}
+\sqrt a-\sqrt b=\frac{\left(\sqrt a-\sqrt b\right)\left(\sqrt a+\sqrt b\right)}{\sqrt a+\sqrt b}=\frac{a-b}{\alpha}\in\mathbb Q\left(\alpha\right).
 $$
 
 Hence
@@ -120,7 +120,7 @@ But $\theta\in E=\mathbb F_p\left(t\right)$ means there exist coprime polynomial
 (2) In $E\left(\theta\right)$, by **Basic Knowledge** (Frobenius Map in Characteristic $p$),
 
 $$
-\begin{aligned}x^p-t&=x^p-\theta^p\\&=\left(x-\theta\right)^p.\end{aligned}
+x^p-t=x^p-\theta^p=\left(x-\theta\right)^p.
 $$
 
 Here $x-\theta$ is already a linear polynomial and hence irreducible. Therefore the irreducible factorization of $x^p-t$ over $E\left(\theta\right)$ is $\left(x-\theta\right)^p$. $\blacksquare$

@@ -43,7 +43,7 @@ $$
 其中 $I_m$ 为 $m$ 阶单位矩阵. 两边取行列式, 由行列式乘性,
 
 $$
-\begin{aligned}\det\left(A\right)\det\left(B\right)&=\det\left(I_m\right)\\&=1.\end{aligned}
+\det\left(A\right)\det\left(B\right)=\det\left(I_m\right)=1.
 $$
 
 故 $\det A$ 是 $R$ 中的单位. 由行列式的基础知识, $A$ 可逆, 即存在 $A^{-1}$ 使 $AA^{-1}=I_m$. 因而 $\phi$ 既是满同态又是单同态($\ker\phi=0$), 是双射, 故 $\phi$ 为模同构. $\blacksquare$

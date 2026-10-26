@@ -26,7 +26,7 @@
 
 (1) Verify the action: for $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ and a $1$-dimensional subspace $W=\mathbb Rv$,
 $$
-\begin{aligned}\rho\left(\tau\left(W\right)\right)&=\rho\left(\tau\left(\mathbb Rv\right)\right)\\&=\mathbb R\rho\tau\left(v\right)\\&=\left(\rho\tau\right)\left(W\right),\end{aligned}
+\rho\left(\tau\left(W\right)\right)=\rho\left(\tau\left(\mathbb Rv\right)\right)=\mathbb R\rho\tau\left(v\right)=\left(\rho\tau\right)\left(W\right),
 $$
 and the identity matrix $I$ satisfies $I\left(W\right)=W$. By **Definition 1.9.1** (Group Action), this is an action.
 
@@ -140,7 +140,7 @@ g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
 $$
 which has determinant $1$ and satisfies
 $$
-\begin{aligned}g\circ i&=\frac{\sqrt y\cdot i+x/\sqrt y}{1/\sqrt y}\\&=yi+x\\&=z.\end{aligned}
+g\circ i=\frac{\sqrt y\cdot i+x/\sqrt y}{1/\sqrt y}=yi+x=z.
 $$
 Hence $i$ can be mapped to any $z\in H$, and the action is transitive.
 
@@ -151,7 +151,7 @@ $$
 
 The isotropy subgroup of $i$: from $g\circ i=i$, i.e.
 $$
-\begin{aligned}\frac{ai+b}{ci+d}=i,\\&\Longrightarrow\;ai+b&=i\left(ci+d\right)\\&=-c+di.\end{aligned}
+\frac{ai+b}{ci+d}=i,\Longrightarrow\;ai+b=i\left(ci+d\right)=-c+di.
 $$
 Comparing real and imaginary parts gives $b=-c$, $a=d$. Also,
 $$
@@ -187,7 +187,7 @@ Prove that these two maps each define an action of $\mathbb Z_2$ on $X$. Find th
 
 First verify that $p_1$ defines an action of $\mathbb Z_2$. $p_1$ swaps $y,z$, and clearly $p_1^{2}=\mathrm{id}$. Also,
 $$
-\begin{aligned}x^{2}+4zy&=x^{2}+4yz\\&=p,\end{aligned}
+x^{2}+4zy=x^{2}+4yz=p,
 $$
 so $p_1\left(X\right)\subseteq X$. Hence $p_1$ is an involution of order $2$ on $X$, defining the action of $\mathbb Z_2=\left\{1,p_1\right\}$ on $X$.
 
@@ -199,7 +199,7 @@ Case 1, $x< y-z$: $x+2z=x$ gives $z=0$, contradicting $z\in\mathbb N^{+}$; no fi
 
 Case 2, $y-z\le x< 2y$: $2y-x=x$ gives $x=y$; the third coordinate $x-y+z=z$ holds automatically. Substituting into the equation:
 $$
-\begin{aligned}x^{2}+4xz&=x\left(x+4z\right)\\&=p.\end{aligned}
+x^{2}+4xz=x\left(x+4z\right)=p.
 $$
 Since $p$ is prime and both $x$ and $x+4z$ are positive integers, $x=1$ and $x+4z=p$, i.e. $z=\left(p-1\right)/4=k$. The corresponding fixed point is $\left(1,1,k\right)$.
 
@@ -267,7 +267,7 @@ i.e. $\left|F_x\right|=\left|G\right|/\left|Ox\right|$.
 
 Decompose $X$ into a disjoint union of orbits. Let $X$ have $t$ orbits $O_1,\cdots,O_t$. For any $x$ in orbit $O_i$, $\left|Ox\right|=\left|O_i\right|$, so $\left|F_x\right|=\left|G\right|/\left|O_i\right|$. Hence
 $$
-\begin{aligned}\sum_{x\in X}\left|F_x\right|&=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|\\&=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}\\&=\sum_{i=1}^{t}\left|G\right|\\&=t\left|G\right|.\end{aligned}
+\sum_{x\in X}\left|F_x\right|=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}=\sum_{i=1}^{t}\left|G\right|=t\left|G\right|.
 $$
 
 Combining the two counting methods gives

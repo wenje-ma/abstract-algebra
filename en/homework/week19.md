@@ -38,13 +38,13 @@ $$
 It is well defined: if $m+M_1=m'+M_1$, then $m-m'\in M_1\subset M_2$, and hence $m+M_2=m'+M_2$. It is clearly an epimorphism of modules. Its kernel is
 
 $$
-\begin{aligned}\ker\pi&=\left\{m+M_1\mid m\in M_2\right\}\\&=M_2/M_1.\end{aligned}
+\ker\pi=\left\{m+M_1\mid m\in M_2\right\}=M_2/M_1.
 $$
 
 By **Theorem 3.1.17** (Fundamental Homomorphism Theorem for Modules),
 
 $$
-\begin{aligned}\left(M/M_1\right)/\left(M_2/M_1\right)&=M/\ker\pi\\&\cong\operatorname{Im}\pi\\&=M/M_2.\end{aligned}
+\left(M/M_1\right)/\left(M_2/M_1\right)=M/\ker\pi\cong\operatorname{Im}\pi=M/M_2.
 $$
 
 (2) Consider the restriction to the submodule $M_1$ of the quotient map
@@ -62,13 +62,13 @@ $$
 is the image of some $m_1\in M_1$. Its kernel is
 
 $$
-\begin{aligned}\ker\rho|_{M_1}&=\left\{m_1\in M_1\mid m_1\in M_2\right\}\\&=M_1\cap M_2.\end{aligned}
+\ker\rho|_{M_1}=\left\{m_1\in M_1\mid m_1\in M_2\right\}=M_1\cap M_2.
 $$
 
 Since $M=M_1\oplus M_2$ is an internal direct sum, by **Theorem 3.1.10** (Direct Sum Criterion), $M_1\cap M_2=\left\{0\right\}$. Again by **Theorem 3.1.17**,
 
 $$
-\begin{aligned}M_1/\left(M_1\cap M_2\right)&=M_1\\&\cong\left(M_1+M_2\right)/M_2.\end{aligned}
+M_1/\left(M_1\cap M_2\right)=M_1\cong\left(M_1+M_2\right)/M_2.
 $$
 
 Symmetrically, $M_2\cong\left(M_1+M_2\right)/M_1$. $\blacksquare$
@@ -100,13 +100,13 @@ First show that $\phi$ is an epimorphism. Every coset of the form $m_1+m_2+M_2$ 
 Now determine its kernel. By **Proposition 3.1.16** (Kernel and Image of a Homomorphism),
 
 $$
-\begin{aligned}\ker\phi&=\left\{m_1\in M_1\mid m_1\in M_2\right\}\\&=M_1\cap M_2.\end{aligned}
+\ker\phi=\left\{m_1\in M_1\mid m_1\in M_2\right\}=M_1\cap M_2.
 $$
 
 By **Theorem 3.1.17** (Fundamental Homomorphism Theorem for Modules),
 
 $$
-\begin{aligned}M_1/\ker\phi&=M_1/\left(M_1\cap M_2\right)\\&\cong\left(M_1+M_2\right)/M_2.\end{aligned}
+M_1/\ker\phi=M_1/\left(M_1\cap M_2\right)\cong\left(M_1+M_2\right)/M_2.
 $$
 
 This is the Second Isomorphism Theorem. $\blacksquare$
@@ -150,7 +150,7 @@ $$
 Let $j$ be the largest index for which $m_j\ne0$; then $j\ge2$ (otherwise $m_1=0$). Rearranging gives
 
 $$
-\begin{aligned}m_j&=-\left(m_1+\cdots+m_{j-1}\right)\\&\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)\\&=\left\{0\right\},\end{aligned}
+m_j=-\left(m_1+\cdots+m_{j-1}\right)\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\},
 $$
 
 so $m_j=0$, a contradiction. Hence all $m_i=0$, and the representation of zero is unique. By **Theorem 3.1.10** (Direct Sum Criterion), $M=M_1\oplus\cdots\oplus M_s$. $\blacksquare$
@@ -216,7 +216,7 @@ It is an epimorphism: given any $\left(m_1'+N_1,\cdots,m_s'+N_s\right)$, take $m
 Now determine its kernel. By **Proposition 3.1.16** (Kernel and Image of a Homomorphism),
 
 $$
-\begin{aligned}\ker\phi&=\left\{m_1+\cdots+m_s\mid m_i+N_i=0,\ 1\le i\le s\right\}\\&=\left\{m_1+\cdots+m_s\mid m_i\in N_i\right\}\\&=N_1\oplus\cdots\oplus N_s\\&=N.\end{aligned}
+\ker\phi=\left\{m_1+\cdots+m_s\mid m_i+N_i=0,\ 1\le i\le s\right\}=\left\{m_1+\cdots+m_s\mid m_i\in N_i\right\}=N_1\oplus\cdots\oplus N_s=N.
 $$
 
 By **Theorem 3.1.17** (Fundamental Homomorphism Theorem for Modules),

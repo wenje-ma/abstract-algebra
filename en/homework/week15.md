@@ -24,7 +24,7 @@ so that $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, and $\xi$ i
 
 (1) Let $\gamma=a+b\sqrt{-5}$; then $N\left(\gamma\right)=a^2+5b^2=9\ne1$, so $\gamma$ is not a unit, i.e. $\gamma\in R^*\setminus U$. Suppose, for contradiction, that $\gamma=\xi\eta$ is a nontrivial decomposition. Then
 $$
-\begin{aligned}N\left(\xi\right)N\left(\eta\right)&=N\left(\gamma\right)\\&=9.\end{aligned}
+N\left(\xi\right)N\left(\eta\right)=N\left(\gamma\right)=9.
 $$
 
 The norm takes values among the nonnegative integers $x^2+5y^2$. There is no element of norm $3$: the equation $x^2+5y^2=3$ requires $x^2=3$ when $y=0$, which is not a square; and when $\left|y\right|\ge1$, we have $5> 3$. Hence $N\left(\xi\right),N\left(\eta\right)$ can only be $1$ or $9$. If $N\left(\xi\right)=1$, then $\xi$ is a unit; if $N\left(\xi\right)=9$, then $N\left(\eta\right)=1$ and $\eta$ is a unit.
@@ -33,10 +33,10 @@ Thus in any decomposition of $\gamma$, one factor must be a unit. By **Definitio
 
 (2) First make the decompositions:
 $$
-\begin{aligned}\beta&=9\\&=\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right),\end{aligned}
+\beta=9=\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right),
 $$
 $$
-\begin{aligned}\alpha&=6+3\sqrt{-5}\\&=3\left(2+\sqrt{-5}\right).\end{aligned}
+\alpha=6+3\sqrt{-5}=3\left(2+\sqrt{-5}\right).
 $$
 
 Here $N\left(3\right)=9$ and
@@ -47,7 +47,7 @@ so by (1) both are irreducible.
 
 Both $3$ and $2+\sqrt{-5}$ divide $\alpha$ and $\beta$, so both are common divisors. But $2-\sqrt{-5}$ does not divide $\alpha$: if there existed $\gamma\in R$ with $\gamma\left(2-\sqrt{-5}\right)=\alpha$, then
 $$
-\begin{aligned}\gamma&=\frac{3\left(2+\sqrt{-5}\right)}{2-\sqrt{-5}}\\&=\frac{3\left(2+\sqrt{-5}\right)^2}{9}\\&=3+\frac{4}{3}\sqrt{-5}\\&\notin R.\end{aligned}
+\gamma=\frac{3\left(2+\sqrt{-5}\right)}{2-\sqrt{-5}}=\frac{3\left(2+\sqrt{-5}\right)^2}{9}=3+\frac{4}{3}\sqrt{-5}\notin R.
 $$
 
 Also $3\nmid\left(2+\sqrt{-5}\right)$ (otherwise $\left(2+\sqrt{-5}\right)/3\notin R$), and $\left(2+\sqrt{-5}\right)\nmid 3$
@@ -79,7 +79,7 @@ is closed under multiplication (since $\omega^2=\omega-1\in R$).
 
 (2) Define the norm
 $$
-\begin{aligned}N\left(m+n\omega\right)&=\left(m+n\omega\right)\left(m+n\bar\omega\right)\\&=m^2+mn+n^2,\end{aligned}
+N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\bar\omega\right)=m^2+mn+n^2,
 $$
 where $\bar\omega=\frac{1-\sqrt{-3}}{2}$. Then $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, and $\xi$ is a unit if and only if $N\left(\xi\right)=1$. Solving $m^2+mn+n^2=1$ gives
 $$

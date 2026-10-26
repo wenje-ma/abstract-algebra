@@ -7,7 +7,7 @@
 > **Basic Knowledge** (Nilpotent Kernel and Count of Jordan Blocks) Let $A$ be an $n\times n$ matrix, and let $a$ be an eigenvalue of $A$. Write
 > 
 > $$
-> \begin{aligned}\nu_k&=\dim\ker\left(aI_n-A\right)^k\\&=n-\mathrm{rank}\left(aI_n-A\right)^k,\end{aligned}
+> \nu_k=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k,
 > $$
 > 
 > with the convention $\nu_0=0$. Then the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s-\nu_{s-1}$. Hence the sequence $\left\{\nu_k\right\}_{k\geqslant0}$ completely determines the sizes and number of Jordan blocks at $a$.
@@ -23,13 +23,13 @@ Let $J$ be an $n\times n$ Jordan block over $F$, with eigenvalue $\lambda\in F$.
 Let $P$ be the $n\times n$ reversal matrix. By **Basic Knowledge** (Reverse Transpose Matrix), $P$ is symmetric, $P^2=I_n$, and $PN$ is symmetric. Set
 
 $$
-\begin{aligned}A&=PJ\\&=\lambda P+PN.\end{aligned}
+A=PJ=\lambda P+PN.
 $$
 
 Since both $P$ and $PN$ are symmetric, $A$ is symmetric. Also $P^2=I_n$, so $P^{-1}=P$, and hence
 
 $$
-\begin{aligned}J&=P^{-1}A\\&=PA.\end{aligned}
+J=P^{-1}A=PA.
 $$
 
 Here both $P$ and $A$ are symmetric matrices over $F$. Hence every Jordan block can be written as a product of two symmetric matrices. $\blacksquare$
@@ -43,7 +43,7 @@ Here both $P$ and $A$ are symmetric matrices over $F$. Hence every Jordan block 
 Let $A$ be an $n\times n$ matrix over $F$. By **Theorem 3.6.3** (Jordan Canonical Form), there exists an invertible matrix $S$ such that
 
 $$
-\begin{aligned}S^{-1}AS&=J\\&=\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right),\end{aligned}
+S^{-1}AS=J=\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right),
 $$
 
 where $J_1,J_2,\cdots,J_s$ are all Jordan blocks.
@@ -63,7 +63,7 @@ Then both $P,Q$ are symmetric, and $J=PQ$.
 Hence
 
 $$
-\begin{aligned}A&=SJS^{-1}\\&=SPQS^{-1}\\&=\left(SPS^T\right)\left(S^{-T}QS^{-1}\right).\end{aligned}
+A=SJS^{-1}=SPQS^{-1}=\left(SPS^T\right)\left(S^{-T}QS^{-1}\right).
 $$
 
 Here $SPS^T$ is symmetric, since its transpose is
@@ -107,7 +107,7 @@ where $\lambda$ is a $1\times1$ block and $A'$ is an $\left(n-1\right)\times\lef
 By the structure theory of finitely generated torsion modules over the principal ideal domain $\mathbb R\left[x\right]$ (i.e. the primary decomposition of $V$ as an $\mathbb R\left[x\right]$-module), the primary subspace corresponding to $p\left(x\right)$ is nonzero. Take a vector $u$ in it such that $p\left(A\right)u=0$ and $u\ne0$. Since $p\left(x\right)$ has no real roots, $u$ and $Au$ must be linearly independent (otherwise $Au=au$ with $a\in\mathbb R$, and then $a$ would be a real root of $p$, a contradiction). Let $W=\mathrm{span}\left\{u,Au\right\}$. From $p\left(A\right)u=0$, i.e. $A^2u+bAu+cu=0$, we get
 
 $$
-\begin{aligned}A\left(Au\right)&=A^2u\\&=-cu-bAu\in W,\end{aligned}
+A\left(Au\right)=A^2u=-cu-bAu\in W,
 $$
 
 so $W$ is a two-dimensional $A$-invariant subspace. Take a basis of $W$ and extend it to a basis of $V$; then the matrix of $A$ in this basis has the form
@@ -129,7 +129,7 @@ In summary, by induction there exists a basis of $V$ in which the matrix of $A$ 
 **Necessity.** If $A$ and $B$ are similar, then there exists an invertible matrix $P$ such that $B=P^{-1}AP$. Hence
 
 $$
-\begin{aligned}\left(aI_n-B\right)^k&=\left(aI_n-P^{-1}AP\right)^k\\&=P^{-1}\left(aI_n-A\right)^kP.\end{aligned}
+\left(aI_n-B\right)^k=\left(aI_n-P^{-1}AP\right)^k=P^{-1}\left(aI_n-A\right)^kP.
 $$
 
 Similar matrices have the same rank, so
@@ -143,7 +143,7 @@ $$
 For any $a\in F$, write
 
 $$
-\begin{aligned}\nu_k\left(A\right)&=\dim\ker\left(aI_n-A\right)^k\\&=n-\mathrm{rank}\left(aI_n-A\right)^k,\end{aligned}
+\nu_k\left(A\right)=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k,
 $$
 
 with the convention $\nu_0\left(A\right)=0$. By hypothesis, $\nu_k\left(A\right)=\nu_k\left(B\right)$ for all $k$. By **Basic Knowledge** (Nilpotent Kernel and Count of Jordan Blocks), the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, and similarly for $B$. Hence the sizes and number of Jordan blocks at $a$ agree completely for $A$ and $B$.

@@ -25,7 +25,7 @@
 首先证反同态性. 对任意 $g\in G$,
 
 $$
-\begin{aligned}R\left(ab\right)\left(g\right)&=R_{ab}\left(g\right)\\&=g\left(ab\right)\\&=\left(ga\right)b\\&=R_{b}\left(ga\right)\\&=R_{b}\left(R_{a}\left(g\right)\right)\\&=\left(R_{b}\circ R_{a}\right)\left(g\right)\\&=R\left(b\right)R\left(a\right)\left(g\right).\end{aligned}
+R\left(ab\right)\left(g\right)=R_{ab}\left(g\right)=g\left(ab\right)=\left(ga\right)b=R_{b}\left(ga\right)=R_{b}\left(R_{a}\left(g\right)\right)=\left(R_{b}\circ R_{a}\right)\left(g\right)=R\left(b\right)R\left(a\right)\left(g\right).
 $$
 
 由 $g$ 的任意性, $R\left(ab\right)=R\left(b\right)R\left(a\right)$, 故 $R$ 是反同态.
@@ -47,7 +47,7 @@ $$
 对任意 $x,y\in\mathbb R$, 由三角恒等式,
 
 $$
-\begin{aligned}f\left(x+y\right)&=\cos\left(x+y\right)+\sqrt{-1}\sin\left(x+y\right)\\&=\left(\cos x\cos y-\sin x\sin y\right)+\sqrt{-1}\left(\sin x\cos y+\cos x\sin y\right)\\&=\left(\cos x+\sqrt{-1}\sin x\right)\left(\cos y+\sqrt{-1}\sin y\right)\\&=f\left(x\right)f\left(y\right).\end{aligned}
+f\left(x+y\right)=\cos\left(x+y\right)+\sqrt{-1}\sin\left(x+y\right)=\left(\cos x\cos y-\sin x\sin y\right)+\sqrt{-1}\left(\sin x\cos y+\cos x\sin y\right)=\left(\cos x+\sqrt{-1}\sin x\right)\left(\cos y+\sqrt{-1}\sin y\right)=f\left(x\right)f\left(y\right).
 $$
 
 故 $f$ 是 $\left(\mathbb R,+\right)$ 到 $\left(\mathbb C^{*},\cdot\right)$ 的群同态.
@@ -55,7 +55,7 @@ $$
 求核: $f\left(x\right)=1$ 当且仅当 $\cos x=1$ 且 $\sin x=0$, 即 $x=2k\pi$, $k\in\mathbb Z$. 故
 
 $$
-\begin{aligned}\ker f&=2\pi\mathbb Z\\&=\left\{2k\pi\mid k\in\mathbb Z\right\}.\end{aligned}
+\ker f=2\pi\mathbb Z=\left\{2k\pi\mid k\in\mathbb Z\right\}.
 $$
 
 由**定理 1.4.19**（群的同态基本定理）, $\mathbb R/2\pi\mathbb Z\cong\mathrm{Im}f$, 其中 $\mathrm{Im}f$ 为单位圆上的复数乘法群. $\blacksquare$
@@ -89,13 +89,13 @@ $$
 $$
 
 $$
-\begin{aligned}\left(\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)\right)\left(g_{3},h_{3}\right)&=\left(g_{1}g_{2},\varphi\left(g_{2}^{-1}\right)\left(h_{1}\right)h_{2}\right)\left(g_{3},h_{3}\right)\\&=\left(\left(g_{1}g_{2}\right)g_{3},\varphi\left(g_{3}^{-1}\right)\left(\varphi\left(g_{2}^{-1}\right)\left(h_{1}\right)h_{2}\right)h_{3}\right)\\&=\left(g_{1}\left(g_{2}g_{3}\right),\varphi\left(g_{3}^{-1}\right)\varphi\left(g_{2}^{-1}\right)\left(h_{1}\right)\cdot\varphi\left(g_{3}^{-1}\right)\left(h_{2}\right)\cdot h_{3}\right)\\&=\left(g_{1}\left(g_{2}g_{3}\right),\varphi\left(\left(g_{2}g_{3}\right)^{-1}\right)\left(h_{1}\right)\cdot\varphi\left(g_{3}^{-1}\right)\left(h_{2}\right)\cdot h_{3}\right).\end{aligned}
+\left(\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)\right)\left(g_{3},h_{3}\right)=\left(g_{1}g_{2},\varphi\left(g_{2}^{-1}\right)\left(h_{1}\right)h_{2}\right)\left(g_{3},h_{3}\right)=\left(\left(g_{1}g_{2}\right)g_{3},\varphi\left(g_{3}^{-1}\right)\left(\varphi\left(g_{2}^{-1}\right)\left(h_{1}\right)h_{2}\right)h_{3}\right)=\left(g_{1}\left(g_{2}g_{3}\right),\varphi\left(g_{3}^{-1}\right)\varphi\left(g_{2}^{-1}\right)\left(h_{1}\right)\cdot\varphi\left(g_{3}^{-1}\right)\left(h_{2}\right)\cdot h_{3}\right)=\left(g_{1}\left(g_{2}g_{3}\right),\varphi\left(\left(g_{2}g_{3}\right)^{-1}\right)\left(h_{1}\right)\cdot\varphi\left(g_{3}^{-1}\right)\left(h_{2}\right)\cdot h_{3}\right).
 $$
 
 另一方面,
 
 $$
-\begin{aligned}\left(g_{1},h_{1}\right)\left(\left(g_{2},h_{2}\right)\left(g_{3},h_{3}\right)\right)&=\left(g_{1},h_{1}\right)\left(g_{2}g_{3},\varphi\left(g_{3}^{-1}\right)\left(h_{2}\right)h_{3}\right)\\&=\left(g_{1}\left(g_{2}g_{3}\right),\varphi\left(\left(g_{2}g_{3}\right)^{-1}\right)\left(h_{1}\right)\cdot\varphi\left(g_{3}^{-1}\right)\left(h_{2}\right)h_{3}\right).\end{aligned}
+\left(g_{1},h_{1}\right)\left(\left(g_{2},h_{2}\right)\left(g_{3},h_{3}\right)\right)=\left(g_{1},h_{1}\right)\left(g_{2}g_{3},\varphi\left(g_{3}^{-1}\right)\left(h_{2}\right)h_{3}\right)=\left(g_{1}\left(g_{2}g_{3}\right),\varphi\left(\left(g_{2}g_{3}\right)^{-1}\right)\left(h_{1}\right)\cdot\varphi\left(g_{3}^{-1}\right)\left(h_{2}\right)h_{3}\right).
 $$
 
 二者相等, 故结合律成立.
@@ -103,16 +103,14 @@ $$
 **单位元** $\left(e_{G},e_{H}\right)$ 是单位元. 事实上,
 
 $$
-\begin{aligned}
-\left(g,h\right)\left(e_{G},e_{H}\right)&=\left(g,\varphi\left(e^{-1}\right)\left(h\right)e_{H}\right)=\left(g,h\right),\
-\left(e_{G},e_{H}\right)\left(g,h\right)&=\left(g,\varphi\left(g^{-1}\right)\left(e_{H}\right)h\right)=\left(g,h\right).
-\end{aligned}
+\left(g,h\right)\left(e_{G},e_{H}\right)=\left(g,\varphi\left(e^{-1}\right)\left(h\right)e_{H}\right)=\left(g,h\right),\
+\left(e_{G},e_{H}\right)\left(g,h\right)=\left(g,\varphi\left(g^{-1}\right)\left(e_{H}\right)h\right)=\left(g,h\right).
 $$
 
 **逆元** 对 $\left(g,h\right)$, 其逆元为 $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$. 验证:
 
 $$
-\begin{aligned}\left(g,h\right)\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)&=\left(gg^{-1},\varphi\left(\left(g^{-1}\right)^{-1}\right)\left(h\right)\cdot\varphi\left(g\right)\left(h^{-1}\right)\right)\\&=\left(e_{G},\varphi\left(g\right)\left(h\right)\varphi\left(g\right)\left(h^{-1}\right)\right)\\&=\left(e_{G},\varphi\left(g\right)\left(hh^{-1}\right)\right)\\&=\left(e_{G},e_{H}\right).\end{aligned}
+\left(g,h\right)\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(gg^{-1},\varphi\left(\left(g^{-1}\right)^{-1}\right)\left(h\right)\cdot\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_{G},\varphi\left(g\right)\left(h\right)\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_{G},\varphi\left(g\right)\left(hh^{-1}\right)\right)=\left(e_{G},e_{H}\right).
 $$
 
 同理可验证
@@ -140,7 +138,7 @@ $$
 再证正规性. 对任意 $\left(g,k\right)\in G\ltimes H$, $\left(e_{G},h\right)\in H_{1}$,
 
 $$
-\begin{aligned}\left(g,k\right)\left(e_{G},h\right)\left(g,k\right)^{-1}&=\left(g,k\right)\left(e_{G},h\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)\\&=\left(g,\varphi\left(e^{-1}\right)\left(k\right)h\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)\\&=\left(g,kh\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)\\&=\left(e_{G},\varphi\left(g\right)\left(kh\right)\cdot\varphi\left(g\right)\left(k^{-1}\right)\right)\\&=\left(e_{G},\varphi\left(g\right)\left(h\right)\right)\in H_{1}.\end{aligned}
+\left(g,k\right)\left(e_{G},h\right)\left(g,k\right)^{-1}=\left(g,k\right)\left(e_{G},h\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(g,\varphi\left(e^{-1}\right)\left(k\right)h\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(g,kh\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(e_{G},\varphi\left(g\right)\left(kh\right)\cdot\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(e_{G},\varphi\left(g\right)\left(h\right)\right)\in H_{1}.
 $$
 
 故 $H_{1}\triangleleft G\ltimes H$. $\blacksquare$

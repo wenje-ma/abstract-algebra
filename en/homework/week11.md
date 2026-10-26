@@ -38,12 +38,12 @@ We now check the distributive law. Take $x=b$, $y=c$, $z=b$. From the addition t
 
 First compute the left-hand side:
 $$
-\begin{aligned}\left(x+y\right)z&=\left(b+c\right)b\\&=a\cdot b\\&=a.\end{aligned}
+\left(x+y\right)z=\left(b+c\right)b=a\cdot b=a.
 $$
 
 Next compute the right-hand side:
 $$
-\begin{aligned}xz+yz&=bb+cb\\&=a+b\\&=b.\end{aligned}
+xz+yz=bb+cb=a+b=b.
 $$
 
 Since $a\ne b$,
@@ -52,11 +52,11 @@ $$
 $$
 Left distributivity fails. Moreover, multiplication is also not associative: take $x=c$, $y=c$, $z=b$; from the multiplication table $c\cdot c=a$, $c\cdot b=b$, $a\cdot b=a$, so
 $$
-\begin{aligned}\left(c\cdot c\right)\cdot b&=a\cdot b\\&=a,\end{aligned}
+\left(c\cdot c\right)\cdot b=a\cdot b=a,
 $$
 whereas
 $$
-\begin{aligned}c\cdot\left(c\cdot b\right)&=c\cdot b\\&=b.\end{aligned}
+c\cdot\left(c\cdot b\right)=c\cdot b=b.
 $$
 The two are unequal.
 
@@ -75,11 +75,11 @@ $$
 
 Compute the product:
 $$
-\begin{aligned}\left(e+a\right)b&=\left(e+a\right)\left(e-a+a^{2}-\cdots+\left(-1\right)^{m-1}a^{m-1}\right)\\&=e+\left(-1\right)^{m-1}a^{m}\\&=e,\end{aligned}
+\left(e+a\right)b=\left(e+a\right)\left(e-a+a^{2}-\cdots+\left(-1\right)^{m-1}a^{m-1}\right)=e+\left(-1\right)^{m-1}a^{m}=e,
 $$
 where all intermediate terms cancel and $a^{m}=0$. Similarly,
 $$
-\begin{aligned}b\left(e+a\right)&=e+\left(-1\right)^{m-1}a^{m}\\&=e.\end{aligned}
+b\left(e+a\right)=e+\left(-1\right)^{m-1}a^{m}=e.
 $$
 
 Hence $b$ is the inverse of $e+a$, i.e. $e+a$ is invertible. $\blacksquare$
@@ -97,11 +97,11 @@ $$
 
 Verify that $d$ is the inverse of $e-ba$:
 $$
-\begin{aligned}\left(e-ba\right)d&=\left(e-ba\right)\left(e+bca\right)\\&=e-ba+bca-babca\\&=e-ba+b\left(e-ab\right)ca\\&=e-ba+ba\\&=e,\end{aligned}
+\left(e-ba\right)d=\left(e-ba\right)\left(e+bca\right)=e-ba+bca-babca=e-ba+b\left(e-ab\right)ca=e-ba+ba=e,
 $$
 where we used $\left(e-ab\right)c=e$. Similarly,
 $$
-\begin{aligned}d\left(e-ba\right)&=\left(e+bca\right)\left(e-ba\right)\\&=e-ba+bca-bcaba\\&=e-ba+bc\left(e-ab\right)a\\&=e-ba+ba\\&=e,\end{aligned}
+d\left(e-ba\right)=\left(e+bca\right)\left(e-ba\right)=e-ba+bca-bcaba=e-ba+bc\left(e-ab\right)a=e-ba+ba=e,
 $$
 where we used $c\left(e-ab\right)=e$. Hence $d=e+bca$ is the inverse of $e-ba$, so $e-ba$ is invertible.
 
@@ -136,7 +136,7 @@ is invertible, with inverse $aba-a=a\left(ba-e\right)$.
 
 Compute the product:
 $$
-\begin{aligned}\left(bX^{-1}-a^{-1}\right)\cdot a\left(ba-e\right)&=bX^{-1}a\left(ba-e\right)-a^{-1}a\left(ba-e\right)\\&=\left[bX^{-1}a-e\right]\left(ba-e\right).\end{aligned}
+\left(bX^{-1}-a^{-1}\right)\cdot a\left(ba-e\right)=bX^{-1}a\left(ba-e\right)-a^{-1}a\left(ba-e\right)=\left[bX^{-1}a-e\right]\left(ba-e\right).
 $$
 
 By the Hua identity in Problem 3,
@@ -146,7 +146,7 @@ $$
 
 Note that $X=ab-e=-\left(e-ab\right)$, so $X^{-1}=-\left(e-ab\right)^{-1}$, and hence
 $$
-\begin{aligned}bX^{-1}a&=-b\left(e-ab\right)^{-1}a\\&=-\left[\left(e-ba\right)^{-1}-e\right]\\&=e-\left(e-ba\right)^{-1}.\end{aligned}
+bX^{-1}a=-b\left(e-ab\right)^{-1}a=-\left[\left(e-ba\right)^{-1}-e\right]=e-\left(e-ba\right)^{-1}.
 $$
 
 Therefore,
@@ -156,7 +156,7 @@ $$
 
 Also $ba-e=-\left(e-ba\right)$, so
 $$
-\begin{aligned}\left[bX^{-1}a-e\right]\left(ba-e\right)&=\left(-\left(e-ba\right)^{-1}\right)\cdot\left(-\left(e-ba\right)\right)\\&=\left(e-ba\right)^{-1}\left(e-ba\right)\\&=e.\end{aligned}
+\left[bX^{-1}a-e\right]\left(ba-e\right)=\left(-\left(e-ba\right)^{-1}\right)\cdot\left(-\left(e-ba\right)\right)=\left(e-ba\right)^{-1}\left(e-ba\right)=e.
 $$
 
 Symmetrically, the product in the other direction is also $e$. Hence $a\left(ba-e\right)=aba-a$ is the inverse of

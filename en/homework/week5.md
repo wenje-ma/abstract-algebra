@@ -19,7 +19,7 @@
 Consider the element $\left(1,1\right)$ in $\mathbb Z_{m}\times\mathbb Z_{n}$. Let its order be $d$. Then
 
 $$
-\begin{aligned}d\left(1,1\right)&=\left(d\bmod m,d\bmod n\right)\\&=\left(0,0\right),\end{aligned}
+d\left(1,1\right)=\left(d\bmod m,d\bmod n\right)=\left(0,0\right),
 $$
 
 i.e. $m\mid d$ and $n\mid d$. Since $\left(m,n\right)=1$, $mn\mid d$.
@@ -51,13 +51,13 @@ Thus for each $d\mid n$, $f\left(d\right)\le\varphi\left(d\right)$.
 On the other hand, by **Theorem 1.2.22** (Lagrange's Theorem), the order of every element of $G$ divides $n$, so
 
 $$
-\begin{aligned}n&=\left|G\right|\\&=\sum_{d\mid n}f\left(d\right).\end{aligned}
+n=\left|G\right|=\sum_{d\mid n}f\left(d\right).
 $$
 
 Also, by the number-theoretic identity $\sum_{d\mid n}\varphi\left(d\right)=n$,
 
 $$
-\begin{aligned}\sum_{d\mid n}f\left(d\right)&=\sum_{d\mid n}\varphi\left(d\right)\\&=n.\end{aligned}
+\sum_{d\mid n}f\left(d\right)=\sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
 Since $f\left(d\right)\le\varphi\left(d\right)$ for every $d\mid n$ and the two sums are equal, we must have $f\left(d\right)=\varphi\left(d\right)$ for all $d\mid n$.
@@ -81,7 +81,7 @@ Indeed, if $f\left(d\right)=0$, the conclusion is immediate. If $f\left(d\right)
 By **Theorem 1.2.22** (Lagrange's Theorem), the order of every element of $G$ divides $n$, so
 
 $$
-\begin{aligned}n&=\left|G\right|\\&=\sum_{d\mid n}f\left(d\right)\\&\le\sum_{d\mid n}\varphi\left(d\right)\\&=n.\end{aligned}
+n=\left|G\right|=\sum_{d\mid n}f\left(d\right)\le\sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
 The two sides of the inequality are equal, so for each $d\mid n$ we must have $f\left(d\right)=\varphi\left(d\right)$.

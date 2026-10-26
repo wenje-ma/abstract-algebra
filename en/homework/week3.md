@@ -37,7 +37,7 @@ Define a relation $G$ on $R$ by: $aRb$ if and only if there exists $g\in G$ such
 **Transitivity** If $aRb$ and $bRc$, i.e. there exist $g,h\in G$ with $b=gag^{-1}$ and $c=hbh^{-1}$, then
 
 $$
-\begin{aligned}c&=hbh^{-1}\\&=h\left(gag^{-1}\right)h^{-1}\\&=\left(hg\right)a\left(hg\right)^{-1},\end{aligned}
+c=hbh^{-1}=h\left(gag^{-1}\right)h^{-1}=\left(hg\right)a\left(hg\right)^{-1},
 $$
 
 so $aRc$.
@@ -55,7 +55,7 @@ First prove that if one of $H,K$ is normal then $HK< G$. Without loss of general
 By **Theorem 1.3.5** (Equivalent Conditions for a Normal Subgroup), for any $k\in K$ we have $kH=Hk$. Then
 
 $$
-\begin{aligned}KH&=\bigcup_{k\in K}kH\\&=\bigcup_{k\in K}Hk\\&=HK,\end{aligned}
+KH=\bigcup_{k\in K}kH=\bigcup_{k\in K}Hk=HK,
 $$
 
 i.e. $HK=KH$. By **Basic Knowledge** (Product of Subgroups), $HK< G$.

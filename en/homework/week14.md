@@ -21,7 +21,7 @@ Write
 Since $i^2=-1$,
 
 $$
-\begin{aligned}u^2&=\varphi\left(i\right)^2\\&=\varphi\left(i^2\right)\\&=\varphi\left(-1\right)\\&=-1.\end{aligned}
+u^2=\varphi\left(i\right)^2=\varphi\left(i^2\right)=\varphi\left(-1\right)=-1.
 $$
 
 That is,
@@ -63,19 +63,19 @@ Write $\varphi\left(a+bi\right)=a-bi$.
 **Preservation of addition**
 
 $$
-\begin{aligned}\varphi\left(\left(a+bi\right)+\left(c+di\right)\right)&=\varphi\left(\left(a+c\right)+\left(b+d\right)i\right)\\&=\left(a+c\right)-\left(b+d\right)i\\&=\left(a-bi\right)+\left(c-di\right)\\&=\varphi\left(a+bi\right)+\varphi\left(c+di\right).\end{aligned}
+\varphi\left(\left(a+bi\right)+\left(c+di\right)\right)=\varphi\left(\left(a+c\right)+\left(b+d\right)i\right)=\left(a+c\right)-\left(b+d\right)i=\left(a-bi\right)+\left(c-di\right)=\varphi\left(a+bi\right)+\varphi\left(c+di\right).
 $$
 
 **Preservation of multiplication**
 
 $$
-\begin{aligned}\varphi\left(\left(a+bi\right)\left(c+di\right)\right)&=\varphi\left(\left(ac-bd\right)+\left(ad+bc\right)i\right)\\&=\left(ac-bd\right)-\left(ad+bc\right)i,\end{aligned}
+\varphi\left(\left(a+bi\right)\left(c+di\right)\right)=\varphi\left(\left(ac-bd\right)+\left(ad+bc\right)i\right)=\left(ac-bd\right)-\left(ad+bc\right)i,
 $$
 
 while
 
 $$
-\begin{aligned}\varphi\left(a+bi\right)\varphi\left(c+di\right)&=\left(a-bi\right)\left(c-di\right)\\&=ac-bd-\left(ad+bc\right)i.\end{aligned}
+\varphi\left(a+bi\right)\varphi\left(c+di\right)=\left(a-bi\right)\left(c-di\right)=ac-bd-\left(ad+bc\right)i.
 $$
 
 The two are equal. Also, applying the map twice returns to the original element, so $\varphi$ is bijective. By **Definition 2.4.1** (Ring Homomorphism and Isomorphism), $\varphi$ is an automorphism of $\mathbb C$. $\blacksquare$
@@ -130,7 +130,7 @@ $$
 Addition is similar:
 
 $$
-\begin{aligned}\left(ad+bc\right)b'd'&=ab'dd'+cd'bb'\\&=a'bdd'+c'dbb'\\&=bd\left(a'd'+b'c'\right),\end{aligned}
+\left(ad+bc\right)b'd'=ab'dd'+cd'bb'=a'bdd'+c'dbb'=bd\left(a'd'+b'c'\right),
 $$
 
 so the sums are also equivalent. Hence the operations are well defined on equivalence classes.
@@ -140,11 +140,11 @@ so the sums are also equivalent. Hence the operations are well defined on equiva
 (4) Consider $\iota:R\to F$, $\iota\left(a\right)=a/1$. Then
 
 $$
-\begin{aligned}\iota\left(a+b\right)&=\frac{a+b}{1}\\&=\frac{a}{1}+\frac{b}{1}\\&=\iota\left(a\right)+\iota\left(b\right),\end{aligned}
+\iota\left(a+b\right)=\frac{a+b}{1}=\frac{a}{1}+\frac{b}{1}=\iota\left(a\right)+\iota\left(b\right),
 $$
 
 $$
-\begin{aligned}\iota\left(ab\right)&=\frac{ab}{1}\\&=\frac{a}{1}\cdot\frac{b}{1}\\&=\iota\left(a\right)\iota\left(b\right).\end{aligned}
+\iota\left(ab\right)=\frac{ab}{1}=\frac{a}{1}\cdot\frac{b}{1}=\iota\left(a\right)\iota\left(b\right).
 $$
 
 Also, $a/1=0/1$ if and only if $a=0$, so $\iota$ is a monomorphism. Hence $R$ can be identified with $\iota\left(R\right)\subseteq F$. For any $a/b\in F$, $a/b=\left(a/1\right)\left(b/1\right)^{-1}$, i.e. every element of $F$ can be written as a quotient of two elements of $R$, so $F$ is a field of fractions of $R$.

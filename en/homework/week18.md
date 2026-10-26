@@ -21,7 +21,7 @@ $$
 where the remainder has degree less than $1$, hence is a constant. Substituting $x=a$, and noting that $a\in R$ induces the evaluation homomorphism on $R\left[x\right]$, gives
 
 $$
-\begin{aligned}f\left(a\right)&=q\left(a\right)\cdot0+c\\&=c.\end{aligned}
+f\left(a\right)=q\left(a\right)\cdot0+c=c.
 $$
 
 Hence $a$ is a root of $f\left(x\right)$, i.e. $f\left(a\right)=0$, if and only if $c=0$, which holds if and only if $f\left(x\right)=q\left(x\right)\left(x-a\right)$, i.e. $\left(x-a\right)\mid f\left(x\right)$. $\blacksquare$
@@ -71,7 +71,7 @@ Now let $f\left(x\right)\ne0$ have degree $m$ and $s$ distinct roots $a_1,\cdots
 Write $R=\mathbb R\left[\!\left[t\right]\!\right]$. Take any nonzero power series $f\left(t\right)=\sum_{n=0}^{\infty}a_nt^n\in R$. Let $a_k$ be its first nonzero coefficient, i.e. $a_0=\cdots=a_{k-1}=0$, $a_k\ne0$; call $k$ the order of $f$, denoted $\operatorname{ord}\left(f\right)=k$. Then
 
 $$
-\begin{aligned}f\left(t\right)&=t^k\cdot\left(a_k+a_{k+1}t+\cdots\right)\\&=t^k\,u\left(t\right),\end{aligned}
+f\left(t\right)=t^k\cdot\left(a_k+a_{k+1}t+\cdots\right)=t^k\,u\left(t\right),
 $$
 
 where the constant term of $u\left(t\right)=a_k+a_{k+1}t+\cdots$ is $a_k\ne0$. By the properties of the ring of formal power series, $u\left(t\right)$ is a unit (nonzero constant term implies invertibility).

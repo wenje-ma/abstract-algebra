@@ -21,7 +21,7 @@ $$
 其中余式次数小于 $1$, 故为常数. 将 $x=a$ 代入, 注意 $a\in R$ 可与 $R\left[x\right]$ 中元素作求值同态, 得
 
 $$
-\begin{aligned}f\left(a\right)&=q\left(a\right)\cdot0+c\\&=c.\end{aligned}
+f\left(a\right)=q\left(a\right)\cdot0+c=c.
 $$
 
 于是 $a$ 为 $f\left(x\right)$ 的根, 即 $f\left(a\right)=0$, 当且仅当 $c=0$, 当且仅当 $f\left(x\right)=q\left(x\right)\left(x-a\right)$, 即 $\left(x-a\right)\mid f\left(x\right)$. $\blacksquare$
@@ -71,7 +71,7 @@ $$
 记 $R=\mathbb R\left[\!\left[t\right]\!\right]$. 任取非零幂级数 $f\left(t\right)=\sum_{n=0}^{\infty}a_nt^n\in R$. 设 $a_k$ 为其第一个非零系数, 即 $a_0=\cdots=a_{k-1}=0$, $a_k\ne0$, 称 $k$ 为 $f$ 的阶, 记 $\operatorname{ord}\left(f\right)=k$. 则
 
 $$
-\begin{aligned}f\left(t\right)&=t^k\cdot\left(a_k+a_{k+1}t+\cdots\right)\\&=t^k\,u\left(t\right),\end{aligned}
+f\left(t\right)=t^k\cdot\left(a_k+a_{k+1}t+\cdots\right)=t^k\,u\left(t\right),
 $$
 
 其中 $u\left(t\right)=a_k+a_{k+1}t+\cdots$ 的常数项 $a_k\ne0$. 由形式幂级数环的性质, $u\left(t\right)$ 是单位(常数项非零即可逆).

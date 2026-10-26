@@ -24,10 +24,8 @@
 （习题 1.6-5）证明:
 
 $$
-\begin{aligned}
-S_{n}&=\left\langle\left(12\right),\left(13\right),\dots,\left(1n\right)\right\rangle=\left\langle\left(12\right),\left(12\dots n\right)\right\rangle,\
-A_{n}&=\left\langle\left(123\right),\left(124\right),\dots,\left(12n\right)\right\rangle.
-\end{aligned}
+S_{n}=\left\langle\left(12\right),\left(13\right),\dots,\left(1n\right)\right\rangle=\left\langle\left(12\right),\left(12\dots n\right)\right\rangle,\
+A_{n}=\left\langle\left(123\right),\left(124\right),\dots,\left(12n\right)\right\rangle.
 $$
 
 ### 解答 习题一
@@ -43,7 +41,7 @@ $$
 $S_{n}$ 由所有对换生成. 任取对换 $\left(ij\right)$, $i\ne 1$, $j\ne 1$. 由共轭公式,
 
 $$
-\begin{aligned}\left(1i\right)\left(1j\right)\left(1i\right)&=\left(\left(1i\right)\left(1\right),\left(1i\right)\left(j\right)\right)\\&=\left(i,j\right)\\&=\left(ij\right).\end{aligned}
+\left(1i\right)\left(1j\right)\left(1i\right)=\left(\left(1i\right)\left(1\right),\left(1i\right)\left(j\right)\right)=\left(i,j\right)=\left(ij\right).
 $$
 
 故任意对换 $\left(ij\right)$ 均可由 $\left(12\right),\left(13\right),\dots,\left(1n\right)$ 表出, 因此
@@ -57,7 +55,7 @@ $$
 记 $\sigma=\left(12\dots n\right)$. 由共轭公式, 对 $k=1,2,\dots,n-1$,
 
 $$
-\begin{aligned}\sigma^{k-1}\left(12\right)\sigma^{-\left(k-1\right)}&=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)\\&=\left(k,k+1\right).\end{aligned}
+\sigma^{k-1}\left(12\right)\sigma^{-\left(k-1\right)}=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)=\left(k,k+1\right).
 $$
 
 故相邻对换 $\left(12\right),\left(23\right),\dots,\left(n-1,n\right)$ 均属于 $\left\langle\left(12\right),\sigma\right\rangle$. 而相邻对换生成 $S_{n}$, 故 $\left\langle\left(12\right),\sigma\right\rangle=S_{n}$.
@@ -79,13 +77,13 @@ $$
 (2)含 $1$ 但不含 $2$ 的 $3$-轮换 $\left(1jk\right)$:
 
 $$
-\begin{aligned}\left(12k\right)\left(12j\right)^{-1}&=\left(12k\right)\left(1j2\right)\\&=\left(1jk\right).\end{aligned}
+\left(12k\right)\left(12j\right)^{-1}=\left(12k\right)\left(1j2\right)=\left(1jk\right).
 $$
 
 (3)不含 $1$ 的 $3$-轮换 $\left(ijk\right)$: 由(2)可先得到 $\left(1ij\right)$ 与 $\left(1ik\right)$, 于是
 
 $$
-\begin{aligned}\left(1ij\right)^{-1}\left(1ik\right)&=\left(1ji\right)\left(1ik\right)\\&=\left(ikj\right)\\&=\left(ijk\right).\end{aligned}
+\left(1ij\right)^{-1}\left(1ik\right)=\left(1ji\right)\left(1ik\right)=\left(ikj\right)=\left(ijk\right).
 $$
 
 故所有 $3$-轮换均属于 $\left\langle\left(123\right),\left(124\right),\dots,\left(12n\right)\right\rangle$. 反之, 各生成元均为偶置换, 故包含于 $A_{n}$. 因此
@@ -157,7 +155,7 @@ $$
 $\lambda\left(a\right)=L_{a}$ 是 $G$ 上的置换. 因 $a^{2}=e$, 对任意 $x\in G$, $L_{a}^{2}\left(x\right)=a^{2}x=x$, 故 $L_{a}$ 是对合. 又 $a\ne e$, $L_{a}$ 无不动点(若 $ax=x$ 则 $a=e$). 因此 $L_{a}$ 是 $n$ 个不相交对换之积, 其符号为
 
 $$
-\begin{aligned}\mathrm{sgn}\left(L_{a}\right)&=\left(-1\right)^{n}\\&=-1,\end{aligned}
+\mathrm{sgn}\left(L_{a}\right)=\left(-1\right)^{n}=-1,
 $$
 
 其中用到 $n$ 为奇数. 故 $\mathrm{sgn}\circ\lambda$ 是满同态.

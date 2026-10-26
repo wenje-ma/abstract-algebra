@@ -37,7 +37,7 @@
 **传递性** 若 $aRb$, $bRc$, 即存在 $g,h\in G$ 使 $b=gag^{-1}$, $c=hbh^{-1}$, 则
 
 $$
-\begin{aligned}c&=hbh^{-1}\\&=h\left(gag^{-1}\right)h^{-1}\\&=\left(hg\right)a\left(hg\right)^{-1},\end{aligned}
+c=hbh^{-1}=h\left(gag^{-1}\right)h^{-1}=\left(hg\right)a\left(hg\right)^{-1},
 $$
 
 故 $aRc$.
@@ -55,7 +55,7 @@ $$
 由**定理 1.3.5**（正规子群的等价条件）, 对任意 $k\in K$ 有 $kH=Hk$. 于是
 
 $$
-\begin{aligned}KH&=\bigcup_{k\in K}kH\\&=\bigcup_{k\in K}Hk\\&=HK,\end{aligned}
+KH=\bigcup_{k\in K}kH=\bigcup_{k\in K}Hk=HK,
 $$
 
 即 $HK=KH$. 由**基础知识**（子群乘积）, $HK< G$.

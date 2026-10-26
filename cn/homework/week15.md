@@ -27,7 +27,7 @@ $$
 (1)设 $\gamma=a+b\sqrt{-5}$, 则 $N\left(\gamma\right)=a^2+5b^2=9\ne1$, 故 $\gamma$ 非单位, 即 $\gamma\in R^*\setminus U$. 反设 $\gamma=\xi\eta$ 为非平凡分解, 则
 
 $$
-\begin{aligned}N\left(\xi\right)N\left(\eta\right)&=N\left(\gamma\right)\\&=9.\end{aligned}
+N\left(\xi\right)N\left(\eta\right)=N\left(\gamma\right)=9.
 $$
 
 范数的取值为非负整数 $x^2+5y^2$. 不存在范数为 $3$ 的元素: $x^2+5y^2=3$ 在 $y=0$ 时要求 $x^2=3$, 非平方数; 在 $\left|y\right|\ge1$ 时 $5> 3$. 故 $N\left(\xi\right),N\left(\eta\right)$ 只能取 $1$ 或 $9$. 若 $N\left(\xi\right)=1$, 则 $\xi$ 为单位; 若 $N\left(\xi\right)=9$, 则 $N\left(\eta\right)=1$, $\eta$ 为单位.
@@ -37,11 +37,11 @@ $$
 (2)先作分解:
 
 $$
-\begin{aligned}\beta&=9\\&=\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right),\end{aligned}
+\beta=9=\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right),
 $$
 
 $$
-\begin{aligned}\alpha&=6+3\sqrt{-5}\\&=3\left(2+\sqrt{-5}\right).\end{aligned}
+\alpha=6+3\sqrt{-5}=3\left(2+\sqrt{-5}\right).
 $$
 
 其中 $N\left(3\right)=9$,
@@ -55,7 +55,7 @@ $$
 $3$ 同时整除 $\alpha$ 与 $\beta$, $2+\sqrt{-5}$ 也同时整除 $\alpha$ 与 $\beta$, 二者都是公因子. 但 $2-\sqrt{-5}$ 不整除 $\alpha$: 若存在 $\gamma\in R$ 使 $\gamma\left(2-\sqrt{-5}\right)=\alpha$, 则
 
 $$
-\begin{aligned}\gamma&=\frac{3\left(2+\sqrt{-5}\right)}{2-\sqrt{-5}}\\&=\frac{3\left(2+\sqrt{-5}\right)^2}{9}\\&=3+\frac{4}{3}\sqrt{-5}\\&\notin R.\end{aligned}
+\gamma=\frac{3\left(2+\sqrt{-5}\right)}{2-\sqrt{-5}}=\frac{3\left(2+\sqrt{-5}\right)^2}{9}=3+\frac{4}{3}\sqrt{-5}\notin R.
 $$
 
 又 $3\nmid\left(2+\sqrt{-5}\right)$(否则 $\left(2+\sqrt{-5}\right)/3\notin R$), 且 $\left(2+\sqrt{-5}\right)\nmid 3$
@@ -92,7 +92,7 @@ $$
 (2)定义范数
 
 $$
-\begin{aligned}N\left(m+n\omega\right)&=\left(m+n\omega\right)\left(m+n\bar\omega\right)\\&=m^2+mn+n^2,\end{aligned}
+N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\bar\omega\right)=m^2+mn+n^2,
 $$
 
 其中 $\bar\omega=\frac{1-\sqrt{-3}}{2}$. 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$. 解 $m^2+mn+n^2=1$ 得

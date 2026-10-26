@@ -51,7 +51,7 @@ $$
 Also $\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]=2$ (since $x^2-3$ is irreducible). By **Theorem 4.1.16** (Telescope Rule for Degrees),
 
 $$
-\begin{aligned}\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\right]&=\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]\\&=2\times2\\&=4.\end{aligned}
+\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\right]=\left[\mathbb Q\left(\sqrt2,\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]\left[\mathbb Q\left(\sqrt3\right):\mathbb Q\right]=2\times2=4.
 $$
 
 (1) Since $\mathbb Q\left(\alpha\right)=\mathbb Q\left(\sqrt2,\sqrt3\right)$, we have $\left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\right]=4$.
@@ -87,7 +87,7 @@ By **Basic Knowledge** (Universal Property of the Field of Fractions), we verify
 **Well defined.** Suppose $ab^{-1}=cd^{-1}$ with $a,b,c,d\in R$ and $b,d\ne0$. Then $ad=bc$. Since $\sigma$ is a ring homomorphism,
 
 $$
-\begin{aligned}\sigma\left(a\right)\sigma\left(d\right)&=\sigma\left(ad\right)\\&=\sigma\left(bc\right)\\&=\sigma\left(b\right)\sigma\left(c\right),\end{aligned}
+\sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right),
 $$
 
 so $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, i.e. $\bar\sigma\left(ab^{-1}\right)=\bar\sigma\left(cd^{-1}\right)$. The definition is independent of the choice of representative.
@@ -95,13 +95,13 @@ so $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\lef
 **Ring homomorphism.** For $x=ab^{-1}$ and $y=cd^{-1}$ in $E$, we have
 
 $$
-\begin{aligned}\bar\sigma\left(xy\right)&=\bar\sigma\left(ac\left(bd\right)^{-1}\right)\\&=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}\\&=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}\\&=\bar\sigma\left(x\right)\bar\sigma\left(y\right),\end{aligned}
+\bar\sigma\left(xy\right)=\bar\sigma\left(ac\left(bd\right)^{-1}\right)=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}=\bar\sigma\left(x\right)\bar\sigma\left(y\right),
 $$
 
 and
 
 $$
-\begin{aligned}\bar\sigma\left(x+y\right)&=\bar\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)\\&=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}\\&=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}\\&=\bar\sigma\left(x\right)+\bar\sigma\left(y\right).\end{aligned}
+\bar\sigma\left(x+y\right)=\bar\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}=\bar\sigma\left(x\right)+\bar\sigma\left(y\right).
 $$
 
 Also $\bar\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, so $\bar\sigma$ is a ring homomorphism.
@@ -109,7 +109,7 @@ Also $\bar\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$,
 **Bijection.** Since $\sigma$ is an automorphism of $R$, its inverse $\tau=\sigma^{-1}$ is also an automorphism of $R$. A direct check shows that $\bar\tau$ is the inverse map of $\bar\sigma$: for $x=ab^{-1}\in E$,
 
 $$
-\begin{aligned}\bar\tau\circ\bar\sigma\left(x\right)&=\bar\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)\\&=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}\\&=ab^{-1}\\&=x.\end{aligned}
+\bar\tau\circ\bar\sigma\left(x\right)=\bar\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}=ab^{-1}=x.
 $$
 
 Similarly $\bar\sigma\circ\bar\tau=\mathrm{id}$. Hence $\bar\sigma$ is invertible and is an automorphism of $E$. $\blacksquare$
@@ -125,7 +125,7 @@ Let $\sigma\in\mathrm{Aut}\left(\mathbb R\right)$. By **Lemma 4.1.9** (Field Hom
 We now show that $\sigma$ preserves the order. If $x> 0$, then there exists $y\in\mathbb R$ with $y\ne0$ such that $x=y^2$. Hence
 
 $$
-\begin{aligned}\sigma\left(x\right)&=\sigma\left(y^2\right)\\&=\sigma\left(y\right)^2> 0,\end{aligned}
+\sigma\left(x\right)=\sigma\left(y^2\right)=\sigma\left(y\right)^2> 0,
 $$
 
 where $\sigma\left(y\right)\ne0$ (since $\sigma$ is injective and $y\ne0$). Hence $\sigma$ sends positive numbers to positive numbers; therefore, when $a< b$, i.e. $b-a> 0$,

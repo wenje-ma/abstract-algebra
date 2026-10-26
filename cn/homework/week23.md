@@ -6,7 +6,7 @@
 
 > **基础知识**（幂零核与约当块计数）设 $A$ 为 $n$ 阶方阵, $a$ 为 $A$ 的一个特征值. 记
 > $$
-> \begin{aligned}\nu_k&=\dim\ker\left(aI_n-A\right)^k\\&=n-\mathrm{rank}\left(aI_n-A\right)^k,\end{aligned}
+> \nu_k=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k,
 > $$
 > 并约定 $\nu_0=0$. 则 $A$ 的以 $a$ 为特征值, 阶数不小于 $s$ 的约当块个数为 $\nu_s-\nu_{s-1}$. 因而序列 $\left\{\nu_k\right\}_{k\geqslant0}$ 完全决定了 $a$ 处约当块的大小与个数.
 
@@ -21,13 +21,13 @@
 设 $P$ 为 $n$ 阶反转矩阵. 由**基础知识**（逆转置矩阵）, $P$ 对称, $P^2=I_n$, 且 $PN$ 对称. 令
 
 $$
-\begin{aligned}A&=PJ\\&=\lambda P+PN.\end{aligned}
+A=PJ=\lambda P+PN.
 $$
 
 因 $P$ 与 $PN$ 均对称, 故 $A$ 为对称矩阵. 又 $P^2=I_n$, 故 $P^{-1}=P$, 于是
 
 $$
-\begin{aligned}J&=P^{-1}A\\&=PA.\end{aligned}
+J=P^{-1}A=PA.
 $$
 
 其中 $P$ 与 $A$ 均为 $F$ 上对称矩阵. 故任一约当块均可写成两个对称矩阵的乘积. $\blacksquare$
@@ -41,7 +41,7 @@ $$
 设 $A$ 为 $F$ 上 $n$ 阶方阵. 由**定理 3.6.3**（约当标准形）, 存在可逆矩阵 $S$ 使
 
 $$
-\begin{aligned}S^{-1}AS&=J\\&=\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right),\end{aligned}
+S^{-1}AS=J=\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right),
 $$
 
 其中 $J_1,J_2,\cdots,J_s$ 均为约当块.
@@ -61,7 +61,7 @@ $$
 于是
 
 $$
-\begin{aligned}A&=SJS^{-1}\\&=SPQS^{-1}\\&=\left(SPS^T\right)\left(S^{-T}QS^{-1}\right).\end{aligned}
+A=SJS^{-1}=SPQS^{-1}=\left(SPS^T\right)\left(S^{-T}QS^{-1}\right).
 $$
 
 其中 $SPS^T$ 为对称矩阵, 因其转置为
@@ -104,7 +104,7 @@ $$
 由主理想整环 $\mathbb R\left[x\right]$ 上有限生成扭模的结构理论(即 $V$ 作为 $\mathbb R\left[x\right]$-模的准素分解), $p\left(x\right)$ 对应的准素子空间非零. 取其中向量 $u$ 使得 $p\left(A\right)u=0$ 且 $u\ne0$. 因 $p\left(x\right)$ 无实根, $u$ 与 $Au$ 必线性无关(否则 $Au=au$, $a\in\mathbb R$, 则 $a$ 为 $p$ 的实根, 矛盾). 令 $W=\mathrm{span}\left\{u,Au\right\}$. 由 $p\left(A\right)u=0$ 即 $A^2u+bAu+cu=0$ 得
 
 $$
-\begin{aligned}A\left(Au\right)&=A^2u\\&=-cu-bAu\in W,\end{aligned}
+A\left(Au\right)=A^2u=-cu-bAu\in W,
 $$
 
 故 $W$ 是 $2$ 维 $A$-不变子空间. 取 $W$ 的一组基, 扩充为 $V$ 的一组基, 则 $A$ 在该基下的矩阵形如
@@ -126,7 +126,7 @@ $$
 **必要性** 若 $A$ 与 $B$ 相似, 则存在可逆矩阵 $P$ 使 $B=P^{-1}AP$. 于是
 
 $$
-\begin{aligned}\left(aI_n-B\right)^k&=\left(aI_n-P^{-1}AP\right)^k\\&=P^{-1}\left(aI_n-A\right)^kP.\end{aligned}
+\left(aI_n-B\right)^k=\left(aI_n-P^{-1}AP\right)^k=P^{-1}\left(aI_n-A\right)^kP.
 $$
 
 相似矩阵秩相同, 故
@@ -140,7 +140,7 @@ $$
 对任一 $a\in F$, 记
 
 $$
-\begin{aligned}\nu_k\left(A\right)&=\dim\ker\left(aI_n-A\right)^k\\&=n-\mathrm{rank}\left(aI_n-A\right)^k,\end{aligned}
+\nu_k\left(A\right)=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k,
 $$
 
 并约定 $\nu_0\left(A\right)=0$. 由题设, $\nu_k\left(A\right)=\nu_k\left(B\right)$ 对所有 $k$ 成立. 由**基础知识**（幂零核与约当块计数）, $A$ 的以 $a$ 为特征值, 阶数不小于 $s$ 的约当块个数为 $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, $B$ 同理. 故二者在 $a$ 处的约当块大小与个数完全一致.

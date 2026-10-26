@@ -59,11 +59,11 @@ We compute inside $D=\mathbb Z\left[i\right]$. Put $a=2-3i$; its norm is $N\left
 Check whether $a=2-3i$ divides $b,c$:
 
 $$
-\begin{aligned}\frac{b}{a}&=\frac{3\left(2+3i\right)\left(2+3i\right)}{13}\\&=\frac{3\left(-5+12i\right)}{13}\\&\notin\mathbb Z\left[i\right],\end{aligned}
+\frac{b}{a}=\frac{3\left(2+3i\right)\left(2+3i\right)}{13}=\frac{3\left(-5+12i\right)}{13}\notin\mathbb Z\left[i\right],
 $$
 
 $$
-\begin{aligned}\frac{c}{a}&=\frac{-18i\left(2+3i\right)}{13}\\&=\frac{54-36i}{13}\\&\notin\mathbb Z\left[i\right].\end{aligned}
+\frac{c}{a}=\frac{-18i\left(2+3i\right)}{13}=\frac{54-36i}{13}\notin\mathbb Z\left[i\right].
 $$
 
 Hence $a\nmid b$ and $a\nmid c$. The only nontrivial divisors of $a$ are its associates (since $a$ is irreducible), so $a$ is not a common divisor of $b,c$. Symmetrically, $2+3i$ does not divide $a$ either. Therefore the greatest common divisor of $a,b,c$ is the unit $1$ in $D$.
@@ -111,7 +111,7 @@ where $\left(a,b\right)$ denotes a greatest common divisor of $a,b$;
 Conversely, if $x\in M\left(a\right)\cap M\left(b\right)$, then $ax=bx=0$. By **Theorem 2.7.7** (Bézout Identity), there exist $u,v\in D$ such that $d=ua+vb$. Then
 
 $$
-\begin{aligned}dx&=\left(ua+vb\right)x\\&=uax+vbx\\&=0,\end{aligned}
+dx=\left(ua+vb\right)x=uax+vbx=0,
 $$
 
 so $x\in M\left(d\right)$. Therefore
@@ -131,19 +131,19 @@ $$
 Finally, show that $M\left(ab\right)\subset M\left(a\right)+M\left(b\right)$. Since $\left(a,b\right)=1$, by **Theorem 2.7.7** there exist $u,v$ such that $ua+vb=1$. For any $x\in M\left(ab\right)$, we have $abx=0$. Write
 
 $$
-\begin{aligned}x&=\left(ua+vb\right)x\\&=uax+vb x.\end{aligned}
+x=\left(ua+vb\right)x=uax+vb x.
 $$
 
 Set $x_1=vb x$ and $x_2=uax$. Then
 
 $$
-\begin{aligned}ax_1&=avb x\\&=vab x\\&=0,\end{aligned}
+ax_1=avb x=vab x=0,
 $$
 
 and
 
 $$
-\begin{aligned}bx_2&=bua x\\&=uab x\\&=0,\end{aligned}
+bx_2=bua x=uab x=0,
 $$
 
 so $x_1\in M\left(a\right)$ and $x_2\in M\left(b\right)$, and hence

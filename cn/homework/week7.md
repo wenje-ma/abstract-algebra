@@ -16,11 +16,11 @@
 
 （习题 1.7-11）设
 $$
-\begin{aligned}&G=G_1\triangleright G_2\triangleright\cdots\triangleright G_t\\&=\left\{e\right\},\end{aligned}
+G=G_1\triangleright G_2\triangleright\cdots\triangleright G_t=\left\{e\right\},
 $$
 和
 $$
-\begin{aligned}&G=H_1\triangleright H_2\triangleright\cdots\triangleright H_s\\&=\left\{e\right\},\end{aligned}
+G=H_1\triangleright H_2\triangleright\cdots\triangleright H_s=\left\{e\right\},
 $$
 是 $G$ 的两个合成序列, 且 $G_2\ne H_2$. 令 $K_3=G_2\cap H_2$. 任取 $K_3$ 的合成序列
 $$
@@ -30,10 +30,8 @@ $$
 (1)
 
 $$
-\begin{aligned}
-G&=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\},\
-G&=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
-\end{aligned}
+G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\},\
+G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
 
 也是 $G$ 的合成序列;
@@ -52,31 +50,31 @@ $$
 
 (1)由 $G_2H_2=G$ 及**基础知识**（第二同构定理）,
 $$
-\begin{aligned}G_2/K_3&=G_2/\left(G_2\cap H_2\right)\\&\cong G_2H_2/H_2\\&=G/H_2,\end{aligned}
+G_2/K_3=G_2/\left(G_2\cap H_2\right)\cong G_2H_2/H_2=G/H_2,
 $$
 而 $G/H_2$ 是合成因子, 为单群, 故 $G_2/K_3$ 为单群.
 
 同理,
 $$
-\begin{aligned}H_2/K_3&=H_2/\left(G_2\cap H_2\right)\\&\cong G_2H_2/G_2\\&=G/G_2,\end{aligned}
+H_2/K_3=H_2/\left(G_2\cap H_2\right)\cong G_2H_2/G_2=G/G_2,
 $$
 亦为单群.
 
 又 $K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}$ 是 $K_3$ 的合成序列, 故 $K_i/K_{i+1}$ ($i=3,\cdots,r-1$) 均为单群. 因此序列
 $$
-\begin{aligned}&G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r\\&=\left\{e\right\}\end{aligned}
+G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
 的所有因子 $G/G_2$, $G_2/K_3$, $K_3/K_4,\cdots,K_{r-1}/K_r$ 均为单群. 由**定义 1.7.9**（次正规序列与合成序列）, 它是 $G$ 的合成序列.
 
 同理, 序列
 $$
-\begin{aligned}&G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r\\&=\left\{e\right\}\end{aligned}
+G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
 的因子 $G/H_2$, $H_2/K_3$, $K_3/K_4,\cdots,K_{r-1}/K_r$ 亦均为单群, 故也是 $G$ 的合成序列.
 
 (2)记四个合成序列为
 $$
-\begin{aligned}&S_1:\;G\triangleright G_2\triangleright G_3\triangleright\cdots\triangleright G_t=\left\{e\right\},\\&S_2:\;G\triangleright H_2\triangleright H_3\triangleright\cdots\triangleright H_s=\left\{e\right\},\\&S_3:\;G\triangleright G_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\},\\&S_4:\;G\triangleright H_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\}.\end{aligned}
+S_1:\;G\triangleright G_2\triangleright G_3\triangleright\cdots\triangleright G_t=\left\{e\right\},;S_2:\;G\triangleright H_2\triangleright H_3\triangleright\cdots\triangleright H_s=\left\{e\right\},;S_3:\;G\triangleright G_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\},;S_4:\;G\triangleright H_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\}.
 $$
 
 先证 $S_3$ 与 $S_4$ 同构. $S_3$ 的因子为

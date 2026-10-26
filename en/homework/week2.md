@@ -30,7 +30,7 @@
 (1) Since $ab=ba$, for any integer $k$ we have $\left(ab\right)^{k}=a^{k}b^{k}$. Then
 
 $$
-\begin{aligned}\left(ab\right)^{mn}&=a^{mn}b^{mn}\\&=\left(a^{m}\right)^{n}\left(b^{n}\right)^{m}\\&=e,\end{aligned}
+\left(ab\right)^{mn}=a^{mn}b^{mn}=\left(a^{m}\right)^{n}\left(b^{n}\right)^{m}=e,
 $$
 
 so the order of $ab$ divides $mn$.
@@ -42,7 +42,7 @@ In summary, the order of $ab$ is $mn$.
 (2) Let $d=\left[m,n\right]$. Since $m\mid d$, $n\mid d$,
 
 $$
-\begin{aligned}\left(ab\right)^{d}&=a^{d}b^{d}\\&=e,\end{aligned}
+\left(ab\right)^{d}=a^{d}b^{d}=e,
 $$
 
 so the order of $ab$ divides $d$.
@@ -62,10 +62,8 @@ Thus the order of $ab$ is $\left[m,n\right]$.
 Example: take $G=\mathbb Z_{4}\times\mathbb Z_{4}$, $a=\left(1,0\right)$, $b=\left(1,2\right)$. Then both $a,b$ have order $4$,
 
 $$
-\begin{aligned}
-\left\langle a\right\rangle&=\left\{\left(0,0\right),\left(1,0\right),\left(2,0\right),\left(3,0\right)\right\},\
-\left\langle b\right\rangle&=\left\{\left(0,0\right),\left(1,2\right),\left(2,0\right),\left(3,2\right)\right\}
-\end{aligned},
+\left\langle a\right\rangle=\left\{\left(0,0\right),\left(1,0\right),\left(2,0\right),\left(3,0\right)\right\},\
+\left\langle b\right\rangle=\left\{\left(0,0\right),\left(1,2\right),\left(2,0\right),\left(3,2\right)\right\},
 $$
 
 whose intersection is $\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. Meanwhile $ab=\left(2,2\right)$ satisfies $2ab=\left(0,0\right)$, so the order of $ab$ is $2< \left[4,4\right]=4$.
@@ -87,7 +85,7 @@ As to whether $G$ necessarily contains an element of order $\left[m,n\right]$, t
 For any $A,B\in SL\left(n,\mathbb Z\right)$, the entries of $A,B$ are all integers, so the entries of $AB^{-1}$ are also integers, and
 
 $$
-\begin{aligned}\det\left(AB^{-1}\right)&=\det A\cdot\det\left(B^{-1}\right)\\&=\det A/\det B\\&=1/1\\&=1.\end{aligned}
+\det\left(AB^{-1}\right)=\det A\cdot\det\left(B^{-1}\right)=\det A/\det B=1/1=1.
 $$
 
 Hence $AB^{-1}\in SL\left(n,\mathbb Z\right)$. By **Theorem 1.2.2** (Subgroup Criterion), $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
@@ -101,7 +99,7 @@ We now show that each of the remaining pairs also equals $\left\langle S,T\right
 **$R=ST$** A direct computation gives
 
 $$
-\begin{aligned}ST&=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\\&=\begin{bmatrix}0&-1\\1&1\end{bmatrix}\\&=R.\end{aligned}
+ST=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}=\begin{bmatrix}0&-1\\1&1\end{bmatrix}=R.
 $$
 
 Hence $T=S^{-1}R$, and therefore
@@ -118,7 +116,7 @@ $$
 **Relation between $U$ and $S$** Compute $S^{-1}TS$:
 
 $$
-\begin{aligned}S^{-1}TS&=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}\\&=\begin{bmatrix}1&0\\-1&1\end{bmatrix}\\&=U^{-1}.\end{aligned}
+S^{-1}TS=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}=\begin{bmatrix}1&0\\-1&1\end{bmatrix}=U^{-1}.
 $$
 
 Hence $T=SU^{-1}S^{-1}$, so $\left\langle S,U\right\rangle\supseteq\left\langle S,T\right\rangle$. Also $U=S^{-1}T^{-1}S\in\left\langle S,T\right\rangle$, so
@@ -132,7 +130,7 @@ $$
 **$\left\langle R,U\right\rangle=SL\left(2,\mathbb Z\right)$** From $R=ST$ and $U^{-1}=S^{-1}TS$, substituting gives
 
 $$
-\begin{aligned}U^{-1}&=S^{-1}\left(S^{-1}R\right)S\\&=S^{-2}RS\\&=-IRS\\&=-RS,\end{aligned}
+U^{-1}=S^{-1}\left(S^{-1}R\right)S=S^{-2}RS=-IRS=-RS,
 $$
 
 where $S^{2}=-I$. Hence $S=-R^{-1}U^{-1}$. Also $R^{3}=-I$ (a direct check gives $R^{3}=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$), so $-I=R^{3}\in\left\langle R,U\right\rangle$, and thus
@@ -195,7 +193,7 @@ $$
 Therefore $\varphi$ is injective, and hence
 
 $$
-\begin{aligned}\left[G:H_{1}\cap H_{2}\right]&=\left|G/\left(H_{1}\cap H_{2}\right)\right|\\&\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|\\&=\left[G:H_{1}\right]\left[G:H_{2}\right].\end{aligned}
+\left[G:H_{1}\cap H_{2}\right]=\left|G/\left(H_{1}\cap H_{2}\right)\right|\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|=\left[G:H_{1}\right]\left[G:H_{2}\right].
 $$
 
 Now prove equality in the coprime case. By **Corollary 1.2.23** (Multiplicativity of Index),
@@ -237,7 +235,7 @@ $$
 Substituting gives
 
 $$
-\begin{aligned}\left|H_{1}H_{2}\right|&=\frac{\left(\left|G\right|/\left[G:H_{1}\right]\right)\cdot\left(\left|G\right|/\left[G:H_{2}\right]\right)}{\left|G\right|/\left(\left[G:H_{1}\right]\left[G:H_{2}\right]\right)}\\&=\left|G\right|.\end{aligned}
+\left|H_{1}H_{2}\right|=\frac{\left(\left|G\right|/\left[G:H_{1}\right]\right)\cdot\left(\left|G\right|/\left[G:H_{2}\right]\right)}{\left|G\right|/\left(\left[G:H_{1}\right]\left[G:H_{2}\right]\right)}=\left|G\right|.
 $$
 
 Since $H_{1}H_{2}\subseteq G$ and both have the same number of elements, $G=H_{1}H_{2}$. $\blacksquare$

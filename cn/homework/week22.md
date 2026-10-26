@@ -19,7 +19,7 @@
 先对 $936$ 作素因数分解. 因
 
 $$
-\begin{aligned}936&=8\times117\\&=2^3\times3^2\times13.\end{aligned}
+936=8\times117=2^3\times3^2\times13.
 $$
 
 即 $936=2^3\cdot3^2\cdot13^1$.
@@ -29,7 +29,7 @@ $$
 由**定理 3.5.2**（有限交换群的分类数）, 同构意义下 $936$ 阶交换群的个数为
 
 $$
-\begin{aligned}p\left(3\right)p\left(2\right)p\left(1\right)&=3\times2\times1\\&=6.\end{aligned}
+p\left(3\right)p\left(2\right)p\left(1\right)=3\times2\times1=6.
 $$
 
 故同构意义下 $936$ 阶交换群共有 $6$ 类. $\blacksquare$
@@ -72,7 +72,7 @@ $$
 (2)任取 $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. 由**基础知识**（直积中元素的阶）, $o\left(g\right)\mid q$ 当且仅当 $o\left(h_i\right)\mid q$ 对每个 $i$ 同时成立. 因而满足条件的 $g$ 恰为各分量分别取自对应集合 $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$ 的直积, 由乘法原理得
 
 $$
-\begin{aligned}\left|\left\{g\in G\mid o\left(g\right)\mid q\right\}\right|&=\prod_{i=1}^s\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|\\&=m_1m_2\cdots m_s.\end{aligned}
+\left|\left\{g\in G\mid o\left(g\right)\mid q\right\}\right|=\prod_{i=1}^s\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|=m_1m_2\cdots m_s.
 $$
 
 (3)在 $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$ 中, 要求元素的阶整除 $4$, 即 $4g=0$. 分别计算各分量的可选个数.
@@ -86,7 +86,7 @@ $$
 由(2), 所求元素个数为
 
 $$
-\begin{aligned}m_1m_2m_3&=4\times4\times4\\&=64.\end{aligned}
+m_1m_2m_3=4\times4\times4=64.
 $$
 
 故 $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$ 中有 $64$ 个元素的阶能整除 $4$. $\blacksquare$

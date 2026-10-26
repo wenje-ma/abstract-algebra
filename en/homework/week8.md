@@ -31,7 +31,7 @@ $$
 Since $G^{\prime}\trianglelefteq G$, for any $\tau\in G$, $\sigma\in G^{\prime}$ and $v\in V_{\lambda}$, by **Lemma 1.8.3** (Properties of Commutators), $\tau\sigma\tau^{-1}\in G^{\prime}$, and
 
 $$
-\begin{aligned}\sigma\left(\tau v\right)&=\tau\left(\tau^{-1}\sigma\tau\right)v\\&=\tau\lambda\left(\tau^{-1}\sigma\tau\right)v\\&=\lambda\left(\tau^{-1}\sigma\tau\right)\tau v,\end{aligned}
+\sigma\left(\tau v\right)=\tau\left(\tau^{-1}\sigma\tau\right)v=\tau\lambda\left(\tau^{-1}\sigma\tau\right)v=\lambda\left(\tau^{-1}\sigma\tau\right)\tau v,
 $$
 
 so $\tau v\in V_{\lambda^{\tau}}$, where $\lambda^{\tau}\left(\sigma\right)=\lambda\left(\tau^{-1}\sigma\tau\right)$. Since $G/G^{\prime}$ is abelian, the orbit of $G$ acting on the characters of $G^{\prime}$ is finite; taking the sum of the eigenspaces corresponding to one such orbit gives a nonzero $G$-invariant subspace $W$.
@@ -45,7 +45,7 @@ We now answer the second part. The answer is negative, i.e. a nontrivial finite 
 Indeed, let $A\in N$, i.e. $A$ is a complex upper-triangular matrix with all diagonal entries equal to $1$. Then $A=I+M$, where $M$ is strictly upper-triangular and hence nilpotent, i.e. there exists $r$ with $M^{r}=0$. If $A$ has finite order, i.e. there exists a positive integer $k$ with $A^{k}=I$, then
 
 $$
-\begin{aligned}\left(I+M\right)^{k}-I&=kM+\binom{k}{2}M^{2}+\cdots+M^{k}\\&=0.\end{aligned}
+\left(I+M\right)^{k}-I=kM+\binom{k}{2}M^{2}+\cdots+M^{k}=0.
 $$
 
 Let $s$ be the smallest positive integer with $M^{s}\ne0$; then the lowest-degree term on the left-hand side is $kM^{s}$. Since $k\ne0$ is invertible in $\mathbb C$, we get $M^{s}=0$, a contradiction. Therefore $M=0$, i.e. $A=I$.

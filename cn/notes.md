@@ -69,10 +69,7 @@ $$
 对 $f,g\in S$, 狄利克雷卷积定义为
 
 $$
-\begin{aligned}&\;\;\left(f*g\right)\left(n\right)\\
-&=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)\\
-&=\sum_{ab=n}f\left(a\right)g\left(b\right).
-\end{aligned}
+\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right).
 $$
 
 ## 群同态与群的结构
@@ -510,10 +507,7 @@ $$
 设 $A$ 为 $n$ 阶方阵, $a$ 为 $A$ 的一个特征值. 记
 
 $$
-\begin{aligned}&\;\;\nu_k\\
-&=\dim\ker\left(aI_n-A\right)^k\\
-&=n-\mathrm{rank}\left(aI_n-A\right)^k,
-\end{aligned}
+\nu_k=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k,
 $$
 
 并约定 $\nu_0=0$. 则 $A$ 的以 $a$ 为特征值, 阶数不小于 $s$ 的约当块个数为 $\nu_s-\nu_{s-1}$. 因而序列 $\left\{\nu_k\right\}_{k\geqslant0}$ 完全决定了 $a$ 处约当块的大小与个数.
