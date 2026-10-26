@@ -92,10 +92,10 @@ $$
 (2)定义范数
 
 $$
-N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\bar\omega\right)=m^2+mn+n^2,
+N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^2+mn+n^2,
 $$
 
-其中 $\bar\omega=\frac{1-\sqrt{-3}}{2}$. 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$. 解 $m^2+mn+n^2=1$ 得
+其中 $\overline\omega=\frac{1-\sqrt{-3}}{2}$. 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$. 解 $m^2+mn+n^2=1$ 得
 
 $$
 \left(m,n\right)=\left(\pm1,0\right),\;\left(0,\pm1\right),\;\left(1,-1\right),\;\left(-1,1\right).

@@ -6,7 +6,7 @@
 
 > **基础知识**（代数整数环的范数）设 $d> 0$ 为无平方因子整数, $\omega=\frac{1+\sqrt{-d}}{2}$ 满足 $\omega^2-\omega+\frac{1+d}{4}=0$ 当 $d\equiv3\pmod4$. 对 $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, 定义范数
 > $$
-> N\left(\alpha\right)=\alpha\bar\alpha=a^2+ab+b^2\omega\bar\omega,
+> N\left(\alpha\right)=\alpha\overline\alpha=a^2+ab+b^2\omega\overline\omega,
 > $$
 > 它是乘性函数且 $N\left(\alpha\right)=0$ 当且仅当 $\alpha=0$.
 
@@ -16,10 +16,10 @@
 
 ### 解答 习题一
 
-记 $\omega=\frac{1+\sqrt{-3}}{2}$, 则 $\bar\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, 且 $\omega+\bar\omega=1$, $\omega\bar\omega=1$. 故对 $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$, 定义范数
+记 $\omega=\frac{1+\sqrt{-3}}{2}$, 则 $\overline\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, 且 $\omega+\overline\omega=1$, $\omega\overline\omega=1$. 故对 $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$, 定义范数
 
 $$
-N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\bar\omega\right)=a^2+ab+b^2.
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^2+ab+b^2.
 $$
 
 该二次型正定, 且 $N\left(\alpha\beta\right)=N\left(\alpha\right)N\left(\beta\right)$. 下面验证在映射 $\delta=N$ 下 $R$ 满足**定义 2.7.9**（欧几里得环）的带余除法.
@@ -102,10 +102,10 @@ $$
 
 ### 解答 习题三
 
-由 $\omega=\frac{1+\sqrt{-19}}{2}$ 得 $\bar\omega=\frac{1-\sqrt{-19}}{2}$, 且 $\omega+\bar\omega=1$, $\omega\bar\omega=5$. 故对 $\alpha=a+b\omega\in R$, 范数为
+由 $\omega=\frac{1+\sqrt{-19}}{2}$ 得 $\overline\omega=\frac{1-\sqrt{-19}}{2}$, 且 $\omega+\overline\omega=1$, $\omega\overline\omega=5$. 故对 $\alpha=a+b\omega\in R$, 范数为
 
 $$
-N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\bar\omega\right)=a^2+ab+5b^2,
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^2+ab+5b^2,
 $$
 
 它是正定二次型且乘性. 注意到当 $\left|b\right|\ge1$ 时,

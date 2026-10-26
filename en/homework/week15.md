@@ -79,9 +79,9 @@ is closed under multiplication (since $\omega^2=\omega-1\in R$).
 
 (2) Define the norm
 $$
-N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\bar\omega\right)=m^2+mn+n^2,
+N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^2+mn+n^2,
 $$
-where $\bar\omega=\frac{1-\sqrt{-3}}{2}$. Then $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, and $\xi$ is a unit if and only if $N\left(\xi\right)=1$. Solving $m^2+mn+n^2=1$ gives
+where $\overline\omega=\frac{1-\sqrt{-3}}{2}$. Then $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, and $\xi$ is a unit if and only if $N\left(\xi\right)=1$. Solving $m^2+mn+n^2=1$ gives
 $$
 \left(m,n\right)=\left(\pm1,0\right),\;\left(0,\pm1\right),\;\left(1,-1\right),\;\left(-1,1\right).
 $$

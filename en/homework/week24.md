@@ -8,7 +8,7 @@
 
 > **Lemma 4.1.9** (Field Homomorphisms Are Injective) A field homomorphism $\varphi:F\to E$ is always injective. In particular, a field automorphism preserves the field operations and $1$, and hence fixes every element of the prime field ($\mathbb Q$ or $\mathbb F_p$).
 
-> **Basic Knowledge** (Universal Property of the Field of Fractions) Let $R$ be an integral domain and $E$ its field of fractions. Given any automorphism $\sigma$ of $R$, define the map $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$; then $\bar\sigma$ is well defined and is an automorphism of $E$.
+> **Basic Knowledge** (Universal Property of the Field of Fractions) Let $R$ be an integral domain and $E$ its field of fractions. Given any automorphism $\sigma$ of $R$, define the map $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$; then $\overline\sigma$ is well defined and is an automorphism of $E$.
 
 ### Problem 1
 
@@ -78,7 +78,7 @@ Hence $\mathbb R/\mathbb Q$ is not a finite extension, i.e. $\mathbb R/\mathbb Q
 
 ### Problem 3
 
-(Problem 4.1-11) Let $E$ be the field of fractions of an integral domain $R$. For any automorphism $\sigma$ of $R$, define $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\left(\sigma\left(b\right)\right)^{-1}$. Prove that $\bar\sigma$ is an automorphism of $E$.
+(Problem 4.1-11) Let $E$ be the field of fractions of an integral domain $R$. For any automorphism $\sigma$ of $R$, define $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\left(\sigma\left(b\right)\right)^{-1}$. Prove that $\overline\sigma$ is an automorphism of $E$.
 
 ### Solution to Problem 3
 
@@ -90,29 +90,29 @@ $$
 \sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right),
 $$
 
-so $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, i.e. $\bar\sigma\left(ab^{-1}\right)=\bar\sigma\left(cd^{-1}\right)$. The definition is independent of the choice of representative.
+so $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, i.e. $\overline\sigma\left(ab^{-1}\right)=\overline\sigma\left(cd^{-1}\right)$. The definition is independent of the choice of representative.
 
 **Ring homomorphism.** For $x=ab^{-1}$ and $y=cd^{-1}$ in $E$, we have
 
 $$
-\bar\sigma\left(xy\right)=\bar\sigma\left(ac\left(bd\right)^{-1}\right)=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}=\bar\sigma\left(x\right)\bar\sigma\left(y\right),
+\overline\sigma\left(xy\right)=\overline\sigma\left(ac\left(bd\right)^{-1}\right)=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}=\overline\sigma\left(x\right)\overline\sigma\left(y\right),
 $$
 
 and
 
 $$
-\bar\sigma\left(x+y\right)=\bar\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}=\bar\sigma\left(x\right)+\bar\sigma\left(y\right).
+\overline\sigma\left(x+y\right)=\overline\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}=\overline\sigma\left(x\right)+\overline\sigma\left(y\right).
 $$
 
-Also $\bar\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, so $\bar\sigma$ is a ring homomorphism.
+Also $\overline\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, so $\overline\sigma$ is a ring homomorphism.
 
-**Bijection.** Since $\sigma$ is an automorphism of $R$, its inverse $\tau=\sigma^{-1}$ is also an automorphism of $R$. A direct check shows that $\bar\tau$ is the inverse map of $\bar\sigma$: for $x=ab^{-1}\in E$,
+**Bijection.** Since $\sigma$ is an automorphism of $R$, its inverse $\tau=\sigma^{-1}$ is also an automorphism of $R$. A direct check shows that $\overline\tau$ is the inverse map of $\overline\sigma$: for $x=ab^{-1}\in E$,
 
 $$
-\bar\tau\circ\bar\sigma\left(x\right)=\bar\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}=ab^{-1}=x.
+\overline\tau\circ\overline\sigma\left(x\right)=\overline\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}=ab^{-1}=x.
 $$
 
-Similarly $\bar\sigma\circ\bar\tau=\mathrm{id}$. Hence $\bar\sigma$ is invertible and is an automorphism of $E$. $\blacksquare$
+Similarly $\overline\sigma\circ\overline\tau=\mathrm{id}$. Hence $\overline\sigma$ is invertible and is an automorphism of $E$. $\blacksquare$
 
 ### Problem 4
 

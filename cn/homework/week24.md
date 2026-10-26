@@ -8,7 +8,7 @@
 
 > **引理 4.1.9**（域同态必单射）域同态 $\varphi:F\to E$ 一定是单射. 特别地, 域自同构保持域中运算及 $1$, 因而保持素域($\mathbb Q$ 或 $\mathbb F_p$)上的所有元素不动.
 
-> **基础知识**（分式域的泛性质）设 $R$ 为整环, $E$ 为其分式域. 任给 $R$ 的自同构 $\sigma$, 定义映射 $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$, 则 $\bar\sigma$ 良定义且为 $E$ 的自同构.
+> **基础知识**（分式域的泛性质）设 $R$ 为整环, $E$ 为其分式域. 任给 $R$ 的自同构 $\sigma$, 定义映射 $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$, 则 $\overline\sigma$ 良定义且为 $E$ 的自同构.
 
 ### 习题一
 
@@ -78,7 +78,7 @@ $\blacksquare$
 
 ### 习题三
 
-（习题 4.1-11）设 $E$ 是整环 $R$ 的分式域. 对任意 $R$ 的自同构 $\sigma$ 定义 $\bar\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\left(\sigma\left(b\right)\right)^{-1}$. 证明: $\bar\sigma$ 是 $E$ 的自同构.
+（习题 4.1-11）设 $E$ 是整环 $R$ 的分式域. 对任意 $R$ 的自同构 $\sigma$ 定义 $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\left(\sigma\left(b\right)\right)^{-1}$. 证明: $\overline\sigma$ 是 $E$ 的自同构.
 
 ### 解答 习题三
 
@@ -90,29 +90,29 @@ $$
 \sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right),
 $$
 
-故 $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, 即 $\bar\sigma\left(ab^{-1}\right)=\bar\sigma\left(cd^{-1}\right)$. 定义与代表元选取无关.
+故 $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, 即 $\overline\sigma\left(ab^{-1}\right)=\overline\sigma\left(cd^{-1}\right)$. 定义与代表元选取无关.
 
 **环同态** 对 $x=ab^{-1}$, $y=cd^{-1}\in E$, 有
 
 $$
-\bar\sigma\left(xy\right)=\bar\sigma\left(ac\left(bd\right)^{-1}\right)=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}=\bar\sigma\left(x\right)\bar\sigma\left(y\right),
+\overline\sigma\left(xy\right)=\overline\sigma\left(ac\left(bd\right)^{-1}\right)=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}=\overline\sigma\left(x\right)\overline\sigma\left(y\right),
 $$
 
 且
 
 $$
-\bar\sigma\left(x+y\right)=\bar\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}=\bar\sigma\left(x\right)+\bar\sigma\left(y\right).
+\overline\sigma\left(x+y\right)=\overline\sigma\left(\left(ad+bc\right)\left(bd\right)^{-1}\right)=\sigma\left(ad+bc\right)\sigma\left(bd\right)^{-1}=\frac{\sigma\left(a\right)}{\sigma\left(b\right)}+\frac{\sigma\left(c\right)}{\sigma\left(d\right)}=\overline\sigma\left(x\right)+\overline\sigma\left(y\right).
 $$
 
-又 $\bar\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, 故 $\bar\sigma$ 为环同态.
+又 $\overline\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, 故 $\overline\sigma$ 为环同态.
 
-**双射** 因 $\sigma$ 是 $R$ 的自同构, 其逆 $\tau=\sigma^{-1}$ 亦为 $R$ 的自同构. 直接验证可知 $\bar\tau$ 为 $\bar\sigma$ 的逆映射: 对 $x=ab^{-1}\in E$,
+**双射** 因 $\sigma$ 是 $R$ 的自同构, 其逆 $\tau=\sigma^{-1}$ 亦为 $R$ 的自同构. 直接验证可知 $\overline\tau$ 为 $\overline\sigma$ 的逆映射: 对 $x=ab^{-1}\in E$,
 
 $$
-\bar\tau\circ\bar\sigma\left(x\right)=\bar\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}=ab^{-1}=x.
+\overline\tau\circ\overline\sigma\left(x\right)=\overline\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}=ab^{-1}=x.
 $$
 
-同理 $\bar\sigma\circ\bar\tau=\mathrm{id}$. 故 $\bar\sigma$ 可逆, 为 $E$ 的自同构. $\blacksquare$
+同理 $\overline\sigma\circ\overline\tau=\mathrm{id}$. 故 $\overline\sigma$ 可逆, 为 $E$ 的自同构. $\blacksquare$
 
 ### 习题四
 

@@ -6,7 +6,7 @@
 
 > **Basic Knowledge** (Norm of the Ring of Algebraic Integers) Let $d> 0$ be a square-free integer, and let $\omega=\frac{1+\sqrt{-d}}{2}$ satisfy $\omega^2-\omega+\frac{1+d}{4}=0$ when $d\equiv3\pmod4$. For $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, the norm is defined by
 > $$
-> N\left(\alpha\right)=\alpha\bar\alpha=a^2+ab+b^2\omega\bar\omega,
+> N\left(\alpha\right)=\alpha\overline\alpha=a^2+ab+b^2\omega\overline\omega,
 > $$
 > which is a multiplicative function, and $N\left(\alpha\right)=0$ if and only if $\alpha=0$.
 
@@ -16,9 +16,9 @@
 
 ### Solution to Problem 1
 
-Write $\omega=\frac{1+\sqrt{-3}}{2}$; then $\bar\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, with $\omega+\bar\omega=1$ and $\omega\bar\omega=1$. Hence for $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$, define the norm
+Write $\omega=\frac{1+\sqrt{-3}}{2}$; then $\overline\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, with $\omega+\overline\omega=1$ and $\omega\overline\omega=1$. Hence for $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$, define the norm
 $$
-N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\bar\omega\right)=a^2+ab+b^2.
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^2+ab+b^2.
 $$
 
 This quadratic form is positive definite, and $N\left(\alpha\beta\right)=N\left(\alpha\right)N\left(\beta\right)$. We now verify that, with $\delta=N$, $R$ satisfies the division-with-remainder condition of **Definition 2.7.9** (Euclidean Ring).
@@ -88,9 +88,9 @@ First divide $m$ by $2$, which shows $m=\pm2$ or $\pm3$; then divide $m$ by $\om
 
 ### Solution to Problem 3
 
-From $\omega=\frac{1+\sqrt{-19}}{2}$, we have $\bar\omega=\frac{1-\sqrt{-19}}{2}$, with $\omega+\bar\omega=1$ and $\omega\bar\omega=5$. Hence for $\alpha=a+b\omega\in R$, the norm is
+From $\omega=\frac{1+\sqrt{-19}}{2}$, we have $\overline\omega=\frac{1-\sqrt{-19}}{2}$, with $\omega+\overline\omega=1$ and $\omega\overline\omega=5$. Hence for $\alpha=a+b\omega\in R$, the norm is
 $$
-N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\bar\omega\right)=a^2+ab+5b^2,
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^2+ab+5b^2,
 $$
 which is a positive-definite quadratic form and multiplicative. Note that when $\left|b\right|\ge1$,
 $$
