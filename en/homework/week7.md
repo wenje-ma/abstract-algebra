@@ -1,102 +1,104 @@
-# Assignment 7
+# week7
 
-> **Definition 1.7.9** (Subnormal Series and Composition Series) A sequence of subgroups in a group $G$
-> $$
-> G=G_1\trianglerighteq G_2\trianglerighteq\cdots\trianglerighteq G_t\trianglerighteq G_{t+1}=\left\{e\right\}
-> $$
-> is called a subnormal series if $G_{i+1}\trianglelefteq G_i$, and the $G_i/G_{i+1}$ are called its factors. If all the factors $G_i/G_{i+1}$ are simple groups, the subnormal series is called a composition series of $G$, and the $G_i/G_{i+1}$ are called the composition factors of $G$.
+> **Basic Knowledge: Surjective Homomorphisms Preserve Normal Subgroups**<br>Let $f:G\to G'$ be a surjective homomorphism. If $H\triangleleft G$, then $f\left(H\right)\triangleleft G'$.
 
-> **Definition 1.7.12** (Isomorphic Series) Two subnormal series of a group $G$ are called isomorphic if there is a bijection between the factor sets of the two series such that corresponding factors are isomorphic.
+> **Theorem 1.4.23 (3) (Second Isomorphism Theorem)**<br>Let $G$ be a group, $N\triangleleft G$, and $H<G$. Then $HN/N\cong H/\left(H\cap N\right)$.
 
-> **Theorem 1.7.13** (Jordan–Hölder Theorem) If a group $G$ has a composition series, then any two composition series of $G$ are isomorphic.
+> **Definition 1.7.9 (Subnormal Series and Composition Series)**<br>A sequence of subgroups $G=G_1\trianglerighteq G_2\trianglerighteq\cdots\trianglerighteq G_t\trianglerighteq G_{t+1}=\left\{e\right\}$ of a group $G$ is called a subnormal series if $G_{i+1}\trianglelefteq G_i$ for $i=1,\cdots,t$; the quotient $G_i/G_{i+1}$ is called a factor of this series. If all factors $G_i/G_{i+1}$ are simple groups, then this subnormal series is called a composition series of $G$, and the $G_i/G_{i+1}$ are called composition factors of $G$.
 
-> **Basic Knowledge** (Second Isomorphism Theorem) Let $A,B$ be subgroups of $G$ with $B\trianglelefteq G$ and $A\le G$. Then $A\cap B\trianglelefteq A$ and $A/\left(A\cap B\right)\cong AB/B$. In particular, if both $A,B$ are normal subgroups of $G$, then $AB/\!A\cong B/\left(A\cap B\right)$.
+> **Definition 1.7.12 (Isomorphic Series)**<br>Two subnormal series $G=G_1\supset G_2\supset\cdots\supset G_t=\left\{e\right\}$ and $G=H_1\supset H_2\supset\cdots\supset H_s=\left\{e\right\}$ of a group $G$ are called isomorphic if there is a bijection between the two sets of factors such that the corresponding factors are isomorphic.
 
-### Problem 1
+> **Theorem 1.7.13 (Jordan-Holder Theorem)**<br>If a group $G$ has a composition series, then any two composition series of $G$ are isomorphic. In particular, any two principal series of $G$ are isomorphic.
 
-(Problem 1.7-11) Let
+---
+
+## 1.7-11
+
+Let
+
 $$
-G=G_1\triangleright G_2\triangleright\cdots\triangleright G_t=\left\{e\right\},
+G=G_1\triangleright G_2\triangleright\cdots\triangleright G_t=\left\{e\right\}
 $$
+
 and
-$$
-G=H_1\triangleright H_2\triangleright\cdots\triangleright H_s=\left\{e\right\},
-$$
-be two composition series of $G$, with $G_2\ne H_2$. Set $K_3=G_2\cap H_2$. Take any composition series of $K_3$
-$$
-K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}.
-$$
-Prove that:
-(1)
 
 $$
-G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\},\
-G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
+G=H_1\triangleright H_2\triangleright\cdots\triangleright H_s=\left\{e\right\}
 $$
 
-are also composition series of $G$;
-(2) the four composition series of $G$ above are mutually equivalent.
+be two composition series of $G$, with $G_2\ne H_2$. Let $K_3=G_2\cap H_2$. Take any composition series $K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}$ of $K_3$. Prove that:
 
-### Solution to Problem 1
+(1) both $G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}$ and $G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}$ are also composition series of $G$;
 
-First prove $G_2H_2=G$. Since both $G_2,H_2$ are normal subgroups of $G$, $G_2H_2\trianglelefteq G$ and $G_2H_2\supseteq G_2$. Also $G/G_2$ is a composition factor and hence simple, so $G_2H_2/G_2$, as a normal subgroup of $G/G_2$, must be either trivial or $G/G_2$, i.e. $G_2H_2=G_2$ or $G$.
+(2) the above four composition series of $G$ are equivalent to one another.
 
-If $G_2H_2=G_2$, then $H_2\subseteq G_2$, and thus $G_2H_2=G_2\ne H_2$. On the other hand, $G_2H_2/H_2\trianglelefteq G/H_2$, and $G/H_2$ is also simple, so $G_2H_2=H_2$ or $G$. From $G_2H_2\ne H_2$ we get $G_2H_2=G$. But then $G_2=G$, contradicting $G_2\triangleleft G$. Hence $G_2H_2\ne G_2$.
+### Solution 1.7-11
 
-Symmetrically, $G_2H_2\ne H_2$. Therefore the only possibility is
-$$
-G_2H_2=G.
-$$
+**Step 1: prove that $G_2H_2=G$.** Since $H_2\triangleleft G$, by **Basic Knowledge: Surjective Homomorphisms Preserve Normal Subgroups**, the image $\pi\left(H_2\right)$ under the natural homomorphism $\pi:G\to G/G_2$ is a normal subgroup of $G/G_2$. Moreover $\pi\left(H_2\right)=\left\{hG_2\mid h\in H_2\right\}=\left(G_2H_2\right)/G_2$ (since $G_2\subseteq G_2H_2$), so $\left(G_2H_2\right)/G_2\triangleleft G/G_2$. Since $G/G_2$ is a composition factor and hence simple, $\left(G_2H_2\right)/G_2$ must be trivial or all of $G/G_2$, i.e. $G_2H_2=G_2$ or $G$.
 
-(1) From $G_2H_2=G$ and **Basic Knowledge** (Second Isomorphism Theorem),
+Similarly, since $G_2\triangleleft G$, the image $\pi'\left(G_2\right)=\left(G_2H_2\right)/H_2$ under the natural homomorphism $\pi':G\to G/H_2$ is a normal subgroup of $G/H_2$; since $G/H_2$ is simple, $G_2H_2=H_2$ or $G$.
+
+**Claim: $G_2H_2\ne G_2$.** If $G_2H_2=G_2$, then $H_2\subseteq G_2$. From the previous paragraph $G_2H_2\in\left\{H_2,G\right\}$, i.e. $G_2=H_2$ or $G_2=G$; the former contradicts $G_2\ne H_2$, and the latter contradicts the fact that $G_2$ is a proper subgroup of $G$ (since $G/G_2$ is a nontrivial simple group). Hence $G_2H_2\ne G_2$.
+
+**Claim: $G_2H_2\ne H_2$.** If $G_2H_2=H_2$, then $G_2\subseteq H_2$. From $G_2H_2\in\left\{G_2,G\right\}$, we get $H_2=G_2$ or $H_2=G$; the former contradicts $G_2\ne H_2$, and the latter contradicts the fact that $H_2$ is a proper subgroup. Hence $G_2H_2\ne H_2$.
+
+Therefore the only possibility is $G_2H_2=G$.
+
+**Step for (1): prove that both refined series are composition series.** By **Theorem 1.4.23 (3) (Second Isomorphism Theorem)**, taking $H=G_2$ and $N=H_2$, we get
+
 $$
 G_2/K_3=G_2/\left(G_2\cap H_2\right)\cong G_2H_2/H_2=G/H_2,
 $$
-and $G/H_2$ is a composition factor and hence simple, so $G_2/K_3$ is simple.
 
-Symmetrically,
+and $G/H_2$ is a composition factor, hence simple; so $G_2/K_3$ is simple.
+
+Similarly, by **Theorem 1.4.23 (3) (Second Isomorphism Theorem)**, taking $H=H_2$ and $N=G_2$, we get
+
 $$
 H_2/K_3=H_2/\left(G_2\cap H_2\right)\cong G_2H_2/G_2=G/G_2,
 $$
-is also simple.
 
-Also $K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}$ is a composition series of $K_3$, so the factors $K_i/K_{i+1}$ ($i=3,\cdots,r-1$) are all simple. Therefore the series
+which is also simple.
+
+Moreover $K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}$ is a composition series of $K_3$, so each $K_i/K_{i+1}$ ($i=3,\cdots,r-1$) is simple. Hence all factors $G/G_2$, $G_2/K_3$, $K_3/K_4$, ..., $K_{r-1}/K_r$ of the series
+
 $$
 G=G_1\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
-has all its factors $G/G_2$, $G_2/K_3$, $K_3/K_4,\cdots,K_{r-1}/K_r$ simple. By **Definition 1.7.9** (Subnormal Series and Composition Series), it is a composition series of $G$.
 
-Symmetrically, the series
+are simple; and $G_2\triangleright K_3$ is a valid subnormal step ($K_3=G_2\cap H_2$, $H_2\triangleleft G$, so $K_3\triangleleft G_2$). By **Definition 1.7.9 (Subnormal Series and Composition Series)**, it is a composition series of $G$.
+
+Similarly, all factors $G/H_2$, $H_2/K_3$, $K_3/K_4$, ..., $K_{r-1}/K_r$ of the series
+
 $$
 G=H_1\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
-has factors $G/H_2$, $H_2/K_3$, $K_3/K_4,\cdots,K_{r-1}/K_r$ all simple, so it is also a composition series of $G$.
 
-(2) Denote the four composition series by
+are simple, so by **Definition 1.7.9 (Subnormal Series and Composition Series)** it is also a composition series of $G$.
+
+**Step for (2): prove that the four composition series are equivalent.** Write the four composition series as
+
 $$
-S_1:\;G\triangleright G_2\triangleright G_3\triangleright\cdots\triangleright G_t=\left\{e\right\},;S_2:\;G\triangleright H_2\triangleright H_3\triangleright\cdots\triangleright H_s=\left\{e\right\},;S_3:\;G\triangleright G_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\},;S_4:\;G\triangleright H_2\triangleright K_3\triangleright\cdots\triangleright K_r=\left\{e\right\}.
+\begin{aligned}
+S_1&:G\triangleright G_2\triangleright G_3\triangleright\cdots\triangleright G_t=\left\{e\right\},\\
+S_2&:G\triangleright H_2\triangleright H_3\triangleright\cdots\triangleright H_s=\left\{e\right\},\\
+S_3&:G\triangleright G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\},\\
+S_4&:G\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}.
+\end{aligned}
 $$
 
-We first show that $S_3$ and $S_4$ are isomorphic. The factors of $S_3$ are
-$$
-G/G_2, G_2/K_3\cong G/H_2, K_3/K_4,\cdots, K_{r-1}/K_r;
-$$
-$S_4$ are
-$$
-G/H_2, H_2/K_3\cong G/G_2, K_3/K_4,\cdots, K_{r-1}/K_r.
-$$
-As multisets, the two factor lists differ only in the order of the first two factors, with $G/G_2$ and $G/H_2$ interchanged; the remaining factors are identical. By **Definition 1.7.12** (Isomorphic Series), $S_3$ and $S_4$ are isomorphic.
+**First prove that $S_3$ and $S_4$ are isomorphic.** The factors of $S_3$ are $G/G_2$, $G_2/K_3\cong G/H_2$, $K_3/K_4$, ..., $K_{r-1}/K_r$; the factors of $S_4$ are $G/H_2$, $H_2/K_3\cong G/G_2$, $K_3/K_4$, ..., $K_{r-1}/K_r$. As multisets the two families differ only in the first two entries: $G/G_2$ and $G/H_2$ are interchanged, and all remaining factors are identical. Hence by **Definition 1.7.12 (Isomorphic Series)**, $S_3$ and $S_4$ are isomorphic.
 
-Now show that $S_1$ and $S_3$ are isomorphic. Both $S_1$ and $S_3$ have first factor $G/G_2$. After removing the first term, their tails
+**Next prove that $S_1$ and $S_3$ are isomorphic.** The first factors of $S_1$ and $S_3$ are both $G/G_2$. After removing the first term, the two tails
+
 $$
 G_2\triangleright G_3\triangleright\cdots\triangleright G_t=\left\{e\right\}
-$$
-and
-$$
+\quad\text{and}\quad
 G_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright K_r=\left\{e\right\}
 $$
-are both composition series of $G_2$. Since $\left|G_2\right|< \left|G\right|$, induction on the order of the group and **Theorem 1.7.13** (Jordan–Hölder Theorem) give that these two composition series of $G_2$ are isomorphic. Adjoining the common first factor $G/G_2$, $S_1$ and $S_3$ are isomorphic.
 
-Symmetrically, both $S_2$ and $S_4$ have first factor $G/H_2$, and their tails $H_2\triangleright\cdots\triangleright\left\{e\right\}$ and $H_2\triangleright K_3\triangleright\cdots\triangleright\left\{e\right\}$ are both composition series of $H_2$; by the induction hypothesis they are isomorphic, so $S_2$ and $S_4$ are isomorphic.
+are both composition series of $G_2$. By **Theorem 1.7.13 (Jordan-Holder Theorem)**, these two composition series of the group $G_2$ are isomorphic. After adding back their common first factor $G/G_2$, by **Definition 1.7.12 (Isomorphic Series)**, $S_1$ and $S_3$ are isomorphic.
 
-In summary, $S_1\cong S_3\cong S_4\cong S_2$, i.e. the four composition series are mutually equivalent. $\blacksquare$
+**Similarly prove that $S_2$ and $S_4$ are isomorphic.** The first factors of $S_2$ and $S_4$ are both $G/H_2$; the tails $H_2\triangleright H_3\triangleright\cdots\triangleright\left\{e\right\}$ and $H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright\left\{e\right\}$ are both composition series of $H_2$, hence isomorphic by **Theorem 1.7.13 (Jordan-Holder Theorem)**; after adding back the common first factor $G/H_2$, $S_2$ and $S_4$ are isomorphic.
+
+In summary, $S_1\cong S_3\cong S_4\cong S_2$, so the four composition series are equivalent. $\blacksquare$
