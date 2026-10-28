@@ -160,7 +160,7 @@ Let me revise: use 引理1.2.12 (aH=bH iff a^{-1}b∈H). I'll add it to the cita
 
 Let me rewrite that part with 引理1.2.12.
 
-**单射**: 若 $\left(gH_{1},gH_{2}\right)=\left(g'H_{1},g'H_{2}\right)$, 则由**引理 1.2.12**, $g^{-1}g'\in H_{1}$ 且 $g^{-1}g'\in H_{2}$, 故 $g^{-1}g'\in H_{1}\cap H_{2}$, 再由**引理 1.2.12**, $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$. 故 $\varphi$ 是单射.
+**单射**: 若 $\left(gH_{1},gH_{2}\right)=\left(g'H_{1},g'H_{2}\right)$, 则由**引理 1.2.12 (陪集重合条件)**, $g^{-1}g'\in H_{1}$ 且 $g^{-1}g'\in H_{2}$, 故 $g^{-1}g'\in H_{1}\cap H_{2}$, 再由**引理 1.2.12 (陪集重合条件)**, $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$. 故 $\varphi$ 是单射.
 
 于是 $\left[G:H_{1}\cap H_{2}\right]=\left|G/\left(H_{1}\cap H_{2}\right)\right|\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
 

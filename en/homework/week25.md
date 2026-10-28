@@ -1,158 +1,93 @@
-# Assignment 25
+# week25
 
-> **Theorem 4.2.13** (Structure of a Simple Algebraic Extension) A simple algebraic extension $F$ of a field $F\left(\alpha\right)$ is isomorphic to $F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right)$. If $\deg\left(\alpha,F\right)=n$, then $F\left(\alpha\right)$ is an $F$-dimensional $n$-vector space, and $1,\alpha,\alpha^2,\cdots,\alpha^{n-1}$ form an $F$-basis.
+> **Basic Knowledge: Eisenstein's Criterion**<br>Let $f\left(x\right)=a_nx^n+\cdots+a_0\in\mathbb Z\left[x\right]$. If there is a prime $p$ such that $p\nmid a_n$, $p\mid a_i$ for $i=0,1,\cdots,n-1$, but $p^2\nmid a_0$, then $f\left(x\right)$ is irreducible over $\mathbb Q\left[x\right]$.
 
-> **Basic Knowledge** (Eisenstein Criterion) Let
-> $$
-> f\left(x\right)=a_nx^n+\cdots+a_0\in\mathbb Z\left[x\right],
-> $$
-> If there exists a prime $p$ such that $p\nmid a_n$, $p\mid a_i$ for $i=0,1,\cdots,n-1$, but $p^2\nmid a_0$, then $f\left(x\right)$ is irreducible over $\mathbb Q\left[x\right]$.
+> **Basic Knowledge: Frobenius Map in Characteristic $p$**<br>If a field $F$ has prime characteristic $p$, then for all $a,b\in F$, $\left(a+b\right)^p=a^p+b^p$, and hence $\left(x-a\right)^p=x^p-a^p$. In particular, $x^p-c$ has only one root, of multiplicity $p$, in its splitting field.
 
-> **Basic Knowledge** (Frobenius Map in Characteristic $p$) Let a field $F$ have prime characteristic $p$. Then for any $a,b\in F$, $\left(a+b\right)^p=a^p+b^p$, and hence $\left(x-a\right)^p=x^p-a^p$. In particular, $x^p-c$ has only one root of multiplicity $p$ in its splitting field.
+> **Theorem 4.2.13 (Structure of a Simple Algebraic Extension)**<br>A simple algebraic extension $F\left(\alpha\right)$ of a field $F$ is isomorphic to $F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right)$. If $\deg\left(\alpha,F\right)=n$, then $F\left(\alpha\right)$ has dimension $n$ as an $F$-vector space, and $1,\alpha,\alpha^2,\cdots,\alpha^{n-1}$ form an $F$-basis.
 
-### Problem 1
+---
 
-(Problem 4.2-5) Let $F\left(\alpha\right)$ be a simple algebraic extension of $F$ with $\deg\left(\alpha,F\right)=n$. Prove that $F\left(\alpha\right)$ is an $n$-dimensional $F$-vector space, and that $1,\alpha,\cdots,\alpha^{n-1}$ form a basis of $F\left(\alpha\right)$.
+## 4.2-5
 
-### Solution to Problem 1
+Let $F\left(\alpha\right)$ be a simple algebraic extension of $F$ with $\deg\left(\alpha,F\right)=n$. Prove that $F\left(\alpha\right)$ is an $n$-dimensional $F$-vector space and that $1,\alpha,\cdots,\alpha^{n-1}$ form a basis of $F\left(\alpha\right)$.
 
-By **Theorem 4.2.13** (Structure of a Simple Algebraic Extension),
+### Solution 4.2-5
 
-$$
-F\left(\alpha\right)\cong F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right).
-$$
+By **Theorem 4.2.13 (Structure of a Simple Algebraic Extension)**, $F\left(\alpha\right)\cong F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right)$. Let $f\left(x\right)=\mathrm{Irr}\left(\alpha,F\right)$ be the monic irreducible polynomial of degree $n$.
 
-Let $f\left(x\right)=\mathrm{Irr}\left(\alpha,F\right)$ be the monic irreducible polynomial of degree $n$.
+Every element of the quotient ring $F\left[x\right]/\left(f\left(x\right)\right)$ can be uniquely written as $a_0+a_1x+\cdots+a_{n-1}x^{n-1}$ (by division with remainder, the remainder has degree less than $n$). Under the isomorphism, $x$ corresponds to $\alpha$, so every element of $F\left(\alpha\right)$ is uniquely written as $a_0+a_1\alpha+\cdots+a_{n-1}\alpha^{n-1}$ with $a_i\in F$.
 
-Every element of the quotient ring $F\left[x\right]/\left(f\left(x\right)\right)$ can be uniquely written in the form
+Hence $1,\alpha,\cdots,\alpha^{n-1}$ generate $F\left(\alpha\right)$ and are linearly independent over $F$ (if $\sum_{i=0}^{n-1}a_i\alpha^i=0$, then $\sum a_ix^i$ is a polynomial of degree less than $n$ having $\alpha$ as a root, contradicting that $f$ is the minimal polynomial). Thus they form an $F$-basis of $F\left(\alpha\right)$, and $\dim_F F\left(\alpha\right)=n$. $\blacksquare$
 
-$$
-a_0+a_1x+\cdots+a_{n-1}x^{n-1}
-$$
-(by division with remainder, the remainder has degree less than $n$). Under the isomorphism, $x$ corresponds to $\alpha$, so every element of $F\left(\alpha\right)$ can be uniquely written as
+---
 
-$$
-a_0+a_1\alpha+\cdots+a_{n-1}\alpha^{n-1},
-$$
+## 4.2-6
 
-$a_i\in F$.
+Prove that for every positive integer $n$, there is an algebraic extension $K$ of $\mathbb Q$ with $\left[K:\mathbb Q\right]=n$.
 
-Hence $1,\alpha,\cdots,\alpha^{n-1}$ generate $F\left(\alpha\right)$ and are linearly independent over $F$ (if $\sum_{i=0}^{n-1}a_i\alpha^i=0$, then $\sum a_ix^i$ would be a polynomial of degree less than $\alpha$ with $n$ as a root, contradicting that $f$ is the minimal polynomial). Therefore they form an $F\left(\alpha\right)$-basis of $F$, and $\dim_F F\left(\alpha\right)=n$. $\blacksquare$
+### Solution 4.2-6
 
-### Problem 2
+Take $K=\mathbb Q\left(2^{1/n}\right)$, the extension generated by a root $\theta=2^{1/n}$ of the polynomial $x^n-2$.
 
-(Problem 4.2-6) Prove that for every positive integer $n$, there exists an algebraic extension $\mathbb Q$ of $K$ with $\left[K:\mathbb Q\right]=n$.
+For $f\left(x\right)=x^n-2\in\mathbb Z\left[x\right]$, take the prime $p=2$. By **Basic Knowledge: Eisenstein's Criterion**, $2\nmid1$ (leading coefficient), $2\mid0$ (all intermediate coefficients are $0$), and $2^2=4\nmid-2$ (constant term), so $f\left(x\right)$ is irreducible over $\mathbb Q\left[x\right]$.
 
-### Solution to Problem 2
+Hence $\deg\left(\theta,\mathbb Q\right)=n$. By **Theorem 4.2.13 (Structure of a Simple Algebraic Extension)**, $\left[K:\mathbb Q\right]=\left[\mathbb Q\left(\theta\right):\mathbb Q\right]=n$. Since $K/\mathbb Q$ is a simple algebraic extension, it is an algebraic extension. $\blacksquare$
 
-Take $K=\mathbb Q\left(2^{1/n}\right)$, i.e. the extension generated by a root $x^n-2$ of the polynomial $\theta=2^{1/n}$.
+---
 
-For $f\left(x\right)=x^n-2\in\mathbb Z\left[x\right]$, take the prime $p=2$. By **Basic Knowledge** (Eisenstein Criterion), $2\nmid1$ (the leading coefficient), $2\mid0$ (all intermediate coefficients are $0$), and $2^2=4\nmid-2$ (the constant term); hence $f\left(x\right)$ is irreducible over $\mathbb Q\left[x\right]$.
+## 4.2-9
 
-Therefore $\deg\left(\theta,\mathbb Q\right)=n$. By **Theorem 4.2.13** (Structure of a Simple Algebraic Extension), $\left[K:\mathbb Q\right]=\left[\mathbb Q\left(\theta\right):\mathbb Q\right]=n$. Also $K/\mathbb Q$ is a simple algebraic extension, hence an algebraic extension. $\blacksquare$
+If $a,b\in\mathbb Q$ satisfy $\sqrt a+\sqrt b\ne0$, prove that $\mathbb Q\left(\sqrt a,\sqrt b\right)=\mathbb Q\left(\sqrt a+\sqrt b\right)$.
 
-### Problem 3
+### Solution 4.2-9
 
-(Problem 4.2-9) If $a,b\in\mathbb Q$ satisfy $\sqrt a+\sqrt b\ne0$, prove that
+Set $\alpha=\sqrt a+\sqrt b$. Since $\alpha\in\mathbb Q\left(\sqrt a,\sqrt b\right)$, we have $\mathbb Q\left(\alpha\right)\subseteq\mathbb Q\left(\sqrt a,\sqrt b\right)$; it remains to prove the reverse inclusion.
 
-$$
-\mathbb Q\left(\sqrt a,\sqrt b\right)=\mathbb Q\left(\sqrt a+\sqrt b\right).
-$$
+By assumption $\alpha\ne0$. Computing, $\alpha^2=a+b+2\sqrt{ab}$, so $\sqrt{ab}=\frac{\alpha^2-a-b}{2}\in\mathbb Q\left(\alpha\right)$. Also $\sqrt a-\sqrt b=\frac{\left(\sqrt a-\sqrt b\right)\left(\sqrt a+\sqrt b\right)}{\sqrt a+\sqrt b}=\frac{a-b}{\alpha}\in\mathbb Q\left(\alpha\right)$.
 
-### Solution to Problem 3
+Hence $\sqrt a=\frac{1}{2}\left(\alpha+\frac{a-b}{\alpha}\right)\in\mathbb Q\left(\alpha\right)$ and $\sqrt b=\frac{1}{2}\left(\alpha-\frac{a-b}{\alpha}\right)\in\mathbb Q\left(\alpha\right)$.
 
-Write $\alpha=\sqrt a+\sqrt b$. Since $\alpha\in\mathbb Q\left(\sqrt a,\sqrt b\right)$, we have $\mathbb Q\left(\alpha\right)\subseteq\mathbb Q\left(\sqrt a,\sqrt b\right)$; it remains to prove the reverse inclusion.
+Thus $\mathbb Q\left(\sqrt a,\sqrt b\right)\subseteq\mathbb Q\left(\alpha\right)$. Together with the reverse inclusion, $\mathbb Q\left(\sqrt a,\sqrt b\right)=\mathbb Q\left(\sqrt a+\sqrt b\right)$. $\blacksquare$
 
-By hypothesis $\alpha\ne0$. Computing,
+---
 
-$$
-\alpha^2=a+b+2\sqrt{ab},
-$$
+## 4.2-10
 
-so $\sqrt{ab}=\frac{\alpha^2-a-b}{2}\in\mathbb Q\left(\alpha\right)$. Also,
-
-$$
-\sqrt a-\sqrt b=\frac{\left(\sqrt a-\sqrt b\right)\left(\sqrt a+\sqrt b\right)}{\sqrt a+\sqrt b}=\frac{a-b}{\alpha}\in\mathbb Q\left(\alpha\right).
-$$
-
-Hence
-
-$$
-\sqrt a=\frac{1}{2}\left(\alpha+\frac{a-b}{\alpha}\right)\in\mathbb Q\left(\alpha\right),
-$$
-
-$$
-\sqrt b=\frac{1}{2}\left(\alpha-\frac{a-b}{\alpha}\right)\in\mathbb Q\left(\alpha\right).
-$$
-
-Thus $\mathbb Q\left(\sqrt a,\sqrt b\right)\subseteq\mathbb Q\left(\alpha\right)$. Combining with the reverse inclusion,
-
-$$
-\mathbb Q\left(\sqrt a,\sqrt b\right)=\mathbb Q\left(\sqrt a+\sqrt b\right).
-$$
-
-$\blacksquare$
-
-### Problem 4
-
-(Problem 4.2-10) Let $E=\mathbb F_p\left(t\right)$ be a simple transcendental extension of $\mathbb F_p$.
+Let $E=\mathbb F_p\left(t\right)$ be a simple transcendental extension of $\mathbb F_p$.
 
 (1) Prove that $x^p-t\in E\left[x\right]$ is irreducible;
 
-(2) Let $\theta$ be a root of $x^p-t$. Factor $x^p-t$ over $E\left(\theta\right)$ into irreducible polynomials.
+(2) Let $\theta$ be a root of $x^p-t$. Factor $x^p-t$ over $E\left(\theta\right)$ into irreducible factors.
 
-### Solution to Problem 4
+### Solution 4.2-10
 
-(1) Suppose, for contradiction, that $x^p-t$ has a nontrivial decomposition in $E\left[x\right]$, $x^p-t=f\left(x\right)g\left(x\right)$, with $f,g$ monic and $1\leq\deg f=k< p$.
+(1) Suppose, for contradiction, that $x^p-t$ has a nontrivial factorization in $E\left[x\right]$, $x^p-t=f\left(x\right)g\left(x\right)$, with $f,g$ monic and $1\le\deg f=k< p$.
 
-Let $\theta$ be a root of $x^p-t$ in some splitting field; then $\theta^p=t$. By **Basic Knowledge** (Frobenius Map in Characteristic $p$),
+Let $\theta$ be a root of $x^p-t$ in some splitting field; then $\theta^p=t$. By **Basic Knowledge: Frobenius Map in Characteristic $p$**, $\left(x-\theta\right)^p=x^p-\theta^p=x^p-t$. Hence in the splitting field $x^p-t=\left(x-\theta\right)^p$, so $f\left(x\right)=\left(x-\theta\right)^k$.
 
-$$
-\left(x-\theta\right)^p=x^p-\theta^p=x^p-t.
-$$
+The coefficient of $x^{k-1}$ in $f\left(x\right)$ is $-k\theta$. Since $f\in E\left[x\right]$, this coefficient lies in $E$, so $k\theta\in E$. Also $1\le k< p$, and in characteristic $p$, $k\ne0$, so $k$ is invertible; hence $\theta\in E$.
 
-Hence in the splitting field, $x^p-t=\left(x-\theta\right)^p$, and therefore $f\left(x\right)=\left(x-\theta\right)^k$.
+But $\theta\in E=\mathbb F_p\left(t\right)$ means there are coprime polynomials $f_0\left(t\right),g_0\left(t\right)\in\mathbb F_p\left[t\right]$ with $\theta=f_0\left(t\right)/g_0\left(t\right)$. From $\theta^p=t$ we get $f_0\left(t\right)^p=t\,g_0\left(t\right)^p$. Comparing degrees: the left side has degree $p\deg f_0$, the right side $1+p\deg g_0$. The left side is divisible by $p$, while the right side is congruent to $1$ modulo $p$, a contradiction. Hence $\theta\notin E$, and $x^p-t$ is irreducible in $E\left[x\right]$.
 
-$f\left(x\right)$ in $x^{k-1}$ is $-k\theta$. Since $f\in E\left[x\right]$, this coefficient lies in $E$, so $k\theta\in E$. Also $1\leq k< p$, and in a field of characteristic $p$, $k\ne0$, so $k$ is invertible, and thus $\theta\in E$.
+(2) In $E\left(\theta\right)$, by **Basic Knowledge: Frobenius Map in Characteristic $p$**, $x^p-t=x^p-\theta^p=\left(x-\theta\right)^p$. Here $x-\theta$ is already linear and hence irreducible. Thus the irreducible factorization of $x^p-t$ over $E\left(\theta\right)$ is $\left(x-\theta\right)^p$. $\blacksquare$
 
-But $\theta\in E=\mathbb F_p\left(t\right)$ means there exist coprime polynomials $f_0\left(t\right),g_0\left(t\right)\in\mathbb F_p\left[t\right]$ with $\theta=f_0\left(t\right)/g_0\left(t\right)$. From $\theta^p=t$ we get $f_0\left(t\right)^p=t\,g_0\left(t\right)^p$. Comparing degrees: the left-hand side has degree $p\deg f_0$, and the right-hand side has degree $1+p\deg g_0$. The left-hand side is divisible by $p$, while the right-hand side is congruent to $p$ modulo $1$, a contradiction. Hence $\theta\notin E$, and therefore $x^p-t$ is irreducible in $E\left[x\right]$.
+---
 
-(2) In $E\left(\theta\right)$, by **Basic Knowledge** (Frobenius Map in Characteristic $p$),
+## 4.2-13
 
-$$
-x^p-t=x^p-\theta^p=\left(x-\theta\right)^p.
-$$
+Let $F\left(\alpha\right)$ be a simple transcendental extension of $F$, and let $u\in F\left(\alpha\right)$ with $u\notin F$. Prove that $\alpha$ is algebraic over the field $F\left(u\right)$.
 
-Here $x-\theta$ is already a linear polynomial and hence irreducible. Therefore the irreducible factorization of $x^p-t$ over $E\left(\theta\right)$ is $\left(x-\theta\right)^p$. $\blacksquare$
+### Solution 4.2-13
 
-### Problem 5
+Since $u\in F\left(\alpha\right)$ and $F\left(\alpha\right)$ is the field of fractions of $F\left[\alpha\right]$, there exist coprime polynomials $f\left(x\right),g\left(x\right)\in F\left[x\right]$ with $g\left(x\right)\ne0$ such that $u=\frac{f\left(\alpha\right)}{g\left(\alpha\right)}$.
 
-(Problem 4.2-13) Let $F\left(\alpha\right)$ be a simple transcendental extension of $F$, and let $u\in F\left(\alpha\right)$ with $u\notin F$. Prove that $\alpha$ is algebraic over the field $F\left(u\right)$.
+Consider the polynomial $h\left(x\right)=u\,g\left(x\right)-f\left(x\right)\in F\left(u\right)\left[x\right]$. Substituting $x=\alpha$, $h\left(\alpha\right)=u\,g\left(\alpha\right)-f\left(\alpha\right)=0$.
 
-### Solution to Problem 5
+Now show $h\left(x\right)\ne0$. Suppose $h\left(x\right)=0$; then in $F\left(u\right)\left[x\right]$, $u\,g\left(x\right)=f\left(x\right)$.
 
-Since $u\in F\left(\alpha\right)$ and $F\left(\alpha\right)$ is the field of fractions of $F\left[\alpha\right]$, there exist coprime polynomials $f\left(x\right),g\left(x\right)\in F\left[x\right]$ with $g\left(x\right)\ne0$ such that
+If $g\left(x\right)$ is a constant polynomial, then $f\left(x\right)$ must be nonconstant (otherwise $u=f/g\in F$, a contradiction); then $\deg\left(u\,g\right)=0$ while $\deg f> 0$, contradicting $ug=f$.
 
-$$
-u=\frac{f\left(\alpha\right)}{g\left(\alpha\right)}.
-$$
+If $g\left(x\right)$ is nonconstant, then $\deg\left(ug\right)=\deg g$ ($u$ is a nonzero element of $F\left(u\right)$ and does not change the polynomial degree). From $ug=f$, $\deg f=\deg g$; comparing leading coefficients, $u\cdot\mathrm{lc}\left(g\right)=\mathrm{lc}\left(f\right)$, i.e. $u=\mathrm{lc}\left(f\right)/\mathrm{lc}\left(g\right)\in F$, contradicting $u\notin F$.
 
-Consider the polynomial
-
-$$
-h\left(x\right)=u\,g\left(x\right)-f\left(x\right)\in F\left(u\right)\left[x\right].
-$$
-
-Substituting $x=\alpha$ gives
-
-$$
-h\left(\alpha\right)=u\,g\left(\alpha\right)-f\left(\alpha\right)=0.
-$$
-
-We now prove that $h\left(x\right)\ne0$. Suppose, for contradiction, that $h\left(x\right)=0$; then in $F\left(u\right)\left[x\right]$ we have $u\,g\left(x\right)=f\left(x\right)$.
-
-If $g\left(x\right)$ is a constant polynomial, then $f\left(x\right)$ must be nonconstant (otherwise $u=f/g\in F$, a contradiction); in that case $\deg\left(u\,g\right)=0$ while $\deg f> 0$, contradicting $ug=f$.
-
-If $g\left(x\right)$ is nonconstant, then $\deg\left(ug\right)=\deg g$ (since $u$ is a nonzero element of $F\left(u\right)$, it does not change polynomial degree). From $ug=f$ we get $\deg f=\deg g$; comparing leading coefficients gives $u\cdot\mathrm{lc}\left(g\right)=\mathrm{lc}\left(f\right)$, i.e. $u=\mathrm{lc}\left(f\right)/\mathrm{lc}\left(g\right)\in F$, contradicting $u\notin F$.
-
-Hence $h\left(x\right)\ne0$, while $h\left(\alpha\right)=0$; i.e. $\alpha$ is a root of the nonzero polynomial $F\left(u\right)$ over $h$. Therefore $\alpha$ is algebraic over $F\left(u\right)$. $\blacksquare$
+Thus $h\left(x\right)\ne0$, while $h\left(\alpha\right)=0$; i.e. $\alpha$ is a root of the nonzero polynomial $h$ over $F\left(u\right)$, and hence $\alpha$ is algebraic over $F\left(u\right)$. $\blacksquare$
