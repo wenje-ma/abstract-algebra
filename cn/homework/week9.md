@@ -1,35 +1,35 @@
 # week9
 
 > **基础知识: 线性映射保持子空间维数**
->
+> 
 > 可逆线性变换把 $k$ 维子空间映为 $k$ 维子空间; 对任意两个非零向量 $v,w$, 存在可逆线性变换 $\rho$ 使 $\rho v=w$ (分别把 $v,w$ 扩充为 $\mathbb R^n$ 的基并定义线性映射).
 
 > **基础知识: 正交与酉变换**
->
+> 
 > 正交变换保持内积, 因而把标准正交组映为标准正交组, 把 $k$ 维子空间映为 $k$ 维子空间; 任意两组标准正交基可由某个正交 (酉) 变换互相映射.
 
 > **基础知识: 分式线性变换**
->
+> 
 > 分式线性变换 (默比乌斯变换) $z\mapsto\frac{az+b}{cz+d}$ 的复合对应矩阵乘法; 具有无穷多个不动点的分式线性变换必为恒等变换.
 
 > **基础知识: 群作用的轨道分解**
->
+> 
 > 设 $G$ 作用在 $X$ 上, 则 $X$ 是互不相交的轨道之并; 对 $x\in X$, 轨道 $O_x$ 的大小为 $\left|G\right|/\left|F_x\right|$, 其中 $F_x$ 为 $x$ 的迷向子群. 特别地, 在 $\mathbb Z_2$ 作用于 $X$ 时, 非不动点的轨道恰含 $2$ 个元素, 故 $\left|X\right|\equiv\left|\mathrm{Fix}\right|\pmod 2$, 其中 $\mathrm{Fix}$ 为不动点集.
 
 > **定义 1.9.1 (群作用)**
->
+> 
 > 设 $G$ 是群, $X$ 是非空集合. 若映射 $f:G\times X\to X$ 满足 $f\left(e,x\right)=x$ 且 $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, 则称 $f$ 决定了 $G$ 在 $X$ 上的一个作用, 记 $f\left(g,x\right)=gx$.
 
 > **定义 1.9.7 (可递作用与有效作用)**
->
+> 
 > 若对任意 $x,y\in X$ 存在 $g\in G$ 使 $gx=y$, 称 $G$ 在 $X$ 上的作用可递, 称 $X$ 为 $G$ 的齐性空间. 若由 $gx=x$ 对一切 $x\in X$ 成立可推出 $g=e$, 称作用有效. 若对任意 $g\in G$, $x\in X$ 都有 $gx=x$, 称作用平凡.
 
 > **定义 1.9.9 (轨道与迷向子群)**
->
+> 
 > 设 $G$ 作用在 $X$ 上, $x\in X$. 称 $O_x=\left\{gx\mid g\in G\right\}$ 为 $x$ 的轨道. 称 $F_x=\left\{g\in G\mid gx=x\right\}$ 为 $x$ 的迷向子群.
 
 > **推论 1.9.15 (轨道-迷向子群定理)**
->
+> 
 > 设群 $G$ 作用在 $X$ 上, $x\in X$, 则 $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; 从而 $\left|O_x\right|\mid\left|G\right|$.
 
 ---
@@ -157,7 +157,7 @@ $$
 设
 
 $$
-H=\left\{z=x+iy\in\mathbb C\mid y>0\right\},
+H=\left\{z=x+iy\in\mathbb C\mid y> 0\right\},
 $$
 
 称为庞加莱上半平面. 对任意
@@ -176,17 +176,17 @@ $$
 
 ### 解答 1.9-8
 
-**第一步: 验证 $g\circ z\in H$.** 对 $z=x+iy$ ($y>0$), 因 $\det g=ad-bc=1$, 直接计算虚部:
+**第一步: 验证 $g\circ z\in H$.** 对 $z=x+iy$ ($y> 0$), 因 $\det g=ad-bc=1$, 直接计算虚部:
 
 $$
-\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}>0,
+\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}> 0,
 $$
 
 故 $g\circ z\in H$, 定义合理.
 
 **第二步: 验证作用公理.** 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又由**基础知识: 分式线性变换**, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
 
-**第三步: 判断可递性.** 任取 $z=x+iy\in H$ ($y>0$), 取
+**第三步: 判断可递性.** 任取 $z=x+iy\in H$ ($y> 0$), 取
 
 $$
 g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
@@ -245,8 +245,8 @@ $$
 $$
 p_2:\left(x,y,z\right)\mapsto
 \begin{cases}
-\left(x+2z,\,z,\,y-x-z\right), & x<y-z,\\
-\left(2y-x,\,y,\,x-y+z\right), & y-z\le x<2y,\\
+\left(x+2z,\,z,\,y-x-z\right), & x< y-z,\\
+\left(2y-x,\,y,\,x-y+z\right), & y-z\le x< 2y,\\
 \left(x-2y,\,x-y+z,\,y\right), & x\ge2y.
 \end{cases}
 $$
@@ -267,9 +267,9 @@ $$
 
 **求 $p_2$ 的不动点.** 对三种情况分别令 $p_2\left(x,y,z\right)=\left(x,y,z\right)$:
 
-情况一 $x<y-z$: 由 $x+2z=x$ 得 $z=0$, 与 $z\in\mathbb N^{+}$ 矛盾, 故无不动点.
+情况一 $x< y-z$: 由 $x+2z=x$ 得 $z=0$, 与 $z\in\mathbb N^{+}$ 矛盾, 故无不动点.
 
-情况二 $y-z\le x<2y$: 由 $2y-x=x$ 得 $x=y$; 第三坐标 $x-y+z=z$ 自动成立. 代入方程:
+情况二 $y-z\le x< 2y$: 由 $2y-x=x$ 得 $x=y$; 第三坐标 $x-y+z=z$ 自动成立. 代入方程:
 
 $$
 x^{2}+4yz=x^{2}+4xz=x\left(x+4z\right)=p.

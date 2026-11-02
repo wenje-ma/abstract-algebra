@@ -1,15 +1,15 @@
 # week18
 
 > **Basic Knowledge: Polynomial Division with Remainder**
->
+> 
 > Let $R$ be a commutative unital ring and $f\left(x\right),g\left(x\right)\in R\left[x\right]$, with the leading coefficient of $g\left(x\right)$ a unit in $R$. Then there exist unique $q\left(x\right),r\left(x\right)\in R\left[x\right]$ such that $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, where $r=0$ or $\deg r< \deg g$. In particular, when the divisor is a monic linear polynomial $x-a$, the remainder is a constant.
 
 > **Basic Knowledge: Unique Factorization Domain**
->
+> 
 > An integral domain $R$ is called a unique factorization domain if every nonzero nonunit element of $R$ factors as a finite product of irreducible elements, and the factorization is unique up to associates.
 
 > **Basic Knowledge: Formal Power Series Ring**
->
+> 
 > The formal power series ring $k\left[\!\left[t\right]\!\right]$ over a field $k$ consists of all $\sum_{n=0}^{\infty}a_nt^n$; its units are exactly the power series with nonzero constant term.
 
 ---

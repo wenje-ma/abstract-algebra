@@ -1,32 +1,32 @@
 # week3
 
 > **Basic Knowledge: Conjugacy Relation and Conjugacy Classes**
->
+> 
 > Two elements $a,b$ of a group $G$ are called conjugate if there exists $g\in G$ such that $b=gag^{-1}$. The set $C_a=\left\{gag^{-1}\mid g\in G\right\}$ of all elements conjugate to $a$ is called the conjugacy class of $a$.
 
 > **Basic Knowledge: Equivalence Classes Form a Partition**
->
+> 
 > Let $R$ be an equivalence relation on a set $A$. Then distinct equivalence classes in $A$ are pairwise disjoint, and their union is $A$; that is, the equivalence classes form a partition of $A$.
 
 > **Basic Knowledge: Product of Subgroups**
->
-> Let $H,K$ be subgroups of a group $G$, and write $HK=\left\{hk\mid h\in H,k\in K\right\}$, $KH=\left\{kh\mid k\in K,h\in H\right\}$. Then $HK<G$ if and only if $HK=KH$: if $HK<G$, then for $hk\in HK$, $\left(hk\right)^{-1}=k^{-1}h^{-1}\in HK$, i.e. $KH\subseteq HK$; and $\left(k^{-1}h^{-1}\right)^{-1}=hk\in HK$ shows $HK\subseteq KH$, so $HK=KH$. Conversely, if $HK=KH$, then for any $hk,h'k'\in HK$, since $kh'\in KH=HK$, write $kh'=h''k''$; then $\left(hk\right)\left(h'k'\right)=h\left(kh'\right)k'=h\left(h''k''\right)k'=\left(hh''\right)\left(k''k'\right)\in HK$; and $\left(hk\right)^{-1}=k^{-1}h^{-1}\in KH=HK$, so by **Theorem 1.2.2 (Subgroup Criterion)** (condition (2)), $HK<G$.
+> 
+> Let $H,K$ be subgroups of a group $G$, and write $HK=\left\{hk\mid h\in H,k\in K\right\}$, $KH=\left\{kh\mid k\in K,h\in H\right\}$. Then $HK< G$ if and only if $HK=KH$: if $HK< G$, then for $hk\in HK$, $\left(hk\right)^{-1}=k^{-1}h^{-1}\in HK$, i.e. $KH\subseteq HK$; and $\left(k^{-1}h^{-1}\right)^{-1}=hk\in HK$ shows $HK\subseteq KH$, so $HK=KH$. Conversely, if $HK=KH$, then for any $hk,h'k'\in HK$, since $kh'\in KH=HK$, write $kh'=h''k''$; then $\left(hk\right)\left(h'k'\right)=h\left(kh'\right)k'=h\left(h''k''\right)k'=\left(hh''\right)\left(k''k'\right)\in HK$; and $\left(hk\right)^{-1}=k^{-1}h^{-1}\in KH=HK$, so by **Theorem 1.2.2 (Subgroup Criterion)** (condition (2)), $HK< G$.
 
 > **Basic Knowledge: Conjugacy Maps Preserve Order**
->
+> 
 > For $g\in G$, the map $\varphi_g:H\to gHg^{-1}$, $h\mapsto ghg^{-1}$ is a bijection, so $\left|gHg^{-1}\right|=\left|H\right|$.
 
 > **Theorem 1.2.2 (Subgroup Criterion)**
->
+> 
 > Let $H$ be a nonempty subset of a group $G$. Then the following conditions are equivalent: (1) $H$ is a subgroup of $G$; (2) for all $a,b\in H$, $ab\in H$ and $a^{-1}\in H$; (3) for all $a,b\in H$, $ab^{-1}\in H$.
 
 > **Definition 1.3.1 (Normal Subgroup)**
->
+> 
 > Let $H$ be a subgroup of a group $G$. If $ghg^{-1}\in H$ for all $g\in G$ and $h\in H$, then $H$ is called a normal subgroup of $G$, denoted $H\triangleleft G$.
 
 > **Theorem 1.3.5 (Equivalent Conditions for Normal Subgroups)**
->
-> Let $G$ be a group and $H<G$. Then the following conditions are equivalent: (1) $H\triangleleft G$; (2) $gH=Hg$ for all $g\in G$; (3) $aH\cdot bH=abH$ for all $a,b\in G$, where $aH\cdot bH=\left\{ah_1bh_2\mid h_1,h_2\in H\right\}$.
+> 
+> Let $G$ be a group and $H< G$. Then the following conditions are equivalent: (1) $H\triangleleft G$; (2) $gH=Hg$ for all $g\in G$; (3) $aH\cdot bH=abH$ for all $a,b\in G$, where $aH\cdot bH=\left\{ah_1bh_2\mid h_1,h_2\in H\right\}$.
 
 ---
 
@@ -56,19 +56,19 @@ In summary, the conjugacy relation $R$ is an equivalence relation. By **Basic Kn
 
 ## 1.3-9
 
-Let $H,K$ be two subgroups of a group $G$. Prove that if one of $H,K$ is a normal subgroup of $G$, then $HK<G$; and if both $H,K$ are normal subgroups of $G$, then $HK\triangleleft G$.
+Let $H,K$ be two subgroups of a group $G$. Prove that if one of $H,K$ is a normal subgroup of $G$, then $HK< G$; and if both $H,K$ are normal subgroups of $G$, then $HK\triangleleft G$.
 
 ### Solution 1.3-9
 
-**First prove that if one of $H,K$ is normal, then $HK<G$.** Without loss of generality suppose $H\triangleleft G$. By **Theorem 1.3.5 (Equivalent Conditions for Normal Subgroups)** (condition (2)), $kH=Hk$ for every $k\in K$. Hence
+**First prove that if one of $H,K$ is normal, then $HK< G$.** Without loss of generality suppose $H\triangleleft G$. By **Theorem 1.3.5 (Equivalent Conditions for Normal Subgroups)** (condition (2)), $kH=Hk$ for every $k\in K$. Hence
 
 $$
 KH=\bigcup_{k\in K}kH=\bigcup_{k\in K}Hk=HK,
 $$
 
-i.e. $HK=KH$. By **Basic Knowledge: Product of Subgroups**, $HK<G$. Similarly, if $K\triangleleft G$, the symmetric argument gives $HK<G$.
+i.e. $HK=KH$. By **Basic Knowledge: Product of Subgroups**, $HK< G$. Similarly, if $K\triangleleft G$, the symmetric argument gives $HK< G$.
 
-**Next prove that if both $H,K$ are normal, then $HK\triangleleft G$.** By the previous paragraph, $HK<G$. We now prove normality. For any $g\in G$ and $hk\in HK$,
+**Next prove that if both $H,K$ are normal, then $HK\triangleleft G$.** By the previous paragraph, $HK< G$. We now prove normality. For any $g\in G$ and $hk\in HK$,
 
 $$
 g\left(hk\right)g^{-1}=\left(ghg^{-1}\right)\left(gkg^{-1}\right).
@@ -86,13 +86,13 @@ If a group $G$ has exactly one subgroup $H$ of order $m$, prove that $H\triangle
 
 For any $g\in G$, consider the set $gHg^{-1}=\left\{ghg^{-1}\mid h\in H\right\}$.
 
-**Step 1: verify that $gHg^{-1}<G$.** For any $x,y\in gHg^{-1}$, there exist $h_1,h_2\in H$ with $x=gh_1g^{-1}$, $y=gh_2g^{-1}$, and then
+**Step 1: verify that $gHg^{-1}< G$.** For any $x,y\in gHg^{-1}$, there exist $h_1,h_2\in H$ with $x=gh_1g^{-1}$, $y=gh_2g^{-1}$, and then
 
 $$
 xy^{-1}=gh_1g^{-1}\left(gh_2g^{-1}\right)^{-1}=gh_1g^{-1}gh_2^{-1}g^{-1}=g\left(h_1h_2^{-1}\right)g^{-1}\in gHg^{-1}.
 $$
 
-By **Theorem 1.2.2 (Subgroup Criterion)** (condition (3)), $gHg^{-1}<G$.
+By **Theorem 1.2.2 (Subgroup Criterion)** (condition (3)), $gHg^{-1}< G$.
 
 **Step 2: compute $\left|gHg^{-1}\right|$.** By **Basic Knowledge: Conjugacy Maps Preserve Order**, the map $h\mapsto ghg^{-1}$ is a bijection from $H$ to $gHg^{-1}$, so $\left|gHg^{-1}\right|=\left|H\right|=m$.
 

@@ -1,27 +1,27 @@
 # week15
 
 > **Basic Knowledge: The Norm on the Ring $\mathbb Z\left[\sqrt{-5}\right]$**
->
+> 
 > For $x+y\sqrt{-5}\in\mathbb Z\left[\sqrt{-5}\right]$, define $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$. Then $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, and $\xi$ is a unit if and only if $N\left(\xi\right)=1$; $N$ takes nonnegative integer values, and there is no element of norm $3$ (the equation $x^{2}+5y^{2}=3$ has no integer solution).
 
 > **Basic Knowledge: The Norm on the Ring of Integers $\mathbb Z\left[\omega\right]$**
->
+> 
 > Let $\omega=\frac{1+\sqrt{-3}}{2}$. Then $\omega^{2}=\omega-1$, $\overline\omega=\frac{1-\sqrt{-3}}{2}$, and $\mathbb Z\left[\omega\right]=\left\{m+n\omega\mid m,n\in\mathbb Z\right\}$. Define $N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2}$; then $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, and $\xi$ is a unit if and only if $N\left(\xi\right)=1$.
 
 > **Basic Knowledge: Polynomial Rings over a Field Are Unique Factorization Domains**
->
+> 
 > Polynomial rings in one or several variables over a field are unique factorization domains; in $\mathbb Q\left[x,y\right]$, the elements $x$ and $y$ are non-associate irreducible elements (its units are exactly the nonzero constants).
 
 > **Definition 2.5.2 (Associates)**
->
+> 
 > Let $R$ be an integral domain and $a,b\in R$. If there exists a unit $u$ in $R$ such that $a=ub$, then $a$ and $b$ are called associates, written $a\sim b$.
 
 > **Definition 2.5.6 (Irreducible Element)**
->
+> 
 > Let $R$ be an integral domain and $\alpha\in R^{*}\setminus U$ (i.e. nonzero and not a unit). If $\alpha$ has no nontrivial divisors, then $\alpha$ is called an irreducible element; otherwise $\alpha$ is called a reducible element.
 
 > **Definition 2.5.14 (Common Divisors and Greatest Common Divisors)**
->
+> 
 > Let $R$ be an integral domain and $a_1,a_2,\cdots,a_n\in R$. If $c\in R$ divides every $a_i$, then $c$ is called a common divisor of them; if a common divisor $d$ is divisible by every common divisor, then $d$ is called a greatest common divisor. If the greatest common divisor of $a,b$ is a unit, then $a,b$ are called coprime.
 
 ---

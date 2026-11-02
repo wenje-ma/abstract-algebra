@@ -1,11 +1,11 @@
 # week13
 
 > **基础知识: 四元数与共轭**
->
+> 
 > 四元数体 $H$ 中元素写成 $\alpha=a+bi+cj+dk$, $a,b,c,d\in\mathbb R$, 其共轭为 $\overline\alpha=a-bi-cj-dk$, 范数为 $N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+b^{2}+c^{2}+d^{2}$. 共轭满足 $\overline{\alpha+\beta}=\overline\alpha+\overline\beta$, $\overline{\alpha\beta}=\overline\beta\,\overline\alpha$, $\overline{\overline\alpha}=\alpha$, 且实数的共轭为其自身. 范数 $N\left(\beta\right)$ 是实数, 故与任意四元数可交换.
 
 > **基础知识: 欧氏范数的三角不等式**
->
+> 
 > 把 $H$ 与 $\mathbb R^{4}$ 等同, 则 $N\left(\alpha\right)=\left\|\alpha\right\|^{2}$ (欧氏范数的平方). 对 $\mathbb R^{4}$ 中向量, 三角不等式 $\left\|\alpha+\beta\right\|\le\left\|\alpha\right\|+\left\|\beta\right\|$ 成立, 且等号成立当且仅当 $\alpha,\beta$ 实线性相关.
 
 ---

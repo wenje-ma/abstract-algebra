@@ -1,31 +1,31 @@
 # week14
 
 > **Basic Knowledge: Ring Automorphisms Fix the Prime Subfield**
->
+> 
 > If $\varphi$ is an automorphism of a field (or of a ring containing $1$), then $\varphi\left(1\right)=1$; since $\varphi$ preserves addition and multiplication and maps $1$ to $1$, it is the identity on the rational field $\mathbb Q$.
 
 > **Basic Knowledge: Order-Preserving Property of the Real Field**
->
-> A real number $x>0$ if and only if there exists $y\ne0$ with $x=y^{2}$. Hence a field automorphism $\varphi:\mathbb R\to\mathbb R$ maps positive numbers to positive numbers and is therefore strictly increasing; moreover, the rational numbers are dense in $\mathbb R$.
+> 
+> A real number $x> 0$ if and only if there exists $y\ne0$ with $x=y^{2}$. Hence a field automorphism $\varphi:\mathbb R\to\mathbb R$ maps positive numbers to positive numbers and is therefore strictly increasing; moreover, the rational numbers are dense in $\mathbb R$.
 
 > **Basic Knowledge: An Integral Domain Has No Zero Divisors**
->
+> 
 > An integral domain has no zero divisors, so if $b,d\ne0$ then $bd\ne0$; and from $d\ne0$ together with $d\left(af-be\right)=0$ one may conclude $af=be$.
 
 > **Basic Knowledge: Congruence Relations and Quotient Structures**
->
+> 
 > If an equivalence relation $\sim$ is a congruence for an operation, then that operation is well-defined on the quotient set, and the corresponding commutativity, associativity and distributivity are preserved.
 
 > **Basic Knowledge: Inverses in a Field**
->
+> 
 > Every nonzero element of a field is invertible; if $a,b\ne0$, then $\left(ab^{-1}\right)^{-1}=ba^{-1}$.
 
 > **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**
->
+> 
 > A commutative unital ring without zero divisors is called an integral domain; if a unital ring $R$ satisfies that $R^{*}$ forms a group under multiplication (where $R^{*}=R\setminus\left\{0\right\}$), then $R$ is called a division ring; a commutative division ring is called a field.
 
 > **Definition 2.4.1 (Ring Homomorphism and Isomorphism)**
->
+> 
 > Let $R_1,R_2$ be two rings and $f$ a map from $R_1$ to $R_2$. If for any $a,b\in R_1$ we have $f\left(a+b\right)=f\left(a\right)+f\left(b\right)$ and $f\left(ab\right)=f\left(a\right)f\left(b\right)$, then $f$ is called a homomorphism; an injective homomorphism is called a monomorphism, a surjective homomorphism an epimorphism, and a bijective homomorphism an isomorphism.
 
 ---
@@ -72,15 +72,15 @@ Prove that the only automorphism of the real field is the identity.
 
 Let $\varphi:\mathbb R\to\mathbb R$ be a field automorphism. By **Definition 2.4.1 (Ring Homomorphism and Isomorphism)** and **Basic Knowledge: Ring Automorphisms Fix the Prime Subfield**, $\varphi\left(1\right)=1$, so $\varphi$ is the identity on $\mathbb Q$: $\varphi\left(n\right)=n$ for integers $n$, and $\varphi\left(m/n\right)=m/n$ for $\frac{m}{n}\in\mathbb Q$.
 
-**Order preservation**: If $x>0$, by **Basic Knowledge: Order-Preserving Property of the Real Field**, there exists $y\ne0$ with $x=y^{2}$; then
+**Order preservation**: If $x> 0$, by **Basic Knowledge: Order-Preserving Property of the Real Field**, there exists $y\ne0$ with $x=y^{2}$; then
 
 $$
-\varphi\left(x\right)=\varphi\left(y^{2}\right)=\varphi\left(y\right)^{2}>0
+\varphi\left(x\right)=\varphi\left(y^{2}\right)=\varphi\left(y\right)^{2}> 0
 $$
 
-(since $\varphi\left(y\right)\ne0$, its square is positive). Hence when $x>y$, $x-y>0$ gives $\varphi\left(x\right)-\varphi\left(y\right)=\varphi\left(x-y\right)>0$, i.e. $\varphi$ is strictly increasing.
+(since $\varphi\left(y\right)\ne0$, its square is positive). Hence when $x> y$, $x-y> 0$ gives $\varphi\left(x\right)-\varphi\left(y\right)=\varphi\left(x-y\right)> 0$, i.e. $\varphi$ is strictly increasing.
 
-**Identity**: Suppose, toward contradiction, that there exists $x\in\mathbb R$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)>x$, by **Basic Knowledge: Order-Preserving Property of the Real Field** (density of rationals), choose $q\in\mathbb Q$ with $x<q<\varphi\left(x\right)$. Since $x<q$ and $\varphi$ is strictly increasing, $\varphi\left(x\right)<\varphi\left(q\right)=q$, contradicting $q<\varphi\left(x\right)$. If $\varphi\left(x\right)<x$, similarly choose $q\in\mathbb Q$ with $\varphi\left(x\right)<q<x$; by the strict monotonicity of $\varphi$ and $q=\varphi\left(q\right)$, we get $q<\varphi\left(x\right)$, a contradiction.
+**Identity**: Suppose, toward contradiction, that there exists $x\in\mathbb R$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)> x$, by **Basic Knowledge: Order-Preserving Property of the Real Field** (density of rationals), choose $q\in\mathbb Q$ with $x< q< \varphi\left(x\right)$. Since $x< q$ and $\varphi$ is strictly increasing, $\varphi\left(x\right)< \varphi\left(q\right)=q$, contradicting $q< \varphi\left(x\right)$. If $\varphi\left(x\right)< x$, similarly choose $q\in\mathbb Q$ with $\varphi\left(x\right)< q< x$; by the strict monotonicity of $\varphi$ and $q=\varphi\left(q\right)$, we get $q< \varphi\left(x\right)$, a contradiction.
 
 Hence $\varphi\left(x\right)=x$ for all $x\in\mathbb R$, i.e. $\varphi$ is the identity. $\blacksquare$
 

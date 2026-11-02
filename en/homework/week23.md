@@ -1,15 +1,15 @@
 # week23
 
 > **Basic Knowledge: Reversal Matrix and Transpose**
->
+> 
 > Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n\times n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries $0$), then $PNP=N^\top$, so $PN$ is symmetric.
 
 > **Basic Knowledge: Nullity and Counting Jordan Blocks**
->
+> 
 > Let $A$ be an $n\times n$ matrix and $a$ an eigenvalue of $A$. Set $\nu_k=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, with $\nu_0=0$. Then the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s-\nu_{s-1}$. Hence the sequence $\left\{\nu_k\right\}_{k\ge0}$ completely determines the sizes and number of Jordan blocks at $a$.
 
 > **Theorem 3.6.3 (Jordan Normal Form)**
->
+> 
 > Let $F$ be an algebraically closed field of characteristic zero, $V$ an $n$-dimensional vector space over $F$, and $A$ a linear operator on $V$. Then there is a basis of $V$ in which the matrix of $A$ is a block-diagonal matrix $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, where each $J_i$ is a Jordan block. Two $n\times n$ matrices over $F$ are similar iff they have the same Jordan normal form.
 
 ---
@@ -50,11 +50,11 @@ Let $A$ be a linear operator on a real vector space $V$. Prove that there is a b
 
 Induct on $\dim V=n$. The case $n=1$ is immediate. Assume the result holds in dimension less than $n$, and consider the $n$-dimensional case.
 
-**Case 1: $A$ has a real eigenvalue $\lambda$.** Take a corresponding real eigenvector $v_1$ and extend it to a basis $v_1,v_2,\cdots,v_n$ of $V$. Since the one-dimensional subspace spanned by $v_1$ is $A$-invariant, the matrix of $A$ in this basis is $\begin{bmatrix}\lambda&*\\0&A'\end{bmatrix}$, where $\lambda$ is a $1\times1$ block and $A'$ is an $(n-1)\times(n-1)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block-upper-triangular form, and so can $A$.
+**Case 1: $A$ has a real eigenvalue $\lambda$.** Take a corresponding real eigenvector $v_1$ and extend it to a basis $v_1,v_2,\cdots,v_n$ of $V$. Since the one-dimensional subspace spanned by $v_1$ is $A$-invariant, the matrix of $A$ in this basis is $\begin{bmatrix}\lambda&*\\0&A'\end{bmatrix}$, where $\lambda$ is a $1\times1$ block and $A'$ is an $\left(n-1\right)\times\left(n-1\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block-upper-triangular form, and so can $A$.
 
 **Case 2: $A$ has no real eigenvalue.** Then the characteristic polynomial of $A$ has no linear factor over $\mathbb R\left[x\right]$, so it factors as a product of quadratic irreducible polynomials with negative discriminant. Take one such $p\left(x\right)=x^2+bx+c$ with $b^2-4c< 0$.
 
-By the structure theory of finitely generated torsion modules over the PID $\mathbb R\left[x\right]$ (i.e. the primary decomposition of $V$ as an $\mathbb R\left[x\right]$-module), the primary subspace corresponding to $p\left(x\right)$ is nonzero. Take a vector $u$ in it with $p\left(A\right)u=0$ and $u\ne0$. Since $p\left(x\right)$ has no real root, $u$ and $Au$ must be linearly independent (otherwise $Au=au$ with $a\in\mathbb R$, making $a$ a real root of $p$, a contradiction). Set $W=\mathrm{span}\left\{u,Au\right\}$. From $p\left(A\right)u=0$, i.e. $A^2u+bAu+cu=0$, we get $A\left(Au\right)=A^2u=-cu-bAu\in W$, so $W$ is a $2$-dimensional $A$-invariant subspace. Taking a basis of $W$ and extending it to a basis of $V$, the matrix of $A$ is $\begin{bmatrix}B_1&B_2\\0&A'\end{bmatrix}$, where $B_1$ is a $2\times2$ matrix (the restriction of $A$ to $W$) and $A'$ is an $(n-2)\times(n-2)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block-upper-triangular form, and so can $A$.
+By the structure theory of finitely generated torsion modules over the PID $\mathbb R\left[x\right]$ (i.e. the primary decomposition of $V$ as an $\mathbb R\left[x\right]$-module), the primary subspace corresponding to $p\left(x\right)$ is nonzero. Take a vector $u$ in it with $p\left(A\right)u=0$ and $u\ne0$. Since $p\left(x\right)$ has no real root, $u$ and $Au$ must be linearly independent (otherwise $Au=au$ with $a\in\mathbb R$, making $a$ a real root of $p$, a contradiction). Set $W=\mathrm{span}\left\{u,Au\right\}$. From $p\left(A\right)u=0$, i.e. $A^2u+bAu+cu=0$, we get $A\left(Au\right)=A^2u=-cu-bAu\in W$, so $W$ is a $2$-dimensional $A$-invariant subspace. Taking a basis of $W$ and extending it to a basis of $V$, the matrix of $A$ is $\begin{bmatrix}B_1&B_2\\0&A'\end{bmatrix}$, where $B_1$ is a $2\times2$ matrix (the restriction of $A$ to $W$) and $A'$ is an $\left(n-2\right)\times\left(n-2\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block-upper-triangular form, and so can $A$.
 
 Thus, by induction, there is a basis of $V$ in which the matrix of $A$ has the required block-upper-triangular form. $\blacksquare$
 

@@ -1,60 +1,60 @@
 # week2
 
 > **基础知识: 元素的阶与生成子群**
->
+> 
 > 设 $a\in G$, 则 $\left\langle a\right\rangle=\left\{a^{n}\mid n\in\mathbb Z\right\}$ 是 $G$ 的子群, 称为由 $a$ 生成的子群; 该子群的阶称为元素 $a$ 的阶. 若 $a$ 的阶为 $m$, 则 $a^{m}=e$, 且对任意整数 $k$ 有 $a^{k}=e$ 当且仅当 $m\mid k$.
 
 > **基础知识: 交换群中幂运算的分配**
->
+> 
 > 若 $ab=ba$, 则对任意整数 $k$ 有 $\left(ab\right)^{k}=a^{k}b^{k}$.
 
 > **基础知识: 元素幂的阶**
->
+> 
 > 若 $a$ 的阶为 $m$, 则 $a^{k}$ 的阶为 $\frac{m}{\left(m,k\right)}$, 其中 $\left(m,k\right)$ 是 $m,k$ 的最大公因数.
 
 > **基础知识: 最大公因数与最小公倍数**
->
+> 
 > 对正整数 $m,n$, 记 $\left(m,n\right)$ 为最大公因数, $\left[m,n\right]$ 为最小公倍数, 则 $\left(m,n\right)\left[m,n\right]=mn$; $m\mid k$ 且 $n\mid k$ 当且仅当 $\left[m,n\right]\mid k$; 若 $\left(m,n\right)=1$, 则 $m\mid k$ 且 $n\mid k$ 当且仅当 $mn\mid k$.
 
 > **基础知识: 素因数分解与最高次幂**
->
+> 
 > 任一正整数 $m$ 可唯一分解为 $m=\prod_{p}p^{\alpha_p}$; 对 $m=\prod_{p}p^{\alpha_p}$, $n=\prod_{p}p^{\beta_p}$ 有 $\left[m,n\right]=\prod_{p}p^{\max\left(\alpha_p,\beta_p\right)}$.
 
 > **基础知识: 互素阶交换元素之积的阶**
->
+> 
 > 设 $x,y$ 交换且 $o\left(x\right),o\left(y\right)$ 互素, 则 $o\left(xy\right)=o\left(x\right)o\left(y\right)$.
 
 > **基础知识: 整数矩阵的伴随矩阵与行列式**
->
+> 
 > 若方阵 $B$ 的元素均为整数且 $\left|B\right|=1$, 则 $B^{-1}$ 的元素均为整数; 且 $\left|AB^{-1}\right|=\left|A\right|\left|B^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}$.
 
 > **基础知识: 初等行变换与辗转相除法**
->
+> 
 > 左乘 $\begin{bmatrix}1&k\\0&1\end{bmatrix}$ 等价于把某行加上另一行的 $k$ 倍; 由辗转相除法, 反复作这两类初等行变换可将任一整数矩阵化为对角形; 若所得对角矩阵的行列式为 $1$, 则其对角元必为 $\pm1$, 且 $\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 可由 $\begin{bmatrix}0&-1\\1&0\end{bmatrix}$ 表出 (因其平方等于 $-I$).
 
 > **基础知识: 有限集乘积的阶**
->
+> 
 > 设 $H,K$ 是群 $G$ 的有限子群, 则 $\left|HK\right|=\frac{\left|H\right|\left|K\right|}{\left|H\cap K\right|}$: 事实上映射 $H\times K\to HK$, $\left(h,k\right)\mapsto hk$ 是满射, 且 $\left(h_1,k_1\right),\left(h_2,k_2\right)$ 像相同当且仅当 $h_1^{-1}h_2=k_1k_2^{-1}\in H\cap K$, 故每个像有恰好 $\left|H\cap K\right|$ 个原像.
 
 > **定义 1.2.1 (子群)**
->
-> 设 $H$ 是群 $G$ 的一个非空子集, 如果 $H$ 对于 $G$ 的运算也构成群, 则称 $H$ 为 $G$ 的子群, 记作 $H<G$.
+> 
+> 设 $H$ 是群 $G$ 的一个非空子集, 如果 $H$ 对于 $G$ 的运算也构成群, 则称 $H$ 为 $G$ 的子群, 记作 $H< G$.
 
 > **定理 1.2.2 (子群判别法)**
->
+> 
 > 设 $H$ 是群 $G$ 的非空子集, 则下列条件等价: (1) $H$ 是 $G$ 的子群; (2) 对任意 $a,b\in H$, 有 $ab\in H$, $a^{-1}\in H$; (3) 对任意 $a,b\in H$, 有 $ab^{-1}\in H$.
 
 > **引理 1.2.12 (陪集重合条件)**
->
+> 
 > 设 $H$ 是群 $G$ 的子群, $a,b\in G$, 则 $aH$ 和 $bH$ 要么互不相交, 要么重合, 且 $aH=bH$ 当且仅当 $a^{-1}b\in H$.
 
 > **定理 1.2.22 (拉格朗日定理)**
->
-> 设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
+> 
+> 设 $G$ 是有限群, $H< G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
 
 > **推论 1.2.23 (指数的乘法)**
->
-> 设 $G$ 是有限群, $K<G$, $H<K$, 则 $\left[G:H\right]=\left[G:K\right]\cdot\left[K:H\right]$.
+> 
+> 设 $G$ 是有限群, $K< G$, $H< K$, 则 $\left[G:H\right]=\left[G:K\right]\cdot\left[K:H\right]$.
 
 ---
 
@@ -96,9 +96,9 @@ $$
 \left\langle a\right\rangle=\left\{\left(0,0\right),\left(1,0\right),\left(2,0\right),\left(3,0\right)\right\},\quad\left\langle b\right\rangle=\left\{\left(0,0\right),\left(1,2\right),\left(2,0\right),\left(3,2\right)\right\},
 $$
 
-其交 $\left\langle a\right\rangle\cap\left\langle b\right\rangle=\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. 而 $ab=\left(2,2\right)$, 且 $2ab=\left(0,0\right)$, 故 $ab$ 的阶为 $2<4=\left[4,4\right]$.
+其交 $\left\langle a\right\rangle\cap\left\langle b\right\rangle=\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. 而 $ab=\left(2,2\right)$, 且 $2ab=\left(0,0\right)$, 故 $ab$ 的阶为 $2< 4=\left[4,4\right]$.
 
-关于 $G$ 中是否一定存在 $\left[m,n\right]$ 阶元素, 答案是肯定的. 因 $ab=ba$, 子群 $H=\left\langle a,b\right\rangle$ 是交换群. 设 $m=\prod_{p}p^{\alpha_p}$, $n=\prod_{p}p^{\beta_p}$ 为素因数分解 (**基础知识: 素因数分解与最高次幂**). 对每个素数 $p$: 若 $\alpha_p\ge\beta_p$, 由**基础知识: 元素幂的阶**, $a^{m/p^{\alpha_p}}$ 的阶为 $\frac{m}{\left(m,m/p^{\alpha_p}\right)}=\frac{m}{m/p^{\alpha_p}}=p^{\alpha_p}$; 若 $\beta_p>\alpha_p$, 则 $b^{n/p^{\beta_p}}$ 的阶为 $\frac{n}{\left(n,n/p^{\beta_p}\right)}=p^{\beta_p}$. 于是对每个 $p$ 我们得到一个阶为 $p^{\max\left(\alpha_p,\beta_p\right)}$ 的元素 $x_p\in H$, 且当 $p$ 取不同素数时这些阶两两互素. 因 $H$ 是交换群, 这些 $x_p$ 两两交换, 反复用**基础知识: 互素阶交换元素之积的阶**, 乘积 $\prod_p x_p$ 的阶为 $\prod_p p^{\max\left(\alpha_p,\beta_p\right)}=\left[m,n\right]$. 故 $G$ 中必存在 $\left[m,n\right]$ 阶元素. $\blacksquare$
+关于 $G$ 中是否一定存在 $\left[m,n\right]$ 阶元素, 答案是肯定的. 因 $ab=ba$, 子群 $H=\left\langle a,b\right\rangle$ 是交换群. 设 $m=\prod_{p}p^{\alpha_p}$, $n=\prod_{p}p^{\beta_p}$ 为素因数分解 (**基础知识: 素因数分解与最高次幂**). 对每个素数 $p$: 若 $\alpha_p\ge\beta_p$, 由**基础知识: 元素幂的阶**, $a^{m/p^{\alpha_p}}$ 的阶为 $\frac{m}{\left(m,m/p^{\alpha_p}\right)}=\frac{m}{m/p^{\alpha_p}}=p^{\alpha_p}$; 若 $\beta_p> \alpha_p$, 则 $b^{n/p^{\beta_p}}$ 的阶为 $\frac{n}{\left(n,n/p^{\beta_p}\right)}=p^{\beta_p}$. 于是对每个 $p$ 我们得到一个阶为 $p^{\max\left(\alpha_p,\beta_p\right)}$ 的元素 $x_p\in H$, 且当 $p$ 取不同素数时这些阶两两互素. 因 $H$ 是交换群, 这些 $x_p$ 两两交换, 反复用**基础知识: 互素阶交换元素之积的阶**, 乘积 $\prod_p x_p$ 的阶为 $\prod_p p^{\max\left(\alpha_p,\beta_p\right)}=\left[m,n\right]$. 故 $G$ 中必存在 $\left[m,n\right]$ 阶元素. $\blacksquare$
 
 ---
 
@@ -112,7 +112,7 @@ $$
 
 ### 解答 1.2-13
 
-**(1) 证明 $SL\left(n,\mathbb Z\right)<GL\left(n,\mathbb R\right)$.** 单位矩阵 $I_n$ 的元素均为整数且 $\left|I_n\right|=1$, 故 $SL\left(n,\mathbb Z\right)$ 非空. 对任意 $A,B\in SL\left(n,\mathbb Z\right)$, $B$ 的元素均为整数且 $\left|B\right|=1$, 由**基础知识: 整数矩阵的伴随矩阵与行列式**, $B^{-1}$ 的元素均为整数, 故 $AB^{-1}$ 的元素均为整数. 又由**基础知识: 整数矩阵的伴随矩阵与行列式**, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. 故 $AB^{-1}\in SL\left(n,\mathbb Z\right)$. 依据**定理 1.2.2 (子群判别法)** (条件 (3)), $SL\left(n,\mathbb Z\right)<GL\left(n,\mathbb R\right)$.
+**(1) 证明 $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.** 单位矩阵 $I_n$ 的元素均为整数且 $\left|I_n\right|=1$, 故 $SL\left(n,\mathbb Z\right)$ 非空. 对任意 $A,B\in SL\left(n,\mathbb Z\right)$, $B$ 的元素均为整数且 $\left|B\right|=1$, 由**基础知识: 整数矩阵的伴随矩阵与行列式**, $B^{-1}$ 的元素均为整数, 故 $AB^{-1}$ 的元素均为整数. 又由**基础知识: 整数矩阵的伴随矩阵与行列式**, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. 故 $AB^{-1}\in SL\left(n,\mathbb Z\right)$. 依据**定理 1.2.2 (子群判别法)** (条件 (3)), $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
 
 **(2) 证明 $S,T,R,U$ 中任两个都生成 $SL\left(2,\mathbb Z\right)$.** 首先验证 $S,T,R,U\in SL\left(2,\mathbb Z\right)$: 各矩阵的元素均为整数, 且直接计算得 $\left|S\right|=\left|T\right|=\left|R\right|=\left|U\right|=1$.
 
@@ -192,13 +192,13 @@ Let me rewrite that part with 引理1.2.12.
 
 于是 $\left[G:H_{1}\cap H_{2}\right]=\left|G/\left(H_{1}\cap H_{2}\right)\right|\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
 
-**再证互素情形下的等号.** 由**推论 1.2.23 (指数的乘法)**, 因 $H_{1}\cap H_{2}<H_{1}<G$,
+**再证互素情形下的等号.** 由**推论 1.2.23 (指数的乘法)**, 因 $H_{1}\cap H_{2}< H_{1}< G$,
 
 $$
 \left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[H_{1}:H_{1}\cap H_{2}\right].
 $$
 
-故 $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. 同理, 由 $H_{1}\cap H_{2}<H_{2}<G$, $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. 因 $\left[G:H_{1}\right]$ 与 $\left[G:H_{2}\right]$ 互素, 由**基础知识: 最大公因数与最小公倍数**, $\left[G:H_{1}\right]\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. 结合已证不等式 $\left[G:H_{1}\cap H_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right]$, 得 $\left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
+故 $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. 同理, 由 $H_{1}\cap H_{2}< H_{2}< G$, $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. 因 $\left[G:H_{1}\right]$ 与 $\left[G:H_{2}\right]$ 互素, 由**基础知识: 最大公因数与最小公倍数**, $\left[G:H_{1}\right]\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. 结合已证不等式 $\left[G:H_{1}\cap H_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right]$, 得 $\left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
 
 **最后证 $G=H_{1}H_{2}$.** 由**基础知识: 有限集乘积的阶**,
 

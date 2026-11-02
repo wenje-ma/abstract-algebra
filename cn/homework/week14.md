@@ -1,31 +1,31 @@
 # week14
 
 > **基础知识: 环自同构固定素域**
->
+> 
 > 设 $\varphi$ 是域 (或含 $1$ 的环) 的自同构, 则 $\varphi\left(1\right)=1$, 故 $\varphi$ 保持加法与乘法且把 $1$ 映到 $1$, 因而 $\varphi$ 在有理数域 $\mathbb Q$ 上为恒等映射.
 
 > **基础知识: 实数域的保序性**
->
-> 实数 $x>0$ 当且仅当存在 $y\ne0$ 使 $x=y^{2}$. 故域自同构 $\varphi:\mathbb R\to\mathbb R$ 把正数映为正数, 从而严格递增; 且有理数在 $\mathbb R$ 中稠密.
+> 
+> 实数 $x> 0$ 当且仅当存在 $y\ne0$ 使 $x=y^{2}$. 故域自同构 $\varphi:\mathbb R\to\mathbb R$ 把正数映为正数, 从而严格递增; 且有理数在 $\mathbb R$ 中稠密.
 
 > **基础知识: 整环的无零因子**
->
+> 
 > 整环无零因子, 故若 $b,d\ne0$ 则 $bd\ne0$; 且由 $d\ne0$ 与 $d\left(af-be\right)=0$ 可推出 $af=be$.
 
 > **基础知识: 同余关系与商结构**
->
+> 
 > 若等价关系 $\sim$ 对某运算为同余关系, 则该运算在商集合上有定义, 且相应的交换律,结合律,分配律随之保持.
 
 > **基础知识: 域中逆元**
->
+> 
 > 域中非零元可逆; 若 $a,b\ne0$, 则 $\left(ab^{-1}\right)^{-1}=ba^{-1}$.
 
 > **定义 2.2.20 (整环,除环与域)**
->
+> 
 > 无零因子的交换幺环称为整环; 若幺环 $R$ 满足 $R^{*}$ 对乘法构成群 (其中 $R^{*}=R\setminus\left\{0\right\}$), 则称 $R$ 为除环; 交换的除环称为域.
 
 > **定义 2.4.1 (环同态与同构)**
->
+> 
 > 设 $R_1,R_2$ 为两个环, $f$ 为 $R_1$ 到 $R_2$ 的映射. 若对任何 $a,b\in R_1$ 有 $f\left(a+b\right)=f\left(a\right)+f\left(b\right)$ 且 $f\left(ab\right)=f\left(a\right)f\left(b\right)$, 则称 $f$ 为同态; 单射的同态称为单同态, 满射的同态称为满同态, 双射的同态称为同构.
 
 ---
@@ -74,15 +74,15 @@ $$
 
 设 $\varphi:\mathbb R\to\mathbb R$ 为域自同构. 由**定义 2.4.1 (环同态与同构)** 与**基础知识: 环自同构固定素域**, $\varphi\left(1\right)=1$, 故 $\varphi$ 在 $\mathbb Q$ 上恒等: $\varphi\left(n\right)=n$ 对整数 $n$, 且 $\varphi\left(m/n\right)=m/n$ 对 $\frac{m}{n}\in\mathbb Q$.
 
-**保序性**: 若 $x>0$, 由**基础知识: 实数域的保序性**, 存在 $y\ne0$ 使 $x=y^{2}$; 则
+**保序性**: 若 $x> 0$, 由**基础知识: 实数域的保序性**, 存在 $y\ne0$ 使 $x=y^{2}$; 则
 
 $$
-\varphi\left(x\right)=\varphi\left(y^{2}\right)=\varphi\left(y\right)^{2}>0
+\varphi\left(x\right)=\varphi\left(y^{2}\right)=\varphi\left(y\right)^{2}> 0
 $$
 
-(因 $\varphi\left(y\right)\ne0$, 平方为正). 因而当 $x>y$ 时, $x-y>0$ 给出 $\varphi\left(x\right)-\varphi\left(y\right)=\varphi\left(x-y\right)>0$, 即 $\varphi$ 严格递增.
+(因 $\varphi\left(y\right)\ne0$, 平方为正). 因而当 $x> y$ 时, $x-y> 0$ 给出 $\varphi\left(x\right)-\varphi\left(y\right)=\varphi\left(x-y\right)> 0$, 即 $\varphi$ 严格递增.
 
-**恒等性**: 反设存在 $x\in\mathbb R$ 使 $\varphi\left(x\right)\ne x$. 若 $\varphi\left(x\right)>x$, 由**基础知识: 实数域的保序性** (有理数稠密), 取 $q\in\mathbb Q$ 使 $x<q<\varphi\left(x\right)$. 由 $x<q$ 及 $\varphi$ 严格递增, $\varphi\left(x\right)<\varphi\left(q\right)=q$, 与 $q<\varphi\left(x\right)$ 矛盾. 若 $\varphi\left(x\right)<x$, 同理取 $q\in\mathbb Q$ 使 $\varphi\left(x\right)<q<x$; 由 $\varphi$ 严格递增及 $q=\varphi\left(q\right)$, 得 $q<\varphi\left(x\right)$, 矛盾.
+**恒等性**: 反设存在 $x\in\mathbb R$ 使 $\varphi\left(x\right)\ne x$. 若 $\varphi\left(x\right)> x$, 由**基础知识: 实数域的保序性** (有理数稠密), 取 $q\in\mathbb Q$ 使 $x< q< \varphi\left(x\right)$. 由 $x< q$ 及 $\varphi$ 严格递增, $\varphi\left(x\right)< \varphi\left(q\right)=q$, 与 $q< \varphi\left(x\right)$ 矛盾. 若 $\varphi\left(x\right)< x$, 同理取 $q\in\mathbb Q$ 使 $\varphi\left(x\right)< q< x$; 由 $\varphi$ 严格递增及 $q=\varphi\left(q\right)$, 得 $q< \varphi\left(x\right)$, 矛盾.
 
 故 $\varphi\left(x\right)=x$ 对一切 $x\in\mathbb R$ 成立, 即 $\varphi$ 为恒等同构. $\blacksquare$
 

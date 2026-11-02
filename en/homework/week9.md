@@ -1,35 +1,35 @@
 # week9
 
 > **Basic Knowledge: Linear Maps Preserve Dimension of Subspaces**
->
+> 
 > An invertible linear transformation maps a $k$-dimensional subspace to a $k$-dimensional subspace; for any two nonzero vectors $v,w$, there exists an invertible linear transformation $\rho$ with $\rho v=w$ (extend $v,w$ to bases of $\mathbb R^n$ and define the linear map).
 
 > **Basic Knowledge: Orthogonal and Unitary Transformations**
->
+> 
 > An orthogonal transformation preserves the inner product, hence maps orthonormal sets to orthonormal sets and $k$-dimensional subspaces to $k$-dimensional subspaces; any two orthonormal bases can be related by an orthogonal (unitary) transformation.
 
 > **Basic Knowledge: Mobius Transformations**
->
+> 
 > The composition of Mobius transformations (fractional linear transformations) $z\mapsto\frac{az+b}{cz+d}$ corresponds to matrix multiplication; a Mobius transformation with infinitely many fixed points must be the identity.
 
 > **Basic Knowledge: Orbit Decomposition of a Group Action**
->
+> 
 > Let $G$ act on $X$. Then $X$ is the disjoint union of its orbits; for $x\in X$, the orbit $O_x$ has size $\left|G\right|/\left|F_x\right|$, where $F_x$ is the stabilizer (isotropy subgroup) of $x$. In particular, when $\mathbb Z_2$ acts on $X$, every orbit of a non-fixed point has exactly $2$ elements, so $\left|X\right|\equiv\left|\mathrm{Fix}\right|\pmod 2$, where $\mathrm{Fix}$ is the set of fixed points.
 
 > **Definition 1.9.1 (Group Action)**
->
+> 
 > Let $G$ be a group and $X$ a nonempty set. If a map $f:G\times X\to X$ satisfies $f\left(e,x\right)=x$ and $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, then $f$ is said to determine an action of $G$ on $X$, written $f\left(g,x\right)=gx$.
 
 > **Definition 1.9.7 (Transitive and Effective Actions)**
->
+> 
 > If for any $x,y\in X$ there exists $g\in G$ with $gx=y$, the action of $G$ on $X$ is called transitive and $X$ is called a homogeneous space of $G$. If $gx=x$ for all $x\in X$ implies $g=e$, the action is called effective. If $gx=x$ for all $g\in G$ and $x\in X$, the action is called trivial.
 
 > **Definition 1.9.9 (Orbits and Stabilizers)**
->
+> 
 > Let $G$ act on $X$ and $x\in X$. The set $O_x=\left\{gx\mid g\in G\right\}$ is called the orbit of $x$. The set $F_x=\left\{g\in G\mid gx=x\right\}$ is called the stabilizer (isotropy subgroup) of $x$.
 
 > **Corollary 1.9.15 (Orbit-Stabilizer Theorem)**
->
+> 
 > Let a group $G$ act on $X$ and $x\in X$. Then $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; hence $\left|O_x\right|\mid\left|G\right|$.
 
 ---
@@ -157,7 +157,7 @@ $$
 Let
 
 $$
-H=\left\{z=x+iy\in\mathbb C\mid y>0\right\},
+H=\left\{z=x+iy\in\mathbb C\mid y> 0\right\},
 $$
 
 called the Poincare upper half-plane. For any
@@ -176,17 +176,17 @@ Verify that this defines an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $
 
 ### Solution 1.9-8
 
-**Step 1: verify that $g\circ z\in H$.** For $z=x+iy$ ($y>0$), since $\det g=ad-bc=1$, computing the imaginary part directly:
+**Step 1: verify that $g\circ z\in H$.** For $z=x+iy$ ($y> 0$), since $\det g=ad-bc=1$, computing the imaginary part directly:
 
 $$
-\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}>0,
+\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}> 0,
 $$
 
 so $g\circ z\in H$ and the definition is well-posed.
 
 **Step 2: verify the action axioms.** The identity matrix $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ gives $I\circ z=z$. By **Basic Knowledge: Mobius Transformations**, composition of fractional linear transformations corresponds to matrix multiplication, i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. By **Definition 1.9.1 (Group Action)**, this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
 
-**Step 3: determine transitivity.** For any $z=x+iy\in H$ ($y>0$), take
+**Step 3: determine transitivity.** For any $z=x+iy\in H$ ($y> 0$), take
 
 $$
 g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
@@ -245,8 +245,8 @@ $$
 $$
 p_2:\left(x,y,z\right)\mapsto
 \begin{cases}
-\left(x+2z,\,z,\,y-x-z\right), & x<y-z,\\
-\left(2y-x,\,y,\,x-y+z\right), & y-z\le x<2y,\\
+\left(x+2z,\,z,\,y-x-z\right), & x< y-z,\\
+\left(2y-x,\,y,\,x-y+z\right), & y-z\le x< 2y,\\
 \left(x-2y,\,x-y+z,\,y\right), & x\ge2y.
 \end{cases}
 $$
@@ -267,9 +267,9 @@ so $p_1\left(X\right)\subseteq X$. By **Definition 1.9.1 (Group Action)**, $p_1$
 
 **Find the fixed points of $p_2$.** Setting $p_2\left(x,y,z\right)=\left(x,y,z\right)$ in each of the three cases:
 
-Case one $x<y-z$: from $x+2z=x$ we get $z=0$, contradicting $z\in\mathbb N^{+}$; no fixed points.
+Case one $x< y-z$: from $x+2z=x$ we get $z=0$, contradicting $z\in\mathbb N^{+}$; no fixed points.
 
-Case two $y-z\le x<2y$: from $2y-x=x$ we get $x=y$; the third coordinate $x-y+z=z$ holds automatically. Substituting into the equation:
+Case two $y-z\le x< 2y$: from $2y-x=x$ we get $x=y$; the third coordinate $x-y+z=z$ holds automatically. Substituting into the equation:
 
 $$
 x^{2}+4yz=x^{2}+4xz=x\left(x+4z\right)=p.

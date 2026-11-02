@@ -1,7 +1,7 @@
 # week12
 
 > **基础知识: 交换环中的二项式定理**
->
+> 
 > 设 $R$ 为交换环, $a,b\in R$, $n$ 为正整数, 则
 $$
 \left(a-b\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}a^{k}\left(-b\right)^{n-k},
@@ -9,31 +9,31 @@ $$
 且 $R$ 交换保证各项可以合并.
 
 > **基础知识: 整数环 $\mathbb Z$ 是整环**
->
+> 
 > 整数环 $\mathbb Z$ 是整环, 因而满足**定义 2.1.8 (无零因子环)**; 且对任意 $m\ge0$, $m\mathbb Z$ 是 $\mathbb Z$ 的理想, 商环 $\mathbb Z/m\mathbb Z$ 记作 $\mathbb Z_m$.
 
 > **基础知识: 可逆元的消去**
->
+> 
 > 在无零因子环 $R$ 中, 若 $ab=0$ 且 $a\ne0$, 则 $b=0$; 若 $ba=0$ 且 $a\ne0$, 则 $b=0$ (否则出现零因子).
 
 > **定义 2.1.1 (环)**
->
+> 
 > 设 $R$ 是非空集合, 在 $R$ 上定义两种二元运算 $+$ 与 $\cdot$, 满足: (1) $\left[R;+\right]$ 是交换群; (2) $\left[R;\cdot\right]$ 是半群; (3) 乘法对加法满足左右分配律: $a\left(b+c\right)=ab+ac$, $\left(a+b\right)c=ac+bc$. 则称 $R$ 为一个环.
 
 > **定义 2.1.8 (无零因子环)**
->
+> 
 > 如果环 $R$ 不是零环且没有零因子, 则称 $R$ 为无零因子环.
 
 > **命题 2.2.11 (理想判别法)**
->
+> 
 > 设 $R$ 为环, $I$ 为 $R$ 的非空子集, 则 $I$ 为 $R$ 的理想的充分必要条件是 $a-b\in I$ 且 $ax,ya\in I$ 对一切 $a,b\in I$, $x,y\in R$ 成立.
 
 > **定理 2.2.16 (商环)**
->
+> 
 > 设 $R$ 是一个环, $I$ 是 $R$ 的理想, 则商加法群 $R/I$ 在乘法 $\left(a+I\right)\left(b+I\right)=ab+I$ 下构成一个环, 称为 $R$ 对 $I$ 的商环.
 
 > **定义 2.2.20 (整环,除环与域)**
->
+> 
 > 无零因子的交换幺环称为整环; 若幺环 $R$ 满足 $R^{*}$ 对乘法构成群 (其中 $R^{*}=R\setminus\left\{0\right\}$), 则称 $R$ 为除环; 交换的除环称为域.
 
 ---
@@ -130,7 +130,7 @@ $$
 \left(a-b\right)^{m+n-1}=\sum_{k=0}^{m+n-1}\binom{m+n-1}{k}a^{k}\left(-b\right)^{m+n-1-k}.
 $$
 
-对右端任一项: 若 $k\ge m$, 则 $a^{k}=a^{m}a^{k-m}\in I$; 若 $k<m$, 则 $m+n-1-k\ge n$, 故 $\left(-b\right)^{m+n-1-k}=b^{m+n-1-k}\in I$ (因 $b^{n}\in I$). 因而每一项均属于 $I$, 即 $\left(a-b\right)^{m+n-1}\in I$, 故 $a-b\in\sqrt{I}$.
+对右端任一项: 若 $k\ge m$, 则 $a^{k}=a^{m}a^{k-m}\in I$; 若 $k< m$, 则 $m+n-1-k\ge n$, 故 $\left(-b\right)^{m+n-1-k}=b^{m+n-1-k}\in I$ (因 $b^{n}\in I$). 因而每一项均属于 $I$, 即 $\left(a-b\right)^{m+n-1}\in I$, 故 $a-b\in\sqrt{I}$.
 
 又设 $a\in\sqrt{I}$, $r\in R$ 且 $a^{n}\in I$, 则 $\left(ra\right)^{n}=r^{n}a^{n}\in I$ ($R$ 交换, $I$ 为理想, 由**命题 2.2.11 (理想判别法)**), 故 $ra\in\sqrt{I}$.
 

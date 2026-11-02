@@ -1,15 +1,15 @@
 # week22
 
 > **基础知识: 直积中元素的阶**
->
+> 
 > 设 $G=H_1\times H_2\times\cdots\times H_s$ 为有限交换群的直积, $g=\left(h_1,h_2,\cdots,h_s\right)$, 则 $o\left(g\right)=\mathrm{lcm}\left(o\left(h_1\right),o\left(h_2\right),\cdots,o\left(h_s\right)\right)$. 特别地, $o\left(g\right)\mid q$ 当且仅当 $o\left(h_i\right)\mid q$ 对每个 $i$ 成立.
 
 > **基础知识: 有理数乘法群的有限子群**
->
+> 
 > 乘法群 $\mathbb Q^*$ 中任一元素的阶有限当且仅当该元素为 $1$ 或 $-1$, 即 $\mathbb Q^*$ 的唯一有限子群为 $\left\{\pm1\right\}$. 事实上, 若 $r=p/q\in\mathbb Q^*$ (既约) 满足 $r^n=1$, 则 $p^n=q^n$, 故 $p=\pm q$, 即 $r=\pm1$.
 
 > **定理 3.5.2 (有限交换群的分类数)**
->
+> 
 > 设自然数 $n$ 有素因数分解 $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, 其中 $p_1,p_2,\cdots,p_s$ 为互不相同的素数, $m_i> 0$, 则在同构意义下 $n$ 阶交换群的个数为 $\prod_{i=1}^s p\left(m_i\right)$, 其中 $p\left(m\right)$ 表示自然数 $m$ 的不同分划的个数.
 
 ---

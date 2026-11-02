@@ -1,11 +1,11 @@
 # week13
 
 > **Basic Knowledge: Quaternions and Conjugation**
->
+> 
 > An element of the quaternion division ring $H$ is written $\alpha=a+bi+cj+dk$, $a,b,c,d\in\mathbb R$, with conjugate $\overline\alpha=a-bi-cj-dk$ and norm $N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+b^{2}+c^{2}+d^{2}$. Conjugation satisfies $\overline{\alpha+\beta}=\overline\alpha+\overline\beta$, $\overline{\alpha\beta}=\overline\beta\,\overline\alpha$, $\overline{\overline\alpha}=\alpha$, and the conjugate of a real number is itself. The norm $N\left(\beta\right)$ is a real number, hence commutes with every quaternion.
 
 > **Basic Knowledge: Triangle Inequality for the Euclidean Norm**
->
+> 
 > Identify $H$ with $\mathbb R^{4}$; then $N\left(\alpha\right)=\left\|\alpha\right\|^{2}$ (the square of the Euclidean norm). For vectors in $\mathbb R^{4}$ the triangle inequality $\left\|\alpha+\beta\right\|\le\left\|\alpha\right\|+\left\|\beta\right\|$ holds, with equality if and only if $\alpha,\beta$ are real-linearly dependent.
 
 ---

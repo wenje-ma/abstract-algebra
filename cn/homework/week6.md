@@ -1,83 +1,83 @@
 # week6
 
 > **基础知识: 偶置换与奇置换, 交错群**
->
+> 
 > 当一个置换能表为奇(偶)数个对换的乘积时, 称为奇置换(偶置换). $n$ 元偶置换的全体 $A_n$ 是 $S_n$ 的正规子群, 称为 $n$ 元交错群, 且当 $n\ge2$ 时 $\left|A_n\right|=\frac{n!}{2}$.
 
 > **基础知识: 轮换的共轭**
->
+> 
 > 对任意 $\sigma\in S_n$ 与 $r$-轮换 $\left(i_1i_2\cdots i_r\right)$, 有 $\sigma\left(i_1i_2\cdots i_r\right)\sigma^{-1}=\left(\sigma\left(i_1\right)\sigma\left(i_2\right)\cdots\sigma\left(i_r\right)\right)$. 故 $S_n$ 中两个轮换共轭当且仅当它们长度相同, 特别地, 所有对换彼此共轭.
 
 > **基础知识: 符号同态**
->
+> 
 > 例 1.4.17 中的行列式同态给出 $\mathrm{sgn}:S_n\to\left\{1,-1\right\}$, $\sigma\mapsto\mathrm{sgn}\left(\sigma\right)$, 其中对换的符号为 $-1$; 若 $\sigma$ 表为 $m$ 个对换之积, 则 $\mathrm{sgn}\left(\sigma\right)=\left(-1\right)^{m}$; 特别地, $n$ 个不相交对换之积的符号为 $\left(-1\right)^{n}$, $\ker\mathrm{sgn}=A_n$.
 
 > **基础知识: 交错群由 3-轮换生成**
->
+> 
 > 当 $n\ge3$ 时, $A_n$ 由所有 3-轮换生成: 因 $\left(ij\right)\left(ik\right)=\left(jik\right)$, $\left(ij\right)\left(kl\right)=\left(ijk\right)\left(jkl\right)$, 两个对换之积是 3-轮换的乘积, 而 $A_n$ 中元可表为偶数个对换之积.
 
 > **基础知识: 正规子群是共轭类的并**
->
+> 
 > 若 $N\triangleleft G$, 则 $N$ 是 $G$ 中若干共轭类之并; 特别地, 若 $x\in N$, 则 $x$ 所在的共轭类含于 $N$.
 
 > **基础知识: 对换的中心化子与对换的识别**
->
+> 
 > 在 $S_n$ 中, 对换 $\left(ij\right)$ 的中心化子大小为 $2\left(n-2\right)!$; 当 $n\ne6$ 时, 对换构成 $S_n$ 中唯一的这样大小的二阶元共轭类, 故任一自同构把对换映为对换. 而当 $n=6$ 时 $S_6$ 有外自同构, 把对换映为 6-轮换的平方等二阶元.
 
 > **基础知识: 群的中心与内自同构**
->
+> 
 > 设 $G$ 为群, $\mathrm{Ad}:G\to\mathrm{Inn}\left(G\right)$, $a\mapsto\mathrm{Ad}_a$, 其中 $\mathrm{Ad}_a\left(g\right)=aga^{-1}$, 是满同态, $\ker\mathrm{Ad}=C\left(G\right)$ (G 的中心), 故由同态基本定理 $\mathrm{Inn}\left(G\right)\cong G/C\left(G\right)$. 当 $n\ge3$ 时 $S_n$ 的中心 $C\left(S_n\right)=\left\{e\right\}$, 故 $\mathrm{Inn}\left(S_n\right)\cong S_n$.
 
 > **基础知识: 偶数阶群有二阶元**
->
+> 
 > 若有限群 $G$ 的阶为偶数, 则 $G$ 中存在二阶元: 将 $G$ 的元素按互逆配对, $e$ 自成一对, 其余非二阶元两两配对, 因 $\left|G\right|$ 为偶数, 必有奇数个二阶元, 故存在非单位二阶元.
 
 > **基础知识: $S_4$ 的共轭类**
->
+> 
 > $S_4$ 的共轭类及大小分别为: $\left\{e\right\}$ (1), 对换 (6), 对换之积 $\left(12\right)\left(34\right)$ 型 (3), 3-轮换 (8), 4-轮换 (6). 且 $K_4=\left\{e,\left(12\right)\left(34\right),\left(13\right)\left(24\right),\left(14\right)\left(23\right)\right\}$ 与 $A_4$ 都是 $S_4$ 的正规子群, $K_4$ 同构于克莱因四元群.
 
 > **基础知识: $S_6$ 的外自同构**
->
+> 
 > $\mathrm{Out}\left(S_6\right)=\mathrm{Aut}\left(S_6\right)/\mathrm{Inn}\left(S_6\right)\cong\mathbb Z_2$, 故 $\left|\mathrm{Aut}\left(S_6\right)\right|=2\left|\mathrm{Inn}\left(S_6\right)\right|=2\cdot6!=1440$.
 
 > **定理 1.2.22 (拉格朗日定理)**
->
-> 设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
+> 
+> 设 $G$ 是有限群, $H< G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
 
 > **定理 1.4.10 (凯莱定理)**
->
+> 
 > 任何群 $G$ 与对称群 $S_G$ 的一个子群同构; 事实上映射 $L:G\to L_G$, $a\mapsto L_a$ 是单同态, 其中 $L_a\left(g\right)=ag$ 为左平移.
 
 > **引理 1.4.13**
->
-> 设 $f:G\to G'$ 为群同态, 则 $\mathrm{Im}\,f<G'$, $\ker f\triangleleft G$.
+> 
+> 设 $f:G\to G'$ 为群同态, 则 $\mathrm{Im}\,f< G'$, $\ker f\triangleleft G$.
 
 > **例 1.4.17**
->
-> 设 $V$ 是数域 $P$ 上的 $n$ 维线性空间, 则映射 $\det\circ\pi:S_n\to P^{*}$, $\sigma\mapsto\det\left(\pi_\sigma\right)$ 是群同态, 其像集为 $\left\{1,-1\right\}$ (当 $n>1$ 时), 该同态的核记为 $A_n$.
+> 
+> 设 $V$ 是数域 $P$ 上的 $n$ 维线性空间, 则映射 $\det\circ\pi:S_n\to P^{*}$, $\sigma\mapsto\det\left(\pi_\sigma\right)$ 是群同态, 其像集为 $\left\{1,-1\right\}$ (当 $n> 1$ 时), 该同态的核记为 $A_n$.
 
 > **定理 1.4.19 (群的同态基本定理)**
->
+> 
 > 设 $f:G\to G'$ 是群的满同态, 则 $G/\ker f\cong G'$.
 
 > **定义 1.6.1 (轮换)**
->
+> 
 > 设 $\left\{i_1,i_2,\cdots,i_r\right\}\subseteq\left\{1,2,\cdots,n\right\}$. 若 $\sigma\in S_n$ 满足 $\sigma\left(i_1\right)=i_2$, $\sigma\left(i_2\right)=i_3$, ..., $\sigma\left(i_r\right)=i_1$, 且 $\sigma$ 固定其余文字, 则称 $\sigma$ 为一个 $r$-轮换, 记为 $\sigma=\left(i_1i_2\cdots i_r\right)$. 特别地, $2$-轮换称为对换.
 
 > **定理 1.6.4 (轮换分解)**
->
+> 
 > $S_n$ 中的任何元素 $\sigma$ 都可表为 $S_n$ 中一些不相交轮换之积; 如果不计次序, 表法是唯一的.
 
 > **引理 1.6.7 (轮换的对换分解)**
->
+> 
 > 任一个 $r$-轮换都可写成 $r-1$ 个对换的乘积: $\left(i_1i_2\cdots i_r\right)=\left(i_1i_r\right)\left(i_1i_{r-1}\right)\cdots\left(i_1i_3\right)\left(i_1i_2\right)$.
 
 > **命题 1.6.8**
->
+> 
 > 任一 $n$ 元置换都可以表为一些对换的乘积.
 
 > **定理 1.6.9 (交错群的单性)**
->
+> 
 > 当 $n\ge5$ 时, $A_n$ 是单群.
 
 ---

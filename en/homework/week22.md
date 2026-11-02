@@ -1,15 +1,15 @@
 # week22
 
 > **Basic Knowledge: Order of an Element in a Direct Product**
->
+> 
 > Let $G=H_1\times H_2\times\cdots\times H_s$ be a direct product of finite abelian groups, and $g=\left(h_1,h_2,\cdots,h_s\right)$. Then $o\left(g\right)=\mathrm{lcm}\left(o\left(h_1\right),o\left(h_2\right),\cdots,o\left(h_s\right)\right)$. In particular, $o\left(g\right)\mid q$ iff $o\left(h_i\right)\mid q$ for every $i$.
 
 > **Basic Knowledge: Finite Subgroups of the Rational Multiplicative Group**
->
+> 
 > An element of order finite in $\mathbb Q^*$ is either $1$ or $-1$; hence the only finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$. Indeed, if $r=p/q\in\mathbb Q^*$ (in lowest terms) satisfies $r^n=1$, then $p^n=q^n$, so $p=\pm q$, i.e. $r=\pm1$.
 
 > **Theorem 3.5.2 (Number of Isomorphism Classes of Finite Abelian Groups)**
->
+> 
 > Let $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$ be the prime factorization of $n$, with $p_1,p_2,\cdots,p_s$ distinct primes and $m_i> 0$. Then the number of isomorphism classes of abelian groups of order $n$ is $\prod_{i=1}^s p\left(m_i\right)$, where $p\left(m\right)$ is the number of distinct partitions of the natural number $m$.
 
 ---

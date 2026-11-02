@@ -1,47 +1,47 @@
 # week4
 
 > **Basic Knowledge: Anti-Homomorphism and Anti-Isomorphism**
->
+> 
 > If a map $f:G\to G'$ satisfies $f\left(ab\right)=f\left(b\right)f\left(a\right)$ for all $a,b\in G$, then $f$ is called an anti-homomorphism; if an anti-homomorphism is a bijection, it is called an anti-isomorphism.
 
 > **Basic Knowledge: Symmetric Groups and Bijective Transformations**
->
+> 
 > The set $S_X$ of all bijections (permutations) of a nonempty set $X$ forms a group under composition of transformations, called the symmetric group on $X$; the left translation $L_a$ and right translation $R_a$ on $G$ are both bijections of $G$, since $L_{a^{-1}}$, $R_{a^{-1}}$ are their inverses respectively.
 
 > **Basic Knowledge: Addition Formulas for Trigonometric Functions**
->
+> 
 > For all $x,y\in\mathbb R$, $\cos\left(x+y\right)=\cos x\cos y-\sin x\sin y$ and $\sin\left(x+y\right)=\sin x\cos y+\cos x\sin y$.
 
 > **Basic Knowledge: Complex Exponentials and the Unit Circle**
->
+> 
 > For all $x\in\mathbb R$, $\cos x+\sqrt{-1}\sin x\in\mathbb C^{*}$, and $\cos x+\sqrt{-1}\sin x=1$ if and only if $x=2k\pi$ ($k\in\mathbb Z$).
 
 > **Basic Knowledge: Properties of Homomorphisms into Automorphism Groups**
->
+> 
 > Let $\varphi:G\to\mathrm{Aut}\left(H\right)$ be a group homomorphism. Then for all $a,b\in G$, $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$, $\varphi\left(a^{-1}\right)=\varphi\left(a\right)^{-1}$, and $\varphi\left(e_G\right)=\mathrm{id}_H$; in particular $\varphi\left(a^{-1}\right)\varphi\left(a\right)=\mathrm{id}_H$.
 
 > **Theorem 1.2.2 (Subgroup Criterion)**
->
+> 
 > Let $H$ be a nonempty subset of a group $G$. Then the following conditions are equivalent: (1) $H$ is a subgroup of $G$; (2) for all $a,b\in H$, $ab\in H$ and $a^{-1}\in H$; (3) for all $a,b\in H$, $ab^{-1}\in H$.
 
 > **Definition 1.3.1 (Normal Subgroup)**
->
+> 
 > Let $H$ be a subgroup of a group $G$. If $ghg^{-1}\in H$ for all $g\in G$ and $h\in H$, then $H$ is called a normal subgroup of $G$, denoted $H\triangleleft G$.
 
 > **Definition 1.4.1 (Group Homomorphism and Isomorphism)**
->
+> 
 > Let $G$ and $G'$ be two groups. If a map $f:G\to G'$ satisfies $f\left(ab\right)=f\left(a\right)f\left(b\right)$ for all $a,b\in G$, then $f$ is called a group homomorphism from $G$ to $G'$. If the homomorphism $f$ is a bijection, then $f$ is called a group isomorphism from $G$ to $G'$; in this case the groups $G$ and $G'$ are said to be isomorphic, denoted $G\cong G'$.
 
 > **Definition 1.4.9 (Left and Right Translations)**
->
+> 
 > For any $a\in G$, define the transformations $L_a,R_a$ on $G$ by $L_a\left(g\right)=ag$, $R_a\left(g\right)=ga$ for all $g\in G$; $L_a,R_a$ are called the left translation and right translation determined by $a$ respectively.
 
 > **Definition 1.4.11 (Kernel and Image of a Homomorphism)**
->
+> 
 > Let $f:G\to G'$ be a group homomorphism. The set $\ker f=\left\{a\in G\mid f\left(a\right)=e'\right\}$ is called the kernel of the homomorphism $f$, and the set $\mathrm{Im}\left(f\right)=f\left(G\right)=\left\{f\left(a\right)\mid a\in G\right\}$ is called the image of the homomorphism $f$.
 
 > **Theorem 1.4.19 (Fundamental Theorem of Group Homomorphisms)**
->
+> 
 > Let $f:G\to G'$ be a surjective group homomorphism. Then $G/\ker f\cong G'$.
 
 ---
@@ -160,21 +160,21 @@ Hence $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$ is the inve
 
 Since closure, associativity, identity and inverse all hold, $G\ltimes H$ is a group.
 
-**Verify $G_1<G\ltimes H$.** $\left(e_G,e_H\right)\in G_1$, so $G_1$ is nonempty. For $\left(g_1,e_H\right),\left(g_2,e_H\right)\in G_1$, by the inverse formula, $\left(g_2,e_H\right)^{-1}=\left(g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_2^{-1},e_H\right)$, and hence
+**Verify $G_1< G\ltimes H$.** $\left(e_G,e_H\right)\in G_1$, so $G_1$ is nonempty. For $\left(g_1,e_H\right),\left(g_2,e_H\right)\in G_1$, by the inverse formula, $\left(g_2,e_H\right)^{-1}=\left(g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_2^{-1},e_H\right)$, and hence
 
 $$
 \left(g_1,e_H\right)\left(g_2,e_H\right)^{-1}=\left(g_1,e_H\right)\left(g_2^{-1},e_H\right)=\left(g_1g_2^{-1},\varphi\left(\left(g_2^{-1}\right)^{-1}\right)\left(e_H\right)e_H\right)=\left(g_1g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_1g_2^{-1},e_H\right)\in G_1.
 $$
 
-By **Theorem 1.2.2 (Subgroup Criterion)**, $G_1<G\ltimes H$.
+By **Theorem 1.2.2 (Subgroup Criterion)**, $G_1< G\ltimes H$.
 
-**Verify $H_1\triangleleft G\ltimes H$.** First prove $H_1<G\ltimes H$: $\left(e_G,e_H\right)\in H_1$, nonempty; for $\left(e_G,h_1\right),\left(e_G,h_2\right)\in H_1$, by the inverse formula, $\left(e_G,h_2\right)^{-1}=\left(e_G,\varphi\left(e_G\right)\left(h_2^{-1}\right)\right)=\left(e_G,h_2^{-1}\right)$, and hence
+**Verify $H_1\triangleleft G\ltimes H$.** First prove $H_1< G\ltimes H$: $\left(e_G,e_H\right)\in H_1$, nonempty; for $\left(e_G,h_1\right),\left(e_G,h_2\right)\in H_1$, by the inverse formula, $\left(e_G,h_2\right)^{-1}=\left(e_G,\varphi\left(e_G\right)\left(h_2^{-1}\right)\right)=\left(e_G,h_2^{-1}\right)$, and hence
 
 $$
 \left(e_G,h_1\right)\left(e_G,h_2\right)^{-1}=\left(e_G,h_1\right)\left(e_G,h_2^{-1}\right)=\left(e_G,\varphi\left(e_G^{-1}\right)\left(h_1\right)h_2^{-1}\right)=\left(e_G,h_1h_2^{-1}\right)\in H_1.
 $$
 
-By **Theorem 1.2.2 (Subgroup Criterion)**, $H_1<G\ltimes H$. Now prove normality: for any $\left(g,k\right)\in G\ltimes H$ and $\left(e_G,h\right)\in H_1$, by the inverse formula $\left(g,k\right)^{-1}=\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)$, and $\varphi\left(e_G^{-1}\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$, we compute
+By **Theorem 1.2.2 (Subgroup Criterion)**, $H_1< G\ltimes H$. Now prove normality: for any $\left(g,k\right)\in G\ltimes H$ and $\left(e_G,h\right)\in H_1$, by the inverse formula $\left(g,k\right)^{-1}=\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)$, and $\varphi\left(e_G^{-1}\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$, we compute
 
 $$
 \left(g,k\right)\left(e_G,h\right)\left(g,k\right)^{-1}=\left(g,\varphi\left(e_G^{-1}\right)\left(k\right)h\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(g,kh\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(e_G,\varphi\left(g^{-1}\right)\left(kh\right)\cdot\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(e_G,\varphi\left(g^{-1}\right)\varphi\left(g\right)\left(h\right)\right)=\left(e_G,h\right)\in H_1.

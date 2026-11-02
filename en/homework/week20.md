@@ -1,11 +1,11 @@
 # week20
 
 > **Basic Knowledge: Determinant and Invertibility**
->
+> 
 > A square matrix $A$ over a commutative unital ring $R$ is invertible if and only if its determinant $\det A$ is a unit in $R$.
 
 > **Theorem 3.3.6 (Characterization of a Basis of a Free Module)**
->
+> 
 > Let $M$ be a module over a unital ring $R$, and let $u_1,\cdots,u_m\in M$. Then $M$ is free with $u_1,\cdots,u_m$ as a basis iff: (1) $u_1,\cdots,u_m$ generate $M$; (2) $u_1,\cdots,u_m$ are linearly independent.
 
 ---

@@ -1,55 +1,55 @@
 # week1
 
 > **Basic Knowledge: Basic Properties of Addition on Nonnegative Integers**
->
-> $\mathbb N=\left\{0,1,2,\cdots\right\}$ is closed under the usual addition, which is associative and commutative; $0\in\mathbb N$ is the additive identity, i.e. $0+a=a+0=a$ for every $a\in\mathbb N$; addition satisfies the cancellation law, i.e. $a+c=b+c$ implies $a=b$; and $1+a\ge1>0$ for every $a\in\mathbb N$, so no $b\in\mathbb N$ satisfies $1+b=0$.
+> 
+> $\mathbb N=\left\{0,1,2,\cdots\right\}$ is closed under the usual addition, which is associative and commutative; $0\in\mathbb N$ is the additive identity, i.e. $0+a=a+0=a$ for every $a\in\mathbb N$; addition satisfies the cancellation law, i.e. $a+c=b+c$ implies $a=b$; and $1+a\ge1> 0$ for every $a\in\mathbb N$, so no $b\in\mathbb N$ satisfies $1+b=0$.
 
 > **Basic Knowledge: Power Set, Indicator Functions and Symmetric Difference**
->
+> 
 > Let $X$ be a nonempty set and $P\left(X\right)$ the set of all subsets of $X$ (the power set). For $A\subseteq X$, the indicator function $\chi_A:X\to\left\{0,1\right\}$ is defined by $\chi_A\left(x\right)=1$ if and only if $x\in A$; the map $A\mapsto\chi_A$ is injective. The symmetric difference is defined by $A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)$, and $\chi_{A\triangle B}=\chi_A+\chi_B\pmod2$.
 
 > **Basic Knowledge: Addition Modulo 2**
->
+> 
 > Addition modulo 2 on $\left\{0,1\right\}$ is associative and commutative, $0$ is its identity, and every element is self-inverse, i.e. $x+x=0\pmod2$ for every $x\in\left\{0,1\right\}$.
 
 > **Basic Knowledge: Invertibility of Square Matrices and Determinants**
->
+> 
 > For $A\in\mathbb R^{n\times n}$, $A$ is invertible if and only if $\left|A\right|\ne0$; the determinant is multiplicative, i.e. $\left|AC\right|=\left|A\right|\left|C\right|$; if $A$ is invertible, then $A^{-1}$ is also invertible and $\left|A^{-1}\right|\ne0$.
 
 > **Basic Knowledge: Associativity of Matrix Multiplication**
->
+> 
 > Matrix multiplication is associative, i.e. $\left(AB\right)C=A\left(BC\right)$ for all $A,B,C\in\mathbb R^{n\times n}$.
 
 > **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**
->
-> A number-theoretic function is a map $\mathbb N^*\to\mathbb C$. For $f,g\in S$, the Dirichlet convolution is defined by $\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$; define $e\in S$ by $e\left(1\right)=1$ and $e\left(n\right)=0$ for $n>1$. Finite sums may be rearranged, i.e. $\sum_{d\mid n}\sum_{e\mid\frac{n}{d}}f\left(d\right)g\left(e\right)h\left(\frac{n}{de}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$.
+> 
+> A number-theoretic function is a map $\mathbb N^*\to\mathbb C$. For $f,g\in S$, the Dirichlet convolution is defined by $\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$; define $e\in S$ by $e\left(1\right)=1$ and $e\left(n\right)=0$ for $n> 1$. Finite sums may be rearranged, i.e. $\sum_{d\mid n}\sum_{e\mid\frac{n}{d}}f\left(d\right)g\left(e\right)h\left(\frac{n}{de}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$.
 
 > **Basic Knowledge: Unique Decomposition of Coprime Factors**
->
+> 
 > If $\left(m,n\right)=1$, then $d\mid mn$ decomposes uniquely as $d=d_1d_2$, where $d_1\mid m$, $d_2\mid n$, and in this case $\left(d_1,d_2\right)=1$ and $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$.
 
 > **Basic Knowledge: Multiplicative and Completely Multiplicative Functions**
->
+> 
 > A number-theoretic function $f$ is called multiplicative if $f\left(mn\right)=f\left(m\right)f\left(n\right)$ whenever $\left(m,n\right)=1$; $f$ is called completely multiplicative if $f\left(mn\right)=f\left(m\right)f\left(n\right)$ for all $m,n\in\mathbb N^*$.
 
 > **Basic Knowledge: The Divisor Counting Function**
->
+> 
 > Let $\tau\left(n\right)=\sum_{d\mid n}1$ be the number of positive divisors of $n$; in particular, $\tau\left(2\right)=2$ and $\tau\left(4\right)=3$.
 
 > **Definition 1.1.4 (Semigroup and Monoid)**
->
+> 
 > If a binary operation $*$ satisfying the associative law is defined on a nonempty set $S$, then $\left\{S;*\right\}$ is called a semigroup, and $a*b$ is abbreviated as $ab$. If there exists an element $e$ in the semigroup $S$ such that $ea=a$ (or $ae=a$) for every $a\in S$, then $e$ is called a left (right) identity of $S$; if $e$ is both a left and a right identity, then $e$ is called the identity of $S$, and a semigroup with an identity is called a monoid; if the operation in $S$ also satisfies the commutative law, then $S$ is called a commutative monoid.
 
 > **Example 1.1.7 (Transformation Monoid)**
->
+> 
 > Let $M\left(X\right)$ be the set of all transformations of a nonempty set $X$. Then $M\left(X\right)$ forms a monoid under the multiplication of transformations (i.e. composition), whose identity is the identity transformation $\mathrm{id}_X$ of $X$.
 
 > **Definition 1.1.10 (Inverse Element)**
->
+> 
 > Let $S$ be a monoid, $e$ its identity, and $a\in S$. If there exists $b\in S$ such that $ba=e$ ($ab=e$), then $b$ is called a left (right) inverse of $a$. If $b$ is both a left and a right inverse of $a$, i.e. $ba=ab=e$, then $b$ is called an inverse of $a$, and in this case $a$ is called an invertible element.
 
 > **Definition 1.1.14 (Group and Abelian Group)**
->
+> 
 > If every element of a monoid $G$ is invertible, then $G$ is called a group. If the operation in the group also satisfies the commutative law, then $G$ is called a commutative group, or an abelian group.
 
 ---
@@ -68,7 +68,7 @@ Take $S=\mathbb N$ (the set of all nonnegative integers) with the usual operatio
 
 **Step 3: verify the cancellation law.** For any $a,b,c\in\mathbb N$, if $a+c=b+c$, then by **Basic Knowledge: Basic Properties of Addition on Nonnegative Integers** (the cancellation law for addition), $a=b$. Hence $\left(\mathbb N,+\right)$ satisfies the left (right) cancellation law.
 
-**Step 4: verify that $\left(\mathbb N,+\right)$ is not a group.** By **Basic Knowledge: Basic Properties of Addition on Nonnegative Integers**, $1+b\ge1>0$ for every $b\in\mathbb N$, so no $b\in\mathbb N$ satisfies $1+b=0$. Therefore $1\in\mathbb N$ has no additive inverse, i.e. not every element is invertible. By **Definition 1.1.10 (Inverse Element)** and **Definition 1.1.14 (Group and Abelian Group)**, a group requires every element to be invertible, so $\left(\mathbb N,+\right)$ is not a group.
+**Step 4: verify that $\left(\mathbb N,+\right)$ is not a group.** By **Basic Knowledge: Basic Properties of Addition on Nonnegative Integers**, $1+b\ge1> 0$ for every $b\in\mathbb N$, so no $b\in\mathbb N$ satisfies $1+b=0$. Therefore $1\in\mathbb N$ has no additive inverse, i.e. not every element is invertible. By **Definition 1.1.10 (Inverse Element)** and **Definition 1.1.14 (Group and Abelian Group)**, a group requires every element to be invertible, so $\left(\mathbb N,+\right)$ is not a group.
 
 In summary, $\left(\mathbb N,+\right)$ is an infinite commutative semigroup with an identity element that satisfies the cancellation law, but is not a group. $\blacksquare$
 
@@ -206,7 +206,7 @@ $$
 
 Both equal the triple sum $\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$, so $\left(f*g\right)*h=f*\left(g*h\right)$, i.e. $*$ is associative.
 
-**Identity**: By **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**, $e\left(1\right)=1$ and $e\left(n\right)=0$ for $n>1$, so $e\in S$. For any $f\in S$ and $n\in\mathbb N^*$, $\left(e*f\right)\left(n\right)=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)$. Since $e\left(d\right)=0$ unless $d=1$, $\left(e*f\right)\left(n\right)=e\left(1\right)f\left(n\right)=f\left(n\right)$, i.e. $e*f=f$; similarly $f*e=f$. Hence $e$ is the identity.
+**Identity**: By **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**, $e\left(1\right)=1$ and $e\left(n\right)=0$ for $n> 1$, so $e\in S$. For any $f\in S$ and $n\in\mathbb N^*$, $\left(e*f\right)\left(n\right)=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)$. Since $e\left(d\right)=0$ unless $d=1$, $\left(e*f\right)\left(n\right)=e\left(1\right)f\left(n\right)=f\left(n\right)$, i.e. $e*f=f$; similarly $f*e=f$. Hence $e$ is the identity.
 
 Since closure, commutativity, associativity and identity all hold, by **Definition 1.1.4 (Semigroup and Monoid)**, $\left(S,*\right)$ is a commutative monoid.
 
@@ -214,19 +214,19 @@ Since closure, commutativity, associativity and identity all hold, by **Definiti
 
 **Necessity**: If $f$ is invertible, by **Definition 1.1.10 (Inverse Element)**, there exists $g\in S$ such that $f*g=e$. Then $\left(f*g\right)\left(1\right)=\sum_{d\mid 1}f\left(d\right)g\left(\frac{1}{d}\right)=f\left(1\right)g\left(1\right)$, while $e\left(1\right)=1$, so $f\left(1\right)g\left(1\right)=1$, hence $f\left(1\right)\ne0$.
 
-**Sufficiency**: Suppose $f\left(1\right)\ne0$. By **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**, construct $g\in S$ inductively: set $g\left(1\right)=f\left(1\right)^{-1}$; for $n>1$, require $\left(f*g\right)\left(n\right)=0$, i.e.
+**Sufficiency**: Suppose $f\left(1\right)\ne0$. By **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**, construct $g\in S$ inductively: set $g\left(1\right)=f\left(1\right)^{-1}$; for $n> 1$, require $\left(f*g\right)\left(n\right)=0$, i.e.
 
 $$
-f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid n\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
+f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid n\\d> 1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
 $$
 
 which gives
 
 $$
-g\left(n\right)=-f\left(1\right)^{-1}\sum_{\substack{d\mid n\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right).
+g\left(n\right)=-f\left(1\right)^{-1}\sum_{\substack{d\mid n\\d> 1}}f\left(d\right)g\left(\frac{n}{d}\right).
 $$
 
-The right-hand side involves only the values $g\left(\frac{n}{d}\right)$ at the smaller subscripts $\frac{n}{d}<n$ (since $d>1$) that have already been defined, so $g\in S$ can be defined recursively, and $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1=e\left(1\right)$, while $\left(f*g\right)\left(n\right)=0=e\left(n\right)$ for $n>1$, i.e. $f*g=e$. By **Definition 1.1.10 (Inverse Element)**, $f$ is invertible.
+The right-hand side involves only the values $g\left(\frac{n}{d}\right)$ at the smaller subscripts $\frac{n}{d}< n$ (since $d> 1$) that have already been defined, so $g\in S$ can be defined recursively, and $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1=e\left(1\right)$, while $\left(f*g\right)\left(n\right)=0=e\left(n\right)$ for $n> 1$, i.e. $f*g=e$. By **Definition 1.1.10 (Inverse Element)**, $f$ is invertible.
 
 **(3) Prove that the set $F$ of nonzero multiplicative functions forms an abelian group under $*$.**
 
@@ -240,15 +240,15 @@ $$
 
 so $f*g$ is multiplicative. Also $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1\ne0$, so $f*g\ne0$, hence $f*g\in F$.
 
-**Identity**: By **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**, $e\left(1\right)=1$ and $e\left(n\right)=0$ for $n>1$. For $\left(m,n\right)=1$, if $mn=1$ then $m=n=1$; otherwise $mn>1$, $e\left(mn\right)=0$, while $e\left(m\right)e\left(n\right)=0$ (since at least one of $m,n$ exceeds $1$), so $e$ is multiplicative. Also $e\left(1\right)=1\ne0$, hence $e\in F$.
+**Identity**: By **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**, $e\left(1\right)=1$ and $e\left(n\right)=0$ for $n> 1$. For $\left(m,n\right)=1$, if $mn=1$ then $m=n=1$; otherwise $mn> 1$, $e\left(mn\right)=0$, while $e\left(m\right)e\left(n\right)=0$ (since at least one of $m,n$ exceeds $1$), so $e$ is multiplicative. Also $e\left(1\right)=1\ne0$, hence $e\in F$.
 
-**Inverse**: For $f\in F$, by (2) and $f\left(1\right)=1\ne0$, $f$ is invertible in $S$; write $f*g=e$. We prove by strong induction that $g$ is multiplicative: for $\left(m,n\right)=1$, assume $g\left(kl\right)=g\left(k\right)g\left(l\right)$ for all $\left(k,l\right)=1$ with $kl<mn$, and prove $g\left(mn\right)=g\left(m\right)g\left(n\right)$. Since $mn>1$, $\left(f*g\right)\left(mn\right)=0$, and by **Basic Knowledge: Unique Decomposition of Coprime Factors** and the multiplicativity of $f$,
+**Inverse**: For $f\in F$, by (2) and $f\left(1\right)=1\ne0$, $f$ is invertible in $S$; write $f*g=e$. We prove by strong induction that $g$ is multiplicative: for $\left(m,n\right)=1$, assume $g\left(kl\right)=g\left(k\right)g\left(l\right)$ for all $\left(k,l\right)=1$ with $kl< mn$, and prove $g\left(mn\right)=g\left(m\right)g\left(n\right)$. Since $mn> 1$, $\left(f*g\right)\left(mn\right)=0$, and by **Basic Knowledge: Unique Decomposition of Coprime Factors** and the multiplicativity of $f$,
 
 $$
 0=\left(f*g\right)\left(mn\right)=\sum_{d_1\mid m}\sum_{d_2\mid n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\frac{n}{d_2}\right).
 $$
 
-In the right-hand sum, when $\left(d_1,d_2\right)=\left(1,1\right)$ we have $\frac{m}{d_1}\frac{n}{d_2}=mn$; for all other terms $\frac{m}{d_1}\frac{n}{d_2}<mn$ and $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$, so by the induction hypothesis $g\left(\frac{m}{d_1}\frac{n}{d_2}\right)=g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)$. On the other hand, multiplying $\left(f*g\right)\left(m\right)=0$ by $\left(f*g\right)\left(n\right)=0$ gives
+In the right-hand sum, when $\left(d_1,d_2\right)=\left(1,1\right)$ we have $\frac{m}{d_1}\frac{n}{d_2}=mn$; for all other terms $\frac{m}{d_1}\frac{n}{d_2}< mn$ and $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$, so by the induction hypothesis $g\left(\frac{m}{d_1}\frac{n}{d_2}\right)=g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)$. On the other hand, multiplying $\left(f*g\right)\left(m\right)=0$ by $\left(f*g\right)\left(n\right)=0$ gives
 
 $$
 0=\sum_{d_1\mid m}\sum_{d_2\mid n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right).

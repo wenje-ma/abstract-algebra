@@ -1,15 +1,15 @@
 # week25
 
 > **基础知识: 艾森斯坦判别法**
->
+> 
 > 设 $f\left(x\right)=a_nx^n+\cdots+a_0\in\mathbb Z\left[x\right]$, 若存在素数 $p$ 使得 $p\nmid a_n$, $p\mid a_i$ 对 $i=0,1,\cdots,n-1$, 但 $p^2\nmid a_0$, 则 $f\left(x\right)$ 在 $\mathbb Q\left[x\right]$ 上不可约.
 
 > **基础知识: 特征 $p$ 下的弗罗贝尼乌斯映射**
->
+> 
 > 设域 $F$ 的特征为素数 $p$, 则对任意 $a,b\in F$ 有 $\left(a+b\right)^p=a^p+b^p$, 从而 $\left(x-a\right)^p=x^p-a^p$. 特别地, $x^p-c$ 在其分裂域中只有一个 $p$ 重根.
 
 > **定理 4.2.13 (单代数扩张的结构)**
->
+> 
 > 域 $F$ 的单代数扩张 $F\left(\alpha\right)$ 必同构于 $F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right)$. 设 $\deg\left(\alpha,F\right)=n$, 则 $F\left(\alpha\right)$ 作为 $F$-线性空间的维数为 $n$, 且 $1,\alpha,\alpha^2,\cdots,\alpha^{n-1}$ 为其一组 $F$-基.
 
 ---

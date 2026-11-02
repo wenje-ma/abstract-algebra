@@ -1,23 +1,23 @@
 # week7
 
 > **基础知识: 满同态保持正规子群**
->
+> 
 > 设 $f:G\to G'$ 是满同态, 若 $H\triangleleft G$, 则 $f\left(H\right)\triangleleft G'$.
 
 > **定理 1.4.23 (3) (第二同构定理)**
->
-> 设 $G$ 是群, $N\triangleleft G$, $H<G$, 则 $HN/N\cong H/\left(H\cap N\right)$.
+> 
+> 设 $G$ 是群, $N\triangleleft G$, $H< G$, 则 $HN/N\cong H/\left(H\cap N\right)$.
 
 > **定义 1.7.9 (次正规序列与合成序列)**
->
+> 
 > 群 $G$ 中的子群序列 $G=G_1\trianglerighteq G_2\trianglerighteq\cdots\trianglerighteq G_t\trianglerighteq G_{t+1}=\left\{e\right\}$, 若满足 $G_{i+1}\trianglelefteq G_i$ ($i=1,\cdots,t$), 则称为次正规序列, 称 $G_i/G_{i+1}$ 为此序列的因子群. 若诸因子 $G_i/G_{i+1}$ 都是单群, 则称该次正规序列为 $G$ 的合成序列, 称 $G_i/G_{i+1}$ 为 $G$ 的合成因子.
 
 > **定义 1.7.12 (同构序列)**
->
+> 
 > 群 $G$ 的两个次正规序列 $G=G_1\supset G_2\supset\cdots\supset G_t=\left\{e\right\}$ 与 $G=H_1\supset H_2\supset\cdots\supset H_s=\left\{e\right\}$ 称为同构的, 如果这两个序列的因子集之间有一一对应, 且对应的因子同构.
 
 > **定理 1.7.13 (若尔当-赫尔德定理)**
->
+> 
 > 设群 $G$ 存在合成序列, 则 $G$ 的任意两个合成序列同构. 特别地, $G$ 的任意两个主序列也同构.
 
 ---

@@ -1,19 +1,19 @@
 # week21
 
 > **定理 2.7.7 (贝祖等式)**
->
+> 
 > 设 $R$ 为主理想整环, $a,b\in R$, $d$ 为 $a,b$ 的一个最大公因子, 则存在 $u,v\in R$ 使 $d=ua+vb$.
 
 > **定理 3.4.5 (主理想整环上有限生成模的结构定理)**
->
+> 
 > 主理想整环 $D$ 上的任何有限生成模 $M$ 都有分解 $M=Dy_1\oplus\cdots\oplus Dy_s$, 其中 $\operatorname{ann}\left(y_1\right)\supset\operatorname{ann}\left(y_2\right)\supset\cdots\supset\operatorname{ann}\left(y_s\right)$, 且 $y_j\ne0$. 其中非零零化子对应的 $d_i$ ($\operatorname{ann}\left(y_i\right)=\left(d_i\right)$) 称为不变因子, 其分解为不可约元素幂次者称为初等因子.
 
 > **定理 3.4.9 (扭模的 $p$-分支分解)**
->
+> 
 > 设 $M$ 为主理想整环 $D$ 上有限生成扭模, 则存在有限个互不相伴的不可约元素 $p_1,\cdots,p_m$ 使 $M=M_{p_1}\oplus\cdots\oplus M_{p_m}$, 其中 $M_p=\left\{x\in M\mid \exists e,p^ex=0\right\}$ 为 $p$-分支. 特别地, 若 $\operatorname{ann}\left(y\right)=\left(ab\right)$ 且 $a,b$ 互素, 则 $Dy=Dy_1\oplus Dy_2$, $\operatorname{ann}\left(y_1\right)=\left(a\right)$, $\operatorname{ann}\left(y_2\right)=\left(b\right)$.
 
 > **推论 3.4.12 (有限生成模的同构判定)**
->
+> 
 > 设 $M_1,M_2$ 为主理想整环 $D$ 上的有限生成模, 则 $M_1\cong M_2$ 当且仅当它们有相同的秩和不变因子, 当且仅当有相同的秩和初等因子.
 
 ---

@@ -1,23 +1,23 @@
 # week7
 
 > **Basic Knowledge: Surjective Homomorphisms Preserve Normal Subgroups**
->
+> 
 > Let $f:G\to G'$ be a surjective homomorphism. If $H\triangleleft G$, then $f\left(H\right)\triangleleft G'$.
 
 > **Theorem 1.4.23 (3) (Second Isomorphism Theorem)**
->
-> Let $G$ be a group, $N\triangleleft G$, and $H<G$. Then $HN/N\cong H/\left(H\cap N\right)$.
+> 
+> Let $G$ be a group, $N\triangleleft G$, and $H< G$. Then $HN/N\cong H/\left(H\cap N\right)$.
 
 > **Definition 1.7.9 (Subnormal Series and Composition Series)**
->
+> 
 > A sequence of subgroups $G=G_1\trianglerighteq G_2\trianglerighteq\cdots\trianglerighteq G_t\trianglerighteq G_{t+1}=\left\{e\right\}$ of a group $G$ is called a subnormal series if $G_{i+1}\trianglelefteq G_i$ for $i=1,\cdots,t$; the quotient $G_i/G_{i+1}$ is called a factor of this series. If all factors $G_i/G_{i+1}$ are simple groups, then this subnormal series is called a composition series of $G$, and the $G_i/G_{i+1}$ are called composition factors of $G$.
 
 > **Definition 1.7.12 (Isomorphic Series)**
->
+> 
 > Two subnormal series $G=G_1\supset G_2\supset\cdots\supset G_t=\left\{e\right\}$ and $G=H_1\supset H_2\supset\cdots\supset H_s=\left\{e\right\}$ of a group $G$ are called isomorphic if there is a bijection between the two sets of factors such that the corresponding factors are isomorphic.
 
 > **Theorem 1.7.13 (Jordan-Holder Theorem)**
->
+> 
 > If a group $G$ has a composition series, then any two composition series of $G$ are isomorphic. In particular, any two principal series of $G$ are isomorphic.
 
 ---

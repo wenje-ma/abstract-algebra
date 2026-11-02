@@ -1,15 +1,15 @@
 # week25
 
 > **Basic Knowledge: Eisenstein's Criterion**
->
+> 
 > Let $f\left(x\right)=a_nx^n+\cdots+a_0\in\mathbb Z\left[x\right]$. If there is a prime $p$ such that $p\nmid a_n$, $p\mid a_i$ for $i=0,1,\cdots,n-1$, but $p^2\nmid a_0$, then $f\left(x\right)$ is irreducible over $\mathbb Q\left[x\right]$.
 
 > **Basic Knowledge: Frobenius Map in Characteristic $p$**
->
+> 
 > If a field $F$ has prime characteristic $p$, then for all $a,b\in F$, $\left(a+b\right)^p=a^p+b^p$, and hence $\left(x-a\right)^p=x^p-a^p$. In particular, $x^p-c$ has only one root, of multiplicity $p$, in its splitting field.
 
 > **Theorem 4.2.13 (Structure of a Simple Algebraic Extension)**
->
+> 
 > A simple algebraic extension $F\left(\alpha\right)$ of a field $F$ is isomorphic to $F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right)$. If $\deg\left(\alpha,F\right)=n$, then $F\left(\alpha\right)$ has dimension $n$ as an $F$-vector space, and $1,\alpha,\alpha^2,\cdots,\alpha^{n-1}$ form an $F$-basis.
 
 ---

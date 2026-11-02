@@ -1,23 +1,23 @@
 # week24
 
 > **Basic Knowledge: Universal Property of the Field of Fractions**
->
+> 
 > Let $R$ be an integral domain and $E$ its field of fractions. Given any automorphism $\sigma$ of $R$, define $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$; then $\overline\sigma$ is well-defined and is an automorphism of $E$.
 
 > **Lemma 4.1.9 (Field Homomorphisms Are Injective)**
->
+> 
 > A field homomorphism $\varphi:F\to E$ is always injective. In particular, a field automorphism preserves the operations and $1$, and hence fixes every element of the prime field ($\mathbb Q$ or $\mathbb F_p$).
 
 > **Definition 4.1.15 (Degree of an Extension)**
->
+> 
 > Let $E$ be an extension of $F$. The dimension of $E$ as an $F$-vector space is called the degree of $E$ over $F$, written $\left[E:F\right]$. If $\left[E:F\right]< \infty$, $E$ is a finite extension of $F$; otherwise it is an infinite extension.
 
 > **Theorem 4.1.16 (Tower Law for Extension Degrees)**
->
+> 
 > If both $K/F$ and $E/K$ are finite extensions, then $E/F$ is also finite, and $\left[E:F\right]=\left[E:K\right]\left[K:F\right]$.
 
 > **Lemma 4.2.1 (Finite Extensions Are Algebraic)**
->
+> 
 > If $E/F$ is a finite extension, then every element of $E$ is algebraic over $F$. Equivalently, if $E$ contains a transcendental element over $F$, then $E/F$ must be an infinite extension.
 
 ---
