@@ -1,24 +1,40 @@
 # week12
 
-> **Basic Knowledge: Binomial Theorem in a Commutative Ring**<br>Let $R$ be a commutative ring, $a,b\in R$, and $n$ a positive integer. Then
+> **Basic Knowledge: Binomial Theorem in a Commutative Ring**
+>
+> Let $R$ be a commutative ring, $a,b\in R$, and $n$ a positive integer. Then
 $$
 \left(a-b\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}a^{k}\left(-b\right)^{n-k},
 $$
 and the commutativity of $R$ allows the terms to be collected.
 
-> **Basic Knowledge: The Integer Ring $\mathbb Z$ Is an Integral Domain**<br>The integer ring $\mathbb Z$ is an integral domain, hence satisfies **Definition 2.1.8 (Ring Without Zero Divisors)**; moreover, for every $m\ge0$, $m\mathbb Z$ is an ideal of $\mathbb Z$, and the quotient ring $\mathbb Z/m\mathbb Z$ is written $\mathbb Z_m$.
+> **Basic Knowledge: The Integer Ring $\mathbb Z$ Is an Integral Domain**
+>
+> The integer ring $\mathbb Z$ is an integral domain, hence satisfies **Definition 2.1.8 (Ring Without Zero Divisors)**; moreover, for every $m\ge0$, $m\mathbb Z$ is an ideal of $\mathbb Z$, and the quotient ring $\mathbb Z/m\mathbb Z$ is written $\mathbb Z_m$.
 
-> **Basic Knowledge: Cancellation with Nonzero Elements**<br>In a ring $R$ without zero divisors, if $ab=0$ and $a\ne0$, then $b=0$; if $ba=0$ and $a\ne0$, then $b=0$ (otherwise a zero divisor would occur).
+> **Basic Knowledge: Cancellation with Nonzero Elements**
+>
+> In a ring $R$ without zero divisors, if $ab=0$ and $a\ne0$, then $b=0$; if $ba=0$ and $a\ne0$, then $b=0$ (otherwise a zero divisor would occur).
 
-> **Definition 2.1.1 (Ring)**<br>Let $R$ be a nonempty set on which two binary operations $+$ and $\cdot$ are defined, satisfying: (1) $\left[R;+\right]$ is an abelian group; (2) $\left[R;\cdot\right]$ is a semigroup; (3) multiplication distributes over addition on both sides: $a\left(b+c\right)=ab+ac$, $\left(a+b\right)c=ac+bc$. Then $R$ is called a ring.
+> **Definition 2.1.1 (Ring)**
+>
+> Let $R$ be a nonempty set on which two binary operations $+$ and $\cdot$ are defined, satisfying: (1) $\left[R;+\right]$ is an abelian group; (2) $\left[R;\cdot\right]$ is a semigroup; (3) multiplication distributes over addition on both sides: $a\left(b+c\right)=ab+ac$, $\left(a+b\right)c=ac+bc$. Then $R$ is called a ring.
 
-> **Definition 2.1.8 (Ring Without Zero Divisors)**<br>If a ring $R$ is not the zero ring and has no zero divisors, then $R$ is called a ring without zero divisors.
+> **Definition 2.1.8 (Ring Without Zero Divisors)**
+>
+> If a ring $R$ is not the zero ring and has no zero divisors, then $R$ is called a ring without zero divisors.
 
-> **Proposition 2.2.11 (Criterion for Ideals)**<br>Let $R$ be a ring and $I$ a nonempty subset of $R$. Then $I$ is an ideal of $R$ if and only if $a-b\in I$ and $ax,ya\in I$ for all $a,b\in I$ and $x,y\in R$.
+> **Proposition 2.2.11 (Criterion for Ideals)**
+>
+> Let $R$ be a ring and $I$ a nonempty subset of $R$. Then $I$ is an ideal of $R$ if and only if $a-b\in I$ and $ax,ya\in I$ for all $a,b\in I$ and $x,y\in R$.
 
-> **Theorem 2.2.16 (Quotient Ring)**<br>Let $R$ be a ring and $I$ an ideal of $R$. Then the quotient additive group $R/I$ becomes a ring under the multiplication $\left(a+I\right)\left(b+I\right)=ab+I$, called the quotient ring of $R$ by $I$.
+> **Theorem 2.2.16 (Quotient Ring)**
+>
+> Let $R$ be a ring and $I$ an ideal of $R$. Then the quotient additive group $R/I$ becomes a ring under the multiplication $\left(a+I\right)\left(b+I\right)=ab+I$, called the quotient ring of $R$ by $I$.
 
-> **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**<br>A commutative unital ring without zero divisors is called an integral domain; if a unital ring $R$ satisfies that $R^{*}$ forms a group under multiplication (where $R^{*}=R\setminus\left\{0\right\}$), then $R$ is called a division ring; a commutative division ring is called a field.
+> **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**
+>
+> A commutative unital ring without zero divisors is called an integral domain; if a unital ring $R$ satisfies that $R^{*}$ forms a group under multiplication (where $R^{*}=R\setminus\left\{0\right\}$), then $R$ is called a division ring; a commutative division ring is called a field.
 
 ---
 

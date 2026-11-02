@@ -1,6 +1,8 @@
 # week26
 
-> **Basic Knowledge: Frobenius Map in Characteristic $p$**<br>If a field $F$ has prime characteristic $p$, then for all $a,b\in F$, $\left(a+b\right)^p=a^p+b^p$. Hence for any $c\in F$, if $\alpha$ is a root of $x^p-c$ in some splitting field (i.e. $\alpha^p=c$), then $x^p-c=\left(x-\alpha\right)^p$; i.e. $x^p-c$ has only one root, of multiplicity $p$, in its splitting field.
+> **Basic Knowledge: Frobenius Map in Characteristic $p$**
+>
+> If a field $F$ has prime characteristic $p$, then for all $a,b\in F$, $\left(a+b\right)^p=a^p+b^p$. Hence for any $c\in F$, if $\alpha$ is a root of $x^p-c$ in some splitting field (i.e. $\alpha^p=c$), then $x^p-c=\left(x-\alpha\right)^p$; i.e. $x^p-c$ has only one root, of multiplicity $p$, in its splitting field.
 
 ---
 

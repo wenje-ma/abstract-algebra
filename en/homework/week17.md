@@ -1,12 +1,20 @@
 # week17
 
-> **Basic Knowledge: The Norm on the Ring of Algebraic Integers**<br>Let $d>0$ be a squarefree integer and $\omega=\frac{1+\sqrt{-d}}{2}$, which satisfies $\omega^{2}-\omega+\frac{1+d}{4}=0$ when $d\equiv3\pmod4$. For $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, define the norm $N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+ab+b^{2}\omega\overline\omega$; it is multiplicative and $N\left(\alpha\right)=0$ if and only if $\alpha=0$. For $\alpha\in\mathbb Z\left[\omega\right]$, $N\left(\alpha\right)=\left|\alpha\right|^{2}$ (the square of the complex modulus).
+> **Basic Knowledge: The Norm on the Ring of Algebraic Integers**
+>
+> Let $d>0$ be a squarefree integer and $\omega=\frac{1+\sqrt{-d}}{2}$, which satisfies $\omega^{2}-\omega+\frac{1+d}{4}=0$ when $d\equiv3\pmod4$. For $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, define the norm $N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+ab+b^{2}\omega\overline\omega$; it is multiplicative and $N\left(\alpha\right)=0$ if and only if $\alpha=0$. For $\alpha\in\mathbb Z\left[\omega\right]$, $N\left(\alpha\right)=\left|\alpha\right|^{2}$ (the square of the complex modulus).
 
-> **Basic Knowledge: A Bound for a Quadratic Form**<br>If $\left|u\right|,\left|v\right|\le\frac12$, then the quadratic form $u^{2}+uv+v^{2}\le\frac34$; moreover, as a quadratic form in $u$ (over $\left|u\right|\le\frac12$) it attains its minimum $\frac34v^{2}$ at $u=-\frac v2$.
+> **Basic Knowledge: A Bound for a Quadratic Form**
+>
+> If $\left|u\right|,\left|v\right|\le\frac12$, then the quadratic form $u^{2}+uv+v^{2}\le\frac34$; moreover, as a quadratic form in $u$ (over $\left|u\right|\le\frac12$) it attains its minimum $\frac34v^{2}$ at $u=-\frac v2$.
 
-> **Definition 2.7.1 (Principal Ideal Ring)**<br>A commutative unital ring is called a principal ideal ring if every ideal of it is principal; if a principal ideal ring is also an integral domain, it is called a principal ideal domain.
+> **Definition 2.7.1 (Principal Ideal Ring)**
+>
+> A commutative unital ring is called a principal ideal ring if every ideal of it is principal; if a principal ideal ring is also an integral domain, it is called a principal ideal domain.
 
-> **Definition 2.7.9 (Euclidean Ring)**<br>Let $R$ be an integral domain. If there exists a map $\delta$ from $R^{*}$ to the set of nonnegative integers such that for any $a,b\in R$ with $b\ne0$, there exist $q,r\in R$ with $a=qb+r$, where $r=0$ or $\delta\left(r\right)<\delta\left(b\right)$, then $\left(R,\delta\right)$ is called a Euclidean ring; briefly, $R$ is a Euclidean ring.
+> **Definition 2.7.9 (Euclidean Ring)**
+>
+> Let $R$ be an integral domain. If there exists a map $\delta$ from $R^{*}$ to the set of nonnegative integers such that for any $a,b\in R$ with $b\ne0$, there exist $q,r\in R$ with $a=qb+r$, where $r=0$ or $\delta\left(r\right)<\delta\left(b\right)$, then $\left(R,\delta\right)$ is called a Euclidean ring; briefly, $R$ is a Euclidean ring.
 
 ---
 

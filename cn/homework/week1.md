@@ -1,30 +1,56 @@
 # week1
 
-> **基础知识: 非负整数加法的基本性质**<br>$\mathbb N=\left\{0,1,2,\cdots\right\}$ 对通常加法封闭, 加法满足结合律与交换律; $0\in\mathbb N$ 是加法单位元, 即对任意 $a\in\mathbb N$ 有 $0+a=a+0=a$; 加法满足消去律, 即由 $a+c=b+c$ 可推出 $a=b$; 且对任意 $a\in\mathbb N$ 有 $1+a\ge1>0$, 故不存在 $b\in\mathbb N$ 使 $1+b=0$.
+> **基础知识: 非负整数加法的基本性质**
+>
+> $\mathbb N=\left\{0,1,2,\cdots\right\}$ 对通常加法封闭, 加法满足结合律与交换律; $0\in\mathbb N$ 是加法单位元, 即对任意 $a\in\mathbb N$ 有 $0+a=a+0=a$; 加法满足消去律, 即由 $a+c=b+c$ 可推出 $a=b$; 且对任意 $a\in\mathbb N$ 有 $1+a\ge1>0$, 故不存在 $b\in\mathbb N$ 使 $1+b=0$.
 
-> **基础知识: 幂集,指示函数与对称差**<br>设 $X$ 为非空集合, $P\left(X\right)$ 为 $X$ 的所有子集的集合 (幂集). 对 $A\subseteq X$, 指示函数 $\chi_A:X\to\left\{0,1\right\}$ 定义为 $\chi_A\left(x\right)=1$ 当且仅当 $x\in A$; 映射 $A\mapsto\chi_A$ 是单射. 对称差定义为 $A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)$, 且 $\chi_{A\triangle B}=\chi_A+\chi_B\pmod2$.
+> **基础知识: 幂集,指示函数与对称差**
+>
+> 设 $X$ 为非空集合, $P\left(X\right)$ 为 $X$ 的所有子集的集合 (幂集). 对 $A\subseteq X$, 指示函数 $\chi_A:X\to\left\{0,1\right\}$ 定义为 $\chi_A\left(x\right)=1$ 当且仅当 $x\in A$; 映射 $A\mapsto\chi_A$ 是单射. 对称差定义为 $A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)$, 且 $\chi_{A\triangle B}=\chi_A+\chi_B\pmod2$.
 
-> **基础知识: 模 2 加法**<br>集合 $\left\{0,1\right\}$ 上的模 2 加法满足结合律与交换律, $0$ 是单位元, 且每个元素自逆, 即对任意 $x\in\left\{0,1\right\}$ 有 $x+x=0\pmod2$.
+> **基础知识: 模 2 加法**
+>
+> 集合 $\left\{0,1\right\}$ 上的模 2 加法满足结合律与交换律, $0$ 是单位元, 且每个元素自逆, 即对任意 $x\in\left\{0,1\right\}$ 有 $x+x=0\pmod2$.
 
-> **基础知识: 方阵可逆性与行列式**<br>对方阵 $A\in\mathbb R^{n\times n}$, $A$ 可逆当且仅当 $\left|A\right|\ne0$; 行列式满足乘性, 即 $\left|AC\right|=\left|A\right|\left|C\right|$; 若 $A$ 可逆, 则 $A^{-1}$ 也可逆且 $\left|A^{-1}\right|\ne0$.
+> **基础知识: 方阵可逆性与行列式**
+>
+> 对方阵 $A\in\mathbb R^{n\times n}$, $A$ 可逆当且仅当 $\left|A\right|\ne0$; 行列式满足乘性, 即 $\left|AC\right|=\left|A\right|\left|C\right|$; 若 $A$ 可逆, 则 $A^{-1}$ 也可逆且 $\left|A^{-1}\right|\ne0$.
 
-> **基础知识: 矩阵乘法结合律**<br>矩阵乘法满足结合律, 即对任意 $A,B,C\in\mathbb R^{n\times n}$ 有 $\left(AB\right)C=A\left(BC\right)$.
+> **基础知识: 矩阵乘法结合律**
+>
+> 矩阵乘法满足结合律, 即对任意 $A,B,C\in\mathbb R^{n\times n}$ 有 $\left(AB\right)C=A\left(BC\right)$.
 
-> **基础知识: 数论函数与狄利克雷卷积**<br>数论函数是 $\mathbb N^*\to\mathbb C$ 的映射. 对 $f,g\in S$, 狄利克雷卷积定义为 $\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$; 定义 $e\in S$ 为 $e\left(1\right)=1$ 且 $n>1$ 时 $e\left(n\right)=0$. 有限和可重排, 即 $\sum_{d\mid n}\sum_{e\mid\frac{n}{d}}f\left(d\right)g\left(e\right)h\left(\frac{n}{de}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$.
+> **基础知识: 数论函数与狄利克雷卷积**
+>
+> 数论函数是 $\mathbb N^*\to\mathbb C$ 的映射. 对 $f,g\in S$, 狄利克雷卷积定义为 $\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$; 定义 $e\in S$ 为 $e\left(1\right)=1$ 且 $n>1$ 时 $e\left(n\right)=0$. 有限和可重排, 即 $\sum_{d\mid n}\sum_{e\mid\frac{n}{d}}f\left(d\right)g\left(e\right)h\left(\frac{n}{de}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$.
 
-> **基础知识: 互素因子的唯一分解**<br>若 $\left(m,n\right)=1$, 则 $d\mid mn$ 可唯一地分解为 $d=d_1d_2$, 其中 $d_1\mid m$, $d_2\mid n$, 且此时 $\left(d_1,d_2\right)=1$, $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$.
+> **基础知识: 互素因子的唯一分解**
+>
+> 若 $\left(m,n\right)=1$, 则 $d\mid mn$ 可唯一地分解为 $d=d_1d_2$, 其中 $d_1\mid m$, $d_2\mid n$, 且此时 $\left(d_1,d_2\right)=1$, $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$.
 
-> **基础知识: 积性函数与完全积性函数**<br>称数论函数 $f$ 为积性函数, 如果 $\left(m,n\right)=1$ 时 $f\left(mn\right)=f\left(m\right)f\left(n\right)$; 称 $f$ 为完全积性函数, 如果对任意 $m,n\in\mathbb N^*$ 有 $f\left(mn\right)=f\left(m\right)f\left(n\right)$.
+> **基础知识: 积性函数与完全积性函数**
+>
+> 称数论函数 $f$ 为积性函数, 如果 $\left(m,n\right)=1$ 时 $f\left(mn\right)=f\left(m\right)f\left(n\right)$; 称 $f$ 为完全积性函数, 如果对任意 $m,n\in\mathbb N^*$ 有 $f\left(mn\right)=f\left(m\right)f\left(n\right)$.
 
-> **基础知识: 正因子个数函数**<br>记 $\tau\left(n\right)=\sum_{d\mid n}1$ 为 $n$ 的正因子个数; 特别地, $\tau\left(2\right)=2$, $\tau\left(4\right)=3$.
+> **基础知识: 正因子个数函数**
+>
+> 记 $\tau\left(n\right)=\sum_{d\mid n}1$ 为 $n$ 的正因子个数; 特别地, $\tau\left(2\right)=2$, $\tau\left(4\right)=3$.
 
-> **定义 1.1.4 (半群与幺半群)**<br>若非空集合 $S$ 中定义了一个满足结合律的二元运算 $*$, 则称 $\left\{S;*\right\}$ 为一个半群, 将 $a*b$ 简记为 $ab$. 若半群 $S$ 中存在元素 $e$, 对任意 $a\in S$ 有 $ea=a$ (或 $ae=a$), 则称 $e$ 为 $S$ 的左(右)幺元; 若 $e$ 既是左幺元又是右幺元, 则称 $e$ 为 $S$ 的幺元, 含幺元的半群称为幺半群; 若 $S$ 中的运算还满足交换律, 则称 $S$ 为交换幺半群.
+> **定义 1.1.4 (半群与幺半群)**
+>
+> 若非空集合 $S$ 中定义了一个满足结合律的二元运算 $*$, 则称 $\left\{S;*\right\}$ 为一个半群, 将 $a*b$ 简记为 $ab$. 若半群 $S$ 中存在元素 $e$, 对任意 $a\in S$ 有 $ea=a$ (或 $ae=a$), 则称 $e$ 为 $S$ 的左(右)幺元; 若 $e$ 既是左幺元又是右幺元, 则称 $e$ 为 $S$ 的幺元, 含幺元的半群称为幺半群; 若 $S$ 中的运算还满足交换律, 则称 $S$ 为交换幺半群.
 
-> **例 1.1.7 (变换幺半群)**<br>记 $M\left(X\right)$ 为非空集合 $X$ 上的所有变换的集合, 则 $M\left(X\right)$ 在变换的乘法 (即复合) 下构成一个幺半群, 其幺元就是 $X$ 的恒等变换 $\mathrm{id}_X$.
+> **例 1.1.7 (变换幺半群)**
+>
+> 记 $M\left(X\right)$ 为非空集合 $X$ 上的所有变换的集合, 则 $M\left(X\right)$ 在变换的乘法 (即复合) 下构成一个幺半群, 其幺元就是 $X$ 的恒等变换 $\mathrm{id}_X$.
 
-> **定义 1.1.10 (逆元)**<br>设 $S$ 是幺半群, $e$ 是幺元, $a\in S$. 若存在 $b\in S$ 使得 $ba=e$ ($ab=e$), 则称 $b$ 为 $a$ 的左(右)逆元. 若 $b$ 既是 $a$ 的左逆元又是 $a$ 的右逆元, 即有 $ba=ab=e$, 则称 $b$ 为 $a$ 的逆元, 这时称 $a$ 为可逆元.
+> **定义 1.1.10 (逆元)**
+>
+> 设 $S$ 是幺半群, $e$ 是幺元, $a\in S$. 若存在 $b\in S$ 使得 $ba=e$ ($ab=e$), 则称 $b$ 为 $a$ 的左(右)逆元. 若 $b$ 既是 $a$ 的左逆元又是 $a$ 的右逆元, 即有 $ba=ab=e$, 则称 $b$ 为 $a$ 的逆元, 这时称 $a$ 为可逆元.
 
-> **定义 1.1.14 (群与阿贝尔群)**<br>如果幺半群 $G$ 中的每个元都是可逆元, 则称 $G$ 为一个群. 若群中运算还满足交换律, 则称 $G$ 为交换群或阿贝尔群.
+> **定义 1.1.14 (群与阿贝尔群)**
+>
+> 如果幺半群 $G$ 中的每个元都是可逆元, 则称 $G$ 为一个群. 若群中运算还满足交换律, 则称 $G$ 为交换群或阿贝尔群.
 
 ---
 

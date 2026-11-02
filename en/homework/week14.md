@@ -1,18 +1,32 @@
 # week14
 
-> **Basic Knowledge: Ring Automorphisms Fix the Prime Subfield**<br>If $\varphi$ is an automorphism of a field (or of a ring containing $1$), then $\varphi\left(1\right)=1$; since $\varphi$ preserves addition and multiplication and maps $1$ to $1$, it is the identity on the rational field $\mathbb Q$.
+> **Basic Knowledge: Ring Automorphisms Fix the Prime Subfield**
+>
+> If $\varphi$ is an automorphism of a field (or of a ring containing $1$), then $\varphi\left(1\right)=1$; since $\varphi$ preserves addition and multiplication and maps $1$ to $1$, it is the identity on the rational field $\mathbb Q$.
 
-> **Basic Knowledge: Order-Preserving Property of the Real Field**<br>A real number $x>0$ if and only if there exists $y\ne0$ with $x=y^{2}$. Hence a field automorphism $\varphi:\mathbb R\to\mathbb R$ maps positive numbers to positive numbers and is therefore strictly increasing; moreover, the rational numbers are dense in $\mathbb R$.
+> **Basic Knowledge: Order-Preserving Property of the Real Field**
+>
+> A real number $x>0$ if and only if there exists $y\ne0$ with $x=y^{2}$. Hence a field automorphism $\varphi:\mathbb R\to\mathbb R$ maps positive numbers to positive numbers and is therefore strictly increasing; moreover, the rational numbers are dense in $\mathbb R$.
 
-> **Basic Knowledge: An Integral Domain Has No Zero Divisors**<br>An integral domain has no zero divisors, so if $b,d\ne0$ then $bd\ne0$; and from $d\ne0$ together with $d\left(af-be\right)=0$ one may conclude $af=be$.
+> **Basic Knowledge: An Integral Domain Has No Zero Divisors**
+>
+> An integral domain has no zero divisors, so if $b,d\ne0$ then $bd\ne0$; and from $d\ne0$ together with $d\left(af-be\right)=0$ one may conclude $af=be$.
 
-> **Basic Knowledge: Congruence Relations and Quotient Structures**<br>If an equivalence relation $\sim$ is a congruence for an operation, then that operation is well-defined on the quotient set, and the corresponding commutativity, associativity and distributivity are preserved.
+> **Basic Knowledge: Congruence Relations and Quotient Structures**
+>
+> If an equivalence relation $\sim$ is a congruence for an operation, then that operation is well-defined on the quotient set, and the corresponding commutativity, associativity and distributivity are preserved.
 
-> **Basic Knowledge: Inverses in a Field**<br>Every nonzero element of a field is invertible; if $a,b\ne0$, then $\left(ab^{-1}\right)^{-1}=ba^{-1}$.
+> **Basic Knowledge: Inverses in a Field**
+>
+> Every nonzero element of a field is invertible; if $a,b\ne0$, then $\left(ab^{-1}\right)^{-1}=ba^{-1}$.
 
-> **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**<br>A commutative unital ring without zero divisors is called an integral domain; if a unital ring $R$ satisfies that $R^{*}$ forms a group under multiplication (where $R^{*}=R\setminus\left\{0\right\}$), then $R$ is called a division ring; a commutative division ring is called a field.
+> **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**
+>
+> A commutative unital ring without zero divisors is called an integral domain; if a unital ring $R$ satisfies that $R^{*}$ forms a group under multiplication (where $R^{*}=R\setminus\left\{0\right\}$), then $R$ is called a division ring; a commutative division ring is called a field.
 
-> **Definition 2.4.1 (Ring Homomorphism and Isomorphism)**<br>Let $R_1,R_2$ be two rings and $f$ a map from $R_1$ to $R_2$. If for any $a,b\in R_1$ we have $f\left(a+b\right)=f\left(a\right)+f\left(b\right)$ and $f\left(ab\right)=f\left(a\right)f\left(b\right)$, then $f$ is called a homomorphism; an injective homomorphism is called a monomorphism, a surjective homomorphism an epimorphism, and a bijective homomorphism an isomorphism.
+> **Definition 2.4.1 (Ring Homomorphism and Isomorphism)**
+>
+> Let $R_1,R_2$ be two rings and $f$ a map from $R_1$ to $R_2$. If for any $a,b\in R_1$ we have $f\left(a+b\right)=f\left(a\right)+f\left(b\right)$ and $f\left(ab\right)=f\left(a\right)f\left(b\right)$, then $f$ is called a homomorphism; an injective homomorphism is called a monomorphism, a surjective homomorphism an epimorphism, and a bijective homomorphism an isomorphism.
 
 ---
 

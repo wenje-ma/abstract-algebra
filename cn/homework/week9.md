@@ -1,20 +1,36 @@
 # week9
 
-> **基础知识: 线性映射保持子空间维数**<br>可逆线性变换把 $k$ 维子空间映为 $k$ 维子空间; 对任意两个非零向量 $v,w$, 存在可逆线性变换 $\rho$ 使 $\rho v=w$ (分别把 $v,w$ 扩充为 $\mathbb R^n$ 的基并定义线性映射).
+> **基础知识: 线性映射保持子空间维数**
+>
+> 可逆线性变换把 $k$ 维子空间映为 $k$ 维子空间; 对任意两个非零向量 $v,w$, 存在可逆线性变换 $\rho$ 使 $\rho v=w$ (分别把 $v,w$ 扩充为 $\mathbb R^n$ 的基并定义线性映射).
 
-> **基础知识: 正交与酉变换**<br>正交变换保持内积, 因而把标准正交组映为标准正交组, 把 $k$ 维子空间映为 $k$ 维子空间; 任意两组标准正交基可由某个正交 (酉) 变换互相映射.
+> **基础知识: 正交与酉变换**
+>
+> 正交变换保持内积, 因而把标准正交组映为标准正交组, 把 $k$ 维子空间映为 $k$ 维子空间; 任意两组标准正交基可由某个正交 (酉) 变换互相映射.
 
-> **基础知识: 分式线性变换**<br>分式线性变换 (默比乌斯变换) $z\mapsto\frac{az+b}{cz+d}$ 的复合对应矩阵乘法; 具有无穷多个不动点的分式线性变换必为恒等变换.
+> **基础知识: 分式线性变换**
+>
+> 分式线性变换 (默比乌斯变换) $z\mapsto\frac{az+b}{cz+d}$ 的复合对应矩阵乘法; 具有无穷多个不动点的分式线性变换必为恒等变换.
 
-> **基础知识: 群作用的轨道分解**<br>设 $G$ 作用在 $X$ 上, 则 $X$ 是互不相交的轨道之并; 对 $x\in X$, 轨道 $O_x$ 的大小为 $\left|G\right|/\left|F_x\right|$, 其中 $F_x$ 为 $x$ 的迷向子群. 特别地, 在 $\mathbb Z_2$ 作用于 $X$ 时, 非不动点的轨道恰含 $2$ 个元素, 故 $\left|X\right|\equiv\left|\mathrm{Fix}\right|\pmod 2$, 其中 $\mathrm{Fix}$ 为不动点集.
+> **基础知识: 群作用的轨道分解**
+>
+> 设 $G$ 作用在 $X$ 上, 则 $X$ 是互不相交的轨道之并; 对 $x\in X$, 轨道 $O_x$ 的大小为 $\left|G\right|/\left|F_x\right|$, 其中 $F_x$ 为 $x$ 的迷向子群. 特别地, 在 $\mathbb Z_2$ 作用于 $X$ 时, 非不动点的轨道恰含 $2$ 个元素, 故 $\left|X\right|\equiv\left|\mathrm{Fix}\right|\pmod 2$, 其中 $\mathrm{Fix}$ 为不动点集.
 
-> **定义 1.9.1 (群作用)**<br>设 $G$ 是群, $X$ 是非空集合. 若映射 $f:G\times X\to X$ 满足 $f\left(e,x\right)=x$ 且 $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, 则称 $f$ 决定了 $G$ 在 $X$ 上的一个作用, 记 $f\left(g,x\right)=gx$.
+> **定义 1.9.1 (群作用)**
+>
+> 设 $G$ 是群, $X$ 是非空集合. 若映射 $f:G\times X\to X$ 满足 $f\left(e,x\right)=x$ 且 $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, 则称 $f$ 决定了 $G$ 在 $X$ 上的一个作用, 记 $f\left(g,x\right)=gx$.
 
-> **定义 1.9.7 (可递作用与有效作用)**<br>若对任意 $x,y\in X$ 存在 $g\in G$ 使 $gx=y$, 称 $G$ 在 $X$ 上的作用可递, 称 $X$ 为 $G$ 的齐性空间. 若由 $gx=x$ 对一切 $x\in X$ 成立可推出 $g=e$, 称作用有效. 若对任意 $g\in G$, $x\in X$ 都有 $gx=x$, 称作用平凡.
+> **定义 1.9.7 (可递作用与有效作用)**
+>
+> 若对任意 $x,y\in X$ 存在 $g\in G$ 使 $gx=y$, 称 $G$ 在 $X$ 上的作用可递, 称 $X$ 为 $G$ 的齐性空间. 若由 $gx=x$ 对一切 $x\in X$ 成立可推出 $g=e$, 称作用有效. 若对任意 $g\in G$, $x\in X$ 都有 $gx=x$, 称作用平凡.
 
-> **定义 1.9.9 (轨道与迷向子群)**<br>设 $G$ 作用在 $X$ 上, $x\in X$. 称 $O_x=\left\{gx\mid g\in G\right\}$ 为 $x$ 的轨道. 称 $F_x=\left\{g\in G\mid gx=x\right\}$ 为 $x$ 的迷向子群.
+> **定义 1.9.9 (轨道与迷向子群)**
+>
+> 设 $G$ 作用在 $X$ 上, $x\in X$. 称 $O_x=\left\{gx\mid g\in G\right\}$ 为 $x$ 的轨道. 称 $F_x=\left\{g\in G\mid gx=x\right\}$ 为 $x$ 的迷向子群.
 
-> **推论 1.9.15 (轨道-迷向子群定理)**<br>设群 $G$ 作用在 $X$ 上, $x\in X$, 则 $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; 从而 $\left|O_x\right|\mid\left|G\right|$.
+> **推论 1.9.15 (轨道-迷向子群定理)**
+>
+> 设群 $G$ 作用在 $X$ 上, $x\in X$, 则 $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; 从而 $\left|O_x\right|\mid\left|G\right|$.
 
 ---
 

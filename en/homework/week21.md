@@ -1,12 +1,20 @@
 # week21
 
-> **Theorem 2.7.7 (Bezout Identity)**<br>Let $R$ be a principal ideal domain, $a,b\in R$, and $d$ a greatest common divisor of $a,b$. Then there exist $u,v\in R$ such that $d=ua+vb$.
+> **Theorem 2.7.7 (Bezout Identity)**
+>
+> Let $R$ be a principal ideal domain, $a,b\in R$, and $d$ a greatest common divisor of $a,b$. Then there exist $u,v\in R$ such that $d=ua+vb$.
 
-> **Theorem 3.4.5 (Structure Theorem for Finitely Generated Modules over a PID)**<br>Every finitely generated module $M$ over a principal ideal domain $D$ has a decomposition $M=Dy_1\oplus\cdots\oplus Dy_s$ with $\operatorname{ann}\left(y_1\right)\supset\operatorname{ann}\left(y_2\right)\supset\cdots\supset\operatorname{ann}\left(y_s\right)$ and $y_j\ne0$. The $d_i$ for which $\operatorname{ann}\left(y_i\right)=\left(d_i\right)$ with nonzero annihilator are called invariant factors; those factored into powers of irreducibles are called elementary divisors.
+> **Theorem 3.4.5 (Structure Theorem for Finitely Generated Modules over a PID)**
+>
+> Every finitely generated module $M$ over a principal ideal domain $D$ has a decomposition $M=Dy_1\oplus\cdots\oplus Dy_s$ with $\operatorname{ann}\left(y_1\right)\supset\operatorname{ann}\left(y_2\right)\supset\cdots\supset\operatorname{ann}\left(y_s\right)$ and $y_j\ne0$. The $d_i$ for which $\operatorname{ann}\left(y_i\right)=\left(d_i\right)$ with nonzero annihilator are called invariant factors; those factored into powers of irreducibles are called elementary divisors.
 
-> **Theorem 3.4.9 ($p$-Primary Decomposition of Torsion Modules)**<br>Let $M$ be a finitely generated torsion module over a principal ideal domain $D$. Then there exist finitely many pairwise nonassociate irreducibles $p_1,\cdots,p_m$ such that $M=M_{p_1}\oplus\cdots\oplus M_{p_m}$, where $M_p=\left\{x\in M\mid \exists e,p^ex=0\right\}$ is the $p$-primary component. In particular, if $\operatorname{ann}\left(y\right)=\left(ab\right)$ with $a,b$ coprime, then $Dy=Dy_1\oplus Dy_2$, $\operatorname{ann}\left(y_1\right)=\left(a\right)$, $\operatorname{ann}\left(y_2\right)=\left(b\right)$.
+> **Theorem 3.4.9 ($p$-Primary Decomposition of Torsion Modules)**
+>
+> Let $M$ be a finitely generated torsion module over a principal ideal domain $D$. Then there exist finitely many pairwise nonassociate irreducibles $p_1,\cdots,p_m$ such that $M=M_{p_1}\oplus\cdots\oplus M_{p_m}$, where $M_p=\left\{x\in M\mid \exists e,p^ex=0\right\}$ is the $p$-primary component. In particular, if $\operatorname{ann}\left(y\right)=\left(ab\right)$ with $a,b$ coprime, then $Dy=Dy_1\oplus Dy_2$, $\operatorname{ann}\left(y_1\right)=\left(a\right)$, $\operatorname{ann}\left(y_2\right)=\left(b\right)$.
 
-> **Corollary 3.4.12 (Isomorphism Criterion for Finitely Generated Modules)**<br>Let $M_1,M_2$ be finitely generated modules over a principal ideal domain $D$. Then $M_1\cong M_2$ iff they have the same rank and invariant factors, iff they have the same rank and elementary divisors.
+> **Corollary 3.4.12 (Isomorphism Criterion for Finitely Generated Modules)**
+>
+> Let $M_1,M_2$ be finitely generated modules over a principal ideal domain $D$. Then $M_1\cong M_2$ iff they have the same rank and invariant factors, iff they have the same rank and elementary divisors.
 
 ---
 

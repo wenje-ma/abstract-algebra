@@ -1,16 +1,28 @@
 # week5
 
-> **基础知识: 模 $n$ 剩余类加群**<br>$\mathbb Z_n=\left\{\overline{0},\overline{1},\cdots,\overline{n-1}\right\}$ 对加法构成 $n$ 阶循环群, 生成元为 $\overline{1}$; 对整数 $k$, $k\overline{1}=\overline{0}$ 当且仅当 $n\mid k$. 对 $\left(\overline{x},\overline{y}\right)\in\mathbb Z_m\times\mathbb Z_n$, $k\left(\overline{x},\overline{y}\right)=\left(\overline{0},\overline{0}\right)$ 当且仅当 $m\mid kx$ 且 $n\mid ky$.
+> **基础知识: 模 $n$ 剩余类加群**
+>
+> $\mathbb Z_n=\left\{\overline{0},\overline{1},\cdots,\overline{n-1}\right\}$ 对加法构成 $n$ 阶循环群, 生成元为 $\overline{1}$; 对整数 $k$, $k\overline{1}=\overline{0}$ 当且仅当 $n\mid k$. 对 $\left(\overline{x},\overline{y}\right)\in\mathbb Z_m\times\mathbb Z_n$, $k\left(\overline{x},\overline{y}\right)=\left(\overline{0},\overline{0}\right)$ 当且仅当 $m\mid kx$ 且 $n\mid ky$.
 
-> **基础知识: 循环群的生成元个数**<br>设 $C$ 是 $d$ 阶循环群, 则 $C$ 中阶恰为 $d$ 的元素 (即生成元) 恰有 $\varphi\left(d\right)$ 个, 其中 $\varphi$ 为欧拉函数.
+> **基础知识: 循环群的生成元个数**
+>
+> 设 $C$ 是 $d$ 阶循环群, 则 $C$ 中阶恰为 $d$ 的元素 (即生成元) 恰有 $\varphi\left(d\right)$ 个, 其中 $\varphi$ 为欧拉函数.
 
-> **基础知识: 欧拉函数与整除恒等式**<br>$\varphi\left(n\right)$ 为与 $n$ 互素且不超过 $n$ 的正整数的个数; 对正整数 $n$, 有 $\sum_{d\mid n}\varphi\left(d\right)=n$.
+> **基础知识: 欧拉函数与整除恒等式**
+>
+> $\varphi\left(n\right)$ 为与 $n$ 互素且不超过 $n$ 的正整数的个数; 对正整数 $n$, 有 $\sum_{d\mid n}\varphi\left(d\right)=n$.
 
-> **基础知识: 最大公因数与最小公倍数**<br>对正整数 $m,n$, 若 $\left(m,n\right)=1$, 则 $m\mid k$ 且 $n\mid k$ 当且仅当 $mn\mid k$.
+> **基础知识: 最大公因数与最小公倍数**
+>
+> 对正整数 $m,n$, 若 $\left(m,n\right)=1$, 则 $m\mid k$ 且 $n\mid k$ 当且仅当 $mn\mid k$.
 
-> **定理 1.2.22 (拉格朗日定理)**<br>设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
+> **定理 1.2.22 (拉格朗日定理)**
+>
+> 设 $G$ 是有限群, $H<G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
 
-> **定理 1.5.5 (循环群的分类)**<br>设 $G$ 是循环群. 若 $G$ 是无限群, 则 $G$ 与 $\left(\mathbb Z,+\right)$ 同构; 若 $G$ 是 $n$ 阶群, 则 $G$ 与 $\left(\mathbb Z_n,+\right)$ 同构. 从而, 两个循环群同构当且仅当它们有相同的阶.
+> **定理 1.5.5 (循环群的分类)**
+>
+> 设 $G$ 是循环群. 若 $G$ 是无限群, 则 $G$ 与 $\left(\mathbb Z,+\right)$ 同构; 若 $G$ 是 $n$ 阶群, 则 $G$ 与 $\left(\mathbb Z_n,+\right)$ 同构. 从而, 两个循环群同构当且仅当它们有相同的阶.
 
 ---
 

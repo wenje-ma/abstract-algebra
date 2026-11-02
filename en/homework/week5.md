@@ -1,16 +1,28 @@
 # week5
 
-> **Basic Knowledge: The Additive Group of Residue Classes Modulo $n$**<br>$\mathbb Z_n=\left\{\overline{0},\overline{1},\cdots,\overline{n-1}\right\}$ is a cyclic group of order $n$ under addition, with generator $\overline{1}$; for an integer $k$, $k\overline{1}=\overline{0}$ if and only if $n\mid k$. For $\left(\overline{x},\overline{y}\right)\in\mathbb Z_m\times\mathbb Z_n$, $k\left(\overline{x},\overline{y}\right)=\left(\overline{0},\overline{0}\right)$ if and only if $m\mid kx$ and $n\mid ky$.
+> **Basic Knowledge: The Additive Group of Residue Classes Modulo $n$**
+>
+> $\mathbb Z_n=\left\{\overline{0},\overline{1},\cdots,\overline{n-1}\right\}$ is a cyclic group of order $n$ under addition, with generator $\overline{1}$; for an integer $k$, $k\overline{1}=\overline{0}$ if and only if $n\mid k$. For $\left(\overline{x},\overline{y}\right)\in\mathbb Z_m\times\mathbb Z_n$, $k\left(\overline{x},\overline{y}\right)=\left(\overline{0},\overline{0}\right)$ if and only if $m\mid kx$ and $n\mid ky$.
 
-> **Basic Knowledge: Number of Generators of a Cyclic Group**<br>If $C$ is a cyclic group of order $d$, then $C$ has exactly $\varphi\left(d\right)$ elements of order $d$ (i.e. generators), where $\varphi$ is the Euler totient function.
+> **Basic Knowledge: Number of Generators of a Cyclic Group**
+>
+> If $C$ is a cyclic group of order $d$, then $C$ has exactly $\varphi\left(d\right)$ elements of order $d$ (i.e. generators), where $\varphi$ is the Euler totient function.
 
-> **Basic Knowledge: Euler's Totient Function and the Divisibility Identity**<br>$\varphi\left(n\right)$ is the number of positive integers not exceeding $n$ that are coprime to $n$; for a positive integer $n$, $\sum_{d\mid n}\varphi\left(d\right)=n$.
+> **Basic Knowledge: Euler's Totient Function and the Divisibility Identity**
+>
+> $\varphi\left(n\right)$ is the number of positive integers not exceeding $n$ that are coprime to $n$; for a positive integer $n$, $\sum_{d\mid n}\varphi\left(d\right)=n$.
 
-> **Basic Knowledge: Greatest Common Divisor and Least Common Multiple**<br>For positive integers $m,n$, if $\left(m,n\right)=1$, then $m\mid k$ and $n\mid k$ if and only if $mn\mid k$.
+> **Basic Knowledge: Greatest Common Divisor and Least Common Multiple**
+>
+> For positive integers $m,n$, if $\left(m,n\right)=1$, then $m\mid k$ and $n\mid k$ if and only if $mn\mid k$.
 
-> **Theorem 1.2.22 (Lagrange's Theorem)**<br>Let $G$ be a finite group and $H<G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, where $\left[G:H\right]$ is the index of $H$ in $G$. Hence the order of the subgroup $H$ is a divisor of the order of the group $G$; in particular, the order of any element is also a divisor of $\left|G\right|$.
+> **Theorem 1.2.22 (Lagrange's Theorem)**
+>
+> Let $G$ be a finite group and $H<G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, where $\left[G:H\right]$ is the index of $H$ in $G$. Hence the order of the subgroup $H$ is a divisor of the order of the group $G$; in particular, the order of any element is also a divisor of $\left|G\right|$.
 
-> **Theorem 1.5.5 (Classification of Cyclic Groups)**<br>Let $G$ be a cyclic group. If $G$ is infinite, then $G$ is isomorphic to $\left(\mathbb Z,+\right)$; if $G$ is a group of order $n$, then $G$ is isomorphic to $\left(\mathbb Z_n,+\right)$. Hence two cyclic groups are isomorphic if and only if they have the same order.
+> **Theorem 1.5.5 (Classification of Cyclic Groups)**
+>
+> Let $G$ be a cyclic group. If $G$ is infinite, then $G$ is isomorphic to $\left(\mathbb Z,+\right)$; if $G$ is a group of order $n$, then $G$ is isomorphic to $\left(\mathbb Z_n,+\right)$. Hence two cyclic groups are isomorphic if and only if they have the same order.
 
 ---
 

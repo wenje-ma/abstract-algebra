@@ -1,13 +1,19 @@
 # week11
 
-> **Basic Knowledge: Properties of Invertible Elements in a Unital Ring**<br>Let $R$ be a unital ring with identity $e$. If $u,v\in R$ are both invertible, then $uv$ is invertible and $\left(uv\right)^{-1}=v^{-1}u^{-1}$.
+> **Basic Knowledge: Properties of Invertible Elements in a Unital Ring**
+>
+> Let $R$ be a unital ring with identity $e$. If $u,v\in R$ are both invertible, then $uv$ is invertible and $\left(uv\right)^{-1}=v^{-1}u^{-1}$.
 
-> **Basic Knowledge: Nilpotent Elements and Finite Geometric Series**<br>Let $R$ be a unital ring with identity $e$. If $x^{m}=0$ ($m\in\mathbb N$), then the finite geometric series gives
+> **Basic Knowledge: Nilpotent Elements and Finite Geometric Series**
+>
+> Let $R$ be a unital ring with identity $e$. If $x^{m}=0$ ($m\in\mathbb N$), then the finite geometric series gives
 $$
 \left(e+x\right)^{-1}=e-x+x^{2}-\cdots+\left(-1\right)^{m-1}x^{m-1}.
 $$
 
-> **Definition 2.1.1 (Ring)**<br>Let $R$ be a nonempty set on which two binary operations $+$ and $\cdot$ are defined, satisfying: (1) $\left[R;+\right]$ is an abelian group; (2) $\left[R;\cdot\right]$ is a semigroup (multiplication is associative); (3) multiplication distributes over addition on both sides: $a\left(b+c\right)=ab+ac$, $\left(a+b\right)c=ac+bc$ (for all $a,b,c\in R$). Then $R$ is called a ring.
+> **Definition 2.1.1 (Ring)**
+>
+> Let $R$ be a nonempty set on which two binary operations $+$ and $\cdot$ are defined, satisfying: (1) $\left[R;+\right]$ is an abelian group; (2) $\left[R;\cdot\right]$ is a semigroup (multiplication is associative); (3) multiplication distributes over addition on both sides: $a\left(b+c\right)=ab+ac$, $\left(a+b\right)c=ac+bc$ (for all $a,b,c\in R$). Then $R$ is called a ring.
 
 ---
 

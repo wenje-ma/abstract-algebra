@@ -1,20 +1,36 @@
 # week9
 
-> **Basic Knowledge: Linear Maps Preserve Dimension of Subspaces**<br>An invertible linear transformation maps a $k$-dimensional subspace to a $k$-dimensional subspace; for any two nonzero vectors $v,w$, there exists an invertible linear transformation $\rho$ with $\rho v=w$ (extend $v,w$ to bases of $\mathbb R^n$ and define the linear map).
+> **Basic Knowledge: Linear Maps Preserve Dimension of Subspaces**
+>
+> An invertible linear transformation maps a $k$-dimensional subspace to a $k$-dimensional subspace; for any two nonzero vectors $v,w$, there exists an invertible linear transformation $\rho$ with $\rho v=w$ (extend $v,w$ to bases of $\mathbb R^n$ and define the linear map).
 
-> **Basic Knowledge: Orthogonal and Unitary Transformations**<br>An orthogonal transformation preserves the inner product, hence maps orthonormal sets to orthonormal sets and $k$-dimensional subspaces to $k$-dimensional subspaces; any two orthonormal bases can be related by an orthogonal (unitary) transformation.
+> **Basic Knowledge: Orthogonal and Unitary Transformations**
+>
+> An orthogonal transformation preserves the inner product, hence maps orthonormal sets to orthonormal sets and $k$-dimensional subspaces to $k$-dimensional subspaces; any two orthonormal bases can be related by an orthogonal (unitary) transformation.
 
-> **Basic Knowledge: Mobius Transformations**<br>The composition of Mobius transformations (fractional linear transformations) $z\mapsto\frac{az+b}{cz+d}$ corresponds to matrix multiplication; a Mobius transformation with infinitely many fixed points must be the identity.
+> **Basic Knowledge: Mobius Transformations**
+>
+> The composition of Mobius transformations (fractional linear transformations) $z\mapsto\frac{az+b}{cz+d}$ corresponds to matrix multiplication; a Mobius transformation with infinitely many fixed points must be the identity.
 
-> **Basic Knowledge: Orbit Decomposition of a Group Action**<br>Let $G$ act on $X$. Then $X$ is the disjoint union of its orbits; for $x\in X$, the orbit $O_x$ has size $\left|G\right|/\left|F_x\right|$, where $F_x$ is the stabilizer (isotropy subgroup) of $x$. In particular, when $\mathbb Z_2$ acts on $X$, every orbit of a non-fixed point has exactly $2$ elements, so $\left|X\right|\equiv\left|\mathrm{Fix}\right|\pmod 2$, where $\mathrm{Fix}$ is the set of fixed points.
+> **Basic Knowledge: Orbit Decomposition of a Group Action**
+>
+> Let $G$ act on $X$. Then $X$ is the disjoint union of its orbits; for $x\in X$, the orbit $O_x$ has size $\left|G\right|/\left|F_x\right|$, where $F_x$ is the stabilizer (isotropy subgroup) of $x$. In particular, when $\mathbb Z_2$ acts on $X$, every orbit of a non-fixed point has exactly $2$ elements, so $\left|X\right|\equiv\left|\mathrm{Fix}\right|\pmod 2$, where $\mathrm{Fix}$ is the set of fixed points.
 
-> **Definition 1.9.1 (Group Action)**<br>Let $G$ be a group and $X$ a nonempty set. If a map $f:G\times X\to X$ satisfies $f\left(e,x\right)=x$ and $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, then $f$ is said to determine an action of $G$ on $X$, written $f\left(g,x\right)=gx$.
+> **Definition 1.9.1 (Group Action)**
+>
+> Let $G$ be a group and $X$ a nonempty set. If a map $f:G\times X\to X$ satisfies $f\left(e,x\right)=x$ and $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, then $f$ is said to determine an action of $G$ on $X$, written $f\left(g,x\right)=gx$.
 
-> **Definition 1.9.7 (Transitive and Effective Actions)**<br>If for any $x,y\in X$ there exists $g\in G$ with $gx=y$, the action of $G$ on $X$ is called transitive and $X$ is called a homogeneous space of $G$. If $gx=x$ for all $x\in X$ implies $g=e$, the action is called effective. If $gx=x$ for all $g\in G$ and $x\in X$, the action is called trivial.
+> **Definition 1.9.7 (Transitive and Effective Actions)**
+>
+> If for any $x,y\in X$ there exists $g\in G$ with $gx=y$, the action of $G$ on $X$ is called transitive and $X$ is called a homogeneous space of $G$. If $gx=x$ for all $x\in X$ implies $g=e$, the action is called effective. If $gx=x$ for all $g\in G$ and $x\in X$, the action is called trivial.
 
-> **Definition 1.9.9 (Orbits and Stabilizers)**<br>Let $G$ act on $X$ and $x\in X$. The set $O_x=\left\{gx\mid g\in G\right\}$ is called the orbit of $x$. The set $F_x=\left\{g\in G\mid gx=x\right\}$ is called the stabilizer (isotropy subgroup) of $x$.
+> **Definition 1.9.9 (Orbits and Stabilizers)**
+>
+> Let $G$ act on $X$ and $x\in X$. The set $O_x=\left\{gx\mid g\in G\right\}$ is called the orbit of $x$. The set $F_x=\left\{g\in G\mid gx=x\right\}$ is called the stabilizer (isotropy subgroup) of $x$.
 
-> **Corollary 1.9.15 (Orbit-Stabilizer Theorem)**<br>Let a group $G$ act on $X$ and $x\in X$. Then $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; hence $\left|O_x\right|\mid\left|G\right|$.
+> **Corollary 1.9.15 (Orbit-Stabilizer Theorem)**
+>
+> Let a group $G$ act on $X$ and $x\in X$. Then $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; hence $\left|O_x\right|\mid\left|G\right|$.
 
 ---
 

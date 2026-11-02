@@ -1,26 +1,48 @@
 # week8
 
-> **基础知识: 群到置换矩阵的忠实表示**<br>设 $G$ 是 $n$ 阶群. 由凯莱定理, 左平移给出单同态 $G\to S_G\cong S_n$; 再经置换矩阵嵌入, $G$ 同构于 $\mathrm{GL}\left(n,\mathbb C\right)$ 的一个子群, 故可把 $G$ 看作 $V=\mathbb C^{n}$ 上的线性变换群.
+> **基础知识: 群到置换矩阵的忠实表示**
+>
+> 设 $G$ 是 $n$ 阶群. 由凯莱定理, 左平移给出单同态 $G\to S_G\cong S_n$; 再经置换矩阵嵌入, $G$ 同构于 $\mathrm{GL}\left(n,\mathbb C\right)$ 的一个子群, 故可把 $G$ 看作 $V=\mathbb C^{n}$ 上的线性变换群.
 
-> **基础知识: 可解性在同构下保持**<br>若两个群同构, 则它们同为可解群或同不可解群; 幂零性同理.
+> **基础知识: 可解性在同构下保持**
+>
+> 若两个群同构, 则它们同为可解群或同不可解群; 幂零性同理.
 
-> **基础知识: 特征标与公共特征子空间**<br>设 $N\triangleleft G$ 作用在 $V$ 上, $v\in V$ 是 $N$ 的公共特征向量, 特征为 $\lambda$, 即 $\sigma v=\lambda\left(\sigma\right)v$ ($\forall\sigma\in N$). 则对任意 $\tau\in G$, $\tau v\in V_{\lambda^{\tau}}$, 其中 $\lambda^{\tau}\left(\sigma\right)=\lambda\left(\tau^{-1}\sigma\tau\right)$, $V_{\lambda}=\left\{v\mid\sigma v=\lambda\left(\sigma\right)v,\ \forall\sigma\in N\right\}$.
+> **基础知识: 特征标与公共特征子空间**
+>
+> 设 $N\triangleleft G$ 作用在 $V$ 上, $v\in V$ 是 $N$ 的公共特征向量, 特征为 $\lambda$, 即 $\sigma v=\lambda\left(\sigma\right)v$ ($\forall\sigma\in N$). 则对任意 $\tau\in G$, $\tau v\in V_{\lambda^{\tau}}$, 其中 $\lambda^{\tau}\left(\sigma\right)=\lambda\left(\tau^{-1}\sigma\tau\right)$, $V_{\lambda}=\left\{v\mid\sigma v=\lambda\left(\sigma\right)v,\ \forall\sigma\in N\right\}$.
 
-> **基础知识: 交换线性变换族的公共特征向量**<br>复数域 $\mathbb C$ 上的一组可交换的线性变换 (即一个 阿贝尔群的线性表示) 可同时对角化, 特别地存在公共特征向量.
+> **基础知识: 交换线性变换族的公共特征向量**
+>
+> 复数域 $\mathbb C$ 上的一组可交换的线性变换 (即一个 阿贝尔群的线性表示) 可同时对角化, 特别地存在公共特征向量.
 
-> **基础知识: 幂零矩阵与有限阶元**<br>设 $M$ 是 $n$ 阶严格上三角矩阵, 则 $M$ 是幂零矩阵, 即存在 $r$ 使 $M^{r}=0$. 若 $A=I+M$ 有有限阶, 即存在正整数 $k$ 使 $A^{k}=I$, 则 $M=0$, 从而 $A=I$: 因 $\left(I+M\right)^{k}-I=kM+\binom{k}{2}M^{2}+\cdots+M^{k}=0$, 设 $s$ 为使 $M^{s}\ne0$ 的最小正整数, 则左端最低次项为 $kM^{s}$, 而 $k\ne0$ 在 $\mathbb C$ 中可逆, 故 $M^{s}=0$, 矛盾.
+> **基础知识: 幂零矩阵与有限阶元**
+>
+> 设 $M$ 是 $n$ 阶严格上三角矩阵, 则 $M$ 是幂零矩阵, 即存在 $r$ 使 $M^{r}=0$. 若 $A=I+M$ 有有限阶, 即存在正整数 $k$ 使 $A^{k}=I$, 则 $M=0$, 从而 $A=I$: 因 $\left(I+M\right)^{k}-I=kM+\binom{k}{2}M^{2}+\cdots+M^{k}=0$, 设 $s$ 为使 $M^{s}\ne0$ 的最小正整数, 则左端最低次项为 $kM^{s}$, 而 $k\ne0$ 在 $\mathbb C$ 中可逆, 故 $M^{s}=0$, 矛盾.
 
-> **基础知识: 有限群元素皆有有限阶**<br>对有限群 $G$ 中任一元素 $g$, 存在正整数 $k$ 使 $g^{k}=e$, 即 $g$ 的阶有限.
+> **基础知识: 有限群元素皆有有限阶**
+>
+> 对有限群 $G$ 中任一元素 $g$, 存在正整数 $k$ 使 $g^{k}=e$, 即 $g$ 的阶有限.
 
-> **定理 1.4.10 (凯莱定理)**<br>任何群 $G$ 与对称群 $S_G$ 的一个子群同构; 事实上映射 $L:G\to L_G$, $a\mapsto L_a$ 是单同态.
+> **定理 1.4.10 (凯莱定理)**
+>
+> 任何群 $G$ 与对称群 $S_G$ 的一个子群同构; 事实上映射 $L:G\to L_G$, $a\mapsto L_a$ 是单同态.
 
-> **引理 1.8.3 (换位子性质)**<br>(1) $\left[g,h\right]^{-1}=\left[h,g\right]$, 且 $\left[g,h\right]=e$ 当且仅当 $gh=hg$. (2) 设 $\varphi:G\to H$ 为群同态, 则 $\varphi\left(\left[g,h\right]\right)=\left[\varphi\left(g\right),\varphi\left(h\right)\right]$; 特别地, 若 $\varphi\in\mathrm{Aut}\left(G\right)$, 则 $\varphi\left(\left[g,h\right]\right)=\left[\varphi\left(g\right),\varphi\left(h\right)\right]$.
+> **引理 1.8.3 (换位子性质)**
+>
+> (1) $\left[g,h\right]^{-1}=\left[h,g\right]$, 且 $\left[g,h\right]=e$ 当且仅当 $gh=hg$. (2) 设 $\varphi:G\to H$ 为群同态, 则 $\varphi\left(\left[g,h\right]\right)=\left[\varphi\left(g\right),\varphi\left(h\right)\right]$; 特别地, 若 $\varphi\in\mathrm{Aut}\left(G\right)$, 则 $\varphi\left(\left[g,h\right]\right)=\left[\varphi\left(g\right),\varphi\left(h\right)\right]$.
 
-> **引理 1.8.5**<br>设 $N\triangleleft G$, 则 $G/N$ 是 阿贝尔群当且仅当 $\left[G,G\right]\subseteq N$. 特别地, $G/\left[G,G\right]$ 为 阿贝尔群.
+> **引理 1.8.5**
+>
+> 设 $N\triangleleft G$, 则 $G/N$ 是 阿贝尔群当且仅当 $\left[G,G\right]\subseteq N$. 特别地, $G/\left[G,G\right]$ 为 阿贝尔群.
 
-> **定义 1.8.7 (可解群与幂零群)**<br>在群 $G$ 中归纳定义导出列 $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. 若存在 $t$ 使得 $G^{\left(t\right)}=\left\{e\right\}$, 则称 $G$ 为可解群. 归纳定义降中心列 $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$, 若存在 $t$ 使得 $G^{t}=\left\{e\right\}$, 则称 $G$ 为幂零群.
+> **定义 1.8.7 (可解群与幂零群)**
+>
+> 在群 $G$ 中归纳定义导出列 $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. 若存在 $t$ 使得 $G^{\left(t\right)}=\left\{e\right\}$, 则称 $G$ 为可解群. 归纳定义降中心列 $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$, 若存在 $t$ 使得 $G^{t}=\left\{e\right\}$, 则称 $G$ 为幂零群.
 
-> **引理 1.8.8 (可解群的遗传性)**<br>可解群的子群,商群都是可解群; 反之, 设 $N\trianglelefteq G$, 且 $N$ 与 $G/N$ 都可解, 则 $G$ 可解.
+> **引理 1.8.8 (可解群的遗传性)**
+>
+> 可解群的子群,商群都是可解群; 反之, 设 $N\trianglelefteq G$, 且 $N$ 与 $G/N$ 都可解, 则 $G$ 可解.
 
 ---
 

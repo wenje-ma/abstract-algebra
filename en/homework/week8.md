@@ -1,26 +1,48 @@
 # week8
 
-> **Basic Knowledge: Faithful Representations via Permutation Matrices**<br>Let $G$ be a group of order $n$. By Cayley's theorem, left translation gives a monomorphism $G\to S_G\cong S_n$; embedding through permutation matrices, $G$ is isomorphic to a subgroup of $\mathrm{GL}\left(n,\mathbb C\right)$, so we may regard $G$ as a group of linear transformations of $V=\mathbb C^{n}$.
+> **Basic Knowledge: Faithful Representations via Permutation Matrices**
+>
+> Let $G$ be a group of order $n$. By Cayley's theorem, left translation gives a monomorphism $G\to S_G\cong S_n$; embedding through permutation matrices, $G$ is isomorphic to a subgroup of $\mathrm{GL}\left(n,\mathbb C\right)$, so we may regard $G$ as a group of linear transformations of $V=\mathbb C^{n}$.
 
-> **Basic Knowledge: Solvability Is Preserved under Isomorphism**<br>If two groups are isomorphic, then they are solvable or non-solvable simultaneously; the same holds for nilpotency.
+> **Basic Knowledge: Solvability Is Preserved under Isomorphism**
+>
+> If two groups are isomorphic, then they are solvable or non-solvable simultaneously; the same holds for nilpotency.
 
-> **Basic Knowledge: Characters and Common Eigenspaces**<br>Let $N\triangleleft G$ act on $V$, and let $v\in V$ be a common eigenvector of $N$ with character $\lambda$, i.e. $\sigma v=\lambda\left(\sigma\right)v$ for all $\sigma\in N$. Then for any $\tau\in G$, $\tau v\in V_{\lambda^{\tau}}$, where $\lambda^{\tau}\left(\sigma\right)=\lambda\left(\tau^{-1}\sigma\tau\right)$ and $V_{\lambda}=\left\{v\mid\sigma v=\lambda\left(\sigma\right)v,\ \forall\sigma\in N\right\}$.
+> **Basic Knowledge: Characters and Common Eigenspaces**
+>
+> Let $N\triangleleft G$ act on $V$, and let $v\in V$ be a common eigenvector of $N$ with character $\lambda$, i.e. $\sigma v=\lambda\left(\sigma\right)v$ for all $\sigma\in N$. Then for any $\tau\in G$, $\tau v\in V_{\lambda^{\tau}}$, where $\lambda^{\tau}\left(\sigma\right)=\lambda\left(\tau^{-1}\sigma\tau\right)$ and $V_{\lambda}=\left\{v\mid\sigma v=\lambda\left(\sigma\right)v,\ \forall\sigma\in N\right\}$.
 
-> **Basic Knowledge: Common Eigenvectors of Commuting Families of Linear Transformations**<br>A family of commuting linear transformations over $\mathbb C$ (i.e. a linear representation of an Abelian group) can be simultaneously diagonalized; in particular it has a common eigenvector.
+> **Basic Knowledge: Common Eigenvectors of Commuting Families of Linear Transformations**
+>
+> A family of commuting linear transformations over $\mathbb C$ (i.e. a linear representation of an Abelian group) can be simultaneously diagonalized; in particular it has a common eigenvector.
 
-> **Basic Knowledge: Nilpotent Matrices and Elements of Finite Order**<br>If $M$ is a strictly upper triangular $n\times n$ matrix, then $M$ is nilpotent, i.e. there exists $r$ with $M^{r}=0$. If $A=I+M$ has finite order, i.e. there exists a positive integer $k$ with $A^{k}=I$, then $M=0$ and hence $A=I$: since $\left(I+M\right)^{k}-I=kM+\binom{k}{2}M^{2}+\cdots+M^{k}=0$, let $s$ be the smallest positive integer with $M^{s}\ne0$; the lowest-degree term on the left is $kM^{s}$, and since $k\ne0$ is invertible in $\mathbb C$, we get $M^{s}=0$, a contradiction.
+> **Basic Knowledge: Nilpotent Matrices and Elements of Finite Order**
+>
+> If $M$ is a strictly upper triangular $n\times n$ matrix, then $M$ is nilpotent, i.e. there exists $r$ with $M^{r}=0$. If $A=I+M$ has finite order, i.e. there exists a positive integer $k$ with $A^{k}=I$, then $M=0$ and hence $A=I$: since $\left(I+M\right)^{k}-I=kM+\binom{k}{2}M^{2}+\cdots+M^{k}=0$, let $s$ be the smallest positive integer with $M^{s}\ne0$; the lowest-degree term on the left is $kM^{s}$, and since $k\ne0$ is invertible in $\mathbb C$, we get $M^{s}=0$, a contradiction.
 
-> **Basic Knowledge: Elements of a Finite Group Have Finite Order**<br>For any element $g$ of a finite group $G$, there exists a positive integer $k$ with $g^{k}=e$, i.e. $g$ has finite order.
+> **Basic Knowledge: Elements of a Finite Group Have Finite Order**
+>
+> For any element $g$ of a finite group $G$, there exists a positive integer $k$ with $g^{k}=e$, i.e. $g$ has finite order.
 
-> **Theorem 1.4.10 (Cayley's Theorem)**<br>Every group $G$ is isomorphic to a subgroup of the symmetric group $S_G$; in fact the map $L:G\to L_G$, $a\mapsto L_a$ is a monomorphism.
+> **Theorem 1.4.10 (Cayley's Theorem)**
+>
+> Every group $G$ is isomorphic to a subgroup of the symmetric group $S_G$; in fact the map $L:G\to L_G$, $a\mapsto L_a$ is a monomorphism.
 
-> **Lemma 1.8.3 (Properties of Commutators)**<br>(1) $\left[g,h\right]^{-1}=\left[h,g\right]$, and $\left[g,h\right]=e$ if and only if $gh=hg$. (2) If $\varphi:G\to H$ is a group homomorphism, then $\varphi\left(\left[g,h\right]\right)=\left[\varphi\left(g\right),\varphi\left(h\right)\right]$; in particular, if $\varphi\in\mathrm{Aut}\left(G\right)$, then $\varphi\left(\left[g,h\right]\right)=\left[\varphi\left(g\right),\varphi\left(h\right)\right]$.
+> **Lemma 1.8.3 (Properties of Commutators)**
+>
+> (1) $\left[g,h\right]^{-1}=\left[h,g\right]$, and $\left[g,h\right]=e$ if and only if $gh=hg$. (2) If $\varphi:G\to H$ is a group homomorphism, then $\varphi\left(\left[g,h\right]\right)=\left[\varphi\left(g\right),\varphi\left(h\right)\right]$; in particular, if $\varphi\in\mathrm{Aut}\left(G\right)$, then $\varphi\left(\left[g,h\right]\right)=\left[\varphi\left(g\right),\varphi\left(h\right)\right]$.
 
-> **Lemma 1.8.5**<br>Let $N\triangleleft G$. Then $G/N$ is an Abelian group if and only if $\left[G,G\right]\subseteq N$. In particular, $G/\left[G,G\right]$ is an Abelian group.
+> **Lemma 1.8.5**
+>
+> Let $N\triangleleft G$. Then $G/N$ is an Abelian group if and only if $\left[G,G\right]\subseteq N$. In particular, $G/\left[G,G\right]$ is an Abelian group.
 
-> **Definition 1.8.7 (Solvable and Nilpotent Groups)**<br>In a group $G$, define inductively the derived series $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. If there exists $t$ with $G^{\left(t\right)}=\left\{e\right\}$, then $G$ is called solvable. Define inductively the lower central series $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$; if there exists $t$ with $G^{t}=\left\{e\right\}$, then $G$ is called nilpotent.
+> **Definition 1.8.7 (Solvable and Nilpotent Groups)**
+>
+> In a group $G$, define inductively the derived series $G^{\left(0\right)}=G$, $G^{\left(k+1\right)}=\left[G^{\left(k\right)},G^{\left(k\right)}\right]$. If there exists $t$ with $G^{\left(t\right)}=\left\{e\right\}$, then $G$ is called solvable. Define inductively the lower central series $G^{1}=G$, $G^{k+1}=\left[G,G^{k}\right]$; if there exists $t$ with $G^{t}=\left\{e\right\}$, then $G$ is called nilpotent.
 
-> **Lemma 1.8.8 (Heredity of Solvability)**<br>Subgroups and quotient groups of a solvable group are solvable; conversely, if $N\trianglelefteq G$ and both $N$ and $G/N$ are solvable, then $G$ is solvable.
+> **Lemma 1.8.8 (Heredity of Solvability)**
+>
+> Subgroups and quotient groups of a solvable group are solvable; conversely, if $N\trianglelefteq G$ and both $N$ and $G/N$ are solvable, then $G$ is solvable.
 
 ---
 

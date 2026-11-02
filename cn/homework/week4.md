@@ -1,26 +1,48 @@
 # week4
 
-> **基础知识: 反同态与反同构**<br>若映射 $f:G\to G'$ 满足 $f\left(ab\right)=f\left(b\right)f\left(a\right)$, $\forall a,b\in G$, 则称 $f$ 为反同态; 若反同态是双射, 则称 $f$ 为反同构.
+> **基础知识: 反同态与反同构**
+>
+> 若映射 $f:G\to G'$ 满足 $f\left(ab\right)=f\left(b\right)f\left(a\right)$, $\forall a,b\in G$, 则称 $f$ 为反同态; 若反同态是双射, 则称 $f$ 为反同构.
 
-> **基础知识: 对称群与双射变换**<br>非空集合 $X$ 上所有双射 (置换) 的全体 $S_X$ 在变换的复合下构成群, 称为 $X$ 的对称群; $G$ 上的左平移 $L_a$ 与右平移 $R_a$ 都是 $G$ 上的双射, 因 $L_{a^{-1}}$, $R_{a^{-1}}$ 分别是它们的逆.
+> **基础知识: 对称群与双射变换**
+>
+> 非空集合 $X$ 上所有双射 (置换) 的全体 $S_X$ 在变换的复合下构成群, 称为 $X$ 的对称群; $G$ 上的左平移 $L_a$ 与右平移 $R_a$ 都是 $G$ 上的双射, 因 $L_{a^{-1}}$, $R_{a^{-1}}$ 分别是它们的逆.
 
-> **基础知识: 三角函数的和角公式**<br>对任意 $x,y\in\mathbb R$, $\cos\left(x+y\right)=\cos x\cos y-\sin x\sin y$, $\sin\left(x+y\right)=\sin x\cos y+\cos x\sin y$.
+> **基础知识: 三角函数的和角公式**
+>
+> 对任意 $x,y\in\mathbb R$, $\cos\left(x+y\right)=\cos x\cos y-\sin x\sin y$, $\sin\left(x+y\right)=\sin x\cos y+\cos x\sin y$.
 
-> **基础知识: 复指数与单位圆**<br>对任意 $x\in\mathbb R$, $\cos x+\sqrt{-1}\sin x\in\mathbb C^{*}$, 且 $\cos x+\sqrt{-1}\sin x=1$ 当且仅当 $x=2k\pi$ ($k\in\mathbb Z$).
+> **基础知识: 复指数与单位圆**
+>
+> 对任意 $x\in\mathbb R$, $\cos x+\sqrt{-1}\sin x\in\mathbb C^{*}$, 且 $\cos x+\sqrt{-1}\sin x=1$ 当且仅当 $x=2k\pi$ ($k\in\mathbb Z$).
 
-> **基础知识: 自同构群同态的性质**<br>设 $\varphi:G\to\mathrm{Aut}\left(H\right)$ 是群同态, 则对任意 $a,b\in G$ 有 $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$, $\varphi\left(a^{-1}\right)=\varphi\left(a\right)^{-1}$, $\varphi\left(e_G\right)=\mathrm{id}_H$; 特别地 $\varphi\left(a^{-1}\right)\varphi\left(a\right)=\mathrm{id}_H$.
+> **基础知识: 自同构群同态的性质**
+>
+> 设 $\varphi:G\to\mathrm{Aut}\left(H\right)$ 是群同态, 则对任意 $a,b\in G$ 有 $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$, $\varphi\left(a^{-1}\right)=\varphi\left(a\right)^{-1}$, $\varphi\left(e_G\right)=\mathrm{id}_H$; 特别地 $\varphi\left(a^{-1}\right)\varphi\left(a\right)=\mathrm{id}_H$.
 
-> **定理 1.2.2 (子群判别法)**<br>设 $H$ 是群 $G$ 的非空子集, 则下列条件等价: (1) $H$ 是 $G$ 的子群; (2) 对任意 $a,b\in H$, 有 $ab\in H$, $a^{-1}\in H$; (3) 对任意 $a,b\in H$, 有 $ab^{-1}\in H$.
+> **定理 1.2.2 (子群判别法)**
+>
+> 设 $H$ 是群 $G$ 的非空子集, 则下列条件等价: (1) $H$ 是 $G$ 的子群; (2) 对任意 $a,b\in H$, 有 $ab\in H$, $a^{-1}\in H$; (3) 对任意 $a,b\in H$, 有 $ab^{-1}\in H$.
 
-> **定义 1.3.1 (正规子群)**<br>设 $H$ 是群 $G$ 的子群. 如果对任意 $g\in G$, $h\in H$, 有 $ghg^{-1}\in H$, 则称 $H$ 为 $G$ 的一个正规子群, 记为 $H\triangleleft G$.
+> **定义 1.3.1 (正规子群)**
+>
+> 设 $H$ 是群 $G$ 的子群. 如果对任意 $g\in G$, $h\in H$, 有 $ghg^{-1}\in H$, 则称 $H$ 为 $G$ 的一个正规子群, 记为 $H\triangleleft G$.
 
-> **定义 1.4.1 (群同态与同构)**<br>设 $G$ 和 $G'$ 是两个群, 如果映射 $f:G\to G'$ 满足 $f\left(ab\right)=f\left(a\right)f\left(b\right)$, $\forall a,b\in G$, 则称 $f$ 是 $G$ 到 $G'$ 的群同态. 若同态 $f$ 是双射, 则称 $f$ 是 $G$ 到 $G'$ 的群同构, 此时称群 $G$ 与 $G'$ 是同构的, 记为 $G\cong G'$.
+> **定义 1.4.1 (群同态与同构)**
+>
+> 设 $G$ 和 $G'$ 是两个群, 如果映射 $f:G\to G'$ 满足 $f\left(ab\right)=f\left(a\right)f\left(b\right)$, $\forall a,b\in G$, 则称 $f$ 是 $G$ 到 $G'$ 的群同态. 若同态 $f$ 是双射, 则称 $f$ 是 $G$ 到 $G'$ 的群同构, 此时称群 $G$ 与 $G'$ 是同构的, 记为 $G\cong G'$.
 
-> **定义 1.4.9 (左平移与右平移)**<br>对任意 $a\in G$, 定义 $G$ 上的变换 $L_a,R_a$ 为 $L_a\left(g\right)=ag$, $R_a\left(g\right)=ga$, $\forall g\in G$; 分别称 $L_a,R_a$ 为由 $a$ 决定的左平移变换和右平移变换.
+> **定义 1.4.9 (左平移与右平移)**
+>
+> 对任意 $a\in G$, 定义 $G$ 上的变换 $L_a,R_a$ 为 $L_a\left(g\right)=ag$, $R_a\left(g\right)=ga$, $\forall g\in G$; 分别称 $L_a,R_a$ 为由 $a$ 决定的左平移变换和右平移变换.
 
-> **定义 1.4.11 (同态的核与像)**<br>设 $f:G\to G'$ 是群同态, 则集合 $\ker f=\left\{a\in G\mid f\left(a\right)=e'\right\}$ 称为同态 $f$ 的核, 集合 $\mathrm{Im}\left(f\right)=f\left(G\right)=\left\{f\left(a\right)\mid a\in G\right\}$ 称为同态 $f$ 的像.
+> **定义 1.4.11 (同态的核与像)**
+>
+> 设 $f:G\to G'$ 是群同态, 则集合 $\ker f=\left\{a\in G\mid f\left(a\right)=e'\right\}$ 称为同态 $f$ 的核, 集合 $\mathrm{Im}\left(f\right)=f\left(G\right)=\left\{f\left(a\right)\mid a\in G\right\}$ 称为同态 $f$ 的像.
 
-> **定理 1.4.19 (群的同态基本定理)**<br>设 $f:G\to G'$ 是群的满同态, 则 $G/\ker f\cong G'$.
+> **定理 1.4.19 (群的同态基本定理)**
+>
+> 设 $f:G\to G'$ 是群的满同态, 则 $G/\ker f\cong G'$.
 
 ---
 

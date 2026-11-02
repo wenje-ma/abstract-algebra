@@ -1,16 +1,28 @@
 # week15
 
-> **基础知识: 整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数**<br>对 $x+y\sqrt{-5}\in\mathbb Z\left[\sqrt{-5}\right]$ 定义 $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$. 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$; $N$ 取非负整数值, 且不存在范数为 $3$ 的元素 (方程 $x^{2}+5y^{2}=3$ 无整数解).
+> **基础知识: 整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数**
+>
+> 对 $x+y\sqrt{-5}\in\mathbb Z\left[\sqrt{-5}\right]$ 定义 $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$. 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$; $N$ 取非负整数值, 且不存在范数为 $3$ 的元素 (方程 $x^{2}+5y^{2}=3$ 无整数解).
 
-> **基础知识: 代数整数环 $\mathbb Z\left[\omega\right]$ 的范数**<br>设 $\omega=\frac{1+\sqrt{-3}}{2}$, 则 $\omega^{2}=\omega-1$, $\overline\omega=\frac{1-\sqrt{-3}}{2}$, 且 $\mathbb Z\left[\omega\right]=\left\{m+n\omega\mid m,n\in\mathbb Z\right\}$. 定义 $N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2}$, 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$.
+> **基础知识: 代数整数环 $\mathbb Z\left[\omega\right]$ 的范数**
+>
+> 设 $\omega=\frac{1+\sqrt{-3}}{2}$, 则 $\omega^{2}=\omega-1$, $\overline\omega=\frac{1-\sqrt{-3}}{2}$, 且 $\mathbb Z\left[\omega\right]=\left\{m+n\omega\mid m,n\in\mathbb Z\right\}$. 定义 $N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2}$, 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$.
 
-> **基础知识: 数域上多项式环是唯一分解整环**<br>数域上的一元及多元多项式环是唯一分解整环; 在 $\mathbb Q\left[x,y\right]$ 中, $x,y$ 是互不相伴的不可约元素 (其单位恰为非零常数).
+> **基础知识: 数域上多项式环是唯一分解整环**
+>
+> 数域上的一元及多元多项式环是唯一分解整环; 在 $\mathbb Q\left[x,y\right]$ 中, $x,y$ 是互不相伴的不可约元素 (其单位恰为非零常数).
 
-> **定义 2.5.2 (相伴)**<br>设 $R$ 为整环, $a,b\in R$. 如果存在 $R$ 中单位 $u$ 使得 $a=ub$, 则称 $a$ 与 $b$ 相伴, 记为 $a\sim b$.
+> **定义 2.5.2 (相伴)**
+>
+> 设 $R$ 为整环, $a,b\in R$. 如果存在 $R$ 中单位 $u$ 使得 $a=ub$, 则称 $a$ 与 $b$ 相伴, 记为 $a\sim b$.
 
-> **定义 2.5.6 (不可约元素)**<br>设 $R$ 为整环, $\alpha\in R^{*}\setminus U$ (即非零且非单位). 如果 $\alpha$ 不存在非平凡因子, 则称 $\alpha$ 为不可约元素, 否则称 $\alpha$ 为可约元素.
+> **定义 2.5.6 (不可约元素)**
+>
+> 设 $R$ 为整环, $\alpha\in R^{*}\setminus U$ (即非零且非单位). 如果 $\alpha$ 不存在非平凡因子, 则称 $\alpha$ 为不可约元素, 否则称 $\alpha$ 为可约元素.
 
-> **定义 2.5.14 (公因子与最大公因子)**<br>设 $R$ 为整环, $a_1,a_2,\cdots,a_n\in R$. 若 $c\in R$ 同时整除所有 $a_i$, 则称 $c$ 为它们的公因子; 若公因子 $d$ 能被任一公因子整除, 则称 $d$ 为最大公因子. 若 $a,b$ 的最大公因子是单位, 则称 $a,b$ 互素.
+> **定义 2.5.14 (公因子与最大公因子)**
+>
+> 设 $R$ 为整环, $a_1,a_2,\cdots,a_n\in R$. 若 $c\in R$ 同时整除所有 $a_i$, 则称 $c$ 为它们的公因子; 若公因子 $d$ 能被任一公因子整除, 则称 $d$ 为最大公因子. 若 $a,b$ 的最大公因子是单位, 则称 $a,b$ 互素.
 
 ---
 

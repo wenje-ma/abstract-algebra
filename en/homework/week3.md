@@ -1,18 +1,32 @@
 # week3
 
-> **Basic Knowledge: Conjugacy Relation and Conjugacy Classes**<br>Two elements $a,b$ of a group $G$ are called conjugate if there exists $g\in G$ such that $b=gag^{-1}$. The set $C_a=\left\{gag^{-1}\mid g\in G\right\}$ of all elements conjugate to $a$ is called the conjugacy class of $a$.
+> **Basic Knowledge: Conjugacy Relation and Conjugacy Classes**
+>
+> Two elements $a,b$ of a group $G$ are called conjugate if there exists $g\in G$ such that $b=gag^{-1}$. The set $C_a=\left\{gag^{-1}\mid g\in G\right\}$ of all elements conjugate to $a$ is called the conjugacy class of $a$.
 
-> **Basic Knowledge: Equivalence Classes Form a Partition**<br>Let $R$ be an equivalence relation on a set $A$. Then distinct equivalence classes in $A$ are pairwise disjoint, and their union is $A$; that is, the equivalence classes form a partition of $A$.
+> **Basic Knowledge: Equivalence Classes Form a Partition**
+>
+> Let $R$ be an equivalence relation on a set $A$. Then distinct equivalence classes in $A$ are pairwise disjoint, and their union is $A$; that is, the equivalence classes form a partition of $A$.
 
-> **Basic Knowledge: Product of Subgroups**<br>Let $H,K$ be subgroups of a group $G$, and write $HK=\left\{hk\mid h\in H,k\in K\right\}$, $KH=\left\{kh\mid k\in K,h\in H\right\}$. Then $HK<G$ if and only if $HK=KH$: if $HK<G$, then for $hk\in HK$, $\left(hk\right)^{-1}=k^{-1}h^{-1}\in HK$, i.e. $KH\subseteq HK$; and $\left(k^{-1}h^{-1}\right)^{-1}=hk\in HK$ shows $HK\subseteq KH$, so $HK=KH$. Conversely, if $HK=KH$, then for any $hk,h'k'\in HK$, since $kh'\in KH=HK$, write $kh'=h''k''$; then $\left(hk\right)\left(h'k'\right)=h\left(kh'\right)k'=h\left(h''k''\right)k'=\left(hh''\right)\left(k''k'\right)\in HK$; and $\left(hk\right)^{-1}=k^{-1}h^{-1}\in KH=HK$, so by **Theorem 1.2.2 (Subgroup Criterion)** (condition (2)), $HK<G$.
+> **Basic Knowledge: Product of Subgroups**
+>
+> Let $H,K$ be subgroups of a group $G$, and write $HK=\left\{hk\mid h\in H,k\in K\right\}$, $KH=\left\{kh\mid k\in K,h\in H\right\}$. Then $HK<G$ if and only if $HK=KH$: if $HK<G$, then for $hk\in HK$, $\left(hk\right)^{-1}=k^{-1}h^{-1}\in HK$, i.e. $KH\subseteq HK$; and $\left(k^{-1}h^{-1}\right)^{-1}=hk\in HK$ shows $HK\subseteq KH$, so $HK=KH$. Conversely, if $HK=KH$, then for any $hk,h'k'\in HK$, since $kh'\in KH=HK$, write $kh'=h''k''$; then $\left(hk\right)\left(h'k'\right)=h\left(kh'\right)k'=h\left(h''k''\right)k'=\left(hh''\right)\left(k''k'\right)\in HK$; and $\left(hk\right)^{-1}=k^{-1}h^{-1}\in KH=HK$, so by **Theorem 1.2.2 (Subgroup Criterion)** (condition (2)), $HK<G$.
 
-> **Basic Knowledge: Conjugacy Maps Preserve Order**<br>For $g\in G$, the map $\varphi_g:H\to gHg^{-1}$, $h\mapsto ghg^{-1}$ is a bijection, so $\left|gHg^{-1}\right|=\left|H\right|$.
+> **Basic Knowledge: Conjugacy Maps Preserve Order**
+>
+> For $g\in G$, the map $\varphi_g:H\to gHg^{-1}$, $h\mapsto ghg^{-1}$ is a bijection, so $\left|gHg^{-1}\right|=\left|H\right|$.
 
-> **Theorem 1.2.2 (Subgroup Criterion)**<br>Let $H$ be a nonempty subset of a group $G$. Then the following conditions are equivalent: (1) $H$ is a subgroup of $G$; (2) for all $a,b\in H$, $ab\in H$ and $a^{-1}\in H$; (3) for all $a,b\in H$, $ab^{-1}\in H$.
+> **Theorem 1.2.2 (Subgroup Criterion)**
+>
+> Let $H$ be a nonempty subset of a group $G$. Then the following conditions are equivalent: (1) $H$ is a subgroup of $G$; (2) for all $a,b\in H$, $ab\in H$ and $a^{-1}\in H$; (3) for all $a,b\in H$, $ab^{-1}\in H$.
 
-> **Definition 1.3.1 (Normal Subgroup)**<br>Let $H$ be a subgroup of a group $G$. If $ghg^{-1}\in H$ for all $g\in G$ and $h\in H$, then $H$ is called a normal subgroup of $G$, denoted $H\triangleleft G$.
+> **Definition 1.3.1 (Normal Subgroup)**
+>
+> Let $H$ be a subgroup of a group $G$. If $ghg^{-1}\in H$ for all $g\in G$ and $h\in H$, then $H$ is called a normal subgroup of $G$, denoted $H\triangleleft G$.
 
-> **Theorem 1.3.5 (Equivalent Conditions for Normal Subgroups)**<br>Let $G$ be a group and $H<G$. Then the following conditions are equivalent: (1) $H\triangleleft G$; (2) $gH=Hg$ for all $g\in G$; (3) $aH\cdot bH=abH$ for all $a,b\in G$, where $aH\cdot bH=\left\{ah_1bh_2\mid h_1,h_2\in H\right\}$.
+> **Theorem 1.3.5 (Equivalent Conditions for Normal Subgroups)**
+>
+> Let $G$ be a group and $H<G$. Then the following conditions are equivalent: (1) $H\triangleleft G$; (2) $gH=Hg$ for all $g\in G$; (3) $aH\cdot bH=abH$ for all $a,b\in G$, where $aH\cdot bH=\left\{ah_1bh_2\mid h_1,h_2\in H\right\}$.
 
 ---
 

@@ -1,24 +1,44 @@
 # week10
 
-> **Basic Knowledge: Solvability of Prime-Order and Cyclic Groups**<br>A group of prime order is cyclic, hence solvable; every cyclic (abelian) group is solvable.
+> **Basic Knowledge: Solvability of Prime-Order and Cyclic Groups**
+>
+> A group of prime order is cyclic, hence solvable; every cyclic (abelian) group is solvable.
 
-> **Basic Knowledge: Order of Elements in a Direct Product**<br>If $a\in G$ and $b\in H$, then the order of $\left(a,b\right)$ in the direct product $G\times H$ is $\mathrm{lcm}\left(\mathrm{ord}\,a,\mathrm{ord}\,b\right)$. Hence when $\left(m,n\right)=1$, $\mathbb Z_m\times\mathbb Z_n$ is a cyclic group of order $mn$, i.e. $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$.
+> **Basic Knowledge: Order of Elements in a Direct Product**
+>
+> If $a\in G$ and $b\in H$, then the order of $\left(a,b\right)$ in the direct product $G\times H$ is $\mathrm{lcm}\left(\mathrm{ord}\,a,\mathrm{ord}\,b\right)$. Hence when $\left(m,n\right)=1$, $\mathbb Z_m\times\mathbb Z_n$ is a cyclic group of order $mn$, i.e. $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$.
 
-> **Basic Knowledge: Index-Two Subgroups and the Alternating Subgroup of $S_n$**<br>A subgroup of index $2$ is normal; the index-two subgroup of $S_n$ is unique, namely the alternating group $A_n$. In particular, the index-two subgroup of $S_5$ is $A_5$.
+> **Basic Knowledge: Index-Two Subgroups and the Alternating Subgroup of $S_n$**
+>
+> A subgroup of index $2$ is normal; the index-two subgroup of $S_n$ is unique, namely the alternating group $A_n$. In particular, the index-two subgroup of $S_5$ is $A_5$.
 
-> **Basic Knowledge: Groups of Order Four Are Abelian**<br>A group of order $4$ is either a cyclic group of order $4$ or the Klein four-group, both of which are abelian.
+> **Basic Knowledge: Groups of Order Four Are Abelian**
+>
+> A group of order $4$ is either a cyclic group of order $4$ or the Klein four-group, both of which are abelian.
 
-> **Basic Knowledge: Sylow Subgroups and Element Counting**<br>Conjugation preserves order, so a conjugate subgroup has the same order as the original; two distinct subgroups of prime order intersect in $\left\{e\right\}$; a Sylow $p$-subgroup of order $p^{k}$ contains $p^{k}-1$ non-identity elements of $p$-power order. For a finite simple group, the number of Sylow $p$-subgroups cannot be $1$ (otherwise that Sylow subgroup would be normal).
+> **Basic Knowledge: Sylow Subgroups and Element Counting**
+>
+> Conjugation preserves order, so a conjugate subgroup has the same order as the original; two distinct subgroups of prime order intersect in $\left\{e\right\}$; a Sylow $p$-subgroup of order $p^{k}$ contains $p^{k}-1$ non-identity elements of $p$-power order. For a finite simple group, the number of Sylow $p$-subgroups cannot be $1$ (otherwise that Sylow subgroup would be normal).
 
-> **Basic Knowledge: Actions on Coset Spaces**<br>If $H<G$, then $G$ acts on the left coset space $G/H$ by left translation, giving a group homomorphism $G\to S_{\left[G:H\right]}$; its kernel $\bigcap_{g\in G}gHg^{-1}$ is a normal subgroup of $G$.
+> **Basic Knowledge: Actions on Coset Spaces**
+>
+> If $H<G$, then $G$ acts on the left coset space $G/H$ by left translation, giving a group homomorphism $G\to S_{\left[G:H\right]}$; its kernel $\bigcap_{g\in G}gHg^{-1}$ is a normal subgroup of $G$.
 
-> **Lemma 1.7.7**<br>Let $A,B$ be subgroups of $G$ with $G=AB$ and $A\cap B=\left\{e\right\}$. Then $A$ and $B$ are both normal subgroups of $G$ if and only if $ab=ba$ for all $a\in A$ and $b\in B$.
+> **Lemma 1.7.7**
+>
+> Let $A,B$ be subgroups of $G$ with $G=AB$ and $A\cap B=\left\{e\right\}$. Then $A$ and $B$ are both normal subgroups of $G$ if and only if $ab=ba$ for all $a\in A$ and $b\in B$.
 
-> **Lemma 1.8.8 (Heredity of Solvability)**<br>Subgroups and quotient groups of a solvable group are solvable; conversely, if $N\trianglelefteq G$ and both $N$ and $G/N$ are solvable, then $G$ is solvable.
+> **Lemma 1.8.8 (Heredity of Solvability)**
+>
+> Subgroups and quotient groups of a solvable group are solvable; conversely, if $N\trianglelefteq G$ and both $N$ and $G/N$ are solvable, then $G$ is solvable.
 
-> **Theorem 1.10.8 (Sylow's Second Theorem)**<br>Let $P$ be a Sylow $p$-subgroup of $G$, and let $H$ be a subgroup of $G$ of order $p^{k}$, $k\le l$ (where $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$). Then there exists $g\in G$ with $H\subseteq gPg^{-1}$. In particular, the Sylow $p$-subgroups of $G$ are conjugate to one another.
+> **Theorem 1.10.8 (Sylow's Second Theorem)**
+>
+> Let $P$ be a Sylow $p$-subgroup of $G$, and let $H$ be a subgroup of $G$ of order $p^{k}$, $k\le l$ (where $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$). Then there exists $g\in G$ with $H\subseteq gPg^{-1}$. In particular, the Sylow $p$-subgroups of $G$ are conjugate to one another.
 
-> **Theorem 1.10.10 (Sylow's Third Theorem)**<br>Let $n_{p}$ be the number of Sylow $p$-subgroups of $G$. Then (1) a Sylow $p$-subgroup $P$ of $G$ satisfies $P\triangleleft G$ if and only if $n_{p}=1$; (2) $n_{p}\mid m$ and $n_{p}\equiv1\pmod p$, where $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$.
+> **Theorem 1.10.10 (Sylow's Third Theorem)**
+>
+> Let $n_{p}$ be the number of Sylow $p$-subgroups of $G$. Then (1) a Sylow $p$-subgroup $P$ of $G$ satisfies $P\triangleleft G$ if and only if $n_{p}=1$; (2) $n_{p}\mid m$ and $n_{p}\equiv1\pmod p$, where $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$.
 
 ---
 

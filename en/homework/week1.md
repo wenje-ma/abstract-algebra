@@ -1,30 +1,56 @@
 # week1
 
-> **Basic Knowledge: Basic Properties of Addition on Nonnegative Integers**<br>$\mathbb N=\left\{0,1,2,\cdots\right\}$ is closed under the usual addition, which is associative and commutative; $0\in\mathbb N$ is the additive identity, i.e. $0+a=a+0=a$ for every $a\in\mathbb N$; addition satisfies the cancellation law, i.e. $a+c=b+c$ implies $a=b$; and $1+a\ge1>0$ for every $a\in\mathbb N$, so no $b\in\mathbb N$ satisfies $1+b=0$.
+> **Basic Knowledge: Basic Properties of Addition on Nonnegative Integers**
+>
+> $\mathbb N=\left\{0,1,2,\cdots\right\}$ is closed under the usual addition, which is associative and commutative; $0\in\mathbb N$ is the additive identity, i.e. $0+a=a+0=a$ for every $a\in\mathbb N$; addition satisfies the cancellation law, i.e. $a+c=b+c$ implies $a=b$; and $1+a\ge1>0$ for every $a\in\mathbb N$, so no $b\in\mathbb N$ satisfies $1+b=0$.
 
-> **Basic Knowledge: Power Set, Indicator Functions and Symmetric Difference**<br>Let $X$ be a nonempty set and $P\left(X\right)$ the set of all subsets of $X$ (the power set). For $A\subseteq X$, the indicator function $\chi_A:X\to\left\{0,1\right\}$ is defined by $\chi_A\left(x\right)=1$ if and only if $x\in A$; the map $A\mapsto\chi_A$ is injective. The symmetric difference is defined by $A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)$, and $\chi_{A\triangle B}=\chi_A+\chi_B\pmod2$.
+> **Basic Knowledge: Power Set, Indicator Functions and Symmetric Difference**
+>
+> Let $X$ be a nonempty set and $P\left(X\right)$ the set of all subsets of $X$ (the power set). For $A\subseteq X$, the indicator function $\chi_A:X\to\left\{0,1\right\}$ is defined by $\chi_A\left(x\right)=1$ if and only if $x\in A$; the map $A\mapsto\chi_A$ is injective. The symmetric difference is defined by $A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)$, and $\chi_{A\triangle B}=\chi_A+\chi_B\pmod2$.
 
-> **Basic Knowledge: Addition Modulo 2**<br>Addition modulo 2 on $\left\{0,1\right\}$ is associative and commutative, $0$ is its identity, and every element is self-inverse, i.e. $x+x=0\pmod2$ for every $x\in\left\{0,1\right\}$.
+> **Basic Knowledge: Addition Modulo 2**
+>
+> Addition modulo 2 on $\left\{0,1\right\}$ is associative and commutative, $0$ is its identity, and every element is self-inverse, i.e. $x+x=0\pmod2$ for every $x\in\left\{0,1\right\}$.
 
-> **Basic Knowledge: Invertibility of Square Matrices and Determinants**<br>For $A\in\mathbb R^{n\times n}$, $A$ is invertible if and only if $\left|A\right|\ne0$; the determinant is multiplicative, i.e. $\left|AC\right|=\left|A\right|\left|C\right|$; if $A$ is invertible, then $A^{-1}$ is also invertible and $\left|A^{-1}\right|\ne0$.
+> **Basic Knowledge: Invertibility of Square Matrices and Determinants**
+>
+> For $A\in\mathbb R^{n\times n}$, $A$ is invertible if and only if $\left|A\right|\ne0$; the determinant is multiplicative, i.e. $\left|AC\right|=\left|A\right|\left|C\right|$; if $A$ is invertible, then $A^{-1}$ is also invertible and $\left|A^{-1}\right|\ne0$.
 
-> **Basic Knowledge: Associativity of Matrix Multiplication**<br>Matrix multiplication is associative, i.e. $\left(AB\right)C=A\left(BC\right)$ for all $A,B,C\in\mathbb R^{n\times n}$.
+> **Basic Knowledge: Associativity of Matrix Multiplication**
+>
+> Matrix multiplication is associative, i.e. $\left(AB\right)C=A\left(BC\right)$ for all $A,B,C\in\mathbb R^{n\times n}$.
 
-> **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**<br>A number-theoretic function is a map $\mathbb N^*\to\mathbb C$. For $f,g\in S$, the Dirichlet convolution is defined by $\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$; define $e\in S$ by $e\left(1\right)=1$ and $e\left(n\right)=0$ for $n>1$. Finite sums may be rearranged, i.e. $\sum_{d\mid n}\sum_{e\mid\frac{n}{d}}f\left(d\right)g\left(e\right)h\left(\frac{n}{de}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$.
+> **Basic Knowledge: Number-Theoretic Functions and Dirichlet Convolution**
+>
+> A number-theoretic function is a map $\mathbb N^*\to\mathbb C$. For $f,g\in S$, the Dirichlet convolution is defined by $\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$; define $e\in S$ by $e\left(1\right)=1$ and $e\left(n\right)=0$ for $n>1$. Finite sums may be rearranged, i.e. $\sum_{d\mid n}\sum_{e\mid\frac{n}{d}}f\left(d\right)g\left(e\right)h\left(\frac{n}{de}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$.
 
-> **Basic Knowledge: Unique Decomposition of Coprime Factors**<br>If $\left(m,n\right)=1$, then $d\mid mn$ decomposes uniquely as $d=d_1d_2$, where $d_1\mid m$, $d_2\mid n$, and in this case $\left(d_1,d_2\right)=1$ and $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$.
+> **Basic Knowledge: Unique Decomposition of Coprime Factors**
+>
+> If $\left(m,n\right)=1$, then $d\mid mn$ decomposes uniquely as $d=d_1d_2$, where $d_1\mid m$, $d_2\mid n$, and in this case $\left(d_1,d_2\right)=1$ and $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$.
 
-> **Basic Knowledge: Multiplicative and Completely Multiplicative Functions**<br>A number-theoretic function $f$ is called multiplicative if $f\left(mn\right)=f\left(m\right)f\left(n\right)$ whenever $\left(m,n\right)=1$; $f$ is called completely multiplicative if $f\left(mn\right)=f\left(m\right)f\left(n\right)$ for all $m,n\in\mathbb N^*$.
+> **Basic Knowledge: Multiplicative and Completely Multiplicative Functions**
+>
+> A number-theoretic function $f$ is called multiplicative if $f\left(mn\right)=f\left(m\right)f\left(n\right)$ whenever $\left(m,n\right)=1$; $f$ is called completely multiplicative if $f\left(mn\right)=f\left(m\right)f\left(n\right)$ for all $m,n\in\mathbb N^*$.
 
-> **Basic Knowledge: The Divisor Counting Function**<br>Let $\tau\left(n\right)=\sum_{d\mid n}1$ be the number of positive divisors of $n$; in particular, $\tau\left(2\right)=2$ and $\tau\left(4\right)=3$.
+> **Basic Knowledge: The Divisor Counting Function**
+>
+> Let $\tau\left(n\right)=\sum_{d\mid n}1$ be the number of positive divisors of $n$; in particular, $\tau\left(2\right)=2$ and $\tau\left(4\right)=3$.
 
-> **Definition 1.1.4 (Semigroup and Monoid)**<br>If a binary operation $*$ satisfying the associative law is defined on a nonempty set $S$, then $\left\{S;*\right\}$ is called a semigroup, and $a*b$ is abbreviated as $ab$. If there exists an element $e$ in the semigroup $S$ such that $ea=a$ (or $ae=a$) for every $a\in S$, then $e$ is called a left (right) identity of $S$; if $e$ is both a left and a right identity, then $e$ is called the identity of $S$, and a semigroup with an identity is called a monoid; if the operation in $S$ also satisfies the commutative law, then $S$ is called a commutative monoid.
+> **Definition 1.1.4 (Semigroup and Monoid)**
+>
+> If a binary operation $*$ satisfying the associative law is defined on a nonempty set $S$, then $\left\{S;*\right\}$ is called a semigroup, and $a*b$ is abbreviated as $ab$. If there exists an element $e$ in the semigroup $S$ such that $ea=a$ (or $ae=a$) for every $a\in S$, then $e$ is called a left (right) identity of $S$; if $e$ is both a left and a right identity, then $e$ is called the identity of $S$, and a semigroup with an identity is called a monoid; if the operation in $S$ also satisfies the commutative law, then $S$ is called a commutative monoid.
 
-> **Example 1.1.7 (Transformation Monoid)**<br>Let $M\left(X\right)$ be the set of all transformations of a nonempty set $X$. Then $M\left(X\right)$ forms a monoid under the multiplication of transformations (i.e. composition), whose identity is the identity transformation $\mathrm{id}_X$ of $X$.
+> **Example 1.1.7 (Transformation Monoid)**
+>
+> Let $M\left(X\right)$ be the set of all transformations of a nonempty set $X$. Then $M\left(X\right)$ forms a monoid under the multiplication of transformations (i.e. composition), whose identity is the identity transformation $\mathrm{id}_X$ of $X$.
 
-> **Definition 1.1.10 (Inverse Element)**<br>Let $S$ be a monoid, $e$ its identity, and $a\in S$. If there exists $b\in S$ such that $ba=e$ ($ab=e$), then $b$ is called a left (right) inverse of $a$. If $b$ is both a left and a right inverse of $a$, i.e. $ba=ab=e$, then $b$ is called an inverse of $a$, and in this case $a$ is called an invertible element.
+> **Definition 1.1.10 (Inverse Element)**
+>
+> Let $S$ be a monoid, $e$ its identity, and $a\in S$. If there exists $b\in S$ such that $ba=e$ ($ab=e$), then $b$ is called a left (right) inverse of $a$. If $b$ is both a left and a right inverse of $a$, i.e. $ba=ab=e$, then $b$ is called an inverse of $a$, and in this case $a$ is called an invertible element.
 
-> **Definition 1.1.14 (Group and Abelian Group)**<br>If every element of a monoid $G$ is invertible, then $G$ is called a group. If the operation in the group also satisfies the commutative law, then $G$ is called a commutative group, or an abelian group.
+> **Definition 1.1.14 (Group and Abelian Group)**
+>
+> If every element of a monoid $G$ is invertible, then $G$ is called a group. If the operation in the group also satisfies the commutative law, then $G$ is called a commutative group, or an abelian group.
 
 ---
 

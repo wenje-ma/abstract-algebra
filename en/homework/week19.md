@@ -1,10 +1,16 @@
 # week19
 
-> **Theorem 3.1.10 (Criterion for a Direct Sum)**<br>Let $M_1,\cdots,M_s$ be submodules of an $R$-module $M$. Then $M=M_1\oplus\cdots\oplus M_s$ iff: (1) $M=M_1+\cdots+M_s$; (2) for every $2\le j\le s$, $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
+> **Theorem 3.1.10 (Criterion for a Direct Sum)**
+>
+> Let $M_1,\cdots,M_s$ be submodules of an $R$-module $M$. Then $M=M_1\oplus\cdots\oplus M_s$ iff: (1) $M=M_1+\cdots+M_s$; (2) for every $2\le j\le s$, $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
 
-> **Proposition 3.1.16 (Kernel and Image of a Homomorphism)**<br>The kernel $\ker\phi$ of a module homomorphism $\phi:M_1\to M_2$ is a submodule of $M_1$, and the image $\operatorname{Im}\phi$ is a submodule of $M_2$.
+> **Proposition 3.1.16 (Kernel and Image of a Homomorphism)**
+>
+> The kernel $\ker\phi$ of a module homomorphism $\phi:M_1\to M_2$ is a submodule of $M_1$, and the image $\operatorname{Im}\phi$ is a submodule of $M_2$.
 
-> **Theorem 3.1.17 (Fundamental Homomorphism Theorem for Modules)**<br>If $\phi:M_1\to M_2$ is a surjective module homomorphism, then the quotient module $M_1/\ker\phi$ is isomorphic to $M_2$; moreover, if $N_1$ is a submodule of $M_1$ containing $\ker\phi$, then $M_1/N_1\cong M_2/\phi\left(N_1\right)$.
+> **Theorem 3.1.17 (Fundamental Homomorphism Theorem for Modules)**
+>
+> If $\phi:M_1\to M_2$ is a surjective module homomorphism, then the quotient module $M_1/\ker\phi$ is isomorphic to $M_2$; moreover, if $N_1$ is a submodule of $M_1$ containing $\ker\phi$, then $M_1/N_1\cong M_2/\phi\left(N_1\right)$.
 
 ---
 

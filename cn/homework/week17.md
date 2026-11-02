@@ -1,12 +1,20 @@
 # week17
 
-> **基础知识: 代数整数环的范数**<br>设 $d>0$ 为无平方因子整数, $\omega=\frac{1+\sqrt{-d}}{2}$ 满足 $\omega^{2}-\omega+\frac{1+d}{4}=0$ 当 $d\equiv3\pmod4$. 对 $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, 定义范数 $N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+ab+b^{2}\omega\overline\omega$, 它是乘性函数且 $N\left(\alpha\right)=0$ 当且仅当 $\alpha=0$. 对 $\alpha\in\mathbb Z\left[\omega\right]$, $N\left(\alpha\right)=\left|\alpha\right|^{2}$ (复数模长的平方).
+> **基础知识: 代数整数环的范数**
+>
+> 设 $d>0$ 为无平方因子整数, $\omega=\frac{1+\sqrt{-d}}{2}$ 满足 $\omega^{2}-\omega+\frac{1+d}{4}=0$ 当 $d\equiv3\pmod4$. 对 $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, 定义范数 $N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+ab+b^{2}\omega\overline\omega$, 它是乘性函数且 $N\left(\alpha\right)=0$ 当且仅当 $\alpha=0$. 对 $\alpha\in\mathbb Z\left[\omega\right]$, $N\left(\alpha\right)=\left|\alpha\right|^{2}$ (复数模长的平方).
 
-> **基础知识: 二次型的界**<br>设 $\left|u\right|,\left|v\right|\le\frac12$, 则二次型 $u^{2}+uv+v^{2}\le\frac34$, 且 $u^{2}+uv+v^{2}$ 作为关于 $u$ 的二次型 (在 $\left|u\right|\le\frac12$ 内) 在 $u=-\frac v2$ 处取最小值 $\frac34v^{2}$.
+> **基础知识: 二次型的界**
+>
+> 设 $\left|u\right|,\left|v\right|\le\frac12$, 则二次型 $u^{2}+uv+v^{2}\le\frac34$, 且 $u^{2}+uv+v^{2}$ 作为关于 $u$ 的二次型 (在 $\left|u\right|\le\frac12$ 内) 在 $u=-\frac v2$ 处取最小值 $\frac34v^{2}$.
 
-> **定义 2.7.1 (主理想整环)**<br>一个交换幺环称为主理想环, 若它的每个理想都是主理想; 若一个主理想环还是整环, 则称此环为主理想整环.
+> **定义 2.7.1 (主理想整环)**
+>
+> 一个交换幺环称为主理想环, 若它的每个理想都是主理想; 若一个主理想环还是整环, 则称此环为主理想整环.
 
-> **定义 2.7.9 (欧几里得环)**<br>设 $R$ 为一个整环. 如果存在从 $R^{*}$ 到非负整数集的一个映射 $\delta$, 使得对任何 $a,b\in R$, $b\ne0$, 存在 $q,r\in R$ 使得 $a=qb+r$, 其中 $r=0$ 或 $\delta\left(r\right)<\delta\left(b\right)$, 则称 $\left(R,\delta\right)$ 为欧几里得环, 简称 $R$ 为欧几里得环.
+> **定义 2.7.9 (欧几里得环)**
+>
+> 设 $R$ 为一个整环. 如果存在从 $R^{*}$ 到非负整数集的一个映射 $\delta$, 使得对任何 $a,b\in R$, $b\ne0$, 存在 $q,r\in R$ 使得 $a=qb+r$, 其中 $r=0$ 或 $\delta\left(r\right)<\delta\left(b\right)$, 则称 $\left(R,\delta\right)$ 为欧几里得环, 简称 $R$ 为欧几里得环.
 
 ---
 
