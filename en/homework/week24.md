@@ -1,9 +1,5 @@
 # week24
 
-> **Basic Knowledge: Universal Property of the Field of Fractions**
-> 
-> Let $R$ be an integral domain and $E$ its field of fractions. Given any automorphism $\sigma$ of $R$, define $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$; then $\overline\sigma$ is well-defined and is an automorphism of $E$.
-
 > **Lemma 4.1.9 (Field Homomorphisms Are Injective)**
 > 
 > A field homomorphism $\varphi:F\to E$ is always injective. In particular, a field automorphism preserves the operations and $1$, and hence fixes every element of the prime field ($\mathbb Q$ or $\mathbb F_p$).
@@ -72,7 +68,7 @@ Let $E$ be the field of fractions of an integral domain $R$. For any automorphis
 
 ### Solution 4.1-11
 
-By **Basic Knowledge: Universal Property of the Field of Fractions**, verify in three steps.
+By Universal Property of the Field of Fractions, verify in three steps.
 
 **Well-definedness.** Suppose $ab^{-1}=cd^{-1}$ with $a,b,c,d\in R$, $b,d\ne0$. Then $ad=bc$. Since $\sigma$ is a ring homomorphism, $\sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right)$, so $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, i.e. $\overline\sigma\left(ab^{-1}\right)=\overline\sigma\left(cd^{-1}\right)$. The definition is independent of the choice of representatives.
 

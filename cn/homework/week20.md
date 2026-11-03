@@ -1,9 +1,5 @@
 # week20
 
-> **基础知识: 行列式与可逆性**
-> 
-> 交换幺环 $R$ 上方阵 $A$ 可逆当且仅当其行列式 $\det A$ 为 $R$ 中的单位.
-
 > **定理 3.3.6 (自由模基的刻画)**
 > 
 > 设 $M$ 为幺环 $R$ 上的模, $u_1,\cdots,u_m$ 为 $M$ 中元素, 则 $M$ 为自由模且 $u_1,\cdots,u_m$ 为一组基当且仅当: (1) $u_1,\cdots,u_m$ 是 $M$ 的一组生成元; (2) $u_1,\cdots,u_m$ 线性无关.
@@ -36,7 +32,7 @@ $R/\left(a\right)=0$ 等价于 $\left(a\right)=R$, 即 $1\in\left(a\right)$, 亦
 
 因 $\phi$ 是满同态, 对每个基向量 $e_j\in R^m$, 存在 $x_j\in R^m$ 使 $\phi\left(x_j\right)=e_j$. 将 $x_1,\cdots,x_m$ 作为列向量排成矩阵 $B$, 则 $AB=I_m$, 其中 $I_m$ 为 $m$ 阶单位矩阵. 两边取行列式, 由行列式乘性, $\det\left(A\right)\det\left(B\right)=\det\left(I_m\right)=1$.
 
-故 $\det A$ 是 $R$ 中的单位. 由**基础知识: 行列式与可逆性**, $A$ 可逆, 即存在 $A^{-1}$ 使 $AA^{-1}=I_m$. 因而 $\phi$ 既是满同态又是单同态 ($\ker\phi=0$), 是双射, 故 $\phi$ 为模同构. $\blacksquare$
+故 $\det A$ 是 $R$ 中的单位. 由行列式与可逆性, $A$ 可逆, 即存在 $A^{-1}$ 使 $AA^{-1}=I_m$. 因而 $\phi$ 既是满同态又是单同态 ($\ker\phi=0$), 是双射, 故 $\phi$ 为模同构. $\blacksquare$
 
 ---
 

@@ -1,13 +1,5 @@
 # week23
 
-> **基础知识: 逆转置矩阵**
-> 
-> 设 $P$ 为 $n$ 阶反转矩阵, 即 $P_{i,n+1-i}=1$, 其余元素为 $0$, 则 $P$ 为对称矩阵, $P^2=I_n$, 且 $P^{-1}=P$. 若 $N$ 为 $n$ 阶幂零移位矩阵 (即 $N_{i,i+1}=1$, 其余为 $0$), 则 $PNP=N^\top$, 从而 $PN$ 为对称矩阵.
-
-> **基础知识: 幂零核与约当块计数**
-> 
-> 设 $A$ 为 $n$ 阶方阵, $a$ 为 $A$ 的一个特征值. 记 $\nu_k=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, 并约定 $\nu_0=0$. 则 $A$ 的以 $a$ 为特征值, 阶数不小于 $s$ 的约当块个数为 $\nu_s-\nu_{s-1}$. 因而序列 $\left\{\nu_k\right\}_{k\ge0}$ 完全决定了 $a$ 处约当块的大小与个数.
-
 > **定理 3.6.3 (约当标准形)**
 > 
 > 设 $F$ 为特征为零的代数闭域, $V$ 为 $F$ 上 $n$ 维线性空间, $A$ 为 $V$ 上的线性变换, 则存在 $V$ 的一组基使得 $A$ 在该基下的矩阵为准对角矩阵 $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, 其中每个 $J_i$ 都是约当块. 两个 $F$ 上 $n\times n$ 矩阵相似当且仅当它们具有相同的约当标准形.
@@ -22,7 +14,7 @@
 
 设 $J$ 为 $F$ 上 $n$ 阶约当块, 其特征值为 $\lambda\in F$, 则 $J=\lambda I_n+N$, 其中 $N$ 为 $n$ 阶幂零移位矩阵.
 
-设 $P$ 为 $n$ 阶反转矩阵. 由**基础知识: 逆转置矩阵**, $P$ 对称, $P^2=I_n$, 且 $PN$ 对称. 令 $A=PJ=\lambda P+PN$. 因 $P$ 与 $PN$ 均对称, 故 $A$ 为对称矩阵. 又 $P^2=I_n$, 故 $P^{-1}=P$, 于是 $J=P^{-1}A=PA$.
+设 $P$ 为 $n$ 阶反转矩阵. 由逆转置矩阵, $P$ 对称, $P^2=I_n$, 且 $PN$ 对称. 令 $A=PJ=\lambda P+PN$. 因 $P$ 与 $PN$ 均对称, 故 $A$ 为对称矩阵. 又 $P^2=I_n$, 故 $P^{-1}=P$, 于是 $J=P^{-1}A=PA$.
 
 其中 $P$ 与 $A$ 均为 $F$ 上对称矩阵. 故任一约当块均可写成两个对称矩阵的乘积. $\blacksquare$
 
@@ -70,6 +62,6 @@
 
 **充分性.** 设对任何 $a\in F$ 及 $k\in\mathbb N$, 两矩阵相应幂的秩相同. 由**定理 3.6.3 (约当标准形)**, $A,B$ 均相似于其约当标准形, 只需证明二者约当标准形相同.
 
-对任一 $a\in F$, 记 $\nu_k\left(A\right)=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, 并约定 $\nu_0\left(A\right)=0$. 由题设, $\nu_k\left(A\right)=\nu_k\left(B\right)$ 对所有 $k$ 成立. 由**基础知识: 幂零核与约当块计数**, $A$ 的以 $a$ 为特征值, 阶数不小于 $s$ 的约当块个数为 $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, $B$ 同理. 故二者在 $a$ 处的约当块大小与个数完全一致.
+对任一 $a\in F$, 记 $\nu_k\left(A\right)=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, 并约定 $\nu_0\left(A\right)=0$. 由题设, $\nu_k\left(A\right)=\nu_k\left(B\right)$ 对所有 $k$ 成立. 由幂零核与约当块计数, $A$ 的以 $a$ 为特征值, 阶数不小于 $s$ 的约当块个数为 $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, $B$ 同理. 故二者在 $a$ 处的约当块大小与个数完全一致.
 
 由于 $F$ 是代数闭域, $A,B$ 的全部特征值均在 $F$ 中, 上述结论对每个特征值 $a$ 成立. 因而 $A$ 与 $B$ 的约当标准形完全相同, 从而 $A$ 与 $B$ 相似. $\blacksquare$

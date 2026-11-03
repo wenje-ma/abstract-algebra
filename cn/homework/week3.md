@@ -1,21 +1,5 @@
 # week3
 
-> **基础知识: 共轭关系与共轭类**
-> 
-> 称群 $G$ 中的两个元素 $a,b$ 是共轭的, 如果存在 $g\in G$ 使得 $b=gag^{-1}$. 与 $a$ 共轭的所有元素的全体 $C_a=\left\{gag^{-1}\mid g\in G\right\}$ 称为 $a$ 的共轭类.
-
-> **基础知识: 等价关系的等价类构成划分**
-> 
-> 设 $R$ 是集合 $A$ 上的等价关系, 则 $A$ 中互不相同的等价类两两不交, 且它们的并等于 $A$, 即等价类全体构成 $A$ 的一个划分.
-
-> **基础知识: 子群乘积**
-> 
-> 设 $H,K$ 是群 $G$ 的子群, 记 $HK=\left\{hk\mid h\in H,k\in K\right\}$, $KH=\left\{kh\mid k\in K,h\in H\right\}$. 则 $HK< G$ 当且仅当 $HK=KH$: 若 $HK< G$, 则对 $hk\in HK$, $\left(hk\right)^{-1}=k^{-1}h^{-1}\in HK$, 即 $KH\subseteq HK$; 又 $\left(k^{-1}h^{-1}\right)^{-1}=hk\in HK$ 说明 $HK\subseteq KH$, 故 $HK=KH$. 反之若 $HK=KH$, 对任意 $hk,h'k'\in HK$, 因 $kh'\in KH=HK$, 设 $kh'=h''k''$, 则 $\left(hk\right)\left(h'k'\right)=h\left(kh'\right)k'=h\left(h''k''\right)k'=\left(hh''\right)\left(k''k'\right)\in HK$; 且 $\left(hk\right)^{-1}=k^{-1}h^{-1}\in KH=HK$, 故由**定理 1.2.2 (子群判别法)** (条件 (2)), $HK< G$.
-
-> **基础知识: 共轭映射保持阶**
-> 
-> 对 $g\in G$, 映射 $\varphi_g:H\to gHg^{-1}$, $h\mapsto ghg^{-1}$ 是双射, 故 $\left|gHg^{-1}\right|=\left|H\right|$.
-
 > **定理 1.2.2 (子群判别法)**
 > 
 > 设 $H$ 是群 $G$ 的非空子集, 则下列条件等价: (1) $H$ 是 $G$ 的子群; (2) 对任意 $a,b\in H$, 有 $ab\in H$, $a^{-1}\in H$; (3) 对任意 $a,b\in H$, 有 $ab^{-1}\in H$.
@@ -50,7 +34,7 @@ $$
 
 故 $aRc$.
 
-综上, 共轭关系 $R$ 是等价关系. 由**基础知识: 等价关系的等价类构成划分**, $G$ 划分为互不相交的等价类之并. 而 $a$ 所在的等价类恰为 $a$ 的共轭类 $C_a$ (**基础知识: 共轭关系与共轭类**), 故共轭类构成 $G$ 的一个划分. $\blacksquare$
+综上, 共轭关系 $R$ 是等价关系. 由等价关系的等价类构成划分, $G$ 划分为互不相交的等价类之并. 而 $a$ 所在的等价类恰为 $a$ 的共轭类 $C_a$ (共轭关系与共轭类), 故共轭类构成 $G$ 的一个划分. $\blacksquare$
 
 ---
 
@@ -66,7 +50,7 @@ $$
 KH=\bigcup_{k\in K}kH=\bigcup_{k\in K}Hk=HK,
 $$
 
-即 $HK=KH$. 由**基础知识: 子群乘积**, $HK< G$. 同理, 若 $K\triangleleft G$, 由对称论证亦得 $HK< G$.
+即 $HK=KH$. 由子群乘积, $HK< G$. 同理, 若 $K\triangleleft G$, 由对称论证亦得 $HK< G$.
 
 **再证若 $H,K$ 均是正规子群, 则 $HK\triangleleft G$.** 由上一段, $HK< G$. 下证正规性. 对任意 $g\in G$ 与 $hk\in HK$, 有
 
@@ -94,7 +78,7 @@ $$
 
 由**定理 1.2.2 (子群判别法)** (条件 (3)), $gHg^{-1}< G$.
 
-**第二步: 求 $\left|gHg^{-1}\right|$.** 由**基础知识: 共轭映射保持阶**, 映射 $h\mapsto ghg^{-1}$ 是 $H$ 到 $gHg^{-1}$ 的双射, 故 $\left|gHg^{-1}\right|=\left|H\right|=m$.
+**第二步: 求 $\left|gHg^{-1}\right|$.** 由共轭映射保持阶, 映射 $h\mapsto ghg^{-1}$ 是 $H$ 到 $gHg^{-1}$ 的双射, 故 $\left|gHg^{-1}\right|=\left|H\right|=m$.
 
 **第三步: 由唯一性得 $gHg^{-1}=H$.** 因 $G$ 只有一个阶为 $m$ 的子群 $H$, 而 $gHg^{-1}$ 也是 $G$ 的阶为 $m$ 的子群, 故 $gHg^{-1}=H$.
 

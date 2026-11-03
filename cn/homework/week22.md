@@ -1,13 +1,5 @@
 # week22
 
-> **基础知识: 直积中元素的阶**
-> 
-> 设 $G=H_1\times H_2\times\cdots\times H_s$ 为有限交换群的直积, $g=\left(h_1,h_2,\cdots,h_s\right)$, 则 $o\left(g\right)=\mathrm{lcm}\left(o\left(h_1\right),o\left(h_2\right),\cdots,o\left(h_s\right)\right)$. 特别地, $o\left(g\right)\mid q$ 当且仅当 $o\left(h_i\right)\mid q$ 对每个 $i$ 成立.
-
-> **基础知识: 有理数乘法群的有限子群**
-> 
-> 乘法群 $\mathbb Q^*$ 中任一元素的阶有限当且仅当该元素为 $1$ 或 $-1$, 即 $\mathbb Q^*$ 的唯一有限子群为 $\left\{\pm1\right\}$. 事实上, 若 $r=p/q\in\mathbb Q^*$ (既约) 满足 $r^n=1$, 则 $p^n=q^n$, 故 $p=\pm q$, 即 $r=\pm1$.
-
 > **定理 3.5.2 (有限交换群的分类数)**
 > 
 > 设自然数 $n$ 有素因数分解 $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$, 其中 $p_1,p_2,\cdots,p_s$ 为互不相同的素数, $m_i> 0$, 则在同构意义下 $n$ 阶交换群的个数为 $\prod_{i=1}^s p\left(m_i\right)$, 其中 $p\left(m\right)$ 表示自然数 $m$ 的不同分划的个数.
@@ -46,7 +38,7 @@
 
 当 $l> e$ 时, $p^l$ 是 $p^e$ 的倍数, $p^l g=0$ 对一切 $g\in G$ 自动成立, 故该集合即 $G$ 本身, 其元素个数为 $p^e$.
 
-(2) 任取 $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. 由**基础知识: 直积中元素的阶**, $o\left(g\right)\mid q$ 当且仅当 $o\left(h_i\right)\mid q$ 对每个 $i$ 同时成立. 因而满足条件的 $g$ 恰为各分量分别取自对应集合 $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$ 的直积, 由乘法原理得
+(2) 任取 $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. 由直积中元素的阶, $o\left(g\right)\mid q$ 当且仅当 $o\left(h_i\right)\mid q$ 对每个 $i$ 同时成立. 因而满足条件的 $g$ 恰为各分量分别取自对应集合 $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$ 的直积, 由乘法原理得
 
 $$
 \left|\left\{g\in G\mid o\left(g\right)\mid q\right\}\right|=\prod_{i=1}^s\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|=m_1m_2\cdots m_s.
@@ -74,7 +66,7 @@ $$
 
 因 $8=2^3$, 指数 $3$ 的分划为 $3$, $2+1$, $1+1+1$, 共 $p\left(3\right)=3$ 种. 由**定理 3.5.2 (有限交换群的分类数)**, $8$ 阶交换群在同构意义下共有 $3$ 类, 分别为 $\mathbb Z_8$, $\mathbb Z_4\times\mathbb Z_2$, $\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.
 
-下面分别决定它们到 $\mathbb Q^*$ 的同态. 设 $\varphi:G\to\mathbb Q^*$ 为群同态. 因 $G$ 有限, $\varphi\left(G\right)$ 是 $\mathbb Q^*$ 的有限子群. 由**基础知识: 有理数乘法群的有限子群**, $\mathbb Q^*$ 的唯一有限子群为 $\left\{\pm1\right\}$, 故 $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$, 即每个生成元的像只能取 $1$ 或 $-1$.
+下面分别决定它们到 $\mathbb Q^*$ 的同态. 设 $\varphi:G\to\mathbb Q^*$ 为群同态. 因 $G$ 有限, $\varphi\left(G\right)$ 是 $\mathbb Q^*$ 的有限子群. 由有理数乘法群的有限子群, $\mathbb Q^*$ 的唯一有限子群为 $\left\{\pm1\right\}$, 故 $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$, 即每个生成元的像只能取 $1$ 或 $-1$.
 
 **情形一 $G=\mathbb Z_8$.** 设 $g$ 为 $G$ 的生成元, $o\left(g\right)=8$. 同态 $\varphi$ 由 $\varphi\left(g\right)\in\left\{\pm1\right\}$ 唯一确定, 且 $\varphi\left(g\right)^8=1$ 对 $\pm1$ 自动成立. 故共有 $2$ 个同态.
 

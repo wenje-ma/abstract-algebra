@@ -1,17 +1,5 @@
 # week18
 
-> **Basic Knowledge: Polynomial Division with Remainder**
-> 
-> Let $R$ be a commutative unital ring and $f\left(x\right),g\left(x\right)\in R\left[x\right]$, with the leading coefficient of $g\left(x\right)$ a unit in $R$. Then there exist unique $q\left(x\right),r\left(x\right)\in R\left[x\right]$ such that $f\left(x\right)=q\left(x\right)g\left(x\right)+r\left(x\right)$, where $r=0$ or $\deg r< \deg g$. In particular, when the divisor is a monic linear polynomial $x-a$, the remainder is a constant.
-
-> **Basic Knowledge: Unique Factorization Domain**
-> 
-> An integral domain $R$ is called a unique factorization domain if every nonzero nonunit element of $R$ factors as a finite product of irreducible elements, and the factorization is unique up to associates.
-
-> **Basic Knowledge: Formal Power Series Ring**
-> 
-> The formal power series ring $k\left[\!\left[t\right]\!\right]$ over a field $k$ consists of all $\sum_{n=0}^{\infty}a_nt^n$; its units are exactly the power series with nonzero constant term.
-
 ---
 
 ## 2.9-3
@@ -20,7 +8,7 @@ Let $R$ be an integral domain and $f\left(x\right)\in R\left[x\right]$. Then $a\
 
 ### Solution 2.9-3
 
-Divide $f\left(x\right)$ by the monic polynomial $x-a$; by **Basic Knowledge: Polynomial Division with Remainder**, there exist $q\left(x\right)\in R\left[x\right]$ and a constant $c\in R$ such that $f\left(x\right)=q\left(x\right)\left(x-a\right)+c$, where the remainder has degree less than $1$, hence is a constant. Substituting $x=a$, using that $a\in R$ evaluates elements of $R\left[x\right]$, gives $f\left(a\right)=q\left(a\right)\cdot0+c=c$.
+Divide $f\left(x\right)$ by the monic polynomial $x-a$; by Polynomial Division with Remainder, there exist $q\left(x\right)\in R\left[x\right]$ and a constant $c\in R$ such that $f\left(x\right)=q\left(x\right)\left(x-a\right)+c$, where the remainder has degree less than $1$, hence is a constant. Substituting $x=a$, using that $a\in R$ evaluates elements of $R\left[x\right]$, gives $f\left(a\right)=q\left(a\right)\cdot0+c=c$.
 
 Thus $a$ is a root of $f\left(x\right)$, i.e. $f\left(a\right)=0$, iff $c=0$, iff $f\left(x\right)=q\left(x\right)\left(x-a\right)$, i.e. $\left(x-a\right)\mid f\left(x\right)$. $\blacksquare$
 
@@ -48,10 +36,10 @@ Prove that the formal power series ring $\mathbb R\left[\!\left[t\right]\!\right
 
 ### Solution 2.9-11
 
-Set $R=\mathbb R\left[\!\left[t\right]\!\right]$. Take any nonzero power series $f\left(t\right)=\sum_{n=0}^{\infty}a_nt^n\in R$. Let $a_k$ be its first nonzero coefficient, i.e. $a_0=\cdots=a_{k-1}=0$, $a_k\ne0$; call $k$ the order of $f$, written $\operatorname{ord}\left(f\right)=k$. Then $f\left(t\right)=t^k\cdot\left(a_k+a_{k+1}t+\cdots\right)=t^k\,u\left(t\right)$, where $u\left(t\right)=a_k+a_{k+1}t+\cdots$ has nonzero constant term $a_k$. By **Basic Knowledge: Formal Power Series Ring**, $u\left(t\right)$ is a unit (a power series with nonzero constant term is invertible).
+Set $R=\mathbb R\left[\!\left[t\right]\!\right]$. Take any nonzero power series $f\left(t\right)=\sum_{n=0}^{\infty}a_nt^n\in R$. Let $a_k$ be its first nonzero coefficient, i.e. $a_0=\cdots=a_{k-1}=0$, $a_k\ne0$; call $k$ the order of $f$, written $\operatorname{ord}\left(f\right)=k$. Then $f\left(t\right)=t^k\cdot\left(a_k+a_{k+1}t+\cdots\right)=t^k\,u\left(t\right)$, where $u\left(t\right)=a_k+a_{k+1}t+\cdots$ has nonzero constant term $a_k$. By Formal Power Series Ring, $u\left(t\right)$ is a unit (a power series with nonzero constant term is invertible).
 
 First determine the irreducible elements of $R$. If $f$ is nonzero and a nonunit, then $k=\operatorname{ord}\left(f\right)\ge1$ and $f=t^ku$. If $k=1$, $f=t\,u$ with $u$ a unit, so $f$ is associate to $t$. And $t$ is irreducible: if $t=\alpha\beta$, then $1=\operatorname{ord}\left(t\right)=\operatorname{ord}\left(\alpha\right)+\operatorname{ord}\left(\beta\right)$, so one of $\operatorname{ord}\left(\alpha\right),\operatorname{ord}\left(\beta\right)$ is $0$ and the other $1$, i.e. one of them is a unit. Hence $t$ is irreducible.
 
 Thus any nonzero nonunit $f$ can be written as $f=t^k\,u$ with $u$ a unit, where $k=\operatorname{ord}\left(f\right)$ is uniquely determined by $f$. That is, $f$ factors uniquely up to associates as the $k$-th power of the irreducible $t$ times a unit. Also $t$ is prime: $t\mid fg\Rightarrow\operatorname{ord}\left(fg\right)\ge1\Rightarrow\operatorname{ord}\left(f\right)\ge1$ or $\operatorname{ord}\left(g\right)\ge1$, i.e. $t\mid f$ or $t\mid g$.
 
-By the definition in **Basic Knowledge: Unique Factorization Domain**, $R=\mathbb R\left[\!\left[t\right]\!\right]$ is a unique factorization domain. $\blacksquare$
+By the definition in Unique Factorization Domain, $R=\mathbb R\left[\!\left[t\right]\!\right]$ is a unique factorization domain. $\blacksquare$

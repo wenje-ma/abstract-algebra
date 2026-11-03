@@ -1,9 +1,5 @@
 # week20
 
-> **Basic Knowledge: Determinant and Invertibility**
-> 
-> A square matrix $A$ over a commutative unital ring $R$ is invertible if and only if its determinant $\det A$ is a unit in $R$.
-
 > **Theorem 3.3.6 (Characterization of a Basis of a Free Module)**
 > 
 > Let $M$ be a module over a unital ring $R$, and let $u_1,\cdots,u_m\in M$. Then $M$ is free with $u_1,\cdots,u_m$ as a basis iff: (1) $u_1,\cdots,u_m$ generate $M$; (2) $u_1,\cdots,u_m$ are linearly independent.
@@ -36,7 +32,7 @@ Take the standard basis $e_1,\cdots,e_m$ of $R^m$, and let $A\in R^{m\times m}$ 
 
 Since $\phi$ is surjective, for each basis vector $e_j\in R^m$ there exists $x_j\in R^m$ with $\phi\left(x_j\right)=e_j$. Arranging $x_1,\cdots,x_m$ as columns gives a matrix $B$ with $AB=I_m$, where $I_m$ is the $m\times m$ identity matrix. Taking determinants of both sides and using multiplicativity, $\det\left(A\right)\det\left(B\right)=\det\left(I_m\right)=1$.
 
-Hence $\det A$ is a unit in $R$. By **Basic Knowledge: Determinant and Invertibility**, $A$ is invertible, i.e. there exists $A^{-1}$ with $AA^{-1}=I_m$. Thus $\phi$ is both surjective and injective ($\ker\phi=0$), hence bijective, and $\phi$ is a module isomorphism. $\blacksquare$
+Hence $\det A$ is a unit in $R$. By Determinant and Invertibility, $A$ is invertible, i.e. there exists $A^{-1}$ with $AA^{-1}=I_m$. Thus $\phi$ is both surjective and injective ($\ker\phi=0$), hence bijective, and $\phi$ is a module isomorphism. $\blacksquare$
 
 ---
 

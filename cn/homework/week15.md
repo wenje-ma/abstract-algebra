@@ -1,17 +1,5 @@
 # week15
 
-> **基础知识: 整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数**
-> 
-> 对 $x+y\sqrt{-5}\in\mathbb Z\left[\sqrt{-5}\right]$ 定义 $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$. 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$; $N$ 取非负整数值, 且不存在范数为 $3$ 的元素 (方程 $x^{2}+5y^{2}=3$ 无整数解).
-
-> **基础知识: 代数整数环 $\mathbb Z\left[\omega\right]$ 的范数**
-> 
-> 设 $\omega=\frac{1+\sqrt{-3}}{2}$, 则 $\omega^{2}=\omega-1$, $\overline\omega=\frac{1-\sqrt{-3}}{2}$, 且 $\mathbb Z\left[\omega\right]=\left\{m+n\omega\mid m,n\in\mathbb Z\right\}$. 定义 $N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2}$, 则 $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$.
-
-> **基础知识: 数域上多项式环是唯一分解整环**
-> 
-> 数域上的一元及多元多项式环是唯一分解整环; 在 $\mathbb Q\left[x,y\right]$ 中, $x,y$ 是互不相伴的不可约元素 (其单位恰为非零常数).
-
 > **定义 2.5.2 (相伴)**
 > 
 > 设 $R$ 为整环, $a,b\in R$. 如果存在 $R$ 中单位 $u$ 使得 $a=ub$, 则称 $a$ 与 $b$ 相伴, 记为 $a\sim b$.
@@ -36,7 +24,7 @@
 
 ### 解答 2.5-8
 
-在 $R$ 上由**基础知识: 整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数** 定义范数 $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$, 则 $N$ 积性, $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$.
+在 $R$ 上由整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数 定义范数 $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$, 则 $N$ 积性, $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$.
 
 **第 (1) 部分.** 设 $\gamma=a+b\sqrt{-5}$, 则 $N\left(\gamma\right)=a^{2}+5b^{2}=9\ne1$, 故 $\gamma$ 非单位, 即 $\gamma\in R^{*}\setminus U$. 反设 $\gamma=\xi\eta$ 为非平凡分解 (即 $\xi,\eta$ 均非单位), 则
 
@@ -44,7 +32,7 @@ $$
 N\left(\xi\right)N\left(\eta\right)=N\left(\gamma\right)=9.
 $$
 
-由**基础知识: 整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数**, $N$ 取非负整数值, 且不存在范数为 $3$ 的元素. 故 $N\left(\xi\right),N\left(\eta\right)$ 只能取 $1$ 或 $9$: 若 $N\left(\xi\right)=1$ 则 $\xi$ 为单位, 若 $N\left(\xi\right)=9$ 则 $N\left(\eta\right)=1$ 从而 $\eta$ 为单位. 无论何种情形, $\gamma$ 的分解中必有一个因子为单位, 与 $\gamma=\xi\eta$ 为非平凡分解矛盾. 故 $\gamma$ 不存在非平凡因子, 由**定义 2.5.6 (不可约元素)**, $\gamma$ 为不可约元素.
+由整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数, $N$ 取非负整数值, 且不存在范数为 $3$ 的元素. 故 $N\left(\xi\right),N\left(\eta\right)$ 只能取 $1$ 或 $9$: 若 $N\left(\xi\right)=1$ 则 $\xi$ 为单位, 若 $N\left(\xi\right)=9$ 则 $N\left(\eta\right)=1$ 从而 $\eta$ 为单位. 无论何种情形, $\gamma$ 的分解中必有一个因子为单位, 与 $\gamma=\xi\eta$ 为非平凡分解矛盾. 故 $\gamma$ 不存在非平凡因子, 由**定义 2.5.6 (不可约元素)**, $\gamma$ 为不可约元素.
 
 **第 (2) 部分.** 先作分解:
 
@@ -88,7 +76,7 @@ $$
 
 ### 解答 2.5-10
 
-由**基础知识: 代数整数环 $\mathbb Z\left[\omega\right]$ 的范数**, $\omega^{2}=\omega-1$, 故
+由代数整数环 $\mathbb Z\left[\omega\right]$ 的范数, $\omega^{2}=\omega-1$, 故
 
 $$
 R=\mathbb Z\left[\omega\right]=\left\{m+n\omega\mid m,n\in\mathbb Z\right\}
@@ -98,7 +86,7 @@ $$
 
 **第 (1) 部分.** $R\subseteq\mathbb C$. $R$ 对加法封闭 (逐分量相加), 对乘法封闭, 含幺元 $1$. 由于 $\mathbb C$ 无零因子, 故 $R$ 是无零因子的交换幺环, 从而是整环.
 
-**第 (2) 部分.** 由**基础知识: 代数整数环 $\mathbb Z\left[\omega\right]$ 的范数**, 定义
+**第 (2) 部分.** 由代数整数环 $\mathbb Z\left[\omega\right]$ 的范数, 定义
 
 $$
 N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2},
@@ -128,7 +116,7 @@ $$
 
 ### 解答 2.5-15
 
-由**基础知识: 数域上多项式环是唯一分解整环**, $\mathbb Q\left[x,y\right]$ 是唯一分解整环, 且 $x,y$ 都是不可约元素. $x,y$ 不相伴: 其单位恰为 $\mathbb Q^{*}$ 中的非零常数, 而 $x\ne cy$ 对任何 $c\in\mathbb Q^{*}$. 故 $x,y$ 的公共因子只能是单位, 即最大公因子为单位, 由**定义 2.5.14 (公因子与最大公因子)**, $x$ 与 $y$ 互素.
+由数域上多项式环是唯一分解整环, $\mathbb Q\left[x,y\right]$ 是唯一分解整环, 且 $x,y$ 都是不可约元素. $x,y$ 不相伴: 其单位恰为 $\mathbb Q^{*}$ 中的非零常数, 而 $x\ne cy$ 对任何 $c\in\mathbb Q^{*}$. 故 $x,y$ 的公共因子只能是单位, 即最大公因子为单位, 由**定义 2.5.14 (公因子与最大公因子)**, $x$ 与 $y$ 互素.
 
 但不存在这样的 $r,s$. 反设存在 $r\left(x,y\right),s\left(x,y\right)\in\mathbb Q\left[x,y\right]$ 使 $r\left(x,y\right)x+s\left(x,y\right)y=1$. 将等式两边在 $\left(0,0\right)$ 处取值:
 

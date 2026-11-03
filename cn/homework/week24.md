@@ -1,9 +1,5 @@
 # week24
 
-> **基础知识: 分式域的泛性质**
-> 
-> 设 $R$ 为整环, $E$ 为其分式域. 任给 $R$ 的自同构 $\sigma$, 定义映射 $\overline\sigma\left(ab^{-1}\right)=\sigma\left(a\right)\sigma\left(b\right)^{-1}$, 则 $\overline\sigma$ 良定义且为 $E$ 的自同构.
-
 > **引理 4.1.9 (域同态必单射)**
 > 
 > 域同态 $\varphi:F\to E$ 一定是单射. 特别地, 域自同构保持域中运算及 $1$, 因而保持素域 ($\mathbb Q$ 或 $\mathbb F_p$) 上的所有元素不动.
@@ -72,7 +68,7 @@ $$
 
 ### 解答 4.1-11
 
-依**基础知识: 分式域的泛性质**, 分三步验证.
+依分式域的泛性质, 分三步验证.
 
 **良定义.** 设 $ab^{-1}=cd^{-1}$, $a,b,c,d\in R$, $b,d\ne0$. 则 $ad=bc$. 由 $\sigma$ 为环同态, $\sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right)$, 故 $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, 即 $\overline\sigma\left(ab^{-1}\right)=\overline\sigma\left(cd^{-1}\right)$. 定义与代表元选取无关.
 

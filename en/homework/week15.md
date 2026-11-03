@@ -1,17 +1,5 @@
 # week15
 
-> **Basic Knowledge: The Norm on the Ring $\mathbb Z\left[\sqrt{-5}\right]$**
-> 
-> For $x+y\sqrt{-5}\in\mathbb Z\left[\sqrt{-5}\right]$, define $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$. Then $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, and $\xi$ is a unit if and only if $N\left(\xi\right)=1$; $N$ takes nonnegative integer values, and there is no element of norm $3$ (the equation $x^{2}+5y^{2}=3$ has no integer solution).
-
-> **Basic Knowledge: The Norm on the Ring of Integers $\mathbb Z\left[\omega\right]$**
-> 
-> Let $\omega=\frac{1+\sqrt{-3}}{2}$. Then $\omega^{2}=\omega-1$, $\overline\omega=\frac{1-\sqrt{-3}}{2}$, and $\mathbb Z\left[\omega\right]=\left\{m+n\omega\mid m,n\in\mathbb Z\right\}$. Define $N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2}$; then $N\left(\xi\eta\right)=N\left(\xi\right)N\left(\eta\right)$, and $\xi$ is a unit if and only if $N\left(\xi\right)=1$.
-
-> **Basic Knowledge: Polynomial Rings over a Field Are Unique Factorization Domains**
-> 
-> Polynomial rings in one or several variables over a field are unique factorization domains; in $\mathbb Q\left[x,y\right]$, the elements $x$ and $y$ are non-associate irreducible elements (its units are exactly the nonzero constants).
-
 > **Definition 2.5.2 (Associates)**
 > 
 > Let $R$ be an integral domain and $a,b\in R$. If there exists a unit $u$ in $R$ such that $a=ub$, then $a$ and $b$ are called associates, written $a\sim b$.
@@ -36,7 +24,7 @@ Let $R=\mathbb Z\left[\sqrt{-5}\right]$.
 
 ### Solution 2.5-8
 
-By **Basic Knowledge: The Norm on the Ring $\mathbb Z\left[\sqrt{-5}\right]$**, define the norm on $R$ by $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$; then $N$ is multiplicative and $\xi$ is a unit if and only if $N\left(\xi\right)=1$.
+By The Norm on the Ring $\mathbb Z\left[\sqrt{-5}\right]$, define the norm on $R$ by $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$; then $N$ is multiplicative and $\xi$ is a unit if and only if $N\left(\xi\right)=1$.
 
 **Part (1).** Let $\gamma=a+b\sqrt{-5}$; then $N\left(\gamma\right)=a^{2}+5b^{2}=9\ne1$, so $\gamma$ is not a unit, i.e. $\gamma\in R^{*}\setminus U$. Suppose, toward contradiction, that $\gamma=\xi\eta$ is a nontrivial factorization (with both $\xi,\eta$ non-units). Then
 
@@ -44,7 +32,7 @@ $$
 N\left(\xi\right)N\left(\eta\right)=N\left(\gamma\right)=9.
 $$
 
-By **Basic Knowledge: The Norm on the Ring $\mathbb Z\left[\sqrt{-5}\right]$**, $N$ takes nonnegative integer values and there is no element of norm $3$. Hence $N\left(\xi\right),N\left(\eta\right)$ can only be $1$ or $9$: if $N\left(\xi\right)=1$ then $\xi$ is a unit, and if $N\left(\xi\right)=9$ then $N\left(\eta\right)=1$, so $\eta$ is a unit. In either case, one factor of $\gamma$ is a unit, contradicting that $\gamma=\xi\eta$ is nontrivial. Hence $\gamma$ has no nontrivial divisor, so by **Definition 2.5.6 (Irreducible Element)** $\gamma$ is irreducible.
+By The Norm on the Ring $\mathbb Z\left[\sqrt{-5}\right]$, $N$ takes nonnegative integer values and there is no element of norm $3$. Hence $N\left(\xi\right),N\left(\eta\right)$ can only be $1$ or $9$: if $N\left(\xi\right)=1$ then $\xi$ is a unit, and if $N\left(\xi\right)=9$ then $N\left(\eta\right)=1$, so $\eta$ is a unit. In either case, one factor of $\gamma$ is a unit, contradicting that $\gamma=\xi\eta$ is nontrivial. Hence $\gamma$ has no nontrivial divisor, so by **Definition 2.5.6 (Irreducible Element)** $\gamma$ is irreducible.
 
 **Part (2).** First factor:
 
@@ -88,7 +76,7 @@ Let $R=\mathbb Z\left[\omega\right]$, where $\omega=\frac{1+\sqrt{-3}}{2}$ (the 
 
 ### Solution 2.5-10
 
-By **Basic Knowledge: The Norm on the Ring of Integers $\mathbb Z\left[\omega\right]$**, $\omega^{2}=\omega-1$, so
+By The Norm on the Ring of Integers $\mathbb Z\left[\omega\right]$, $\omega^{2}=\omega-1$, so
 
 $$
 R=\mathbb Z\left[\omega\right]=\left\{m+n\omega\mid m,n\in\mathbb Z\right\}
@@ -98,7 +86,7 @@ is closed under multiplication ($\omega^{2}=\omega-1\in R$).
 
 **Part (1).** $R\subseteq\mathbb C$. $R$ is closed under addition (componentwise), closed under multiplication, and contains the identity $1$. Since $\mathbb C$ has no zero divisors, $R$ is a commutative unital ring without zero divisors, hence an integral domain.
 
-**Part (2).** By **Basic Knowledge: The Norm on the Ring of Integers $\mathbb Z\left[\omega\right]$**, define
+**Part (2).** By The Norm on the Ring of Integers $\mathbb Z\left[\omega\right]$, define
 
 $$
 N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2},
@@ -128,7 +116,7 @@ It is known that $\mathbb Q\left[x,y\right]$ is a ring under polynomial addition
 
 ### Solution 2.5-15
 
-By **Basic Knowledge: Polynomial Rings over a Field Are Unique Factorization Domains**, $\mathbb Q\left[x,y\right]$ is a unique factorization domain, and $x,y$ are both irreducible elements. They are non-associate: their units are exactly the nonzero constants in $\mathbb Q^{*}$, and $x\ne cy$ for any $c\in\mathbb Q^{*}$. Hence the common divisors of $x,y$ are only units, so their greatest common divisor is a unit; by **Definition 2.5.14 (Common Divisors and Greatest Common Divisors)**, $x$ and $y$ are coprime.
+By Polynomial Rings over a Field Are Unique Factorization Domains, $\mathbb Q\left[x,y\right]$ is a unique factorization domain, and $x,y$ are both irreducible elements. They are non-associate: their units are exactly the nonzero constants in $\mathbb Q^{*}$, and $x\ne cy$ for any $c\in\mathbb Q^{*}$. Hence the common divisors of $x,y$ are only units, so their greatest common divisor is a unit; by **Definition 2.5.14 (Common Divisors and Greatest Common Divisors)**, $x$ and $y$ are coprime.
 
 But no such $r,s$ exist. Suppose, toward contradiction, that $r\left(x,y\right),s\left(x,y\right)\in\mathbb Q\left[x,y\right]$ satisfy $r\left(x,y\right)x+s\left(x,y\right)y=1$. Evaluating both sides at $\left(0,0\right)$:
 

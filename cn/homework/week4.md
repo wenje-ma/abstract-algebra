@@ -1,25 +1,5 @@
 # week4
 
-> **基础知识: 反同态与反同构**
-> 
-> 若映射 $f:G\to G'$ 满足 $f\left(ab\right)=f\left(b\right)f\left(a\right)$, $\forall a,b\in G$, 则称 $f$ 为反同态; 若反同态是双射, 则称 $f$ 为反同构.
-
-> **基础知识: 对称群与双射变换**
-> 
-> 非空集合 $X$ 上所有双射 (置换) 的全体 $S_X$ 在变换的复合下构成群, 称为 $X$ 的对称群; $G$ 上的左平移 $L_a$ 与右平移 $R_a$ 都是 $G$ 上的双射, 因 $L_{a^{-1}}$, $R_{a^{-1}}$ 分别是它们的逆.
-
-> **基础知识: 三角函数的和角公式**
-> 
-> 对任意 $x,y\in\mathbb R$, $\cos\left(x+y\right)=\cos x\cos y-\sin x\sin y$, $\sin\left(x+y\right)=\sin x\cos y+\cos x\sin y$.
-
-> **基础知识: 复指数与单位圆**
-> 
-> 对任意 $x\in\mathbb R$, $\cos x+\sqrt{-1}\sin x\in\mathbb C^{*}$, 且 $\cos x+\sqrt{-1}\sin x=1$ 当且仅当 $x=2k\pi$ ($k\in\mathbb Z$).
-
-> **基础知识: 自同构群同态的性质**
-> 
-> 设 $\varphi:G\to\mathrm{Aut}\left(H\right)$ 是群同态, 则对任意 $a,b\in G$ 有 $\varphi\left(ab\right)=\varphi\left(a\right)\varphi\left(b\right)$, $\varphi\left(a^{-1}\right)=\varphi\left(a\right)^{-1}$, $\varphi\left(e_G\right)=\mathrm{id}_H$; 特别地 $\varphi\left(a^{-1}\right)\varphi\left(a\right)=\mathrm{id}_H$.
-
 > **定理 1.2.2 (子群判别法)**
 > 
 > 设 $H$ 是群 $G$ 的非空子集, 则下列条件等价: (1) $H$ 是 $G$ 的子群; (2) 对任意 $a,b\in H$, 有 $ab\in H$, $a^{-1}\in H$; (3) 对任意 $a,b\in H$, 有 $ab^{-1}\in H$.
@@ -60,13 +40,13 @@ $$
 R\left(ab\right)\left(g\right)=R_{ab}\left(g\right)=g\left(ab\right)=\left(ga\right)b=R_b\left(ga\right)=R_b\left(R_a\left(g\right)\right)=\left(R_b\circ R_a\right)\left(g\right)=R\left(b\right)R\left(a\right)\left(g\right).
 $$
 
-由 $g$ 的任意性, $R\left(ab\right)=R\left(b\right)R\left(a\right)$, 依据**基础知识: 反同态与反同构**, $R$ 是 $G$ 到 $S_G$ 的反同态.
+由 $g$ 的任意性, $R\left(ab\right)=R\left(b\right)R\left(a\right)$, 依据反同态与反同构, $R$ 是 $G$ 到 $S_G$ 的反同态.
 
 **第二步: 证明 $R$ 是单射.** 若 $R\left(a\right)=R\left(b\right)$, 则 $R_a=R_b$. 特别地, $R_a\left(e\right)=R_b\left(e\right)$, 即 $ea=eb$, 故 $a=b$. 因此 $R$ 是单射.
 
-**第三步: 证明 $R$ 的像集是 $S_G$ 的子群.** 记 $R_G=\left\{R_a\mid a\in G\right\}$. 由定义, $R:G\to R_G$ 是满射. 又由**基础知识: 对称群与双射变换**, $R_a$ 是 $G$ 上的双射 (逆为 $R_{a^{-1}}$), 故 $R_G\subseteq S_G$, 且 $R_G$ 是 $S_G$ 的子群 (复合与逆均封闭于 $R_G$, 因 $R_aR_b=R_{ba}$, $R_a^{-1}=R_{a^{-1}}$).
+**第三步: 证明 $R$ 的像集是 $S_G$ 的子群.** 记 $R_G=\left\{R_a\mid a\in G\right\}$. 由定义, $R:G\to R_G$ 是满射. 又由对称群与双射变换, $R_a$ 是 $G$ 上的双射 (逆为 $R_{a^{-1}}$), 故 $R_G\subseteq S_G$, 且 $R_G$ 是 $S_G$ 的子群 (复合与逆均封闭于 $R_G$, 因 $R_aR_b=R_{ba}$, $R_a^{-1}=R_{a^{-1}}$).
 
-综上, $R:G\to R_G$ 是双射反同态, 依据**基础知识: 反同态与反同构**, $R$ 是反同构, 即 $G$ 与 $S_G$ 的子群 $R_G$ 反同构. $\blacksquare$
+综上, $R:G\to R_G$ 是双射反同态, 依据反同态与反同构, $R$ 是反同构, 即 $G$ 与 $S_G$ 的子群 $R_G$ 反同构. $\blacksquare$
 
 ---
 
@@ -76,21 +56,21 @@ $$
 
 ### 解答 1.4-7
 
-**第一步: 证明 $f$ 是群同态.** 对任意 $x,y\in\mathbb R$, 由**基础知识: 三角函数的和角公式**,
+**第一步: 证明 $f$ 是群同态.** 对任意 $x,y\in\mathbb R$, 由三角函数的和角公式,
 
 $$
 f\left(x+y\right)=\cos\left(x+y\right)+\sqrt{-1}\sin\left(x+y\right)=\left(\cos x\cos y-\sin x\sin y\right)+\sqrt{-1}\left(\sin x\cos y+\cos x\sin y\right)=\left(\cos x+\sqrt{-1}\sin x\right)\left(\cos y+\sqrt{-1}\sin y\right)=f\left(x\right)f\left(y\right).
 $$
 
-又 $f\left(x\right)\ne0$ 对任意 $x\in\mathbb R$ (因 $\cos^2x+\sin^2x=1$) (**基础知识: 复指数与单位圆**), 故 $f:\mathbb R\to\mathbb C^{*}$ 良定义. 由**定义 1.4.1 (群同态与同构)**, $f$ 是 $\left(\mathbb R,+\right)$ 到 $\left(\mathbb C^{*},\cdot\right)$ 的群同态.
+又 $f\left(x\right)\ne0$ 对任意 $x\in\mathbb R$ (因 $\cos^2x+\sin^2x=1$) (复指数与单位圆), 故 $f:\mathbb R\to\mathbb C^{*}$ 良定义. 由**定义 1.4.1 (群同态与同构)**, $f$ 是 $\left(\mathbb R,+\right)$ 到 $\left(\mathbb C^{*},\cdot\right)$ 的群同态.
 
-**第二步: 求 $\ker f$.** 由**定义 1.4.11 (同态的核与像)**, $\ker f=\left\{x\in\mathbb R\mid f\left(x\right)=1\right\}$. 由**基础知识: 复指数与单位圆**, $f\left(x\right)=\cos x+\sqrt{-1}\sin x=1$ 当且仅当 $x=2k\pi$, $k\in\mathbb Z$. 故
+**第二步: 求 $\ker f$.** 由**定义 1.4.11 (同态的核与像)**, $\ker f=\left\{x\in\mathbb R\mid f\left(x\right)=1\right\}$. 由复指数与单位圆, $f\left(x\right)=\cos x+\sqrt{-1}\sin x=1$ 当且仅当 $x=2k\pi$, $k\in\mathbb Z$. 故
 
 $$
 \ker f=2\pi\mathbb Z=\left\{2k\pi\mid k\in\mathbb Z\right\}.
 $$
 
-由**定理 1.4.19 (群的同态基本定理)**, $\mathbb R/2\pi\mathbb Z\cong\mathrm{Im}\left(f\right)$, 其中 $\mathrm{Im}\left(f\right)=\left\{f\left(x\right)\mid x\in\mathbb R\right\}$ 为单位圆 $\left\{z\in\mathbb C\mid\left|z\right|=1\right\}$ 上的复数乘法群 (**基础知识: 复指数与单位圆**). $\blacksquare$
+由**定理 1.4.19 (群的同态基本定理)**, $\mathbb R/2\pi\mathbb Z\cong\mathrm{Im}\left(f\right)$, 其中 $\mathrm{Im}\left(f\right)=\left\{f\left(x\right)\mid x\in\mathbb R\right\}$ 为单位圆 $\left\{z\in\mathbb C\mid\left|z\right|=1\right\}$ 上的复数乘法群 (复指数与单位圆). $\blacksquare$
 
 ---
 
@@ -108,7 +88,7 @@ $$
 
 记 $G\ltimes H=\left\{\left(g,h\right)\mid g\in G,h\in H\right\}$, 乘法如题所定义. 逐条验证群公理.
 
-**封闭性**: 对任意 $\left(g_1,h_1\right),\left(g_2,h_2\right)\in G\ltimes H$, 因 $g_1g_2\in G$, 且 $\varphi\left(g_2^{-1}\right)\left(h_1\right)\in H$ (因 $\varphi\left(g_2^{-1}\right)\in\mathrm{Aut}\left(H\right)$), $h_2\in H$, 故 $\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\in H$ (**基础知识: 自同构群同态的性质**). 于是 $\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\in G\ltimes H$, 封闭性成立.
+**封闭性**: 对任意 $\left(g_1,h_1\right),\left(g_2,h_2\right)\in G\ltimes H$, 因 $g_1g_2\in G$, 且 $\varphi\left(g_2^{-1}\right)\left(h_1\right)\in H$ (因 $\varphi\left(g_2^{-1}\right)\in\mathrm{Aut}\left(H\right)$), $h_2\in H$, 故 $\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\in H$ (自同构群同态的性质). 于是 $\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\in G\ltimes H$, 封闭性成立.
 
 **结合律**: 对任意 $\left(g_1,h_1\right),\left(g_2,h_2\right),\left(g_3,h_3\right)\in G\ltimes H$, 一方面
 
@@ -116,7 +96,7 @@ $$
 \left(\left(g_1,h_1\right)\left(g_2,h_2\right)\right)\left(g_3,h_3\right)=\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\left(g_3,h_3\right)=\left(\left(g_1g_2\right)g_3,\ \varphi\left(g_3^{-1}\right)\left(\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)h_3\right).
 $$
 
-因 $\varphi\left(g_3^{-1}\right)\in\mathrm{Aut}\left(H\right)$ 保持 $H$ 的乘法, 故 $\varphi\left(g_3^{-1}\right)\left(\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)=\varphi\left(g_3^{-1}\right)\varphi\left(g_2^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)$; 又由**基础知识: 自同构群同态的性质**, $\varphi\left(g_3^{-1}\right)\varphi\left(g_2^{-1}\right)=\varphi\left(g_3^{-1}g_2^{-1}\right)=\varphi\left(\left(g_2g_3\right)^{-1}\right)$. 故
+因 $\varphi\left(g_3^{-1}\right)\in\mathrm{Aut}\left(H\right)$ 保持 $H$ 的乘法, 故 $\varphi\left(g_3^{-1}\right)\left(\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)=\varphi\left(g_3^{-1}\right)\varphi\left(g_2^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)$; 又由自同构群同态的性质, $\varphi\left(g_3^{-1}\right)\varphi\left(g_2^{-1}\right)=\varphi\left(g_3^{-1}g_2^{-1}\right)=\varphi\left(\left(g_2g_3\right)^{-1}\right)$. 故
 
 $$
 \left(\left(g_1,h_1\right)\left(g_2,h_2\right)\right)\left(g_3,h_3\right)=\left(\left(g_1g_2\right)g_3,\ \varphi\left(\left(g_2g_3\right)^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)\cdot h_3\right).
@@ -130,7 +110,7 @@ $$
 
 因 $G$ 满足结合律, $\left(g_1g_2\right)g_3=g_1\left(g_2g_3\right)$; 两式右端第二分量相同, 故结合律成立.
 
-**单位元**: 考虑 $\left(e_G,e_H\right)$. 对任意 $\left(g,h\right)\in G\ltimes H$, 因 $\varphi\left(e_G\right)=\mathrm{id}_H$ (**基础知识: 自同构群同态的性质**), 故 $\varphi\left(e_G^{-1}\right)\left(h\right)=\mathrm{id}_H\left(h\right)=h$, 于是
+**单位元**: 考虑 $\left(e_G,e_H\right)$. 对任意 $\left(g,h\right)\in G\ltimes H$, 因 $\varphi\left(e_G\right)=\mathrm{id}_H$ (自同构群同态的性质), 故 $\varphi\left(e_G^{-1}\right)\left(h\right)=\mathrm{id}_H\left(h\right)=h$, 于是
 
 $$
 \left(g,h\right)\left(e_G,e_H\right)=\left(g,\varphi\left(e_G^{-1}\right)\left(h\right)e_H\right)=\left(g,h\right),
@@ -144,7 +124,7 @@ $$
 
 故 $\left(e_G,e_H\right)$ 是单位元.
 
-**逆元**: 对 $\left(g,h\right)\in G\ltimes H$, 考虑 $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$. 因 $\varphi\left(\left(g^{-1}\right)^{-1}\right)=\varphi\left(g\right)$, 且 $\varphi\left(g^{-1}\right)\varphi\left(g\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$ (**基础知识: 自同构群同态的性质**), 故
+**逆元**: 对 $\left(g,h\right)\in G\ltimes H$, 考虑 $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$. 因 $\varphi\left(\left(g^{-1}\right)^{-1}\right)=\varphi\left(g\right)$, 且 $\varphi\left(g^{-1}\right)\varphi\left(g\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$ (自同构群同态的性质), 故
 
 $$
 \left(g,h\right)\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_G,\ \varphi\left(g\right)\left(h\right)\cdot\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_G,\varphi\left(g\right)\left(hh^{-1}\right)\right)=\left(e_G,e_H\right),

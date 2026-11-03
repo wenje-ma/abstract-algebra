@@ -1,13 +1,5 @@
 # week22
 
-> **Basic Knowledge: Order of an Element in a Direct Product**
-> 
-> Let $G=H_1\times H_2\times\cdots\times H_s$ be a direct product of finite abelian groups, and $g=\left(h_1,h_2,\cdots,h_s\right)$. Then $o\left(g\right)=\mathrm{lcm}\left(o\left(h_1\right),o\left(h_2\right),\cdots,o\left(h_s\right)\right)$. In particular, $o\left(g\right)\mid q$ iff $o\left(h_i\right)\mid q$ for every $i$.
-
-> **Basic Knowledge: Finite Subgroups of the Rational Multiplicative Group**
-> 
-> An element of order finite in $\mathbb Q^*$ is either $1$ or $-1$; hence the only finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$. Indeed, if $r=p/q\in\mathbb Q^*$ (in lowest terms) satisfies $r^n=1$, then $p^n=q^n$, so $p=\pm q$, i.e. $r=\pm1$.
-
 > **Theorem 3.5.2 (Number of Isomorphism Classes of Finite Abelian Groups)**
 > 
 > Let $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$ be the prime factorization of $n$, with $p_1,p_2,\cdots,p_s$ distinct primes and $m_i> 0$. Then the number of isomorphism classes of abelian groups of order $n$ is $\prod_{i=1}^s p\left(m_i\right)$, where $p\left(m\right)$ is the number of distinct partitions of the natural number $m$.
@@ -46,7 +38,7 @@ When $l\le e$, this is equivalent to $k$ being divisible by $p^{e-l}$. Among the
 
 When $l> e$, $p^l$ is a multiple of $p^e$, and $p^l g=0$ holds automatically for every $g\in G$, so the set is all of $G$, with $p^e$ elements.
 
-(2) Take any $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. By **Basic Knowledge: Order of an Element in a Direct Product**, $o\left(g\right)\mid q$ iff $o\left(h_i\right)\mid q$ for every $i$. Hence the $g$ satisfying the condition are exactly the direct product of the choices $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$, and by the multiplication principle,
+(2) Take any $g=\left(h_1,h_2,\cdots,h_s\right)\in G$. By Order of an Element in a Direct Product, $o\left(g\right)\mid q$ iff $o\left(h_i\right)\mid q$ for every $i$. Hence the $g$ satisfying the condition are exactly the direct product of the choices $\left\{h\in H_i\mid o\left(h\right)\mid q\right\}$, and by the multiplication principle,
 
 $$
 \left|\left\{g\in G\mid o\left(g\right)\mid q\right\}\right|=\prod_{i=1}^s\left|\left\{h\in H_i\mid o\left(h\right)\mid q\right\}\right|=m_1m_2\cdots m_s.
@@ -74,7 +66,7 @@ Classify the abelian groups of order $8$, and determine all homomorphisms from e
 
 Since $8=2^3$, the partitions of $3$ are $3$, $2+1$, $1+1+1$, so $p\left(3\right)=3$. By **Theorem 3.5.2 (Number of Isomorphism Classes of Finite Abelian Groups)**, there are $3$ isomorphism classes of abelian groups of order $8$, namely $\mathbb Z_8$, $\mathbb Z_4\times\mathbb Z_2$, and $\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.
 
-Now determine their homomorphisms to $\mathbb Q^*$. Let $\varphi:G\to\mathbb Q^*$ be a group homomorphism. Since $G$ is finite, $\varphi\left(G\right)$ is a finite subgroup of $\mathbb Q^*$. By **Basic Knowledge: Finite Subgroups of the Rational Multiplicative Group**, the only finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$, so $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$, i.e. each generator maps to either $1$ or $-1$.
+Now determine their homomorphisms to $\mathbb Q^*$. Let $\varphi:G\to\mathbb Q^*$ be a group homomorphism. Since $G$ is finite, $\varphi\left(G\right)$ is a finite subgroup of $\mathbb Q^*$. By Finite Subgroups of the Rational Multiplicative Group, the only finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$, so $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$, i.e. each generator maps to either $1$ or $-1$.
 
 **Case 1: $G=\mathbb Z_8$.** Let $g$ be a generator of $G$, $o\left(g\right)=8$. The homomorphism $\varphi$ is determined by $\varphi\left(g\right)\in\left\{\pm1\right\}$, and $\varphi\left(g\right)^8=1$ holds automatically for $\pm1$. Hence there are $2$ homomorphisms.
 

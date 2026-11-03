@@ -1,13 +1,5 @@
 # week23
 
-> **Basic Knowledge: Reversal Matrix and Transpose**
-> 
-> Let $P$ be the $n\times n$ reversal matrix, i.e. $P_{i,n+1-i}=1$ and all other entries $0$. Then $P$ is symmetric, $P^2=I_n$, and $P^{-1}=P$. If $N$ is the $n\times n$ nilpotent shift matrix (i.e. $N_{i,i+1}=1$ and all other entries $0$), then $PNP=N^\top$, so $PN$ is symmetric.
-
-> **Basic Knowledge: Nullity and Counting Jordan Blocks**
-> 
-> Let $A$ be an $n\times n$ matrix and $a$ an eigenvalue of $A$. Set $\nu_k=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, with $\nu_0=0$. Then the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s-\nu_{s-1}$. Hence the sequence $\left\{\nu_k\right\}_{k\ge0}$ completely determines the sizes and number of Jordan blocks at $a$.
-
 > **Theorem 3.6.3 (Jordan Normal Form)**
 > 
 > Let $F$ be an algebraically closed field of characteristic zero, $V$ an $n$-dimensional vector space over $F$, and $A$ a linear operator on $V$. Then there is a basis of $V$ in which the matrix of $A$ is a block-diagonal matrix $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, where each $J_i$ is a Jordan block. Two $n\times n$ matrices over $F$ are similar iff they have the same Jordan normal form.
@@ -22,7 +14,7 @@ Let $F$ be an algebraically closed field of characteristic zero. Prove that ever
 
 Let $J$ be an $n\times n$ Jordan block over $F$ with eigenvalue $\lambda\in F$; then $J=\lambda I_n+N$, where $N$ is the $n\times n$ nilpotent shift matrix.
 
-Let $P$ be the $n\times n$ reversal matrix. By **Basic Knowledge: Reversal Matrix and Transpose**, $P$ is symmetric, $P^2=I_n$, and $PN$ is symmetric. Set $A=PJ=\lambda P+PN$. Since both $P$ and $PN$ are symmetric, $A$ is symmetric. Also $P^2=I_n$, so $P^{-1}=P$, and hence $J=P^{-1}A=PA$.
+Let $P$ be the $n\times n$ reversal matrix. By Reversal Matrix and Transpose, $P$ is symmetric, $P^2=I_n$, and $PN$ is symmetric. Set $A=PJ=\lambda P+PN$. Since both $P$ and $PN$ are symmetric, $A$ is symmetric. Also $P^2=I_n$, so $P^{-1}=P$, and hence $J=P^{-1}A=PA$.
 
 Here both $P$ and $A$ are symmetric matrices over $F$. Thus every Jordan block is a product of two symmetric matrices. $\blacksquare$
 
@@ -70,6 +62,6 @@ Thus, by induction, there is a basis of $V$ in which the matrix of $A$ has the r
 
 **Sufficiency.** Assume that for every $a\in F$ and $k\in\mathbb N$, the corresponding powers have the same rank. By **Theorem 3.6.3 (Jordan Normal Form)**, both $A$ and $B$ are similar to their Jordan normal forms; it suffices to show that the two Jordan normal forms coincide.
 
-For any $a\in F$, set $\nu_k\left(A\right)=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, with $\nu_0\left(A\right)=0$. By assumption, $\nu_k\left(A\right)=\nu_k\left(B\right)$ for all $k$. By **Basic Knowledge: Nullity and Counting Jordan Blocks**, the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, and similarly for $B$. Hence the sizes and number of Jordan blocks at $a$ agree completely.
+For any $a\in F$, set $\nu_k\left(A\right)=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, with $\nu_0\left(A\right)=0$. By assumption, $\nu_k\left(A\right)=\nu_k\left(B\right)$ for all $k$. By Nullity and Counting Jordan Blocks, the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, and similarly for $B$. Hence the sizes and number of Jordan blocks at $a$ agree completely.
 
 Since $F$ is algebraically closed, all eigenvalues of $A,B$ lie in $F$, and the above holds for every eigenvalue $a$. Thus the Jordan normal forms of $A$ and $B$ coincide completely, and therefore $A$ and $B$ are similar. $\blacksquare$

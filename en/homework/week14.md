@@ -1,25 +1,5 @@
 # week14
 
-> **Basic Knowledge: Ring Automorphisms Fix the Prime Subfield**
-> 
-> If $\varphi$ is an automorphism of a field (or of a ring containing $1$), then $\varphi\left(1\right)=1$; since $\varphi$ preserves addition and multiplication and maps $1$ to $1$, it is the identity on the rational field $\mathbb Q$.
-
-> **Basic Knowledge: Order-Preserving Property of the Real Field**
-> 
-> A real number $x> 0$ if and only if there exists $y\ne0$ with $x=y^{2}$. Hence a field automorphism $\varphi:\mathbb R\to\mathbb R$ maps positive numbers to positive numbers and is therefore strictly increasing; moreover, the rational numbers are dense in $\mathbb R$.
-
-> **Basic Knowledge: An Integral Domain Has No Zero Divisors**
-> 
-> An integral domain has no zero divisors, so if $b,d\ne0$ then $bd\ne0$; and from $d\ne0$ together with $d\left(af-be\right)=0$ one may conclude $af=be$.
-
-> **Basic Knowledge: Congruence Relations and Quotient Structures**
-> 
-> If an equivalence relation $\sim$ is a congruence for an operation, then that operation is well-defined on the quotient set, and the corresponding commutativity, associativity and distributivity are preserved.
-
-> **Basic Knowledge: Inverses in a Field**
-> 
-> Every nonzero element of a field is invertible; if $a,b\ne0$, then $\left(ab^{-1}\right)^{-1}=ba^{-1}$.
-
 > **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**
 > 
 > A commutative unital ring without zero divisors is called an integral domain; if a unital ring $R$ satisfies that $R^{*}$ forms a group under multiplication (where $R^{*}=R\setminus\left\{0\right\}$), then $R$ is called a division ring; a commutative division ring is called a field.
@@ -40,7 +20,7 @@ $$
 
 ### Solution 2.4-6
 
-Write $i=\sqrt{-1}$. Let $\varphi:\mathbb Q\left[i\right]\to\mathbb Q\left[i\right]$ be a ring automorphism. By **Definition 2.4.1 (Ring Homomorphism and Isomorphism)**, $\varphi$ preserves multiplication and addition; since $\varphi\left(1\right)=1$, by **Basic Knowledge: Ring Automorphisms Fix the Prime Subfield** $\varphi$ is the identity on $\mathbb Q$.
+Write $i=\sqrt{-1}$. Let $\varphi:\mathbb Q\left[i\right]\to\mathbb Q\left[i\right]$ be a ring automorphism. By **Definition 2.4.1 (Ring Homomorphism and Isomorphism)**, $\varphi$ preserves multiplication and addition; since $\varphi\left(1\right)=1$, by Ring Automorphisms Fix the Prime Subfield $\varphi$ is the identity on $\mathbb Q$.
 
 Let $\varphi\left(i\right)=u=a+bi$, $a,b\in\mathbb Q$. Since $i^{2}=-1$ and $\varphi$ preserves multiplication and addition,
 
@@ -70,9 +50,9 @@ Prove that the only automorphism of the real field is the identity.
 
 ### Solution 2.4-7
 
-Let $\varphi:\mathbb R\to\mathbb R$ be a field automorphism. By **Definition 2.4.1 (Ring Homomorphism and Isomorphism)** and **Basic Knowledge: Ring Automorphisms Fix the Prime Subfield**, $\varphi\left(1\right)=1$, so $\varphi$ is the identity on $\mathbb Q$: $\varphi\left(n\right)=n$ for integers $n$, and $\varphi\left(m/n\right)=m/n$ for $\frac{m}{n}\in\mathbb Q$.
+Let $\varphi:\mathbb R\to\mathbb R$ be a field automorphism. By **Definition 2.4.1 (Ring Homomorphism and Isomorphism)** and Ring Automorphisms Fix the Prime Subfield, $\varphi\left(1\right)=1$, so $\varphi$ is the identity on $\mathbb Q$: $\varphi\left(n\right)=n$ for integers $n$, and $\varphi\left(m/n\right)=m/n$ for $\frac{m}{n}\in\mathbb Q$.
 
-**Order preservation**: If $x> 0$, by **Basic Knowledge: Order-Preserving Property of the Real Field**, there exists $y\ne0$ with $x=y^{2}$; then
+**Order preservation**: If $x> 0$, by Order-Preserving Property of the Real Field, there exists $y\ne0$ with $x=y^{2}$; then
 
 $$
 \varphi\left(x\right)=\varphi\left(y^{2}\right)=\varphi\left(y\right)^{2}> 0
@@ -80,7 +60,7 @@ $$
 
 (since $\varphi\left(y\right)\ne0$, its square is positive). Hence when $x> y$, $x-y> 0$ gives $\varphi\left(x\right)-\varphi\left(y\right)=\varphi\left(x-y\right)> 0$, i.e. $\varphi$ is strictly increasing.
 
-**Identity**: Suppose, toward contradiction, that there exists $x\in\mathbb R$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)> x$, by **Basic Knowledge: Order-Preserving Property of the Real Field** (density of rationals), choose $q\in\mathbb Q$ with $x< q< \varphi\left(x\right)$. Since $x< q$ and $\varphi$ is strictly increasing, $\varphi\left(x\right)< \varphi\left(q\right)=q$, contradicting $q< \varphi\left(x\right)$. If $\varphi\left(x\right)< x$, similarly choose $q\in\mathbb Q$ with $\varphi\left(x\right)< q< x$; by the strict monotonicity of $\varphi$ and $q=\varphi\left(q\right)$, we get $q< \varphi\left(x\right)$, a contradiction.
+**Identity**: Suppose, toward contradiction, that there exists $x\in\mathbb R$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)> x$, by Order-Preserving Property of the Real Field (density of rationals), choose $q\in\mathbb Q$ with $x< q< \varphi\left(x\right)$. Since $x< q$ and $\varphi$ is strictly increasing, $\varphi\left(x\right)< \varphi\left(q\right)=q$, contradicting $q< \varphi\left(x\right)$. If $\varphi\left(x\right)< x$, similarly choose $q\in\mathbb Q$ with $\varphi\left(x\right)< q< x$; by the strict monotonicity of $\varphi$ and $q=\varphi\left(q\right)$, we get $q< \varphi\left(x\right)$, a contradiction.
 
 Hence $\varphi\left(x\right)=x$ for all $x\in\mathbb R$, i.e. $\varphi$ is the identity. $\blacksquare$
 
@@ -154,9 +134,9 @@ Prove that $F$ becomes a field under the above addition and multiplication;
 
 ### Solution 2.4-19
 
-**Part (1).** Since $R$ is an integral domain, by **Basic Knowledge: An Integral Domain Has No Zero Divisors**, when $b,d\ne0$ we have $bd\ne0$, so $R\times R^{*}$ is closed under addition and multiplication. Commutativity and associativity follow directly componentwise from the corresponding laws in $R$. For addition, $\left(a,b\right)+\left(0,1\right)=\left(a\cdot1+b\cdot0,b\cdot1\right)=\left(a,b\right)$; for multiplication, $\left(a,b\right)\left(1,1\right)=\left(a\cdot1,b\cdot1\right)=\left(a,b\right)$. Hence the two operations are commutative monoids with identities $\left(0,1\right)$ and $\left(1,1\right)$ respectively.
+**Part (1).** Since $R$ is an integral domain, by An Integral Domain Has No Zero Divisors, when $b,d\ne0$ we have $bd\ne0$, so $R\times R^{*}$ is closed under addition and multiplication. Commutativity and associativity follow directly componentwise from the corresponding laws in $R$. For addition, $\left(a,b\right)+\left(0,1\right)=\left(a\cdot1+b\cdot0,b\cdot1\right)=\left(a,b\right)$; for multiplication, $\left(a,b\right)\left(1,1\right)=\left(a\cdot1,b\cdot1\right)=\left(a,b\right)$. Hence the two operations are commutative monoids with identities $\left(0,1\right)$ and $\left(1,1\right)$ respectively.
 
-**Part (2). Equivalence relation**: Reflexive: $\left(a,b\right)\sim\left(a,b\right)$ means $ab=ba$, which holds. Symmetric: $ad=bc$ is the same as $bc=ad$, so $\left(a,b\right)\sim\left(c,d\right)$ implies $\left(c,d\right)\sim\left(a,b\right)$. Transitive: suppose $\left(a,b\right)\sim\left(c,d\right)$ and $\left(c,d\right)\sim\left(e,f\right)$, i.e. $ad=bc$, $cf=de$. Multiplying the two equations by $f$ and $b$ respectively gives $adf=bcf=bde$, i.e. $d\left(af\right)=d\left(be\right)$; since $d\ne0$, by **Basic Knowledge: An Integral Domain Has No Zero Divisors** we cancel to get $af=be$, hence $\left(a,b\right)\sim\left(e,f\right)$. Thus $\sim$ is an equivalence relation.
+**Part (2). Equivalence relation**: Reflexive: $\left(a,b\right)\sim\left(a,b\right)$ means $ab=ba$, which holds. Symmetric: $ad=bc$ is the same as $bc=ad$, so $\left(a,b\right)\sim\left(c,d\right)$ implies $\left(c,d\right)\sim\left(a,b\right)$. Transitive: suppose $\left(a,b\right)\sim\left(c,d\right)$ and $\left(c,d\right)\sim\left(e,f\right)$, i.e. $ad=bc$, $cf=de$. Multiplying the two equations by $f$ and $b$ respectively gives $adf=bcf=bde$, i.e. $d\left(af\right)=d\left(be\right)$; since $d\ne0$, by An Integral Domain Has No Zero Divisors we cancel to get $af=be$, hence $\left(a,b\right)\sim\left(e,f\right)$. Thus $\sim$ is an equivalence relation.
 
 **Congruence (multiplication)**: suppose $\left(a,b\right)\sim\left(a',b'\right)$ and $\left(c,d\right)\sim\left(c',d'\right)$, i.e. $ab'=a'b$, $cd'=c'd$. Then
 
@@ -178,7 +158,7 @@ $$
 
 so $\left(ad+bc,bd\right)\sim\left(a'd'+b'c',b'd'\right)$, i.e. $\left(a,b\right)+\left(c,d\right)\sim\left(a',b'\right)+\left(c',d'\right)$. Hence $\sim$ is a congruence for both multiplication and addition.
 
-**Part (3).** By Part (2) and **Basic Knowledge: Congruence Relations and Quotient Structures**, the addition and multiplication on $F$ are well-defined and preserve commutativity, associativity and distributivity. $0/1$ is the additive zero and $1/1$ is the multiplicative identity. The negative of $a/b$ is $\left(-a\right)/b$, because $\frac{a}{b}+\frac{-a}{b}=\frac{ab-ab}{b\cdot b}=\frac{0}{b^{2}}=\frac{0}{1}$. If $a/b\ne0/1$, then $a\ne0$ (otherwise $\left(a,b\right)\sim\left(0,1\right)$ means $a\cdot1=b\cdot0$, so $a=0$); then by **Basic Knowledge: Inverses in a Field** its multiplicative inverse is $b/a$, since $\frac{a}{b}\cdot\frac{b}{a}=\frac{ab}{ab}=\frac{1}{1}$. Hence $F$ is a commutative unital ring in which every nonzero element is invertible. By **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**, $F$ is a field.
+**Part (3).** By Part (2) and Congruence Relations and Quotient Structures, the addition and multiplication on $F$ are well-defined and preserve commutativity, associativity and distributivity. $0/1$ is the additive zero and $1/1$ is the multiplicative identity. The negative of $a/b$ is $\left(-a\right)/b$, because $\frac{a}{b}+\frac{-a}{b}=\frac{ab-ab}{b\cdot b}=\frac{0}{b^{2}}=\frac{0}{1}$. If $a/b\ne0/1$, then $a\ne0$ (otherwise $\left(a,b\right)\sim\left(0,1\right)$ means $a\cdot1=b\cdot0$, so $a=0$); then by Inverses in a Field its multiplicative inverse is $b/a$, since $\frac{a}{b}\cdot\frac{b}{a}=\frac{ab}{ab}=\frac{1}{1}$. Hence $F$ is a commutative unital ring in which every nonzero element is invertible. By **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**, $F$ is a field.
 
 **Part (4).** Consider the map $\iota:R\to F$, $\iota\left(a\right)=a/1$. Then
 
@@ -198,4 +178,4 @@ $$
 F_2=\left\{ab^{-1}\mid a,b\in R,\;b\ne0\right\}.
 $$
 
-$F_2$ is closed under addition ($ab^{-1}+cd^{-1}=\left(ad+bc\right)\left(bd\right)^{-1}$, where $ad+bc,bd\in R$ and $bd\ne0$ by **Basic Knowledge: An Integral Domain Has No Zero Divisors**), closed under multiplication ($\left(ab^{-1}\right)\left(cd^{-1}\right)=\left(ac\right)\left(bd\right)^{-1}$), and the inverse of a nonzero element $ab^{-1}$ (with $a\ne0$) is $\left(ab^{-1}\right)^{-1}=ba^{-1}\in F_2$ (by **Basic Knowledge: Inverses in a Field**). Hence $F_2$ is a subfield of $K$. Also $a=a\cdot1^{-1}\in F_2$, so $R\subseteq F_2$. Any field containing $R$ must contain all $ab^{-1}$ ($a,b\in R$, $b\ne0$), hence must contain $F_2$. Thus $F_2$ is the smallest field containing $R$, i.e. a fraction field of $R$. $\blacksquare$
+$F_2$ is closed under addition ($ab^{-1}+cd^{-1}=\left(ad+bc\right)\left(bd\right)^{-1}$, where $ad+bc,bd\in R$ and $bd\ne0$ by An Integral Domain Has No Zero Divisors), closed under multiplication ($\left(ab^{-1}\right)\left(cd^{-1}\right)=\left(ac\right)\left(bd\right)^{-1}$), and the inverse of a nonzero element $ab^{-1}$ (with $a\ne0$) is $\left(ab^{-1}\right)^{-1}=ba^{-1}\in F_2$ (by Inverses in a Field). Hence $F_2$ is a subfield of $K$. Also $a=a\cdot1^{-1}\in F_2$, so $R\subseteq F_2$. Any field containing $R$ must contain all $ab^{-1}$ ($a,b\in R$, $b\ne0$), hence must contain $F_2$. Thus $F_2$ is the smallest field containing $R$, i.e. a fraction field of $R$. $\blacksquare$

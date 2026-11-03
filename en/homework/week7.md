@@ -1,9 +1,5 @@
 # week7
 
-> **Basic Knowledge: Surjective Homomorphisms Preserve Normal Subgroups**
-> 
-> Let $f:G\to G'$ be a surjective homomorphism. If $H\triangleleft G$, then $f\left(H\right)\triangleleft G'$.
-
 > **Theorem 1.4.23 (3) (Second Isomorphism Theorem)**
 > 
 > Let $G$ be a group, $N\triangleleft G$, and $H< G$. Then $HN/N\cong H/\left(H\cap N\right)$.
@@ -44,7 +40,7 @@ be two composition series of $G$, with $G_2\ne H_2$. Let $K_3=G_2\cap H_2$. Take
 
 ### Solution 1.7-11
 
-**Step 1: prove that $G_2H_2=G$.** Since $H_2\triangleleft G$, by **Basic Knowledge: Surjective Homomorphisms Preserve Normal Subgroups**, the image $\pi\left(H_2\right)$ under the natural homomorphism $\pi:G\to G/G_2$ is a normal subgroup of $G/G_2$. Moreover $\pi\left(H_2\right)=\left\{hG_2\mid h\in H_2\right\}=\left(G_2H_2\right)/G_2$ (since $G_2\subseteq G_2H_2$), so $\left(G_2H_2\right)/G_2\triangleleft G/G_2$. Since $G/G_2$ is a composition factor and hence simple, $\left(G_2H_2\right)/G_2$ must be trivial or all of $G/G_2$, i.e. $G_2H_2=G_2$ or $G$.
+**Step 1: prove that $G_2H_2=G$.** Since $H_2\triangleleft G$, by Surjective Homomorphisms Preserve Normal Subgroups, the image $\pi\left(H_2\right)$ under the natural homomorphism $\pi:G\to G/G_2$ is a normal subgroup of $G/G_2$. Moreover $\pi\left(H_2\right)=\left\{hG_2\mid h\in H_2\right\}=\left(G_2H_2\right)/G_2$ (since $G_2\subseteq G_2H_2$), so $\left(G_2H_2\right)/G_2\triangleleft G/G_2$. Since $G/G_2$ is a composition factor and hence simple, $\left(G_2H_2\right)/G_2$ must be trivial or all of $G/G_2$, i.e. $G_2H_2=G_2$ or $G$.
 
 Similarly, since $G_2\triangleleft G$, the image $\pi'\left(G_2\right)=\left(G_2H_2\right)/H_2$ under the natural homomorphism $\pi':G\to G/H_2$ is a normal subgroup of $G/H_2$; since $G/H_2$ is simple, $G_2H_2=H_2$ or $G$.
 

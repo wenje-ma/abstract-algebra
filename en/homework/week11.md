@@ -1,12 +1,5 @@
 # week11
 
-> **Basic Knowledge: Properties of Invertible Elements in a Unital Ring**
-> 
-> Let $R$ be a unital ring with identity $e$. If $u,v\in R$ are both invertible, then $uv$ is invertible and $\left(uv\right)^{-1}=v^{-1}u^{-1}$.
-
-> **Basic Knowledge: Nilpotent Elements and Finite Geometric Series**
-> 
-> Let $R$ be a unital ring with identity $e$. If $x^{m}=0$ ($m\in\mathbb N$), then the finite geometric series gives
 $$
 \left(e+x\right)^{-1}=e-x+x^{2}-\cdots+\left(-1\right)^{m-1}x^{m-1}.
 $$
@@ -107,7 +100,7 @@ $$
 b\left(e+a\right)=\left(e-a+a^{2}-\cdots+\left(-1\right)^{m-1}a^{m-1}\right)\left(e+a\right)=e+\left(-1\right)^{m-1}a^{m}=e.
 $$
 
-Hence $b$ is an inverse of $e+a$, so $e+a$ is invertible. This agrees with **Basic Knowledge: Nilpotent Elements and Finite Geometric Series**. $\blacksquare$
+Hence $b$ is an inverse of $e+a$, so $e+a$ is invertible. This agrees with Nilpotent Elements and Finite Geometric Series. $\blacksquare$
 
 ---
 
@@ -153,7 +146,7 @@ $$
 
 ### Solution 2.1-16
 
-Since $b^{-1}$ is invertible (the conclusion involves $b^{-1}$, so $b$ is invertible by hypothesis) and $ab$ is invertible, by **Basic Knowledge: Properties of Invertible Elements in a Unital Ring**, $a=\left(ab\right)b^{-1}$ is a product of invertible elements, so $a$ is invertible and $a^{-1}$ exists.
+Since $b^{-1}$ is invertible (the conclusion involves $b^{-1}$, so $b$ is invertible by hypothesis) and $ab$ is invertible, by Properties of Invertible Elements in a Unital Ring, $a=\left(ab\right)b^{-1}$ is a product of invertible elements, so $a$ is invertible and $a^{-1}$ exists.
 
 Also, since $b^{-1}$ is invertible, by the distributive law of **Definition 2.1.1 (Ring)**,
 
@@ -161,7 +154,7 @@ $$
 a-b^{-1}=\left(ab-e\right)b^{-1}.
 $$
 
-Since $ab-e$ is invertible by hypothesis and $b^{-1}$ is invertible, by **Basic Knowledge: Properties of Invertible Elements in a Unital Ring**, the product of invertible elements is invertible, so $a-b^{-1}$ is invertible, and
+Since $ab-e$ is invertible by hypothesis and $b^{-1}$ is invertible, by Properties of Invertible Elements in a Unital Ring, the product of invertible elements is invertible, so $a-b^{-1}$ is invertible, and
 
 $$
 \left(a-b^{-1}\right)^{-1}=b\left(ab-e\right)^{-1}.

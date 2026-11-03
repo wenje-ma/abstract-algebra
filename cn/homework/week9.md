@@ -1,21 +1,5 @@
 # week9
 
-> **基础知识: 线性映射保持子空间维数**
-> 
-> 可逆线性变换把 $k$ 维子空间映为 $k$ 维子空间; 对任意两个非零向量 $v,w$, 存在可逆线性变换 $\rho$ 使 $\rho v=w$ (分别把 $v,w$ 扩充为 $\mathbb R^n$ 的基并定义线性映射).
-
-> **基础知识: 正交与酉变换**
-> 
-> 正交变换保持内积, 因而把标准正交组映为标准正交组, 把 $k$ 维子空间映为 $k$ 维子空间; 任意两组标准正交基可由某个正交 (酉) 变换互相映射.
-
-> **基础知识: 分式线性变换**
-> 
-> 分式线性变换 (默比乌斯变换) $z\mapsto\frac{az+b}{cz+d}$ 的复合对应矩阵乘法; 具有无穷多个不动点的分式线性变换必为恒等变换.
-
-> **基础知识: 群作用的轨道分解**
-> 
-> 设 $G$ 作用在 $X$ 上, 则 $X$ 是互不相交的轨道之并; 对 $x\in X$, 轨道 $O_x$ 的大小为 $\left|G\right|/\left|F_x\right|$, 其中 $F_x$ 为 $x$ 的迷向子群. 特别地, 在 $\mathbb Z_2$ 作用于 $X$ 时, 非不动点的轨道恰含 $2$ 个元素, 故 $\left|X\right|\equiv\left|\mathrm{Fix}\right|\pmod 2$, 其中 $\mathrm{Fix}$ 为不动点集.
-
 > **定义 1.9.1 (群作用)**
 > 
 > 设 $G$ 是群, $X$ 是非空集合. 若映射 $f:G\times X\to X$ 满足 $f\left(e,x\right)=x$ 且 $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, 则称 $f$ 决定了 $G$ 在 $X$ 上的一个作用, 记 $f\left(g,x\right)=gx$.
@@ -44,7 +28,7 @@
 
 ### 解答 1.9-4
 
-**第 (1) 部分: $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上的作用.** 由**基础知识: 线性映射保持子空间维数**, 对 $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$ 与 $1$ 维子空间 $W=\mathbb Rv$, $\rho\left(W\right)$ 仍是 $1$ 维子空间. 对 $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ 及 $W=\mathbb Rv$,
+**第 (1) 部分: $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上的作用.** 由线性映射保持子空间维数, 对 $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$ 与 $1$ 维子空间 $W=\mathbb Rv$, $\rho\left(W\right)$ 仍是 $1$ 维子空间. 对 $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ 及 $W=\mathbb Rv$,
 
 $$
 \rho\left(\tau\left(W\right)\right)=\rho\left(\tau\left(\mathbb Rv\right)\right)=\rho\left(\mathbb R\tau\left(v\right)\right)=\mathbb R\rho\left(\tau\left(v\right)\right)=\left(\rho\tau\right)\left(W\right),
@@ -52,7 +36,7 @@ $$
 
 且单位矩阵 $I$ 满足 $I\left(W\right)=W$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上的一个作用.
 
-**可递性**: 任取两条直线 $W_1=\mathbb Rv$, $W_2=\mathbb Rw$ ($v,w\ne0$). 由**基础知识: 线性映射保持子空间维数**, 存在可逆矩阵 $\rho$ 使 $\rho v=w$, 故 $\rho\left(W_1\right)=W_2$. 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
+**可递性**: 任取两条直线 $W_1=\mathbb Rv$, $W_2=\mathbb Rw$ ($v,w\ne0$). 由线性映射保持子空间维数, 存在可逆矩阵 $\rho$ 使 $\rho v=w$, 故 $\rho\left(W_1\right)=W_2$. 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
 
 **迷向子群**: 取 $W_0=\mathbb Re_1$, 其中 $e_1=\left(1,0,\cdots,0\right)^{\top}$. 条件 $\rho\left(W_0\right)=W_0$ 等价于 $\rho e_1\in\mathbb Re_1$, 即 $\rho$ 的第一列为 $\left(a,0,\cdots,0\right)^{\top}$, $a\ne0$. 故由**定义 1.9.9 (轨道与迷向子群)**, $W_0$ 的迷向子群为
 
@@ -62,7 +46,7 @@ $$
 
 **第 (2) 部分: $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $\mathrm{Gr}\left(k,n\right)$ 上的作用.** 同理 $\rho\left(\tau\left(W\right)\right)=\left(\rho\tau\right)\left(W\right)$ 且 $I\left(W\right)=W$, 由**定义 1.9.1 (群作用)** 这是作用.
 
-**可递性**: 任取两个 $k$ 维子空间 $W_1,W_2$, 分别取基 $\left\{v_1,\cdots,v_k\right\}$ 与 $\left\{w_1,\cdots,w_k\right\}$, 扩充为 $\mathbb R^n$ 的基, 由**基础知识: 线性映射保持子空间维数** 定义可逆线性映射 $\rho$ 使 $\rho v_i=w_i$ ($i=1,\cdots,k$), 则 $\rho\left(W_1\right)=W_2$. 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
+**可递性**: 任取两个 $k$ 维子空间 $W_1,W_2$, 分别取基 $\left\{v_1,\cdots,v_k\right\}$ 与 $\left\{w_1,\cdots,w_k\right\}$, 扩充为 $\mathbb R^n$ 的基, 由线性映射保持子空间维数 定义可逆线性映射 $\rho$ 使 $\rho v_i=w_i$ ($i=1,\cdots,k$), 则 $\rho\left(W_1\right)=W_2$. 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
 
 **迷向子群**: 取 $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$. 条件 $\rho\left(W_0\right)=W_0$ 等价于 $\rho$ 把每个 $e_i$ ($i\le k$) 仍映回 $W_0$, 即 $\rho$ 的前 $k$ 列在第 $k+1,\cdots,n$ 行的分量为零, 亦即 $\rho$ 为分块上三角阵. 故由**定义 1.9.9 (轨道与迷向子群)**, 迷向子群为
 
@@ -72,7 +56,7 @@ $$
 
 **第 (3) 部分: 判断可递性.** $\mathrm{SL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 与 $\mathrm{Gr}\left(k,n\right)$ 上的作用均可递: 在第 (1)(2) 部分构造的映射 $\rho$ 中, 若其行列式不为 $1$, 可在最后一行乘一个非零标量把行列式调整为 $1$, 而不改变对子空间的作用.
 
-$O\left(n\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上可递: 由**基础知识: 正交与酉变换**, 任意两条单位直线可由正交变换互相映射. $O\left(n\right)$ 在 $\mathrm{Gr}\left(k,n\right)$ 上亦可递: 两组 $k$ 维子空间的基可扩充为两组标准正交基, 由**基础知识: 正交与酉变换** 存在正交映射互相映射.
+$O\left(n\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上可递: 由正交与酉变换, 任意两条单位直线可由正交变换互相映射. $O\left(n\right)$ 在 $\mathrm{Gr}\left(k,n\right)$ 上亦可递: 两组 $k$ 维子空间的基可扩充为两组标准正交基, 由正交与酉变换 存在正交映射互相映射.
 
 $\mathrm{SO}\left(n\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上, 当 $n\ge3$ 时可递 (可用适当旋转把任一方向映到任一方向而保持行列式为 $1$); 在 $\mathrm{Gr}\left(k,n\right)$ 上, 当 $n\ge3$ 时亦可递. $\blacksquare$
 
@@ -90,7 +74,7 @@ $$
 
 ### 解答 1.9-5
 
-**验证作用**: 由**基础知识: 正交与酉变换**, 正交变换保持内积, 故若 $\left(\alpha_1,\cdots,\alpha_k\right)$ 是标准正交组, 则 $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ 亦然, 即 $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. 又
+**验证作用**: 由正交与酉变换, 正交变换保持内积, 故若 $\left(\alpha_1,\cdots,\alpha_k\right)$ 是标准正交组, 则 $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ 亦然, 即 $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. 又
 
 $$
 \rho\left(\tau\left(\alpha_1,\cdots,\alpha_k\right)\right)=\rho\left(\tau\alpha_1,\cdots,\tau\alpha_k\right)=\left(\rho\tau\alpha_1,\cdots,\rho\tau\alpha_k\right)=\left(\rho\tau\right)\left(\alpha_1,\cdots,\alpha_k\right),
@@ -98,7 +82,7 @@ $$
 
 且单位矩阵作用不变. 由**定义 1.9.1 (群作用)**, 这是 $O\left(n\right)$ 在 $V_k\left(\mathbb R^n\right)$ 上的作用.
 
-**可递性**: 任取两组标准正交向量组 $\left(\alpha_1,\cdots,\alpha_k\right)$ 与 $\left(\beta_1,\cdots,\beta_k\right)$, 由**基础知识: 正交与酉变换** 分别扩充为 $\mathbb R^n$ 的标准正交基 $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ 与 $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$. 定义线性映射 $\rho\alpha_i=\beta_i$ ($i=1,\cdots,n$), 则 $\rho\in O\left(n\right)$ 且
+**可递性**: 任取两组标准正交向量组 $\left(\alpha_1,\cdots,\alpha_k\right)$ 与 $\left(\beta_1,\cdots,\beta_k\right)$, 由正交与酉变换 分别扩充为 $\mathbb R^n$ 的标准正交基 $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ 与 $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$. 定义线性映射 $\rho\alpha_i=\beta_i$ ($i=1,\cdots,n$), 则 $\rho\in O\left(n\right)$ 且
 
 $$
 \rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\beta_1,\cdots,\beta_k\right).
@@ -122,7 +106,7 @@ $$
 
 ### 解答 1.9-6
 
-**复射影空间与复格拉斯曼流形.** 复射影空间 $P^{n-1}\left(\mathbb C\right)$ 为 $\mathbb C^n$ 的所有 $1$ 维复子空间的全体, 复格拉斯曼流形 $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ 为 $\mathbb C^n$ 的所有 $k$ 维复子空间的全体. $\mathrm{GL}\left(n,\mathbb C\right)$ 分别以 $\rho\left(W\right)=\rho W$ 作用于二者, 由**基础知识: 线性映射保持子空间维数** 与复情形的等价论证 (与实情形完全相同), 由**定义 1.9.1 (群作用)** 与**定义 1.9.7 (可递作用与有效作用)**, 这是两个可递作用.
+**复射影空间与复格拉斯曼流形.** 复射影空间 $P^{n-1}\left(\mathbb C\right)$ 为 $\mathbb C^n$ 的所有 $1$ 维复子空间的全体, 复格拉斯曼流形 $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ 为 $\mathbb C^n$ 的所有 $k$ 维复子空间的全体. $\mathrm{GL}\left(n,\mathbb C\right)$ 分别以 $\rho\left(W\right)=\rho W$ 作用于二者, 由线性映射保持子空间维数 与复情形的等价论证 (与实情形完全相同), 由**定义 1.9.1 (群作用)** 与**定义 1.9.7 (可递作用与有效作用)**, 这是两个可递作用.
 
 由**定义 1.9.9 (轨道与迷向子群)**, 分别取 $W_0=\mathbb Ce_1$ 与 $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$, 迷向子群分别为
 
@@ -142,7 +126,7 @@ $$
 \rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)
 $$
 
-作用于其上. 由**基础知识: 正交与酉变换**, 酉变换保持埃尔米特内积, 故定义合理, 由**定义 1.9.1 (群作用)** 这是作用. 作用可递: 由**基础知识: 正交与酉变换**, 两组标准正交向量组分别扩充为标准正交基, 对应的酉映射即为所求. 由**定义 1.9.9 (轨道与迷向子群)**, 取基准 $\left(e_1,\cdots,e_k\right)$, 迷向子群为
+作用于其上. 由正交与酉变换, 酉变换保持埃尔米特内积, 故定义合理, 由**定义 1.9.1 (群作用)** 这是作用. 作用可递: 由正交与酉变换, 两组标准正交向量组分别扩充为标准正交基, 对应的酉映射即为所求. 由**定义 1.9.9 (轨道与迷向子群)**, 取基准 $\left(e_1,\cdots,e_k\right)$, 迷向子群为
 
 $$
 F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
@@ -184,7 +168,7 @@ $$
 
 故 $g\circ z\in H$, 定义合理.
 
-**第二步: 验证作用公理.** 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又由**基础知识: 分式线性变换**, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
+**第二步: 验证作用公理.** 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又由分式线性变换, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
 
 **第三步: 判断可递性.** 任取 $z=x+iy\in H$ ($y> 0$), 取
 
@@ -200,7 +184,7 @@ $$
 
 故 $i$ 可映到任意 $z\in H$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
 
-**第四步: 判断有效性.** 若 $g\circ z=z$ 对一切 $z\in H$ 成立, 则分式线性变换 $\frac{az+b}{cz+d}$ 有无穷多个不动点, 由**基础知识: 分式线性变换**, 它必为恒等变换, 故 $c=0$, $b=0$, $a=d$; 结合 $\det g=ad-bc=a^{2}=1$, 得 $g=\pm I$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ z=\frac{-z}{-1}=z$. 故作用的核为 $\left\{\pm I\right\}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用不是有效的; 其有效商群为
+**第四步: 判断有效性.** 若 $g\circ z=z$ 对一切 $z\in H$ 成立, 则分式线性变换 $\frac{az+b}{cz+d}$ 有无穷多个不动点, 由分式线性变换, 它必为恒等变换, 故 $c=0$, $b=0$, $a=d$; 结合 $\det g=ad-bc=a^{2}=1$, 得 $g=\pm I$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ z=\frac{-z}{-1}=z$. 故作用的核为 $\left\{\pm I\right\}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用不是有效的; 其有效商群为
 
 $$
 \mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
@@ -281,7 +265,7 @@ $$
 
 故 $\left|\mathrm{Fix}\left(p_2\right)\right|=1$, 恰有一个不动点.
 
-由**基础知识: 群作用的轨道分解**, $p_2$ 的非不动点轨道大小均为 $2$, 故
+由群作用的轨道分解, $p_2$ 的非不动点轨道大小均为 $2$, 故
 
 $$
 \left|X\right|\equiv\left|\mathrm{Fix}\left(p_2\right)\right|\equiv1\pmod 2,

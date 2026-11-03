@@ -1,13 +1,5 @@
 # week17
 
-> **基础知识: 代数整数环的范数**
-> 
-> 设 $d> 0$ 为无平方因子整数, $\omega=\frac{1+\sqrt{-d}}{2}$ 满足 $\omega^{2}-\omega+\frac{1+d}{4}=0$ 当 $d\equiv3\pmod4$. 对 $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, 定义范数 $N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+ab+b^{2}\omega\overline\omega$, 它是乘性函数且 $N\left(\alpha\right)=0$ 当且仅当 $\alpha=0$. 对 $\alpha\in\mathbb Z\left[\omega\right]$, $N\left(\alpha\right)=\left|\alpha\right|^{2}$ (复数模长的平方).
-
-> **基础知识: 二次型的界**
-> 
-> 设 $\left|u\right|,\left|v\right|\le\frac12$, 则二次型 $u^{2}+uv+v^{2}\le\frac34$, 且 $u^{2}+uv+v^{2}$ 作为关于 $u$ 的二次型 (在 $\left|u\right|\le\frac12$ 内) 在 $u=-\frac v2$ 处取最小值 $\frac34v^{2}$.
-
 > **定义 2.7.1 (主理想整环)**
 > 
 > 一个交换幺环称为主理想环, 若它的每个理想都是主理想; 若一个主理想环还是整环, 则称此环为主理想整环.
@@ -24,7 +16,7 @@
 
 ### 解答 2.7-7
 
-记 $\omega=\frac{1+\sqrt{-3}}{2}$. 则 $\overline\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, 且 $\omega+\overline\omega=1$, $\omega\overline\omega=1$. 由**基础知识: 代数整数环的范数**, 对 $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$ 定义范数
+记 $\omega=\frac{1+\sqrt{-3}}{2}$. 则 $\overline\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, 且 $\omega+\overline\omega=1$, $\omega\overline\omega=1$. 由代数整数环的范数, 对 $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$ 定义范数
 
 $$
 N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^{2}+ab\left(\omega+\overline\omega\right)+b^{2}\omega\overline\omega=a^{2}+ab+b^{2},
@@ -38,13 +30,13 @@ $$
 r=\beta\left[\left(x-m\right)+\left(y-n\right)\omega\right].
 $$
 
-记 $u=x-m$, $v=y-n$, 则 $\left|u\right|\le\frac12$, $\left|v\right|\le\frac12$. 由范数的乘性 (见**基础知识: 代数整数环的范数**),
+记 $u=x-m$, $v=y-n$, 则 $\left|u\right|\le\frac12$, $\left|v\right|\le\frac12$. 由范数的乘性 (见代数整数环的范数),
 
 $$
 N\left(r\right)=N\left(\beta\right)N\left(u+v\omega\right)=N\left(\beta\right)\left(u^{2}+uv+v^{2}\right).
 $$
 
-由**基础知识: 二次型的界**, $\left|u\right|,\left|v\right|\le\frac12$ 时 $u^{2}+uv+v^{2}\le\frac34$. 故
+由二次型的界, $\left|u\right|,\left|v\right|\le\frac12$ 时 $u^{2}+uv+v^{2}\le\frac34$. 故
 
 $$
 N\left(r\right)\le\frac34\,N\left(\beta\right)< N\left(\beta\right).
@@ -60,7 +52,7 @@ $$
 
 ### 解答 2.7-11
 
-记 $R=\mathbb Z\left[\sqrt{-6}\right]$. 对 $\alpha=a+b\sqrt{-6}\in R$ 由**基础知识: 代数整数环的范数** 定义范数 $N\left(\alpha\right)=a^{2}+6b^{2}$, 它是乘性函数. 先确定 $R$ 的单位: 若 $\alpha$ 为单位, 则 $N\left(\alpha\right)=1$, 即 $a^{2}+6b^{2}=1$; 由此 $b=0$, $a=\pm1$. 故 $R$ 的单位只有 $\pm1$.
+记 $R=\mathbb Z\left[\sqrt{-6}\right]$. 对 $\alpha=a+b\sqrt{-6}\in R$ 由代数整数环的范数 定义范数 $N\left(\alpha\right)=a^{2}+6b^{2}$, 它是乘性函数. 先确定 $R$ 的单位: 若 $\alpha$ 为单位, 则 $N\left(\alpha\right)=1$, 即 $a^{2}+6b^{2}=1$; 由此 $b=0$, $a=\pm1$. 故 $R$ 的单位只有 $\pm1$.
 
 反证. 假设 $\left(R,\delta\right)$ 是欧几里得环. 在 $R\setminus\left\{0,\pm1\right\}$ 中取一个使 $\delta\left(m\right)$ 最小的元素 $m$.
 
@@ -108,7 +100,7 @@ $$
 
 ### 解答 2.7-14
 
-由 $\omega=\frac{1+\sqrt{-19}}{2}$ 得 $\overline\omega=\frac{1-\sqrt{-19}}{2}$, 且 $\omega+\overline\omega=1$, $\omega\overline\omega=5$. 由**基础知识: 代数整数环的范数**, 对 $\alpha=a+b\omega\in R$, 范数为
+由 $\omega=\frac{1+\sqrt{-19}}{2}$ 得 $\overline\omega=\frac{1-\sqrt{-19}}{2}$, 且 $\omega+\overline\omega=1$, $\omega\overline\omega=5$. 由代数整数环的范数, 对 $\alpha=a+b\omega\in R$, 范数为
 
 $$
 N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^{2}+ab\left(\omega+\overline\omega\right)+b^{2}\omega\overline\omega=a^{2}+ab+5b^{2},
@@ -120,9 +112,9 @@ $$
 a^{2}+ab+5b^{2}=\left(a+\frac{b}{2}\right)^{2}+\frac{19}{4}b^{2}\ge\frac{19}{4}> 4.
 $$
 
-**第 (1) 部分.** 若 $\alpha=a+b\omega$ 为单位, 由**基础知识: 代数整数环的范数**, $N\left(\alpha\right)=1$. 若 $b\ne0$, 由上式 $N\left(\alpha\right)\ge\frac{19}{4}> 1$, 矛盾. 故 $b=0$, $a^{2}=1$, $a=\pm1$. 即 $R$ 的单位只有 $1$ 和 $-1$.
+**第 (1) 部分.** 若 $\alpha=a+b\omega$ 为单位, 由代数整数环的范数, $N\left(\alpha\right)=1$. 若 $b\ne0$, 由上式 $N\left(\alpha\right)\ge\frac{19}{4}> 1$, 矛盾. 故 $b=0$, $a^{2}=1$, $a=\pm1$. 即 $R$ 的单位只有 $1$ 和 $-1$.
 
-**第 (2) 部分.** 先证 $2$ 不可约. 若 $2=\alpha\beta$ 为非平凡分解, 则 $\alpha,\beta$ 均非单位, $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$, 且由**基础知识: 代数整数环的范数** $N\left(\alpha\right),N\left(\beta\right)> 1$, 故 $N\left(\alpha\right)=2$. 但 $a^{2}+ab+5b^{2}=2$ 无整数解: $b=0$ 时 $a^{2}=2$ 无解; $\left|b\right|\ge1$ 时左边 $\ge\frac{19}{4}> 2$. 矛盾, 故 $2$ 不可约.
+**第 (2) 部分.** 先证 $2$ 不可约. 若 $2=\alpha\beta$ 为非平凡分解, 则 $\alpha,\beta$ 均非单位, $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$, 且由代数整数环的范数 $N\left(\alpha\right),N\left(\beta\right)> 1$, 故 $N\left(\alpha\right)=2$. 但 $a^{2}+ab+5b^{2}=2$ 无整数解: $b=0$ 时 $a^{2}=2$ 无解; $\left|b\right|\ge1$ 时左边 $\ge\frac{19}{4}> 2$. 矛盾, 故 $2$ 不可约.
 
 同理, 若 $3=\alpha\beta$ 为非平凡分解, 则 $N\left(\alpha\right)=3$, 而 $a^{2}+ab+5b^{2}=3$ 亦无整数解 (论证同上). 故 $3$ 不可约.
 
@@ -144,7 +136,7 @@ $$
 z=\frac{a}{b}=x+y\omega\in\mathbb Q\left(\sqrt{-19}\right).
 $$
 
-**第 (5) 部分.** 若 $y$ 远离 $\frac12$ (即 $\left|v\right|\le\frac{2}{\sqrt{19}}$, 其中 $v$ 为 $y$ 到最近整数的偏差), 由**基础知识: 二次型的界**, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ 关于 $u$ 的最小值在 $u=-\frac v2$ 处取得. 取整数 $m$ 为 $x+\frac v2$ 的最近整数, 整数 $n$ 为 $y$ 的最近整数, 令 $q=m+n\omega$, 则 $\left|u+\frac v2\right|\le\frac12$ 且
+**第 (5) 部分.** 若 $y$ 远离 $\frac12$ (即 $\left|v\right|\le\frac{2}{\sqrt{19}}$, 其中 $v$ 为 $y$ 到最近整数的偏差), 由二次型的界, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ 关于 $u$ 的最小值在 $u=-\frac v2$ 处取得. 取整数 $m$ 为 $x+\frac v2$ 的最近整数, 整数 $n$ 为 $y$ 的最近整数, 令 $q=m+n\omega$, 则 $\left|u+\frac v2\right|\le\frac12$ 且
 
 $$
 N\left(z-q\right)=N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}\le\frac14+\frac{19}{4}\cdot\frac{4}{19}=\frac54.

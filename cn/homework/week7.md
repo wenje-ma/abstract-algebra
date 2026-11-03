@@ -1,9 +1,5 @@
 # week7
 
-> **基础知识: 满同态保持正规子群**
-> 
-> 设 $f:G\to G'$ 是满同态, 若 $H\triangleleft G$, 则 $f\left(H\right)\triangleleft G'$.
-
 > **定理 1.4.23 (3) (第二同构定理)**
 > 
 > 设 $G$ 是群, $N\triangleleft G$, $H< G$, 则 $HN/N\cong H/\left(H\cap N\right)$.
@@ -44,7 +40,7 @@ $$
 
 ### 解答 1.7-11
 
-**第一步: 证明 $G_2H_2=G$.** 因 $H_2\triangleleft G$, 由**基础知识: 满同态保持正规子群**, 自然同态 $\pi:G\to G/G_2$ 的像 $\pi\left(H_2\right)$ 是 $G/G_2$ 的正规子群. 又 $\pi\left(H_2\right)=\left\{hG_2\mid h\in H_2\right\}=\left(G_2H_2\right)/G_2$ (因 $G_2\subseteq G_2H_2$), 故 $\left(G_2H_2\right)/G_2\triangleleft G/G_2$. 因 $G/G_2$ 是合成因子, 为单群, 故 $\left(G_2H_2\right)/G_2$ 只能是平凡群或 $G/G_2$, 即 $G_2H_2=G_2$ 或 $G$.
+**第一步: 证明 $G_2H_2=G$.** 因 $H_2\triangleleft G$, 由满同态保持正规子群, 自然同态 $\pi:G\to G/G_2$ 的像 $\pi\left(H_2\right)$ 是 $G/G_2$ 的正规子群. 又 $\pi\left(H_2\right)=\left\{hG_2\mid h\in H_2\right\}=\left(G_2H_2\right)/G_2$ (因 $G_2\subseteq G_2H_2$), 故 $\left(G_2H_2\right)/G_2\triangleleft G/G_2$. 因 $G/G_2$ 是合成因子, 为单群, 故 $\left(G_2H_2\right)/G_2$ 只能是平凡群或 $G/G_2$, 即 $G_2H_2=G_2$ 或 $G$.
 
 同理, 由 $G_2\triangleleft G$, 自然同态 $\pi':G\to G/H_2$ 的像 $\pi'\left(G_2\right)=\left(G_2H_2\right)/H_2\triangleleft G/H_2$; 因 $G/H_2$ 为单群, 故 $G_2H_2=H_2$ 或 $G$.
 

@@ -1,20 +1,9 @@
 # week12
 
-> **Basic Knowledge: Binomial Theorem in a Commutative Ring**
-> 
-> Let $R$ be a commutative ring, $a,b\in R$, and $n$ a positive integer. Then
 $$
 \left(a-b\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}a^{k}\left(-b\right)^{n-k},
 $$
 and the commutativity of $R$ allows the terms to be collected.
-
-> **Basic Knowledge: The Integer Ring $\mathbb Z$ Is an Integral Domain**
-> 
-> The integer ring $\mathbb Z$ is an integral domain, hence satisfies **Definition 2.1.8 (Ring Without Zero Divisors)**; moreover, for every $m\ge0$, $m\mathbb Z$ is an ideal of $\mathbb Z$, and the quotient ring $\mathbb Z/m\mathbb Z$ is written $\mathbb Z_m$.
-
-> **Basic Knowledge: Cancellation with Nonzero Elements**
-> 
-> In a ring $R$ without zero divisors, if $ab=0$ and $a\ne0$, then $b=0$; if $ba=0$ and $a\ne0$, then $b=0$ (otherwise a zero divisor would occur).
 
 > **Definition 2.1.1 (Ring)**
 > 
@@ -46,7 +35,7 @@ Let $R$ be a ring without zero divisors and $I$ an ideal of $R$. Is the quotient
 
 Not necessarily. We give a counterexample below.
 
-Take the integer ring $R=\mathbb Z$. By **Basic Knowledge: The Integer Ring $\mathbb Z$ Is an Integral Domain**, $\mathbb Z$ is an integral domain, hence satisfies **Definition 2.1.8 (Ring Without Zero Divisors)**. Take the ideal $I=6\mathbb Z$. By **Theorem 2.2.16 (Quotient Ring)**, the quotient ring is
+Take the integer ring $R=\mathbb Z$. By The Integer Ring $\mathbb Z$ Is an Integral Domain, $\mathbb Z$ is an integral domain, hence satisfies **Definition 2.1.8 (Ring Without Zero Divisors)**. Take the ideal $I=6\mathbb Z$. By **Theorem 2.2.16 (Quotient Ring)**, the quotient ring is
 
 $$
 R/I=\mathbb Z/6\mathbb Z=\mathbb Z_6.
@@ -84,7 +73,7 @@ $$
 \left(xe-x\right)a^{m}=x\left(ea^{m}\right)-xa^{m}=xa^{m}-xa^{m}=0.
 $$
 
-Since $a^{m}\ne0$ (from $a\ne0$ and **Definition 2.1.8 (Ring Without Zero Divisors)**, $a^{m}\ne0$), by **Basic Knowledge: Cancellation with Nonzero Elements** we get $xe-x=0$, i.e. $xe=x$ for all $x\in R$. Hence $e$ is a right identity of $R$, and $e\ne0$ (otherwise $xe=x$ would give $x=0$ for all $x$, contradicting that $R$ is not the zero ring).
+Since $a^{m}\ne0$ (from $a\ne0$ and **Definition 2.1.8 (Ring Without Zero Divisors)**, $a^{m}\ne0$), by Cancellation with Nonzero Elements we get $xe-x=0$, i.e. $xe=x$ for all $x\in R$. Hence $e$ is a right identity of $R$, and $e\ne0$ (otherwise $xe=x$ would give $x=0$ for all $x$, contradicting that $R$ is not the zero ring).
 
 Also, for any $x\in R$,
 
@@ -92,9 +81,9 @@ $$
 e\left(ex-x\right)=e^{2}x-ex=ex-ex=0,
 $$
 
-where we used that the right identity gives $e^{2}=e\cdot e=e$. Since $e\ne0$ and $e\left(ex-x\right)=0$, by **Basic Knowledge: Cancellation with Nonzero Elements** we get $ex-x=0$, i.e. $ex=x$. Hence $e$ is also a left identity, so $e$ is the identity of $R$.
+where we used that the right identity gives $e^{2}=e\cdot e=e$. Since $e\ne0$ and $e\left(ex-x\right)=0$, by Cancellation with Nonzero Elements we get $ex-x=0$, i.e. $ex=x$. Hence $e$ is also a left identity, so $e$ is the identity of $R$.
 
-**Next prove that every nonzero element is invertible.** Take any $0\ne x\in R$. Similarly, the descending chain of left ideals $Rx\supseteq Rx^{2}\supseteq\cdots$ stabilizes because there are only finitely many left ideals; there exists $n$ with $Rx^{n}=Rx^{n+1}$. Hence there exists $y\in R$ with $x^{n}=yx^{n+1}=\left(yx\right)x^{n}$, i.e. $\left(e-yx\right)x^{n}=0$. Since $x^{n}\ne0$, by **Basic Knowledge: Cancellation with Nonzero Elements** we get $e-yx=0$, i.e. $yx=e$. Hence $y$ is a left inverse of $x$.
+**Next prove that every nonzero element is invertible.** Take any $0\ne x\in R$. Similarly, the descending chain of left ideals $Rx\supseteq Rx^{2}\supseteq\cdots$ stabilizes because there are only finitely many left ideals; there exists $n$ with $Rx^{n}=Rx^{n+1}$. Hence there exists $y\in R$ with $x^{n}=yx^{n+1}=\left(yx\right)x^{n}$, i.e. $\left(e-yx\right)x^{n}=0$. Since $x^{n}\ne0$, by Cancellation with Nonzero Elements we get $e-yx=0$, i.e. $yx=e$. Hence $y$ is a left inverse of $x$.
 
 Moreover,
 
@@ -102,7 +91,7 @@ $$
 \left(xy-e\right)x=xyx-ex=x\left(yx\right)-x=xe-x=0,
 $$
 
-and since $x\ne0$, by **Basic Knowledge: Cancellation with Nonzero Elements** we get $xy=e$. Hence $x$ also has the right inverse $y$, i.e. $x$ is invertible.
+and since $x\ne0$, by Cancellation with Nonzero Elements we get $xy=e$. Hence $x$ also has the right inverse $y$, i.e. $x$ is invertible.
 
 Thus every element of $R^{*}=R\setminus\left\{0\right\}$ is invertible, so $R^{*}$ forms a group under multiplication. By **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**, $R$ is a division ring. $\blacksquare$
 
@@ -124,7 +113,7 @@ Prove that $\sqrt{I}$ is also an ideal of $R$, called the radical of the ideal $
 
 First, $0\in\sqrt{I}$ (take $n=1$; $0\in I$), so $\sqrt{I}$ is nonempty.
 
-Let $a,b\in\sqrt{I}$; then there exist $m,n\in\mathbb N$ with $a^{m}\in I$ and $b^{n}\in I$. Since $R$ is commutative, by **Basic Knowledge: Binomial Theorem in a Commutative Ring**,
+Let $a,b\in\sqrt{I}$; then there exist $m,n\in\mathbb N$ with $a^{m}\in I$ and $b^{n}\in I$. Since $R$ is commutative, by Binomial Theorem in a Commutative Ring,
 
 $$
 \left(a-b\right)^{m+n-1}=\sum_{k=0}^{m+n-1}\binom{m+n-1}{k}a^{k}\left(-b\right)^{m+n-1-k}.

@@ -1,13 +1,5 @@
 # week17
 
-> **Basic Knowledge: The Norm on the Ring of Algebraic Integers**
-> 
-> Let $d> 0$ be a squarefree integer and $\omega=\frac{1+\sqrt{-d}}{2}$, which satisfies $\omega^{2}-\omega+\frac{1+d}{4}=0$ when $d\equiv3\pmod4$. For $\alpha=a+b\omega\in\mathbb Z\left[\omega\right]$, define the norm $N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+ab+b^{2}\omega\overline\omega$; it is multiplicative and $N\left(\alpha\right)=0$ if and only if $\alpha=0$. For $\alpha\in\mathbb Z\left[\omega\right]$, $N\left(\alpha\right)=\left|\alpha\right|^{2}$ (the square of the complex modulus).
-
-> **Basic Knowledge: A Bound for a Quadratic Form**
-> 
-> If $\left|u\right|,\left|v\right|\le\frac12$, then the quadratic form $u^{2}+uv+v^{2}\le\frac34$; moreover, as a quadratic form in $u$ (over $\left|u\right|\le\frac12$) it attains its minimum $\frac34v^{2}$ at $u=-\frac v2$.
-
 > **Definition 2.7.1 (Principal Ideal Ring)**
 > 
 > A commutative unital ring is called a principal ideal ring if every ideal of it is principal; if a principal ideal ring is also an integral domain, it is called a principal ideal domain.
@@ -24,7 +16,7 @@ Prove that $\mathbb Z\left[\frac{1+\sqrt{-3}}{2}\right]$ is a Euclidean ring.
 
 ### Solution 2.7-7
 
-Write $\omega=\frac{1+\sqrt{-3}}{2}$. Then $\overline\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, and $\omega+\overline\omega=1$, $\omega\overline\omega=1$. By **Basic Knowledge: The Norm on the Ring of Algebraic Integers**, define the norm on $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$ as
+Write $\omega=\frac{1+\sqrt{-3}}{2}$. Then $\overline\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, and $\omega+\overline\omega=1$, $\omega\overline\omega=1$. By The Norm on the Ring of Algebraic Integers, define the norm on $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$ as
 
 $$
 N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^{2}+ab\left(\omega+\overline\omega\right)+b^{2}\omega\overline\omega=a^{2}+ab+b^{2},
@@ -38,13 +30,13 @@ $$
 r=\beta\left[\left(x-m\right)+\left(y-n\right)\omega\right].
 $$
 
-Write $u=x-m$, $v=y-n$; then $\left|u\right|\le\frac12$, $\left|v\right|\le\frac12$. By the multiplicativity of the norm (see **Basic Knowledge: The Norm on the Ring of Algebraic Integers**),
+Write $u=x-m$, $v=y-n$; then $\left|u\right|\le\frac12$, $\left|v\right|\le\frac12$. By the multiplicativity of the norm (see The Norm on the Ring of Algebraic Integers),
 
 $$
 N\left(r\right)=N\left(\beta\right)N\left(u+v\omega\right)=N\left(\beta\right)\left(u^{2}+uv+v^{2}\right).
 $$
 
-By **Basic Knowledge: A Bound for a Quadratic Form**, when $\left|u\right|,\left|v\right|\le\frac12$ we have $u^{2}+uv+v^{2}\le\frac34$. Hence
+By A Bound for a Quadratic Form, when $\left|u\right|,\left|v\right|\le\frac12$ we have $u^{2}+uv+v^{2}\le\frac34$. Hence
 
 $$
 N\left(r\right)\le\frac34\,N\left(\beta\right)< N\left(\beta\right).
@@ -60,7 +52,7 @@ Prove that $\mathbb Z\left[\sqrt{-6}\right]$ is not a Euclidean ring.
 
 ### Solution 2.7-11
 
-Write $R=\mathbb Z\left[\sqrt{-6}\right]$. For $\alpha=a+b\sqrt{-6}\in R$, by **Basic Knowledge: The Norm on the Ring of Algebraic Integers** define the norm $N\left(\alpha\right)=a^{2}+6b^{2}$, which is multiplicative. First determine the units of $R$: if $\alpha$ is a unit, then $N\left(\alpha\right)=1$, i.e. $a^{2}+6b^{2}=1$; this forces $b=0$, $a=\pm1$. Hence the units of $R$ are only $\pm1$.
+Write $R=\mathbb Z\left[\sqrt{-6}\right]$. For $\alpha=a+b\sqrt{-6}\in R$, by The Norm on the Ring of Algebraic Integers define the norm $N\left(\alpha\right)=a^{2}+6b^{2}$, which is multiplicative. First determine the units of $R$: if $\alpha$ is a unit, then $N\left(\alpha\right)=1$, i.e. $a^{2}+6b^{2}=1$; this forces $b=0$, $a=\pm1$. Hence the units of $R$ are only $\pm1$.
 
 Suppose, toward contradiction, that $\left(R,\delta\right)$ is a Euclidean ring. Choose $m\in R\setminus\left\{0,\pm1\right\}$ with $\delta\left(m\right)$ minimal.
 
@@ -108,7 +100,7 @@ This problem proves that the integral domain $R=\mathbb Z\left[\frac{1+\sqrt{-19
 
 ### Solution 2.7-14
 
-From $\omega=\frac{1+\sqrt{-19}}{2}$ we get $\overline\omega=\frac{1-\sqrt{-19}}{2}$, and $\omega+\overline\omega=1$, $\omega\overline\omega=5$. By **Basic Knowledge: The Norm on the Ring of Algebraic Integers**, the norm on $\alpha=a+b\omega\in R$ is
+From $\omega=\frac{1+\sqrt{-19}}{2}$ we get $\overline\omega=\frac{1-\sqrt{-19}}{2}$, and $\omega+\overline\omega=1$, $\omega\overline\omega=5$. By The Norm on the Ring of Algebraic Integers, the norm on $\alpha=a+b\omega\in R$ is
 
 $$
 N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^{2}+ab\left(\omega+\overline\omega\right)+b^{2}\omega\overline\omega=a^{2}+ab+5b^{2},
@@ -120,9 +112,9 @@ $$
 a^{2}+ab+5b^{2}=\left(a+\frac{b}{2}\right)^{2}+\frac{19}{4}b^{2}\ge\frac{19}{4}> 4.
 $$
 
-**Part (1).** If $\alpha=a+b\omega$ is a unit, by **Basic Knowledge: The Norm on the Ring of Algebraic Integers** we have $N\left(\alpha\right)=1$. If $b\ne0$, the inequality above gives $N\left(\alpha\right)\ge\frac{19}{4}> 1$, a contradiction. Hence $b=0$, $a^{2}=1$, $a=\pm1$. Thus the units of $R$ are only $1$ and $-1$.
+**Part (1).** If $\alpha=a+b\omega$ is a unit, by The Norm on the Ring of Algebraic Integers we have $N\left(\alpha\right)=1$. If $b\ne0$, the inequality above gives $N\left(\alpha\right)\ge\frac{19}{4}> 1$, a contradiction. Hence $b=0$, $a^{2}=1$, $a=\pm1$. Thus the units of $R$ are only $1$ and $-1$.
 
-**Part (2).** First prove $2$ is irreducible. If $2=\alpha\beta$ is a nontrivial factorization, then $\alpha,\beta$ are both non-units and $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$; by **Basic Knowledge: The Norm on the Ring of Algebraic Integers**, $N\left(\alpha\right),N\left(\beta\right)> 1$, so $N\left(\alpha\right)=2$. But $a^{2}+ab+5b^{2}=2$ has no integer solution: for $b=0$ we need $a^{2}=2$, impossible; for $\left|b\right|\ge1$ the left side is $\ge\frac{19}{4}> 2$. A contradiction, so $2$ is irreducible.
+**Part (2).** First prove $2$ is irreducible. If $2=\alpha\beta$ is a nontrivial factorization, then $\alpha,\beta$ are both non-units and $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$; by The Norm on the Ring of Algebraic Integers, $N\left(\alpha\right),N\left(\beta\right)> 1$, so $N\left(\alpha\right)=2$. But $a^{2}+ab+5b^{2}=2$ has no integer solution: for $b=0$ we need $a^{2}=2$, impossible; for $\left|b\right|\ge1$ the left side is $\ge\frac{19}{4}> 2$. A contradiction, so $2$ is irreducible.
 
 Similarly, if $3=\alpha\beta$ is a nontrivial factorization, then $N\left(\alpha\right)=3$, but $a^{2}+ab+5b^{2}=3$ also has no integer solution (by the same argument). Hence $3$ is irreducible.
 
@@ -144,7 +136,7 @@ $$
 z=\frac{a}{b}=x+y\omega\in\mathbb Q\left(\sqrt{-19}\right).
 $$
 
-**Part (5).** If $y$ is far from $\frac12$ (i.e. $\left|v\right|\le\frac{2}{\sqrt{19}}$, where $v$ is the deviation of $y$ from the nearest integer), then by **Basic Knowledge: A Bound for a Quadratic Form**, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ attains its minimum in $u$ at $u=-\frac v2$. Choose the integer $m$ as the nearest integer to $x+\frac v2$ and the integer $n$ as the nearest integer to $y$, and put $q=m+n\omega$; then $\left|u+\frac v2\right|\le\frac12$ and
+**Part (5).** If $y$ is far from $\frac12$ (i.e. $\left|v\right|\le\frac{2}{\sqrt{19}}$, where $v$ is the deviation of $y$ from the nearest integer), then by A Bound for a Quadratic Form, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ attains its minimum in $u$ at $u=-\frac v2$. Choose the integer $m$ as the nearest integer to $x+\frac v2$ and the integer $n$ as the nearest integer to $y$, and put $q=m+n\omega$; then $\left|u+\frac v2\right|\le\frac12$ and
 
 $$
 N\left(z-q\right)=N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}\le\frac14+\frac{19}{4}\cdot\frac{4}{19}=\frac54.

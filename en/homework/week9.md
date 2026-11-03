@@ -1,21 +1,5 @@
 # week9
 
-> **Basic Knowledge: Linear Maps Preserve Dimension of Subspaces**
-> 
-> An invertible linear transformation maps a $k$-dimensional subspace to a $k$-dimensional subspace; for any two nonzero vectors $v,w$, there exists an invertible linear transformation $\rho$ with $\rho v=w$ (extend $v,w$ to bases of $\mathbb R^n$ and define the linear map).
-
-> **Basic Knowledge: Orthogonal and Unitary Transformations**
-> 
-> An orthogonal transformation preserves the inner product, hence maps orthonormal sets to orthonormal sets and $k$-dimensional subspaces to $k$-dimensional subspaces; any two orthonormal bases can be related by an orthogonal (unitary) transformation.
-
-> **Basic Knowledge: Mobius Transformations**
-> 
-> The composition of Mobius transformations (fractional linear transformations) $z\mapsto\frac{az+b}{cz+d}$ corresponds to matrix multiplication; a Mobius transformation with infinitely many fixed points must be the identity.
-
-> **Basic Knowledge: Orbit Decomposition of a Group Action**
-> 
-> Let $G$ act on $X$. Then $X$ is the disjoint union of its orbits; for $x\in X$, the orbit $O_x$ has size $\left|G\right|/\left|F_x\right|$, where $F_x$ is the stabilizer (isotropy subgroup) of $x$. In particular, when $\mathbb Z_2$ acts on $X$, every orbit of a non-fixed point has exactly $2$ elements, so $\left|X\right|\equiv\left|\mathrm{Fix}\right|\pmod 2$, where $\mathrm{Fix}$ is the set of fixed points.
-
 > **Definition 1.9.1 (Group Action)**
 > 
 > Let $G$ be a group and $X$ a nonempty set. If a map $f:G\times X\to X$ satisfies $f\left(e,x\right)=x$ and $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, then $f$ is said to determine an action of $G$ on $X$, written $f\left(g,x\right)=gx$.
@@ -44,7 +28,7 @@
 
 ### Solution 1.9-4
 
-**Part (1): the action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$.** By **Basic Knowledge: Linear Maps Preserve Dimension of Subspaces**, for $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$ and a $1$-dimensional subspace $W=\mathbb Rv$, $\rho\left(W\right)$ is again a $1$-dimensional subspace. For $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ and $W=\mathbb Rv$,
+**Part (1): the action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$.** By Linear Maps Preserve Dimension of Subspaces, for $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$ and a $1$-dimensional subspace $W=\mathbb Rv$, $\rho\left(W\right)$ is again a $1$-dimensional subspace. For $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ and $W=\mathbb Rv$,
 
 $$
 \rho\left(\tau\left(W\right)\right)=\rho\left(\tau\left(\mathbb Rv\right)\right)=\rho\left(\mathbb R\tau\left(v\right)\right)=\mathbb R\rho\left(\tau\left(v\right)\right)=\left(\rho\tau\right)\left(W\right),
@@ -52,7 +36,7 @@ $$
 
 and the identity matrix $I$ satisfies $I\left(W\right)=W$. By **Definition 1.9.1 (Group Action)**, this is an action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$.
 
-**Transitivity**: Take any two lines $W_1=\mathbb Rv$, $W_2=\mathbb Rw$ ($v,w\ne0$). By **Basic Knowledge: Linear Maps Preserve Dimension of Subspaces**, there exists an invertible matrix $\rho$ with $\rho v=w$, so $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
+**Transitivity**: Take any two lines $W_1=\mathbb Rv$, $W_2=\mathbb Rw$ ($v,w\ne0$). By Linear Maps Preserve Dimension of Subspaces, there exists an invertible matrix $\rho$ with $\rho v=w$, so $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
 
 **Stabilizer**: Take $W_0=\mathbb Re_1$, where $e_1=\left(1,0,\cdots,0\right)^{\top}$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho e_1\in\mathbb Re_1$, i.e. the first column of $\rho$ is $\left(a,0,\cdots,0\right)^{\top}$ with $a\ne0$. Hence by **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer of $W_0$ is
 
@@ -62,7 +46,7 @@ $$
 
 **Part (2): the action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $\mathrm{Gr}\left(k,n\right)$.** Similarly $\rho\left(\tau\left(W\right)\right)=\left(\rho\tau\right)\left(W\right)$ and $I\left(W\right)=W$, so by **Definition 1.9.1 (Group Action)** this is an action.
 
-**Transitivity**: Take two $k$-dimensional subspaces $W_1,W_2$ with bases $\left\{v_1,\cdots,v_k\right\}$ and $\left\{w_1,\cdots,w_k\right\}$; extend them to bases of $\mathbb R^n$. By **Basic Knowledge: Linear Maps Preserve Dimension of Subspaces**, define an invertible linear map $\rho$ with $\rho v_i=w_i$ ($i=1,\cdots,k$); then $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
+**Transitivity**: Take two $k$-dimensional subspaces $W_1,W_2$ with bases $\left\{v_1,\cdots,v_k\right\}$ and $\left\{w_1,\cdots,w_k\right\}$; extend them to bases of $\mathbb R^n$. By Linear Maps Preserve Dimension of Subspaces, define an invertible linear map $\rho$ with $\rho v_i=w_i$ ($i=1,\cdots,k$); then $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
 
 **Stabilizer**: Take $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho$ mapping each $e_i$ ($i\le k$) back into $W_0$, i.e. the first $k$ columns of $\rho$ have zero entries in rows $k+1,\cdots,n$, namely $\rho$ is a block upper triangular matrix. Hence by **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer is
 
@@ -72,7 +56,7 @@ $$
 
 **Part (3): determine transitivity.** The action of $\mathrm{SL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$ and on $\mathrm{Gr}\left(k,n\right)$ is transitive: in the map $\rho$ constructed in Parts (1)(2), if its determinant is not $1$, multiply the last row by a nonzero scalar to adjust the determinant to $1$, without changing the action on subspaces.
 
-$O\left(n\right)$ acts transitively on $P^{n-1}\left(\mathbb R\right)$: by **Basic Knowledge: Orthogonal and Unitary Transformations**, any two unit lines can be related by an orthogonal transformation. $O\left(n\right)$ also acts transitively on $\mathrm{Gr}\left(k,n\right)$: bases of two $k$-dimensional subspaces can be extended to two orthonormal bases, which are related by an orthogonal map by **Basic Knowledge: Orthogonal and Unitary Transformations**.
+$O\left(n\right)$ acts transitively on $P^{n-1}\left(\mathbb R\right)$: by Orthogonal and Unitary Transformations, any two unit lines can be related by an orthogonal transformation. $O\left(n\right)$ also acts transitively on $\mathrm{Gr}\left(k,n\right)$: bases of two $k$-dimensional subspaces can be extended to two orthonormal bases, which are related by an orthogonal map by Orthogonal and Unitary Transformations.
 
 $\mathrm{SO}\left(n\right)$ acts transitively on $P^{n-1}\left(\mathbb R\right)$ when $n\ge3$ (by a suitable rotation one can send any direction to any direction while keeping determinant $1$); it also acts transitively on $\mathrm{Gr}\left(k,n\right)$ when $n\ge3$. $\blacksquare$
 
@@ -90,7 +74,7 @@ Verify that this is a transitive action of $O\left(n\right)$ on $V_k\left(\mathb
 
 ### Solution 1.9-5
 
-**Verify the action**: By **Basic Knowledge: Orthogonal and Unitary Transformations**, an orthogonal transformation preserves the inner product, so if $\left(\alpha_1,\cdots,\alpha_k\right)$ is an orthonormal set then $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ is too, i.e. $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. Moreover
+**Verify the action**: By Orthogonal and Unitary Transformations, an orthogonal transformation preserves the inner product, so if $\left(\alpha_1,\cdots,\alpha_k\right)$ is an orthonormal set then $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ is too, i.e. $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. Moreover
 
 $$
 \rho\left(\tau\left(\alpha_1,\cdots,\alpha_k\right)\right)=\rho\left(\tau\alpha_1,\cdots,\tau\alpha_k\right)=\left(\rho\tau\alpha_1,\cdots,\rho\tau\alpha_k\right)=\left(\rho\tau\right)\left(\alpha_1,\cdots,\alpha_k\right),
@@ -98,7 +82,7 @@ $$
 
 and the identity matrix acts trivially. By **Definition 1.9.1 (Group Action)**, this is an action of $O\left(n\right)$ on $V_k\left(\mathbb R^n\right)$.
 
-**Transitivity**: Take two orthonormal sets $\left(\alpha_1,\cdots,\alpha_k\right)$ and $\left(\beta_1,\cdots,\beta_k\right)$. By **Basic Knowledge: Orthogonal and Unitary Transformations**, extend them to orthonormal bases $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ and $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$ of $\mathbb R^n$. Define the linear map $\rho\alpha_i=\beta_i$ for $i=1,\cdots,n$; then $\rho\in O\left(n\right)$ and
+**Transitivity**: Take two orthonormal sets $\left(\alpha_1,\cdots,\alpha_k\right)$ and $\left(\beta_1,\cdots,\beta_k\right)$. By Orthogonal and Unitary Transformations, extend them to orthonormal bases $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ and $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$ of $\mathbb R^n$. Define the linear map $\rho\alpha_i=\beta_i$ for $i=1,\cdots,n$; then $\rho\in O\left(n\right)$ and
 
 $$
 \rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\beta_1,\cdots,\beta_k\right).
@@ -122,7 +106,7 @@ Extend the actions in Problems 1.9-4 and 1.9-5 to the complex case.
 
 ### Solution 1.9-6
 
-**Complex projective space and complex Grassmannian.** Let $P^{n-1}\left(\mathbb C\right)$ be the set of all $1$-dimensional complex subspaces of $\mathbb C^n$, and let $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ be the set of all $k$-dimensional complex subspaces of $\mathbb C^n$. $\mathrm{GL}\left(n,\mathbb C\right)$ acts on each by $\rho\left(W\right)=\rho W$. By **Basic Knowledge: Linear Maps Preserve Dimension of Subspaces** and the complex analogue of the real argument, by **Definition 1.9.1 (Group Action)** and **Definition 1.9.7 (Transitive and Effective Actions)** these are two transitive actions.
+**Complex projective space and complex Grassmannian.** Let $P^{n-1}\left(\mathbb C\right)$ be the set of all $1$-dimensional complex subspaces of $\mathbb C^n$, and let $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ be the set of all $k$-dimensional complex subspaces of $\mathbb C^n$. $\mathrm{GL}\left(n,\mathbb C\right)$ acts on each by $\rho\left(W\right)=\rho W$. By Linear Maps Preserve Dimension of Subspaces and the complex analogue of the real argument, by **Definition 1.9.1 (Group Action)** and **Definition 1.9.7 (Transitive and Effective Actions)** these are two transitive actions.
 
 By **Definition 1.9.9 (Orbits and Stabilizers)**, taking $W_0=\mathbb Ce_1$ and $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$ respectively, the stabilizers are
 
@@ -142,7 +126,7 @@ $$
 \rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\alpha_1,\cdots,\rho\alpha_k\right).
 $$
 
-By **Basic Knowledge: Orthogonal and Unitary Transformations**, a unitary transformation preserves the Hermitian inner product, so the definition is well-posed; by **Definition 1.9.1 (Group Action)** this is an action. The action is transitive: by **Basic Knowledge: Orthogonal and Unitary Transformations**, two orthonormal sets are extended to orthonormal bases, and the corresponding unitary map is the required one. By **Definition 1.9.9 (Orbits and Stabilizers)**, taking the reference $\left(e_1,\cdots,e_k\right)$, the stabilizer is
+By Orthogonal and Unitary Transformations, a unitary transformation preserves the Hermitian inner product, so the definition is well-posed; by **Definition 1.9.1 (Group Action)** this is an action. The action is transitive: by Orthogonal and Unitary Transformations, two orthonormal sets are extended to orthonormal bases, and the corresponding unitary map is the required one. By **Definition 1.9.9 (Orbits and Stabilizers)**, taking the reference $\left(e_1,\cdots,e_k\right)$, the stabilizer is
 
 $$
 F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
@@ -184,7 +168,7 @@ $$
 
 so $g\circ z\in H$ and the definition is well-posed.
 
-**Step 2: verify the action axioms.** The identity matrix $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ gives $I\circ z=z$. By **Basic Knowledge: Mobius Transformations**, composition of fractional linear transformations corresponds to matrix multiplication, i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. By **Definition 1.9.1 (Group Action)**, this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
+**Step 2: verify the action axioms.** The identity matrix $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ gives $I\circ z=z$. By Mobius Transformations, composition of fractional linear transformations corresponds to matrix multiplication, i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. By **Definition 1.9.1 (Group Action)**, this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
 
 **Step 3: determine transitivity.** For any $z=x+iy\in H$ ($y> 0$), take
 
@@ -200,7 +184,7 @@ $$
 
 Hence $i$ can be mapped to any $z\in H$; by **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
 
-**Step 4: determine effectiveness.** If $g\circ z=z$ for all $z\in H$, then the fractional linear transformation $\frac{az+b}{cz+d}$ has infinitely many fixed points; by **Basic Knowledge: Mobius Transformations**, it must be the identity, so $c=0$, $b=0$, $a=d$; combined with $\det g=ad-bc=a^{2}=1$, we get $g=\pm I$. Here $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ also satisfies $\left(-I\right)\circ z=\frac{-z}{-1}=z$ for all $z$. Hence the kernel of the action is $\left\{\pm I\right\}$; by **Definition 1.9.7 (Transitive and Effective Actions)**, the action is not effective; its effective quotient group is
+**Step 4: determine effectiveness.** If $g\circ z=z$ for all $z\in H$, then the fractional linear transformation $\frac{az+b}{cz+d}$ has infinitely many fixed points; by Mobius Transformations, it must be the identity, so $c=0$, $b=0$, $a=d$; combined with $\det g=ad-bc=a^{2}=1$, we get $g=\pm I$. Here $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ also satisfies $\left(-I\right)\circ z=\frac{-z}{-1}=z$ for all $z$. Hence the kernel of the action is $\left\{\pm I\right\}$; by **Definition 1.9.7 (Transitive and Effective Actions)**, the action is not effective; its effective quotient group is
 
 $$
 \mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
@@ -281,7 +265,7 @@ Case three $x\ge2y$: from $x-2y=x$ we get $y=0$, a contradiction.
 
 Hence $\left|\mathrm{Fix}\left(p_2\right)\right|=1$, exactly one fixed point.
 
-By **Basic Knowledge: Orbit Decomposition of a Group Action**, every orbit of a non-fixed point of $p_2$ has size $2$, so
+By Orbit Decomposition of a Group Action, every orbit of a non-fixed point of $p_2$ has size $2$, so
 
 $$
 \left|X\right|\equiv\left|\mathrm{Fix}\left(p_2\right)\right|\equiv1\pmod 2,

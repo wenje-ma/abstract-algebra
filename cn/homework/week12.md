@@ -1,20 +1,9 @@
 # week12
 
-> **基础知识: 交换环中的二项式定理**
-> 
-> 设 $R$ 为交换环, $a,b\in R$, $n$ 为正整数, 则
 $$
 \left(a-b\right)^{n}=\sum_{k=0}^{n}\binom{n}{k}a^{k}\left(-b\right)^{n-k},
 $$
 且 $R$ 交换保证各项可以合并.
-
-> **基础知识: 整数环 $\mathbb Z$ 是整环**
-> 
-> 整数环 $\mathbb Z$ 是整环, 因而满足**定义 2.1.8 (无零因子环)**; 且对任意 $m\ge0$, $m\mathbb Z$ 是 $\mathbb Z$ 的理想, 商环 $\mathbb Z/m\mathbb Z$ 记作 $\mathbb Z_m$.
-
-> **基础知识: 可逆元的消去**
-> 
-> 在无零因子环 $R$ 中, 若 $ab=0$ 且 $a\ne0$, 则 $b=0$; 若 $ba=0$ 且 $a\ne0$, 则 $b=0$ (否则出现零因子).
 
 > **定义 2.1.1 (环)**
 > 
@@ -46,7 +35,7 @@ $$
 
 不一定. 下面举反例.
 
-取整数环 $R=\mathbb Z$. 由**基础知识: 整数环 $\mathbb Z$ 是整环**, $\mathbb Z$ 是整环, 因而满足**定义 2.1.8 (无零因子环)**. 取理想 $I=6\mathbb Z$. 由**定理 2.2.16 (商环)**, 商环为
+取整数环 $R=\mathbb Z$. 由整数环 $\mathbb Z$ 是整环, $\mathbb Z$ 是整环, 因而满足**定义 2.1.8 (无零因子环)**. 取理想 $I=6\mathbb Z$. 由**定理 2.2.16 (商环)**, 商环为
 
 $$
 R/I=\mathbb Z/6\mathbb Z=\mathbb Z_6.
@@ -84,7 +73,7 @@ $$
 \left(xe-x\right)a^{m}=x\left(ea^{m}\right)-xa^{m}=xa^{m}-xa^{m}=0.
 $$
 
-因 $a^{m}\ne0$ (由 $a\ne0$ 及**定义 2.1.8 (无零因子环)**, $a^{m}\ne0$), 由**基础知识: 可逆元的消去**, 得 $xe-x=0$, 即 $xe=x$ 对一切 $x\in R$ 成立. 故 $e$ 是 $R$ 的右单位元, 且 $e\ne0$ (否则由 $xe=x$ 得 $x=0$ 对一切 $x$, 与 $R$ 非零环矛盾).
+因 $a^{m}\ne0$ (由 $a\ne0$ 及**定义 2.1.8 (无零因子环)**, $a^{m}\ne0$), 由可逆元的消去, 得 $xe-x=0$, 即 $xe=x$ 对一切 $x\in R$ 成立. 故 $e$ 是 $R$ 的右单位元, 且 $e\ne0$ (否则由 $xe=x$ 得 $x=0$ 对一切 $x$, 与 $R$ 非零环矛盾).
 
 又对任意 $x\in R$,
 
@@ -92,9 +81,9 @@ $$
 e\left(ex-x\right)=e^{2}x-ex=ex-ex=0,
 $$
 
-其中用到右单位元给出 $e^{2}=e\cdot e=e$. 因 $e\ne0$ 且 $e\left(ex-x\right)=0$, 由**基础知识: 可逆元的消去**, 得 $ex-x=0$, 即 $ex=x$. 故 $e$ 同时是左单位元, 即 $e$ 是 $R$ 的幺元.
+其中用到右单位元给出 $e^{2}=e\cdot e=e$. 因 $e\ne0$ 且 $e\left(ex-x\right)=0$, 由可逆元的消去, 得 $ex-x=0$, 即 $ex=x$. 故 $e$ 同时是左单位元, 即 $e$ 是 $R$ 的幺元.
 
-**再证每个非零元可逆.** 任取 $0\ne x\in R$. 同理, 左理想降链 $Rx\supseteq Rx^{2}\supseteq\cdots$ 因只有有限个左理想而稳定, 存在 $n$ 使 $Rx^{n}=Rx^{n+1}$. 于是存在 $y\in R$ 使 $x^{n}=yx^{n+1}=\left(yx\right)x^{n}$, 即 $\left(e-yx\right)x^{n}=0$. 因 $x^{n}\ne0$, 由**基础知识: 可逆元的消去**, 得 $e-yx=0$, 即 $yx=e$. 故 $y$ 是 $x$ 的左逆元.
+**再证每个非零元可逆.** 任取 $0\ne x\in R$. 同理, 左理想降链 $Rx\supseteq Rx^{2}\supseteq\cdots$ 因只有有限个左理想而稳定, 存在 $n$ 使 $Rx^{n}=Rx^{n+1}$. 于是存在 $y\in R$ 使 $x^{n}=yx^{n+1}=\left(yx\right)x^{n}$, 即 $\left(e-yx\right)x^{n}=0$. 因 $x^{n}\ne0$, 由可逆元的消去, 得 $e-yx=0$, 即 $yx=e$. 故 $y$ 是 $x$ 的左逆元.
 
 又
 
@@ -102,7 +91,7 @@ $$
 \left(xy-e\right)x=xyx-ex=x\left(yx\right)-x=xe-x=0,
 $$
 
-由 $x\ne0$ 及**基础知识: 可逆元的消去**, 得 $xy=e$. 故 $x$ 也有右逆元 $y$, 即 $x$ 可逆.
+由 $x\ne0$ 及可逆元的消去, 得 $xy=e$. 故 $x$ 也有右逆元 $y$, 即 $x$ 可逆.
 
 于是 $R^{*}=R\setminus\left\{0\right\}$ 中每个元素可逆, 即 $R^{*}$ 关于乘法构成群. 由**定义 2.2.20 (整环,除环与域)**, $R$ 是除环. $\blacksquare$
 
@@ -124,7 +113,7 @@ $$
 
 首先 $0\in\sqrt{I}$ (取 $n=1$, $0\in I$), 故 $\sqrt{I}$ 非空.
 
-设 $a,b\in\sqrt{I}$, 则存在 $m,n\in\mathbb N$ 使 $a^{m}\in I$, $b^{n}\in I$. 因 $R$ 交换, 由**基础知识: 交换环中的二项式定理**,
+设 $a,b\in\sqrt{I}$, 则存在 $m,n\in\mathbb N$ 使 $a^{m}\in I$, $b^{n}\in I$. 因 $R$ 交换, 由交换环中的二项式定理,
 
 $$
 \left(a-b\right)^{m+n-1}=\sum_{k=0}^{m+n-1}\binom{m+n-1}{k}a^{k}\left(-b\right)^{m+n-1-k}.
