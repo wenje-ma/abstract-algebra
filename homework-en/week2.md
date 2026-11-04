@@ -30,7 +30,7 @@ Let $a,b$ be elements of orders $m,n$ respectively in a group $G$, with $ab=ba$.
 
 (3) If $\left\langle a\right\rangle\cap\left\langle b\right\rangle\ne\left\{e\right\}$, discuss the order of $ab$. Does $G$ necessarily contain an element of order $\left[m,n\right]$?
 
-### Solution 1.2-8
+### Solution to 1.2-8
 
 **(1) Prove that the order of $ab$ is $mn$.** By Distribution of Powers in Commutative Groups, since $ab=ba$, we have $\left(ab\right)^{k}=a^{k}b^{k}$ for every integer $k$. Hence
 
@@ -70,7 +70,7 @@ Let $SL\left(n,\mathbb Z\right)$ be the set of all $n\times n$ matrices whose en
 
 (2) Let $S=\begin{bmatrix}0&-1\\1&0\end{bmatrix}$, $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$, $R=\begin{bmatrix}0&-1\\1&1\end{bmatrix}$, $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$. Prove that any two of them generate $SL\left(2,\mathbb Z\right)$.
 
-### Solution 1.2-13
+### Solution to 1.2-13
 
 **(1) Prove that $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.** The identity matrix $I_n$ has integer entries and $\left|I_n\right|=1$, so $SL\left(n,\mathbb Z\right)$ is nonempty. For any $A,B\in SL\left(n,\mathbb Z\right)$, $B$ has integer entries and $\left|B\right|=1$, so by Adjugate Matrices and Determinants of Integer Matrices, all entries of $B^{-1}$ are integers, hence all entries of $AB^{-1}$ are integers. Moreover, by Adjugate Matrices and Determinants of Integer Matrices, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. Hence $AB^{-1}\in SL\left(n,\mathbb Z\right)$. By **Theorem 1.2.2 (Subgroup Criterion)** (condition (3)), $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
 
@@ -113,61 +113,3 @@ $$
 Then $T=S^{-1}R\in\left\langle R,U\right\rangle$, so $\left\langle R,U\right\rangle\supseteq\left\langle S,T\right\rangle$. Since $R,U\in SL\left(2,\mathbb Z\right)$, the reverse inclusion $\left\langle R,U\right\rangle\subseteq\left\langle S,T\right\rangle$ is obvious. Hence $\left\langle R,U\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 In summary, any two of $S,T,R,U$ generate $SL\left(2,\mathbb Z\right)$. $\blacksquare$
-
-## 1.2-20
-
-Let $H_{1},H_{2}$ be two subgroups of a finite group $G$. Prove that
-
-$$
-\left[G:H_{1}\cap H_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right].
-$$
-
-Moreover, if $\left[G:H_{1}\right]$ and $\left[G:H_{2}\right]$ are coprime, then
-
-$$
-\left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]
-$$
-
-and $G=H_{1}H_{2}$.
-
-### Solution 1.2-20
-
-**First prove the inequality.** Consider the map
-
-$$
-\varphi:G/\left(H_{1}\cap H_{2}\right)\to G/H_{1}\times G/H_{2},\quad g\left(H_{1}\cap H_{2}\right)\mapsto\left(gH_{1},gH_{2}\right).
-$$
-
-**Well-defined**: if $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$, then by **Lemma 1.2.12 (Coset Coincidence Criterion)**, $g^{-1}g'\in H_{1}\cap H_{2}$, so $g^{-1}g'\in H_{1}$ and $g^{-1}g'\in H_{2}$, and by **Lemma 1.2.12 (Coset Coincidence Criterion)** again, $gH_{1}=g'H_{1}$ and $gH_{2}=g'H_{2}$; hence $\varphi$ is well-defined.
-
-**Injectivity**: if $\left(gH_{1},gH_{2}\right)=\left(g'H_{1},g'H_{2}\right)$, then by **Lemma 1.2.12 (Coset Coincidence Criterion)**, $g^{-1}g'\in H_{1}$ and $g^{-1}g'\in H_{2}$, so $g^{-1}g'\in H_{1}\cap H_{2}$, and by **Lemma 1.2.12 (Coset Coincidence Criterion)** again, $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$. Hence $\varphi$ is injective.
-
-Therefore $\left[G:H_{1}\cap H_{2}\right]=\left|G/\left(H_{1}\cap H_{2}\right)\right|\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
-
-**Next prove equality in the coprime case.** By **Corollary 1.2.23 (Multiplicativity of the Index)**, since $H_{1}\cap H_{2}< H_{1}< G$,
-
-$$
-\left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[H_{1}:H_{1}\cap H_{2}\right].
-$$
-
-Hence $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. Similarly, from $H_{1}\cap H_{2}< H_{2}< G$, we get $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. Since $\left[G:H_{1}\right]$ and $\left[G:H_{2}\right]$ are coprime, by Greatest Common Divisor and Least Common Multiple, $\left[G:H_{1}\right]\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. Combined with the inequality $\left[G:H_{1}\cap H_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right]$ just proved, we get $\left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
-
-**Finally prove $G=H_{1}H_{2}$.** By Order of a Product of Finite Subsets,
-
-$$
-\left|H_{1}H_{2}\right|=\frac{\left|H_{1}\right|\left|H_{2}\right|}{\left|H_{1}\cap H_{2}\right|}.
-$$
-
-By **Theorem 1.2.22 (Lagrange's Theorem)**, $\left|H_{1}\right|=\frac{\left|G\right|}{\left[G:H_{1}\right]}$, $\left|H_{2}\right|=\frac{\left|G\right|}{\left[G:H_{2}\right]}$, and
-
-$$
-\left|H_{1}\cap H_{2}\right|=\frac{\left|G\right|}{\left[G:H_{1}\cap H_{2}\right]}=\frac{\left|G\right|}{\left[G:H_{1}\right]\left[G:H_{2}\right]}.
-$$
-
-Substituting,
-
-$$
-\left|H_{1}H_{2}\right|=\frac{\frac{\left|G\right|}{\left[G:H_{1}\right]}\cdot\frac{\left|G\right|}{\left[G:H_{2}\right]}}{\frac{\left|G\right|}{\left[G:H_{1}\right]\left[G:H_{2}\right]}}=\left|G\right|.
-$$
-
-Since $H_{1}H_{2}\subseteq G$ and the two have the same number of elements, $G=H_{1}H_{2}$. $\blacksquare$

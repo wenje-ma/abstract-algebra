@@ -20,7 +20,7 @@
 
 Give an example of an infinite commutative semigroup that has an identity element and satisfies the cancellation law, but is not a group.
 
-### Solution 1.1-8
+### Solution to 1.1-8
 
 Take $S=\mathbb N$ (the set of all nonnegative integers) with the usual operation of addition $+$.
 
@@ -44,7 +44,7 @@ $$
 
 Here $A\setminus B=\left\{x\in A\mid x\notin B\right\}$. Prove that $\left(P\left(X\right),\triangle\right)$ is a group. When $X$ has exactly two elements, give the group table of this group; in this case the group is called the Klein group.
 
-### Solution 1.1-9
+### Solution to 1.1-9
 
 For any $A\in P\left(X\right)$, describe $A$ by its indicator function $\chi_A:X\to\left\{0,1\right\}$. By Power Set, Indicator Functions and Symmetric Difference, $A\mapsto\chi_A$ is injective and $\chi_{A\triangle B}=\chi_A+\chi_B\pmod2$.
 
@@ -84,7 +84,7 @@ $$
 
 (2) Prove that $\mathrm{Aff}\left(n,\mathbb R\right)=\left\{T_{\left(A,\beta\right)}\mid\left|A\right|\ne0\right\}$ forms a group under composition of maps, called the affine transformation group of $\mathbb R^n$.
 
-### Solution 1.1-16
+### Solution to 1.1-16
 
 **(1) Prove that $T_{\left(A,\beta\right)}$ is a bijection.** Suppose $\left|A\right|\ne0$. By Invertibility of Square Matrices and Determinants, $A$ is invertible.
 
@@ -140,7 +140,7 @@ $$
 
 (4) Call $f$ completely multiplicative if $f\left(mn\right)=f\left(m\right)f\left(n\right)$ for all $m,n\in\mathbb N^*$; does the set of all nonzero completely multiplicative functions form an abelian group under the operation $*$?
 
-### Solution 1.1-20
+### Solution to 1.1-20
 
 **(1) Prove that $\left(S,*\right)$ is a commutative monoid.** By **Definition 1.1.4 (Semigroup and Monoid)**, we verify the axioms one by one.
 

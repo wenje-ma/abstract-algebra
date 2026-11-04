@@ -1,157 +1,181 @@
 # week4
 
-> **Theorem 1.2.2 (Subgroup Criterion)**
+> **Theorem 1.2.22 (Lagrange's Theorem)**
 > 
-> Let $H$ be a nonempty subset of a group $G$. Then the following conditions are equivalent: (1) $H$ is a subgroup of $G$; (2) for all $a,b\in H$, $ab\in H$ and $a^{-1}\in H$; (3) for all $a,b\in H$, $ab^{-1}\in H$.
+> Let $G$ be a finite group and $H< G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, where $\left[G:H\right]$ is the index of $H$ in $G$. Hence the order of the subgroup $H$ is a divisor of the order of the group $G$; in particular, the order of any element is also a divisor of $\left|G\right|$.
 
-> **Definition 1.3.1 (Normal Subgroup)**
+> **Theorem 1.4.10 (Cayley's Theorem)**
 > 
-> Let $H$ be a subgroup of a group $G$. If $ghg^{-1}\in H$ for all $g\in G$ and $h\in H$, then $H$ is called a normal subgroup of $G$, denoted $H\triangleleft G$.
+> Every group $G$ is isomorphic to a subgroup of the symmetric group $S_G$; in fact the map $L:G\to L_G$, $a\mapsto L_a$ is a monomorphism.
 
-> **Definition 1.4.1 (Group Homomorphism and Isomorphism)**
+> **Lemma 1.4.13**
 > 
-> Let $G$ and $G'$ be two groups. If a map $f:G\to G'$ satisfies $f\left(ab\right)=f\left(a\right)f\left(b\right)$ for all $a,b\in G$, then $f$ is called a group homomorphism from $G$ to $G'$. If the homomorphism $f$ is a bijection, then $f$ is called a group isomorphism from $G$ to $G'$; in this case the groups $G$ and $G'$ are said to be isomorphic, denoted $G\cong G'$.
+> Let $f:G\to G'$ be a group homomorphism. Then $\mathrm{Im}\,f< G'$ and $\ker f\triangleleft G$.
 
-> **Definition 1.4.9 (Left and Right Translations)**
+> **Example 1.4.17**
 > 
-> For any $a\in G$, define the transformations $L_a,R_a$ on $G$ by $L_a\left(g\right)=ag$, $R_a\left(g\right)=ga$ for all $g\in G$; $L_a,R_a$ are called the left translation and right translation determined by $a$ respectively.
-
-> **Definition 1.4.11 (Kernel and Image of a Homomorphism)**
-> 
-> Let $f:G\to G'$ be a group homomorphism. The set $\ker f=\left\{a\in G\mid f\left(a\right)=e'\right\}$ is called the kernel of the homomorphism $f$, and the set $\mathrm{Im}\left(f\right)=f\left(G\right)=\left\{f\left(a\right)\mid a\in G\right\}$ is called the image of the homomorphism $f$.
+> Let $V$ be an $n$-dimensional vector space over a field $P$. Then the map $\det\circ\pi:S_n\to P^{*}$, $\sigma\mapsto\det\left(\pi_\sigma\right)$ is a group homomorphism whose image is $\left\{1,-1\right\}$ (for $n> 1$); its kernel is denoted $A_n$.
 
 > **Theorem 1.4.19 (Fundamental Theorem of Group Homomorphisms)**
 > 
 > Let $f:G\to G'$ be a surjective group homomorphism. Then $G/\ker f\cong G'$.
 
-## 1.4-3
+> **Theorem 1.5.5 (Classification of Cyclic Groups)**
+> 
+> Let $G$ be a cyclic group. If $G$ is infinite, then $G$ is isomorphic to $\left(\mathbb Z,+\right)$; if $G$ is a group of order $n$, then $G$ is isomorphic to $\left(\mathbb Z_n,+\right)$. Hence two cyclic groups are isomorphic if and only if they have the same order.
 
-Let $G$ be a group. Define $R:G\to S_{G}$ by $R\left(a\right)=R_{a}$, where $R_{a}$ is the right translation. Prove that $R$ is an anti-isomorphism of $G$, i.e. it satisfies $R\left(ab\right)=R\left(b\right)R\left(a\right)$.
+> **Definition 1.6.1 (Cycle)**
+> 
+> Let $\left\{i_1,i_2,\cdots,i_r\right\}\subseteq\left\{1,2,\cdots,n\right\}$. If $\sigma\in S_n$ satisfies $\sigma\left(i_1\right)=i_2$, $\sigma\left(i_2\right)=i_3$, ..., $\sigma\left(i_r\right)=i_1$ and fixes all other letters, then $\sigma$ is called an $r$-cycle, denoted $\sigma=\left(i_1i_2\cdots i_r\right)$. In particular, a $2$-cycle is called a transposition.
 
-### Solution 1.4-3
+> **Theorem 1.6.4 (Cycle Decomposition)**
+> 
+> Every element $\sigma$ of $S_n$ can be written as a product of some disjoint cycles of $S_n$; disregarding order, this representation is unique.
 
-For any $g\in G$, by **Definition 1.4.9 (Left and Right Translations)**, $R_a\left(g\right)=ga$.
+> **Lemma 1.6.7 (Decomposition of a Cycle into Transpositions)**
+> 
+> Every $r$-cycle can be written as a product of $r-1$ transpositions: $\left(i_1i_2\cdots i_r\right)=\left(i_1i_r\right)\left(i_1i_{r-1}\right)\cdots\left(i_1i_3\right)\left(i_1i_2\right)$.
 
-**Step 1: prove that $R$ is an anti-homomorphism.** For any $g\in G$,
+> **Proposition 1.6.8**
+> 
+> Every permutation of $n$ elements can be written as a product of transpositions.
 
-$$
-R\left(ab\right)\left(g\right)=R_{ab}\left(g\right)=g\left(ab\right)=\left(ga\right)b=R_b\left(ga\right)=R_b\left(R_a\left(g\right)\right)=\left(R_b\circ R_a\right)\left(g\right)=R\left(b\right)R\left(a\right)\left(g\right).
-$$
+> **Theorem 1.6.9 (Simplicity of the Alternating Group)**
+> 
+> For $n\ge5$, $A_n$ is a simple group.
 
-Since $g$ is arbitrary, $R\left(ab\right)=R\left(b\right)R\left(a\right)$, and by Anti-Homomorphism and Anti-Isomorphism, $R$ is an anti-homomorphism from $G$ to $S_G$.
+## 1.5-3
 
-**Step 2: prove that $R$ is injective.** If $R\left(a\right)=R\left(b\right)$, then $R_a=R_b$. In particular $R_a\left(e\right)=R_b\left(e\right)$, i.e. $ea=eb$, so $a=b$. Hence $R$ is injective.
+Let $\left(m,n\right)=1$. Prove that $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$.
 
-**Step 3: prove that the image of $R$ is a subgroup of $S_G$.** Write $R_G=\left\{R_a\mid a\in G\right\}$. By definition, $R:G\to R_G$ is surjective. Also, by Symmetric Groups and Bijective Transformations, $R_a$ is a bijection of $G$ (with inverse $R_{a^{-1}}$), so $R_G\subseteq S_G$, and $R_G$ is a subgroup of $S_G$ (closed under composition and inverses in $R_G$, since $R_aR_b=R_{ba}$ and $R_a^{-1}=R_{a^{-1}}$).
+### Solution to 1.5-3
 
-In summary, $R:G\to R_G$ is a bijective anti-homomorphism, and by Anti-Homomorphism and Anti-Isomorphism, $R$ is an anti-isomorphism; that is, $G$ is anti-isomorphic to the subgroup $R_G$ of $S_G$. $\blacksquare$
+Consider the element $\left(\overline{1},\overline{1}\right)$ of $\mathbb Z_m\times\mathbb Z_n$. Let its order be $d$. By The Additive Group of Residue Classes Modulo $n$, $d\left(\overline{1},\overline{1}\right)=\left(d\overline{1},d\overline{1}\right)=\left(\overline{0},\overline{0}\right)$ if and only if $m\mid d$ and $n\mid d$. By the definition of order, $d\left(\overline{1},\overline{1}\right)=\left(\overline{0},\overline{0}\right)$, so $m\mid d$ and $n\mid d$. Since $\left(m,n\right)=1$, by Greatest Common Divisor and Least Common Multiple, $mn\mid d$.
 
-## 1.4-7
+On the other hand, $mn\left(\overline{1},\overline{1}\right)=\left(mn\overline{1},mn\overline{1}\right)=\left(\overline{0},\overline{0}\right)$, so $d\mid mn$.
 
-Prove that $f\left(x\right)=\cos x+\sqrt{-1}\sin x$ is a group homomorphism from $\left(\mathbb R,+\right)$ to $\left(\mathbb C^{*},\cdot\right)$, and find $\ker f$.
+Hence $d=mn$, i.e. $\left(\overline{1},\overline{1}\right)$ has order $mn$.
 
-### Solution 1.4-7
+Therefore $\left\langle\left(\overline{1},\overline{1}\right)\right\rangle$ is a cyclic subgroup of $\mathbb Z_m\times\mathbb Z_n$ of order $mn$. Since $\left|\mathbb Z_m\times\mathbb Z_n\right|=\left|\mathbb Z_m\right|\left|\mathbb Z_n\right|=mn$, we have $\mathbb Z_m\times\mathbb Z_n=\left\langle\left(\overline{1},\overline{1}\right)\right\rangle$, i.e. $\mathbb Z_m\times\mathbb Z_n$ is a cyclic group of order $mn$.
 
-**Step 1: prove that $f$ is a group homomorphism.** For any $x,y\in\mathbb R$, by Addition Formulas for Trigonometric Functions,
+By **Theorem 1.5.5 (Classification of Cyclic Groups)**, cyclic groups of the same order are isomorphic, so $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$. $\blacksquare$
 
-$$
-f\left(x+y\right)=\cos\left(x+y\right)+\sqrt{-1}\sin\left(x+y\right)=\left(\cos x\cos y-\sin x\sin y\right)+\sqrt{-1}\left(\sin x\cos y+\cos x\sin y\right)=\left(\cos x+\sqrt{-1}\sin x\right)\left(\cos y+\sqrt{-1}\sin y\right)=f\left(x\right)f\left(y\right).
-$$
+## 1.5-15
 
-Moreover $f\left(x\right)\ne0$ for all $x\in\mathbb R$ (since $\cos^2x+\sin^2x=1$) (Complex Exponentials and the Unit Circle), so $f:\mathbb R\to\mathbb C^{*}$ is well-defined. By **Definition 1.4.1 (Group Homomorphism and Isomorphism)**, $f$ is a group homomorphism from $\left(\mathbb R,+\right)$ to $\left(\mathbb C^{*},\cdot\right)$.
+Prove the converse of Theorem 1.5.8, i.e.: let $G$ be a group of order $n$, and suppose that for every divisor $m$ of $n$ there exists a unique subgroup of $G$ of order $m$. Then $G$ is cyclic.
 
-**Step 2: find $\ker f$.** By **Definition 1.4.11 (Kernel and Image of a Homomorphism)**, $\ker f=\left\{x\in\mathbb R\mid f\left(x\right)=1\right\}$. By Complex Exponentials and the Unit Circle, $f\left(x\right)=\cos x+\sqrt{-1}\sin x=1$ if and only if $x=2k\pi$, $k\in\mathbb Z$. Hence
+### Solution to 1.5-15
 
-$$
-\ker f=2\pi\mathbb Z=\left\{2k\pi\mid k\in\mathbb Z\right\}.
-$$
+Let $G$ be a group of order $n$, and suppose that for every divisor $d$ of $n$ there exists a unique subgroup $H_d$ of order $d$. For each $d\mid n$, let $f\left(d\right)$ be the number of elements of $G$ of order exactly $d$.
 
-By **Theorem 1.4.19 (Fundamental Theorem of Group Homomorphisms)**, $\mathbb R/2\pi\mathbb Z\cong\mathrm{Im}\left(f\right)$, where $\mathrm{Im}\left(f\right)=\left\{f\left(x\right)\mid x\in\mathbb R\right\}$ is the multiplicative group of complex numbers on the unit circle $\left\{z\in\mathbb C\mid\left|z\right|=1\right\}$ (Complex Exponentials and the Unit Circle). $\blacksquare$
+**Claim: $f\left(d\right)$ is either $0$ or $\varphi\left(d\right)$.** If $f\left(d\right)=0$, the claim is clear. If $f\left(d\right)> 0$, take $a\in G$ of order $d$; then $\left\langle a\right\rangle$ is a subgroup of $G$ of order $d$, and by uniqueness $\left\langle a\right\rangle=H_d$, so $H_d$ is a cyclic group of order $d$. For any element $b\in G$ of order $d$, $\left\langle b\right\rangle$ is also a subgroup of $G$ of order $d$, so by uniqueness $\left\langle b\right\rangle=H_d$; hence $b$ is a generator of the cyclic group $H_d$ of order $d$. By Number of Generators of a Cyclic Group, a cyclic group of order $d$ has exactly $\varphi\left(d\right)$ generators, so $f\left(d\right)=\varphi\left(d\right)$. The claim is proved.
 
-## 1.4-8
+Hence $f\left(d\right)\le\varphi\left(d\right)$ for every $d\mid n$.
 
-Let $G$ and $H$ be groups and $\varphi:G\to\mathrm{Aut}\left(H\right)$ a group homomorphism. On the set $\left\{\left(g,h\right)\mid g\in G,h\in H\right\}$ define the multiplication by
-
-$$
-\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)=\left(g_{1}g_{2},\varphi\left(g_{2}^{-1}\right)\left(h_{1}\right)h_{2}\right),
-$$
-
-Prove that this set is a group, called the semidirect product of $G$ and $H$, denoted $G\ltimes H$. Furthermore, $G_{1}=\left\{\left(g,e_{H}\right)\mid g\in G\right\}$ is a subgroup of $G\ltimes H$, and $H_{1}=\left\{\left(e_{G},h\right)\mid h\in H\right\}$ is a normal subgroup of $G\ltimes H$.
-
-### Solution 1.4-8
-
-Write $G\ltimes H=\left\{\left(g,h\right)\mid g\in G,h\in H\right\}$, with the multiplication defined as in the problem. We verify the group axioms one by one.
-
-**Closure**: For any $\left(g_1,h_1\right),\left(g_2,h_2\right)\in G\ltimes H$, since $g_1g_2\in G$, and $\varphi\left(g_2^{-1}\right)\left(h_1\right)\in H$ (as $\varphi\left(g_2^{-1}\right)\in\mathrm{Aut}\left(H\right)$) and $h_2\in H$, we have $\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\in H$ (Properties of Homomorphisms into Automorphism Groups). Hence $\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\in G\ltimes H$, so closure holds.
-
-**Associativity**: For any $\left(g_1,h_1\right),\left(g_2,h_2\right),\left(g_3,h_3\right)\in G\ltimes H$, on one hand
+On the other hand, by **Theorem 1.2.22 (Lagrange's Theorem)**, the order of every element of $G$ is a divisor of $n$, so
 
 $$
-\left(\left(g_1,h_1\right)\left(g_2,h_2\right)\right)\left(g_3,h_3\right)=\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\left(g_3,h_3\right)=\left(\left(g_1g_2\right)g_3,\ \varphi\left(g_3^{-1}\right)\left(\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)h_3\right).
+n=\left|G\right|=\sum_{d\mid n}f\left(d\right).
 $$
 
-Since $\varphi\left(g_3^{-1}\right)\in\mathrm{Aut}\left(H\right)$ preserves the multiplication of $H$, we have $\varphi\left(g_3^{-1}\right)\left(\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)=\varphi\left(g_3^{-1}\right)\varphi\left(g_2^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)$; and by Properties of Homomorphisms into Automorphism Groups, $\varphi\left(g_3^{-1}\right)\varphi\left(g_2^{-1}\right)=\varphi\left(g_3^{-1}g_2^{-1}\right)=\varphi\left(\left(g_2g_3\right)^{-1}\right)$. Hence
+By Euler's Totient Function and the Divisibility Identity, $\sum_{d\mid n}\varphi\left(d\right)=n$, hence
 
 $$
-\left(\left(g_1,h_1\right)\left(g_2,h_2\right)\right)\left(g_3,h_3\right)=\left(\left(g_1g_2\right)g_3,\ \varphi\left(\left(g_2g_3\right)^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)\cdot h_3\right).
+\sum_{d\mid n}f\left(d\right)=\sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
-On the other hand,
+Since $f\left(d\right)\le\varphi\left(d\right)$ for every $d\mid n$ and the two sums are equal, we must have $f\left(d\right)=\varphi\left(d\right)$ for every $d\mid n$.
+
+In particular, $f\left(n\right)=\varphi\left(n\right)> 0$, so $G$ contains an element $a$ of order $n$; then $\left\langle a\right\rangle$ is a subgroup of $G$ of order $n$, and since $\left|G\right|=n$, we have $G=\left\langle a\right\rangle$, i.e. $G$ is cyclic. $\blacksquare$
+
+## 1.5-16
+
+Let $G$ be a finite group whose distinct subgroups have distinct orders. Prove that $G$ is cyclic.
+
+### Solution to 1.5-16
+
+Write $\left|G\right|=n$. By the hypothesis, for every positive integer $d$, $G$ has at most one subgroup of order $d$ (if there were two subgroups of order $d$, they would have the same order, contradicting the hypothesis). For each $d\mid n$, let $f\left(d\right)$ be the number of elements of $G$ of order exactly $d$.
+
+**Claim: $f\left(d\right)\le\varphi\left(d\right)$ for every $d\mid n$.** If $f\left(d\right)=0$, the claim is clear. If $f\left(d\right)> 0$, take $a\in G$ of order $d$; then $\left\langle a\right\rangle$ is a cyclic subgroup of $G$ of order $d$. By the hypothesis, $G$ has at most one subgroup of order $d$, so every element $b\in G$ of order $d$ satisfies $\left\langle b\right\rangle=\left\langle a\right\rangle$, i.e. $b$ is a generator of the cyclic group $\left\langle a\right\rangle$ of order $d$. By Number of Generators of a Cyclic Group, a cyclic group of order $d$ has exactly $\varphi\left(d\right)$ generators, so $f\left(d\right)=\varphi\left(d\right)\le\varphi\left(d\right)$. The claim is proved.
+
+By **Theorem 1.2.22 (Lagrange's Theorem)**, the order of every element of $G$ divides $n$, so every element of $G$ is counted in exactly one $f\left(d\right)$ with $d\mid n$, i.e.
 
 $$
-\left(g_1,h_1\right)\left(\left(g_2,h_2\right)\left(g_3,h_3\right)\right)=\left(g_1,h_1\right)\left(g_2g_3,\varphi\left(g_3^{-1}\right)\left(h_2\right)h_3\right)=\left(g_1\left(g_2g_3\right),\ \varphi\left(\left(g_2g_3\right)^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)\cdot h_3\right).
+n=\left|G\right|=\sum_{d\mid n}f\left(d\right).
 $$
 
-Since $G$ satisfies associativity, $\left(g_1g_2\right)g_3=g_1\left(g_2g_3\right)$; the second components of the two right-hand sides coincide, so associativity holds.
-
-**Identity**: Consider $\left(e_G,e_H\right)$. For any $\left(g,h\right)\in G\ltimes H$, since $\varphi\left(e_G\right)=\mathrm{id}_H$ (Properties of Homomorphisms into Automorphism Groups), we have $\varphi\left(e_G^{-1}\right)\left(h\right)=\mathrm{id}_H\left(h\right)=h$, and hence
+By Euler's Totient Function and the Divisibility Identity, $\sum_{d\mid n}\varphi\left(d\right)=n$. Combined with the claim,
 
 $$
-\left(g,h\right)\left(e_G,e_H\right)=\left(g,\varphi\left(e_G^{-1}\right)\left(h\right)e_H\right)=\left(g,h\right),
+n=\sum_{d\mid n}f\left(d\right)\le\sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
-and
+The two ends are equal, so we must have $f\left(d\right)=\varphi\left(d\right)$ for every $d\mid n$.
+
+In particular, $f\left(n\right)=\varphi\left(n\right)> 0$, so $G$ contains an element $a$ of order $n$, and hence $G=\left\langle a\right\rangle$ is cyclic. $\blacksquare$
+
+## 1.6-5
+
+Prove that
 
 $$
-\left(e_G,e_H\right)\left(g,h\right)=\left(g,\varphi\left(g^{-1}\right)\left(e_H\right)h\right)=\left(g,\mathrm{id}_H\left(e_H\right)h\right)=\left(g,h\right).
+S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle,\quad A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle.
 $$
 
-Hence $\left(e_G,e_H\right)$ is the identity.
+### Solution to 1.6-5
 
-**Inverse**: For $\left(g,h\right)\in G\ltimes H$, consider $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$. Since $\varphi\left(\left(g^{-1}\right)^{-1}\right)=\varphi\left(g\right)$, and $\varphi\left(g^{-1}\right)\varphi\left(g\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$ (Properties of Homomorphisms into Automorphism Groups), we have
+**Part 1: prove that $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.** By **Proposition 1.6.8**, $S_n$ is generated by all transpositions. For any transposition $\left(ij\right)$ with $i\ne1$, $j\ne1$, by Conjugation of Cycles, taking $\sigma=\left(1i\right)$ gives $\left(1i\right)\left(1j\right)\left(1i\right)=\left(\sigma\left(1\right)\sigma\left(j\right)\right)=\left(i,j\right)=\left(ij\right)$. Hence every transposition $\left(ij\right)$ can be expressed in terms of $\left(12\right),\left(13\right),\cdots,\left(1n\right)$, so $S_n\subseteq\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$; the reverse inclusion is clear, so $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.
 
-$$
-\left(g,h\right)\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_G,\ \varphi\left(g\right)\left(h\right)\cdot\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_G,\varphi\left(g\right)\left(hh^{-1}\right)\right)=\left(e_G,e_H\right),
-$$
-
-and
+**Part 2: prove that $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.** Write $\sigma=\left(12\cdots n\right)$. By Conjugation of Cycles, for $k=1,2,\cdots,n-1$,
 
 $$
-\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)\left(g,h\right)=\left(e_G,\ \varphi\left(g^{-1}\right)\left(\varphi\left(g\right)\left(h^{-1}\right)\right)h\right)=\left(e_G,\left(\varphi\left(g^{-1}\right)\varphi\left(g\right)\right)\left(h^{-1}\right)\cdot h\right)=\left(e_G,h^{-1}h\right)=\left(e_G,e_H\right).
+\sigma^{k-1}\left(12\right)\sigma^{-\left(k-1\right)}=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)=\left(k,k+1\right),
 $$
 
-Hence $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$ is the inverse of $\left(g,h\right)$.
+so the adjacent transpositions $\left(12\right),\left(23\right),\cdots,\left(n-1,n\right)$ all belong to $\left\langle\left(12\right),\sigma\right\rangle$. Since the adjacent transpositions generate $S_n$ (by **Proposition 1.6.8**, any transposition $\left(ij\right)$ can be written as a product of adjacent transpositions), we have $S_n\subseteq\left\langle\left(12\right),\sigma\right\rangle$; the reverse inclusion is clear, so $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.
 
-Since closure, associativity, identity and inverse all hold, $G\ltimes H$ is a group.
+**Part 3: prove that $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.** By The Alternating Group Is Generated by 3-Cycles, $A_n$ is generated by all 3-cycles. We show that every 3-cycle belongs to $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.
 
-**Verify $G_1< G\ltimes H$.** $\left(e_G,e_H\right)\in G_1$, so $G_1$ is nonempty. For $\left(g_1,e_H\right),\left(g_2,e_H\right)\in G_1$, by the inverse formula, $\left(g_2,e_H\right)^{-1}=\left(g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_2^{-1},e_H\right)$, and hence
+(1) A 3-cycle containing $1$ and $2$ is $\left(12k\right)$ or its inverse, which is in the generating set.
 
-$$
-\left(g_1,e_H\right)\left(g_2,e_H\right)^{-1}=\left(g_1,e_H\right)\left(g_2^{-1},e_H\right)=\left(g_1g_2^{-1},\varphi\left(\left(g_2^{-1}\right)^{-1}\right)\left(e_H\right)e_H\right)=\left(g_1g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_1g_2^{-1},e_H\right)\in G_1.
-$$
+(2) A 3-cycle $\left(1jk\right)$ containing $1$ but not $2$ ($j,k\ne2$): a direct computation gives $\left(12k\right)\left(12j\right)^{-1}=\left(12k\right)\left(1j2\right)=\left(1jk\right)$, so $\left(1jk\right)$ belongs to the generated group.
 
-By **Theorem 1.2.2 (Subgroup Criterion)**, $G_1< G\ltimes H$.
+(3) A 3-cycle $\left(ijk\right)$ not containing $1$: by (2), both $\left(1ij\right)$ and $\left(1ik\right)$ belong to the generated group, and hence $\left(1ij\right)^{-1}\left(1ik\right)=\left(1ji\right)\left(1ik\right)=\left(ikj\right)$. Since $\left(ikj\right)=\left(ijk\right)^{-1}$, we have $\left(ijk\right)$ in the generated group.
 
-**Verify $H_1\triangleleft G\ltimes H$.** First prove $H_1< G\ltimes H$: $\left(e_G,e_H\right)\in H_1$, nonempty; for $\left(e_G,h_1\right),\left(e_G,h_2\right)\in H_1$, by the inverse formula, $\left(e_G,h_2\right)^{-1}=\left(e_G,\varphi\left(e_G\right)\left(h_2^{-1}\right)\right)=\left(e_G,h_2^{-1}\right)$, and hence
+Hence all 3-cycles belong to $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$, so $A_n\subseteq\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. Conversely, each generator $\left(12k\right)$ is a 3-cycle, hence an even permutation (Even and Odd Permutations, the Alternating Group), so it belongs to $A_n$; the reverse inclusion holds. Therefore $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. $\blacksquare$
 
-$$
-\left(e_G,h_1\right)\left(e_G,h_2\right)^{-1}=\left(e_G,h_1\right)\left(e_G,h_2^{-1}\right)=\left(e_G,\varphi\left(e_G^{-1}\right)\left(h_1\right)h_2^{-1}\right)=\left(e_G,h_1h_2^{-1}\right)\in H_1.
-$$
+## 1.6-6
 
-By **Theorem 1.2.2 (Subgroup Criterion)**, $H_1< G\ltimes H$. Now prove normality: for any $\left(g,k\right)\in G\ltimes H$ and $\left(e_G,h\right)\in H_1$, by the inverse formula $\left(g,k\right)^{-1}=\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)$, and $\varphi\left(e_G^{-1}\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$, we compute
+Prove that the nontrivial normal subgroups of $S_n$ are $A_n$ or $K_4$ (when $n=4$).
 
-$$
-\left(g,k\right)\left(e_G,h\right)\left(g,k\right)^{-1}=\left(g,\varphi\left(e_G^{-1}\right)\left(k\right)h\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(g,kh\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(e_G,\varphi\left(g^{-1}\right)\left(kh\right)\cdot\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(e_G,\varphi\left(g^{-1}\right)\varphi\left(g\right)\left(h\right)\right)=\left(e_G,h\right)\in H_1.
-$$
+### Solution to 1.6-6
 
-Hence $\left(g,k\right)H_1\left(g,k\right)^{-1}\subseteq H_1$ for all $\left(g,k\right)\in G\ltimes H$, and by **Definition 1.3.1 (Normal Subgroup)**, $H_1\triangleleft G\ltimes H$. $\blacksquare$
+Let $N\triangleleft S_n$, $N\ne\left\{e\right\}$, $N\ne S_n$.
+
+**Case $n\ge5$.** By **Theorem 1.6.9 (Simplicity of the Alternating Group)**, $A_n$ is simple. Since $N\triangleleft S_n$ and $A_n\triangleleft S_n$ (by Even and Odd Permutations, the Alternating Group), the intersection $N\cap A_n\triangleleft A_n$, so by the simplicity of $A_n$ we have $N\cap A_n=\left\{e\right\}$ or $A_n$.
+
+If $N\cap A_n=A_n$, then $A_n\subseteq N$. Since $\left|A_n\right|=\frac{n!}{2}$, the index of $A_n$ in $S_n$ is $2$ (Even and Odd Permutations, the Alternating Group), so any subgroup containing $A_n$ is $A_n$ or $S_n$; since $N\ne S_n$, we have $N=A_n$.
+
+If $N\cap A_n=\left\{e\right\}$, then for any $x,y\in N\setminus\left\{e\right\}$, since $x,y$ are both odd permutations, $xy$ is an even permutation, so $xy\in N\cap A_n=\left\{e\right\}$, hence $y=x^{-1}$, i.e. $\left|N\right|\le2$, and the non-identity element of $N$ has order two. By A Normal Subgroup Is a Union of Conjugacy Classes, $N$ is a union of conjugacy classes; since the center of $S_n$ is trivial for $n\ge3$ (The Center and Inner Automorphisms of a Group), the conjugacy class of the non-identity element $x\ne e$ has size greater than $1$, contradicting $\left|N\right|\le2$. Hence $N\cap A_n=\left\{e\right\}$ is impossible.
+
+Therefore, for $n\ge5$, the only nontrivial normal subgroup of $S_n$ is $A_n$.
+
+**Case $n=4$.** $\left|S_4\right|=24$ and $\left|A_4\right|=12$, with $A_4\triangleleft S_4$. By The Conjugacy Classes of $S_4$, the conjugacy class sizes of $S_4$ are $1,6,3,8,6$; by A Normal Subgroup Is a Union of Conjugacy Classes and **Theorem 1.2.22 (Lagrange's Theorem)**, the order of a normal subgroup must be a sum of some conjugacy class sizes and must divide $24$, so the possible orders are $1,4,12,24$, corresponding to the normal subgroups $\left\{e\right\}$, $K_4$, $A_4$, $S_4$. Hence the nontrivial normal subgroups are $A_4$ and $K_4$.
+
+**Case $n=3$.** $\left|S_3\right|=6$ and $\left|A_3\right|=3$, with $A_3\triangleleft S_3$ of index $2$. By A Normal Subgroup Is a Union of Conjugacy Classes, the conjugacy class sizes of $S_3$ are $1,3,2$, so the possible orders of a normal subgroup are $1,3,6$; hence the normal subgroups are $\left\{e\right\},A_3,S_3$, and the nontrivial one is $A_3$.
+
+**Case $n\le2$.** $S_n$ has no nontrivial normal subgroups.
+
+In summary, the nontrivial normal subgroups of $S_n$ are $A_n$ (for all $n\ge3$) and $K_4$ when $n=4$. $\blacksquare$
+
+## 1.6-11
+
+Let $\left|G\right|=2n$, where $n$ is odd. Prove that $G$ has a normal subgroup of index $2$.
+
+### Solution to 1.6-11
+
+**Step 1: construct the group homomorphism $\psi:G\to\left\{1,-1\right\}$.** By **Theorem 1.4.10 (Cayley's Theorem)**, the left regular representation $\lambda:G\to S_G$, $g\mapsto L_g$ (where $L_g\left(x\right)=gx$) is a monomorphism; regard $S_G$ as $S_{2n}$ (since $\left|G\right|=2n$). By **Example 1.4.17** and The Sign Homomorphism, the sign homomorphism $\mathrm{sgn}:S_{2n}\to\left\{1,-1\right\}$ is a group homomorphism. The composition $\psi=\mathrm{sgn}\circ\lambda:G\to\left\{1,-1\right\}$ is a group homomorphism.
+
+**Step 2: prove that $\psi$ is surjective.** By A Finite Group of Even Order Has an Element of Order Two, $G$ contains an element $a$ of order two (since $\left|G\right|=2n$ is even). Then $\lambda\left(a\right)=L_a$, and for any $x\in G$, $L_a^2\left(x\right)=a^2x=x$, so $L_a$ is an involution; moreover, since $a\ne e$, if $L_a\left(x\right)=x$, i.e. $ax=x$, then $a=e$, a contradiction, so $L_a$ has no fixed points. Hence $L_a$ is a product of $n$ disjoint transpositions on the $2n$ letters of $G$, and by The Sign Homomorphism, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (since $n$ is odd). Therefore $\psi\left(a\right)=-1$, while $\psi\left(e\right)=1$, so $\psi:G\to\left\{1,-1\right\}$ is a surjective homomorphism.
+
+**Step 3: take the kernel to obtain a normal subgroup of index $2$.** Let $H=\ker\psi$. By **Lemma 1.4.13**, $H\triangleleft G$. By **Theorem 1.4.19 (Fundamental Theorem of Group Homomorphisms)**, $G/H\cong\left\{1,-1\right\}$, so $\left|G/H\right|=2$, i.e. $\left[G:H\right]=2$. Hence $G$ has a normal subgroup $H$ of index $2$. $\blacksquare$

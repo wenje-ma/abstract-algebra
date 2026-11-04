@@ -1,133 +1,390 @@
 # week6
 
-> **Theorem 1.2.22 (Lagrange's Theorem)**
+> **Lemma 1.7.7**
 > 
-> Let $G$ be a finite group and $H< G$. Then $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
+> Let $A,B$ be subgroups of $G$ with $G=AB$ and $A\cap B=\left\{e\right\}$. Then $A$ and $B$ are both normal subgroups of $G$ if and only if $ab=ba$ for all $a\in A$ and $b\in B$.
 
-> **Theorem 1.4.10 (Cayley's Theorem)**
+> **Lemma 1.8.8 (Heredity of Solvability)**
 > 
-> Every group $G$ is isomorphic to a subgroup of the symmetric group $S_G$; in fact the map $L:G\to L_G$, $a\mapsto L_a$ is a monomorphism, where $L_a\left(g\right)=ag$ is the left translation.
+> Subgroups and quotient groups of a solvable group are solvable; conversely, if $N\trianglelefteq G$ and both $N$ and $G/N$ are solvable, then $G$ is solvable.
 
-> **Lemma 1.4.13**
+> **Definition 1.9.1 (Group Action)**
 > 
-> Let $f:G\to G'$ be a group homomorphism. Then $\mathrm{Im}\,f< G'$ and $\ker f\triangleleft G$.
+> Let $G$ be a group and $X$ a nonempty set. If a map $f:G\times X\to X$ satisfies $f\left(e,x\right)=x$ and $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, then $f$ is said to determine an action of $G$ on $X$, written $f\left(g,x\right)=gx$.
 
-> **Example 1.4.17**
+> **Definition 1.9.7 (Transitive and Effective Actions)**
 > 
-> Let $V$ be an $n$-dimensional vector space over a field $P$. Then the map $\det\circ\pi:S_n\to P^{*}$, $\sigma\mapsto\det\left(\pi_\sigma\right)$ is a group homomorphism whose image is $\left\{1,-1\right\}$ (for $n> 1$); its kernel is denoted $A_n$.
+> If for any $x,y\in X$ there exists $g\in G$ with $gx=y$, the action of $G$ on $X$ is called transitive and $X$ is called a homogeneous space of $G$. If $gx=x$ for all $x\in X$ implies $g=e$, the action is called effective. If $gx=x$ for all $g\in G$ and $x\in X$, the action is called trivial.
 
-> **Theorem 1.4.19 (Fundamental Theorem of Group Homomorphisms)**
+> **Definition 1.9.9 (Orbits and Stabilizers)**
 > 
-> Let $f:G\to G'$ be a surjective group homomorphism. Then $G/\ker f\cong G'$.
+> Let $G$ act on $X$ and $x\in X$. The set $O_x=\left\{gx\mid g\in G\right\}$ is called the orbit of $x$. The set $F_x=\left\{g\in G\mid gx=x\right\}$ is called the stabilizer (isotropy subgroup) of $x$.
 
-> **Definition 1.6.1 (Cycle)**
+> **Corollary 1.9.15 (Orbit-Stabilizer Theorem)**
 > 
-> Let $\left\{i_1,i_2,\cdots,i_r\right\}\subseteq\left\{1,2,\cdots,n\right\}$. If $\sigma\in S_n$ satisfies $\sigma\left(i_1\right)=i_2$, $\sigma\left(i_2\right)=i_3$, ..., $\sigma\left(i_r\right)=i_1$ and fixes all other letters, then $\sigma$ is called an $r$-cycle, denoted $\sigma=\left(i_1i_2\cdots i_r\right)$. In particular, a $2$-cycle is called a transposition.
+> Let a group $G$ act on $X$ and $x\in X$. Then $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; hence $\left|O_x\right|\mid\left|G\right|$.
 
-> **Theorem 1.6.4 (Cycle Decomposition)**
+> **Theorem 1.10.8 (Sylow's Second Theorem)**
 > 
-> Every element $\sigma$ of $S_n$ can be written as a product of some disjoint cycles of $S_n$; disregarding order, this representation is unique.
+> Let $P$ be a Sylow $p$-subgroup of $G$, and let $H$ be a subgroup of $G$ of order $p^{k}$, $k\le l$ (where $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$). Then there exists $g\in G$ with $H\subseteq gPg^{-1}$. In particular, the Sylow $p$-subgroups of $G$ are conjugate to one another.
 
-> **Lemma 1.6.7 (Decomposition of a Cycle into Transpositions)**
+> **Theorem 1.10.10 (Sylow's Third Theorem)**
 > 
-> Every $r$-cycle can be written as a product of $r-1$ transpositions: $\left(i_1i_2\cdots i_r\right)=\left(i_1i_r\right)\left(i_1i_{r-1}\right)\cdots\left(i_1i_3\right)\left(i_1i_2\right)$.
+> Let $n_{p}$ be the number of Sylow $p$-subgroups of $G$. Then (1) a Sylow $p$-subgroup $P$ of $G$ satisfies $P\triangleleft G$ if and only if $n_{p}=1$; (2) $n_{p}\mid m$ and $n_{p}\equiv1\pmod p$, where $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$.
 
-> **Proposition 1.6.8**
-> 
-> Every permutation of $n$ elements can be written as a product of transpositions.
+## 1.9-5
 
-> **Theorem 1.6.9 (Simplicity of the Alternating Group)**
-> 
-> For $n\ge5$, $A_n$ is a simple group.
+Let $V_k\left(\mathbb R^n\right)$ denote the set of all ordered $k$-tuples of orthonormal vectors in $\mathbb R^n$, called the Stiefel manifold. For any $\rho\in O\left(n\right)$ and $\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$, define
 
-## 1.6-5
+$$
+\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\left(\alpha_1\right),\cdots,\rho\left(\alpha_k\right)\right).
+$$
+
+Verify that this is a transitive action of $O\left(n\right)$ on $V_k\left(\mathbb R^n\right)$, and find the stabilizer.
+
+### Solution to 1.9-5
+
+**Verify the action**: By Orthogonal and Unitary Transformations, an orthogonal transformation preserves the inner product, so if $\left(\alpha_1,\cdots,\alpha_k\right)$ is an orthonormal set then $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ is too, i.e. $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. Moreover
+
+$$
+\rho\left(\tau\left(\alpha_1,\cdots,\alpha_k\right)\right)=\rho\left(\tau\alpha_1,\cdots,\tau\alpha_k\right)=\left(\rho\tau\alpha_1,\cdots,\rho\tau\alpha_k\right)=\left(\rho\tau\right)\left(\alpha_1,\cdots,\alpha_k\right),
+$$
+
+and the identity matrix acts trivially. By **Definition 1.9.1 (Group Action)**, this is an action of $O\left(n\right)$ on $V_k\left(\mathbb R^n\right)$.
+
+**Transitivity**: Take two orthonormal sets $\left(\alpha_1,\cdots,\alpha_k\right)$ and $\left(\beta_1,\cdots,\beta_k\right)$. By Orthogonal and Unitary Transformations, extend them to orthonormal bases $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ and $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$ of $\mathbb R^n$. Define the linear map $\rho\alpha_i=\beta_i$ for $i=1,\cdots,n$; then $\rho\in O\left(n\right)$ and
+
+$$
+\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\beta_1,\cdots,\beta_k\right).
+$$
+
+By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
+
+**Stabilizer**: Take the reference tuple $\left(e_1,\cdots,e_k\right)$. The condition $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) means that $\rho$ is the identity on the first $k$ standard basis vectors, i.e. $\rho$ is a block diagonal matrix. By **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer is
+
+$$
+F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
+$$
+
+This is the stabilizer of $\left(e_1,\cdots,e_k\right)$. $\blacksquare$
+
+## 1.9-6
+
+Extend the actions in Problems 1.9-4 and 1.9-5 to the complex case.
+
+### Solution to 1.9-6
+
+**Complex projective space and complex Grassmannian.** Let $P^{n-1}\left(\mathbb C\right)$ be the set of all $1$-dimensional complex subspaces of $\mathbb C^n$, and let $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ be the set of all $k$-dimensional complex subspaces of $\mathbb C^n$. $\mathrm{GL}\left(n,\mathbb C\right)$ acts on each by $\rho\left(W\right)=\rho W$. By Linear Maps Preserve Dimension of Subspaces and the complex analogue of the real argument, by **Definition 1.9.1 (Group Action)** and **Definition 1.9.7 (Transitive and Effective Actions)** these are two transitive actions.
+
+By **Definition 1.9.9 (Orbits and Stabilizers)**, taking $W_0=\mathbb Ce_1$ and $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$ respectively, the stabilizers are
+
+$$
+F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb C^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb C\right)\right\}
+$$
+
+and
+
+$$
+F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
+$$
+
+**Complex Stiefel manifold.** Let $V_k\left(\mathbb C^n\right)$ be the set of all ordered $k$-tuples of orthonormal vectors in $\mathbb C^n$ (with respect to the standard Hermitian inner product). $U\left(n\right)$ acts on it by
+
+$$
+\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\alpha_1,\cdots,\rho\alpha_k\right).
+$$
+
+By Orthogonal and Unitary Transformations, a unitary transformation preserves the Hermitian inner product, so the definition is well-posed; by **Definition 1.9.1 (Group Action)** this is an action. The action is transitive: by Orthogonal and Unitary Transformations, two orthonormal sets are extended to orthonormal bases, and the corresponding unitary map is the required one. By **Definition 1.9.9 (Orbits and Stabilizers)**, taking the reference $\left(e_1,\cdots,e_k\right)$, the stabilizer is
+
+$$
+F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
+$$
+
+**Transitivity**. $\mathrm{SL}\left(n,\mathbb C\right)$ acts transitively on the complex projective space and the complex Grassmannian (adjust the determinant as in the real case); $U\left(n\right)$ acts transitively on the complex projective space, the complex Grassmannian and the complex Stiefel manifold; $\mathrm{SU}\left(n\right)$ acts transitively on the corresponding sets when the dimension is large enough. $\blacksquare$
+
+## 1.9-8
+
+Let
+
+$$
+H=\left\{z=x+iy\in\mathbb C\mid y> 0\right\},
+$$
+
+called the Poincare upper half-plane. For any
+
+$$
+g=\begin{bmatrix}a & b\\c & d\end{bmatrix}\in\mathrm{SL}\left(2,\mathbb R\right),
+$$
+
+and $z\in H$, define
+
+$$
+g\circ z=\frac{az+b}{cz+d}.
+$$
+
+Verify that this defines an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$ (called a Mobius transformation or fractional linear transformation), determine its transitivity and effectiveness, and find the stabilizer of $i$.
+
+### Solution to 1.9-8
+
+**Step 1: verify that $g\circ z\in H$.** For $z=x+iy$ ($y> 0$), since $\det g=ad-bc=1$, computing the imaginary part directly:
+
+$$
+\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}> 0,
+$$
+
+so $g\circ z\in H$ and the definition is well-posed.
+
+**Step 2: verify the action axioms.** The identity matrix $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ gives $I\circ z=z$. By Mobius Transformations, composition of fractional linear transformations corresponds to matrix multiplication, i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. By **Definition 1.9.1 (Group Action)**, this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
+
+**Step 3: determine transitivity.** For any $z=x+iy\in H$ ($y> 0$), take
+
+$$
+g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
+$$
+
+whose determinant is $1$, and
+
+$$
+g\circ i=\frac{\sqrt y\cdot i+x/\sqrt y}{0\cdot i+1/\sqrt y}=\left(\sqrt y\cdot i+\frac{x}{\sqrt y}\right)\sqrt y=yi+x=z.
+$$
+
+Hence $i$ can be mapped to any $z\in H$; by **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
+
+**Step 4: determine effectiveness.** If $g\circ z=z$ for all $z\in H$, then the fractional linear transformation $\frac{az+b}{cz+d}$ has infinitely many fixed points; by Mobius Transformations, it must be the identity, so $c=0$, $b=0$, $a=d$; combined with $\det g=ad-bc=a^{2}=1$, we get $g=\pm I$. Here $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ also satisfies $\left(-I\right)\circ z=\frac{-z}{-1}=z$ for all $z$. Hence the kernel of the action is $\left\{\pm I\right\}$; by **Definition 1.9.7 (Transitive and Effective Actions)**, the action is not effective; its effective quotient group is
+
+$$
+\mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
+$$
+
+**Step 5: find the stabilizer of $i$.** From $g\circ i=i$, i.e.
+
+$$
+\frac{ai+b}{ci+d}=i,\quad\Longrightarrow\quad ai+b=i\left(ci+d\right)=ci^{2}+di=-c+di.
+$$
+
+Comparing real and imaginary parts gives $b=-c$, $a=d$. Also
+
+$$
+\det g=ad-bc=a^{2}-\left(-c\right)c=a^{2}+c^{2}=1.
+$$
+
+By **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer of $i$ is
+
+$$
+F_i=\left\{\begin{bmatrix}a & b\\-b & a\end{bmatrix}\;\middle|\;a^{2}+b^{2}=1\right\}\cong SO\left(2\right).
+$$
+
+$\blacksquare$
+
+## 1.9-19
+
+(Fermat's two-squares theorem) Let $p=4k+1$ be a prime,
+
+$$
+X=\left\{\left(x,y,z\right)\in\mathbb N^{3}\mid x^{2}+4yz=p\right\}.
+$$
+
+Let
+
+$$
+p_1:\left(x,y,z\right)\mapsto\left(x,z,y\right),
+$$
+
+$$
+p_2:\left(x,y,z\right)\mapsto
+\begin{cases}
+\left(x+2z,\,z,\,y-x-z\right), & x< y-z,\\
+\left(2y-x,\,y,\,x-y+z\right), & y-z\le x< 2y,\\
+\left(x-2y,\,x-y+z,\,y\right), & x\ge2y.
+\end{cases}
+$$
+
+Prove that the two maps above respectively define two actions of $\mathbb Z_2$ on $X$. Find the number of fixed points of the two actions, and thereby prove that when $p=4k+1$, the equation $x^{2}+y^{2}=p$ has a solution in positive integers.
+
+### Solution to 1.9-19
+
+**First verify that $p_1$ defines an action of $\mathbb Z_2$.** $p_1$ swaps $y,z$; clearly $p_1^{2}=\mathrm{id}$, and
+
+$$
+x^{2}+4zy=x^{2}+4yz=p,
+$$
+
+so $p_1\left(X\right)\subseteq X$. By **Definition 1.9.1 (Group Action)**, $p_1$ is an involution on $X$, defining an action of $\mathbb Z_2=\left\{1,p_1\right\}$ on $X$.
+
+**Next verify $p_2$.** A direct substitution verifies that in all three branches $p_2$ preserves the equation $x^{2}+4yz=p$, and $p_2^{2}=\mathrm{id}$ (the three branches are mutual inverses and agree on the boundaries). By **Definition 1.9.1 (Group Action)**, $p_2$ is also an involution on $X$, defining another action of $\mathbb Z_2$.
+
+**Find the fixed points of $p_2$.** Setting $p_2\left(x,y,z\right)=\left(x,y,z\right)$ in each of the three cases:
+
+Case one $x< y-z$: from $x+2z=x$ we get $z=0$, contradicting $z\in\mathbb N^{+}$; no fixed points.
+
+Case two $y-z\le x< 2y$: from $2y-x=x$ we get $x=y$; the third coordinate $x-y+z=z$ holds automatically. Substituting into the equation:
+
+$$
+x^{2}+4yz=x^{2}+4xz=x\left(x+4z\right)=p.
+$$
+
+Since $p$ is prime and $x$, $x+4z$ are positive integers, we have $x=1$, $x+4z=p$, i.e. $z=\left(p-1\right)/4=k$. The corresponding fixed point is $\left(1,1,k\right)$.
+
+Case three $x\ge2y$: from $x-2y=x$ we get $y=0$, a contradiction.
+
+Hence $\left|\mathrm{Fix}\left(p_2\right)\right|=1$, exactly one fixed point.
+
+By Orbit Decomposition of a Group Action, every orbit of a non-fixed point of $p_2$ has size $2$, so
+
+$$
+\left|X\right|\equiv\left|\mathrm{Fix}\left(p_2\right)\right|\equiv1\pmod 2,
+$$
+
+i.e. $\left|X\right|$ is odd.
+
+Similarly, every orbit of a non-fixed point of $p_1$ has size $2$, so
+
+$$
+\left|\mathrm{Fix}\left(p_1\right)\right|\equiv\left|X\right|\equiv1\pmod 2.
+$$
+
+Hence $\left|\mathrm{Fix}\left(p_1\right)\right|\ge1$, i.e. $p_1$ has at least one fixed point.
+
+A fixed point of $p_1$ satisfies $y=z$. Substituting into the equation gives
+
+$$
+x^{2}+4y^{2}=p,
+$$
+
+i.e.
+
+$$
+p=x^{2}+\left(2y\right)^{2}.
+$$
+
+Set $a=x$, $b=2y$; then $a^{2}+b^{2}=p$, and $a,b$ are positive integers (since $p$ is an odd prime, $x\ne0$; since $y=z\ge1$, $b=2y\ge2$).
+
+Therefore, when $p=4k+1$, the equation $x^{2}+y^{2}=p$ has a solution in positive integers. $\blacksquare$
+
+## 1.9-20
+
+(Burnside's lemma) Let a group $G$ act on a set $X$, and let $t$ denote the number of orbits of $X$ under the action of $G$. For any $g\in G$, let $F\left(g\right)$ denote the number of fixed points of $X$ under $g$, i.e.
+
+$$
+F\left(g\right)=\left|\left\{x\in X\mid gx=x\right\}\right|.
+$$
 
 Prove that
 
 $$
-S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle,\quad A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle.
+\sum_{g\in G}F\left(g\right)=t\left|G\right|.
 $$
 
-### Solution 1.6-5
+### Solution to 1.9-20
 
-**Part 1: prove that $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.** By **Proposition 1.6.8**, $S_n$ is generated by all transpositions. For any transposition $\left(ij\right)$ with $i\ne1$, $j\ne1$, by Conjugation of Cycles, taking $\sigma=\left(1i\right)$ gives $\left(1i\right)\left(1j\right)\left(1i\right)=\left(\sigma\left(1\right)\sigma\left(j\right)\right)=\left(i,j\right)=\left(ij\right)$. Hence every transposition $\left(ij\right)$ can be expressed in terms of $\left(12\right),\left(13\right),\cdots,\left(1n\right)$, so $S_n\subseteq\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$; the reverse inclusion is clear, so $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.
-
-**Part 2: prove that $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.** Write $\sigma=\left(12\cdots n\right)$. By Conjugation of Cycles, for $k=1,2,\cdots,n-1$,
+Consider the set
 
 $$
-\sigma^{k-1}\left(12\right)\sigma^{-\left(k-1\right)}=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)=\left(k,k+1\right),
+S=\left\{\left(g,x\right)\in G\times X\mid gx=x\right\}.
 $$
 
-so the adjacent transpositions $\left(12\right),\left(23\right),\cdots,\left(n-1,n\right)$ all belong to $\left\langle\left(12\right),\sigma\right\rangle$. Since the adjacent transpositions generate $S_n$ (by **Proposition 1.6.8**, any transposition $\left(ij\right)$ can be written as a product of adjacent transpositions), we have $S_n\subseteq\left\langle\left(12\right),\sigma\right\rangle$; the reverse inclusion is clear, so $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.
-
-**Part 3: prove that $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.** By The Alternating Group Is Generated by 3-Cycles, $A_n$ is generated by all 3-cycles. We show that every 3-cycle belongs to $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.
-
-(1) A 3-cycle containing $1$ and $2$ is $\left(12k\right)$ or its inverse, which is in the generating set.
-
-(2) A 3-cycle $\left(1jk\right)$ containing $1$ but not $2$ ($j,k\ne2$): a direct computation gives $\left(12k\right)\left(12j\right)^{-1}=\left(12k\right)\left(1j2\right)=\left(1jk\right)$, so $\left(1jk\right)$ belongs to the generated group.
-
-(3) A 3-cycle $\left(ijk\right)$ not containing $1$: by (2), both $\left(1ij\right)$ and $\left(1ik\right)$ belong to the generated group, and hence $\left(1ij\right)^{-1}\left(1ik\right)=\left(1ji\right)\left(1ik\right)=\left(ikj\right)$. Since $\left(ikj\right)=\left(ijk\right)^{-1}$, we have $\left(ijk\right)$ in the generated group.
-
-Hence all 3-cycles belong to $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$, so $A_n\subseteq\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. Conversely, each generator $\left(12k\right)$ is a 3-cycle, hence an even permutation (Even and Odd Permutations, the Alternating Group), so it belongs to $A_n$; the reverse inclusion holds. Therefore $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. $\blacksquare$
-
-## 1.6-6
-
-Prove that the nontrivial normal subgroups of $S_n$ are $A_n$ or $K_4$ (when $n=4$).
-
-### Solution 1.6-6
-
-Let $N\triangleleft S_n$, $N\ne\left\{e\right\}$, $N\ne S_n$.
-
-**Case $n\ge5$.** By **Theorem 1.6.9 (Simplicity of the Alternating Group)**, $A_n$ is simple. Since $N\triangleleft S_n$ and $A_n\triangleleft S_n$ (by Even and Odd Permutations, the Alternating Group), the intersection $N\cap A_n\triangleleft A_n$, so by the simplicity of $A_n$ we have $N\cap A_n=\left\{e\right\}$ or $A_n$.
-
-If $N\cap A_n=A_n$, then $A_n\subseteq N$. Since $\left|A_n\right|=\frac{n!}{2}$, the index of $A_n$ in $S_n$ is $2$ (Even and Odd Permutations, the Alternating Group), so any subgroup containing $A_n$ is $A_n$ or $S_n$; since $N\ne S_n$, we have $N=A_n$.
-
-If $N\cap A_n=\left\{e\right\}$, then for any $x,y\in N\setminus\left\{e\right\}$, since $x,y$ are both odd permutations, $xy$ is an even permutation, so $xy\in N\cap A_n=\left\{e\right\}$, hence $y=x^{-1}$, i.e. $\left|N\right|\le2$, and the non-identity element of $N$ has order two. By A Normal Subgroup Is a Union of Conjugacy Classes, $N$ is a union of conjugacy classes; since the center of $S_n$ is trivial for $n\ge3$ (The Center and Inner Automorphisms of a Group), the conjugacy class of the non-identity element $x\ne e$ has size greater than $1$, contradicting $\left|N\right|\le2$. Hence $N\cap A_n=\left\{e\right\}$ is impossible.
-
-Therefore, for $n\ge5$, the only nontrivial normal subgroup of $S_n$ is $A_n$.
-
-**Case $n=4$.** $\left|S_4\right|=24$ and $\left|A_4\right|=12$, with $A_4\triangleleft S_4$. By The Conjugacy Classes of $S_4$, the conjugacy class sizes of $S_4$ are $1,6,3,8,6$; by A Normal Subgroup Is a Union of Conjugacy Classes and **Theorem 1.2.22 (Lagrange's Theorem)**, the order of a normal subgroup must be a sum of some conjugacy class sizes and must divide $24$, so the possible orders are $1,4,12,24$, corresponding to the normal subgroups $\left\{e\right\}$, $K_4$, $A_4$, $S_4$. Hence the nontrivial normal subgroups are $A_4$ and $K_4$.
-
-**Case $n=3$.** $\left|S_3\right|=6$ and $\left|A_3\right|=3$, with $A_3\triangleleft S_3$ of index $2$. By A Normal Subgroup Is a Union of Conjugacy Classes, the conjugacy class sizes of $S_3$ are $1,3,2$, so the possible orders of a normal subgroup are $1,3,6$; hence the normal subgroups are $\left\{e\right\},A_3,S_3$, and the nontrivial one is $A_3$.
-
-**Case $n\le2$.** $S_n$ has no nontrivial normal subgroups.
-
-In summary, the nontrivial normal subgroups of $S_n$ are $A_n$ (for all $n\ge3$) and $K_4$ when $n=4$. $\blacksquare$
-
-## 1.6-11
-
-Let $\left|G\right|=2n$, where $n$ is odd. Prove that $G$ has a normal subgroup of index $2$.
-
-### Solution 1.6-11
-
-**Step 1: construct the group homomorphism $\psi:G\to\left\{1,-1\right\}$.** By **Theorem 1.4.10 (Cayley's Theorem)**, the left regular representation $\lambda:G\to S_G$, $g\mapsto L_g$ (where $L_g\left(x\right)=gx$) is a monomorphism; regard $S_G$ as $S_{2n}$ (since $\left|G\right|=2n$). By **Example 1.4.17** and The Sign Homomorphism, the sign homomorphism $\mathrm{sgn}:S_{2n}\to\left\{1,-1\right\}$ is a group homomorphism. The composition $\psi=\mathrm{sgn}\circ\lambda:G\to\left\{1,-1\right\}$ is a group homomorphism.
-
-**Step 2: prove that $\psi$ is surjective.** By A Finite Group of Even Order Has an Element of Order Two, $G$ contains an element $a$ of order two (since $\left|G\right|=2n$ is even). Then $\lambda\left(a\right)=L_a$, and for any $x\in G$, $L_a^2\left(x\right)=a^2x=x$, so $L_a$ is an involution; moreover, since $a\ne e$, if $L_a\left(x\right)=x$, i.e. $ax=x$, then $a=e$, a contradiction, so $L_a$ has no fixed points. Hence $L_a$ is a product of $n$ disjoint transpositions on the $2n$ letters of $G$, and by The Sign Homomorphism, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (since $n$ is odd). Therefore $\psi\left(a\right)=-1$, while $\psi\left(e\right)=1$, so $\psi:G\to\left\{1,-1\right\}$ is a surjective homomorphism.
-
-**Step 3: take the kernel to obtain a normal subgroup of index $2$.** Let $H=\ker\psi$. By **Lemma 1.4.13**, $H\triangleleft G$. By **Theorem 1.4.19 (Fundamental Theorem of Group Homomorphisms)**, $G/H\cong\left\{1,-1\right\}$, so $\left|G/H\right|=2$, i.e. $\left[G:H\right]=2$. Hence $G$ has a normal subgroup $H$ of index $2$. $\blacksquare$
-
-## 1.6-14
-
-Prove that $\mathrm{Aut}\left(S_n\right)\cong S_n$ when $n\ne2,6$. Also find $\mathrm{Aut}\left(S_2\right)$ and $\mathrm{Aut}\left(S_6\right)$.
-
-### Solution 1.6-14
-
-**First prove that $\mathrm{Aut}\left(S_n\right)\cong S_n$ for $n\ne2,6$.** By The Center and Inner Automorphisms of a Group, $\mathrm{Inn}\left(S_n\right)\cong S_n/C\left(S_n\right)$, and for $n\ge3$ we have $C\left(S_n\right)=\left\{e\right\}$, so $\mathrm{Inn}\left(S_n\right)\cong S_n$. It therefore suffices to prove $\mathrm{Aut}\left(S_n\right)=\mathrm{Inn}\left(S_n\right)$, i.e. every automorphism is inner.
-
-Let $\varphi\in\mathrm{Aut}\left(S_n\right)$. An automorphism preserves the order of elements, so involutions are mapped to involutions. By Centralizers of Transpositions and Recognizing Transpositions, for $n\ne6$ the transpositions form the unique conjugacy class of involutions of this type (with centralizer size $2\left(n-2\right)!$), and an automorphism preserves conjugacy classes and centralizer sizes, so $\varphi$ maps transpositions to transpositions.
-
-Let $\varphi\left(12\right)=\left(ab\right)$. Compose $\varphi$ with the inner automorphism $\mathrm{Ad}_{\sigma}$, where $\sigma\in S_n$ satisfies $\sigma\left(a\right)=1$, $\sigma\left(b\right)=2$; then $\mathrm{Ad}_{\sigma}\varphi\left(12\right)=\left(\sigma\left(a\right)\sigma\left(b\right)\right)=\left(12\right)$. Hence we may assume $\varphi\left(12\right)=\left(12\right)$.
-
-For $k=3,\cdots,n$, since $\left(12\right)\left(1k\right)=\left(1k2\right)$ is a 3-cycle of order $3$, the transposition $\varphi\left(1k\right)$ must have product with $\varphi\left(12\right)=\left(12\right)$ being a 3-cycle; hence $\varphi\left(1k\right)$ must share exactly one letter with $\left(12\right)$, i.e. $\varphi\left(1k\right)=\left(1,j_k\right)$ or $\left(2,j_k\right)$ ($j_k\ne1,2$). If for some $k$ we have $\varphi\left(1k\right)=\left(2,j_k\right)$, composing with the inner automorphism $\mathrm{Ad}_{\left(12\right)}$ (which fixes $\left(12\right)$ and swaps the letters $1,2$) lets us uniformly write each $\varphi\left(1k\right)$ in the form $\left(1,\sigma\left(k\right)\right)$, where $\sigma\in S_{n-1}$ is a permutation of $\left\{3,\cdots,n\right\}$ (fixing $1,2$). Hence $\varphi$ acts on the generators $\left(12\right),\left(13\right),\cdots,\left(1n\right)$ exactly as the inner automorphism $\mathrm{Ad}_{\sigma}$ does.
-
-By **Exercise 1.6-5, Part 1**, $\left(12\right),\left(13\right),\cdots,\left(1n\right)$ generate $S_n$, so $\varphi$ and $\mathrm{Ad}_{\sigma}$ agree on the generators and hence on all of $S_n$; thus $\varphi=\mathrm{Ad}_{\sigma}\in\mathrm{Inn}\left(S_n\right)$.
-
-The above argument fails for $n=6$, because $S_6$ has outer automorphisms (by Centralizers of Transpositions and Recognizing Transpositions and The Outer Automorphisms of $S_6$). Hence, for $n\ne2,6$,
+**Counting by $g$**: For fixed $g\in G$, there are exactly $F\left(g\right)$ elements $x$ with $gx=x$, so
 
 $$
-\mathrm{Aut}\left(S_n\right)=\mathrm{Inn}\left(S_n\right)\cong S_n.
+\left|S\right|=\sum_{g\in G}F\left(g\right).
 $$
 
-**Find $\mathrm{Aut}\left(S_2\right)$.** $S_2=\left\{e,\left(12\right)\right\}$ is a cyclic group of order two, and an automorphism must fix the identity $e$, so $\mathrm{Aut}\left(S_2\right)=\left\{\mathrm{id}\right\}$ is the trivial group.
+**Counting by $x$**: For fixed $x\in X$, the elements $g$ with $gx=x$ are exactly the elements of the stabilizer $F_x=\left\{g\in G\mid gx=x\right\}$, so
 
-**Find $\mathrm{Aut}\left(S_6\right)$.** By The Outer Automorphisms of $S_6$, $\mathrm{Out}\left(S_6\right)\cong\mathbb Z_2$ and $\left|\mathrm{Inn}\left(S_6\right)\right|=\left|S_6\right|=720$ (since $C\left(S_6\right)=\left\{e\right\}$), so $\left|\mathrm{Aut}\left(S_6\right)\right|=\left|\mathrm{Out}\left(S_6\right)\right|\cdot\left|\mathrm{Inn}\left(S_6\right)\right|=2\cdot720=1440$. $\blacksquare$
+$$
+\left|S\right|=\sum_{x\in X}\left|F_x\right|.
+$$
+
+By **Corollary 1.9.15 (Orbit-Stabilizer Theorem)**, for the orbit $O_x$ of $x$,
+
+$$
+\left|O_x\right|=\left[G:F_x\right]=\left|G\right|/\left|F_x\right|,
+$$
+
+i.e. $\left|F_x\right|=\left|G\right|/\left|O_x\right|$.
+
+Decompose $X$ into the disjoint union of its orbits. Suppose $X$ has $t$ orbits $O_1,\cdots,O_t$. For any $x$ in the orbit $O_i$, $\left|O_x\right|=\left|O_i\right|$, so $\left|F_x\right|=\left|G\right|/\left|O_i\right|$. Hence
+
+$$
+\sum_{x\in X}\left|F_x\right|=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}=\sum_{i=1}^{t}\left|G\right|=t\left|G\right|.
+$$
+
+Combining the two counting methods, we get
+
+$$
+\sum_{g\in G}F\left(g\right)=t\left|G\right|.
+$$
+
+$\blacksquare$
+
+## 1.10-10
+
+Let $\left|G\right|=pq$, where $p,q$ are distinct primes. Prove that $G$ is solvable.
+
+### Solution to 1.10-10
+
+Without loss of generality suppose $p< q$. By **Theorem 1.10.10 (Sylow's Third Theorem)**, the number $n_{q}$ of Sylow $q$-subgroups satisfies $n_{q}\mid p$ and $n_{q}\equiv1\pmod q$. Since $p< q$, as a positive divisor of $p$ the number $n_{q}$ is either $1$ or $p$. If $n_{q}=p$, then $p\equiv1\pmod q$, i.e. $q\mid p-1$; but $p< q$ implies $p-1< q$, a contradiction. Hence $n_{q}=1$.
+
+Thus the Sylow $q$-subgroup $Q$ of $G$ is unique, and by **Theorem 1.10.10 (Sylow's Third Theorem)** (1), $Q\triangleleft G$. Since $\left|Q\right|=q$ is prime, by Solvability of Prime-Order and Cyclic Groups, $Q$ is cyclic and hence solvable. The quotient group $G/Q$ has order $p$, also a cyclic group of prime order, and by Solvability of Prime-Order and Cyclic Groups is also solvable.
+
+By **Lemma 1.8.8 (Heredity of Solvability)**, since both $Q$ and $G/Q$ are solvable, $G$ is solvable. $\blacksquare$
+
+## 1.10-12
+
+(Frattini) Let $N\triangleleft G$, and let $P$ be a Sylow subgroup of $N$. Then $G=N_{G}\left(P\right)N$.
+
+### Solution to 1.10-12
+
+Take any $g\in G$. Since $N\triangleleft G$, the conjugate $gPg^{-1}$ is still a subgroup of $N$; and conjugation preserves order, so by Sylow Subgroups and Element Counting, $\left|gPg^{-1}\right|=\left|P\right|$. Hence $gPg^{-1}$ is also a Sylow $p$-subgroup of $N$.
+
+By **Theorem 1.10.8 (Sylow's Second Theorem)** (applied to the subgroup $N$), any two Sylow $p$-subgroups of $N$ are conjugate in $N$, so there exists $n\in N$ with
+
+$$
+gPg^{-1}=nPn^{-1}.
+$$
+
+Hence
+
+$$
+n^{-1}gPg^{-1}n=P,
+$$
+
+i.e. $n^{-1}g\in N_{G}\left(P\right)$ (it conjugates $P$ back to $P$). Write $h=n^{-1}g\in N_{G}\left(P\right)$; then $g=nh$.
+
+Therefore $g\in N_{G}\left(P\right)N$. Since $g\in G$ was arbitrary, $G=N_{G}\left(P\right)N$. $\blacksquare$
+
+## 1.10-15
+
+Let $p,q$ be primes with $p< q$ and $p\nmid\left(q-1\right)$. Prove that a group of order $pq$ is cyclic.
+
+### Solution to 1.10-15
+
+Let $\left|G\right|=pq$. By **Theorem 1.10.10 (Sylow's Third Theorem)**, the number $n_{q}$ of Sylow $q$-subgroups satisfies $n_{q}\mid p$ and $n_{q}\equiv1\pmod q$. Since $p< q$, as shown in Problem 1.10-10, we have $n_{q}=1$. Hence the Sylow $q$-subgroup $Q$ of $G$ is unique; by **Theorem 1.10.10 (Sylow's Third Theorem)** (1), $Q\triangleleft G$ and $\left|Q\right|=q$.
+
+Now consider the number $n_{p}$ of Sylow $p$-subgroups. By **Theorem 1.10.10 (Sylow's Third Theorem)**, $n_{p}\mid q$ and $n_{p}\equiv1\pmod p$. Since $q$ is prime, $n_{p}=1$ or $q$. If $n_{p}=q$, then $q\equiv1\pmod p$, i.e. $p\mid\left(q-1\right)$, contradicting the hypothesis $p\nmid\left(q-1\right)$. Hence $n_{p}=1$.
+
+Thus the Sylow $p$-subgroup $P$ of $G$ is also unique, and by **Theorem 1.10.10 (Sylow's Third Theorem)** (1), $P\triangleleft G$, $\left|P\right|=p$.
+
+Since $p,q$ are coprime, $P\cap Q=\left\{e\right\}$. Also
+
+$$
+\left|PQ\right|=\left|P\right|\left|Q\right|/\left|P\cap Q\right|=pq=\left|G\right|,
+$$
+
+so $G=PQ$.
+
+By **Lemma 1.7.7**, since $P,Q$ are both normal subgroups of $G$ and $P\cap Q=\left\{e\right\}$, we have $ab=ba$ for all $a\in P$, $b\in Q$. Hence the map
+
+$$
+P\times Q\to G,\quad\left(a,b\right)\mapsto ab
+$$
+
+preserves multiplication (because $ab=ba$) and is bijective (injective since $P\cap Q=\left\{e\right\}$, surjective since $G=PQ$); therefore it is a group isomorphism, i.e. $G\cong P\times Q$.
+
+Moreover $P\cong\mathbb Z_p$ and $Q\cong\mathbb Z_q$, and $p,q$ are coprime, so by Order of Elements in a Direct Product, $\mathbb Z_p\times\mathbb Z_q\cong\mathbb Z_{pq}$; hence
+
+$$
+G\cong\mathbb Z_p\times\mathbb Z_q\cong\mathbb Z_{pq},
+$$
+
+i.e. $G$ is a cyclic group of order $pq$. $\blacksquare$

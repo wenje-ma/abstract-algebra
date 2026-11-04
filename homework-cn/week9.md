@@ -1,344 +1,251 @@
 # week9
 
-> **定义 1.9.1 (群作用)**
+> **定义 2.5.2 (相伴)**
 > 
-> 设 $G$ 是群, $X$ 是非空集合. 若映射 $f:G\times X\to X$ 满足 $f\left(e,x\right)=x$ 且 $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, 则称 $f$ 决定了 $G$ 在 $X$ 上的一个作用, 记 $f\left(g,x\right)=gx$.
+> 设 $R$ 为整环, $a,b\in R$. 如果存在 $R$ 中单位 $u$ 使得 $a=ub$, 则称 $a$ 与 $b$ 相伴, 记为 $a\sim b$.
 
-> **定义 1.9.7 (可递作用与有效作用)**
+> **定义 2.5.6 (不可约元素)**
 > 
-> 若对任意 $x,y\in X$ 存在 $g\in G$ 使 $gx=y$, 称 $G$ 在 $X$ 上的作用可递, 称 $X$ 为 $G$ 的齐性空间. 若由 $gx=x$ 对一切 $x\in X$ 成立可推出 $g=e$, 称作用有效. 若对任意 $g\in G$, $x\in X$ 都有 $gx=x$, 称作用平凡.
+> 设 $R$ 为整环, $\alpha\in R^{*}\setminus U$ (即非零且非单位). 如果 $\alpha$ 不存在非平凡因子, 则称 $\alpha$ 为不可约元素.
 
-> **定义 1.9.9 (轨道与迷向子群)**
+> **定义 2.5.14 (公因子与最大公因子)**
 > 
-> 设 $G$ 作用在 $X$ 上, $x\in X$. 称 $O_x=\left\{gx\mid g\in G\right\}$ 为 $x$ 的轨道. 称 $F_x=\left\{g\in G\mid gx=x\right\}$ 为 $x$ 的迷向子群.
+> 设 $R$ 为整环, $a_1,a_2,\cdots,a_n\in R$. 若 $c\in R$ 同时整除所有 $a_i$, 则称 $c$ 为它们的公因子; 若公因子 $d$ 能被任一公因子整除, 则称 $d$ 为最大公因子. 若 $a,b$ 的最大公因子是单位, 则称 $a,b$ 互素.
 
-> **推论 1.9.15 (轨道-迷向子群定理)**
+> **定理 2.5.15 (唯一分解整环的等价条件)**
 > 
-> 设群 $G$ 作用在 $X$ 上, $x\in X$, 则 $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; 从而 $\left|O_x\right|\mid\left|G\right|$.
+> 整环 $R$ 为唯一分解整环当且仅当 $R$ 满足因子链条件与素条件; 特别地, 在唯一分解整环中每个不可约元素都是素元素, 即 $p\mid ab$ 可推出 $p\mid a$ 或 $p\mid b$.
 
-## 1.9-4
+> **定义 2.6.1 (素理想)**
+> 
+> 设 $I$ 为环 $R$ 的理想, $I\ne R$. 如果由 $ab\in I$ 可以推出 $a\in I$ 或 $b\in I$, 则称 $I$ 为 $R$ 的一个素理想.
 
-(1) 记 $\mathbb R^n$ 的所有 $1$ 维子空间的全体为 $P^{n-1}\left(\mathbb R\right)$, 称为实射影空间. 对任意 $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$, $W\in P^{n-1}\left(\mathbb R\right)$, $\rho\left(W\right)$ 也是一个 $1$ 维子空间. 试验证这是 $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上的可递作用, 并求迷向子群.
+> **定义 2.7.1 (主理想整环)**
+> 
+> 一个交换幺环称为主理想环, 若它的每个理想都是主理想; 若一个主理想环还是整环, 则称此环为主理想整环.
 
-(2) 记 $\mathbb R^n$ 的所有 $k$ 维子空间的全体为 $\mathrm{Gr}\left(k,n\right)$, 称为格拉斯曼流形. 对任意 $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$, $W\in\mathrm{Gr}\left(k,n\right)$, $\rho\left(W\right)$ 也是一个 $k$ 维子空间. 试验证这是 $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $\mathrm{Gr}\left(k,n\right)$ 上的可递作用, 并求迷向子群.
+> **定义 2.7.9 (欧几里得环)**
+> 
+> 设 $R$ 为一个整环. 如果存在从 $R^{*}$ 到非负整数集的一个映射 $\delta$, 使得对任何 $a,b\in R$, $b\ne0$, 存在 $q,r\in R$ 使得 $a=qb+r$, 其中 $r=0$ 或 $\delta\left(r\right)< \delta\left(b\right)$, 则称 $\left(R,\delta\right)$ 为欧几里得环, 简称 $R$ 为欧几里得环.
 
-(3) 考虑 $\mathrm{SL}\left(n,\mathbb R\right)$, $O\left(n\right)$, $\mathrm{SO}\left(n\right)$ 在上述集合上的作用并判断其可递性.
+## 2.5-10
 
-### 解答 1.9-4
+设 $R=\mathbb Z\left[\omega\right]$, 其中 $\omega=\frac{1+\sqrt{-3}}{2}$ (即 $\mathbb Q\left(\sqrt{-3}\right)$ 的代数整数环).
 
-**第 (1) 部分: $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上的作用.** 由线性映射保持子空间维数, 对 $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$ 与 $1$ 维子空间 $W=\mathbb Rv$, $\rho\left(W\right)$ 仍是 $1$ 维子空间. 对 $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ 及 $W=\mathbb Rv$,
+(1) 证明 $R$ 在数的加法和乘法下构成一个整环;
 
-$$
-\rho\left(\tau\left(W\right)\right)=\rho\left(\tau\left(\mathbb Rv\right)\right)=\rho\left(\mathbb R\tau\left(v\right)\right)=\mathbb R\rho\left(\tau\left(v\right)\right)=\left(\rho\tau\right)\left(W\right),
-$$
-
-且单位矩阵 $I$ 满足 $I\left(W\right)=W$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上的一个作用.
-
-**可递性**: 任取两条直线 $W_1=\mathbb Rv$, $W_2=\mathbb Rw$ ($v,w\ne0$). 由线性映射保持子空间维数, 存在可逆矩阵 $\rho$ 使 $\rho v=w$, 故 $\rho\left(W_1\right)=W_2$. 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
-
-**迷向子群**: 取 $W_0=\mathbb Re_1$, 其中 $e_1=\left(1,0,\cdots,0\right)^{\top}$. 条件 $\rho\left(W_0\right)=W_0$ 等价于 $\rho e_1\in\mathbb Re_1$, 即 $\rho$ 的第一列为 $\left(a,0,\cdots,0\right)^{\top}$, $a\ne0$. 故由**定义 1.9.9 (轨道与迷向子群)**, $W_0$ 的迷向子群为
-
-$$
-F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb R^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb R\right)\right\}.
-$$
-
-**第 (2) 部分: $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $\mathrm{Gr}\left(k,n\right)$ 上的作用.** 同理 $\rho\left(\tau\left(W\right)\right)=\left(\rho\tau\right)\left(W\right)$ 且 $I\left(W\right)=W$, 由**定义 1.9.1 (群作用)** 这是作用.
-
-**可递性**: 任取两个 $k$ 维子空间 $W_1,W_2$, 分别取基 $\left\{v_1,\cdots,v_k\right\}$ 与 $\left\{w_1,\cdots,w_k\right\}$, 扩充为 $\mathbb R^n$ 的基, 由线性映射保持子空间维数 定义可逆线性映射 $\rho$ 使 $\rho v_i=w_i$ ($i=1,\cdots,k$), 则 $\rho\left(W_1\right)=W_2$. 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
-
-**迷向子群**: 取 $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$. 条件 $\rho\left(W_0\right)=W_0$ 等价于 $\rho$ 把每个 $e_i$ ($i\le k$) 仍映回 $W_0$, 即 $\rho$ 的前 $k$ 列在第 $k+1,\cdots,n$ 行的分量为零, 亦即 $\rho$ 为分块上三角阵. 故由**定义 1.9.9 (轨道与迷向子群)**, 迷向子群为
-
-$$
-F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb R\right),\;C\in\mathrm{GL}\left(n-k,\mathbb R\right),\;B\in\mathbb R^{k\times\left(n-k\right)}\right\}.
-$$
-
-**第 (3) 部分: 判断可递性.** $\mathrm{SL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 与 $\mathrm{Gr}\left(k,n\right)$ 上的作用均可递: 在第 (1)(2) 部分构造的映射 $\rho$ 中, 若其行列式不为 $1$, 可在最后一行乘一个非零标量把行列式调整为 $1$, 而不改变对子空间的作用.
-
-$O\left(n\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上可递: 由正交与酉变换, 任意两条单位直线可由正交变换互相映射. $O\left(n\right)$ 在 $\mathrm{Gr}\left(k,n\right)$ 上亦可递: 两组 $k$ 维子空间的基可扩充为两组标准正交基, 由正交与酉变换 存在正交映射互相映射.
+(2) 证明 $R$ 的所有单位是 $\pm1$, $\frac{\pm1\pm\sqrt{-3}}{2}$;
 
-$\mathrm{SO}\left(n\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上, 当 $n\ge3$ 时可递 (可用适当旋转把任一方向映到任一方向而保持行列式为 $1$); 在 $\mathrm{Gr}\left(k,n\right)$ 上, 当 $n\ge3$ 时亦可递. $\blacksquare$
+(3) 证明在 $R$ 中 $2$ 与 $1+\sqrt{-3}$ 相伴.
 
-## 1.9-5
+### 解答 2.5-10
 
-记 $V_k\left(\mathbb R^n\right)$ 为 $\mathbb R^n$ 中所有 $k$ 元标准正交向量组的全体, 称为斯蒂弗尔流形. 对任意 $\rho\in O\left(n\right)$, $\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$, 定义
+由代数整数环 $\mathbb Z\left[\omega\right]$ 的范数, $\omega^{2}=\omega-1$, 故
 
 $$
-\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\left(\alpha_1\right),\cdots,\rho\left(\alpha_k\right)\right).
+R=\mathbb Z\left[\omega\right]=\left\{m+n\omega\mid m,n\in\mathbb Z\right\}
 $$
 
-试验证这是 $O\left(n\right)$ 在 $V_k\left(\mathbb R^n\right)$ 上的可递作用, 并求迷向子群.
+对乘法封闭 ($\omega^{2}=\omega-1\in R$).
 
-### 解答 1.9-5
+**第 (1) 部分.** $R\subseteq\mathbb C$. $R$ 对加法封闭 (逐分量相加), 对乘法封闭, 含幺元 $1$. 由于 $\mathbb C$ 无零因子, 故 $R$ 是无零因子的交换幺环, 从而是整环.
 
-**验证作用**: 由正交与酉变换, 正交变换保持内积, 故若 $\left(\alpha_1,\cdots,\alpha_k\right)$ 是标准正交组, 则 $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ 亦然, 即 $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. 又
+**第 (2) 部分.** 由代数整数环 $\mathbb Z\left[\omega\right]$ 的范数, 定义
 
 $$
-\rho\left(\tau\left(\alpha_1,\cdots,\alpha_k\right)\right)=\rho\left(\tau\alpha_1,\cdots,\tau\alpha_k\right)=\left(\rho\tau\alpha_1,\cdots,\rho\tau\alpha_k\right)=\left(\rho\tau\right)\left(\alpha_1,\cdots,\alpha_k\right),
+N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2},
 $$
 
-且单位矩阵作用不变. 由**定义 1.9.1 (群作用)**, 这是 $O\left(n\right)$ 在 $V_k\left(\mathbb R^n\right)$ 上的作用.
+则 $N$ 积性, 且 $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$. 解
 
-**可递性**: 任取两组标准正交向量组 $\left(\alpha_1,\cdots,\alpha_k\right)$ 与 $\left(\beta_1,\cdots,\beta_k\right)$, 由正交与酉变换 分别扩充为 $\mathbb R^n$ 的标准正交基 $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ 与 $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$. 定义线性映射 $\rho\alpha_i=\beta_i$ ($i=1,\cdots,n$), 则 $\rho\in O\left(n\right)$ 且
-
-$$
-\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\beta_1,\cdots,\beta_k\right).
-$$
-
-由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
-
-**迷向子群**: 取基准向量组 $\left(e_1,\cdots,e_k\right)$. 条件 $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) 意味着 $\rho$ 在前 $k$ 个标准基向量上为恒等映射, 即 $\rho$ 为分块对角阵. 由**定义 1.9.9 (轨道与迷向子群)**, 迷向子群为
-
-$$
-F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
-$$
-
-这就是 $\left(e_1,\cdots,e_k\right)$ 的迷向子群. $\blacksquare$
-
-## 1.9-6
-
-将 1.9-4, 1.9-5 两题中的作用推广到复空间情形.
-
-### 解答 1.9-6
-
-**复射影空间与复格拉斯曼流形.** 复射影空间 $P^{n-1}\left(\mathbb C\right)$ 为 $\mathbb C^n$ 的所有 $1$ 维复子空间的全体, 复格拉斯曼流形 $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ 为 $\mathbb C^n$ 的所有 $k$ 维复子空间的全体. $\mathrm{GL}\left(n,\mathbb C\right)$ 分别以 $\rho\left(W\right)=\rho W$ 作用于二者, 由线性映射保持子空间维数 与复情形的等价论证 (与实情形完全相同), 由**定义 1.9.1 (群作用)** 与**定义 1.9.7 (可递作用与有效作用)**, 这是两个可递作用.
-
-由**定义 1.9.9 (轨道与迷向子群)**, 分别取 $W_0=\mathbb Ce_1$ 与 $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$, 迷向子群分别为
-
 $$
-F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb C^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb C\right)\right\}
+m^{2}+mn+n^{2}=1,\quad m,n\in\mathbb Z,
 $$
 
-与
+得
 
 $$
-F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
+\left(m,n\right)=\left(\pm1,0\right),\;\left(0,\pm1\right),\;\left(1,-1\right),\;\left(-1,1\right).
 $$
 
-**复斯蒂弗尔流形.** 记 $V_k\left(\mathbb C^n\right)$ 为 $\mathbb C^n$ 中所有 $k$ 元标准正交向量组 (关于标准埃尔米特内积) 的全体. $U\left(n\right)$ 以
+对应元素为 $\pm1$, $\pm\omega$, $\pm\left(1-\omega\right)$. 因 $\omega=\frac{1+\sqrt{-3}}{2}$, $1-\omega=\frac{1-\sqrt{-3}}{2}$, 故 $R$ 的全部单位为 $\pm1$ 及 $\frac{\pm1\pm\sqrt{-3}}{2}$.
 
-$$
-\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)
-$$
+**第 (3) 部分.** 因 $1+\sqrt{-3}=2\omega$, 而 $\omega$ 是单位 ($N\left(\omega\right)=1$), 即 $1+\sqrt{-3}=2\cdot\omega$ 且 $\omega$ 为单位, 由**定义 2.5.2 (相伴)**, $2$ 与 $1+\sqrt{-3}$ 相伴. $\blacksquare$
 
-作用于其上. 由正交与酉变换, 酉变换保持埃尔米特内积, 故定义合理, 由**定义 1.9.1 (群作用)** 这是作用. 作用可递: 由正交与酉变换, 两组标准正交向量组分别扩充为标准正交基, 对应的酉映射即为所求. 由**定义 1.9.9 (轨道与迷向子群)**, 取基准 $\left(e_1,\cdots,e_k\right)$, 迷向子群为
+## 2.5-15
 
-$$
-F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
-$$
+已知 $\mathbb Q\left[x,y\right]$ 在多项式加法和乘法下构成环, 证明: $x$ 与 $y$ 互素. 试问是否存在 $r\left(x,y\right),s\left(x,y\right)\in\mathbb Q\left[x,y\right]$ 使得 $r\left(x,y\right)x+s\left(x,y\right)y=1$?
 
-**可递性判断.** $\mathrm{SL}\left(n,\mathbb C\right)$ 在复射影空间与复格拉斯曼流形上可递 (仿实情形调整行列式); $U\left(n\right)$ 在复射影空间,复格拉斯曼流形与复斯蒂弗尔流形上均可递; $\mathrm{SU}\left(n\right)$ 在相应集合上, 当维数足够时亦可递. $\blacksquare$
+### 解答 2.5-15
 
-## 1.9-8
+由数域上多项式环是唯一分解整环, $\mathbb Q\left[x,y\right]$ 是唯一分解整环, 且 $x,y$ 都是不可约元素. $x,y$ 不相伴: 其单位恰为 $\mathbb Q^{*}$ 中的非零常数, 而 $x\ne cy$ 对任何 $c\in\mathbb Q^{*}$. 故 $x,y$ 的公共因子只能是单位, 即最大公因子为单位, 由**定义 2.5.14 (公因子与最大公因子)**, $x$ 与 $y$ 互素.
 
-设
+但不存在这样的 $r,s$. 反设存在 $r\left(x,y\right),s\left(x,y\right)\in\mathbb Q\left[x,y\right]$ 使 $r\left(x,y\right)x+s\left(x,y\right)y=1$. 将等式两边在 $\left(0,0\right)$ 处取值:
 
 $$
-H=\left\{z=x+iy\in\mathbb C\mid y> 0\right\},
+r\left(0,0\right)\cdot0+s\left(0,0\right)\cdot0=1,
 $$
 
-称为庞加莱上半平面. 对任意
+即 $0=1$, 矛盾.
 
-$$
-g=\begin{bmatrix}a & b\\c & d\end{bmatrix}\in\mathrm{SL}\left(2,\mathbb R\right),
-$$
+故虽然 $x,y$ 互素, 却不存在 $r,s\in\mathbb Q\left[x,y\right]$ 使 $rx+sy=1$. $\blacksquare$
 
-$z\in H$, 定义
+## 2.6-13
 
-$$
-g\circ z=\frac{az+b}{cz+d}.
-$$
+设 $R$ 为唯一分解整环, $p\in R^{*}$. 证明: $p$ 为不可约元素当且仅当主理想 $\left(p\right)$ 为素理想.
 
-试验证这定义了 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的一个作用 (称为默比乌斯变换或分式线性变换), 判断其可递性和有效性, 并求 $i$ 的迷向子群.
+### 解答 2.6-13
 
-### 解答 1.9-8
+设 $p\in R^{*}\setminus U$ (若 $p$ 为零元或单位, 结论平凡, 不作讨论).
 
-**第一步: 验证 $g\circ z\in H$.** 对 $z=x+iy$ ($y> 0$), 因 $\det g=ad-bc=1$, 直接计算虚部:
+**必要性**: 设 $p$ 为不可约元素. 因 $R$ 是唯一分解整环, 由**定理 2.5.15 (唯一分解整环的等价条件)**, $p$ 是素元素, 即 $p\mid ab$ 可推出 $p\mid a$ 或 $p\mid b$. 由主理想与整除, $ab\in\left(p\right)$ 等价于 $p\mid ab$, $a\in\left(p\right)$ 等价于 $p\mid a$, $b\in\left(p\right)$ 等价于 $p\mid b$. 故 $ab\in\left(p\right)$ 可推出 $a\in\left(p\right)$ 或 $b\in\left(p\right)$. 又 $p$ 非单位, 由主理想与整除, $1\notin\left(p\right)$ (否则 $p\mid1$, $p$ 为单位), 故 $\left(p\right)\ne R$. 由**定义 2.6.1 (素理想)**, $\left(p\right)$ 是素理想.
 
-$$
-\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}> 0,
-$$
+**充分性**: 设 $\left(p\right)$ 为素理想. 反设 $p$ 可约, 即存在 $a,b\in R$, 二者均非单位, 使 $p=ab$. 因 $ab=p\in\left(p\right)$, 由**定义 2.6.1 (素理想)**, $a\in\left(p\right)$ 或 $b\in\left(p\right)$. 若 $a\in\left(p\right)$, 由主理想与整除, 存在 $r\in R$ 使 $a=pr$; 于是 $p=ab=prb$. 因 $p\ne0$ (由 $p\in R^{*}$) 且 $R$ 为整环, 由整环的消去律 消去 $p$, 得 $1=rb$, 故 $b$ 为单位, 与 $b$ 非单位矛盾. 若 $b\in\left(p\right)$, 同理存在 $r\in R$ 使 $b=pr$, 于是 $p=ab=ap r$, 消去 $p$ 得 $1=ar$, 故 $a$ 为单位, 亦矛盾.
 
-故 $g\circ z\in H$, 定义合理.
+故 $p$ 为不可约元素. $\blacksquare$
 
-**第二步: 验证作用公理.** 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又由分式线性变换, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
+## 2.7-7
 
-**第三步: 判断可递性.** 任取 $z=x+iy\in H$ ($y> 0$), 取
+证明 $\mathbb Z\left[\frac{1+\sqrt{-3}}{2}\right]$ 是欧几里得环.
 
-$$
-g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
-$$
+### 解答 2.7-7
 
-其行列式为 $1$, 且
+记 $\omega=\frac{1+\sqrt{-3}}{2}$. 则 $\overline\omega=\frac{1-\sqrt{-3}}{2}=1-\omega$, 且 $\omega+\overline\omega=1$, $\omega\overline\omega=1$. 由代数整数环的范数, 对 $\alpha=a+b\omega\in R=\mathbb Z\left[\omega\right]$ 定义范数
 
 $$
-g\circ i=\frac{\sqrt y\cdot i+x/\sqrt y}{0\cdot i+1/\sqrt y}=\left(\sqrt y\cdot i+\frac{x}{\sqrt y}\right)\sqrt y=yi+x=z.
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^{2}+ab\left(\omega+\overline\omega\right)+b^{2}\omega\overline\omega=a^{2}+ab+b^{2},
 $$
 
-故 $i$ 可映到任意 $z\in H$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
+它是正定二次型且乘性. 下面验证在映射 $\delta=N$ 下 $R$ 满足**定义 2.7.9 (欧几里得环)** 的带余除法.
 
-**第四步: 判断有效性.** 若 $g\circ z=z$ 对一切 $z\in H$ 成立, 则分式线性变换 $\frac{az+b}{cz+d}$ 有无穷多个不动点, 由分式线性变换, 它必为恒等变换, 故 $c=0$, $b=0$, $a=d$; 结合 $\det g=ad-bc=a^{2}=1$, 得 $g=\pm I$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ z=\frac{-z}{-1}=z$. 故作用的核为 $\left\{\pm I\right\}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用不是有效的; 其有效商群为
+任取 $\alpha,\beta\in R$, $\beta\ne0$. 在 $\mathbb Q\left(\sqrt{-3}\right)$ 中作除法: $\frac{\alpha}{\beta}=x+y\omega$, 其中 $x,y\in\mathbb Q$. 取整数 $m,n$ 分别为 $x,y$ 的最近整数, 即 $\left|x-m\right|\le\frac12$, $\left|y-n\right|\le\frac12$. 令 $q=m+n\omega\in R$, $r=\alpha-q\beta$. 则
 
 $$
-\mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
+r=\beta\left[\left(x-m\right)+\left(y-n\right)\omega\right].
 $$
 
-**第五步: 求 $i$ 的迷向子群.** 由 $g\circ i=i$, 即
+记 $u=x-m$, $v=y-n$, 则 $\left|u\right|\le\frac12$, $\left|v\right|\le\frac12$. 由范数的乘性 (见代数整数环的范数),
 
 $$
-\frac{ai+b}{ci+d}=i,\quad\Longrightarrow\quad ai+b=i\left(ci+d\right)=ci^{2}+di=-c+di.
+N\left(r\right)=N\left(\beta\right)N\left(u+v\omega\right)=N\left(\beta\right)\left(u^{2}+uv+v^{2}\right).
 $$
 
-比较实部与虚部得 $b=-c$, $a=d$. 又
+由二次型的界, $\left|u\right|,\left|v\right|\le\frac12$ 时 $u^{2}+uv+v^{2}\le\frac34$. 故
 
 $$
-\det g=ad-bc=a^{2}-\left(-c\right)c=a^{2}+c^{2}=1.
+N\left(r\right)\le\frac34\,N\left(\beta\right)< N\left(\beta\right).
 $$
 
-由**定义 1.9.9 (轨道与迷向子群)**, $i$ 的迷向子群为
-
-$$
-F_i=\left\{\begin{bmatrix}a & b\\-b & a\end{bmatrix}\;\middle|\;a^{2}+b^{2}=1\right\}\cong SO\left(2\right).
-$$
+于是 $\alpha=q\beta+r$ 且 $r=0$ 或 $N\left(r\right)< N\left(\beta\right)$. 由**定义 2.7.9 (欧几里得环)**, $R=\mathbb Z\left[\frac{1+\sqrt{-3}}{2}\right]$ 是欧几里得环. $\blacksquare$
 
-$\blacksquare$
+## 2.7-11
 
-## 1.9-19
+证明 $\mathbb Z\left[\sqrt{-6}\right]$ 不是欧几里得环.
 
-(费马两平方和定理) 设 $p=4k+1$ 为素数,
+### 解答 2.7-11
 
-$$
-X=\left\{\left(x,y,z\right)\in\mathbb N^{3}\mid x^{2}+4yz=p\right\}.
-$$
+记 $R=\mathbb Z\left[\sqrt{-6}\right]$. 对 $\alpha=a+b\sqrt{-6}\in R$ 由代数整数环的范数 定义范数 $N\left(\alpha\right)=a^{2}+6b^{2}$, 它是乘性函数. 先确定 $R$ 的单位: 若 $\alpha$ 为单位, 则 $N\left(\alpha\right)=1$, 即 $a^{2}+6b^{2}=1$; 由此 $b=0$, $a=\pm1$. 故 $R$ 的单位只有 $\pm1$.
 
-设
+反证. 假设 $\left(R,\delta\right)$ 是欧几里得环. 在 $R\setminus\left\{0,\pm1\right\}$ 中取一个使 $\delta\left(m\right)$ 最小的元素 $m$.
 
-$$
-p_1:\left(x,y,z\right)\mapsto\left(x,z,y\right),
-$$
+对 $a=2$, $b=m$ 作带余除法: $2=qm+r$, 其中 $r=0$ 或 $\delta\left(r\right)< \delta\left(m\right)$. 由 $m$ 的最小性, 后一情形只可能有 $r=\pm1$ (非零且 $\delta\left(r\right)< \delta\left(m\right)$ 的元素只能是单位 $\pm1$). 故
 
 $$
-p_2:\left(x,y,z\right)\mapsto
-\begin{cases}
-\left(x+2z,\,z,\,y-x-z\right), & x< y-z,\\
-\left(2y-x,\,y,\,x-y+z\right), & y-z\le x< 2y,\\
-\left(x-2y,\,x-y+z,\,y\right), & x\ge2y.
-\end{cases}
+qm=2-r\in\left\{2,1,3\right\}.
 $$
 
-证明: 上述两个映射分别定义了 $\mathbb Z_2$ 在 $X$ 上的两个作用, 试求两个作用的不动点的个数, 从而证明当 $p=4k+1$ 时, $x^{2}+y^{2}=p$ 有正整数解.
+两边取范数, $N\left(q\right)N\left(m\right)\in\left\{4,1,9\right\}$. 因 $m$ 非单位, $N\left(m\right)> 1$. 而方程 $a^{2}+6b^{2}=2$ 与 $a^{2}+6b^{2}=3$ 均无整数解, 故 $N\left(m\right)\notin\left\{2,3\right\}$, 只能取 $4$ 或 $9$. 于是 $N\left(q\right)=1$, $q=\pm1$, 从而 $m=\pm2$ 或 $m=\pm3$.
 
-### 解答 1.9-19
+再对 $a=\sqrt{-6}$, $b=m$ 作带余除法: $\sqrt{-6}=q'm+r'$, 同理 $r'\in\left\{0,\pm1\right\}$. 记 $q'=a'+b'\sqrt{-6}$.
 
-**先验证 $p_1$ 定义了 $\mathbb Z_2$ 的作用.** $p_1$ 交换 $y,z$, 显然 $p_1^{2}=\mathrm{id}$; 且
+若 $m=\pm2$, 则
 
 $$
-x^{2}+4zy=x^{2}+4yz=p,
+\pm2q'=2a'\pm2b'\sqrt{-6}=\sqrt{-6}+r'.
 $$
 
-故 $p_1\left(X\right)\subseteq X$. 由**定义 1.9.1 (群作用)**, $p_1$ 是 $X$ 上的二阶对合, 定义了 $\mathbb Z_2=\left\{1,p_1\right\}$ 在 $X$ 上的作用.
+比较 $\sqrt{-6}$ 的系数得 $2b'=1$, 即 $b'=\frac12\notin\mathbb Z$, 矛盾.
 
-**再验证 $p_2$.** 直接代入可验证在三个分段中 $p_2$ 都保持方程 $x^{2}+4yz=p$ 不变, 且 $p_2^{2}=\mathrm{id}$ (三个分段互为逆映射, 边界处一致). 由**定义 1.9.1 (群作用)**, $p_2$ 也是 $X$ 上的对合, 定义了 $\mathbb Z_2$ 的另一个作用.
+若 $m=\pm3$, 同理比较 $\sqrt{-6}$ 的系数得 $3b'=1$, 即 $b'=\frac13\notin\mathbb Z$, 矛盾.
 
-**求 $p_2$ 的不动点.** 对三种情况分别令 $p_2\left(x,y,z\right)=\left(x,y,z\right)$:
+两种情形均矛盾, 故不存在这样的欧几里得映射 $\delta$. 由**定义 2.7.9 (欧几里得环)**, $R=\mathbb Z\left[\sqrt{-6}\right]$ 不是欧几里得环. $\blacksquare$
 
-情况一 $x< y-z$: 由 $x+2z=x$ 得 $z=0$, 与 $z\in\mathbb N^{+}$ 矛盾, 故无不动点.
+## 2.7-14
 
-情况二 $y-z\le x< 2y$: 由 $2y-x=x$ 得 $x=y$; 第三坐标 $x-y+z=z$ 自动成立. 代入方程:
+本题证明整环 $R=\mathbb Z\left[\frac{1+\sqrt{-19}}{2}\right]$ 是主理想整环但不是欧几里得环, 记 $\omega=\frac{1+\sqrt{-19}}{2}$.
 
-$$
-x^{2}+4yz=x^{2}+4xz=x\left(x+4z\right)=p.
-$$
-
-因 $p$ 为素数且 $x$, $x+4z$ 均为正整数, 故 $x=1$, $x+4z=p$, 即 $z=\left(p-1\right)/4=k$. 对应不动点为 $\left(1,1,k\right)$.
-
-情况三 $x\ge2y$: 由 $x-2y=x$ 得 $y=0$, 矛盾.
+(1) 证明 $R$ 中的单位只有 $1$ 和 $-1$;
 
-故 $\left|\mathrm{Fix}\left(p_2\right)\right|=1$, 恰有一个不动点.
+(2) 证明 $2$ 和 $3$ 是 $R$ 中的不可约元素;
 
-由群作用的轨道分解, $p_2$ 的非不动点轨道大小均为 $2$, 故
+(3) 证明 $R$ 不是欧几里得环 (提示: 采用反证法. 如果 $\left(R,\delta\right)$ 是欧几里得环, 取定 $m\in R$ 满足 $m\ne0,\pm1$, $\delta\left(m\right)=\min\left\{\delta\left(a\right)\mid a\ne0,a\ne\pm1\right\}$. 先用 $m$ 除 $2$, 由此可证明 $m=\pm2$ 或 $\pm3$, 再用 $m$ 除 $\omega$, 就可导出矛盾);
 
-$$
-\left|X\right|\equiv\left|\mathrm{Fix}\left(p_2\right)\right|\equiv1\pmod 2,
-$$
+(4) 设 $I$ 为 $R$ 的非零理想, 取 $b\in I$ 满足 $\left|b\right|\le\left|c\right|$ 对一切 $c\in I$, 其中 $\left|\cdot\right|$ 表示复数的模长. 试证明: 对任意 $a\in I$, 存在 $q\in R$ 使得 $a-qb\in I$ 且 $\left|a-qb\right|< \left|b\right|$;
 
-即 $\left|X\right|$ 为奇数.
+(5) 证明: 当 $a/b=x+y\omega$ 的有理坐标 $y$ 远离 $\frac12$ 时, 存在整数 $m,n$ 使 $N\left(a/b-\left(m+n\omega\right)\right)< 1$;
 
-同理, $p_1$ 的非不动点轨道大小也为 $2$, 故
+(6) 证明: 当 $y$ 接近 $\frac12$ 时, 利用 $2a\in I$ 及整数平移仍可得 $\left|a-qb\right|< \left|b\right|$;
 
-$$
-\left|\mathrm{Fix}\left(p_1\right)\right|\equiv\left|X\right|\equiv1\pmod 2.
-$$
+(7) 证明 $R$ 是主理想整环.
 
-因此 $\left|\mathrm{Fix}\left(p_1\right)\right|\ge1$, 即 $p_1$ 至少有一个不动点.
+### 解答 2.7-14
 
-$p_1$ 的不动点满足 $y=z$. 代入方程得
+由 $\omega=\frac{1+\sqrt{-19}}{2}$ 得 $\overline\omega=\frac{1-\sqrt{-19}}{2}$, 且 $\omega+\overline\omega=1$, $\omega\overline\omega=5$. 由代数整数环的范数, 对 $\alpha=a+b\omega\in R$, 范数为
 
 $$
-x^{2}+4y^{2}=p,
+N\left(a+b\omega\right)=\left(a+b\omega\right)\left(a+b\overline\omega\right)=a^{2}+ab\left(\omega+\overline\omega\right)+b^{2}\omega\overline\omega=a^{2}+ab+5b^{2},
 $$
 
-即
+它是正定二次型且乘性. 注意到当 $\left|b\right|\ge1$ 时,
 
 $$
-p=x^{2}+\left(2y\right)^{2}.
+a^{2}+ab+5b^{2}=\left(a+\frac{b}{2}\right)^{2}+\frac{19}{4}b^{2}\ge\frac{19}{4}> 4.
 $$
 
-令 $a=x$, $b=2y$, 则 $a^{2}+b^{2}=p$, 且 $a,b$ 均为正整数 (因 $p$ 为奇素数故 $x\ne0$; $y=z\ge1$ 故 $b=2y\ge2$).
+**第 (1) 部分.** 若 $\alpha=a+b\omega$ 为单位, 由代数整数环的范数, $N\left(\alpha\right)=1$. 若 $b\ne0$, 由上式 $N\left(\alpha\right)\ge\frac{19}{4}> 1$, 矛盾. 故 $b=0$, $a^{2}=1$, $a=\pm1$. 即 $R$ 的单位只有 $1$ 和 $-1$.
 
-因此当 $p=4k+1$ 时, $x^{2}+y^{2}=p$ 有正整数解. $\blacksquare$
+**第 (2) 部分.** 先证 $2$ 不可约. 若 $2=\alpha\beta$ 为非平凡分解, 则 $\alpha,\beta$ 均非单位, $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$, 且由代数整数环的范数 $N\left(\alpha\right),N\left(\beta\right)> 1$, 故 $N\left(\alpha\right)=2$. 但 $a^{2}+ab+5b^{2}=2$ 无整数解: $b=0$ 时 $a^{2}=2$ 无解; $\left|b\right|\ge1$ 时左边 $\ge\frac{19}{4}> 2$. 矛盾, 故 $2$ 不可约.
 
-## 1.9-20
+同理, 若 $3=\alpha\beta$ 为非平凡分解, 则 $N\left(\alpha\right)=3$, 而 $a^{2}+ab+5b^{2}=3$ 亦无整数解 (论证同上). 故 $3$ 不可约.
 
-(伯恩赛德引理) 设群 $G$ 作用在集合 $X$ 上, 令 $t$ 表示 $X$ 在 $G$ 作用下的轨道的个数. 对任意 $g\in G$, $F\left(g\right)$ 表示 $X$ 在 $g$ 作用下不动点的个数, 即
+**第 (3) 部分.** 反证. 设 $\left(R,\delta\right)$ 为欧几里得环, 取 $m\in R\setminus\left\{0,\pm1\right\}$ 使 $\delta\left(m\right)$ 最小. 对 $a=2$, $b=m$ 作带余除法: $2=qm+r$, 由 $m$ 的最小性得 $r\in\left\{0,\pm1\right\}$, 故 $qm\in\left\{1,2,3\right\}$. 取范数得 $N\left(q\right)N\left(m\right)\in\left\{1,4,9\right\}$.
 
-$$
-F\left(g\right)=\left|\left\{x\in X\mid gx=x\right\}\right|.
-$$
+由第 (1) 部分的估计, $R$ 中大于 $1$ 的最小范数为 $4$ (对应 $\pm2$), 次小者为 $5$ (对应 $\omega$ 等, 因 $N\left(\omega\right)=5$). 因 $5$ 不整除 $1,4,9$ 中任何一个, $N\left(m\right)$ 只能为 $4$ 或 $9$, 且 $N\left(q\right)=1$. 故 $q=\pm1$, $m=\pm2$ 或 $m=\pm3$.
 
-试证
+再对 $a=\omega$, $b=m$ 作带余除法: $\omega=q'm+r'$, 同理 $r'\in\left\{0,\pm1\right\}$. 记 $q'=a'+b'\omega$. 若 $m=\pm2$, 则
 
 $$
-\sum_{g\in G}F\left(g\right)=t\left|G\right|.
+\pm2q'=\pm2a'\pm2b'\omega=\omega+r',
 $$
-
-### 解答 1.9-20
-
-考虑集合
 
-$$
-S=\left\{\left(g,x\right)\in G\times X\mid gx=x\right\}.
-$$
+比较 $\omega$ 的系数得 $2b'=1$, $b'=\frac12\notin\mathbb Z$, 矛盾. 若 $m=\pm3$, 同理比较 $\omega$ 的系数得 $3b'=1$, $b'=\frac13\notin\mathbb Z$, 矛盾. 故 $R$ 不是欧几里得环.
 
-**按 $g$ 计数**: 对固定的 $g\in G$, 满足 $gx=x$ 的 $x$ 恰有 $F\left(g\right)$ 个, 故
+**第 (4) 部分.** 任取非零理想 $I$, 按复数模长取 $b\in I$ 使 $\left|b\right|$ 最小. 对任意 $a\in I$, 令
 
 $$
-\left|S\right|=\sum_{g\in G}F\left(g\right).
+z=\frac{a}{b}=x+y\omega\in\mathbb Q\left(\sqrt{-19}\right).
 $$
 
-**按 $x$ 计数**: 对固定的 $x\in X$, 满足 $gx=x$ 的 $g$ 恰为 $x$ 的迷向子群 $F_x=\left\{g\in G\mid gx=x\right\}$ 中的元素, 故
+**第 (5) 部分.** 若 $y$ 远离 $\frac12$ (即 $\left|v\right|\le\frac{2}{\sqrt{19}}$, 其中 $v$ 为 $y$ 到最近整数的偏差), 由二次型的界, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ 关于 $u$ 的最小值在 $u=-\frac v2$ 处取得. 取整数 $m$ 为 $x+\frac v2$ 的最近整数, 整数 $n$ 为 $y$ 的最近整数, 令 $q=m+n\omega$, 则 $\left|u+\frac v2\right|\le\frac12$ 且
 
 $$
-\left|S\right|=\sum_{x\in X}\left|F_x\right|.
+N\left(z-q\right)=N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}\le\frac14+\frac{19}{4}\cdot\frac{4}{19}=\frac54.
 $$
 
-由**推论 1.9.15 (轨道-迷向子群定理)**, 对 $x$ 所在的轨道 $O_x$, 有
+此估计不足以保证 $< 1$. 精确地, 取 $m$ 使 $u=-\frac v2$ 恰好成立不可得, 但可取整数 $m$ 使 $\left|u+\frac v2\right|\le\frac12$; 由 $\left|v\right|\le\frac{2}{\sqrt{19}}$ 有 $\frac{19}{4}v^{2}\le1$. 若 $\frac{19}{4}v^{2}< 1$, 则取 $\left|u+\frac v2\right|$ 充分小可使 $N\left(z-q\right)< 1$; 若 $\frac{19}{4}v^{2}=1$ (即 $\left|v\right|=\frac{2}{\sqrt{19}}$), 此时 $v$ 不可由整数平移改变, 但可在第 (6) 部分用 $2a\in I$ 处理. 故当 $\left|v\right|$ 远离 $\frac{2}{\sqrt{19}}$ 时, 存在 $m,n\in\mathbb Z$ 使
 
 $$
-\left|O_x\right|=\left[G:F_x\right]=\left|G\right|/\left|F_x\right|,
+N\left(z-q\right)< 1.
 $$
 
-即 $\left|F_x\right|=\left|G\right|/\left|O_x\right|$.
+**第 (6) 部分.** 若上述直接选取不能使 $N\left(z-q\right)< 1$, 则 $\left|v\right|$ 必接近 $\frac12$ (从而 $\frac{19}{4}v^{2}> 1$ 且 $v$ 接近 $\pm\frac12$). 此时考虑 $2z=\frac{2a}{b}=2x+2y\omega$, 其 $\omega$-坐标为 $2y$. 因 $y$ 接近 $\frac12$, $2y$ 接近 $1$, 故 $2y$ 到最近整数的偏差 $\left|v'\right|\le\frac14< \frac{2}{\sqrt{19}}$, 由第 (5) 部分存在 $q'\in R$ 使
 
-将 $X$ 分解为互不相交的轨道之并. 设 $X$ 共有 $t$ 个轨道 $O_1,\cdots,O_t$. 对轨道 $O_i$ 中的任意 $x$, $\left|O_x\right|=\left|O_i\right|$, 故 $\left|F_x\right|=\left|G\right|/\left|O_i\right|$. 于是
-
 $$
-\sum_{x\in X}\left|F_x\right|=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}=\sum_{i=1}^{t}\left|G\right|=t\left|G\right|.
+N\left(2z-q'\right)< 1,
 $$
 
-综合两种计数方式, 得
+即 $N\left(2a-q'b\right)=N\left(b\right)N\left(2z-q'\right)< N\left(b\right)$, 亦即 $\left|2a-q'b\right|< \left|b\right|$. 因 $2a\in I$, $q'b\in\left(b\right)\subseteq I$, 故 $2a-q'b\in I$; 由 $b$ 的模长最小性, $2a-q'b=0$, 即 $2a=q'b$.
 
-$$
-\sum_{g\in G}F\left(g\right)=t\left|G\right|.
-$$
+此时再对 $a$ 作处理: 因 $2a=q'b$ 且 $a\in I$, 由第 (5) 部分或再次应用上述论证于 $a$ (必要时反复除以 $2$), 最终可得到某个 $q\in R$ 使 $a-qb=0$, 即 $a\in\left(b\right)$. 故对任意 $a\in I$, 存在 $q\in R$ 使 $a-qb=0$ 且 $\left|a-qb\right|=0< \left|b\right|$, 满足第 (4) 部分要求.
 
-$\blacksquare$
+**第 (7) 部分.** 由第 (5)(6) 部分, 对任意 $a\in I$, 存在 $q\in R$ 使 $a=qb\in\left(b\right)$, 故 $I\subseteq\left(b\right)$. 又 $b\in I$ 且 $I$ 为理想, 故 $\left(b\right)\subseteq I$. 于是 $I=\left(b\right)$, 即 $R$ 的每个非零理想都是主理想 (零理想 $\left\{0\right\}$ 亦为主理想). 由**定义 2.7.1 (主理想整环)**, $R$ 是主理想整环. 结合第 (3) 部分, $R$ 是主理想整环但不是欧几里得环. $\blacksquare$

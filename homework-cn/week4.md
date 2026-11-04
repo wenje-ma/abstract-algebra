@@ -1,157 +1,181 @@
 # week4
 
-> **定理 1.2.2 (子群判别法)**
+> **定理 1.2.22 (拉格朗日定理)**
 > 
-> 设 $H$ 是群 $G$ 的非空子集, 则下列条件等价: (1) $H$ 是 $G$ 的子群; (2) 对任意 $a,b\in H$, 有 $ab\in H$, $a^{-1}\in H$; (3) 对任意 $a,b\in H$, 有 $ab^{-1}\in H$.
+> 设 $G$ 是有限群, $H< G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$, 其中 $\left[G:H\right]$ 为 $H$ 在 $G$ 中的指数. 从而子群 $H$ 的阶是群 $G$ 的阶的因子, 特别地, 任何元素的阶也是 $\left|G\right|$ 的因子.
 
-> **定义 1.3.1 (正规子群)**
+> **定理 1.4.10 (凯莱定理)**
 > 
-> 设 $H$ 是群 $G$ 的子群. 如果对任意 $g\in G$, $h\in H$, 有 $ghg^{-1}\in H$, 则称 $H$ 为 $G$ 的一个正规子群, 记为 $H\triangleleft G$.
+> 任何群 $G$ 与对称群 $S_G$ 的一个子群同构; 事实上映射 $L:G\to L_G$, $a\mapsto L_a$ 是单同态.
 
-> **定义 1.4.1 (群同态与同构)**
+> **引理 1.4.13**
 > 
-> 设 $G$ 和 $G'$ 是两个群, 如果映射 $f:G\to G'$ 满足 $f\left(ab\right)=f\left(a\right)f\left(b\right)$, $\forall a,b\in G$, 则称 $f$ 是 $G$ 到 $G'$ 的群同态. 若同态 $f$ 是双射, 则称 $f$ 是 $G$ 到 $G'$ 的群同构, 此时称群 $G$ 与 $G'$ 是同构的, 记为 $G\cong G'$.
+> 设 $f:G\to G'$ 为群同态, 则 $\mathrm{Im}\,f< G'$, $\ker f\triangleleft G$.
 
-> **定义 1.4.9 (左平移与右平移)**
+> **例 1.4.17**
 > 
-> 对任意 $a\in G$, 定义 $G$ 上的变换 $L_a,R_a$ 为 $L_a\left(g\right)=ag$, $R_a\left(g\right)=ga$, $\forall g\in G$; 分别称 $L_a,R_a$ 为由 $a$ 决定的左平移变换和右平移变换.
-
-> **定义 1.4.11 (同态的核与像)**
-> 
-> 设 $f:G\to G'$ 是群同态, 则集合 $\ker f=\left\{a\in G\mid f\left(a\right)=e'\right\}$ 称为同态 $f$ 的核, 集合 $\mathrm{Im}\left(f\right)=f\left(G\right)=\left\{f\left(a\right)\mid a\in G\right\}$ 称为同态 $f$ 的像.
+> 设 $V$ 是数域 $P$ 上的 $n$ 维线性空间, 则映射 $\det\circ\pi:S_n\to P^{*}$, $\sigma\mapsto\det\left(\pi_\sigma\right)$ 是群同态, 其像集为 $\left\{1,-1\right\}$ (当 $n> 1$ 时), 该同态的核记为 $A_n$.
 
 > **定理 1.4.19 (群的同态基本定理)**
 > 
 > 设 $f:G\to G'$ 是群的满同态, 则 $G/\ker f\cong G'$.
 
-## 1.4-3
+> **定理 1.5.5 (循环群的分类)**
+> 
+> 设 $G$ 是循环群. 若 $G$ 是无限群, 则 $G$ 与 $\left(\mathbb Z,+\right)$ 同构; 若 $G$ 是 $n$ 阶群, 则 $G$ 与 $\left(\mathbb Z_n,+\right)$ 同构. 从而, 两个循环群同构当且仅当它们有相同的阶.
 
-设 $G$ 是一个群, 定义 $R:G\to S_{G}$ 为 $R\left(a\right)=R_{a}$, 其中 $R_{a}$ 为右平移变换. 证明: $R$ 是 $G$ 的反同构, 即满足 $R\left(ab\right)=R\left(b\right)R\left(a\right)$.
+> **定义 1.6.1 (轮换)**
+> 
+> 设 $\left\{i_1,i_2,\cdots,i_r\right\}\subseteq\left\{1,2,\cdots,n\right\}$. 若 $\sigma\in S_n$ 满足 $\sigma\left(i_1\right)=i_2$, $\sigma\left(i_2\right)=i_3$, ..., $\sigma\left(i_r\right)=i_1$, 且 $\sigma$ 固定其余文字, 则称 $\sigma$ 为一个 $r$-轮换, 记为 $\sigma=\left(i_1i_2\cdots i_r\right)$. 特别地, $2$-轮换称为对换.
 
-### 解答 1.4-3
+> **定理 1.6.4 (轮换分解)**
+> 
+> $S_n$ 中的任何元素 $\sigma$ 都可表为 $S_n$ 中一些不相交轮换之积; 如果不计次序, 表法是唯一的.
 
-对任意 $g\in G$, 由**定义 1.4.9 (左平移与右平移)**, $R_a\left(g\right)=ga$.
+> **引理 1.6.7 (轮换的对换分解)**
+> 
+> 任一个 $r$-轮换都可写成 $r-1$ 个对换的乘积: $\left(i_1i_2\cdots i_r\right)=\left(i_1i_r\right)\left(i_1i_{r-1}\right)\cdots\left(i_1i_3\right)\left(i_1i_2\right)$.
 
-**第一步: 证明 $R$ 是反同态.** 对任意 $g\in G$,
+> **命题 1.6.8**
+> 
+> 任一 $n$ 元置换都可以表为一些对换的乘积.
 
-$$
-R\left(ab\right)\left(g\right)=R_{ab}\left(g\right)=g\left(ab\right)=\left(ga\right)b=R_b\left(ga\right)=R_b\left(R_a\left(g\right)\right)=\left(R_b\circ R_a\right)\left(g\right)=R\left(b\right)R\left(a\right)\left(g\right).
-$$
+> **定理 1.6.9 (交错群的单性)**
+> 
+> 当 $n\ge5$ 时, $A_n$ 是单群.
 
-由 $g$ 的任意性, $R\left(ab\right)=R\left(b\right)R\left(a\right)$, 依据反同态与反同构, $R$ 是 $G$ 到 $S_G$ 的反同态.
+## 1.5-3
 
-**第二步: 证明 $R$ 是单射.** 若 $R\left(a\right)=R\left(b\right)$, 则 $R_a=R_b$. 特别地, $R_a\left(e\right)=R_b\left(e\right)$, 即 $ea=eb$, 故 $a=b$. 因此 $R$ 是单射.
+设 $\left(m,n\right)=1$. 证明: $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$.
 
-**第三步: 证明 $R$ 的像集是 $S_G$ 的子群.** 记 $R_G=\left\{R_a\mid a\in G\right\}$. 由定义, $R:G\to R_G$ 是满射. 又由对称群与双射变换, $R_a$ 是 $G$ 上的双射 (逆为 $R_{a^{-1}}$), 故 $R_G\subseteq S_G$, 且 $R_G$ 是 $S_G$ 的子群 (复合与逆均封闭于 $R_G$, 因 $R_aR_b=R_{ba}$, $R_a^{-1}=R_{a^{-1}}$).
+### 解答 1.5-3
 
-综上, $R:G\to R_G$ 是双射反同态, 依据反同态与反同构, $R$ 是反同构, 即 $G$ 与 $S_G$ 的子群 $R_G$ 反同构. $\blacksquare$
+考虑 $\mathbb Z_m\times\mathbb Z_n$ 中的元素 $\left(\overline{1},\overline{1}\right)$. 设其阶为 $d$. 由模 $n$ 剩余类加群, $d\left(\overline{1},\overline{1}\right)=\left(d\overline{1},d\overline{1}\right)=\left(\overline{0},\overline{0}\right)$ 当且仅当 $m\mid d$ 且 $n\mid d$. 由阶的定义, $d\left(\overline{1},\overline{1}\right)=\left(\overline{0},\overline{0}\right)$, 故 $m\mid d$ 且 $n\mid d$. 因 $\left(m,n\right)=1$, 由最大公因数与最小公倍数, $mn\mid d$.
 
-## 1.4-7
+另一方面, $mn\left(\overline{1},\overline{1}\right)=\left(mn\overline{1},mn\overline{1}\right)=\left(\overline{0},\overline{0}\right)$, 故 $d\mid mn$.
 
-证明 $f\left(x\right)=\cos x+\sqrt{-1}\sin x$ 是 $\left(\mathbb R,+\right)$ 到 $\left(\mathbb C^{*},\cdot\right)$ 的一个群同态, 并求 $\ker f$.
+因此 $d=mn$, 即 $\left(\overline{1},\overline{1}\right)$ 的阶为 $mn$.
 
-### 解答 1.4-7
+于是 $\left\langle\left(\overline{1},\overline{1}\right)\right\rangle$ 是 $\mathbb Z_m\times\mathbb Z_n$ 的 $mn$ 阶循环子群. 而 $\left|\mathbb Z_m\times\mathbb Z_n\right|=\left|\mathbb Z_m\right|\left|\mathbb Z_n\right|=mn$, 故 $\mathbb Z_m\times\mathbb Z_n=\left\langle\left(\overline{1},\overline{1}\right)\right\rangle$, 即 $\mathbb Z_m\times\mathbb Z_n$ 是 $mn$ 阶循环群.
 
-**第一步: 证明 $f$ 是群同态.** 对任意 $x,y\in\mathbb R$, 由三角函数的和角公式,
+由**定理 1.5.5 (循环群的分类)**, 阶相同的循环群同构, 故 $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$. $\blacksquare$
 
-$$
-f\left(x+y\right)=\cos\left(x+y\right)+\sqrt{-1}\sin\left(x+y\right)=\left(\cos x\cos y-\sin x\sin y\right)+\sqrt{-1}\left(\sin x\cos y+\cos x\sin y\right)=\left(\cos x+\sqrt{-1}\sin x\right)\left(\cos y+\sqrt{-1}\sin y\right)=f\left(x\right)f\left(y\right).
-$$
+## 1.5-15
 
-又 $f\left(x\right)\ne0$ 对任意 $x\in\mathbb R$ (因 $\cos^2x+\sin^2x=1$) (复指数与单位圆), 故 $f:\mathbb R\to\mathbb C^{*}$ 良定义. 由**定义 1.4.1 (群同态与同构)**, $f$ 是 $\left(\mathbb R,+\right)$ 到 $\left(\mathbb C^{*},\cdot\right)$ 的群同态.
+证明定理 1.5.8 的逆命题, 即: 设 $G$ 是 $n$ 阶群, 且对 $n$ 的每个因子 $m$ 都存在 $G$ 的唯一的 $m$ 阶子群, 则 $G$ 是循环群.
 
-**第二步: 求 $\ker f$.** 由**定义 1.4.11 (同态的核与像)**, $\ker f=\left\{x\in\mathbb R\mid f\left(x\right)=1\right\}$. 由复指数与单位圆, $f\left(x\right)=\cos x+\sqrt{-1}\sin x=1$ 当且仅当 $x=2k\pi$, $k\in\mathbb Z$. 故
+### 解答 1.5-15
 
-$$
-\ker f=2\pi\mathbb Z=\left\{2k\pi\mid k\in\mathbb Z\right\}.
-$$
+设 $G$ 是 $n$ 阶群, 且对 $n$ 的每个因子 $d$ 都存在唯一的 $d$ 阶子群, 记为 $H_d$. 对每个 $d\mid n$, 令 $f\left(d\right)$ 为 $G$ 中阶恰为 $d$ 的元素的个数.
 
-由**定理 1.4.19 (群的同态基本定理)**, $\mathbb R/2\pi\mathbb Z\cong\mathrm{Im}\left(f\right)$, 其中 $\mathrm{Im}\left(f\right)=\left\{f\left(x\right)\mid x\in\mathbb R\right\}$ 为单位圆 $\left\{z\in\mathbb C\mid\left|z\right|=1\right\}$ 上的复数乘法群 (复指数与单位圆). $\blacksquare$
+**断言: $f\left(d\right)$ 要么为 $0$, 要么为 $\varphi\left(d\right)$.** 若 $f\left(d\right)=0$, 断言显然. 若 $f\left(d\right)> 0$, 取 $a\in G$ 使 $a$ 的阶为 $d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶子群; 由唯一性, $\left\langle a\right\rangle=H_d$, 故 $H_d$ 是 $d$ 阶循环群. 对 $G$ 中任意 $d$ 阶元 $b$, $\left\langle b\right\rangle$ 也是 $G$ 的 $d$ 阶子群, 由唯一性 $\left\langle b\right\rangle=H_d$, 故 $b$ 是 $d$ 阶循环群 $H_d$ 的生成元. 由循环群的生成元个数, $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元, 故 $f\left(d\right)=\varphi\left(d\right)$. 断言得证.
 
-## 1.4-8
+于是对每个 $d\mid n$, 有 $f\left(d\right)\le\varphi\left(d\right)$.
 
-设 $G$ 和 $H$ 为群, $\varphi:G\to\mathrm{Aut}\left(H\right)$ 为群同态. 在集合 $\left\{\left(g,h\right)\mid g\in G,h\in H\right\}$ 中定义乘法为
-
-$$
-\left(g_{1},h_{1}\right)\left(g_{2},h_{2}\right)=\left(g_{1}g_{2},\varphi\left(g_{2}^{-1}\right)\left(h_{1}\right)h_{2}\right),
-$$
-
-证明: 该集合是群, 称为 $G$ 与 $H$ 的半直积, 记为 $G\ltimes H$. 进一步, $G_{1}=\left\{\left(g,e_{H}\right)\mid g\in G\right\}$ 为 $G\ltimes H$ 的子群, $H_{1}=\left\{\left(e_{G},h\right)\mid h\in H\right\}$ 为 $G\ltimes H$ 的正规子群.
-
-### 解答 1.4-8
-
-记 $G\ltimes H=\left\{\left(g,h\right)\mid g\in G,h\in H\right\}$, 乘法如题所定义. 逐条验证群公理.
-
-**封闭性**: 对任意 $\left(g_1,h_1\right),\left(g_2,h_2\right)\in G\ltimes H$, 因 $g_1g_2\in G$, 且 $\varphi\left(g_2^{-1}\right)\left(h_1\right)\in H$ (因 $\varphi\left(g_2^{-1}\right)\in\mathrm{Aut}\left(H\right)$), $h_2\in H$, 故 $\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\in H$ (自同构群同态的性质). 于是 $\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\in G\ltimes H$, 封闭性成立.
-
-**结合律**: 对任意 $\left(g_1,h_1\right),\left(g_2,h_2\right),\left(g_3,h_3\right)\in G\ltimes H$, 一方面
+另一方面, 由**定理 1.2.22 (拉格朗日定理)**, $G$ 中每个元素的阶都是 $n$ 的因子, 故
 
 $$
-\left(\left(g_1,h_1\right)\left(g_2,h_2\right)\right)\left(g_3,h_3\right)=\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\left(g_3,h_3\right)=\left(\left(g_1g_2\right)g_3,\ \varphi\left(g_3^{-1}\right)\left(\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)h_3\right).
+n=\left|G\right|=\sum_{d\mid n}f\left(d\right).
 $$
 
-因 $\varphi\left(g_3^{-1}\right)\in\mathrm{Aut}\left(H\right)$ 保持 $H$ 的乘法, 故 $\varphi\left(g_3^{-1}\right)\left(\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)=\varphi\left(g_3^{-1}\right)\varphi\left(g_2^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)$; 又由自同构群同态的性质, $\varphi\left(g_3^{-1}\right)\varphi\left(g_2^{-1}\right)=\varphi\left(g_3^{-1}g_2^{-1}\right)=\varphi\left(\left(g_2g_3\right)^{-1}\right)$. 故
+又由欧拉函数与整除恒等式, $\sum_{d\mid n}\varphi\left(d\right)=n$, 故
 
 $$
-\left(\left(g_1,h_1\right)\left(g_2,h_2\right)\right)\left(g_3,h_3\right)=\left(\left(g_1g_2\right)g_3,\ \varphi\left(\left(g_2g_3\right)^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)\cdot h_3\right).
+\sum_{d\mid n}f\left(d\right)=\sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
-另一方面,
+因对每个 $d\mid n$ 都有 $f\left(d\right)\le\varphi\left(d\right)$, 而两和相等, 故对每个 $d\mid n$ 必有 $f\left(d\right)=\varphi\left(d\right)$.
+
+特别地, $f\left(n\right)=\varphi\left(n\right)> 0$, 故 $G$ 中存在 $n$ 阶元 $a$, 从而 $\left\langle a\right\rangle$ 是 $G$ 的 $n$ 阶子群, 而 $\left|G\right|=n$, 故 $G=\left\langle a\right\rangle$ 是循环群. $\blacksquare$
+
+## 1.5-16
+
+设有限群 $G$ 的不同子群有不同的阶, 证明: $G$ 是循环群.
+
+### 解答 1.5-16
+
+设 $\left|G\right|=n$. 由题设, 对每个正整数 $d$, $G$ 中至多有一个 $d$ 阶子群 (若有两个 $d$ 阶子群, 则其阶相同, 与题设矛盾). 对每个 $d\mid n$, 令 $f\left(d\right)$ 为 $G$ 中阶恰为 $d$ 的元素的个数.
+
+**断言: 对每个 $d\mid n$, $f\left(d\right)\le\varphi\left(d\right)$.** 若 $f\left(d\right)=0$, 断言显然. 若 $f\left(d\right)> 0$, 取 $a\in G$ 使 $a$ 的阶为 $d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶循环子群. 由题设, $G$ 中至多有一个 $d$ 阶子群, 故 $G$ 中任意 $d$ 阶元 $b$ 都满足 $\left\langle b\right\rangle=\left\langle a\right\rangle$, 即 $b$ 是 $d$ 阶循环群 $\left\langle a\right\rangle$ 的生成元. 由循环群的生成元个数, $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元, 故 $f\left(d\right)=\varphi\left(d\right)\le\varphi\left(d\right)$. 断言得证.
+
+由**定理 1.2.22 (拉格朗日定理)**, $G$ 中每个元素的阶都整除 $n$, 故 $G$ 中每个元素都恰好落入某个 $d\mid n$ 的计数 $f\left(d\right)$ 中, 即
 
 $$
-\left(g_1,h_1\right)\left(\left(g_2,h_2\right)\left(g_3,h_3\right)\right)=\left(g_1,h_1\right)\left(g_2g_3,\varphi\left(g_3^{-1}\right)\left(h_2\right)h_3\right)=\left(g_1\left(g_2g_3\right),\ \varphi\left(\left(g_2g_3\right)^{-1}\right)\left(h_1\right)\cdot\varphi\left(g_3^{-1}\right)\left(h_2\right)\cdot h_3\right).
+n=\left|G\right|=\sum_{d\mid n}f\left(d\right).
 $$
 
-因 $G$ 满足结合律, $\left(g_1g_2\right)g_3=g_1\left(g_2g_3\right)$; 两式右端第二分量相同, 故结合律成立.
-
-**单位元**: 考虑 $\left(e_G,e_H\right)$. 对任意 $\left(g,h\right)\in G\ltimes H$, 因 $\varphi\left(e_G\right)=\mathrm{id}_H$ (自同构群同态的性质), 故 $\varphi\left(e_G^{-1}\right)\left(h\right)=\mathrm{id}_H\left(h\right)=h$, 于是
+又由欧拉函数与整除恒等式, $\sum_{d\mid n}\varphi\left(d\right)=n$. 结合上述断言,
 
 $$
-\left(g,h\right)\left(e_G,e_H\right)=\left(g,\varphi\left(e_G^{-1}\right)\left(h\right)e_H\right)=\left(g,h\right),
+n=\sum_{d\mid n}f\left(d\right)\le\sum_{d\mid n}\varphi\left(d\right)=n.
 $$
 
-且
+上式两端相等, 故对每个 $d\mid n$ 必有 $f\left(d\right)=\varphi\left(d\right)$.
+
+特别地, $f\left(n\right)=\varphi\left(n\right)> 0$, 故 $G$ 中存在 $n$ 阶元 $a$, 从而 $G=\left\langle a\right\rangle$ 是循环群. $\blacksquare$
+
+## 1.6-5
+
+证明:
 
 $$
-\left(e_G,e_H\right)\left(g,h\right)=\left(g,\varphi\left(g^{-1}\right)\left(e_H\right)h\right)=\left(g,\mathrm{id}_H\left(e_H\right)h\right)=\left(g,h\right).
+S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle,\quad A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle.
 $$
 
-故 $\left(e_G,e_H\right)$ 是单位元.
+### 解答 1.6-5
 
-**逆元**: 对 $\left(g,h\right)\in G\ltimes H$, 考虑 $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$. 因 $\varphi\left(\left(g^{-1}\right)^{-1}\right)=\varphi\left(g\right)$, 且 $\varphi\left(g^{-1}\right)\varphi\left(g\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$ (自同构群同态的性质), 故
+**第一部分: 证明 $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.** 由**命题 1.6.8**, $S_n$ 由所有对换生成. 对任意对换 $\left(ij\right)$, 其中 $i\ne1$, $j\ne1$, 由轮换的共轭, 取 $\sigma=\left(1i\right)$, 有 $\left(1i\right)\left(1j\right)\left(1i\right)=\left(\sigma\left(1\right)\sigma\left(j\right)\right)=\left(i,j\right)=\left(ij\right)$. 故任意对换 $\left(ij\right)$ 都可由 $\left(12\right),\left(13\right),\cdots,\left(1n\right)$ 表出, 因此 $S_n\subseteq\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$; 反向包含显然, 故 $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.
 
-$$
-\left(g,h\right)\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_G,\ \varphi\left(g\right)\left(h\right)\cdot\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_G,\varphi\left(g\right)\left(hh^{-1}\right)\right)=\left(e_G,e_H\right),
-$$
-
-且
+**第二部分: 证明 $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.** 记 $\sigma=\left(12\cdots n\right)$. 由轮换的共轭, 对 $k=1,2,\cdots,n-1$,
 
 $$
-\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)\left(g,h\right)=\left(e_G,\ \varphi\left(g^{-1}\right)\left(\varphi\left(g\right)\left(h^{-1}\right)\right)h\right)=\left(e_G,\left(\varphi\left(g^{-1}\right)\varphi\left(g\right)\right)\left(h^{-1}\right)\cdot h\right)=\left(e_G,h^{-1}h\right)=\left(e_G,e_H\right).
+\sigma^{k-1}\left(12\right)\sigma^{-\left(k-1\right)}=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)=\left(k,k+1\right),
 $$
 
-故 $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$ 是 $\left(g,h\right)$ 的逆元.
+故相邻对换 $\left(12\right),\left(23\right),\cdots,\left(n-1,n\right)$ 均属于 $\left\langle\left(12\right),\sigma\right\rangle$. 而相邻对换生成 $S_n$ (由**命题 1.6.8**, 任何对换 $\left(ij\right)$ 可表为相邻对换之积), 故 $S_n\subseteq\left\langle\left(12\right),\sigma\right\rangle$; 反向包含显然, 故 $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.
 
-由封闭性,结合律,单位元,逆元全部成立, 依据**定义 1.4.1 (群同态与同构)** (群的定义见其引用环境), $G\ltimes H$ 是群.
+**第三部分: 证明 $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.** 由交错群由 3-轮换生成, $A_n$ 由所有 3-轮换生成. 下面证明任意 3-轮换都属于 $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.
 
-**验证 $G_1< G\ltimes H$.** $\left(e_G,e_H\right)\in G_1$, 故 $G_1$ 非空. 对 $\left(g_1,e_H\right),\left(g_2,e_H\right)\in G_1$, 由逆元公式, $\left(g_2,e_H\right)^{-1}=\left(g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_2^{-1},e_H\right)$, 于是
+(1) 含 $1$ 和 $2$ 的 3-轮换即为 $\left(12k\right)$ 或其逆, 已在生成集中.
 
-$$
-\left(g_1,e_H\right)\left(g_2,e_H\right)^{-1}=\left(g_1,e_H\right)\left(g_2^{-1},e_H\right)=\left(g_1g_2^{-1},\varphi\left(\left(g_2^{-1}\right)^{-1}\right)\left(e_H\right)e_H\right)=\left(g_1g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_1g_2^{-1},e_H\right)\in G_1.
-$$
+(2) 含 $1$ 但不含 $2$ 的 3-轮换 $\left(1jk\right)$ ($j,k\ne2$): 直接计算 $\left(12k\right)\left(12j\right)^{-1}=\left(12k\right)\left(1j2\right)=\left(1jk\right)$, 故 $\left(1jk\right)$ 属于生成群.
 
-由**定理 1.2.2 (子群判别法)**, $G_1< G\ltimes H$.
+(3) 不含 $1$ 的 3-轮换 $\left(ijk\right)$: 由 (2), $\left(1ij\right)$ 与 $\left(1ik\right)$ 均属于生成群, 于是 $\left(1ij\right)^{-1}\left(1ik\right)=\left(1ji\right)\left(1ik\right)=\left(ikj\right)$. 因 $\left(ikj\right)=\left(ijk\right)^{-1}$, 故 $\left(ijk\right)$ 属于生成群.
 
-**验证 $H_1\triangleleft G\ltimes H$.** 先证 $H_1< G\ltimes H$: $\left(e_G,e_H\right)\in H_1$, 非空; 对 $\left(e_G,h_1\right),\left(e_G,h_2\right)\in H_1$, 由逆元公式, $\left(e_G,h_2\right)^{-1}=\left(e_G,\varphi\left(e_G\right)\left(h_2^{-1}\right)\right)=\left(e_G,h_2^{-1}\right)$, 于是
+故所有 3-轮换都属于 $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$, 从而 $A_n\subseteq\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. 反之, 各生成元 $\left(12k\right)$ 都是 3-轮换, 是偶置换 (偶置换与奇置换, 交错群), 故属于 $A_n$, 反向包含成立. 因此 $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. $\blacksquare$
 
-$$
-\left(e_G,h_1\right)\left(e_G,h_2\right)^{-1}=\left(e_G,h_1\right)\left(e_G,h_2^{-1}\right)=\left(e_G,\varphi\left(e_G^{-1}\right)\left(h_1\right)h_2^{-1}\right)=\left(e_G,h_1h_2^{-1}\right)\in H_1.
-$$
+## 1.6-6
 
-由**定理 1.2.2 (子群判别法)**, $H_1< G\ltimes H$. 再证正规性: 对任意 $\left(g,k\right)\in G\ltimes H$ 与 $\left(e_G,h\right)\in H_1$, 由逆元公式 $\left(g,k\right)^{-1}=\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)$, 且 $\varphi\left(e_G^{-1}\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$, 计算
+证明: $S_n$ 的非平凡正规子群为 $A_n$ 或 $K_4$ (当 $n=4$ 时).
 
-$$
-\left(g,k\right)\left(e_G,h\right)\left(g,k\right)^{-1}=\left(g,\varphi\left(e_G^{-1}\right)\left(k\right)h\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(g,kh\right)\left(g^{-1},\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(e_G,\varphi\left(g^{-1}\right)\left(kh\right)\cdot\varphi\left(g\right)\left(k^{-1}\right)\right)=\left(e_G,\varphi\left(g^{-1}\right)\varphi\left(g\right)\left(h\right)\right)=\left(e_G,h\right)\in H_1.
-$$
+### 解答 1.6-6
 
-故对任意 $\left(g,k\right)\in G\ltimes H$ 有 $\left(g,k\right)H_1\left(g,k\right)^{-1}\subseteq H_1$, 依据**定义 1.3.1 (正规子群)**, $H_1\triangleleft G\ltimes H$. $\blacksquare$
+设 $N\triangleleft S_n$, $N\ne\left\{e\right\}$, $N\ne S_n$.
+
+**情形 $n\ge5$.** 由**定理 1.6.9 (交错群的单性)**, $A_n$ 是单群. 因 $N\triangleleft S_n$ 且 $A_n\triangleleft S_n$ (由偶置换与奇置换, 交错群), 交 $N\cap A_n\triangleleft A_n$, 故由 $A_n$ 的单性, $N\cap A_n=\left\{e\right\}$ 或 $A_n$.
+
+若 $N\cap A_n=A_n$, 则 $A_n\subseteq N$. 因 $\left|A_n\right|=\frac{n!}{2}$, $A_n$ 在 $S_n$ 中的指数为 $2$ (偶置换与奇置换, 交错群), 故包含 $A_n$ 的子群只能是 $A_n$ 或 $S_n$; 而 $N\ne S_n$, 故 $N=A_n$.
+
+若 $N\cap A_n=\left\{e\right\}$, 则对任意 $x,y\in N\setminus\left\{e\right\}$, 因 $x,y$ 都是奇置换, $xy$ 是偶置换, 故 $xy\in N\cap A_n=\left\{e\right\}$, 于是 $y=x^{-1}$, 即 $\left|N\right|\le2$, 且 $N$ 的非单位元是二阶元. 又由正规子群是共轭类的并, $N$ 是若干共轭类之并; 因 $n\ge3$ 时 $S_n$ 的中心平凡 (群的中心与内自同构), $N$ 的非单位元 $x\ne e$ 所在的共轭类大小大于 $1$, 与 $\left|N\right|\le2$ 矛盾. 故 $N\cap A_n=\left\{e\right\}$ 不可能.
+
+因此 $n\ge5$ 时, $S_n$ 的非平凡正规子群只有 $A_n$.
+
+**情形 $n=4$.** $\left|S_4\right|=24$, $\left|A_4\right|=12$, $A_4\triangleleft S_4$. 由$S_4$ 的共轭类, $S_4$ 的共轭类大小分别为 $1,6,3,8,6$; 由正规子群是共轭类的并及**定理 1.2.22 (拉格朗日定理)**, 正规子群的阶必为若干共轭类大小之和且整除 $24$, 可能的阶为 $1,4,12,24$, 对应正规子群 $\left\{e\right\}$, $K_4$, $A_4$, $S_4$. 故非平凡正规子群为 $A_4$ 与 $K_4$.
+
+**情形 $n=3$.** $\left|S_3\right|=6$, $\left|A_3\right|=3$, $A_3\triangleleft S_3$ 且指数为 $2$. 由正规子群是共轭类的并, $S_3$ 的共轭类大小分别为 $1,3,2$, 可能组成正规子群的阶为 $1,3,6$, 故正规子群为 $\left\{e\right\},A_3,S_3$, 非平凡者为 $A_3$.
+
+**情形 $n\le2$.** $S_n$ 无非平凡正规子群.
+
+综上, $S_n$ 的非平凡正规子群为 $A_n$ (对所有 $n\ge3$), 以及 $n=4$ 时的 $K_4$. $\blacksquare$
+
+## 1.6-11
+
+设 $\left|G\right|=2n$, 其中 $n$ 为奇数. 证明: $G$ 有指数为 $2$ 的正规子群.
+
+### 解答 1.6-11
+
+**第一步: 构造群同态 $\psi:G\to\left\{1,-1\right\}$.** 由**定理 1.4.10 (凯莱定理)**, 左正则表示 $\lambda:G\to S_G$, $g\mapsto L_g$ (其中 $L_g\left(x\right)=gx$) 是单同态; 视 $S_G$ 为 $S_{2n}$ (因 $\left|G\right|=2n$). 由**例 1.4.17** 及符号同态, 符号同态 $\mathrm{sgn}:S_{2n}\to\left\{1,-1\right\}$ 是群同态. 复合得 $\psi=\mathrm{sgn}\circ\lambda:G\to\left\{1,-1\right\}$ 是群同态.
+
+**第二步: 证明 $\psi$ 是满射.** 由偶数阶群有二阶元, $G$ 中存在二阶元 $a$ (因 $\left|G\right|=2n$ 为偶数). 则 $\lambda\left(a\right)=L_a$, 且对任意 $x\in G$, $L_a^2\left(x\right)=a^2x=x$, 故 $L_a$ 是对合; 又 $a\ne e$, 若 $L_a\left(x\right)=x$ 即 $ax=x$, 则 $a=e$, 矛盾, 故 $L_a$ 无不动点. 因此 $L_a$ 是 $G$ (共 $2n$ 个文字) 上的 $n$ 个不相交对换之积, 由符号同态, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (因 $n$ 为奇数). 故 $\psi\left(a\right)=-1$, 而 $\psi\left(e\right)=1$, 于是 $\psi:G\to\left\{1,-1\right\}$ 是满同态.
+
+**第三步: 取核得指数为 $2$ 的正规子群.** 令 $H=\ker\psi$. 由**引理 1.4.13**, $H\triangleleft G$. 由**定理 1.4.19 (群的同态基本定理)**, $G/H\cong\left\{1,-1\right\}$, 故 $\left|G/H\right|=2$, 即 $\left[G:H\right]=2$. 因此 $G$ 有指数为 $2$ 的正规子群 $H$. $\blacksquare$

@@ -1,133 +1,390 @@
 # week6
 
-> **定理 1.2.22 (拉格朗日定理)**
+> **引理 1.7.7**
 > 
-> 设 $G$ 是有限群, $H< G$, 则 $\left|G\right|=\left[G:H\right]\cdot\left|H\right|$.
+> 设 $A,B$ 是 $G$ 的子群, $G=AB$, $A\cap B=\left\{e\right\}$, 则 $A,B$ 都是 $G$ 的正规子群当且仅当对任意 $a\in A$, $b\in B$ 有 $ab=ba$.
 
-> **定理 1.4.10 (凯莱定理)**
+> **引理 1.8.8 (可解群的遗传性)**
 > 
-> 任何群 $G$ 与对称群 $S_G$ 的一个子群同构; 事实上映射 $L:G\to L_G$, $a\mapsto L_a$ 是单同态, 其中 $L_a\left(g\right)=ag$ 为左平移.
+> 可解群的子群,商群都是可解群; 反之, 设 $N\trianglelefteq G$, 且 $N$ 与 $G/N$ 都可解, 则 $G$ 可解.
 
-> **引理 1.4.13**
+> **定义 1.9.1 (群作用)**
 > 
-> 设 $f:G\to G'$ 为群同态, 则 $\mathrm{Im}\,f< G'$, $\ker f\triangleleft G$.
+> 设 $G$ 是群, $X$ 是非空集合. 若映射 $f:G\times X\to X$ 满足 $f\left(e,x\right)=x$ 且 $f\left(g_1g_2,x\right)=f\left(g_1,f\left(g_2,x\right)\right)$, 则称 $f$ 决定了 $G$ 在 $X$ 上的一个作用, 记 $f\left(g,x\right)=gx$.
 
-> **例 1.4.17**
+> **定义 1.9.7 (可递作用与有效作用)**
 > 
-> 设 $V$ 是数域 $P$ 上的 $n$ 维线性空间, 则映射 $\det\circ\pi:S_n\to P^{*}$, $\sigma\mapsto\det\left(\pi_\sigma\right)$ 是群同态, 其像集为 $\left\{1,-1\right\}$ (当 $n> 1$ 时), 该同态的核记为 $A_n$.
+> 若对任意 $x,y\in X$ 存在 $g\in G$ 使 $gx=y$, 称 $G$ 在 $X$ 上的作用可递, 称 $X$ 为 $G$ 的齐性空间. 若由 $gx=x$ 对一切 $x\in X$ 成立可推出 $g=e$, 称作用有效. 若对任意 $g\in G$, $x\in X$ 都有 $gx=x$, 称作用平凡.
 
-> **定理 1.4.19 (群的同态基本定理)**
+> **定义 1.9.9 (轨道与迷向子群)**
 > 
-> 设 $f:G\to G'$ 是群的满同态, 则 $G/\ker f\cong G'$.
+> 设 $G$ 作用在 $X$ 上, $x\in X$. 称 $O_x=\left\{gx\mid g\in G\right\}$ 为 $x$ 的轨道. 称 $F_x=\left\{g\in G\mid gx=x\right\}$ 为 $x$ 的迷向子群.
 
-> **定义 1.6.1 (轮换)**
+> **推论 1.9.15 (轨道-迷向子群定理)**
 > 
-> 设 $\left\{i_1,i_2,\cdots,i_r\right\}\subseteq\left\{1,2,\cdots,n\right\}$. 若 $\sigma\in S_n$ 满足 $\sigma\left(i_1\right)=i_2$, $\sigma\left(i_2\right)=i_3$, ..., $\sigma\left(i_r\right)=i_1$, 且 $\sigma$ 固定其余文字, 则称 $\sigma$ 为一个 $r$-轮换, 记为 $\sigma=\left(i_1i_2\cdots i_r\right)$. 特别地, $2$-轮换称为对换.
+> 设群 $G$ 作用在 $X$ 上, $x\in X$, 则 $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; 从而 $\left|O_x\right|\mid\left|G\right|$.
 
-> **定理 1.6.4 (轮换分解)**
+> **定理 1.10.8 (西罗第二定理)**
 > 
-> $S_n$ 中的任何元素 $\sigma$ 都可表为 $S_n$ 中一些不相交轮换之积; 如果不计次序, 表法是唯一的.
+> 设 $P$ 是 $G$ 的一个西罗 $p$-子群, $H$ 是 $G$ 的一个 $p^{k}$ 阶子群, $k\le l$ (其中 $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$), 则存在 $g\in G$ 使 $H\subseteq gPg^{-1}$. 特别地, $G$ 的西罗 $p$-子群相互共轭.
 
-> **引理 1.6.7 (轮换的对换分解)**
+> **定理 1.10.10 (西罗第三定理)**
 > 
-> 任一个 $r$-轮换都可写成 $r-1$ 个对换的乘积: $\left(i_1i_2\cdots i_r\right)=\left(i_1i_r\right)\left(i_1i_{r-1}\right)\cdots\left(i_1i_3\right)\left(i_1i_2\right)$.
+> 设 $G$ 的西罗 $p$-子群的个数为 $n_{p}$, 则 (1) $G$ 的西罗 $p$-子群 $P\triangleleft G$ 当且仅当 $n_{p}=1$; (2) $n_{p}\mid m$ 且 $n_{p}\equiv1\pmod p$, 其中 $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$.
 
-> **命题 1.6.8**
-> 
-> 任一 $n$ 元置换都可以表为一些对换的乘积.
+## 1.9-5
 
-> **定理 1.6.9 (交错群的单性)**
-> 
-> 当 $n\ge5$ 时, $A_n$ 是单群.
-
-## 1.6-5
-
-证明:
+记 $V_k\left(\mathbb R^n\right)$ 为 $\mathbb R^n$ 中所有 $k$ 元标准正交向量组的全体, 称为斯蒂弗尔流形. 对任意 $\rho\in O\left(n\right)$, $\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$, 定义
 
 $$
-S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle,\quad A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle.
+\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\left(\alpha_1\right),\cdots,\rho\left(\alpha_k\right)\right).
 $$
 
-### 解答 1.6-5
+试验证这是 $O\left(n\right)$ 在 $V_k\left(\mathbb R^n\right)$ 上的可递作用, 并求迷向子群.
 
-**第一部分: 证明 $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.** 由**命题 1.6.8**, $S_n$ 由所有对换生成. 对任意对换 $\left(ij\right)$, 其中 $i\ne1$, $j\ne1$, 由轮换的共轭, 取 $\sigma=\left(1i\right)$, 有 $\left(1i\right)\left(1j\right)\left(1i\right)=\left(\sigma\left(1\right)\sigma\left(j\right)\right)=\left(i,j\right)=\left(ij\right)$. 故任意对换 $\left(ij\right)$ 都可由 $\left(12\right),\left(13\right),\cdots,\left(1n\right)$ 表出, 因此 $S_n\subseteq\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$; 反向包含显然, 故 $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.
+### 解答 1.9-5
 
-**第二部分: 证明 $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.** 记 $\sigma=\left(12\cdots n\right)$. 由轮换的共轭, 对 $k=1,2,\cdots,n-1$,
-
-$$
-\sigma^{k-1}\left(12\right)\sigma^{-\left(k-1\right)}=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)=\left(k,k+1\right),
-$$
-
-故相邻对换 $\left(12\right),\left(23\right),\cdots,\left(n-1,n\right)$ 均属于 $\left\langle\left(12\right),\sigma\right\rangle$. 而相邻对换生成 $S_n$ (由**命题 1.6.8**, 任何对换 $\left(ij\right)$ 可表为相邻对换之积), 故 $S_n\subseteq\left\langle\left(12\right),\sigma\right\rangle$; 反向包含显然, 故 $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.
-
-**第三部分: 证明 $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.** 由交错群由 3-轮换生成, $A_n$ 由所有 3-轮换生成. 下面证明任意 3-轮换都属于 $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.
-
-(1) 含 $1$ 和 $2$ 的 3-轮换即为 $\left(12k\right)$ 或其逆, 已在生成集中.
-
-(2) 含 $1$ 但不含 $2$ 的 3-轮换 $\left(1jk\right)$ ($j,k\ne2$): 直接计算 $\left(12k\right)\left(12j\right)^{-1}=\left(12k\right)\left(1j2\right)=\left(1jk\right)$, 故 $\left(1jk\right)$ 属于生成群.
-
-(3) 不含 $1$ 的 3-轮换 $\left(ijk\right)$: 由 (2), $\left(1ij\right)$ 与 $\left(1ik\right)$ 均属于生成群, 于是 $\left(1ij\right)^{-1}\left(1ik\right)=\left(1ji\right)\left(1ik\right)=\left(ikj\right)$. 因 $\left(ikj\right)=\left(ijk\right)^{-1}$, 故 $\left(ijk\right)$ 属于生成群.
-
-故所有 3-轮换都属于 $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$, 从而 $A_n\subseteq\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. 反之, 各生成元 $\left(12k\right)$ 都是 3-轮换, 是偶置换 (偶置换与奇置换, 交错群), 故属于 $A_n$, 反向包含成立. 因此 $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. $\blacksquare$
-
-## 1.6-6
-
-证明: $S_n$ 的非平凡正规子群为 $A_n$ 或 $K_4$ (当 $n=4$ 时).
-
-### 解答 1.6-6
-
-设 $N\triangleleft S_n$, $N\ne\left\{e\right\}$, $N\ne S_n$.
-
-**情形 $n\ge5$.** 由**定理 1.6.9 (交错群的单性)**, $A_n$ 是单群. 因 $N\triangleleft S_n$ 且 $A_n\triangleleft S_n$ (由偶置换与奇置换, 交错群), 交 $N\cap A_n\triangleleft A_n$, 故由 $A_n$ 的单性, $N\cap A_n=\left\{e\right\}$ 或 $A_n$.
-
-若 $N\cap A_n=A_n$, 则 $A_n\subseteq N$. 因 $\left|A_n\right|=\frac{n!}{2}$, $A_n$ 在 $S_n$ 中的指数为 $2$ (偶置换与奇置换, 交错群), 故包含 $A_n$ 的子群只能是 $A_n$ 或 $S_n$; 而 $N\ne S_n$, 故 $N=A_n$.
-
-若 $N\cap A_n=\left\{e\right\}$, 则对任意 $x,y\in N\setminus\left\{e\right\}$, 因 $x,y$ 都是奇置换, $xy$ 是偶置换, 故 $xy\in N\cap A_n=\left\{e\right\}$, 于是 $y=x^{-1}$, 即 $\left|N\right|\le2$, 且 $N$ 的非单位元是二阶元. 又由正规子群是共轭类的并, $N$ 是若干共轭类之并; 因 $n\ge3$ 时 $S_n$ 的中心平凡 (群的中心与内自同构), $N$ 的非单位元 $x\ne e$ 所在的共轭类大小大于 $1$, 与 $\left|N\right|\le2$ 矛盾. 故 $N\cap A_n=\left\{e\right\}$ 不可能.
-
-因此 $n\ge5$ 时, $S_n$ 的非平凡正规子群只有 $A_n$.
-
-**情形 $n=4$.** $\left|S_4\right|=24$, $\left|A_4\right|=12$, $A_4\triangleleft S_4$. 由$S_4$ 的共轭类, $S_4$ 的共轭类大小分别为 $1,6,3,8,6$; 由正规子群是共轭类的并及**定理 1.2.22 (拉格朗日定理)**, 正规子群的阶必为若干共轭类大小之和且整除 $24$, 可能的阶为 $1,4,12,24$, 对应正规子群 $\left\{e\right\}$, $K_4$, $A_4$, $S_4$. 故非平凡正规子群为 $A_4$ 与 $K_4$.
-
-**情形 $n=3$.** $\left|S_3\right|=6$, $\left|A_3\right|=3$, $A_3\triangleleft S_3$ 且指数为 $2$. 由正规子群是共轭类的并, $S_3$ 的共轭类大小分别为 $1,3,2$, 可能组成正规子群的阶为 $1,3,6$, 故正规子群为 $\left\{e\right\},A_3,S_3$, 非平凡者为 $A_3$.
-
-**情形 $n\le2$.** $S_n$ 无非平凡正规子群.
-
-综上, $S_n$ 的非平凡正规子群为 $A_n$ (对所有 $n\ge3$), 以及 $n=4$ 时的 $K_4$. $\blacksquare$
-
-## 1.6-11
-
-设 $\left|G\right|=2n$, 其中 $n$ 为奇数. 证明: $G$ 有指数为 $2$ 的正规子群.
-
-### 解答 1.6-11
-
-**第一步: 构造群同态 $\psi:G\to\left\{1,-1\right\}$.** 由**定理 1.4.10 (凯莱定理)**, 左正则表示 $\lambda:G\to S_G$, $g\mapsto L_g$ (其中 $L_g\left(x\right)=gx$) 是单同态; 视 $S_G$ 为 $S_{2n}$ (因 $\left|G\right|=2n$). 由**例 1.4.17** 及符号同态, 符号同态 $\mathrm{sgn}:S_{2n}\to\left\{1,-1\right\}$ 是群同态. 复合得 $\psi=\mathrm{sgn}\circ\lambda:G\to\left\{1,-1\right\}$ 是群同态.
-
-**第二步: 证明 $\psi$ 是满射.** 由偶数阶群有二阶元, $G$ 中存在二阶元 $a$ (因 $\left|G\right|=2n$ 为偶数). 则 $\lambda\left(a\right)=L_a$, 且对任意 $x\in G$, $L_a^2\left(x\right)=a^2x=x$, 故 $L_a$ 是对合; 又 $a\ne e$, 若 $L_a\left(x\right)=x$ 即 $ax=x$, 则 $a=e$, 矛盾, 故 $L_a$ 无不动点. 因此 $L_a$ 是 $G$ (共 $2n$ 个文字) 上的 $n$ 个不相交对换之积, 由符号同态, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (因 $n$ 为奇数). 故 $\psi\left(a\right)=-1$, 而 $\psi\left(e\right)=1$, 于是 $\psi:G\to\left\{1,-1\right\}$ 是满同态.
-
-**第三步: 取核得指数为 $2$ 的正规子群.** 令 $H=\ker\psi$. 由**引理 1.4.13**, $H\triangleleft G$. 由**定理 1.4.19 (群的同态基本定理)**, $G/H\cong\left\{1,-1\right\}$, 故 $\left|G/H\right|=2$, 即 $\left[G:H\right]=2$. 因此 $G$ 有指数为 $2$ 的正规子群 $H$. $\blacksquare$
-
-## 1.6-14
-
-证明: 当 $n\ne2,6$ 时, $\mathrm{Aut}\left(S_n\right)\cong S_n$. 并求 $\mathrm{Aut}\left(S_2\right)$ 与 $\mathrm{Aut}\left(S_6\right)$.
-
-### 解答 1.6-14
-
-**先证 $n\ne2,6$ 时 $\mathrm{Aut}\left(S_n\right)\cong S_n$.** 由群的中心与内自同构, $\mathrm{Inn}\left(S_n\right)\cong S_n/C\left(S_n\right)$, 而当 $n\ge3$ 时 $C\left(S_n\right)=\left\{e\right\}$, 故 $\mathrm{Inn}\left(S_n\right)\cong S_n$. 于是只需证明 $\mathrm{Aut}\left(S_n\right)=\mathrm{Inn}\left(S_n\right)$, 即任一自同构都是内自同构.
-
-设 $\varphi\in\mathrm{Aut}\left(S_n\right)$. 自同构保持元素的阶, 故二阶元 (对合) 映为对合. 由对换的中心化子与对换的识别, 当 $n\ne6$ 时, $S_n$ 中对换是唯一的这样的二阶元共轭类 (其中心化子大小为 $2\left(n-2\right)!$), 而自同构保持共轭类与中心化子大小, 故 $\varphi$ 必将对换映为对换.
-
-设 $\varphi\left(12\right)=\left(ab\right)$. 用内自同构 $\mathrm{Ad}_{\sigma}$ 复合 $\varphi$, 其中 $\sigma\in S_n$ 满足 $\sigma\left(a\right)=1$, $\sigma\left(b\right)=2$, 则 $\mathrm{Ad}_{\sigma}\varphi\left(12\right)=\left(\sigma\left(a\right)\sigma\left(b\right)\right)=\left(12\right)$. 故可不妨设 $\varphi\left(12\right)=\left(12\right)$.
-
-对 $k=3,\cdots,n$, 因 $\left(12\right)\left(1k\right)=\left(1k2\right)$ 是 3-轮换, 阶为 $3$, 故 $\varphi\left(1k\right)$ 是与 $\varphi\left(12\right)=\left(12\right)$ 的乘积为 3-轮换的对换, 因而 $\varphi\left(1k\right)$ 必与 $\left(12\right)$ 恰好共享一个文字, 即 $\varphi\left(1k\right)=\left(1,j_k\right)$ 或 $\left(2,j_k\right)$ ($j_k\ne1,2$). 若存在 $k$ 使 $\varphi\left(1k\right)=\left(2,j_k\right)$, 用保持 $\left(12\right)$ 不变的内自同构 $\mathrm{Ad}_{\left(12\right)}$ (即交换文字 $1,2$) 复合, 可统一把每个 $\varphi\left(1k\right)$ 写成 $\left(1,\sigma\left(k\right)\right)$ 的形式, 其中 $\sigma\in S_{n-1}$ 是 $\left\{3,\cdots,n\right\}$ 的一个排列 (保持 $1,2$ 不动). 于是 $\varphi$ 在生成元 $\left(12\right),\left(13\right),\cdots,\left(1n\right)$ 上的作用等于内自同构 $\mathrm{Ad}_{\sigma}$ 的作用.
-
-由**习题 1.6-5 第一部分**, $\left(12\right),\left(13\right),\cdots,\left(1n\right)$ 生成 $S_n$, 故 $\varphi$ 与 $\mathrm{Ad}_{\sigma}$ 在生成元上一致, 从而在 $S_n$ 上一致, 即 $\varphi=\mathrm{Ad}_{\sigma}\in\mathrm{Inn}\left(S_n\right)$.
-
-上述证明在 $n=6$ 时失效, 因 $S_6$ 存在外自同构 (由对换的中心化子与对换的识别与$S_6$ 的外自同构). 故当 $n\ne2,6$ 时,
+**验证作用**: 由正交与酉变换, 正交变换保持内积, 故若 $\left(\alpha_1,\cdots,\alpha_k\right)$ 是标准正交组, 则 $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ 亦然, 即 $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. 又
 
 $$
-\mathrm{Aut}\left(S_n\right)=\mathrm{Inn}\left(S_n\right)\cong S_n.
+\rho\left(\tau\left(\alpha_1,\cdots,\alpha_k\right)\right)=\rho\left(\tau\alpha_1,\cdots,\tau\alpha_k\right)=\left(\rho\tau\alpha_1,\cdots,\rho\tau\alpha_k\right)=\left(\rho\tau\right)\left(\alpha_1,\cdots,\alpha_k\right),
 $$
 
-**求 $\mathrm{Aut}\left(S_2\right)$.** $S_2=\left\{e,\left(12\right)\right\}$ 是二阶循环群, 自同构必须保持单位元 $e$, 故 $\mathrm{Aut}\left(S_2\right)=\left\{\mathrm{id}\right\}$ 是平凡群.
+且单位矩阵作用不变. 由**定义 1.9.1 (群作用)**, 这是 $O\left(n\right)$ 在 $V_k\left(\mathbb R^n\right)$ 上的作用.
 
-**求 $\mathrm{Aut}\left(S_6\right)$.** 由$S_6$ 的外自同构, $\mathrm{Out}\left(S_6\right)\cong\mathbb Z_2$ 且 $\left|\mathrm{Inn}\left(S_6\right)\right|=\left|S_6\right|=720$ (因 $C\left(S_6\right)=\left\{e\right\}$), 故 $\left|\mathrm{Aut}\left(S_6\right)\right|=\left|\mathrm{Out}\left(S_6\right)\right|\cdot\left|\mathrm{Inn}\left(S_6\right)\right|=2\cdot720=1440$. $\blacksquare$
+**可递性**: 任取两组标准正交向量组 $\left(\alpha_1,\cdots,\alpha_k\right)$ 与 $\left(\beta_1,\cdots,\beta_k\right)$, 由正交与酉变换 分别扩充为 $\mathbb R^n$ 的标准正交基 $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ 与 $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$. 定义线性映射 $\rho\alpha_i=\beta_i$ ($i=1,\cdots,n$), 则 $\rho\in O\left(n\right)$ 且
+
+$$
+\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\beta_1,\cdots,\beta_k\right).
+$$
+
+由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
+
+**迷向子群**: 取基准向量组 $\left(e_1,\cdots,e_k\right)$. 条件 $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) 意味着 $\rho$ 在前 $k$ 个标准基向量上为恒等映射, 即 $\rho$ 为分块对角阵. 由**定义 1.9.9 (轨道与迷向子群)**, 迷向子群为
+
+$$
+F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
+$$
+
+这就是 $\left(e_1,\cdots,e_k\right)$ 的迷向子群. $\blacksquare$
+
+## 1.9-6
+
+将 1.9-4, 1.9-5 两题中的作用推广到复空间情形.
+
+### 解答 1.9-6
+
+**复射影空间与复格拉斯曼流形.** 复射影空间 $P^{n-1}\left(\mathbb C\right)$ 为 $\mathbb C^n$ 的所有 $1$ 维复子空间的全体, 复格拉斯曼流形 $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ 为 $\mathbb C^n$ 的所有 $k$ 维复子空间的全体. $\mathrm{GL}\left(n,\mathbb C\right)$ 分别以 $\rho\left(W\right)=\rho W$ 作用于二者, 由线性映射保持子空间维数 与复情形的等价论证 (与实情形完全相同), 由**定义 1.9.1 (群作用)** 与**定义 1.9.7 (可递作用与有效作用)**, 这是两个可递作用.
+
+由**定义 1.9.9 (轨道与迷向子群)**, 分别取 $W_0=\mathbb Ce_1$ 与 $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$, 迷向子群分别为
+
+$$
+F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb C^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb C\right)\right\}
+$$
+
+与
+
+$$
+F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
+$$
+
+**复斯蒂弗尔流形.** 记 $V_k\left(\mathbb C^n\right)$ 为 $\mathbb C^n$ 中所有 $k$ 元标准正交向量组 (关于标准埃尔米特内积) 的全体. $U\left(n\right)$ 以
+
+$$
+\rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)
+$$
+
+作用于其上. 由正交与酉变换, 酉变换保持埃尔米特内积, 故定义合理, 由**定义 1.9.1 (群作用)** 这是作用. 作用可递: 由正交与酉变换, 两组标准正交向量组分别扩充为标准正交基, 对应的酉映射即为所求. 由**定义 1.9.9 (轨道与迷向子群)**, 取基准 $\left(e_1,\cdots,e_k\right)$, 迷向子群为
+
+$$
+F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
+$$
+
+**可递性判断.** $\mathrm{SL}\left(n,\mathbb C\right)$ 在复射影空间与复格拉斯曼流形上可递 (仿实情形调整行列式); $U\left(n\right)$ 在复射影空间,复格拉斯曼流形与复斯蒂弗尔流形上均可递; $\mathrm{SU}\left(n\right)$ 在相应集合上, 当维数足够时亦可递. $\blacksquare$
+
+## 1.9-8
+
+设
+
+$$
+H=\left\{z=x+iy\in\mathbb C\mid y> 0\right\},
+$$
+
+称为庞加莱上半平面. 对任意
+
+$$
+g=\begin{bmatrix}a & b\\c & d\end{bmatrix}\in\mathrm{SL}\left(2,\mathbb R\right),
+$$
+
+$z\in H$, 定义
+
+$$
+g\circ z=\frac{az+b}{cz+d}.
+$$
+
+试验证这定义了 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的一个作用 (称为默比乌斯变换或分式线性变换), 判断其可递性和有效性, 并求 $i$ 的迷向子群.
+
+### 解答 1.9-8
+
+**第一步: 验证 $g\circ z\in H$.** 对 $z=x+iy$ ($y> 0$), 因 $\det g=ad-bc=1$, 直接计算虚部:
+
+$$
+\mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}> 0,
+$$
+
+故 $g\circ z\in H$, 定义合理.
+
+**第二步: 验证作用公理.** 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又由分式线性变换, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
+
+**第三步: 判断可递性.** 任取 $z=x+iy\in H$ ($y> 0$), 取
+
+$$
+g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
+$$
+
+其行列式为 $1$, 且
+
+$$
+g\circ i=\frac{\sqrt y\cdot i+x/\sqrt y}{0\cdot i+1/\sqrt y}=\left(\sqrt y\cdot i+\frac{x}{\sqrt y}\right)\sqrt y=yi+x=z.
+$$
+
+故 $i$ 可映到任意 $z\in H$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
+
+**第四步: 判断有效性.** 若 $g\circ z=z$ 对一切 $z\in H$ 成立, 则分式线性变换 $\frac{az+b}{cz+d}$ 有无穷多个不动点, 由分式线性变换, 它必为恒等变换, 故 $c=0$, $b=0$, $a=d$; 结合 $\det g=ad-bc=a^{2}=1$, 得 $g=\pm I$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ z=\frac{-z}{-1}=z$. 故作用的核为 $\left\{\pm I\right\}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用不是有效的; 其有效商群为
+
+$$
+\mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
+$$
+
+**第五步: 求 $i$ 的迷向子群.** 由 $g\circ i=i$, 即
+
+$$
+\frac{ai+b}{ci+d}=i,\quad\Longrightarrow\quad ai+b=i\left(ci+d\right)=ci^{2}+di=-c+di.
+$$
+
+比较实部与虚部得 $b=-c$, $a=d$. 又
+
+$$
+\det g=ad-bc=a^{2}-\left(-c\right)c=a^{2}+c^{2}=1.
+$$
+
+由**定义 1.9.9 (轨道与迷向子群)**, $i$ 的迷向子群为
+
+$$
+F_i=\left\{\begin{bmatrix}a & b\\-b & a\end{bmatrix}\;\middle|\;a^{2}+b^{2}=1\right\}\cong SO\left(2\right).
+$$
+
+$\blacksquare$
+
+## 1.9-19
+
+(费马两平方和定理) 设 $p=4k+1$ 为素数,
+
+$$
+X=\left\{\left(x,y,z\right)\in\mathbb N^{3}\mid x^{2}+4yz=p\right\}.
+$$
+
+设
+
+$$
+p_1:\left(x,y,z\right)\mapsto\left(x,z,y\right),
+$$
+
+$$
+p_2:\left(x,y,z\right)\mapsto
+\begin{cases}
+\left(x+2z,\,z,\,y-x-z\right), & x< y-z,\\
+\left(2y-x,\,y,\,x-y+z\right), & y-z\le x< 2y,\\
+\left(x-2y,\,x-y+z,\,y\right), & x\ge2y.
+\end{cases}
+$$
+
+证明: 上述两个映射分别定义了 $\mathbb Z_2$ 在 $X$ 上的两个作用, 试求两个作用的不动点的个数, 从而证明当 $p=4k+1$ 时, $x^{2}+y^{2}=p$ 有正整数解.
+
+### 解答 1.9-19
+
+**先验证 $p_1$ 定义了 $\mathbb Z_2$ 的作用.** $p_1$ 交换 $y,z$, 显然 $p_1^{2}=\mathrm{id}$; 且
+
+$$
+x^{2}+4zy=x^{2}+4yz=p,
+$$
+
+故 $p_1\left(X\right)\subseteq X$. 由**定义 1.9.1 (群作用)**, $p_1$ 是 $X$ 上的二阶对合, 定义了 $\mathbb Z_2=\left\{1,p_1\right\}$ 在 $X$ 上的作用.
+
+**再验证 $p_2$.** 直接代入可验证在三个分段中 $p_2$ 都保持方程 $x^{2}+4yz=p$ 不变, 且 $p_2^{2}=\mathrm{id}$ (三个分段互为逆映射, 边界处一致). 由**定义 1.9.1 (群作用)**, $p_2$ 也是 $X$ 上的对合, 定义了 $\mathbb Z_2$ 的另一个作用.
+
+**求 $p_2$ 的不动点.** 对三种情况分别令 $p_2\left(x,y,z\right)=\left(x,y,z\right)$:
+
+情况一 $x< y-z$: 由 $x+2z=x$ 得 $z=0$, 与 $z\in\mathbb N^{+}$ 矛盾, 故无不动点.
+
+情况二 $y-z\le x< 2y$: 由 $2y-x=x$ 得 $x=y$; 第三坐标 $x-y+z=z$ 自动成立. 代入方程:
+
+$$
+x^{2}+4yz=x^{2}+4xz=x\left(x+4z\right)=p.
+$$
+
+因 $p$ 为素数且 $x$, $x+4z$ 均为正整数, 故 $x=1$, $x+4z=p$, 即 $z=\left(p-1\right)/4=k$. 对应不动点为 $\left(1,1,k\right)$.
+
+情况三 $x\ge2y$: 由 $x-2y=x$ 得 $y=0$, 矛盾.
+
+故 $\left|\mathrm{Fix}\left(p_2\right)\right|=1$, 恰有一个不动点.
+
+由群作用的轨道分解, $p_2$ 的非不动点轨道大小均为 $2$, 故
+
+$$
+\left|X\right|\equiv\left|\mathrm{Fix}\left(p_2\right)\right|\equiv1\pmod 2,
+$$
+
+即 $\left|X\right|$ 为奇数.
+
+同理, $p_1$ 的非不动点轨道大小也为 $2$, 故
+
+$$
+\left|\mathrm{Fix}\left(p_1\right)\right|\equiv\left|X\right|\equiv1\pmod 2.
+$$
+
+因此 $\left|\mathrm{Fix}\left(p_1\right)\right|\ge1$, 即 $p_1$ 至少有一个不动点.
+
+$p_1$ 的不动点满足 $y=z$. 代入方程得
+
+$$
+x^{2}+4y^{2}=p,
+$$
+
+即
+
+$$
+p=x^{2}+\left(2y\right)^{2}.
+$$
+
+令 $a=x$, $b=2y$, 则 $a^{2}+b^{2}=p$, 且 $a,b$ 均为正整数 (因 $p$ 为奇素数故 $x\ne0$; $y=z\ge1$ 故 $b=2y\ge2$).
+
+因此当 $p=4k+1$ 时, $x^{2}+y^{2}=p$ 有正整数解. $\blacksquare$
+
+## 1.9-20
+
+(伯恩赛德引理) 设群 $G$ 作用在集合 $X$ 上, 令 $t$ 表示 $X$ 在 $G$ 作用下的轨道的个数. 对任意 $g\in G$, $F\left(g\right)$ 表示 $X$ 在 $g$ 作用下不动点的个数, 即
+
+$$
+F\left(g\right)=\left|\left\{x\in X\mid gx=x\right\}\right|.
+$$
+
+试证
+
+$$
+\sum_{g\in G}F\left(g\right)=t\left|G\right|.
+$$
+
+### 解答 1.9-20
+
+考虑集合
+
+$$
+S=\left\{\left(g,x\right)\in G\times X\mid gx=x\right\}.
+$$
+
+**按 $g$ 计数**: 对固定的 $g\in G$, 满足 $gx=x$ 的 $x$ 恰有 $F\left(g\right)$ 个, 故
+
+$$
+\left|S\right|=\sum_{g\in G}F\left(g\right).
+$$
+
+**按 $x$ 计数**: 对固定的 $x\in X$, 满足 $gx=x$ 的 $g$ 恰为 $x$ 的迷向子群 $F_x=\left\{g\in G\mid gx=x\right\}$ 中的元素, 故
+
+$$
+\left|S\right|=\sum_{x\in X}\left|F_x\right|.
+$$
+
+由**推论 1.9.15 (轨道-迷向子群定理)**, 对 $x$ 所在的轨道 $O_x$, 有
+
+$$
+\left|O_x\right|=\left[G:F_x\right]=\left|G\right|/\left|F_x\right|,
+$$
+
+即 $\left|F_x\right|=\left|G\right|/\left|O_x\right|$.
+
+将 $X$ 分解为互不相交的轨道之并. 设 $X$ 共有 $t$ 个轨道 $O_1,\cdots,O_t$. 对轨道 $O_i$ 中的任意 $x$, $\left|O_x\right|=\left|O_i\right|$, 故 $\left|F_x\right|=\left|G\right|/\left|O_i\right|$. 于是
+
+$$
+\sum_{x\in X}\left|F_x\right|=\sum_{i=1}^{t}\sum_{x\in O_i}\left|F_x\right|=\sum_{i=1}^{t}\left|O_i\right|\cdot\frac{\left|G\right|}{\left|O_i\right|}=\sum_{i=1}^{t}\left|G\right|=t\left|G\right|.
+$$
+
+综合两种计数方式, 得
+
+$$
+\sum_{g\in G}F\left(g\right)=t\left|G\right|.
+$$
+
+$\blacksquare$
+
+## 1.10-10
+
+设 $\left|G\right|=pq$, 其中 $p,q$ 为不同的素数, 证明: $G$ 为可解群.
+
+### 解答 1.10-10
+
+不妨设 $p< q$. 由**定理 1.10.10 (西罗第三定理)**, 西罗 $q$-子群的个数 $n_{q}$ 满足 $n_{q}\mid p$ 且 $n_{q}\equiv1\pmod q$. 因 $p< q$, $n_{q}$ 作为 $p$ 的正因子只能是 $1$ 或 $p$. 若 $n_{q}=p$, 则 $p\equiv1\pmod q$, 即 $q\mid p-1$; 但 $p< q$ 蕴含 $p-1< q$, 矛盾. 故 $n_{q}=1$.
+
+于是 $G$ 的西罗 $q$-子群 $Q$ 唯一, 由**定理 1.10.10 (西罗第三定理)** (1), $Q\triangleleft G$. 又 $\left|Q\right|=q$ 为素数, 由素数阶群与循环群的可解性, $Q$ 是循环群, 从而是可解群. 商群 $G/Q$ 的阶为 $p$, 也是素数阶循环群, 由素数阶群与循环群的可解性 亦是可解群.
+
+由**引理 1.8.8 (可解群的遗传性)**, $Q$ 与 $G/Q$ 均可解, 故 $G$ 可解. $\blacksquare$
+
+## 1.10-12
+
+(弗拉蒂尼) 设 $N\triangleleft G$, $P$ 为 $N$ 的西罗子群, 则 $G=N_{G}\left(P\right)N$.
+
+### 解答 1.10-12
+
+任取 $g\in G$. 因 $N\triangleleft G$, 共轭 $gPg^{-1}$ 仍为 $N$ 的子群; 又共轭保持阶, 由西罗子群与元素计数, $\left|gPg^{-1}\right|=\left|P\right|$, 故 $gPg^{-1}$ 也是 $N$ 的一个西罗 $p$-子群.
+
+由**定理 1.10.8 (西罗第二定理)** (应用于子群 $N$), $N$ 的任意两个西罗 $p$-子群在 $N$ 中共轭, 故存在 $n\in N$ 使
+
+$$
+gPg^{-1}=nPn^{-1}.
+$$
+
+于是
+
+$$
+n^{-1}gPg^{-1}n=P,
+$$
+
+即 $n^{-1}g\in N_{G}\left(P\right)$ (它把 $P$ 共轭回 $P$). 记 $h=n^{-1}g\in N_{G}\left(P\right)$, 则 $g=nh$.
+
+因此 $g\in N_{G}\left(P\right)N$. 由 $g\in G$ 的任意性, $G=N_{G}\left(P\right)N$. $\blacksquare$
+
+## 1.10-15
+
+设 $p,q$ 都是素数, $p< q$, $p\nmid\left(q-1\right)$, 证明 $pq$ 阶群一定是循环群.
+
+### 解答 1.10-15
+
+设 $\left|G\right|=pq$. 由**定理 1.10.10 (西罗第三定理)**, 西罗 $q$-子群的个数 $n_{q}$ 满足 $n_{q}\mid p$ 且 $n_{q}\equiv1\pmod q$. 因 $p< q$, 如 1.10-10 题所示, $n_{q}=1$. 故 $G$ 的西罗 $q$-子群 $Q$ 唯一, 由**定理 1.10.10 (西罗第三定理)** (1), $Q\triangleleft G$, $\left|Q\right|=q$.
+
+再考虑西罗 $p$-子群的个数 $n_{p}$. 由**定理 1.10.10 (西罗第三定理)**, $n_{p}\mid q$ 且 $n_{p}\equiv1\pmod p$. 因 $q$ 为素数, $n_{p}=1$ 或 $q$. 若 $n_{p}=q$, 则 $q\equiv1\pmod p$, 即 $p\mid\left(q-1\right)$, 与题设 $p\nmid\left(q-1\right)$ 矛盾. 故 $n_{p}=1$.
+
+于是 $G$ 的西罗 $p$-子群 $P$ 也唯一, 由**定理 1.10.10 (西罗第三定理)** (1), $P\triangleleft G$, $\left|P\right|=p$.
+
+因 $p,q$ 互素, $P\cap Q=\left\{e\right\}$. 又
+
+$$
+\left|PQ\right|=\left|P\right|\left|Q\right|/\left|P\cap Q\right|=pq=\left|G\right|,
+$$
+
+故 $G=PQ$.
+
+由**引理 1.7.7**, $P,Q$ 都是 $G$ 的正规子群且 $P\cap Q=\left\{e\right\}$, 故对任意 $a\in P$, $b\in Q$ 有 $ab=ba$. 于是映射
+
+$$
+P\times Q\to G,\quad\left(a,b\right)\mapsto ab
+$$
+
+保持乘法 (因 $ab=ba$) 且为双射 (单射由 $P\cap Q=\left\{e\right\}$, 满射由 $G=PQ$), 故它是群同构, 即 $G\cong P\times Q$.
+
+又 $P\cong\mathbb Z_p$, $Q\cong\mathbb Z_q$, 而 $p,q$ 互素, 由直积中元素的阶, $\mathbb Z_p\times\mathbb Z_q\cong\mathbb Z_{pq}$, 故
+
+$$
+G\cong\mathbb Z_p\times\mathbb Z_q\cong\mathbb Z_{pq},
+$$
+
+即 $G$ 是 $pq$ 阶循环群. $\blacksquare$
