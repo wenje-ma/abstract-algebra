@@ -16,8 +16,6 @@
 > 
 > If $E/F$ is a finite extension, then every element of $E$ is algebraic over $F$. Equivalently, if $E$ contains a transcendental element over $F$, then $E/F$ must be an infinite extension.
 
----
-
 ## 4.1-4
 
 Find the degrees of the following field extensions:
@@ -46,8 +44,6 @@ $$
 
 (2) Similarly, $\left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]=2$. $\blacksquare$
 
----
-
 ## 4.1-10
 
 Prove that $\mathbb R/\mathbb Q$ is an infinite extension.
@@ -59,8 +55,6 @@ The number $\pi\in\mathbb R$ is transcendental over $\mathbb Q$ (Lindemann's the
 If $\mathbb R/\mathbb Q$ were a finite extension, then by **Lemma 4.2.1 (Finite Extensions Are Algebraic)**, every element of $\mathbb R$ would be algebraic over $\mathbb Q$; in particular $\pi$ would be algebraic over $\mathbb Q$, a contradiction.
 
 Hence $\mathbb R/\mathbb Q$ is not a finite extension, i.e. $\mathbb R/\mathbb Q$ is an infinite extension. $\blacksquare$
-
----
 
 ## 4.1-11
 
@@ -93,8 +87,6 @@ $$
 $$
 
 Similarly $\overline\sigma\circ\overline\tau=\mathrm{id}$. Hence $\overline\sigma$ is invertible and is an automorphism of $E$. $\blacksquare$
-
----
 
 ## 4.1-13
 

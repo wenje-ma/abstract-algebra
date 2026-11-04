@@ -8,8 +8,6 @@
 > 
 > Let $R$ be an integral domain. If there exists a map $\delta$ from $R^{*}$ to the set of nonnegative integers such that for any $a,b\in R$ with $b\ne0$, there exist $q,r\in R$ with $a=qb+r$, where $r=0$ or $\delta\left(r\right)< \delta\left(b\right)$, then $\left(R,\delta\right)$ is called a Euclidean ring; briefly, $R$ is a Euclidean ring.
 
----
-
 ## 2.7-7
 
 Prove that $\mathbb Z\left[\frac{1+\sqrt{-3}}{2}\right]$ is a Euclidean ring.
@@ -44,8 +42,6 @@ $$
 
 Thus $\alpha=q\beta+r$ with $r=0$ or $N\left(r\right)< N\left(\beta\right)$. By **Definition 2.7.9 (Euclidean Ring)**, $R=\mathbb Z\left[\frac{1+\sqrt{-3}}{2}\right]$ is a Euclidean ring. $\blacksquare$
 
----
-
 ## 2.7-11
 
 Prove that $\mathbb Z\left[\sqrt{-6}\right]$ is not a Euclidean ring.
@@ -77,8 +73,6 @@ Comparing the coefficient of $\sqrt{-6}$ gives $2b'=1$, i.e. $b'=\frac12\notin\m
 If $m=\pm3$, comparing the coefficient of $\sqrt{-6}$ similarly gives $3b'=1$, i.e. $b'=\frac13\notin\mathbb Z$, a contradiction.
 
 Both cases lead to contradictions, so no such Euclidean map $\delta$ exists. By **Definition 2.7.9 (Euclidean Ring)**, $R=\mathbb Z\left[\sqrt{-6}\right]$ is not a Euclidean ring. $\blacksquare$
-
----
 
 ## 2.7-14
 

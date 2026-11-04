@@ -8,8 +8,6 @@
 > 
 > 设 $R_1,R_2$ 为两个环, $f$ 为 $R_1$ 到 $R_2$ 的映射. 若对任何 $a,b\in R_1$ 有 $f\left(a+b\right)=f\left(a\right)+f\left(b\right)$ 且 $f\left(ab\right)=f\left(a\right)f\left(b\right)$, 则称 $f$ 为同态; 单射的同态称为单同态, 满射的同态称为满同态, 双射的同态称为同构.
 
----
-
 ## 2.4-6
 
 试求出数域
@@ -44,8 +42,6 @@ $$
 
 这两种映射均保持加法与乘法 (复共轭保持 $\mathbb Q$ 上的运算) 且为双射, 由**定义 2.4.1 (环同态与同构)** 均为自同构. 故 $\mathbb Q\left[i\right]$ 恰有两个自同构: 恒等映射与共轭映射. $\blacksquare$
 
----
-
 ## 2.4-7
 
 试证明实数域的自同构只有恒等同构.
@@ -65,8 +61,6 @@ $$
 **恒等性**: 反设存在 $x\in\mathbb R$ 使 $\varphi\left(x\right)\ne x$. 若 $\varphi\left(x\right)> x$, 由实数域的保序性 (有理数稠密), 取 $q\in\mathbb Q$ 使 $x< q< \varphi\left(x\right)$. 由 $x< q$ 及 $\varphi$ 严格递增, $\varphi\left(x\right)< \varphi\left(q\right)=q$, 与 $q< \varphi\left(x\right)$ 矛盾. 若 $\varphi\left(x\right)< x$, 同理取 $q\in\mathbb Q$ 使 $\varphi\left(x\right)< q< x$; 由 $\varphi$ 严格递增及 $q=\varphi\left(q\right)$, 得 $q< \varphi\left(x\right)$, 矛盾.
 
 故 $\varphi\left(x\right)=x$ 对一切 $x\in\mathbb R$ 成立, 即 $\varphi$ 为恒等同构. $\blacksquare$
-
----
 
 ## 2.4-8
 
@@ -97,8 +91,6 @@ $$
 两者相等, 故 $\varphi$ 保持乘法.
 
 又连续两次作用后回到自身, 即 $\varphi\circ\varphi=\mathrm{id}$, 故 $\varphi$ 为双射. 由**定义 2.4.1 (环同态与同构)**, $\varphi$ 是 $\mathbb C$ 的自同构. $\blacksquare$
-
----
 
 ## 2.4-19
 

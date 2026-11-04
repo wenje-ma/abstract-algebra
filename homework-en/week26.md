@@ -1,7 +1,5 @@
 # week26
 
----
-
 ## 4.4-5
 
 Let $F$ be a field, $c\in F$, and $\mathrm{char}\,F=p\ne0$. Prove that $x^p-c$ is irreducible in $F\left[x\right]$ if and only if $x^p-c$ has no root in $F$.

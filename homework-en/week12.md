@@ -25,8 +25,6 @@ and the commutativity of $R$ allows the terms to be collected.
 > 
 > A commutative unital ring without zero divisors is called an integral domain; if a unital ring $R$ satisfies that $R^{*}$ forms a group under multiplication (where $R^{*}=R\setminus\left\{0\right\}$), then $R$ is called a division ring; a commutative division ring is called a field.
 
----
-
 ## 2.2-3
 
 Let $R$ be a ring without zero divisors and $I$ an ideal of $R$. Is the quotient ring $R/I$ necessarily a ring without zero divisors?
@@ -50,8 +48,6 @@ $$
 but $2\notin6\mathbb Z$ and $3\notin6\mathbb Z$; hence $2+6\mathbb Z$ and $3+6\mathbb Z$ are both nonzero zero divisors. By **Definition 2.1.8 (Ring Without Zero Divisors)**, $R/I$ is not a ring without zero divisors.
 
 Therefore $R/I$ is not necessarily a ring without zero divisors. $\blacksquare$
-
----
 
 ## 2.2-6
 
@@ -95,8 +91,6 @@ and since $x\ne0$, by Cancellation with Nonzero Elements we get $xy=e$. Hence $x
 
 Thus every element of $R^{*}=R\setminus\left\{0\right\}$ is invertible, so $R^{*}$ forms a group under multiplication. By **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**, $R$ is a division ring. $\blacksquare$
 
----
-
 ## 2.2-11
 
 Let $R$ be a commutative ring and $I$ an ideal of $R$. Define
@@ -132,8 +126,6 @@ First prove $\sqrt{I}\subseteq\sqrt{\sqrt{I}}$: let $a\in\sqrt{I}$; then $a^{n}\
 Next prove $\sqrt{\sqrt{I}}\subseteq\sqrt{I}$: let $a\in\sqrt{\sqrt{I}}$; then $a^{n}\in\sqrt{I}$ for some $n$, so there exists $m$ with $\left(a^{n}\right)^{m}=a^{nm}\in I$, hence $a\in\sqrt{I}$.
 
 In conclusion, $\sqrt{\sqrt{I}}=\sqrt{I}$. $\blacksquare$
-
----
 
 ## 2.2-13
 

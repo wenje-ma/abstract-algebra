@@ -16,8 +16,6 @@
 > 
 > 设群 $G$ 作用在 $X$ 上, $x\in X$, 则 $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; 从而 $\left|O_x\right|\mid\left|G\right|$.
 
----
-
 ## 1.9-4
 
 (1) 记 $\mathbb R^n$ 的所有 $1$ 维子空间的全体为 $P^{n-1}\left(\mathbb R\right)$, 称为实射影空间. 对任意 $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$, $W\in P^{n-1}\left(\mathbb R\right)$, $\rho\left(W\right)$ 也是一个 $1$ 维子空间. 试验证这是 $\mathrm{GL}\left(n,\mathbb R\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上的可递作用, 并求迷向子群.
@@ -60,8 +58,6 @@ $O\left(n\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上可递: 由正交与酉
 
 $\mathrm{SO}\left(n\right)$ 在 $P^{n-1}\left(\mathbb R\right)$ 上, 当 $n\ge3$ 时可递 (可用适当旋转把任一方向映到任一方向而保持行列式为 $1$); 在 $\mathrm{Gr}\left(k,n\right)$ 上, 当 $n\ge3$ 时亦可递. $\blacksquare$
 
----
-
 ## 1.9-5
 
 记 $V_k\left(\mathbb R^n\right)$ 为 $\mathbb R^n$ 中所有 $k$ 元标准正交向量组的全体, 称为斯蒂弗尔流形. 对任意 $\rho\in O\left(n\right)$, $\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$, 定义
@@ -98,8 +94,6 @@ $$
 
 这就是 $\left(e_1,\cdots,e_k\right)$ 的迷向子群. $\blacksquare$
 
----
-
 ## 1.9-6
 
 将 1.9-4, 1.9-5 两题中的作用推广到复空间情形.
@@ -133,8 +127,6 @@ F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\r
 $$
 
 **可递性判断.** $\mathrm{SL}\left(n,\mathbb C\right)$ 在复射影空间与复格拉斯曼流形上可递 (仿实情形调整行列式); $U\left(n\right)$ 在复射影空间,复格拉斯曼流形与复斯蒂弗尔流形上均可递; $\mathrm{SU}\left(n\right)$ 在相应集合上, 当维数足够时亦可递. $\blacksquare$
-
----
 
 ## 1.9-8
 
@@ -209,8 +201,6 @@ F_i=\left\{\begin{bmatrix}a & b\\-b & a\end{bmatrix}\;\middle|\;a^{2}+b^{2}=1\ri
 $$
 
 $\blacksquare$
-
----
 
 ## 1.9-19
 
@@ -296,8 +286,6 @@ $$
 令 $a=x$, $b=2y$, 则 $a^{2}+b^{2}=p$, 且 $a,b$ 均为正整数 (因 $p$ 为奇素数故 $x\ne0$; $y=z\ge1$ 故 $b=2y\ge2$).
 
 因此当 $p=4k+1$ 时, $x^{2}+y^{2}=p$ 有正整数解. $\blacksquare$
-
----
 
 ## 1.9-20
 

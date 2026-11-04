@@ -16,8 +16,6 @@
 > 
 > 设 $E/F$ 为有限扩张, 则 $E$ 中每个元素都是 $F$ 上的代数元. 换言之, 若 $E$ 中存在 $F$ 上的超越元, 则 $E/F$ 必为无限扩张.
 
----
-
 ## 4.1-4
 
 求下列域扩张的次数:
@@ -46,8 +44,6 @@ $$
 
 (2) 同理 $\left[\mathbb Q\left(\sqrt2+\sqrt3\right):\mathbb Q\left(\sqrt3\right)\right]=2$. $\blacksquare$
 
----
-
 ## 4.1-10
 
 证明: $\mathbb R/\mathbb Q$ 是无限扩张.
@@ -59,8 +55,6 @@ $$
 若 $\mathbb R/\mathbb Q$ 为有限扩张, 由**引理 4.2.1 (有限扩张必为代数扩张)**, $\mathbb R$ 中每个元素都是 $\mathbb Q$ 上的代数元, 特别地 $\pi$ 应为 $\mathbb Q$ 上的代数元, 矛盾.
 
 故 $\mathbb R/\mathbb Q$ 不是有限扩张, 即 $\mathbb R/\mathbb Q$ 是无限扩张. $\blacksquare$
-
----
 
 ## 4.1-11
 
@@ -93,8 +87,6 @@ $$
 $$
 
 同理 $\overline\sigma\circ\overline\tau=\mathrm{id}$. 故 $\overline\sigma$ 可逆, 为 $E$ 的自同构. $\blacksquare$
-
----
 
 ## 4.1-13
 

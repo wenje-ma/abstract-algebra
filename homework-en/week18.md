@@ -1,7 +1,5 @@
 # week18
 
----
-
 ## 2.9-3
 
 Let $R$ be an integral domain and $f\left(x\right)\in R\left[x\right]$. Then $a\in R$ is a root of $f\left(x\right)$ if and only if $\left(x-a\right)$ divides $f\left(x\right)$.
@@ -11,8 +9,6 @@ Let $R$ be an integral domain and $f\left(x\right)\in R\left[x\right]$. Then $a\
 Divide $f\left(x\right)$ by the monic polynomial $x-a$; by Polynomial Division with Remainder, there exist $q\left(x\right)\in R\left[x\right]$ and a constant $c\in R$ such that $f\left(x\right)=q\left(x\right)\left(x-a\right)+c$, where the remainder has degree less than $1$, hence is a constant. Substituting $x=a$, using that $a\in R$ evaluates elements of $R\left[x\right]$, gives $f\left(a\right)=q\left(a\right)\cdot0+c=c$.
 
 Thus $a$ is a root of $f\left(x\right)$, i.e. $f\left(a\right)=0$, iff $c=0$, iff $f\left(x\right)=q\left(x\right)\left(x-a\right)$, i.e. $\left(x-a\right)\mid f\left(x\right)$. $\blacksquare$
-
----
 
 ## 2.9-4
 
@@ -27,8 +23,6 @@ Assume the result holds for $s-1$, i.e. $\prod_{i=1}^{s-1}\left(x-a_i\right)\mid
 Since $a_1,\cdots,a_s$ are pairwise distinct, $a_s-a_i\ne0$ for $1\le i\le s-1$. As $R$ is an integral domain with no zero divisors, $g\left(a_s\right)=0$. By **2.9-3**, $\left(x-a_s\right)\mid g\left(x\right)$; write $g\left(x\right)=h\left(x\right)\left(x-a_s\right)$. Then $f\left(x\right)=h\left(x\right)\prod_{i=1}^{s}\left(x-a_i\right)$, i.e. $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. This completes the induction.
 
 Now let $f\left(x\right)\ne0$ have degree $m$ and $s$ distinct roots $a_1,\cdots,a_s$. By the above, $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. This product is degree $s$, and it divides a degree-$m$ polynomial, so $s\le m$. Thus a nonzero polynomial of degree $m$ over an integral domain has at most $m$ distinct roots. $\blacksquare$
-
----
 
 ## 2.9-11
 

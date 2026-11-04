@@ -4,8 +4,6 @@
 > 
 > Let $M$ be a module over a unital ring $R$, and let $u_1,\cdots,u_m\in M$. Then $M$ is free with $u_1,\cdots,u_m$ as a basis iff: (1) $u_1,\cdots,u_m$ generate $M$; (2) $u_1,\cdots,u_m$ are linearly independent.
 
----
-
 ## 3.3-6
 
 Let $R$ be a commutative unital ring such that every finitely generated $R$-module is free. Prove that $R$ is a field.
@@ -20,8 +18,6 @@ $R/\left(a\right)=0$ is equivalent to $\left(a\right)=R$, i.e. $1\in\left(a\righ
 
 By the arbitrariness of $a\ne0$, every nonzero element of $R$ is a unit, so $R$ is a field. $\blacksquare$
 
----
-
 ## 3.3-7
 
 Let $R$ be a commutative unital ring and $\phi$ an endomorphism of the free module $R^m$. Prove that if $\phi$ is surjective, then $\phi$ is an isomorphism.
@@ -33,8 +29,6 @@ Take the standard basis $e_1,\cdots,e_m$ of $R^m$, and let $A\in R^{m\times m}$ 
 Since $\phi$ is surjective, for each basis vector $e_j\in R^m$ there exists $x_j\in R^m$ with $\phi\left(x_j\right)=e_j$. Arranging $x_1,\cdots,x_m$ as columns gives a matrix $B$ with $AB=I_m$, where $I_m$ is the $m\times m$ identity matrix. Taking determinants of both sides and using multiplicativity, $\det\left(A\right)\det\left(B\right)=\det\left(I_m\right)=1$.
 
 Hence $\det A$ is a unit in $R$. By Determinant and Invertibility, $A$ is invertible, i.e. there exists $A^{-1}$ with $AA^{-1}=I_m$. Thus $\phi$ is both surjective and injective ($\ker\phi=0$), hence bijective, and $\phi$ is a module isomorphism. $\blacksquare$
-
----
 
 ## 3.3-8
 

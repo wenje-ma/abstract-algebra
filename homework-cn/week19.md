@@ -12,8 +12,6 @@
 > 
 > 设 $\phi$ 为模 $M_1$ 到 $M_2$ 的满同态, 则商模 $M_1/\ker\phi$ 与 $M_2$ 同构; 且若 $N_1$ 是 $M_1$ 的包含 $\ker\phi$ 的子模, 则 $M_1/N_1\cong M_2/\phi\left(N_1\right)$.
 
----
-
 ## 3.1-11
 
 设 $M$ 为模, $M_1,M_2$ 都是 $M$ 的子模. 试证明:
@@ -38,8 +36,6 @@ $$
 
 同理, $M_2\cong\left(M_1+M_2\right)/M_1$. $\blacksquare$
 
----
-
 ## 3.1-12
 
 设 $M$ 为模, $M_1,M_2$ 是 $M$ 的子模, 试证明 $\left(M_1+M_2\right)/M_2\cong M_1/\left(M_1\cap M_2\right)$.
@@ -56,8 +52,6 @@ $$
 
 此即第二同构定理. $\blacksquare$
 
----
-
 ## 3.1-13
 
 设 $M$ 为模, $M_1,M_2,\cdots,M_s$ 为 $M$ 的子模. 试证明 $M=M_1\oplus\cdots\oplus M_s$ 当且仅当:
@@ -72,8 +66,6 @@ $$
 
 **充分性.** 设 (1)(2) 成立. 只需证 $M$ 中零元素的表示唯一. 设 $m_1+m_2+\cdots+m_s=0$, $m_i\in M_i$. 设 $j$ 为最大的使 $m_j\ne0$ 的下标, 则 $j\ge2$ (否则 $m_1=0$). 移项得 $m_j=-\left(m_1+\cdots+m_{j-1}\right)\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$, 故 $m_j=0$, 矛盾. 因此所有 $m_i=0$, 零元素表示唯一. 由**定理 3.1.10 (直和判据)**, $M=M_1\oplus\cdots\oplus M_s$. $\blacksquare$
 
----
-
 ## 3.1-14
 
 试问将上题的条件 (2) 改为 $M_i\cap M_j=\left\{0\right\}$, $\forall i\ne j$, 结论还成立吗? 说明理由.
@@ -85,8 +77,6 @@ $$
 反例. 取数域 $\mathbb R$ 上二维线性空间 $M=\mathbb R^2$ 作为 $\mathbb R$-模, 基为 $e_1,e_2$. 令 $M_1=\mathbb R e_1$, $M_2=\mathbb R e_2$, $M_3=\mathbb R\left(e_1+e_2\right)$. 它们都是 $M$ 的一维子空间. 任意两个不同的一维子空间之交为零, 即 $M_i\cap M_j=\left\{0\right\}$, $i\ne j$. 且 $M_1+M_2+M_3=\mathbb R e_1+\mathbb R e_2=M$, 即条件 (1) 成立. 但存在非平凡关系 $e_1+e_2-\left(e_1+e_2\right)=0$, 其中 $e_1\in M_1$, $e_2\in M_2$, $-\left(e_1+e_2\right)\in M_3$, 三项均非零, 故零元素表示不唯一, $M\ne M_1\oplus M_2\oplus M_3$.
 
 因此两两交为零只是直和的必要条件而非充分条件, 不能替代上题的嵌套交条件. $\blacksquare$
-
----
 
 ## 3.1-15
 

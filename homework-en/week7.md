@@ -16,8 +16,6 @@
 > 
 > If a group $G$ has a composition series, then any two composition series of $G$ are isomorphic. In particular, any two principal series of $G$ are isomorphic.
 
----
-
 ## 1.7-11
 
 Let

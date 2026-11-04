@@ -1,7 +1,5 @@
 # week18
 
----
-
 ## 2.9-3
 
 设 $R$ 是整环, $f\left(x\right)\in R\left[x\right]$, 则 $a\in R$ 为 $f\left(x\right)$ 的根当且仅当 $\left(x-a\right)$ 整除 $f\left(x\right)$.
@@ -11,8 +9,6 @@
 对 $f\left(x\right)$ 与首一多项式 $x-a$ 作带余除法, 由多项式带余除法, 存在 $q\left(x\right)\in R\left[x\right]$ 及常数 $c\in R$ 使 $f\left(x\right)=q\left(x\right)\left(x-a\right)+c$, 其中余式次数小于 $1$, 故为常数. 将 $x=a$ 代入, 注意 $a\in R$ 可与 $R\left[x\right]$ 中元素作求值同态, 得 $f\left(a\right)=q\left(a\right)\cdot0+c=c$.
 
 于是 $a$ 为 $f\left(x\right)$ 的根, 即 $f\left(a\right)=0$, 当且仅当 $c=0$, 当且仅当 $f\left(x\right)=q\left(x\right)\left(x-a\right)$, 即 $\left(x-a\right)\mid f\left(x\right)$. $\blacksquare$
-
----
 
 ## 2.9-4
 
@@ -27,8 +23,6 @@
 由于 $a_1,\cdots,a_s$ 两两不同, $a_s-a_i\ne0$ ($1\le i\le s-1$). 又 $R$ 是整环, 无零因子, 故 $g\left(a_s\right)=0$. 由**2.9-3**, $\left(x-a_s\right)\mid g\left(x\right)$, 记 $g\left(x\right)=h\left(x\right)\left(x-a_s\right)$. 于是 $f\left(x\right)=h\left(x\right)\prod_{i=1}^{s}\left(x-a_i\right)$, 即 $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. 归纳完成.
 
 现设 $f\left(x\right)\ne0$ 次数为 $m$, 有 $s$ 个不同根 $a_1,\cdots,a_s$. 由上, $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. 该乘积为 $s$ 次多项式, 它整除 $m$ 次多项式, 故次数 $s\le m$. 即整环上次数为 $m$ 的非零多项式的不同根的个数最多为 $m$. $\blacksquare$
-
----
 
 ## 2.9-11
 

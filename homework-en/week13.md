@@ -1,7 +1,5 @@
 # week13
 
----
-
 ## 2.3-4
 
 In the quaternion division ring $H$, define the norm of an element $\alpha\in H$ as $N\left(\alpha\right)=\alpha\overline\alpha$. Prove:

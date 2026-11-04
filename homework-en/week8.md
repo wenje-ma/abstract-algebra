@@ -20,8 +20,6 @@
 > 
 > Subgroups and quotient groups of a solvable group are solvable; conversely, if $N\trianglelefteq G$ and both $N$ and $G/N$ are solvable, then $G$ is solvable.
 
----
-
 ## 1.8-12
 
 Let $G$ be a solvable group of order $n$, and let $B$ be the set of all invertible complex upper triangular matrices. Prove that $G$ is isomorphic to a subgroup of $B$. If $G$ is a nilpotent group of order $n$ and $N$ is the set of all complex upper triangular matrices whose diagonal entries are all $1$, is $G$ isomorphic to a subgroup of $N$?

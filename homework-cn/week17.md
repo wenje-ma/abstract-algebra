@@ -8,8 +8,6 @@
 > 
 > 设 $R$ 为一个整环. 如果存在从 $R^{*}$ 到非负整数集的一个映射 $\delta$, 使得对任何 $a,b\in R$, $b\ne0$, 存在 $q,r\in R$ 使得 $a=qb+r$, 其中 $r=0$ 或 $\delta\left(r\right)< \delta\left(b\right)$, 则称 $\left(R,\delta\right)$ 为欧几里得环, 简称 $R$ 为欧几里得环.
 
----
-
 ## 2.7-7
 
 证明 $\mathbb Z\left[\frac{1+\sqrt{-3}}{2}\right]$ 是欧几里得环.
@@ -44,8 +42,6 @@ $$
 
 于是 $\alpha=q\beta+r$ 且 $r=0$ 或 $N\left(r\right)< N\left(\beta\right)$. 由**定义 2.7.9 (欧几里得环)**, $R=\mathbb Z\left[\frac{1+\sqrt{-3}}{2}\right]$ 是欧几里得环. $\blacksquare$
 
----
-
 ## 2.7-11
 
 证明 $\mathbb Z\left[\sqrt{-6}\right]$ 不是欧几里得环.
@@ -77,8 +73,6 @@ $$
 若 $m=\pm3$, 同理比较 $\sqrt{-6}$ 的系数得 $3b'=1$, 即 $b'=\frac13\notin\mathbb Z$, 矛盾.
 
 两种情形均矛盾, 故不存在这样的欧几里得映射 $\delta$. 由**定义 2.7.9 (欧几里得环)**, $R=\mathbb Z\left[\sqrt{-6}\right]$ 不是欧几里得环. $\blacksquare$
-
----
 
 ## 2.7-14
 

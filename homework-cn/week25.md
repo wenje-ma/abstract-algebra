@@ -4,8 +4,6 @@
 > 
 > 域 $F$ 的单代数扩张 $F\left(\alpha\right)$ 必同构于 $F\left[x\right]/\left(\mathrm{Irr}\left(\alpha,F\right)\right)$. 设 $\deg\left(\alpha,F\right)=n$, 则 $F\left(\alpha\right)$ 作为 $F$-线性空间的维数为 $n$, 且 $1,\alpha,\alpha^2,\cdots,\alpha^{n-1}$ 为其一组 $F$-基.
 
----
-
 ## 4.2-5
 
 设 $F\left(\alpha\right)$ 是 $F$ 的单代数扩张, $\deg\left(\alpha,F\right)=n$, 证明: $F\left(\alpha\right)$ 是 $n$ 维 $F$-线性空间, 且 $1,\alpha,\cdots,\alpha^{n-1}$ 是 $F\left(\alpha\right)$ 的一组基.
@@ -18,8 +16,6 @@
 
 因而 $1,\alpha,\cdots,\alpha^{n-1}$ 生成 $F\left(\alpha\right)$, 且在 $F$ 上线性无关 (若 $\sum_{i=0}^{n-1}a_i\alpha^i=0$, 则 $\sum a_ix^i$ 是以 $\alpha$ 为根的次数小于 $n$ 的多项式, 与 $f$ 为最小多项式矛盾). 故它们构成 $F\left(\alpha\right)$ 的一组 $F$-基, 且 $\dim_F F\left(\alpha\right)=n$. $\blacksquare$
 
----
-
 ## 4.2-6
 
 试证明对任何正整数 $n$, 存在 $\mathbb Q$ 的代数扩张 $K$ 使得 $\left[K:\mathbb Q\right]=n$.
@@ -31,8 +27,6 @@
 对 $f\left(x\right)=x^n-2\in\mathbb Z\left[x\right]$, 取素数 $p=2$. 由艾森斯坦判别法, $2\nmid1$ (首项系数), $2\mid0$ (中间各项系数均为 $0$), 且 $2^2=4\nmid-2$ (常数项), 故 $f\left(x\right)$ 在 $\mathbb Q\left[x\right]$ 上不可约.
 
 因而 $\deg\left(\theta,\mathbb Q\right)=n$. 由**定理 4.2.13 (单代数扩张的结构)**, $\left[K:\mathbb Q\right]=\left[\mathbb Q\left(\theta\right):\mathbb Q\right]=n$. 又 $K/\mathbb Q$ 为单代数扩张, 故为代数扩张. $\blacksquare$
-
----
 
 ## 4.2-9
 
@@ -47,8 +41,6 @@
 于是 $\sqrt a=\frac{1}{2}\left(\alpha+\frac{a-b}{\alpha}\right)\in\mathbb Q\left(\alpha\right)$, $\sqrt b=\frac{1}{2}\left(\alpha-\frac{a-b}{\alpha}\right)\in\mathbb Q\left(\alpha\right)$.
 
 因而 $\mathbb Q\left(\sqrt a,\sqrt b\right)\subseteq\mathbb Q\left(\alpha\right)$. 结合反向包含, 得 $\mathbb Q\left(\sqrt a,\sqrt b\right)=\mathbb Q\left(\sqrt a+\sqrt b\right)$. $\blacksquare$
-
----
 
 ## 4.2-10
 
@@ -69,8 +61,6 @@ $f\left(x\right)$ 中 $x^{k-1}$ 的系数为 $-k\theta$. 因 $f\in E\left[x\righ
 但 $\theta\in E=\mathbb F_p\left(t\right)$ 意味着存在互素多项式 $f_0\left(t\right),g_0\left(t\right)\in\mathbb F_p\left[t\right]$ 使 $\theta=f_0\left(t\right)/g_0\left(t\right)$. 由 $\theta^p=t$ 得 $f_0\left(t\right)^p=t\,g_0\left(t\right)^p$. 比较两边次数: 左端次数为 $p\deg f_0$, 右端次数为 $1+p\deg g_0$. 左端被 $p$ 整除, 右端模 $p$ 余 $1$, 矛盾. 故 $\theta\notin E$, 从而 $x^p-t$ 在 $E\left[x\right]$ 中不可约.
 
 (2) 在 $E\left(\theta\right)$ 中, 由特征 $p$ 下的弗罗贝尼乌斯映射, $x^p-t=x^p-\theta^p=\left(x-\theta\right)^p$. 其中 $x-\theta$ 已是一次多项式, 自然不可约. 故 $x^p-t$ 在 $E\left(\theta\right)$ 上的不可约分解为 $\left(x-\theta\right)^p$. $\blacksquare$
-
----
 
 ## 4.2-13
 

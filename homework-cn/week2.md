@@ -20,8 +20,6 @@
 > 
 > 设 $G$ 是有限群, $K< G$, $H< K$, 则 $\left[G:H\right]=\left[G:K\right]\cdot\left[K:H\right]$.
 
----
-
 ## 1.2-8
 
 设 $a,b$ 分别是群 $G$ 中的 $m,n$ 阶元, $ab=ba$.
@@ -63,8 +61,6 @@ $$
 其交 $\left\langle a\right\rangle\cap\left\langle b\right\rangle=\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. 而 $ab=\left(2,2\right)$, 且 $2ab=\left(0,0\right)$, 故 $ab$ 的阶为 $2< 4=\left[4,4\right]$.
 
 关于 $G$ 中是否一定存在 $\left[m,n\right]$ 阶元素, 答案是肯定的. 因 $ab=ba$, 子群 $H=\left\langle a,b\right\rangle$ 是交换群. 设 $m=\prod_{p}p^{\alpha_p}$, $n=\prod_{p}p^{\beta_p}$ 为素因数分解 (素因数分解与最高次幂). 对每个素数 $p$: 若 $\alpha_p\ge\beta_p$, 由元素幂的阶, $a^{m/p^{\alpha_p}}$ 的阶为 $\frac{m}{\left(m,m/p^{\alpha_p}\right)}=\frac{m}{m/p^{\alpha_p}}=p^{\alpha_p}$; 若 $\beta_p> \alpha_p$, 则 $b^{n/p^{\beta_p}}$ 的阶为 $\frac{n}{\left(n,n/p^{\beta_p}\right)}=p^{\beta_p}$. 于是对每个 $p$ 我们得到一个阶为 $p^{\max\left(\alpha_p,\beta_p\right)}$ 的元素 $x_p\in H$, 且当 $p$ 取不同素数时这些阶两两互素. 因 $H$ 是交换群, 这些 $x_p$ 两两交换, 反复用互素阶交换元素之积的阶, 乘积 $\prod_p x_p$ 的阶为 $\prod_p p^{\max\left(\alpha_p,\beta_p\right)}=\left[m,n\right]$. 故 $G$ 中必存在 $\left[m,n\right]$ 阶元素. $\blacksquare$
-
----
 
 ## 1.2-13
 
@@ -117,8 +113,6 @@ $$
 于是 $T=S^{-1}R\in\left\langle R,U\right\rangle$, 故 $\left\langle R,U\right\rangle\supseteq\left\langle S,T\right\rangle$. 又 $R,U\in SL\left(2,\mathbb Z\right)$, 反包含 $\left\langle R,U\right\rangle\subseteq\left\langle S,T\right\rangle$ 显然. 因此 $\left\langle R,U\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 综上, $S,T,R,U$ 中任两个元素都生成 $SL\left(2,\mathbb Z\right)$. $\blacksquare$
-
----
 
 ## 1.2-20
 

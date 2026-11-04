@@ -16,8 +16,6 @@
 > 
 > 设 $M_1,M_2$ 为主理想整环 $D$ 上的有限生成模, 则 $M_1\cong M_2$ 当且仅当它们有相同的秩和不变因子, 当且仅当有相同的秩和初等因子.
 
----
-
 ## 3.4-4
 
 设 $R=\mathbb Z\left[\alpha\right]$, 试构造一个有限生成的 $R$-模 $M$, 使得 $M$ 不能写成有限个循环子模的直和. (题面原文丢失了对 $\alpha$ 的条件, 这里按标准取 $\alpha$ 为不定元, 即 $R=\mathbb Z\left[x\right]$, 它不是主理想整环.)
@@ -35,8 +33,6 @@
 但 $I=\left(2,x\right)$ 不是主理想: $R=\mathbb Z\left[x\right]$ 的单位只有 $\pm1$, 若 $I=\left(g\right)$, 则 $2=gf$, $x=gh$. 由 $2=gf$ 知 $f,g$ 只能是常数 $\pm1,\pm2$; 结合 $x=gh$ 不可能 ($x$ 不能整除 $2$). 更直接地, $I$ 中每个元素 $2f+xg$ 的常数项都是偶数, 故 $1\notin I$, 因而 $I\ne R=\left(1\right)$, 也不可能由 $\pm2$ 或 $x$ 单独生成.
 
 矛盾. 故 $I$ 不能写成有限个循环子模的直和. 这与**定理 3.4.5 (主理想整环上有限生成模的结构定理)** 仅在主理想整环上成立相吻合: 脱离主理想整环前提, 有限生成模一般不能分解为循环子模的直和. $\blacksquare$
-
----
 
 ## 3.4-5
 
@@ -68,8 +64,6 @@ $$
 
 即 $D^3/K$ 的秩为 $2$, 挠部分为零. 故其不变因子 (挠部分 $d_1,\cdots,d_k$) 为空, 初等因子也为空; 模同构于自由模 $D^2$. $\blacksquare$
 
----
-
 ## 3.4-6
 
 设 $D$ 是主理想整环, $M$ 是 $D$ 上有限生成的扭模, 对 $a\in D$, 令 $M\left(a\right)=\left\{x\in M\mid ax=0\right\}$. 试证明:
@@ -99,8 +93,6 @@ $$
 最后证 $M\left(ab\right)\subset M\left(a\right)+M\left(b\right)$. 由 $\left(a,b\right)=1$ 及**定理 2.7.7 (贝祖等式)**, 存在 $u,v$ 使 $ua+vb=1$. 对任意 $x\in M\left(ab\right)$, $abx=0$. 写 $x=\left(ua+vb\right)x=uax+vb x$. 记 $x_1=vb x$, $x_2=uax$. 则 $ax_1=avb x=vab x=0$, $bx_2=bua x=uab x=0$, 故 $x_1\in M\left(a\right)$, $x_2\in M\left(b\right)$, 从而 $x=x_1+x_2\in M\left(a\right)+M\left(b\right)$.
 
 综上, $M\left(ab\right)=M\left(a\right)+M\left(b\right)$ 且 $M\left(a\right)\cap M\left(b\right)=\left\{0\right\}$, 故 $M\left(ab\right)=M\left(a\right)\oplus M\left(b\right)$. $\blacksquare$
-
----
 
 ## 3.4-10
 

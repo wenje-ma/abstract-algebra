@@ -40,8 +40,6 @@
 > 
 > 当 $n\ge5$ 时, $A_n$ 是单群.
 
----
-
 ## 1.6-5
 
 证明:
@@ -72,8 +70,6 @@ $$
 
 故所有 3-轮换都属于 $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$, 从而 $A_n\subseteq\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. 反之, 各生成元 $\left(12k\right)$ 都是 3-轮换, 是偶置换 (偶置换与奇置换, 交错群), 故属于 $A_n$, 反向包含成立. 因此 $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. $\blacksquare$
 
----
-
 ## 1.6-6
 
 证明: $S_n$ 的非平凡正规子群为 $A_n$ 或 $K_4$ (当 $n=4$ 时).
@@ -98,8 +94,6 @@ $$
 
 综上, $S_n$ 的非平凡正规子群为 $A_n$ (对所有 $n\ge3$), 以及 $n=4$ 时的 $K_4$. $\blacksquare$
 
----
-
 ## 1.6-11
 
 设 $\left|G\right|=2n$, 其中 $n$ 为奇数. 证明: $G$ 有指数为 $2$ 的正规子群.
@@ -111,8 +105,6 @@ $$
 **第二步: 证明 $\psi$ 是满射.** 由偶数阶群有二阶元, $G$ 中存在二阶元 $a$ (因 $\left|G\right|=2n$ 为偶数). 则 $\lambda\left(a\right)=L_a$, 且对任意 $x\in G$, $L_a^2\left(x\right)=a^2x=x$, 故 $L_a$ 是对合; 又 $a\ne e$, 若 $L_a\left(x\right)=x$ 即 $ax=x$, 则 $a=e$, 矛盾, 故 $L_a$ 无不动点. 因此 $L_a$ 是 $G$ (共 $2n$ 个文字) 上的 $n$ 个不相交对换之积, 由符号同态, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (因 $n$ 为奇数). 故 $\psi\left(a\right)=-1$, 而 $\psi\left(e\right)=1$, 于是 $\psi:G\to\left\{1,-1\right\}$ 是满同态.
 
 **第三步: 取核得指数为 $2$ 的正规子群.** 令 $H=\ker\psi$. 由**引理 1.4.13**, $H\triangleleft G$. 由**定理 1.4.19 (群的同态基本定理)**, $G/H\cong\left\{1,-1\right\}$, 故 $\left|G/H\right|=2$, 即 $\left[G:H\right]=2$. 因此 $G$ 有指数为 $2$ 的正规子群 $H$. $\blacksquare$
-
----
 
 ## 1.6-14
 

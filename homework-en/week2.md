@@ -20,8 +20,6 @@
 > 
 > Let $G$ be a finite group, $K< G$, $H< K$. Then $\left[G:H\right]=\left[G:K\right]\cdot\left[K:H\right]$.
 
----
-
 ## 1.2-8
 
 Let $a,b$ be elements of orders $m,n$ respectively in a group $G$, with $ab=ba$.
@@ -63,8 +61,6 @@ $$
 whose intersection is $\left\langle a\right\rangle\cap\left\langle b\right\rangle=\left\{\left(0,0\right),\left(2,0\right)\right\}\ne\left\{e\right\}$. Moreover $ab=\left(2,2\right)$ and $2ab=\left(0,0\right)$, so the order of $ab$ is $2< 4=\left[4,4\right]$.
 
 As for whether $G$ necessarily contains an element of order $\left[m,n\right]$, the answer is yes. Since $ab=ba$, the subgroup $H=\left\langle a,b\right\rangle$ is commutative. Let $m=\prod_{p}p^{\alpha_p}$, $n=\prod_{p}p^{\beta_p}$ be the prime factorizations (Prime Factorization and Highest Powers). For each prime $p$: if $\alpha_p\ge\beta_p$, then by Order of a Power of an Element, $a^{m/p^{\alpha_p}}$ has order $\frac{m}{\left(m,m/p^{\alpha_p}\right)}=\frac{m}{m/p^{\alpha_p}}=p^{\alpha_p}$; if $\beta_p> \alpha_p$, then $b^{n/p^{\beta_p}}$ has order $\frac{n}{\left(n,n/p^{\beta_p}\right)}=p^{\beta_p}$. Thus for each $p$ we obtain an element $x_p\in H$ of order $p^{\max\left(\alpha_p,\beta_p\right)}$, and for distinct primes $p$ these orders are pairwise coprime. Since $H$ is commutative, these $x_p$ commute pairwise, and applying Order of a Product of Commuting Elements of Coprime Order repeatedly, the product $\prod_p x_p$ has order $\prod_p p^{\max\left(\alpha_p,\beta_p\right)}=\left[m,n\right]$. Hence $G$ necessarily contains an element of order $\left[m,n\right]$. $\blacksquare$
-
----
 
 ## 1.2-13
 
@@ -117,8 +113,6 @@ $$
 Then $T=S^{-1}R\in\left\langle R,U\right\rangle$, so $\left\langle R,U\right\rangle\supseteq\left\langle S,T\right\rangle$. Since $R,U\in SL\left(2,\mathbb Z\right)$, the reverse inclusion $\left\langle R,U\right\rangle\subseteq\left\langle S,T\right\rangle$ is obvious. Hence $\left\langle R,U\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 In summary, any two of $S,T,R,U$ generate $SL\left(2,\mathbb Z\right)$. $\blacksquare$
-
----
 
 ## 1.2-20
 

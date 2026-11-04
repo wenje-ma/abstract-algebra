@@ -16,8 +16,6 @@
 > 
 > If every element of a monoid $G$ is invertible, then $G$ is called a group. If the operation in the group also satisfies the commutative law, then $G$ is called a commutative group, or an abelian group.
 
----
-
 ## 1.1-8
 
 Give an example of an infinite commutative semigroup that has an identity element and satisfies the cancellation law, but is not a group.
@@ -35,8 +33,6 @@ Take $S=\mathbb N$ (the set of all nonnegative integers) with the usual operatio
 **Step 4: verify that $\left(\mathbb N,+\right)$ is not a group.** By Basic Properties of Addition on Nonnegative Integers, $1+b\ge1> 0$ for every $b\in\mathbb N$, so no $b\in\mathbb N$ satisfies $1+b=0$. Therefore $1\in\mathbb N$ has no additive inverse, i.e. not every element is invertible. By **Definition 1.1.10 (Inverse Element)** and **Definition 1.1.14 (Group and Abelian Group)**, a group requires every element to be invertible, so $\left(\mathbb N,+\right)$ is not a group.
 
 In summary, $\left(\mathbb N,+\right)$ is an infinite commutative semigroup with an identity element that satisfies the cancellation law, but is not a group. $\blacksquare$
-
----
 
 ## 1.1-9
 
@@ -75,8 +71,6 @@ c & c & b & a & 0
 $$
 
 This is the Klein four-group. $\blacksquare$
-
----
 
 ## 1.1-16
 
@@ -129,8 +123,6 @@ $$
 so $T_{\left(A^{-1},-A^{-1}\beta\right)}\circ T_{\left(A,\beta\right)}=T_{\left(I,0\right)}=T_{\left(A,\beta\right)}\circ T_{\left(A^{-1},-A^{-1}\beta\right)}$. By **Definition 1.1.10 (Inverse Element)**, $T_{\left(A^{-1},-A^{-1}\beta\right)}$ is the inverse of $T_{\left(A,\beta\right)}$.
 
 Since closure, associativity, identity and inverse all hold, by **Definition 1.1.14 (Group and Abelian Group)**, $\mathrm{Aff}\left(n,\mathbb R\right)$ forms a group under composition of maps. $\blacksquare$
-
----
 
 ## 1.1-20
 

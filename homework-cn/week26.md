@@ -1,7 +1,5 @@
 # week26
 
----
-
 ## 4.4-5
 
 设 $F$ 为域, $c\in F$, $\mathrm{char}\,F=p\ne0$. 求证: $x^p-c$ 在 $F\left[x\right]$ 中不可约当且仅当 $x^p-c$ 在 $F$ 中无根.

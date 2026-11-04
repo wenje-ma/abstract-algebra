@@ -4,8 +4,6 @@
 > 
 > Let $n=p_1^{m_1}p_2^{m_2}\cdots p_s^{m_s}$ be the prime factorization of $n$, with $p_1,p_2,\cdots,p_s$ distinct primes and $m_i> 0$. Then the number of isomorphism classes of abelian groups of order $n$ is $\prod_{i=1}^s p\left(m_i\right)$, where $p\left(m\right)$ is the number of distinct partitions of the natural number $m$.
 
----
-
 ## 3.5-4
 
 Determine the number of isomorphism classes of abelian groups of order $936$.
@@ -19,8 +17,6 @@ Compute the partition numbers of the exponents. The partitions of $3$ are $3$, $
 By **Theorem 3.5.2 (Number of Isomorphism Classes of Finite Abelian Groups)**, the number of isomorphism classes of abelian groups of order $936$ is $p\left(3\right)p\left(2\right)p\left(1\right)=3\times2\times1=6$.
 
 Hence there are $6$ isomorphism classes of abelian groups of order $936$. $\blacksquare$
-
----
 
 ## 3.5-8
 
@@ -55,8 +51,6 @@ For $\mathbb Z_{16}$, $4k\equiv0\pmod{16}$ iff $k\equiv0\pmod 4$, i.e. $k\in\lef
 By (2), the desired number is $m_1m_2m_3=4\times4\times4=64$.
 
 Hence $64$ elements of $\mathbb Z_4\times\mathbb Z_8\times\mathbb Z_{16}$ have order dividing $4$. $\blacksquare$
-
----
 
 ## 3.5-12
 

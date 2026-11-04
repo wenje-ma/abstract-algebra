@@ -12,8 +12,6 @@
 > 
 > 设 $G$ 是群, $H< G$, 则下列条件等价: (1) $H\triangleleft G$; (2) 对任意 $g\in G$, $gH=Hg$; (3) 对任意 $a,b\in G$, $aH\cdot bH=abH$, 这里 $aH\cdot bH=\left\{ah_1bh_2\mid h_1,h_2\in H\right\}$.
 
----
-
 ## 1.3-7
 
 证明: 群 $G$ 中元素的共轭关系是一个等价关系, 从而共轭类构成了 $G$ 的一个划分.
@@ -36,8 +34,6 @@ $$
 
 综上, 共轭关系 $R$ 是等价关系. 由等价关系的等价类构成划分, $G$ 划分为互不相交的等价类之并. 而 $a$ 所在的等价类恰为 $a$ 的共轭类 $C_a$ (共轭关系与共轭类), 故共轭类构成 $G$ 的一个划分. $\blacksquare$
 
----
-
 ## 1.3-9
 
 设 $H,K$ 是群 $G$ 的两个子群. 证明: $H,K$ 中有一个是 $G$ 的正规子群, 则 $HK< G$; 若 $H,K$ 均是 $G$ 的正规子群, 则 $HK\triangleleft G$.
@@ -59,8 +55,6 @@ g\left(hk\right)g^{-1}=\left(ghg^{-1}\right)\left(gkg^{-1}\right).
 $$
 
 因 $H\triangleleft G$, 由**定义 1.3.1 (正规子群)**, $ghg^{-1}\in H$; 因 $K\triangleleft G$, 同理 $gkg^{-1}\in K$. 故 $g\left(hk\right)g^{-1}\in HK$. 由 $g$ 与 $hk$ 的任意性, 对任意 $g\in G$ 有 $g\left(HK\right)g^{-1}\subseteq HK$, 依据**定义 1.3.1 (正规子群)**, $HK\triangleleft G$. $\blacksquare$
-
----
 
 ## 1.3-10
 

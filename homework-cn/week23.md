@@ -4,8 +4,6 @@
 > 
 > 设 $F$ 为特征为零的代数闭域, $V$ 为 $F$ 上 $n$ 维线性空间, $A$ 为 $V$ 上的线性变换, 则存在 $V$ 的一组基使得 $A$ 在该基下的矩阵为准对角矩阵 $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, 其中每个 $J_i$ 都是约当块. 两个 $F$ 上 $n\times n$ 矩阵相似当且仅当它们具有相同的约当标准形.
 
----
-
 ## 3.6-9
 
 设 $F$ 为特征为零的代数闭域, 试证明 $F$ 上任何一个约当块都能写成两个对称矩阵的乘积.
@@ -18,8 +16,6 @@
 
 其中 $P$ 与 $A$ 均为 $F$ 上对称矩阵. 故任一约当块均可写成两个对称矩阵的乘积. $\blacksquare$
 
----
-
 ## 3.6-10
 
 试证明任何一个特征为零的代数闭域 $F$ 上的方阵都能写成 $F$ 上两个对称矩阵的乘积.
@@ -31,8 +27,6 @@
 由**3.6-9** 的结论, 每个约当块 $J_i$ 可写为 $J_i=P_iQ_i$, 其中 $P_i,Q_i$ 均为对称矩阵. 令 $P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right)$, $Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right)$, 则 $P,Q$ 均为对称矩阵, 且 $J=PQ$.
 
 于是 $A=SJS^{-1}=SPQS^{-1}=\left(SPS^\top\right)\left(S^{-T}QS^{-1}\right)$. 其中 $SPS^\top$ 为对称矩阵, 因其转置为 $\left(SPS^\top\right)^\top=SP^\topS^\top=SPS^\top$; 同理 $S^{-T}QS^{-1}=\left(S^{-1}\right)^\topQS^{-1}$ 亦为对称矩阵. 故 $A$ 为两个对称矩阵之积. $\blacksquare$
-
----
 
 ## 3.6-11
 
@@ -49,8 +43,6 @@
 由主理想整环 $\mathbb R\left[x\right]$ 上有限生成扭模的结构理论 (即 $V$ 作为 $\mathbb R\left[x\right]$-模的准素分解), $p\left(x\right)$ 对应的准素子空间非零. 取其中向量 $u$ 使得 $p\left(A\right)u=0$ 且 $u\ne0$. 因 $p\left(x\right)$ 无实根, $u$ 与 $Au$ 必线性无关 (否则 $Au=au$, $a\in\mathbb R$, 则 $a$ 为 $p$ 的实根, 矛盾). 令 $W=\mathrm{span}\left\{u,Au\right\}$. 由 $p\left(A\right)u=0$ 即 $A^2u+bAu+cu=0$ 得 $A\left(Au\right)=A^2u=-cu-bAu\in W$, 故 $W$ 是 $2$ 维 $A$-不变子空间. 取 $W$ 的一组基, 扩充为 $V$ 的一组基, 则 $A$ 在该基下的矩阵形如 $\begin{bmatrix}B_1&B_2\\0&A'\end{bmatrix}$, 其中 $B_1$ 为 $2$ 阶方阵 ($A$ 在 $W$ 上的限制), $A'$ 为 $n-2$ 阶实矩阵. 由归纳假设, $A'$ 可化为所要求的分块上三角形式, 从而 $A$ 亦然.
 
 综上, 由归纳法, 存在 $V$ 的一组基使 $A$ 的矩阵为所要求的分块上三角形式. $\blacksquare$
-
----
 
 ## 3.6-12
 

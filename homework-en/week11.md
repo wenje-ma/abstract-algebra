@@ -8,8 +8,6 @@ $$
 > 
 > Let $R$ be a nonempty set on which two binary operations $+$ and $\cdot$ are defined, satisfying: (1) $\left[R;+\right]$ is an abelian group; (2) $\left[R;\cdot\right]$ is a semigroup (multiplication is associative); (3) multiplication distributes over addition on both sides: $a\left(b+c\right)=ab+ac$, $\left(a+b\right)c=ac+bc$ (for all $a,b,c\in R$). Then $R$ is called a ring.
 
----
-
 ## 2.1-3
 
 Let $R=\left\{a,b,c\right\}$ be a set on which addition and multiplication are defined. Suppose the operation tables of addition $+$ and multiplication $\cdot$ are
@@ -74,8 +72,6 @@ The two are unequal.
 
 Therefore $R$ fails the associativity of multiplication and the distributive law required by **Definition 2.1.1 (Ring)**, so $R$ is not a ring. $\blacksquare$
 
----
-
 ## 2.1-5
 
 Let $R$ be a unital ring with identity $e$, and let $a\in R$. If there exists $m\in\mathbb N$ such that $a^{m}=0$, then $a$ is called a nilpotent element. Prove: if $a$ is nilpotent, then $e+a$ is invertible.
@@ -101,8 +97,6 @@ b\left(e+a\right)=\left(e-a+a^{2}-\cdots+\left(-1\right)^{m-1}a^{m-1}\right)\lef
 $$
 
 Hence $b$ is an inverse of $e+a$, so $e+a$ is invertible. This agrees with Nilpotent Elements and Finite Geometric Series. $\blacksquare$
-
----
 
 ## 2.1-15
 
@@ -133,8 +127,6 @@ where we used $c\left(e-ab\right)=e$. Hence $d=e+bca$ is an inverse of $e-ba$, s
 Conversely, if $e-ba$ is invertible, interchanging $a$ and $b$ in the above argument yields that $e-ab$ is invertible.
 
 Therefore $e-ab$ is invertible if and only if $e-ba$ is invertible. $\blacksquare$
-
----
 
 ## 2.1-16
 

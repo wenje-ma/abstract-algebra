@@ -12,8 +12,6 @@
 > 
 > Let $I$ be an ideal of a ring $R$ with $I\ne R$. If $ab\in I$ implies $a\in I$ or $b\in I$, then $I$ is called a prime ideal of $R$.
 
----
-
 ## 2.6-13
 
 Let $R$ be a unique factorization domain and $p\in R^{*}$. Prove: $p$ is an irreducible element if and only if the principal ideal $\left(p\right)$ is a prime ideal.

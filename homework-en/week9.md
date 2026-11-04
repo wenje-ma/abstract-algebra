@@ -16,8 +16,6 @@
 > 
 > Let a group $G$ act on $X$ and $x\in X$. Then $\left|O_x\right|=\left|G/F_x\right|=\left[G:F_x\right]$; hence $\left|O_x\right|\mid\left|G\right|$.
 
----
-
 ## 1.9-4
 
 (1) Let $P^{n-1}\left(\mathbb R\right)$ denote the set of all $1$-dimensional subspaces of $\mathbb R^n$, called the real projective space. For any $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$ and $W\in P^{n-1}\left(\mathbb R\right)$, $\rho\left(W\right)$ is again a $1$-dimensional subspace. Verify that this is a transitive action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$, and find the stabilizer.
@@ -60,8 +58,6 @@ $O\left(n\right)$ acts transitively on $P^{n-1}\left(\mathbb R\right)$: by Ortho
 
 $\mathrm{SO}\left(n\right)$ acts transitively on $P^{n-1}\left(\mathbb R\right)$ when $n\ge3$ (by a suitable rotation one can send any direction to any direction while keeping determinant $1$); it also acts transitively on $\mathrm{Gr}\left(k,n\right)$ when $n\ge3$. $\blacksquare$
 
----
-
 ## 1.9-5
 
 Let $V_k\left(\mathbb R^n\right)$ denote the set of all ordered $k$-tuples of orthonormal vectors in $\mathbb R^n$, called the Stiefel manifold. For any $\rho\in O\left(n\right)$ and $\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$, define
@@ -98,8 +94,6 @@ $$
 
 This is the stabilizer of $\left(e_1,\cdots,e_k\right)$. $\blacksquare$
 
----
-
 ## 1.9-6
 
 Extend the actions in Problems 1.9-4 and 1.9-5 to the complex case.
@@ -133,8 +127,6 @@ F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\r
 $$
 
 **Transitivity**. $\mathrm{SL}\left(n,\mathbb C\right)$ acts transitively on the complex projective space and the complex Grassmannian (adjust the determinant as in the real case); $U\left(n\right)$ acts transitively on the complex projective space, the complex Grassmannian and the complex Stiefel manifold; $\mathrm{SU}\left(n\right)$ acts transitively on the corresponding sets when the dimension is large enough. $\blacksquare$
-
----
 
 ## 1.9-8
 
@@ -209,8 +201,6 @@ F_i=\left\{\begin{bmatrix}a & b\\-b & a\end{bmatrix}\;\middle|\;a^{2}+b^{2}=1\ri
 $$
 
 $\blacksquare$
-
----
 
 ## 1.9-19
 
@@ -296,8 +286,6 @@ $$
 Set $a=x$, $b=2y$; then $a^{2}+b^{2}=p$, and $a,b$ are positive integers (since $p$ is an odd prime, $x\ne0$; since $y=z\ge1$, $b=2y\ge2$).
 
 Therefore, when $p=4k+1$, the equation $x^{2}+y^{2}=p$ has a solution in positive integers. $\blacksquare$
-
----
 
 ## 1.9-20
 

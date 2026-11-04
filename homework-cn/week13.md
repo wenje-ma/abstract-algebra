@@ -1,7 +1,5 @@
 # week13
 
----
-
 ## 2.3-4
 
 在四元数体 $H$ 中定义一个元素 $\alpha\in H$ 的范数为 $N\left(\alpha\right)=\alpha\overline\alpha$. 试证明:

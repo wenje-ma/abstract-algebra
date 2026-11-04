@@ -24,8 +24,6 @@
 > 
 > Let $f:G\to G'$ be a surjective group homomorphism. Then $G/\ker f\cong G'$.
 
----
-
 ## 1.4-3
 
 Let $G$ be a group. Define $R:G\to S_{G}$ by $R\left(a\right)=R_{a}$, where $R_{a}$ is the right translation. Prove that $R$ is an anti-isomorphism of $G$, i.e. it satisfies $R\left(ab\right)=R\left(b\right)R\left(a\right)$.
@@ -48,8 +46,6 @@ Since $g$ is arbitrary, $R\left(ab\right)=R\left(b\right)R\left(a\right)$, and b
 
 In summary, $R:G\to R_G$ is a bijective anti-homomorphism, and by Anti-Homomorphism and Anti-Isomorphism, $R$ is an anti-isomorphism; that is, $G$ is anti-isomorphic to the subgroup $R_G$ of $S_G$. $\blacksquare$
 
----
-
 ## 1.4-7
 
 Prove that $f\left(x\right)=\cos x+\sqrt{-1}\sin x$ is a group homomorphism from $\left(\mathbb R,+\right)$ to $\left(\mathbb C^{*},\cdot\right)$, and find $\ker f$.
@@ -71,8 +67,6 @@ $$
 $$
 
 By **Theorem 1.4.19 (Fundamental Theorem of Group Homomorphisms)**, $\mathbb R/2\pi\mathbb Z\cong\mathrm{Im}\left(f\right)$, where $\mathrm{Im}\left(f\right)=\left\{f\left(x\right)\mid x\in\mathbb R\right\}$ is the multiplicative group of complex numbers on the unit circle $\left\{z\in\mathbb C\mid\left|z\right|=1\right\}$ (Complex Exponentials and the Unit Circle). $\blacksquare$
-
----
 
 ## 1.4-8
 

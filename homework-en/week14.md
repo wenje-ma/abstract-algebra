@@ -8,8 +8,6 @@
 > 
 > Let $R_1,R_2$ be two rings and $f$ a map from $R_1$ to $R_2$. If for any $a,b\in R_1$ we have $f\left(a+b\right)=f\left(a\right)+f\left(b\right)$ and $f\left(ab\right)=f\left(a\right)f\left(b\right)$, then $f$ is called a homomorphism; an injective homomorphism is called a monomorphism, a surjective homomorphism an epimorphism, and a bijective homomorphism an isomorphism.
 
----
-
 ## 2.4-6
 
 Find all automorphisms of the field
@@ -42,8 +40,6 @@ Case two $\varphi\left(i\right)=-i$: then $\varphi\left(a+bi\right)=a-bi$, i.e. 
 
 Both maps preserve addition and multiplication (conjugation preserves the operations over $\mathbb Q$) and are bijective, so by **Definition 2.4.1 (Ring Homomorphism and Isomorphism)** they are automorphisms. Hence $\mathbb Q\left[i\right]$ has exactly two automorphisms: the identity and conjugation. $\blacksquare$
 
----
-
 ## 2.4-7
 
 Prove that the only automorphism of the real field is the identity.
@@ -63,8 +59,6 @@ $$
 **Identity**: Suppose, toward contradiction, that there exists $x\in\mathbb R$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)> x$, by Order-Preserving Property of the Real Field (density of rationals), choose $q\in\mathbb Q$ with $x< q< \varphi\left(x\right)$. Since $x< q$ and $\varphi$ is strictly increasing, $\varphi\left(x\right)< \varphi\left(q\right)=q$, contradicting $q< \varphi\left(x\right)$. If $\varphi\left(x\right)< x$, similarly choose $q\in\mathbb Q$ with $\varphi\left(x\right)< q< x$; by the strict monotonicity of $\varphi$ and $q=\varphi\left(q\right)$, we get $q< \varphi\left(x\right)$, a contradiction.
 
 Hence $\varphi\left(x\right)=x$ for all $x\in\mathbb R$, i.e. $\varphi$ is the identity. $\blacksquare$
-
----
 
 ## 2.4-8
 
@@ -95,8 +89,6 @@ $$
 The two are equal, so $\varphi$ preserves multiplication.
 
 Moreover, applying $\varphi$ twice returns to the identity, i.e. $\varphi\circ\varphi=\mathrm{id}$, so $\varphi$ is bijective. By **Definition 2.4.1 (Ring Homomorphism and Isomorphism)**, $\varphi$ is an automorphism of $\mathbb C$. $\blacksquare$
-
----
 
 ## 2.4-19
 

@@ -8,8 +8,6 @@
 > 
 > 设 $G$ 是循环群. 若 $G$ 是无限群, 则 $G$ 与 $\left(\mathbb Z,+\right)$ 同构; 若 $G$ 是 $n$ 阶群, 则 $G$ 与 $\left(\mathbb Z_n,+\right)$ 同构. 从而, 两个循环群同构当且仅当它们有相同的阶.
 
----
-
 ## 1.5-3
 
 设 $\left(m,n\right)=1$. 证明: $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$.
@@ -25,8 +23,6 @@
 于是 $\left\langle\left(\overline{1},\overline{1}\right)\right\rangle$ 是 $\mathbb Z_m\times\mathbb Z_n$ 的 $mn$ 阶循环子群. 而 $\left|\mathbb Z_m\times\mathbb Z_n\right|=\left|\mathbb Z_m\right|\left|\mathbb Z_n\right|=mn$, 故 $\mathbb Z_m\times\mathbb Z_n=\left\langle\left(\overline{1},\overline{1}\right)\right\rangle$, 即 $\mathbb Z_m\times\mathbb Z_n$ 是 $mn$ 阶循环群.
 
 由**定理 1.5.5 (循环群的分类)**, 阶相同的循环群同构, 故 $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$. $\blacksquare$
-
----
 
 ## 1.5-15
 
@@ -55,8 +51,6 @@ $$
 因对每个 $d\mid n$ 都有 $f\left(d\right)\le\varphi\left(d\right)$, 而两和相等, 故对每个 $d\mid n$ 必有 $f\left(d\right)=\varphi\left(d\right)$.
 
 特别地, $f\left(n\right)=\varphi\left(n\right)> 0$, 故 $G$ 中存在 $n$ 阶元 $a$, 从而 $\left\langle a\right\rangle$ 是 $G$ 的 $n$ 阶子群, 而 $\left|G\right|=n$, 故 $G=\left\langle a\right\rangle$ 是循环群. $\blacksquare$
-
----
 
 ## 1.5-16
 

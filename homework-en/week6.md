@@ -40,8 +40,6 @@
 > 
 > For $n\ge5$, $A_n$ is a simple group.
 
----
-
 ## 1.6-5
 
 Prove that
@@ -72,8 +70,6 @@ so the adjacent transpositions $\left(12\right),\left(23\right),\cdots,\left(n-1
 
 Hence all 3-cycles belong to $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$, so $A_n\subseteq\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. Conversely, each generator $\left(12k\right)$ is a 3-cycle, hence an even permutation (Even and Odd Permutations, the Alternating Group), so it belongs to $A_n$; the reverse inclusion holds. Therefore $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. $\blacksquare$
 
----
-
 ## 1.6-6
 
 Prove that the nontrivial normal subgroups of $S_n$ are $A_n$ or $K_4$ (when $n=4$).
@@ -98,8 +94,6 @@ Therefore, for $n\ge5$, the only nontrivial normal subgroup of $S_n$ is $A_n$.
 
 In summary, the nontrivial normal subgroups of $S_n$ are $A_n$ (for all $n\ge3$) and $K_4$ when $n=4$. $\blacksquare$
 
----
-
 ## 1.6-11
 
 Let $\left|G\right|=2n$, where $n$ is odd. Prove that $G$ has a normal subgroup of index $2$.
@@ -111,8 +105,6 @@ Let $\left|G\right|=2n$, where $n$ is odd. Prove that $G$ has a normal subgroup 
 **Step 2: prove that $\psi$ is surjective.** By A Finite Group of Even Order Has an Element of Order Two, $G$ contains an element $a$ of order two (since $\left|G\right|=2n$ is even). Then $\lambda\left(a\right)=L_a$, and for any $x\in G$, $L_a^2\left(x\right)=a^2x=x$, so $L_a$ is an involution; moreover, since $a\ne e$, if $L_a\left(x\right)=x$, i.e. $ax=x$, then $a=e$, a contradiction, so $L_a$ has no fixed points. Hence $L_a$ is a product of $n$ disjoint transpositions on the $2n$ letters of $G$, and by The Sign Homomorphism, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (since $n$ is odd). Therefore $\psi\left(a\right)=-1$, while $\psi\left(e\right)=1$, so $\psi:G\to\left\{1,-1\right\}$ is a surjective homomorphism.
 
 **Step 3: take the kernel to obtain a normal subgroup of index $2$.** Let $H=\ker\psi$. By **Lemma 1.4.13**, $H\triangleleft G$. By **Theorem 1.4.19 (Fundamental Theorem of Group Homomorphisms)**, $G/H\cong\left\{1,-1\right\}$, so $\left|G/H\right|=2$, i.e. $\left[G:H\right]=2$. Hence $G$ has a normal subgroup $H$ of index $2$. $\blacksquare$
-
----
 
 ## 1.6-14
 

@@ -16,8 +16,6 @@
 > 
 > Let $n_{p}$ be the number of Sylow $p$-subgroups of $G$. Then (1) a Sylow $p$-subgroup $P$ of $G$ satisfies $P\triangleleft G$ if and only if $n_{p}=1$; (2) $n_{p}\mid m$ and $n_{p}\equiv1\pmod p$, where $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$.
 
----
-
 ## 1.10-10
 
 Let $\left|G\right|=pq$, where $p,q$ are distinct primes. Prove that $G$ is solvable.
@@ -29,8 +27,6 @@ Without loss of generality suppose $p< q$. By **Theorem 1.10.10 (Sylow's Third T
 Thus the Sylow $q$-subgroup $Q$ of $G$ is unique, and by **Theorem 1.10.10 (Sylow's Third Theorem)** (1), $Q\triangleleft G$. Since $\left|Q\right|=q$ is prime, by Solvability of Prime-Order and Cyclic Groups, $Q$ is cyclic and hence solvable. The quotient group $G/Q$ has order $p$, also a cyclic group of prime order, and by Solvability of Prime-Order and Cyclic Groups is also solvable.
 
 By **Lemma 1.8.8 (Heredity of Solvability)**, since both $Q$ and $G/Q$ are solvable, $G$ is solvable. $\blacksquare$
-
----
 
 ## 1.10-12
 
@@ -55,8 +51,6 @@ $$
 i.e. $n^{-1}g\in N_{G}\left(P\right)$ (it conjugates $P$ back to $P$). Write $h=n^{-1}g\in N_{G}\left(P\right)$; then $g=nh$.
 
 Therefore $g\in N_{G}\left(P\right)N$. Since $g\in G$ was arbitrary, $G=N_{G}\left(P\right)N$. $\blacksquare$
-
----
 
 ## 1.10-15
 
@@ -93,8 +87,6 @@ G\cong\mathbb Z_p\times\mathbb Z_q\cong\mathbb Z_{pq},
 $$
 
 i.e. $G$ is a cyclic group of order $pq$. $\blacksquare$
-
----
 
 ## 1.10-20
 

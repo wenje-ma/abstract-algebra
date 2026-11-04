@@ -12,8 +12,6 @@
 > 
 > Let $G$ be a group and $H< G$. Then the following conditions are equivalent: (1) $H\triangleleft G$; (2) $gH=Hg$ for all $g\in G$; (3) $aH\cdot bH=abH$ for all $a,b\in G$, where $aH\cdot bH=\left\{ah_1bh_2\mid h_1,h_2\in H\right\}$.
 
----
-
 ## 1.3-7
 
 Prove that the conjugacy relation on a group $G$ is an equivalence relation, and hence the conjugacy classes form a partition of $G$.
@@ -36,8 +34,6 @@ so $aRc$.
 
 In summary, the conjugacy relation $R$ is an equivalence relation. By Equivalence Classes Form a Partition, $G$ is partitioned into pairwise disjoint equivalence classes. The equivalence class of $a$ is exactly the conjugacy class $C_a$ of $a$ (Conjugacy Relation and Conjugacy Classes), so the conjugacy classes form a partition of $G$. $\blacksquare$
 
----
-
 ## 1.3-9
 
 Let $H,K$ be two subgroups of a group $G$. Prove that if one of $H,K$ is a normal subgroup of $G$, then $HK< G$; and if both $H,K$ are normal subgroups of $G$, then $HK\triangleleft G$.
@@ -59,8 +55,6 @@ g\left(hk\right)g^{-1}=\left(ghg^{-1}\right)\left(gkg^{-1}\right).
 $$
 
 Since $H\triangleleft G$, by **Definition 1.3.1 (Normal Subgroup)**, $ghg^{-1}\in H$; since $K\triangleleft G$, similarly $gkg^{-1}\in K$. Hence $g\left(hk\right)g^{-1}\in HK$. Since $g$ and $hk$ are arbitrary, $g\left(HK\right)g^{-1}\subseteq HK$ for all $g\in G$, and by **Definition 1.3.1 (Normal Subgroup)**, $HK\triangleleft G$. $\blacksquare$
-
----
 
 ## 1.3-10
 

@@ -8,8 +8,6 @@
 > 
 > Let $G$ be a cyclic group. If $G$ is infinite, then $G$ is isomorphic to $\left(\mathbb Z,+\right)$; if $G$ is a group of order $n$, then $G$ is isomorphic to $\left(\mathbb Z_n,+\right)$. Hence two cyclic groups are isomorphic if and only if they have the same order.
 
----
-
 ## 1.5-3
 
 Let $\left(m,n\right)=1$. Prove that $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$.
@@ -25,8 +23,6 @@ Hence $d=mn$, i.e. $\left(\overline{1},\overline{1}\right)$ has order $mn$.
 Therefore $\left\langle\left(\overline{1},\overline{1}\right)\right\rangle$ is a cyclic subgroup of $\mathbb Z_m\times\mathbb Z_n$ of order $mn$. Since $\left|\mathbb Z_m\times\mathbb Z_n\right|=\left|\mathbb Z_m\right|\left|\mathbb Z_n\right|=mn$, we have $\mathbb Z_m\times\mathbb Z_n=\left\langle\left(\overline{1},\overline{1}\right)\right\rangle$, i.e. $\mathbb Z_m\times\mathbb Z_n$ is a cyclic group of order $mn$.
 
 By **Theorem 1.5.5 (Classification of Cyclic Groups)**, cyclic groups of the same order are isomorphic, so $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$. $\blacksquare$
-
----
 
 ## 1.5-15
 
@@ -55,8 +51,6 @@ $$
 Since $f\left(d\right)\le\varphi\left(d\right)$ for every $d\mid n$ and the two sums are equal, we must have $f\left(d\right)=\varphi\left(d\right)$ for every $d\mid n$.
 
 In particular, $f\left(n\right)=\varphi\left(n\right)> 0$, so $G$ contains an element $a$ of order $n$; then $\left\langle a\right\rangle$ is a subgroup of $G$ of order $n$, and since $\left|G\right|=n$, we have $G=\left\langle a\right\rangle$, i.e. $G$ is cyclic. $\blacksquare$
-
----
 
 ## 1.5-16
 

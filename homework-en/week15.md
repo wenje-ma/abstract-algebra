@@ -12,8 +12,6 @@
 > 
 > Let $R$ be an integral domain and $a_1,a_2,\cdots,a_n\in R$. If $c\in R$ divides every $a_i$, then $c$ is called a common divisor of them; if a common divisor $d$ is divisible by every common divisor, then $d$ is called a greatest common divisor. If the greatest common divisor of $a,b$ is a unit, then $a,b$ are called coprime.
 
----
-
 ## 2.5-8
 
 Let $R=\mathbb Z\left[\sqrt{-5}\right]$.
@@ -62,8 +60,6 @@ Suppose $d$ is a greatest common divisor of $\alpha,\beta$. By **Definition 2.5.
 
 Hence $\alpha,\beta$ have no greatest common divisor in $R$. $\blacksquare$
 
----
-
 ## 2.5-10
 
 Let $R=\mathbb Z\left[\omega\right]$, where $\omega=\frac{1+\sqrt{-3}}{2}$ (the ring of algebraic integers of $\mathbb Q\left(\sqrt{-3}\right)$).
@@ -107,8 +103,6 @@ $$
 The corresponding elements are $\pm1$, $\pm\omega$, $\pm\left(1-\omega\right)$. Since $\omega=\frac{1+\sqrt{-3}}{2}$ and $1-\omega=\frac{1-\sqrt{-3}}{2}$, all units of $R$ are $\pm1$ and $\frac{\pm1\pm\sqrt{-3}}{2}$.
 
 **Part (3).** Since $1+\sqrt{-3}=2\omega$ and $\omega$ is a unit ($N\left(\omega\right)=1$), i.e. $1+\sqrt{-3}=2\cdot\omega$ with $\omega$ a unit, by **Definition 2.5.2 (Associates)** the elements $2$ and $1+\sqrt{-3}$ are associates. $\blacksquare$
-
----
 
 ## 2.5-15
 

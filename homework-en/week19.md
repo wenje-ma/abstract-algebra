@@ -12,8 +12,6 @@
 > 
 > If $\phi:M_1\to M_2$ is a surjective module homomorphism, then the quotient module $M_1/\ker\phi$ is isomorphic to $M_2$; moreover, if $N_1$ is a submodule of $M_1$ containing $\ker\phi$, then $M_1/N_1\cong M_2/\phi\left(N_1\right)$.
 
----
-
 ## 3.1-11
 
 Let $M$ be a module and $M_1,M_2$ submodules of $M$. Prove:
@@ -38,8 +36,6 @@ $$
 
 Similarly, $M_2\cong\left(M_1+M_2\right)/M_1$. $\blacksquare$
 
----
-
 ## 3.1-12
 
 Let $M$ be a module and $M_1,M_2$ submodules of $M$. Prove that $\left(M_1+M_2\right)/M_2\cong M_1/\left(M_1\cap M_2\right)$.
@@ -56,8 +52,6 @@ $$
 
 This is the second isomorphism theorem. $\blacksquare$
 
----
-
 ## 3.1-13
 
 Let $M$ be a module and $M_1,M_2,\cdots,M_s$ submodules of $M$. Prove that $M=M_1\oplus\cdots\oplus M_s$ iff:
@@ -72,8 +66,6 @@ Let $M$ be a module and $M_1,M_2,\cdots,M_s$ submodules of $M$. Prove that $M=M_
 
 **Sufficiency.** Assume (1) and (2). It suffices to prove that the representation of $0$ in $M$ is unique. Suppose $m_1+m_2+\cdots+m_s=0$ with $m_i\in M_i$. Let $j$ be the largest index with $m_j\ne0$; then $j\ge2$ (otherwise $m_1=0$). Rearranging gives $m_j=-\left(m_1+\cdots+m_{j-1}\right)\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$, so $m_j=0$, a contradiction. Hence all $m_i=0$, and the representation of $0$ is unique. By **Theorem 3.1.10 (Criterion for a Direct Sum)**, $M=M_1\oplus\cdots\oplus M_s$. $\blacksquare$
 
----
-
 ## 3.1-14
 
 If condition (2) above is replaced by $M_i\cap M_j=\left\{0\right\}$ for all $i\ne j$, does the conclusion still hold? Explain.
@@ -85,8 +77,6 @@ The conclusion does not hold. Pairwise zero intersections do not guarantee an in
 Counterexample. Take the two-dimensional vector space $M=\mathbb R^2$ over $\mathbb R$ as an $\mathbb R$-module, with basis $e_1,e_2$. Set $M_1=\mathbb R e_1$, $M_2=\mathbb R e_2$, $M_3=\mathbb R\left(e_1+e_2\right)$. These are all one-dimensional subspaces of $M$. The intersection of any two distinct one-dimensional subspaces is zero, i.e. $M_i\cap M_j=\left\{0\right\}$ for $i\ne j$. Also $M_1+M_2+M_3=\mathbb R e_1+\mathbb R e_2=M$, so condition (1) holds. But there is a nontrivial relation $e_1+e_2-\left(e_1+e_2\right)=0$, where $e_1\in M_1$, $e_2\in M_2$, and $-\left(e_1+e_2\right)\in M_3$, all three terms nonzero; hence the representation of $0$ is not unique, and $M\ne M_1\oplus M_2\oplus M_3$.
 
 Thus pairwise zero intersection is only a necessary, not sufficient, condition for a direct sum, and cannot replace the nested-intersection condition above. $\blacksquare$
-
----
 
 ## 3.1-15
 

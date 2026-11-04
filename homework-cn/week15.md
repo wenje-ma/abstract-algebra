@@ -12,8 +12,6 @@
 > 
 > 设 $R$ 为整环, $a_1,a_2,\cdots,a_n\in R$. 若 $c\in R$ 同时整除所有 $a_i$, 则称 $c$ 为它们的公因子; 若公因子 $d$ 能被任一公因子整除, 则称 $d$ 为最大公因子. 若 $a,b$ 的最大公因子是单位, 则称 $a,b$ 互素.
 
----
-
 ## 2.5-8
 
 设 $R=\mathbb Z\left[\sqrt{-5}\right]$.
@@ -62,8 +60,6 @@ $$
 
 故 $\alpha,\beta$ 在 $R$ 中不存在最大公因子. $\blacksquare$
 
----
-
 ## 2.5-10
 
 设 $R=\mathbb Z\left[\omega\right]$, 其中 $\omega=\frac{1+\sqrt{-3}}{2}$ (即 $\mathbb Q\left(\sqrt{-3}\right)$ 的代数整数环).
@@ -107,8 +103,6 @@ $$
 对应元素为 $\pm1$, $\pm\omega$, $\pm\left(1-\omega\right)$. 因 $\omega=\frac{1+\sqrt{-3}}{2}$, $1-\omega=\frac{1-\sqrt{-3}}{2}$, 故 $R$ 的全部单位为 $\pm1$ 及 $\frac{\pm1\pm\sqrt{-3}}{2}$.
 
 **第 (3) 部分.** 因 $1+\sqrt{-3}=2\omega$, 而 $\omega$ 是单位 ($N\left(\omega\right)=1$), 即 $1+\sqrt{-3}=2\cdot\omega$ 且 $\omega$ 为单位, 由**定义 2.5.2 (相伴)**, $2$ 与 $1+\sqrt{-3}$ 相伴. $\blacksquare$
-
----
 
 ## 2.5-15
 

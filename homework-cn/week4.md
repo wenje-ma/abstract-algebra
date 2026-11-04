@@ -24,8 +24,6 @@
 > 
 > 设 $f:G\to G'$ 是群的满同态, 则 $G/\ker f\cong G'$.
 
----
-
 ## 1.4-3
 
 设 $G$ 是一个群, 定义 $R:G\to S_{G}$ 为 $R\left(a\right)=R_{a}$, 其中 $R_{a}$ 为右平移变换. 证明: $R$ 是 $G$ 的反同构, 即满足 $R\left(ab\right)=R\left(b\right)R\left(a\right)$.
@@ -48,8 +46,6 @@ $$
 
 综上, $R:G\to R_G$ 是双射反同态, 依据反同态与反同构, $R$ 是反同构, 即 $G$ 与 $S_G$ 的子群 $R_G$ 反同构. $\blacksquare$
 
----
-
 ## 1.4-7
 
 证明 $f\left(x\right)=\cos x+\sqrt{-1}\sin x$ 是 $\left(\mathbb R,+\right)$ 到 $\left(\mathbb C^{*},\cdot\right)$ 的一个群同态, 并求 $\ker f$.
@@ -71,8 +67,6 @@ $$
 $$
 
 由**定理 1.4.19 (群的同态基本定理)**, $\mathbb R/2\pi\mathbb Z\cong\mathrm{Im}\left(f\right)$, 其中 $\mathrm{Im}\left(f\right)=\left\{f\left(x\right)\mid x\in\mathbb R\right\}$ 为单位圆 $\left\{z\in\mathbb C\mid\left|z\right|=1\right\}$ 上的复数乘法群 (复指数与单位圆). $\blacksquare$
-
----
 
 ## 1.4-8
 

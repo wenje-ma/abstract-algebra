@@ -4,8 +4,6 @@
 > 
 > Let $F$ be an algebraically closed field of characteristic zero, $V$ an $n$-dimensional vector space over $F$, and $A$ a linear operator on $V$. Then there is a basis of $V$ in which the matrix of $A$ is a block-diagonal matrix $\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, where each $J_i$ is a Jordan block. Two $n\times n$ matrices over $F$ are similar iff they have the same Jordan normal form.
 
----
-
 ## 3.6-9
 
 Let $F$ be an algebraically closed field of characteristic zero. Prove that every Jordan block over $F$ can be written as a product of two symmetric matrices over $F$.
@@ -18,8 +16,6 @@ Let $P$ be the $n\times n$ reversal matrix. By Reversal Matrix and Transpose, $P
 
 Here both $P$ and $A$ are symmetric matrices over $F$. Thus every Jordan block is a product of two symmetric matrices. $\blacksquare$
 
----
-
 ## 3.6-10
 
 Prove that every square matrix over an algebraically closed field $F$ of characteristic zero can be written as a product of two symmetric matrices over $F$.
@@ -31,8 +27,6 @@ Let $A$ be an $n\times n$ matrix over $F$. By **Theorem 3.6.3 (Jordan Normal For
 By the result of **3.6-9**, each Jordan block $J_i$ can be written as $J_i=P_iQ_i$ with $P_i,Q_i$ symmetric. Set $P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right)$ and $Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right)$; then $P,Q$ are symmetric and $J=PQ$.
 
 Hence $A=SJS^{-1}=SPQS^{-1}=\left(SPS^\top\right)\left(S^{-T}QS^{-1}\right)$. Here $SPS^\top$ is symmetric, since its transpose is $\left(SPS^\top\right)^\top=SP^\topS^\top=SPS^\top$; similarly $S^{-T}QS^{-1}=\left(S^{-1}\right)^\topQS^{-1}$ is symmetric. Thus $A$ is a product of two symmetric matrices. $\blacksquare$
-
----
 
 ## 3.6-11
 
@@ -49,8 +43,6 @@ Induct on $\dim V=n$. The case $n=1$ is immediate. Assume the result holds in di
 By the structure theory of finitely generated torsion modules over the PID $\mathbb R\left[x\right]$ (i.e. the primary decomposition of $V$ as an $\mathbb R\left[x\right]$-module), the primary subspace corresponding to $p\left(x\right)$ is nonzero. Take a vector $u$ in it with $p\left(A\right)u=0$ and $u\ne0$. Since $p\left(x\right)$ has no real root, $u$ and $Au$ must be linearly independent (otherwise $Au=au$ with $a\in\mathbb R$, making $a$ a real root of $p$, a contradiction). Set $W=\mathrm{span}\left\{u,Au\right\}$. From $p\left(A\right)u=0$, i.e. $A^2u+bAu+cu=0$, we get $A\left(Au\right)=A^2u=-cu-bAu\in W$, so $W$ is a $2$-dimensional $A$-invariant subspace. Taking a basis of $W$ and extending it to a basis of $V$, the matrix of $A$ is $\begin{bmatrix}B_1&B_2\\0&A'\end{bmatrix}$, where $B_1$ is a $2\times2$ matrix (the restriction of $A$ to $W$) and $A'$ is an $\left(n-2\right)\times\left(n-2\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block-upper-triangular form, and so can $A$.
 
 Thus, by induction, there is a basis of $V$ in which the matrix of $A$ has the required block-upper-triangular form. $\blacksquare$
-
----
 
 ## 3.6-12
 

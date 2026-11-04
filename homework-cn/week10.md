@@ -16,8 +16,6 @@
 > 
 > 设 $G$ 的西罗 $p$-子群的个数为 $n_{p}$, 则 (1) $G$ 的西罗 $p$-子群 $P\triangleleft G$ 当且仅当 $n_{p}=1$; (2) $n_{p}\mid m$ 且 $n_{p}\equiv1\pmod p$, 其中 $\left|G\right|=p^{l}m$, $\left(p,m\right)=1$.
 
----
-
 ## 1.10-10
 
 设 $\left|G\right|=pq$, 其中 $p,q$ 为不同的素数, 证明: $G$ 为可解群.
@@ -29,8 +27,6 @@
 于是 $G$ 的西罗 $q$-子群 $Q$ 唯一, 由**定理 1.10.10 (西罗第三定理)** (1), $Q\triangleleft G$. 又 $\left|Q\right|=q$ 为素数, 由素数阶群与循环群的可解性, $Q$ 是循环群, 从而是可解群. 商群 $G/Q$ 的阶为 $p$, 也是素数阶循环群, 由素数阶群与循环群的可解性 亦是可解群.
 
 由**引理 1.8.8 (可解群的遗传性)**, $Q$ 与 $G/Q$ 均可解, 故 $G$ 可解. $\blacksquare$
-
----
 
 ## 1.10-12
 
@@ -55,8 +51,6 @@ $$
 即 $n^{-1}g\in N_{G}\left(P\right)$ (它把 $P$ 共轭回 $P$). 记 $h=n^{-1}g\in N_{G}\left(P\right)$, 则 $g=nh$.
 
 因此 $g\in N_{G}\left(P\right)N$. 由 $g\in G$ 的任意性, $G=N_{G}\left(P\right)N$. $\blacksquare$
-
----
 
 ## 1.10-15
 
@@ -93,8 +87,6 @@ G\cong\mathbb Z_p\times\mathbb Z_q\cong\mathbb Z_{pq},
 $$
 
 即 $G$ 是 $pq$ 阶循环群. $\blacksquare$
-
----
 
 ## 1.10-20
 
