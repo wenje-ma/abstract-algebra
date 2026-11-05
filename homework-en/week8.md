@@ -48,7 +48,7 @@ $$
 N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+b^{2}+c^{2}+d^{2}.
 $$
 
-**Part (1).** Since $a,b,c,d\in\mathbb R$, each squared term is nonnegative, so
+Part (1). Since $a,b,c,d\in\mathbb R$, each squared term is nonnegative, so
 
 $$
 N\left(\alpha\right)=a^{2}+b^{2}+c^{2}+d^{2}\ge0.
@@ -56,7 +56,7 @@ $$
 
 $N\left(\alpha\right)=0$ if and only if $a^{2}+b^{2}+c^{2}+d^{2}=0$, if and only if $a=b=c=d=0$, i.e. $\alpha=0$. Hence (1) is proved.
 
-**Part (2).** Viewing $\alpha,\beta$ as vectors in $\mathbb R^{4}$, by Triangle Inequality for the Euclidean Norm, $N\left(\alpha\right)=\left\|\alpha\right\|^{2}$, so
+Part (2). Viewing $\alpha,\beta$ as vectors in $\mathbb R^{4}$, by Triangle Inequality for the Euclidean Norm, $N\left(\alpha\right)=\left\|\alpha\right\|^{2}$, so
 
 $$
 \sqrt{N\left(\alpha+\beta\right)}=\left\|\alpha+\beta\right\|\le\left\|\alpha\right\|+\left\|\beta\right\|=\sqrt{N\left(\alpha\right)}+\sqrt{N\left(\beta\right)}.
@@ -64,7 +64,7 @@ $$
 
 Equality holds if and only if $\alpha,\beta$ are real-linearly dependent (by Triangle Inequality for the Euclidean Norm). Hence (2) is proved.
 
-**Part (3).** For $\lambda\in\mathbb R$, $\lambda\alpha=\lambda a+\lambda b\,i+\lambda c\,j+\lambda d\,k$; by Quaternions and Conjugation,
+Part (3). For $\lambda\in\mathbb R$, $\lambda\alpha=\lambda a+\lambda b\,i+\lambda c\,j+\lambda d\,k$; by Quaternions and Conjugation,
 
 $$
 N\left(\lambda\alpha\right)=\left(\lambda a\right)^{2}+\left(\lambda b\right)^{2}+\left(\lambda c\right)^{2}+\left(\lambda d\right)^{2}=\lambda^{2}\left(a^{2}+b^{2}+c^{2}+d^{2}\right)=\lambda^{2}N\left(\alpha\right).
@@ -72,7 +72,7 @@ $$
 
 Hence (3) is proved.
 
-**Part (4).** By Quaternions and Conjugation, $\overline\alpha=a-bi-cj-dk$, so
+Part (4). By Quaternions and Conjugation, $\overline\alpha=a-bi-cj-dk$, so
 
 $$
 N\left(\overline\alpha\right)=a^{2}+\left(-b\right)^{2}+\left(-c\right)^{2}+\left(-d\right)^{2}=a^{2}+b^{2}+c^{2}+d^{2}=N\left(\alpha\right).
@@ -80,7 +80,7 @@ $$
 
 Hence (4) is proved.
 
-**Part (5).** By the reverse-order property of conjugation $\overline{\alpha\beta}=\overline\beta\,\overline\alpha$ (see Quaternions and Conjugation), and since $N\left(\beta\right)=\beta\overline\beta$ is real and hence commutes with every quaternion,
+Part (5). By the reverse-order property of conjugation $\overline{\alpha\beta}=\overline\beta\,\overline\alpha$ (see Quaternions and Conjugation), and since $N\left(\beta\right)=\beta\overline\beta$ is real and hence commutes with every quaternion,
 
 $$
 N\left(\alpha\beta\right)=\left(\alpha\beta\right)\overline{\left(\alpha\beta\right)}=\alpha\beta\overline\beta\,\overline\alpha=\alpha\left(\beta\overline\beta\right)\overline\alpha=N\left(\beta\right)\alpha\overline\alpha=N\left(\alpha\right)N\left(\beta\right).
@@ -128,7 +128,7 @@ Prove that the only automorphism of the real field is the identity.
 
 Let $\varphi:\mathbb R\to\mathbb R$ be a field automorphism. By **Definition 2.4.1 (Ring Homomorphism and Isomorphism)** and Ring Automorphisms Fix the Prime Subfield, $\varphi\left(1\right)=1$, so $\varphi$ is the identity on $\mathbb Q$: $\varphi\left(n\right)=n$ for integers $n$, and $\varphi\left(m/n\right)=m/n$ for $\frac{m}{n}\in\mathbb Q$.
 
-**Order preservation**: If $x> 0$, by Order-Preserving Property of the Real Field, there exists $y\ne0$ with $x=y^{2}$; then
+Order preservation: If $x> 0$, by Order-Preserving Property of the Real Field, there exists $y\ne0$ with $x=y^{2}$; then
 
 $$
 \varphi\left(x\right)=\varphi\left(y^{2}\right)=\varphi\left(y\right)^{2}> 0
@@ -136,7 +136,7 @@ $$
 
 (since $\varphi\left(y\right)\ne0$, its square is positive). Hence when $x> y$, $x-y> 0$ gives $\varphi\left(x\right)-\varphi\left(y\right)=\varphi\left(x-y\right)> 0$, i.e. $\varphi$ is strictly increasing.
 
-**Identity**: Suppose, toward contradiction, that there exists $x\in\mathbb R$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)> x$, by Order-Preserving Property of the Real Field (density of rationals), choose $q\in\mathbb Q$ with $x< q< \varphi\left(x\right)$. Since $x< q$ and $\varphi$ is strictly increasing, $\varphi\left(x\right)< \varphi\left(q\right)=q$, contradicting $q< \varphi\left(x\right)$. If $\varphi\left(x\right)< x$, similarly choose $q\in\mathbb Q$ with $\varphi\left(x\right)< q< x$; by the strict monotonicity of $\varphi$ and $q=\varphi\left(q\right)$, we get $q< \varphi\left(x\right)$, a contradiction.
+Identity: Suppose, toward contradiction, that there exists $x\in\mathbb R$ with $\varphi\left(x\right)\ne x$. If $\varphi\left(x\right)> x$, by Order-Preserving Property of the Real Field (density of rationals), choose $q\in\mathbb Q$ with $x< q< \varphi\left(x\right)$. Since $x< q$ and $\varphi$ is strictly increasing, $\varphi\left(x\right)< \varphi\left(q\right)=q$, contradicting $q< \varphi\left(x\right)$. If $\varphi\left(x\right)< x$, similarly choose $q\in\mathbb Q$ with $\varphi\left(x\right)< q< x$; by the strict monotonicity of $\varphi$ and $q=\varphi\left(q\right)$, we get $q< \varphi\left(x\right)$, a contradiction.
 
 Hence $\varphi\left(x\right)=x$ for all $x\in\mathbb R$, i.e. $\varphi$ is the identity. $\blacksquare$
 
@@ -148,13 +148,13 @@ Prove that the map $a+b\sqrt{-1}\mapsto a-b\sqrt{-1}$ is an automorphism of the 
 
 Let $\varphi:\mathbb C\to\mathbb C$, $\varphi\left(a+bi\right)=a-bi$, where $a,b\in\mathbb R$.
 
-**Preserves addition**: for $a+bi$, $c+di\in\mathbb C$,
+Preserves addition: for $a+bi$, $c+di\in\mathbb C$,
 
 $$
 \varphi\left(\left(a+bi\right)+\left(c+di\right)\right)=\varphi\left(\left(a+c\right)+\left(b+d\right)i\right)=\left(a+c\right)-\left(b+d\right)i=\left(a-bi\right)+\left(c-di\right)=\varphi\left(a+bi\right)+\varphi\left(c+di\right).
 $$
 
-**Preserves multiplication**:
+Preserves multiplication:
 
 $$
 \varphi\left(\left(a+bi\right)\left(c+di\right)\right)=\varphi\left(\left(ac-bd\right)+\left(ad+bc\right)i\right)=\left(ac-bd\right)-\left(ad+bc\right)i,
@@ -206,11 +206,11 @@ Prove that $F$ becomes a field under the above addition and multiplication;
 
 ### Solution to 2.4-19
 
-**Part (1).** Since $R$ is an integral domain, by An Integral Domain Has No Zero Divisors, when $b,d\ne0$ we have $bd\ne0$, so $R\times R^{*}$ is closed under addition and multiplication. Commutativity and associativity follow directly componentwise from the corresponding laws in $R$. For addition, $\left(a,b\right)+\left(0,1\right)=\left(a\cdot1+b\cdot0,b\cdot1\right)=\left(a,b\right)$; for multiplication, $\left(a,b\right)\left(1,1\right)=\left(a\cdot1,b\cdot1\right)=\left(a,b\right)$. Hence the two operations are commutative monoids with identities $\left(0,1\right)$ and $\left(1,1\right)$ respectively.
+Part (1). Since $R$ is an integral domain, by An Integral Domain Has No Zero Divisors, when $b,d\ne0$ we have $bd\ne0$, so $R\times R^{*}$ is closed under addition and multiplication. Commutativity and associativity follow directly componentwise from the corresponding laws in $R$. For addition, $\left(a,b\right)+\left(0,1\right)=\left(a\cdot1+b\cdot0,b\cdot1\right)=\left(a,b\right)$; for multiplication, $\left(a,b\right)\left(1,1\right)=\left(a\cdot1,b\cdot1\right)=\left(a,b\right)$. Hence the two operations are commutative monoids with identities $\left(0,1\right)$ and $\left(1,1\right)$ respectively.
 
-**Part (2). Equivalence relation**: Reflexive: $\left(a,b\right)\sim\left(a,b\right)$ means $ab=ba$, which holds. Symmetric: $ad=bc$ is the same as $bc=ad$, so $\left(a,b\right)\sim\left(c,d\right)$ implies $\left(c,d\right)\sim\left(a,b\right)$. Transitive: suppose $\left(a,b\right)\sim\left(c,d\right)$ and $\left(c,d\right)\sim\left(e,f\right)$, i.e. $ad=bc$, $cf=de$. Multiplying the two equations by $f$ and $b$ respectively gives $adf=bcf=bde$, i.e. $d\left(af\right)=d\left(be\right)$; since $d\ne0$, by An Integral Domain Has No Zero Divisors we cancel to get $af=be$, hence $\left(a,b\right)\sim\left(e,f\right)$. Thus $\sim$ is an equivalence relation.
+Part (2). Equivalence relation: Reflexive: $\left(a,b\right)\sim\left(a,b\right)$ means $ab=ba$, which holds. Symmetric: $ad=bc$ is the same as $bc=ad$, so $\left(a,b\right)\sim\left(c,d\right)$ implies $\left(c,d\right)\sim\left(a,b\right)$. Transitive: suppose $\left(a,b\right)\sim\left(c,d\right)$ and $\left(c,d\right)\sim\left(e,f\right)$, i.e. $ad=bc$, $cf=de$. Multiplying the two equations by $f$ and $b$ respectively gives $adf=bcf=bde$, i.e. $d\left(af\right)=d\left(be\right)$; since $d\ne0$, by An Integral Domain Has No Zero Divisors we cancel to get $af=be$, hence $\left(a,b\right)\sim\left(e,f\right)$. Thus $\sim$ is an equivalence relation.
 
-**Congruence (multiplication)**: suppose $\left(a,b\right)\sim\left(a',b'\right)$ and $\left(c,d\right)\sim\left(c',d'\right)$, i.e. $ab'=a'b$, $cd'=c'd$. Then
+Congruence (multiplication): suppose $\left(a,b\right)\sim\left(a',b'\right)$ and $\left(c,d\right)\sim\left(c',d'\right)$, i.e. $ab'=a'b$, $cd'=c'd$. Then
 
 $$
 \left(ab'\right)\left(cd'\right)=\left(a'b\right)\left(c'd\right),
@@ -222,7 +222,7 @@ $$
 \left(a,b\right)\left(c,d\right)=\left(ac,bd\right)\sim\left(a'c',b'd'\right)=\left(a',b'\right)\left(c',d'\right).
 $$
 
-**Congruence (addition)**: likewise,
+Congruence (addition): likewise,
 
 $$
 \left(ad+bc\right)b'd'=ab'dd'+cd'bb'=a'bdd'+c'dbb'=bd\left(a'd'+b'c'\right),
@@ -230,9 +230,9 @@ $$
 
 so $\left(ad+bc,bd\right)\sim\left(a'd'+b'c',b'd'\right)$, i.e. $\left(a,b\right)+\left(c,d\right)\sim\left(a',b'\right)+\left(c',d'\right)$. Hence $\sim$ is a congruence for both multiplication and addition.
 
-**Part (3).** By Part (2) and Congruence Relations and Quotient Structures, the addition and multiplication on $F$ are well-defined and preserve commutativity, associativity and distributivity. $0/1$ is the additive zero and $1/1$ is the multiplicative identity. The negative of $a/b$ is $\left(-a\right)/b$, because $\frac{a}{b}+\frac{-a}{b}=\frac{ab-ab}{b\cdot b}=\frac{0}{b^{2}}=\frac{0}{1}$. If $a/b\ne0/1$, then $a\ne0$ (otherwise $\left(a,b\right)\sim\left(0,1\right)$ means $a\cdot1=b\cdot0$, so $a=0$); then by Inverses in a Field its multiplicative inverse is $b/a$, since $\frac{a}{b}\cdot\frac{b}{a}=\frac{ab}{ab}=\frac{1}{1}$. Hence $F$ is a commutative unital ring in which every nonzero element is invertible. By **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**, $F$ is a field.
+Part (3). By Part (2) and Congruence Relations and Quotient Structures, the addition and multiplication on $F$ are well-defined and preserve commutativity, associativity and distributivity. $0/1$ is the additive zero and $1/1$ is the multiplicative identity. The negative of $a/b$ is $\left(-a\right)/b$, because $\frac{a}{b}+\frac{-a}{b}=\frac{ab-ab}{b\cdot b}=\frac{0}{b^{2}}=\frac{0}{1}$. If $a/b\ne0/1$, then $a\ne0$ (otherwise $\left(a,b\right)\sim\left(0,1\right)$ means $a\cdot1=b\cdot0$, so $a=0$); then by Inverses in a Field its multiplicative inverse is $b/a$, since $\frac{a}{b}\cdot\frac{b}{a}=\frac{ab}{ab}=\frac{1}{1}$. Hence $F$ is a commutative unital ring in which every nonzero element is invertible. By **Definition 2.2.20 (Integral Domain, Division Ring, and Field)**, $F$ is a field.
 
-**Part (4).** Consider the map $\iota:R\to F$, $\iota\left(a\right)=a/1$. Then
+Part (4). Consider the map $\iota:R\to F$, $\iota\left(a\right)=a/1$. Then
 
 $$
 \iota\left(a+b\right)=\frac{a+b}{1}=\frac{a}{1}+\frac{b}{1}=\iota\left(a\right)+\iota\left(b\right),
@@ -244,7 +244,7 @@ $$
 
 and $a/1=0/1$ if and only if $a\cdot1=1\cdot0$, i.e. $a=0$, so $\iota$ is a monomorphism (by **Definition 2.4.1 (Ring Homomorphism and Isomorphism)**). Hence $R$ may be identified with $\iota\left(R\right)\subseteq F$. For any $a/b\in F$, we have $a/b=\left(a/1\right)\left(b/1\right)^{-1}$, i.e. every element of $F$ can be written as a quotient of two elements of $R$ (via the embedding $\iota$); hence $F$ is a fraction field of $R$ (by the definition in the problem).
 
-**Part (5).** Inside $K$, let
+Part (5). Inside $K$, let
 
 $$
 F_2=\left\{ab^{-1}\mid a,b\in R,\;b\ne0\right\}.
@@ -264,7 +264,7 @@ Let $R=\mathbb Z\left[\sqrt{-5}\right]$.
 
 By The Norm on the Ring $\mathbb Z\left[\sqrt{-5}\right]$, define the norm on $R$ by $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$; then $N$ is multiplicative and $\xi$ is a unit if and only if $N\left(\xi\right)=1$.
 
-**Part (1).** Let $\gamma=a+b\sqrt{-5}$; then $N\left(\gamma\right)=a^{2}+5b^{2}=9\ne1$, so $\gamma$ is not a unit, i.e. $\gamma\in R^{*}\setminus U$. Suppose, toward contradiction, that $\gamma=\xi\eta$ is a nontrivial factorization (with both $\xi,\eta$ non-units). Then
+Part (1). Let $\gamma=a+b\sqrt{-5}$; then $N\left(\gamma\right)=a^{2}+5b^{2}=9\ne1$, so $\gamma$ is not a unit, i.e. $\gamma\in R^{*}\setminus U$. Suppose, toward contradiction, that $\gamma=\xi\eta$ is a nontrivial factorization (with both $\xi,\eta$ non-units). Then
 
 $$
 N\left(\xi\right)N\left(\eta\right)=N\left(\gamma\right)=9.
@@ -272,7 +272,7 @@ $$
 
 By The Norm on the Ring $\mathbb Z\left[\sqrt{-5}\right]$, $N$ takes nonnegative integer values and there is no element of norm $3$. Hence $N\left(\xi\right),N\left(\eta\right)$ can only be $1$ or $9$: if $N\left(\xi\right)=1$ then $\xi$ is a unit, and if $N\left(\xi\right)=9$ then $N\left(\eta\right)=1$, so $\eta$ is a unit. In either case, one factor of $\gamma$ is a unit, contradicting that $\gamma=\xi\eta$ is nontrivial. Hence $\gamma$ has no nontrivial divisor, so by **Definition 2.5.6 (Irreducible Element)** $\gamma$ is irreducible.
 
-**Part (2).** First factor:
+Part (2). First factor:
 
 $$
 \beta=9=\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right),
@@ -286,7 +286,7 @@ Here $N\left(3\right)=9$ and $N\left(2+\sqrt{-5}\right)=N\left(2-\sqrt{-5}\right
 
 Both $3$ and $2+\sqrt{-5}$ divide $\alpha$ and $\beta$ ($9=3\cdot3$, and $2+\sqrt{-5}$ divides both), so both are common divisors.
 
-**$2-\sqrt{-5}$ does not divide $\alpha$**: if there were $\gamma\in R$ with $\gamma\left(2-\sqrt{-5}\right)=\alpha=3\left(2+\sqrt{-5}\right)$, multiplying both sides by $2+\sqrt{-5}$ and using $\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right)=9$ gives
+$2-\sqrt{-5}$ does not divide $\alpha$: if there were $\gamma\in R$ with $\gamma\left(2-\sqrt{-5}\right)=\alpha=3\left(2+\sqrt{-5}\right)$, multiplying both sides by $2+\sqrt{-5}$ and using $\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right)=9$ gives
 
 $$
 \gamma\cdot9=3\left(2+\sqrt{-5}\right)^{2}=3\left(-1+4\sqrt{-5}\right),
@@ -294,7 +294,7 @@ $$
 
 so $\gamma=\left(-1+4\sqrt{-5}\right)/3=-\frac{1}{3}+\frac{4}{3}\sqrt{-5}\notin R$, a contradiction.
 
-**$3$ and $2+\sqrt{-5}$ do not divide each other**: $3\nmid\left(2+\sqrt{-5}\right)$ (otherwise $\left(2+\sqrt{-5}\right)/3\notin R$); and $\left(2+\sqrt{-5}\right)\nmid3$, since otherwise $3/\left(2+\sqrt{-5}\right)=\left(2-\sqrt{-5}\right)/3\notin R$.
+$3$ and $2+\sqrt{-5}$ do not divide each other: $3\nmid\left(2+\sqrt{-5}\right)$ (otherwise $\left(2+\sqrt{-5}\right)/3\notin R$); and $\left(2+\sqrt{-5}\right)\nmid3$, since otherwise $3/\left(2+\sqrt{-5}\right)=\left(2-\sqrt{-5}\right)/3\notin R$.
 
 Suppose $d$ is a greatest common divisor of $\alpha,\beta$. By **Definition 2.5.14 (Common Divisors and Greatest Common Divisors)**, every common divisor divides $d$; in particular $3\mid d$ and $\left(2+\sqrt{-5}\right)\mid d$. Also $d\mid\beta=9$, and the divisors of $9$ up to associates are only $1,3,2+\sqrt{-5},2-\sqrt{-5},9$ (by Part (1), the divisors of norm $9$ are only $3,2\pm\sqrt{-5}$, and there is no element of norm $3$). Checking each: $d=1$ is not divisible by $3$; $d=3$ is not divisible by $2+\sqrt{-5}$; $d=2+\sqrt{-5}$ is not divisible by $3$; $d=2-\sqrt{-5}$ does not divide $\alpha$ (as shown); $d=9$ does not divide $\alpha$ (otherwise $\alpha/9=\left(2+\sqrt{-5}\right)/3\notin R$). All contradict the simultaneous requirements $3\mid d$, $\left(2+\sqrt{-5}\right)\mid d$, $d\mid\alpha$.
 

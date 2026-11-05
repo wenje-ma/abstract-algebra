@@ -68,7 +68,7 @@
 
 设 $G$ 是 $n$ 阶群, 且对 $n$ 的每个因子 $d$ 都存在唯一的 $d$ 阶子群, 记为 $H_d$. 对每个 $d\mid n$, 令 $f\left(d\right)$ 为 $G$ 中阶恰为 $d$ 的元素的个数.
 
-**断言: $f\left(d\right)$ 要么为 $0$, 要么为 $\varphi\left(d\right)$.** 若 $f\left(d\right)=0$, 断言显然. 若 $f\left(d\right)> 0$, 取 $a\in G$ 使 $a$ 的阶为 $d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶子群; 由唯一性, $\left\langle a\right\rangle=H_d$, 故 $H_d$ 是 $d$ 阶循环群. 对 $G$ 中任意 $d$ 阶元 $b$, $\left\langle b\right\rangle$ 也是 $G$ 的 $d$ 阶子群, 由唯一性 $\left\langle b\right\rangle=H_d$, 故 $b$ 是 $d$ 阶循环群 $H_d$ 的生成元. 由循环群的生成元个数, $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元, 故 $f\left(d\right)=\varphi\left(d\right)$. 断言得证.
+断言: $f\left(d\right)$ 要么为 $0$, 要么为 $\varphi\left(d\right)$. 若 $f\left(d\right)=0$, 断言显然. 若 $f\left(d\right)> 0$, 取 $a\in G$ 使 $a$ 的阶为 $d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶子群; 由唯一性, $\left\langle a\right\rangle=H_d$, 故 $H_d$ 是 $d$ 阶循环群. 对 $G$ 中任意 $d$ 阶元 $b$, $\left\langle b\right\rangle$ 也是 $G$ 的 $d$ 阶子群, 由唯一性 $\left\langle b\right\rangle=H_d$, 故 $b$ 是 $d$ 阶循环群 $H_d$ 的生成元. 由循环群的生成元个数, $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元, 故 $f\left(d\right)=\varphi\left(d\right)$. 断言得证.
 
 于是对每个 $d\mid n$, 有 $f\left(d\right)\le\varphi\left(d\right)$.
 
@@ -96,7 +96,7 @@ $$
 
 设 $\left|G\right|=n$. 由题设, 对每个正整数 $d$, $G$ 中至多有一个 $d$ 阶子群 (若有两个 $d$ 阶子群, 则其阶相同, 与题设矛盾). 对每个 $d\mid n$, 令 $f\left(d\right)$ 为 $G$ 中阶恰为 $d$ 的元素的个数.
 
-**断言: 对每个 $d\mid n$, $f\left(d\right)\le\varphi\left(d\right)$.** 若 $f\left(d\right)=0$, 断言显然. 若 $f\left(d\right)> 0$, 取 $a\in G$ 使 $a$ 的阶为 $d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶循环子群. 由题设, $G$ 中至多有一个 $d$ 阶子群, 故 $G$ 中任意 $d$ 阶元 $b$ 都满足 $\left\langle b\right\rangle=\left\langle a\right\rangle$, 即 $b$ 是 $d$ 阶循环群 $\left\langle a\right\rangle$ 的生成元. 由循环群的生成元个数, $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元, 故 $f\left(d\right)=\varphi\left(d\right)\le\varphi\left(d\right)$. 断言得证.
+断言: 对每个 $d\mid n$, $f\left(d\right)\le\varphi\left(d\right)$. 若 $f\left(d\right)=0$, 断言显然. 若 $f\left(d\right)> 0$, 取 $a\in G$ 使 $a$ 的阶为 $d$, 则 $\left\langle a\right\rangle$ 是 $G$ 的 $d$ 阶循环子群. 由题设, $G$ 中至多有一个 $d$ 阶子群, 故 $G$ 中任意 $d$ 阶元 $b$ 都满足 $\left\langle b\right\rangle=\left\langle a\right\rangle$, 即 $b$ 是 $d$ 阶循环群 $\left\langle a\right\rangle$ 的生成元. 由循环群的生成元个数, $d$ 阶循环群中恰有 $\varphi\left(d\right)$ 个生成元, 故 $f\left(d\right)=\varphi\left(d\right)\le\varphi\left(d\right)$. 断言得证.
 
 由**定理 1.2.22 (拉格朗日定理)**, $G$ 中每个元素的阶都整除 $n$, 故 $G$ 中每个元素都恰好落入某个 $d\mid n$ 的计数 $f\left(d\right)$ 中, 即
 
@@ -124,9 +124,9 @@ $$
 
 ### 解答 1.6-5
 
-**第一部分: 证明 $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.** 由**命题 1.6.8**, $S_n$ 由所有对换生成. 对任意对换 $\left(ij\right)$, 其中 $i\ne1$, $j\ne1$, 由轮换的共轭, 取 $\sigma=\left(1i\right)$, 有 $\left(1i\right)\left(1j\right)\left(1i\right)=\left(\sigma\left(1\right)\sigma\left(j\right)\right)=\left(i,j\right)=\left(ij\right)$. 故任意对换 $\left(ij\right)$ 都可由 $\left(12\right),\left(13\right),\cdots,\left(1n\right)$ 表出, 因此 $S_n\subseteq\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$; 反向包含显然, 故 $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.
+第一部分: 证明 $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$. 由**命题 1.6.8**, $S_n$ 由所有对换生成. 对任意对换 $\left(ij\right)$, 其中 $i\ne1$, $j\ne1$, 由轮换的共轭, 取 $\sigma=\left(1i\right)$, 有 $\left(1i\right)\left(1j\right)\left(1i\right)=\left(\sigma\left(1\right)\sigma\left(j\right)\right)=\left(i,j\right)=\left(ij\right)$. 故任意对换 $\left(ij\right)$ 都可由 $\left(12\right),\left(13\right),\cdots,\left(1n\right)$ 表出, 因此 $S_n\subseteq\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$; 反向包含显然, 故 $S_n=\left\langle\left(12\right),\left(13\right),\cdots,\left(1n\right)\right\rangle$.
 
-**第二部分: 证明 $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.** 记 $\sigma=\left(12\cdots n\right)$. 由轮换的共轭, 对 $k=1,2,\cdots,n-1$,
+第二部分: 证明 $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$. 记 $\sigma=\left(12\cdots n\right)$. 由轮换的共轭, 对 $k=1,2,\cdots,n-1$,
 
 $$
 \sigma^{k-1}\left(12\right)\sigma^{-\left(k-1\right)}=\left(\sigma^{k-1}\left(1\right)\sigma^{k-1}\left(2\right)\right)=\left(k,k+1\right),
@@ -134,7 +134,7 @@ $$
 
 故相邻对换 $\left(12\right),\left(23\right),\cdots,\left(n-1,n\right)$ 均属于 $\left\langle\left(12\right),\sigma\right\rangle$. 而相邻对换生成 $S_n$ (由**命题 1.6.8**, 任何对换 $\left(ij\right)$ 可表为相邻对换之积), 故 $S_n\subseteq\left\langle\left(12\right),\sigma\right\rangle$; 反向包含显然, 故 $S_n=\left\langle\left(12\right),\left(12\cdots n\right)\right\rangle$.
 
-**第三部分: 证明 $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.** 由交错群由 3-轮换生成, $A_n$ 由所有 3-轮换生成. 下面证明任意 3-轮换都属于 $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.
+第三部分: 证明 $A_n=\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$. 由交错群由 3-轮换生成, $A_n$ 由所有 3-轮换生成. 下面证明任意 3-轮换都属于 $\left\langle\left(123\right),\left(124\right),\cdots,\left(12n\right)\right\rangle$.
 
 (1) 含 $1$ 和 $2$ 的 3-轮换即为 $\left(12k\right)$ 或其逆, 已在生成集中.
 
@@ -152,7 +152,7 @@ $$
 
 设 $N\triangleleft S_n$, $N\ne\left\{e\right\}$, $N\ne S_n$.
 
-**情形 $n\ge5$.** 由**定理 1.6.9 (交错群的单性)**, $A_n$ 是单群. 因 $N\triangleleft S_n$ 且 $A_n\triangleleft S_n$ (由偶置换与奇置换, 交错群), 交 $N\cap A_n\triangleleft A_n$, 故由 $A_n$ 的单性, $N\cap A_n=\left\{e\right\}$ 或 $A_n$.
+情形 $n\ge5$. 由**定理 1.6.9 (交错群的单性)**, $A_n$ 是单群. 因 $N\triangleleft S_n$ 且 $A_n\triangleleft S_n$ (由偶置换与奇置换, 交错群), 交 $N\cap A_n\triangleleft A_n$, 故由 $A_n$ 的单性, $N\cap A_n=\left\{e\right\}$ 或 $A_n$.
 
 若 $N\cap A_n=A_n$, 则 $A_n\subseteq N$. 因 $\left|A_n\right|=\frac{n!}{2}$, $A_n$ 在 $S_n$ 中的指数为 $2$ (偶置换与奇置换, 交错群), 故包含 $A_n$ 的子群只能是 $A_n$ 或 $S_n$; 而 $N\ne S_n$, 故 $N=A_n$.
 
@@ -160,11 +160,11 @@ $$
 
 因此 $n\ge5$ 时, $S_n$ 的非平凡正规子群只有 $A_n$.
 
-**情形 $n=4$.** $\left|S_4\right|=24$, $\left|A_4\right|=12$, $A_4\triangleleft S_4$. 由$S_4$ 的共轭类, $S_4$ 的共轭类大小分别为 $1,6,3,8,6$; 由正规子群是共轭类的并及**定理 1.2.22 (拉格朗日定理)**, 正规子群的阶必为若干共轭类大小之和且整除 $24$, 可能的阶为 $1,4,12,24$, 对应正规子群 $\left\{e\right\}$, $K_4$, $A_4$, $S_4$. 故非平凡正规子群为 $A_4$ 与 $K_4$.
+情形 $n=4$. $\left|S_4\right|=24$, $\left|A_4\right|=12$, $A_4\triangleleft S_4$. 由$S_4$ 的共轭类, $S_4$ 的共轭类大小分别为 $1,6,3,8,6$; 由正规子群是共轭类的并及**定理 1.2.22 (拉格朗日定理)**, 正规子群的阶必为若干共轭类大小之和且整除 $24$, 可能的阶为 $1,4,12,24$, 对应正规子群 $\left\{e\right\}$, $K_4$, $A_4$, $S_4$. 故非平凡正规子群为 $A_4$ 与 $K_4$.
 
-**情形 $n=3$.** $\left|S_3\right|=6$, $\left|A_3\right|=3$, $A_3\triangleleft S_3$ 且指数为 $2$. 由正规子群是共轭类的并, $S_3$ 的共轭类大小分别为 $1,3,2$, 可能组成正规子群的阶为 $1,3,6$, 故正规子群为 $\left\{e\right\},A_3,S_3$, 非平凡者为 $A_3$.
+情形 $n=3$. $\left|S_3\right|=6$, $\left|A_3\right|=3$, $A_3\triangleleft S_3$ 且指数为 $2$. 由正规子群是共轭类的并, $S_3$ 的共轭类大小分别为 $1,3,2$, 可能组成正规子群的阶为 $1,3,6$, 故正规子群为 $\left\{e\right\},A_3,S_3$, 非平凡者为 $A_3$.
 
-**情形 $n\le2$.** $S_n$ 无非平凡正规子群.
+情形 $n\le2$. $S_n$ 无非平凡正规子群.
 
 综上, $S_n$ 的非平凡正规子群为 $A_n$ (对所有 $n\ge3$), 以及 $n=4$ 时的 $K_4$. $\blacksquare$
 
@@ -174,8 +174,8 @@ $$
 
 ### 解答 1.6-11
 
-**第一步: 构造群同态 $\psi:G\to\left\{1,-1\right\}$.** 由**定理 1.4.10 (凯莱定理)**, 左正则表示 $\lambda:G\to S_G$, $g\mapsto L_g$ (其中 $L_g\left(x\right)=gx$) 是单同态; 视 $S_G$ 为 $S_{2n}$ (因 $\left|G\right|=2n$). 由**例 1.4.17** 及符号同态, 符号同态 $\mathrm{sgn}:S_{2n}\to\left\{1,-1\right\}$ 是群同态. 复合得 $\psi=\mathrm{sgn}\circ\lambda:G\to\left\{1,-1\right\}$ 是群同态.
+第一步: 构造群同态 $\psi:G\to\left\{1,-1\right\}$. 由**定理 1.4.10 (凯莱定理)**, 左正则表示 $\lambda:G\to S_G$, $g\mapsto L_g$ (其中 $L_g\left(x\right)=gx$) 是单同态; 视 $S_G$ 为 $S_{2n}$ (因 $\left|G\right|=2n$). 由**例 1.4.17** 及符号同态, 符号同态 $\mathrm{sgn}:S_{2n}\to\left\{1,-1\right\}$ 是群同态. 复合得 $\psi=\mathrm{sgn}\circ\lambda:G\to\left\{1,-1\right\}$ 是群同态.
 
-**第二步: 证明 $\psi$ 是满射.** 由偶数阶群有二阶元, $G$ 中存在二阶元 $a$ (因 $\left|G\right|=2n$ 为偶数). 则 $\lambda\left(a\right)=L_a$, 且对任意 $x\in G$, $L_a^2\left(x\right)=a^2x=x$, 故 $L_a$ 是对合; 又 $a\ne e$, 若 $L_a\left(x\right)=x$ 即 $ax=x$, 则 $a=e$, 矛盾, 故 $L_a$ 无不动点. 因此 $L_a$ 是 $G$ (共 $2n$ 个文字) 上的 $n$ 个不相交对换之积, 由符号同态, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (因 $n$ 为奇数). 故 $\psi\left(a\right)=-1$, 而 $\psi\left(e\right)=1$, 于是 $\psi:G\to\left\{1,-1\right\}$ 是满同态.
+第二步: 证明 $\psi$ 是满射. 由偶数阶群有二阶元, $G$ 中存在二阶元 $a$ (因 $\left|G\right|=2n$ 为偶数). 则 $\lambda\left(a\right)=L_a$, 且对任意 $x\in G$, $L_a^2\left(x\right)=a^2x=x$, 故 $L_a$ 是对合; 又 $a\ne e$, 若 $L_a\left(x\right)=x$ 即 $ax=x$, 则 $a=e$, 矛盾, 故 $L_a$ 无不动点. 因此 $L_a$ 是 $G$ (共 $2n$ 个文字) 上的 $n$ 个不相交对换之积, 由符号同态, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (因 $n$ 为奇数). 故 $\psi\left(a\right)=-1$, 而 $\psi\left(e\right)=1$, 于是 $\psi:G\to\left\{1,-1\right\}$ 是满同态.
 
-**第三步: 取核得指数为 $2$ 的正规子群.** 令 $H=\ker\psi$. 由**引理 1.4.13**, $H\triangleleft G$. 由**定理 1.4.19 (群的同态基本定理)**, $G/H\cong\left\{1,-1\right\}$, 故 $\left|G/H\right|=2$, 即 $\left[G:H\right]=2$. 因此 $G$ 有指数为 $2$ 的正规子群 $H$. $\blacksquare$
+第三步: 取核得指数为 $2$ 的正规子群. 令 $H=\ker\psi$. 由**引理 1.4.13**, $H\triangleleft G$. 由**定理 1.4.19 (群的同态基本定理)**, $G/H\cong\left\{1,-1\right\}$, 故 $\left|G/H\right|=2$, 即 $\left[G:H\right]=2$. 因此 $G$ 有指数为 $2$ 的正规子群 $H$. $\blacksquare$

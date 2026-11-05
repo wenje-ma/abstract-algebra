@@ -32,7 +32,7 @@ Let $a,b$ be elements of orders $m,n$ respectively in a group $G$, with $ab=ba$.
 
 ### Solution to 1.2-8
 
-**(1) Prove that the order of $ab$ is $mn$.** By Distribution of Powers in Commutative Groups, since $ab=ba$, we have $\left(ab\right)^{k}=a^{k}b^{k}$ for every integer $k$. Hence
+(1) Prove that the order of $ab$ is $mn$. By Distribution of Powers in Commutative Groups, since $ab=ba$, we have $\left(ab\right)^{k}=a^{k}b^{k}$ for every integer $k$. Hence
 
 $$
 \left(ab\right)^{mn}=a^{mn}b^{mn}=\left(a^{m}\right)^{n}\left(b^{n}\right)^{m}=e,
@@ -44,13 +44,13 @@ Conversely, suppose $\left(ab\right)^{k}=e$. Then by $\left(ab\right)^{k}=a^{k}b
 
 In summary, the order of $ab$ divides $mn$ and $mn$ divides the order of $ab$; hence the order of $ab$ is $mn$.
 
-**(2) Prove that the order of $ab$ is $\left[m,n\right]$.** Write $d=\left[m,n\right]$. By Distribution of Powers in Commutative Groups, $\left(ab\right)^{d}=a^{d}b^{d}$. Since $m\mid d$ and $n\mid d$, we have $a^{d}=\left(a^{m}\right)^{\frac{d}{m}}=e$ and $b^{d}=\left(b^{n}\right)^{\frac{d}{n}}=e$, so $\left(ab\right)^{d}=e$; by Order of an Element and Generated Subgroup, the order of $ab$ divides $d$.
+(2) Prove that the order of $ab$ is $\left[m,n\right]$. Write $d=\left[m,n\right]$. By Distribution of Powers in Commutative Groups, $\left(ab\right)^{d}=a^{d}b^{d}$. Since $m\mid d$ and $n\mid d$, we have $a^{d}=\left(a^{m}\right)^{\frac{d}{m}}=e$ and $b^{d}=\left(b^{n}\right)^{\frac{d}{n}}=e$, so $\left(ab\right)^{d}=e$; by Order of an Element and Generated Subgroup, the order of $ab$ divides $d$.
 
 Conversely, suppose $\left(ab\right)^{k}=e$. Then by $\left(ab\right)^{k}=a^{k}b^{k}$ we get $a^{k}=b^{-k}$. Since $b^{-k}\in\left\langle b\right\rangle$ and $a^{k}\in\left\langle a\right\rangle$, we have $a^{k}\in\left\langle a\right\rangle\cap\left\langle b\right\rangle=\left\{e\right\}$, i.e. $a^{k}=e$, hence $b^{k}=e$. By Order of an Element and Generated Subgroup, $m\mid k$ and $n\mid k$, and by Greatest Common Divisor and Least Common Multiple, $\left[m,n\right]\mid k$.
 
 In summary, the order of $ab$ divides $d$ and $d$ divides the order of $ab$; hence the order of $ab$ is $\left[m,n\right]$.
 
-**(3) Discuss the order of $ab$.** When $\left\langle a\right\rangle\cap\left\langle b\right\rangle\ne\left\{e\right\}$, the argument of (2) shows that the order of $ab$ still divides $\left[m,n\right]$, but may be strictly smaller than $\left[m,n\right]$.
+(3) Discuss the order of $ab$. When $\left\langle a\right\rangle\cap\left\langle b\right\rangle\ne\left\{e\right\}$, the argument of (2) shows that the order of $ab$ still divides $\left[m,n\right]$, but may be strictly smaller than $\left[m,n\right]$.
 
 Example: take $G=\mathbb Z_4\times\mathbb Z_4$, $a=\left(1,0\right)$, $b=\left(1,2\right)$. Then both $a,b$ have order $4$, and
 
@@ -72,15 +72,15 @@ Let $SL\left(n,\mathbb Z\right)$ be the set of all $n\times n$ matrices whose en
 
 ### Solution to 1.2-13
 
-**(1) Prove that $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.** The identity matrix $I_n$ has integer entries and $\left|I_n\right|=1$, so $SL\left(n,\mathbb Z\right)$ is nonempty. For any $A,B\in SL\left(n,\mathbb Z\right)$, $B$ has integer entries and $\left|B\right|=1$, so by Adjugate Matrices and Determinants of Integer Matrices, all entries of $B^{-1}$ are integers, hence all entries of $AB^{-1}$ are integers. Moreover, by Adjugate Matrices and Determinants of Integer Matrices, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. Hence $AB^{-1}\in SL\left(n,\mathbb Z\right)$. By **Theorem 1.2.2 (Subgroup Criterion)** (condition (3)), $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
+(1) Prove that $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$. The identity matrix $I_n$ has integer entries and $\left|I_n\right|=1$, so $SL\left(n,\mathbb Z\right)$ is nonempty. For any $A,B\in SL\left(n,\mathbb Z\right)$, $B$ has integer entries and $\left|B\right|=1$, so by Adjugate Matrices and Determinants of Integer Matrices, all entries of $B^{-1}$ are integers, hence all entries of $AB^{-1}$ are integers. Moreover, by Adjugate Matrices and Determinants of Integer Matrices, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. Hence $AB^{-1}\in SL\left(n,\mathbb Z\right)$. By **Theorem 1.2.2 (Subgroup Criterion)** (condition (3)), $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
 
-**(2) Prove that any two of $S,T,R,U$ generate $SL\left(2,\mathbb Z\right)$.** First verify $S,T,R,U\in SL\left(2,\mathbb Z\right)$: all entries of each matrix are integers, and direct computation gives $\left|S\right|=\left|T\right|=\left|R\right|=\left|U\right|=1$.
+(2) Prove that any two of $S,T,R,U$ generate $SL\left(2,\mathbb Z\right)$. First verify $S,T,R,U\in SL\left(2,\mathbb Z\right)$: all entries of each matrix are integers, and direct computation gives $\left|S\right|=\left|T\right|=\left|R\right|=\left|U\right|=1$.
 
-**First prove $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.** For any $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\in SL\left(2,\mathbb Z\right)$, by Elementary Row Operations and the Euclidean Algorithm, repeatedly multiplying on the left by $T^{k}$ and $U^{k}$ (i.e. the two kinds of elementary row operations) together with the Euclidean algorithm reduces $A$ to a diagonal matrix; since $\left|A\right|=1$ and elementary row operations do not change the absolute value of the determinant, the diagonal entries of the resulting diagonal matrix are $\pm1$ with product $\pm1$. Since $S^{2}=-I$ expresses $-I$, $A$ can be reduced to the identity $I$ using $S,T$. Conversely, $S,T\in SL\left(2,\mathbb Z\right)$, so $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
+First prove $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$. For any $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\in SL\left(2,\mathbb Z\right)$, by Elementary Row Operations and the Euclidean Algorithm, repeatedly multiplying on the left by $T^{k}$ and $U^{k}$ (i.e. the two kinds of elementary row operations) together with the Euclidean algorithm reduces $A$ to a diagonal matrix; since $\left|A\right|=1$ and elementary row operations do not change the absolute value of the determinant, the diagonal entries of the resulting diagonal matrix are $\pm1$ with product $\pm1$. Since $S^{2}=-I$ expresses $-I$, $A$ can be reduced to the identity $I$ using $S,T$. Conversely, $S,T\in SL\left(2,\mathbb Z\right)$, so $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 We now prove that the subgroup generated by each of the remaining pairs equals $\left\langle S,T\right\rangle$.
 
-**$\left\langle S,R\right\rangle$ and $\left\langle T,R\right\rangle$.** Direct computation gives
+$\left\langle S,R\right\rangle$ and $\left\langle T,R\right\rangle$. Direct computation gives
 
 $$
 ST=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}=\begin{bmatrix}0&-1\\1&1\end{bmatrix}=R.
@@ -88,7 +88,7 @@ $$
 
 Hence $R=ST$, so $R\in\left\langle S,T\right\rangle$, and $T=S^{-1}R\in\left\langle S,R\right\rangle$, $S=RT^{-1}\in\left\langle T,R\right\rangle$. Thus $\left\langle S,R\right\rangle\supseteq\left\langle S,T\right\rangle$ and $\left\langle T,R\right\rangle\supseteq\left\langle S,T\right\rangle$; since $S,T$ appear in the expressions in terms of $S,R$ (or $T,R$), the reverse inclusions are obvious, so $\left\langle S,R\right\rangle=\left\langle T,R\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
-**$\left\langle S,U\right\rangle$.** Compute $S^{-1}TS$:
+$\left\langle S,U\right\rangle$. Compute $S^{-1}TS$:
 
 $$
 S^{-1}TS=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}=\begin{bmatrix}1&0\\-1&1\end{bmatrix}=U^{-1}.
@@ -96,9 +96,9 @@ $$
 
 Hence $T=SU^{-1}S^{-1}\in\left\langle S,U\right\rangle$, so $\left\langle S,U\right\rangle\supseteq\left\langle S,T\right\rangle$. Also $U=S^{-1}T^{-1}S\in\left\langle S,T\right\rangle$, so $\left\langle S,U\right\rangle\subseteq\left\langle S,T\right\rangle$. Therefore $\left\langle S,U\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
-**$\left\langle T,U\right\rangle$.** $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$ and $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$ are precisely the two kinds of elementary transformation matrices in Elementary Row Operations and the Euclidean Algorithm; by the Euclidean algorithm, using only these two kinds of elementary row operations reduces any element of $SL\left(2,\mathbb Z\right)$ to $\pm I$, so $\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$.
+$\left\langle T,U\right\rangle$. $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$ and $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$ are precisely the two kinds of elementary transformation matrices in Elementary Row Operations and the Euclidean Algorithm; by the Euclidean algorithm, using only these two kinds of elementary row operations reduces any element of $SL\left(2,\mathbb Z\right)$ to $\pm I$, so $\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$.
 
-**$\left\langle R,U\right\rangle$.** From $R=ST$ we get $T=S^{-1}R$, and $U^{-1}=S^{-1}TS$; substituting gives
+$\left\langle R,U\right\rangle$. From $R=ST$ we get $T=S^{-1}R$, and $U^{-1}=S^{-1}TS$; substituting gives
 
 $$
 U^{-1}=S^{-1}\left(S^{-1}R\right)S=S^{-2}RS.

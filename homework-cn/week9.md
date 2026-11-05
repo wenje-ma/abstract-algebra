@@ -48,9 +48,9 @@ $$
 
 对乘法封闭 ($\omega^{2}=\omega-1\in R$).
 
-**第 (1) 部分.** $R\subseteq\mathbb C$. $R$ 对加法封闭 (逐分量相加), 对乘法封闭, 含幺元 $1$. 由于 $\mathbb C$ 无零因子, 故 $R$ 是无零因子的交换幺环, 从而是整环.
+第 (1) 部分. $R\subseteq\mathbb C$. $R$ 对加法封闭 (逐分量相加), 对乘法封闭, 含幺元 $1$. 由于 $\mathbb C$ 无零因子, 故 $R$ 是无零因子的交换幺环, 从而是整环.
 
-**第 (2) 部分.** 由代数整数环 $\mathbb Z\left[\omega\right]$ 的范数, 定义
+第 (2) 部分. 由代数整数环 $\mathbb Z\left[\omega\right]$ 的范数, 定义
 
 $$
 N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2},
@@ -70,7 +70,7 @@ $$
 
 对应元素为 $\pm1$, $\pm\omega$, $\pm\left(1-\omega\right)$. 因 $\omega=\frac{1+\sqrt{-3}}{2}$, $1-\omega=\frac{1-\sqrt{-3}}{2}$, 故 $R$ 的全部单位为 $\pm1$ 及 $\frac{\pm1\pm\sqrt{-3}}{2}$.
 
-**第 (3) 部分.** 因 $1+\sqrt{-3}=2\omega$, 而 $\omega$ 是单位 ($N\left(\omega\right)=1$), 即 $1+\sqrt{-3}=2\cdot\omega$ 且 $\omega$ 为单位, 由**定义 2.5.2 (相伴)**, $2$ 与 $1+\sqrt{-3}$ 相伴. $\blacksquare$
+第 (3) 部分. 因 $1+\sqrt{-3}=2\omega$, 而 $\omega$ 是单位 ($N\left(\omega\right)=1$), 即 $1+\sqrt{-3}=2\cdot\omega$ 且 $\omega$ 为单位, 由**定义 2.5.2 (相伴)**, $2$ 与 $1+\sqrt{-3}$ 相伴. $\blacksquare$
 
 ## 2.5-15
 
@@ -98,9 +98,9 @@ $$
 
 设 $p\in R^{*}\setminus U$ (若 $p$ 为零元或单位, 结论平凡, 不作讨论).
 
-**必要性**: 设 $p$ 为不可约元素. 因 $R$ 是唯一分解整环, 由**定理 2.5.15 (唯一分解整环的等价条件)**, $p$ 是素元素, 即 $p\mid ab$ 可推出 $p\mid a$ 或 $p\mid b$. 由主理想与整除, $ab\in\left(p\right)$ 等价于 $p\mid ab$, $a\in\left(p\right)$ 等价于 $p\mid a$, $b\in\left(p\right)$ 等价于 $p\mid b$. 故 $ab\in\left(p\right)$ 可推出 $a\in\left(p\right)$ 或 $b\in\left(p\right)$. 又 $p$ 非单位, 由主理想与整除, $1\notin\left(p\right)$ (否则 $p\mid1$, $p$ 为单位), 故 $\left(p\right)\ne R$. 由**定义 2.6.1 (素理想)**, $\left(p\right)$ 是素理想.
+必要性: 设 $p$ 为不可约元素. 因 $R$ 是唯一分解整环, 由**定理 2.5.15 (唯一分解整环的等价条件)**, $p$ 是素元素, 即 $p\mid ab$ 可推出 $p\mid a$ 或 $p\mid b$. 由主理想与整除, $ab\in\left(p\right)$ 等价于 $p\mid ab$, $a\in\left(p\right)$ 等价于 $p\mid a$, $b\in\left(p\right)$ 等价于 $p\mid b$. 故 $ab\in\left(p\right)$ 可推出 $a\in\left(p\right)$ 或 $b\in\left(p\right)$. 又 $p$ 非单位, 由主理想与整除, $1\notin\left(p\right)$ (否则 $p\mid1$, $p$ 为单位), 故 $\left(p\right)\ne R$. 由**定义 2.6.1 (素理想)**, $\left(p\right)$ 是素理想.
 
-**充分性**: 设 $\left(p\right)$ 为素理想. 反设 $p$ 可约, 即存在 $a,b\in R$, 二者均非单位, 使 $p=ab$. 因 $ab=p\in\left(p\right)$, 由**定义 2.6.1 (素理想)**, $a\in\left(p\right)$ 或 $b\in\left(p\right)$. 若 $a\in\left(p\right)$, 由主理想与整除, 存在 $r\in R$ 使 $a=pr$; 于是 $p=ab=prb$. 因 $p\ne0$ (由 $p\in R^{*}$) 且 $R$ 为整环, 由整环的消去律 消去 $p$, 得 $1=rb$, 故 $b$ 为单位, 与 $b$ 非单位矛盾. 若 $b\in\left(p\right)$, 同理存在 $r\in R$ 使 $b=pr$, 于是 $p=ab=ap r$, 消去 $p$ 得 $1=ar$, 故 $a$ 为单位, 亦矛盾.
+充分性: 设 $\left(p\right)$ 为素理想. 反设 $p$ 可约, 即存在 $a,b\in R$, 二者均非单位, 使 $p=ab$. 因 $ab=p\in\left(p\right)$, 由**定义 2.6.1 (素理想)**, $a\in\left(p\right)$ 或 $b\in\left(p\right)$. 若 $a\in\left(p\right)$, 由主理想与整除, 存在 $r\in R$ 使 $a=pr$; 于是 $p=ab=prb$. 因 $p\ne0$ (由 $p\in R^{*}$) 且 $R$ 为整环, 由整环的消去律 消去 $p$, 得 $1=rb$, 故 $b$ 为单位, 与 $b$ 非单位矛盾. 若 $b\in\left(p\right)$, 同理存在 $r\in R$ 使 $b=pr$, 于是 $p=ab=ap r$, 消去 $p$ 得 $1=ar$, 故 $a$ 为单位, 亦矛盾.
 
 故 $p$ 为不可约元素. $\blacksquare$
 
@@ -202,13 +202,13 @@ $$
 a^{2}+ab+5b^{2}=\left(a+\frac{b}{2}\right)^{2}+\frac{19}{4}b^{2}\ge\frac{19}{4}> 4.
 $$
 
-**第 (1) 部分.** 若 $\alpha=a+b\omega$ 为单位, 由代数整数环的范数, $N\left(\alpha\right)=1$. 若 $b\ne0$, 由上式 $N\left(\alpha\right)\ge\frac{19}{4}> 1$, 矛盾. 故 $b=0$, $a^{2}=1$, $a=\pm1$. 即 $R$ 的单位只有 $1$ 和 $-1$.
+第 (1) 部分. 若 $\alpha=a+b\omega$ 为单位, 由代数整数环的范数, $N\left(\alpha\right)=1$. 若 $b\ne0$, 由上式 $N\left(\alpha\right)\ge\frac{19}{4}> 1$, 矛盾. 故 $b=0$, $a^{2}=1$, $a=\pm1$. 即 $R$ 的单位只有 $1$ 和 $-1$.
 
-**第 (2) 部分.** 先证 $2$ 不可约. 若 $2=\alpha\beta$ 为非平凡分解, 则 $\alpha,\beta$ 均非单位, $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$, 且由代数整数环的范数 $N\left(\alpha\right),N\left(\beta\right)> 1$, 故 $N\left(\alpha\right)=2$. 但 $a^{2}+ab+5b^{2}=2$ 无整数解: $b=0$ 时 $a^{2}=2$ 无解; $\left|b\right|\ge1$ 时左边 $\ge\frac{19}{4}> 2$. 矛盾, 故 $2$ 不可约.
+第 (2) 部分. 先证 $2$ 不可约. 若 $2=\alpha\beta$ 为非平凡分解, 则 $\alpha,\beta$ 均非单位, $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$, 且由代数整数环的范数 $N\left(\alpha\right),N\left(\beta\right)> 1$, 故 $N\left(\alpha\right)=2$. 但 $a^{2}+ab+5b^{2}=2$ 无整数解: $b=0$ 时 $a^{2}=2$ 无解; $\left|b\right|\ge1$ 时左边 $\ge\frac{19}{4}> 2$. 矛盾, 故 $2$ 不可约.
 
 同理, 若 $3=\alpha\beta$ 为非平凡分解, 则 $N\left(\alpha\right)=3$, 而 $a^{2}+ab+5b^{2}=3$ 亦无整数解 (论证同上). 故 $3$ 不可约.
 
-**第 (3) 部分.** 反证. 设 $\left(R,\delta\right)$ 为欧几里得环, 取 $m\in R\setminus\left\{0,\pm1\right\}$ 使 $\delta\left(m\right)$ 最小. 对 $a=2$, $b=m$ 作带余除法: $2=qm+r$, 由 $m$ 的最小性得 $r\in\left\{0,\pm1\right\}$, 故 $qm\in\left\{1,2,3\right\}$. 取范数得 $N\left(q\right)N\left(m\right)\in\left\{1,4,9\right\}$.
+第 (3) 部分. 反证. 设 $\left(R,\delta\right)$ 为欧几里得环, 取 $m\in R\setminus\left\{0,\pm1\right\}$ 使 $\delta\left(m\right)$ 最小. 对 $a=2$, $b=m$ 作带余除法: $2=qm+r$, 由 $m$ 的最小性得 $r\in\left\{0,\pm1\right\}$, 故 $qm\in\left\{1,2,3\right\}$. 取范数得 $N\left(q\right)N\left(m\right)\in\left\{1,4,9\right\}$.
 
 由第 (1) 部分的估计, $R$ 中大于 $1$ 的最小范数为 $4$ (对应 $\pm2$), 次小者为 $5$ (对应 $\omega$ 等, 因 $N\left(\omega\right)=5$). 因 $5$ 不整除 $1,4,9$ 中任何一个, $N\left(m\right)$ 只能为 $4$ 或 $9$, 且 $N\left(q\right)=1$. 故 $q=\pm1$, $m=\pm2$ 或 $m=\pm3$.
 
@@ -220,13 +220,13 @@ $$
 
 比较 $\omega$ 的系数得 $2b'=1$, $b'=\frac12\notin\mathbb Z$, 矛盾. 若 $m=\pm3$, 同理比较 $\omega$ 的系数得 $3b'=1$, $b'=\frac13\notin\mathbb Z$, 矛盾. 故 $R$ 不是欧几里得环.
 
-**第 (4) 部分.** 任取非零理想 $I$, 按复数模长取 $b\in I$ 使 $\left|b\right|$ 最小. 对任意 $a\in I$, 令
+第 (4) 部分. 任取非零理想 $I$, 按复数模长取 $b\in I$ 使 $\left|b\right|$ 最小. 对任意 $a\in I$, 令
 
 $$
 z=\frac{a}{b}=x+y\omega\in\mathbb Q\left(\sqrt{-19}\right).
 $$
 
-**第 (5) 部分.** 若 $y$ 远离 $\frac12$ (即 $\left|v\right|\le\frac{2}{\sqrt{19}}$, 其中 $v$ 为 $y$ 到最近整数的偏差), 由二次型的界, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ 关于 $u$ 的最小值在 $u=-\frac v2$ 处取得. 取整数 $m$ 为 $x+\frac v2$ 的最近整数, 整数 $n$ 为 $y$ 的最近整数, 令 $q=m+n\omega$, 则 $\left|u+\frac v2\right|\le\frac12$ 且
+第 (5) 部分. 若 $y$ 远离 $\frac12$ (即 $\left|v\right|\le\frac{2}{\sqrt{19}}$, 其中 $v$ 为 $y$ 到最近整数的偏差), 由二次型的界, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ 关于 $u$ 的最小值在 $u=-\frac v2$ 处取得. 取整数 $m$ 为 $x+\frac v2$ 的最近整数, 整数 $n$ 为 $y$ 的最近整数, 令 $q=m+n\omega$, 则 $\left|u+\frac v2\right|\le\frac12$ 且
 
 $$
 N\left(z-q\right)=N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}\le\frac14+\frac{19}{4}\cdot\frac{4}{19}=\frac54.
@@ -238,7 +238,7 @@ $$
 N\left(z-q\right)< 1.
 $$
 
-**第 (6) 部分.** 若上述直接选取不能使 $N\left(z-q\right)< 1$, 则 $\left|v\right|$ 必接近 $\frac12$ (从而 $\frac{19}{4}v^{2}> 1$ 且 $v$ 接近 $\pm\frac12$). 此时考虑 $2z=\frac{2a}{b}=2x+2y\omega$, 其 $\omega$-坐标为 $2y$. 因 $y$ 接近 $\frac12$, $2y$ 接近 $1$, 故 $2y$ 到最近整数的偏差 $\left|v'\right|\le\frac14< \frac{2}{\sqrt{19}}$, 由第 (5) 部分存在 $q'\in R$ 使
+第 (6) 部分. 若上述直接选取不能使 $N\left(z-q\right)< 1$, 则 $\left|v\right|$ 必接近 $\frac12$ (从而 $\frac{19}{4}v^{2}> 1$ 且 $v$ 接近 $\pm\frac12$). 此时考虑 $2z=\frac{2a}{b}=2x+2y\omega$, 其 $\omega$-坐标为 $2y$. 因 $y$ 接近 $\frac12$, $2y$ 接近 $1$, 故 $2y$ 到最近整数的偏差 $\left|v'\right|\le\frac14< \frac{2}{\sqrt{19}}$, 由第 (5) 部分存在 $q'\in R$ 使
 
 $$
 N\left(2z-q'\right)< 1,
@@ -248,4 +248,4 @@ $$
 
 此时再对 $a$ 作处理: 因 $2a=q'b$ 且 $a\in I$, 由第 (5) 部分或再次应用上述论证于 $a$ (必要时反复除以 $2$), 最终可得到某个 $q\in R$ 使 $a-qb=0$, 即 $a\in\left(b\right)$. 故对任意 $a\in I$, 存在 $q\in R$ 使 $a-qb=0$ 且 $\left|a-qb\right|=0< \left|b\right|$, 满足第 (4) 部分要求.
 
-**第 (7) 部分.** 由第 (5)(6) 部分, 对任意 $a\in I$, 存在 $q\in R$ 使 $a=qb\in\left(b\right)$, 故 $I\subseteq\left(b\right)$. 又 $b\in I$ 且 $I$ 为理想, 故 $\left(b\right)\subseteq I$. 于是 $I=\left(b\right)$, 即 $R$ 的每个非零理想都是主理想 (零理想 $\left\{0\right\}$ 亦为主理想). 由**定义 2.7.1 (主理想整环)**, $R$ 是主理想整环. 结合第 (3) 部分, $R$ 是主理想整环但不是欧几里得环. $\blacksquare$
+第 (7) 部分. 由第 (5)(6) 部分, 对任意 $a\in I$, 存在 $q\in R$ 使 $a=qb\in\left(b\right)$, 故 $I\subseteq\left(b\right)$. 又 $b\in I$ 且 $I$ 为理想, 故 $\left(b\right)\subseteq I$. 于是 $I=\left(b\right)$, 即 $R$ 的每个非零理想都是主理想 (零理想 $\left\{0\right\}$ 亦为主理想). 由**定义 2.7.1 (主理想整环)**, $R$ 是主理想整环. 结合第 (3) 部分, $R$ 是主理想整环但不是欧几里得环. $\blacksquare$

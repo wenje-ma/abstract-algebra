@@ -57,11 +57,11 @@ Each Sylow $5$-subgroup is a cyclic group of order $5$ and, by Sylow Subgroups a
 
 Now consider the number $n_{2}$ of Sylow $2$-subgroups. By **Theorem 1.10.10 (Sylow's Third Theorem)**, $n_{2}\mid15$ and $n_{2}\equiv1\pmod2$, so $n_{2}\in\left\{1,3,5,15\right\}$. By Sylow Subgroups and Element Counting, since $G$ is simple, $n_{2}\ne1$.
 
-**Exclude $n_{2}=3$.** By Actions on Coset Spaces, $G$ acts by conjugation on the $3$ Sylow $2$-subgroups, giving a homomorphism $\pi:G\to S_3$. Its kernel $\ker\pi$ is a normal subgroup of $G$. Since $G$ is simple, $\ker\pi=\left\{e\right\}$ or $G$. The action is transitive, hence nontrivial, so $\ker\pi\ne G$; if $\ker\pi=\left\{e\right\}$, then $G$ is isomorphic to a subgroup of $S_3$, but $\left|S_3\right|=6< 60$, a contradiction. Hence $n_{2}\ne3$.
+Exclude $n_{2}=3$. By Actions on Coset Spaces, $G$ acts by conjugation on the $3$ Sylow $2$-subgroups, giving a homomorphism $\pi:G\to S_3$. Its kernel $\ker\pi$ is a normal subgroup of $G$. Since $G$ is simple, $\ker\pi=\left\{e\right\}$ or $G$. The action is transitive, hence nontrivial, so $\ker\pi\ne G$; if $\ker\pi=\left\{e\right\}$, then $G$ is isomorphic to a subgroup of $S_3$, but $\left|S_3\right|=6< 60$, a contradiction. Hence $n_{2}\ne3$.
 
-**Handle $n_{2}=5$.** By Actions on Coset Spaces, $G$ acts by conjugation on the $5$ Sylow $2$-subgroups, giving a homomorphism $\pi:G\to S_5$. Similarly $\ker\pi$ is a normal subgroup and is not $G$; if $\ker\pi=\left\{e\right\}$, then $G$ is isomorphic to a subgroup of $S_5$ of order $60$. Since $\left|S_5\right|=120$, this subgroup of order $60$ has index $2$, so by Index-Two Subgroups and the Alternating Subgroup of $S_n$ it must be the unique index-two subgroup, namely $A_5$. Hence $G\cong A_5$, and the conclusion holds.
+Handle $n_{2}=5$. By Actions on Coset Spaces, $G$ acts by conjugation on the $5$ Sylow $2$-subgroups, giving a homomorphism $\pi:G\to S_5$. Similarly $\ker\pi$ is a normal subgroup and is not $G$; if $\ker\pi=\left\{e\right\}$, then $G$ is isomorphic to a subgroup of $S_5$ of order $60$. Since $\left|S_5\right|=120$, this subgroup of order $60$ has index $2$, so by Index-Two Subgroups and the Alternating Subgroup of $S_n$ it must be the unique index-two subgroup, namely $A_5$. Hence $G\cong A_5$, and the conclusion holds.
 
-**Exclude $n_{2}=15$.** If any two distinct Sylow $2$-subgroups intersected in $\left\{e\right\}$, then each $4$-order Sylow $2$-subgroup contributes $3$ non-identity elements (by Groups of Order Four Are Abelian and Sylow Subgroups and Element Counting), giving $15\times3=45$ elements of order $2$ or $4$; together with the $24$ elements of order $5$, the total is $45+24=69> 60$, a contradiction. Hence there exist two distinct Sylow $2$-subgroups $P,Q$ with $\left|P\cap Q\right|=2$.
+Exclude $n_{2}=15$. If any two distinct Sylow $2$-subgroups intersected in $\left\{e\right\}$, then each $4$-order Sylow $2$-subgroup contributes $3$ non-identity elements (by Groups of Order Four Are Abelian and Sylow Subgroups and Element Counting), giving $15\times3=45$ elements of order $2$ or $4$; together with the $24$ elements of order $5$, the total is $45+24=69> 60$, a contradiction. Hence there exist two distinct Sylow $2$-subgroups $P,Q$ with $\left|P\cap Q\right|=2$.
 
 Write $P\cap Q=\left\langle x\right\rangle$, where $x$ has order $2$. Since $P,Q$ are groups of order $4$, by Groups of Order Four Are Abelian they are abelian, and $x\in P\cap Q$, so $P,Q\subseteq N_{G}\left(\left\langle x\right\rangle\right)$. Since $P\ne Q$, we have $\left|N_{G}\left(\left\langle x\right\rangle\right)\right|> 4$. Moreover $\left|N_{G}\left(\left\langle x\right\rangle\right)\right|\mid60$ and is divisible by $4$ (it contains the order-$4$ subgroup $P$), so it can only be $12,20$ or $60$. If it were $60$, then $\left\langle x\right\rangle\triangleleft G$, contradicting the simplicity of $G$. Hence $\left|N_{G}\left(\left\langle x\right\rangle\right)\right|=12$ or $20$, corresponding to index $5$ or $3$.
 
@@ -225,7 +225,7 @@ $$
 \left(bX^{-1}-a^{-1}\right)\cdot a\left(ba-e\right)=bX^{-1}a\left(ba-e\right)-a^{-1}a\left(ba-e\right)=\left[bX^{-1}a-e\right]\left(ba-e\right).
 $$
 
-By the Hua identity from **Problem 2.1-15**,
+By the Hua identity from Problem 2.1-15,
 
 $$
 \left(e-ba\right)^{-1}=e+b\left(e-ab\right)^{-1}a.
@@ -293,7 +293,7 @@ Let $R$ be a ring without zero divisors with only finitely many ideals (includin
 
 ### Solution to 2.2-6
 
-**First prove that $R$ has an identity.** Since $R$ is a ring without zero divisors, by **Definition 2.1.8 (Ring Without Zero Divisors)** $R$ is not the zero ring, so there exists $0\ne a\in R$. Consider the descending chain of left ideals
+First prove that $R$ has an identity. Since $R$ is a ring without zero divisors, by **Definition 2.1.8 (Ring Without Zero Divisors)** $R$ is not the zero ring, so there exists $0\ne a\in R$. Consider the descending chain of left ideals
 
 $$
 R\supseteq Ra\supseteq Ra^{2}\supseteq\cdots.
@@ -317,7 +317,7 @@ $$
 
 where we used that the right identity gives $e^{2}=e\cdot e=e$. Since $e\ne0$ and $e\left(ex-x\right)=0$, by Cancellation with Nonzero Elements we get $ex-x=0$, i.e. $ex=x$. Hence $e$ is also a left identity, so $e$ is the identity of $R$.
 
-**Next prove that every nonzero element is invertible.** Take any $0\ne x\in R$. Similarly, the descending chain of left ideals $Rx\supseteq Rx^{2}\supseteq\cdots$ stabilizes because there are only finitely many left ideals; there exists $n$ with $Rx^{n}=Rx^{n+1}$. Hence there exists $y\in R$ with $x^{n}=yx^{n+1}=\left(yx\right)x^{n}$, i.e. $\left(e-yx\right)x^{n}=0$. Since $x^{n}\ne0$, by Cancellation with Nonzero Elements we get $e-yx=0$, i.e. $yx=e$. Hence $y$ is a left inverse of $x$.
+Next prove that every nonzero element is invertible. Take any $0\ne x\in R$. Similarly, the descending chain of left ideals $Rx\supseteq Rx^{2}\supseteq\cdots$ stabilizes because there are only finitely many left ideals; there exists $n$ with $Rx^{n}=Rx^{n+1}$. Hence there exists $y\in R$ with $x^{n}=yx^{n+1}=\left(yx\right)x^{n}$, i.e. $\left(e-yx\right)x^{n}=0$. Since $x^{n}\ne0$, by Cancellation with Nonzero Elements we get $e-yx=0$, i.e. $yx=e$. Hence $y$ is a left inverse of $x$.
 
 Moreover,
 
@@ -341,7 +341,7 @@ Prove that $\sqrt{I}$ is also an ideal of $R$, called the radical of the ideal $
 
 ### Solution to 2.2-11
 
-**First prove that $\sqrt{I}$ is an ideal.** We verify using **Proposition 2.2.11 (Criterion for Ideals)**.
+First prove that $\sqrt{I}$ is an ideal. We verify using **Proposition 2.2.11 (Criterion for Ideals)**.
 
 First, $0\in\sqrt{I}$ (take $n=1$; $0\in I$), so $\sqrt{I}$ is nonempty.
 
@@ -357,7 +357,7 @@ Next let $a\in\sqrt{I}$, $r\in R$ with $a^{n}\in I$; then $\left(ra\right)^{n}=r
 
 By **Proposition 2.2.11 (Criterion for Ideals)**, $\sqrt{I}$ is an ideal of $R$. Taking $I=\left\{0\right\}$, $\sqrt{\left\{0\right\}}$ is exactly the set of all nilpotent elements of $R$ (i.e. elements satisfying $a^{n}=0$); it is an ideal, namely the nilradical $\mathrm{Rad}\,R$.
 
-**Next prove $\sqrt{\sqrt{I}}=\sqrt{I}$.**
+Next prove $\sqrt{\sqrt{I}}=\sqrt{I}$.
 
 First prove $\sqrt{I}\subseteq\sqrt{\sqrt{I}}$: let $a\in\sqrt{I}$; then $a^{n}\in I$ for some $n$. Since $I\subseteq\sqrt{I}$ (for $x\in I$, $x^{1}\in I$, so $x\in\sqrt{I}$), we have $a^{n}\in\sqrt{I}$, i.e. $a\in\sqrt{\sqrt{I}}$.
 
@@ -375,7 +375,7 @@ Let $R$ be a commutative ring, and define an operation on $R$ by $a\circ b=a+b-a
 
 ### Solution to 2.2-13
 
-**Part (1).** For any $a,b,c\in R$, expanding by the distributive law of **Definition 2.1.1 (Ring)**:
+Part (1). For any $a,b,c\in R$, expanding by the distributive law of **Definition 2.1.1 (Ring)**:
 
 $$
 \left(a\circ b\right)\circ c=\left(a+b-ab\right)\circ c=\left(a+b-ab\right)+c-\left(a+b-ab\right)c=a+b+c-ab-ac-bc+abc,
@@ -395,7 +395,7 @@ $$
 
 Also, since $R$ is commutative, $a\circ b=a+b-ab=b+a-ba=b\circ a$, so $\circ$ is commutative.
 
-**Part (2).** Consider the map $\psi:R\to R$, $\psi\left(x\right)=e-x$. Clearly $\psi$ is bijective (it is its own inverse), with $\psi\left(0\right)=e$ and $\psi\left(e\right)=0$. For any $a,b\in R$,
+Part (2). Consider the map $\psi:R\to R$, $\psi\left(x\right)=e-x$. Clearly $\psi$ is bijective (it is its own inverse), with $\psi\left(0\right)=e$ and $\psi\left(e\right)=0$. For any $a,b\in R$,
 
 $$
 \psi\left(a\right)\circ\psi\left(b\right)=\left(e-a\right)\circ\left(e-b\right)=\left(e-a\right)+\left(e-b\right)-\left(e-a\right)\left(e-b\right)=e-ab=\psi\left(ab\right).

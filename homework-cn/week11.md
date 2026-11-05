@@ -60,7 +60,7 @@
 
 ### 解答 3.4-10
 
-**单模情形.**
+单模情形.
 
 必要性. 设 $M$ 为单扭模. 由**定理 3.4.5 (主理想整环上有限生成模的结构定理)**, $M=Dy_1\oplus\cdots\oplus Dy_s$. 若 $s\ge2$, 则 $Dy_1$ 是 $M$ 的非平凡子模, 与单模矛盾. 故 $s=1$, $M=Dz$, $\operatorname{ann}\left(z\right)=\left(d\right)$.
 
@@ -68,7 +68,7 @@
 
 充分性. 设 $M=Dz$, $\operatorname{ann}\left(z\right)=\left(p\right)$, $p$ 素. 则 $M\cong D/\left(p\right)$. 因 $p$ 为素元素, $\left(p\right)$ 是极大理想, $D/\left(p\right)$ 是域, 作为 $D$-模它只有零和自身两个子模. 故 $M$ 是单模.
 
-**不可分解模情形.**
+不可分解模情形.
 
 必要性. 设 $M$ 不可分解. 由结构定理 $M=Dy_1\oplus\cdots\oplus Dy_s$. 若 $s\ge2$, 它已是两个非零子模的直和, 矛盾. 故 $s=1$, $M=Dz$, $\operatorname{ann}\left(z\right)=\left(d\right)$.
 
@@ -136,11 +136,11 @@ $$
 
 下面分别决定它们到 $\mathbb Q^*$ 的同态. 设 $\varphi:G\to\mathbb Q^*$ 为群同态. 因 $G$ 有限, $\varphi\left(G\right)$ 是 $\mathbb Q^*$ 的有限子群. 由有理数乘法群的有限子群, $\mathbb Q^*$ 的唯一有限子群为 $\left\{\pm1\right\}$, 故 $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$, 即每个生成元的像只能取 $1$ 或 $-1$.
 
-**情形一 $G=\mathbb Z_8$.** 设 $g$ 为 $G$ 的生成元, $o\left(g\right)=8$. 同态 $\varphi$ 由 $\varphi\left(g\right)\in\left\{\pm1\right\}$ 唯一确定, 且 $\varphi\left(g\right)^8=1$ 对 $\pm1$ 自动成立. 故共有 $2$ 个同态.
+情形一 $G=\mathbb Z_8$. 设 $g$ 为 $G$ 的生成元, $o\left(g\right)=8$. 同态 $\varphi$ 由 $\varphi\left(g\right)\in\left\{\pm1\right\}$ 唯一确定, 且 $\varphi\left(g\right)^8=1$ 对 $\pm1$ 自动成立. 故共有 $2$ 个同态.
 
-**情形二 $G=\mathbb Z_4\times\mathbb Z_2$.** 设 $g_1$ 为 $\mathbb Z_4$ 的生成元, $g_2$ 为 $\mathbb Z_2$ 的生成元. 同态由 $\varphi\left(g_1\right),\varphi\left(g_2\right)\in\left\{\pm1\right\}$ 唯一确定, 且约束 $\varphi\left(g_1\right)^4=1$, $\varphi\left(g_2\right)^2=1$ 对 $\pm1$ 自动满足. 故共有 $2\times2=4$ 个同态.
+情形二 $G=\mathbb Z_4\times\mathbb Z_2$. 设 $g_1$ 为 $\mathbb Z_4$ 的生成元, $g_2$ 为 $\mathbb Z_2$ 的生成元. 同态由 $\varphi\left(g_1\right),\varphi\left(g_2\right)\in\left\{\pm1\right\}$ 唯一确定, 且约束 $\varphi\left(g_1\right)^4=1$, $\varphi\left(g_2\right)^2=1$ 对 $\pm1$ 自动满足. 故共有 $2\times2=4$ 个同态.
 
-**情形三 $G=\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.** 设 $g_1,g_2,g_3$ 为三个 $2$ 阶生成元. 同态由 $\varphi\left(g_1\right),\varphi\left(g_2\right),\varphi\left(g_3\right)\in\left\{\pm1\right\}$ 唯一确定, 约束均自动满足. 故共有 $2^3=8$ 个同态.
+情形三 $G=\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$. 设 $g_1,g_2,g_3$ 为三个 $2$ 阶生成元. 同态由 $\varphi\left(g_1\right),\varphi\left(g_2\right),\varphi\left(g_3\right)\in\left\{\pm1\right\}$ 唯一确定, 约束均自动满足. 故共有 $2^3=8$ 个同态.
 
 综上, $8$ 阶交换群共 $3$ 类, 它们到 $\mathbb Q^*$ 的同态个数分别为 $2$, $4$, $8$. $\blacksquare$
 
@@ -164,7 +164,7 @@ $$
 
 设 $A$ 为 $F$ 上 $n$ 阶方阵. 由**定理 3.6.3 (约当标准形)**, 存在可逆矩阵 $S$ 使 $S^{-1}AS=J=\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, 其中 $J_1,J_2,\cdots,J_s$ 均为约当块.
 
-由**3.6-9** 的结论, 每个约当块 $J_i$ 可写为 $J_i=P_iQ_i$, 其中 $P_i,Q_i$ 均为对称矩阵. 令 $P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right)$, $Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right)$, 则 $P,Q$ 均为对称矩阵, 且 $J=PQ$.
+由3.6-9 的结论, 每个约当块 $J_i$ 可写为 $J_i=P_iQ_i$, 其中 $P_i,Q_i$ 均为对称矩阵. 令 $P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right)$, $Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right)$, 则 $P,Q$ 均为对称矩阵, 且 $J=PQ$.
 
 于是 $A=SJS^{-1}=SPQS^{-1}=\left(SPS^\top\right)\left(S^{-T}QS^{-1}\right)$. 其中 $SPS^\top$ 为对称矩阵, 因其转置为 $\left(SPS^\top\right)^\top=SP^\topS^\top=SPS^\top$; 同理 $S^{-T}QS^{-1}=\left(S^{-1}\right)^\topQS^{-1}$ 亦为对称矩阵. 故 $A$ 为两个对称矩阵之积. $\blacksquare$
 
@@ -176,9 +176,9 @@ $$
 
 对 $\dim V=n$ 作归纳. 当 $n=1$ 时结论显然成立. 假设维数小于 $n$ 时结论成立, 考虑 $n$ 维情形.
 
-**情形一 $A$ 有实特征值 $\lambda$.** 取对应的实特征向量 $v_1$, 扩充为 $V$ 的一组基 $v_1,v_2,\cdots,v_n$. 因 $v_1$ 生成的一维子空间是 $A$-不变子空间, $A$ 在该基下的矩阵形如 $\begin{bmatrix}\lambda&*\\0&A'\end{bmatrix}$, 其中 $\lambda$ 为 $1$ 阶块, $A'$ 为 $n-1$ 阶实矩阵. 由归纳假设, $A'$ 可相似于所要求的分块上三角形式, 从而 $A$ 亦然.
+情形一 $A$ 有实特征值 $\lambda$. 取对应的实特征向量 $v_1$, 扩充为 $V$ 的一组基 $v_1,v_2,\cdots,v_n$. 因 $v_1$ 生成的一维子空间是 $A$-不变子空间, $A$ 在该基下的矩阵形如 $\begin{bmatrix}\lambda&*\\0&A'\end{bmatrix}$, 其中 $\lambda$ 为 $1$ 阶块, $A'$ 为 $n-1$ 阶实矩阵. 由归纳假设, $A'$ 可相似于所要求的分块上三角形式, 从而 $A$ 亦然.
 
-**情形二 $A$ 无实特征值.** 此时 $A$ 的特征多项式在 $\mathbb R\left[x\right]$ 上没有一次因式, 故可分解为若干个判别式小于零的二次不可约多项式之积. 取其中一个 $p\left(x\right)=x^2+bx+c$, $b^2-4c< 0$.
+情形二 $A$ 无实特征值. 此时 $A$ 的特征多项式在 $\mathbb R\left[x\right]$ 上没有一次因式, 故可分解为若干个判别式小于零的二次不可约多项式之积. 取其中一个 $p\left(x\right)=x^2+bx+c$, $b^2-4c< 0$.
 
 由主理想整环 $\mathbb R\left[x\right]$ 上有限生成扭模的结构理论 (即 $V$ 作为 $\mathbb R\left[x\right]$-模的准素分解), $p\left(x\right)$ 对应的准素子空间非零. 取其中向量 $u$ 使得 $p\left(A\right)u=0$ 且 $u\ne0$. 因 $p\left(x\right)$ 无实根, $u$ 与 $Au$ 必线性无关 (否则 $Au=au$, $a\in\mathbb R$, 则 $a$ 为 $p$ 的实根, 矛盾). 令 $W=\mathrm{span}\left\{u,Au\right\}$. 由 $p\left(A\right)u=0$ 即 $A^2u+bAu+cu=0$ 得 $A\left(Au\right)=A^2u=-cu-bAu\in W$, 故 $W$ 是 $2$ 维 $A$-不变子空间. 取 $W$ 的一组基, 扩充为 $V$ 的一组基, 则 $A$ 在该基下的矩阵形如 $\begin{bmatrix}B_1&B_2\\0&A'\end{bmatrix}$, 其中 $B_1$ 为 $2$ 阶方阵 ($A$ 在 $W$ 上的限制), $A'$ 为 $n-2$ 阶实矩阵. 由归纳假设, $A'$ 可化为所要求的分块上三角形式, 从而 $A$ 亦然.
 
@@ -190,9 +190,9 @@ $$
 
 ### 解答 3.6-12
 
-**必要性.** 若 $A$ 与 $B$ 相似, 则存在可逆矩阵 $P$ 使 $B=P^{-1}AP$. 于是 $\left(aI_n-B\right)^k=\left(aI_n-P^{-1}AP\right)^k=P^{-1}\left(aI_n-A\right)^kP$. 相似矩阵秩相同, 故 $\mathrm{rank}\left(aI_n-A\right)^k=\mathrm{rank}\left(aI_n-B\right)^k$.
+必要性. 若 $A$ 与 $B$ 相似, 则存在可逆矩阵 $P$ 使 $B=P^{-1}AP$. 于是 $\left(aI_n-B\right)^k=\left(aI_n-P^{-1}AP\right)^k=P^{-1}\left(aI_n-A\right)^kP$. 相似矩阵秩相同, 故 $\mathrm{rank}\left(aI_n-A\right)^k=\mathrm{rank}\left(aI_n-B\right)^k$.
 
-**充分性.** 设对任何 $a\in F$ 及 $k\in\mathbb N$, 两矩阵相应幂的秩相同. 由**定理 3.6.3 (约当标准形)**, $A,B$ 均相似于其约当标准形, 只需证明二者约当标准形相同.
+充分性. 设对任何 $a\in F$ 及 $k\in\mathbb N$, 两矩阵相应幂的秩相同. 由**定理 3.6.3 (约当标准形)**, $A,B$ 均相似于其约当标准形, 只需证明二者约当标准形相同.
 
 对任一 $a\in F$, 记 $\nu_k\left(A\right)=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, 并约定 $\nu_0\left(A\right)=0$. 由题设, $\nu_k\left(A\right)=\nu_k\left(B\right)$ 对所有 $k$ 成立. 由幂零核与约当块计数, $A$ 的以 $a$ 为特征值, 阶数不小于 $s$ 的约当块个数为 $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, $B$ 同理. 故二者在 $a$ 处的约当块大小与个数完全一致.
 

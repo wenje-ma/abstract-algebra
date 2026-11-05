@@ -60,7 +60,7 @@ Let $M$ be a torsion module over a principal ideal domain $D$. Prove that $M$ is
 
 ### Solution to 3.4-10
 
-**Simple module case.**
+Simple module case.
 
 Necessity. Let $M$ be a simple torsion module. By **Theorem 3.4.5 (Structure Theorem for Finitely Generated Modules over a PID)**, $M=Dy_1\oplus\cdots\oplus Dy_s$. If $s\ge2$, then $Dy_1$ is a nontrivial submodule of $M$, contradicting simplicity. Hence $s=1$, $M=Dz$, $\operatorname{ann}\left(z\right)=\left(d\right)$.
 
@@ -68,7 +68,7 @@ If $d$ is not prime, then $d$ has a nontrivial factorization $d=ab$ with $a,b$ b
 
 Sufficiency. Let $M=Dz$ with $\operatorname{ann}\left(z\right)=\left(p\right)$, $p$ prime. Then $M\cong D/\left(p\right)$. Since $p$ is prime, $\left(p\right)$ is a maximal ideal, $D/\left(p\right)$ is a field, and as a $D$-module it has only the zero submodule and itself. Hence $M$ is simple.
 
-**Indecomposable module case.**
+Indecomposable module case.
 
 Necessity. Let $M$ be indecomposable. By the structure theorem, $M=Dy_1\oplus\cdots\oplus Dy_s$. If $s\ge2$, it is already a direct sum of two nonzero submodules, a contradiction. Hence $s=1$, $M=Dz$, $\operatorname{ann}\left(z\right)=\left(d\right)$.
 
@@ -136,11 +136,11 @@ Since $8=2^3$, the partitions of $3$ are $3$, $2+1$, $1+1+1$, so $p\left(3\right
 
 Now determine their homomorphisms to $\mathbb Q^*$. Let $\varphi:G\to\mathbb Q^*$ be a group homomorphism. Since $G$ is finite, $\varphi\left(G\right)$ is a finite subgroup of $\mathbb Q^*$. By Finite Subgroups of the Rational Multiplicative Group, the only finite subgroup of $\mathbb Q^*$ is $\left\{\pm1\right\}$, so $\varphi\left(G\right)\subseteq\left\{\pm1\right\}$, i.e. each generator maps to either $1$ or $-1$.
 
-**Case 1: $G=\mathbb Z_8$.** Let $g$ be a generator of $G$, $o\left(g\right)=8$. The homomorphism $\varphi$ is determined by $\varphi\left(g\right)\in\left\{\pm1\right\}$, and $\varphi\left(g\right)^8=1$ holds automatically for $\pm1$. Hence there are $2$ homomorphisms.
+Case 1: $G=\mathbb Z_8$. Let $g$ be a generator of $G$, $o\left(g\right)=8$. The homomorphism $\varphi$ is determined by $\varphi\left(g\right)\in\left\{\pm1\right\}$, and $\varphi\left(g\right)^8=1$ holds automatically for $\pm1$. Hence there are $2$ homomorphisms.
 
-**Case 2: $G=\mathbb Z_4\times\mathbb Z_2$.** Let $g_1$ generate $\mathbb Z_4$ and $g_2$ generate $\mathbb Z_2$. The homomorphism is determined by $\varphi\left(g_1\right),\varphi\left(g_2\right)\in\left\{\pm1\right\}$, and the constraints $\varphi\left(g_1\right)^4=1$, $\varphi\left(g_2\right)^2=1$ hold automatically for $\pm1$. Hence there are $2\times2=4$ homomorphisms.
+Case 2: $G=\mathbb Z_4\times\mathbb Z_2$. Let $g_1$ generate $\mathbb Z_4$ and $g_2$ generate $\mathbb Z_2$. The homomorphism is determined by $\varphi\left(g_1\right),\varphi\left(g_2\right)\in\left\{\pm1\right\}$, and the constraints $\varphi\left(g_1\right)^4=1$, $\varphi\left(g_2\right)^2=1$ hold automatically for $\pm1$. Hence there are $2\times2=4$ homomorphisms.
 
-**Case 3: $G=\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$.** Let $g_1,g_2,g_3$ be the three generators of order $2$. The homomorphism is determined by $\varphi\left(g_1\right),\varphi\left(g_2\right),\varphi\left(g_3\right)\in\left\{\pm1\right\}$, and all constraints hold automatically. Hence there are $2^3=8$ homomorphisms.
+Case 3: $G=\mathbb Z_2\times\mathbb Z_2\times\mathbb Z_2$. Let $g_1,g_2,g_3$ be the three generators of order $2$. The homomorphism is determined by $\varphi\left(g_1\right),\varphi\left(g_2\right),\varphi\left(g_3\right)\in\left\{\pm1\right\}$, and all constraints hold automatically. Hence there are $2^3=8$ homomorphisms.
 
 In summary, the abelian groups of order $8$ fall into $3$ classes, with $2$, $4$, and $8$ homomorphisms to $\mathbb Q^*$ respectively. $\blacksquare$
 
@@ -164,7 +164,7 @@ Prove that every square matrix over an algebraically closed field $F$ of charact
 
 Let $A$ be an $n\times n$ matrix over $F$. By **Theorem 3.6.3 (Jordan Normal Form)**, there is an invertible matrix $S$ such that $S^{-1}AS=J=\mathrm{diag}\left(J_1,J_2,\cdots,J_s\right)$, where $J_1,J_2,\cdots,J_s$ are Jordan blocks.
 
-By the result of **3.6-9**, each Jordan block $J_i$ can be written as $J_i=P_iQ_i$ with $P_i,Q_i$ symmetric. Set $P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right)$ and $Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right)$; then $P,Q$ are symmetric and $J=PQ$.
+By the result of 3.6-9, each Jordan block $J_i$ can be written as $J_i=P_iQ_i$ with $P_i,Q_i$ symmetric. Set $P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right)$ and $Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right)$; then $P,Q$ are symmetric and $J=PQ$.
 
 Hence $A=SJS^{-1}=SPQS^{-1}=\left(SPS^\top\right)\left(S^{-T}QS^{-1}\right)$. Here $SPS^\top$ is symmetric, since its transpose is $\left(SPS^\top\right)^\top=SP^\topS^\top=SPS^\top$; similarly $S^{-T}QS^{-1}=\left(S^{-1}\right)^\topQS^{-1}$ is symmetric. Thus $A$ is a product of two symmetric matrices. $\blacksquare$
 
@@ -176,9 +176,9 @@ Let $A$ be a linear operator on a real vector space $V$. Prove that there is a b
 
 Induct on $\dim V=n$. The case $n=1$ is immediate. Assume the result holds in dimension less than $n$, and consider the $n$-dimensional case.
 
-**Case 1: $A$ has a real eigenvalue $\lambda$.** Take a corresponding real eigenvector $v_1$ and extend it to a basis $v_1,v_2,\cdots,v_n$ of $V$. Since the one-dimensional subspace spanned by $v_1$ is $A$-invariant, the matrix of $A$ in this basis is $\begin{bmatrix}\lambda&*\\0&A'\end{bmatrix}$, where $\lambda$ is a $1\times1$ block and $A'$ is an $\left(n-1\right)\times\left(n-1\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block-upper-triangular form, and so can $A$.
+Case 1: $A$ has a real eigenvalue $\lambda$. Take a corresponding real eigenvector $v_1$ and extend it to a basis $v_1,v_2,\cdots,v_n$ of $V$. Since the one-dimensional subspace spanned by $v_1$ is $A$-invariant, the matrix of $A$ in this basis is $\begin{bmatrix}\lambda&*\\0&A'\end{bmatrix}$, where $\lambda$ is a $1\times1$ block and $A'$ is an $\left(n-1\right)\times\left(n-1\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block-upper-triangular form, and so can $A$.
 
-**Case 2: $A$ has no real eigenvalue.** Then the characteristic polynomial of $A$ has no linear factor over $\mathbb R\left[x\right]$, so it factors as a product of quadratic irreducible polynomials with negative discriminant. Take one such $p\left(x\right)=x^2+bx+c$ with $b^2-4c< 0$.
+Case 2: $A$ has no real eigenvalue. Then the characteristic polynomial of $A$ has no linear factor over $\mathbb R\left[x\right]$, so it factors as a product of quadratic irreducible polynomials with negative discriminant. Take one such $p\left(x\right)=x^2+bx+c$ with $b^2-4c< 0$.
 
 By the structure theory of finitely generated torsion modules over the PID $\mathbb R\left[x\right]$ (i.e. the primary decomposition of $V$ as an $\mathbb R\left[x\right]$-module), the primary subspace corresponding to $p\left(x\right)$ is nonzero. Take a vector $u$ in it with $p\left(A\right)u=0$ and $u\ne0$. Since $p\left(x\right)$ has no real root, $u$ and $Au$ must be linearly independent (otherwise $Au=au$ with $a\in\mathbb R$, making $a$ a real root of $p$, a contradiction). Set $W=\mathrm{span}\left\{u,Au\right\}$. From $p\left(A\right)u=0$, i.e. $A^2u+bAu+cu=0$, we get $A\left(Au\right)=A^2u=-cu-bAu\in W$, so $W$ is a $2$-dimensional $A$-invariant subspace. Taking a basis of $W$ and extending it to a basis of $V$, the matrix of $A$ is $\begin{bmatrix}B_1&B_2\\0&A'\end{bmatrix}$, where $B_1$ is a $2\times2$ matrix (the restriction of $A$ to $W$) and $A'$ is an $\left(n-2\right)\times\left(n-2\right)$ real matrix. By the induction hypothesis, $A'$ can be put in the required block-upper-triangular form, and so can $A$.
 
@@ -190,9 +190,9 @@ Thus, by induction, there is a basis of $V$ in which the matrix of $A$ has the r
 
 ### Solution to 3.6-12
 
-**Necessity.** If $A$ and $B$ are similar, there is an invertible matrix $P$ with $B=P^{-1}AP$. Then $\left(aI_n-B\right)^k=\left(aI_n-P^{-1}AP\right)^k=P^{-1}\left(aI_n-A\right)^kP$. Similar matrices have the same rank, so $\mathrm{rank}\left(aI_n-A\right)^k=\mathrm{rank}\left(aI_n-B\right)^k$.
+Necessity. If $A$ and $B$ are similar, there is an invertible matrix $P$ with $B=P^{-1}AP$. Then $\left(aI_n-B\right)^k=\left(aI_n-P^{-1}AP\right)^k=P^{-1}\left(aI_n-A\right)^kP$. Similar matrices have the same rank, so $\mathrm{rank}\left(aI_n-A\right)^k=\mathrm{rank}\left(aI_n-B\right)^k$.
 
-**Sufficiency.** Assume that for every $a\in F$ and $k\in\mathbb N$, the corresponding powers have the same rank. By **Theorem 3.6.3 (Jordan Normal Form)**, both $A$ and $B$ are similar to their Jordan normal forms; it suffices to show that the two Jordan normal forms coincide.
+Sufficiency. Assume that for every $a\in F$ and $k\in\mathbb N$, the corresponding powers have the same rank. By **Theorem 3.6.3 (Jordan Normal Form)**, both $A$ and $B$ are similar to their Jordan normal forms; it suffices to show that the two Jordan normal forms coincide.
 
 For any $a\in F$, set $\nu_k\left(A\right)=\dim\ker\left(aI_n-A\right)^k=n-\mathrm{rank}\left(aI_n-A\right)^k$, with $\nu_0\left(A\right)=0$. By assumption, $\nu_k\left(A\right)=\nu_k\left(B\right)$ for all $k$. By Nullity and Counting Jordan Blocks, the number of Jordan blocks of $A$ with eigenvalue $a$ and size at least $s$ is $\nu_s\left(A\right)-\nu_{s-1}\left(A\right)$, and similarly for $B$. Hence the sizes and number of Jordan blocks at $a$ agree completely.
 

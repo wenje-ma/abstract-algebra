@@ -44,7 +44,7 @@ $$
 
 ### 解答 1.9-5
 
-**验证作用**: 由正交与酉变换, 正交变换保持内积, 故若 $\left(\alpha_1,\cdots,\alpha_k\right)$ 是标准正交组, 则 $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ 亦然, 即 $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. 又
+验证作用: 由正交与酉变换, 正交变换保持内积, 故若 $\left(\alpha_1,\cdots,\alpha_k\right)$ 是标准正交组, 则 $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ 亦然, 即 $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. 又
 
 $$
 \rho\left(\tau\left(\alpha_1,\cdots,\alpha_k\right)\right)=\rho\left(\tau\alpha_1,\cdots,\tau\alpha_k\right)=\left(\rho\tau\alpha_1,\cdots,\rho\tau\alpha_k\right)=\left(\rho\tau\right)\left(\alpha_1,\cdots,\alpha_k\right),
@@ -52,7 +52,7 @@ $$
 
 且单位矩阵作用不变. 由**定义 1.9.1 (群作用)**, 这是 $O\left(n\right)$ 在 $V_k\left(\mathbb R^n\right)$ 上的作用.
 
-**可递性**: 任取两组标准正交向量组 $\left(\alpha_1,\cdots,\alpha_k\right)$ 与 $\left(\beta_1,\cdots,\beta_k\right)$, 由正交与酉变换 分别扩充为 $\mathbb R^n$ 的标准正交基 $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ 与 $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$. 定义线性映射 $\rho\alpha_i=\beta_i$ ($i=1,\cdots,n$), 则 $\rho\in O\left(n\right)$ 且
+可递性: 任取两组标准正交向量组 $\left(\alpha_1,\cdots,\alpha_k\right)$ 与 $\left(\beta_1,\cdots,\beta_k\right)$, 由正交与酉变换 分别扩充为 $\mathbb R^n$ 的标准正交基 $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ 与 $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$. 定义线性映射 $\rho\alpha_i=\beta_i$ ($i=1,\cdots,n$), 则 $\rho\in O\left(n\right)$ 且
 
 $$
 \rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\beta_1,\cdots,\beta_k\right).
@@ -60,7 +60,7 @@ $$
 
 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
 
-**迷向子群**: 取基准向量组 $\left(e_1,\cdots,e_k\right)$. 条件 $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) 意味着 $\rho$ 在前 $k$ 个标准基向量上为恒等映射, 即 $\rho$ 为分块对角阵. 由**定义 1.9.9 (轨道与迷向子群)**, 迷向子群为
+迷向子群: 取基准向量组 $\left(e_1,\cdots,e_k\right)$. 条件 $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) 意味着 $\rho$ 在前 $k$ 个标准基向量上为恒等映射, 即 $\rho$ 为分块对角阵. 由**定义 1.9.9 (轨道与迷向子群)**, 迷向子群为
 
 $$
 F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
@@ -74,7 +74,7 @@ $$
 
 ### 解答 1.9-6
 
-**复射影空间与复格拉斯曼流形.** 复射影空间 $P^{n-1}\left(\mathbb C\right)$ 为 $\mathbb C^n$ 的所有 $1$ 维复子空间的全体, 复格拉斯曼流形 $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ 为 $\mathbb C^n$ 的所有 $k$ 维复子空间的全体. $\mathrm{GL}\left(n,\mathbb C\right)$ 分别以 $\rho\left(W\right)=\rho W$ 作用于二者, 由线性映射保持子空间维数 与复情形的等价论证 (与实情形完全相同), 由**定义 1.9.1 (群作用)** 与**定义 1.9.7 (可递作用与有效作用)**, 这是两个可递作用.
+复射影空间与复格拉斯曼流形. 复射影空间 $P^{n-1}\left(\mathbb C\right)$ 为 $\mathbb C^n$ 的所有 $1$ 维复子空间的全体, 复格拉斯曼流形 $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ 为 $\mathbb C^n$ 的所有 $k$ 维复子空间的全体. $\mathrm{GL}\left(n,\mathbb C\right)$ 分别以 $\rho\left(W\right)=\rho W$ 作用于二者, 由线性映射保持子空间维数 与复情形的等价论证 (与实情形完全相同), 由**定义 1.9.1 (群作用)** 与**定义 1.9.7 (可递作用与有效作用)**, 这是两个可递作用.
 
 由**定义 1.9.9 (轨道与迷向子群)**, 分别取 $W_0=\mathbb Ce_1$ 与 $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$, 迷向子群分别为
 
@@ -88,7 +88,7 @@ $$
 F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
 $$
 
-**复斯蒂弗尔流形.** 记 $V_k\left(\mathbb C^n\right)$ 为 $\mathbb C^n$ 中所有 $k$ 元标准正交向量组 (关于标准埃尔米特内积) 的全体. $U\left(n\right)$ 以
+复斯蒂弗尔流形. 记 $V_k\left(\mathbb C^n\right)$ 为 $\mathbb C^n$ 中所有 $k$ 元标准正交向量组 (关于标准埃尔米特内积) 的全体. $U\left(n\right)$ 以
 
 $$
 \rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)
@@ -100,7 +100,7 @@ $$
 F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
 $$
 
-**可递性判断.** $\mathrm{SL}\left(n,\mathbb C\right)$ 在复射影空间与复格拉斯曼流形上可递 (仿实情形调整行列式); $U\left(n\right)$ 在复射影空间,复格拉斯曼流形与复斯蒂弗尔流形上均可递; $\mathrm{SU}\left(n\right)$ 在相应集合上, 当维数足够时亦可递. $\blacksquare$
+可递性判断. $\mathrm{SL}\left(n,\mathbb C\right)$ 在复射影空间与复格拉斯曼流形上可递 (仿实情形调整行列式); $U\left(n\right)$ 在复射影空间,复格拉斯曼流形与复斯蒂弗尔流形上均可递; $\mathrm{SU}\left(n\right)$ 在相应集合上, 当维数足够时亦可递. $\blacksquare$
 
 ## 1.9-8
 
@@ -126,7 +126,7 @@ $$
 
 ### 解答 1.9-8
 
-**第一步: 验证 $g\circ z\in H$.** 对 $z=x+iy$ ($y> 0$), 因 $\det g=ad-bc=1$, 直接计算虚部:
+第一步: 验证 $g\circ z\in H$. 对 $z=x+iy$ ($y> 0$), 因 $\det g=ad-bc=1$, 直接计算虚部:
 
 $$
 \mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}> 0,
@@ -134,9 +134,9 @@ $$
 
 故 $g\circ z\in H$, 定义合理.
 
-**第二步: 验证作用公理.** 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又由分式线性变换, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
+第二步: 验证作用公理. 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ z=z$. 又由分式线性变换, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb R\right)$ 在 $H$ 上的作用.
 
-**第三步: 判断可递性.** 任取 $z=x+iy\in H$ ($y> 0$), 取
+第三步: 判断可递性. 任取 $z=x+iy\in H$ ($y> 0$), 取
 
 $$
 g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
@@ -150,13 +150,13 @@ $$
 
 故 $i$ 可映到任意 $z\in H$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
 
-**第四步: 判断有效性.** 若 $g\circ z=z$ 对一切 $z\in H$ 成立, 则分式线性变换 $\frac{az+b}{cz+d}$ 有无穷多个不动点, 由分式线性变换, 它必为恒等变换, 故 $c=0$, $b=0$, $a=d$; 结合 $\det g=ad-bc=a^{2}=1$, 得 $g=\pm I$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ z=\frac{-z}{-1}=z$. 故作用的核为 $\left\{\pm I\right\}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用不是有效的; 其有效商群为
+第四步: 判断有效性. 若 $g\circ z=z$ 对一切 $z\in H$ 成立, 则分式线性变换 $\frac{az+b}{cz+d}$ 有无穷多个不动点, 由分式线性变换, 它必为恒等变换, 故 $c=0$, $b=0$, $a=d$; 结合 $\det g=ad-bc=a^{2}=1$, 得 $g=\pm I$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ z=\frac{-z}{-1}=z$. 故作用的核为 $\left\{\pm I\right\}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用不是有效的; 其有效商群为
 
 $$
 \mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
 $$
 
-**第五步: 求 $i$ 的迷向子群.** 由 $g\circ i=i$, 即
+第五步: 求 $i$ 的迷向子群. 由 $g\circ i=i$, 即
 
 $$
 \frac{ai+b}{ci+d}=i,\quad\Longrightarrow\quad ai+b=i\left(ci+d\right)=ci^{2}+di=-c+di.
@@ -203,7 +203,7 @@ $$
 
 ### 解答 1.9-19
 
-**先验证 $p_1$ 定义了 $\mathbb Z_2$ 的作用.** $p_1$ 交换 $y,z$, 显然 $p_1^{2}=\mathrm{id}$; 且
+先验证 $p_1$ 定义了 $\mathbb Z_2$ 的作用. $p_1$ 交换 $y,z$, 显然 $p_1^{2}=\mathrm{id}$; 且
 
 $$
 x^{2}+4zy=x^{2}+4yz=p,
@@ -211,9 +211,9 @@ $$
 
 故 $p_1\left(X\right)\subseteq X$. 由**定义 1.9.1 (群作用)**, $p_1$ 是 $X$ 上的二阶对合, 定义了 $\mathbb Z_2=\left\{1,p_1\right\}$ 在 $X$ 上的作用.
 
-**再验证 $p_2$.** 直接代入可验证在三个分段中 $p_2$ 都保持方程 $x^{2}+4yz=p$ 不变, 且 $p_2^{2}=\mathrm{id}$ (三个分段互为逆映射, 边界处一致). 由**定义 1.9.1 (群作用)**, $p_2$ 也是 $X$ 上的对合, 定义了 $\mathbb Z_2$ 的另一个作用.
+再验证 $p_2$. 直接代入可验证在三个分段中 $p_2$ 都保持方程 $x^{2}+4yz=p$ 不变, 且 $p_2^{2}=\mathrm{id}$ (三个分段互为逆映射, 边界处一致). 由**定义 1.9.1 (群作用)**, $p_2$ 也是 $X$ 上的对合, 定义了 $\mathbb Z_2$ 的另一个作用.
 
-**求 $p_2$ 的不动点.** 对三种情况分别令 $p_2\left(x,y,z\right)=\left(x,y,z\right)$:
+求 $p_2$ 的不动点. 对三种情况分别令 $p_2\left(x,y,z\right)=\left(x,y,z\right)$:
 
 情况一 $x< y-z$: 由 $x+2z=x$ 得 $z=0$, 与 $z\in\mathbb N^{+}$ 矛盾, 故无不动点.
 
@@ -283,13 +283,13 @@ $$
 S=\left\{\left(g,x\right)\in G\times X\mid gx=x\right\}.
 $$
 
-**按 $g$ 计数**: 对固定的 $g\in G$, 满足 $gx=x$ 的 $x$ 恰有 $F\left(g\right)$ 个, 故
+按 $g$ 计数: 对固定的 $g\in G$, 满足 $gx=x$ 的 $x$ 恰有 $F\left(g\right)$ 个, 故
 
 $$
 \left|S\right|=\sum_{g\in G}F\left(g\right).
 $$
 
-**按 $x$ 计数**: 对固定的 $x\in X$, 满足 $gx=x$ 的 $g$ 恰为 $x$ 的迷向子群 $F_x=\left\{g\in G\mid gx=x\right\}$ 中的元素, 故
+按 $x$ 计数: 对固定的 $x\in X$, 满足 $gx=x$ 的 $g$ 恰为 $x$ 的迷向子群 $F_x=\left\{g\in G\mid gx=x\right\}$ 中的元素, 故
 
 $$
 \left|S\right|=\sum_{x\in X}\left|F_x\right|.

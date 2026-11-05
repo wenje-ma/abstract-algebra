@@ -32,7 +32,7 @@
 
 ### 解答 1.2-8
 
-**(1) 证明 $ab$ 的阶为 $mn$.** 由交换群中幂运算的分配, 因 $ab=ba$, 对任意整数 $k$ 有 $\left(ab\right)^{k}=a^{k}b^{k}$. 于是
+(1) 证明 $ab$ 的阶为 $mn$. 由交换群中幂运算的分配, 因 $ab=ba$, 对任意整数 $k$ 有 $\left(ab\right)^{k}=a^{k}b^{k}$. 于是
 
 $$
 \left(ab\right)^{mn}=a^{mn}b^{mn}=\left(a^{m}\right)^{n}\left(b^{n}\right)^{m}=e,
@@ -44,13 +44,13 @@ $$
 
 综上, $ab$ 的阶整除 $mn$ 且 $mn$ 整除 $ab$ 的阶, 故 $ab$ 的阶为 $mn$.
 
-**(2) 证明 $ab$ 的阶为 $\left[m,n\right]$.** 记 $d=\left[m,n\right]$. 由交换群中幂运算的分配, $\left(ab\right)^{d}=a^{d}b^{d}$. 因 $m\mid d$, $n\mid d$, 故 $a^{d}=\left(a^{m}\right)^{\frac{d}{m}}=e$, $b^{d}=\left(b^{n}\right)^{\frac{d}{n}}=e$, 于是 $\left(ab\right)^{d}=e$, 由元素的阶与生成子群, $ab$ 的阶整除 $d$.
+(2) 证明 $ab$ 的阶为 $\left[m,n\right]$. 记 $d=\left[m,n\right]$. 由交换群中幂运算的分配, $\left(ab\right)^{d}=a^{d}b^{d}$. 因 $m\mid d$, $n\mid d$, 故 $a^{d}=\left(a^{m}\right)^{\frac{d}{m}}=e$, $b^{d}=\left(b^{n}\right)^{\frac{d}{n}}=e$, 于是 $\left(ab\right)^{d}=e$, 由元素的阶与生成子群, $ab$ 的阶整除 $d$.
 
 反之, 设 $\left(ab\right)^{k}=e$, 则由 $\left(ab\right)^{k}=a^{k}b^{k}$ 得 $a^{k}=b^{-k}$. 因 $b^{-k}\in\left\langle b\right\rangle$ 且 $a^{k}\in\left\langle a\right\rangle$, 故 $a^{k}\in\left\langle a\right\rangle\cap\left\langle b\right\rangle=\left\{e\right\}$, 即 $a^{k}=e$, 从而 $b^{k}=e$. 由元素的阶与生成子群, $m\mid k$, $n\mid k$, 再由最大公因数与最小公倍数, $\left[m,n\right]\mid k$.
 
 综上, $ab$ 的阶整除 $d$ 且 $d$ 整除 $ab$ 的阶, 故 $ab$ 的阶为 $\left[m,n\right]$.
 
-**(3) 讨论 $ab$ 的阶.** 当 $\left\langle a\right\rangle\cap\left\langle b\right\rangle\ne\left\{e\right\}$ 时, 由 (2) 的论证可知 $ab$ 的阶仍整除 $\left[m,n\right]$, 但可能严格小于 $\left[m,n\right]$.
+(3) 讨论 $ab$ 的阶. 当 $\left\langle a\right\rangle\cap\left\langle b\right\rangle\ne\left\{e\right\}$ 时, 由 (2) 的论证可知 $ab$ 的阶仍整除 $\left[m,n\right]$, 但可能严格小于 $\left[m,n\right]$.
 
 举例: 取 $G=\mathbb Z_4\times\mathbb Z_4$, $a=\left(1,0\right)$, $b=\left(1,2\right)$. 则 $a,b$ 均为 $4$ 阶元, 且
 
@@ -72,15 +72,15 @@ $$
 
 ### 解答 1.2-13
 
-**(1) 证明 $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.** 单位矩阵 $I_n$ 的元素均为整数且 $\left|I_n\right|=1$, 故 $SL\left(n,\mathbb Z\right)$ 非空. 对任意 $A,B\in SL\left(n,\mathbb Z\right)$, $B$ 的元素均为整数且 $\left|B\right|=1$, 由整数矩阵的伴随矩阵与行列式, $B^{-1}$ 的元素均为整数, 故 $AB^{-1}$ 的元素均为整数. 又由整数矩阵的伴随矩阵与行列式, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. 故 $AB^{-1}\in SL\left(n,\mathbb Z\right)$. 依据**定理 1.2.2 (子群判别法)** (条件 (3)), $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
+(1) 证明 $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$. 单位矩阵 $I_n$ 的元素均为整数且 $\left|I_n\right|=1$, 故 $SL\left(n,\mathbb Z\right)$ 非空. 对任意 $A,B\in SL\left(n,\mathbb Z\right)$, $B$ 的元素均为整数且 $\left|B\right|=1$, 由整数矩阵的伴随矩阵与行列式, $B^{-1}$ 的元素均为整数, 故 $AB^{-1}$ 的元素均为整数. 又由整数矩阵的伴随矩阵与行列式, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. 故 $AB^{-1}\in SL\left(n,\mathbb Z\right)$. 依据**定理 1.2.2 (子群判别法)** (条件 (3)), $SL\left(n,\mathbb Z\right)< GL\left(n,\mathbb R\right)$.
 
-**(2) 证明 $S,T,R,U$ 中任两个都生成 $SL\left(2,\mathbb Z\right)$.** 首先验证 $S,T,R,U\in SL\left(2,\mathbb Z\right)$: 各矩阵的元素均为整数, 且直接计算得 $\left|S\right|=\left|T\right|=\left|R\right|=\left|U\right|=1$.
+(2) 证明 $S,T,R,U$ 中任两个都生成 $SL\left(2,\mathbb Z\right)$. 首先验证 $S,T,R,U\in SL\left(2,\mathbb Z\right)$: 各矩阵的元素均为整数, 且直接计算得 $\left|S\right|=\left|T\right|=\left|R\right|=\left|U\right|=1$.
 
-**先证 $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.** 对任意 $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\in SL\left(2,\mathbb Z\right)$, 由初等行变换与辗转相除法, 反复用左乘 $T^{k}$ 与 $U^{k}$ (即两类初等行变换) 配合辗转相除法可将 $A$ 化为对角矩阵; 又因 $\left|A\right|=1$ 且初等变换不改变行列式的绝对值, 所得对角矩阵的对角元必为 $\pm1$ 且乘积为 $\pm1$. 再由 $S^{2}=-I$ 可将 $-I$ 表出, 从而 $A$ 可由 $S,T$ 化为单位矩阵 $I$. 反之 $S,T\in SL\left(2,\mathbb Z\right)$, 故 $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
+先证 $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$. 对任意 $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\in SL\left(2,\mathbb Z\right)$, 由初等行变换与辗转相除法, 反复用左乘 $T^{k}$ 与 $U^{k}$ (即两类初等行变换) 配合辗转相除法可将 $A$ 化为对角矩阵; 又因 $\left|A\right|=1$ 且初等变换不改变行列式的绝对值, 所得对角矩阵的对角元必为 $\pm1$ 且乘积为 $\pm1$. 再由 $S^{2}=-I$ 可将 $-I$ 表出, 从而 $A$ 可由 $S,T$ 化为单位矩阵 $I$. 反之 $S,T\in SL\left(2,\mathbb Z\right)$, 故 $\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
 下面证明其余各对生成的子群都等于 $\left\langle S,T\right\rangle$.
 
-**$\left\langle S,R\right\rangle$ 与 $\left\langle T,R\right\rangle$.** 直接计算
+$\left\langle S,R\right\rangle$ 与 $\left\langle T,R\right\rangle$. 直接计算
 
 $$
 ST=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}=\begin{bmatrix}0&-1\\1&1\end{bmatrix}=R.
@@ -88,7 +88,7 @@ $$
 
 故 $R=ST$, 即 $R\in\left\langle S,T\right\rangle$, 且 $T=S^{-1}R\in\left\langle S,R\right\rangle$, $S=RT^{-1}\in\left\langle T,R\right\rangle$. 于是 $\left\langle S,R\right\rangle\supseteq\left\langle S,T\right\rangle$ 且 $\left\langle T,R\right\rangle\supseteq\left\langle S,T\right\rangle$; 又 $S,T$ 是 $S,R$ (或 $T,R$) 的表达式中出现的矩阵, 反包含显然, 故 $\left\langle S,R\right\rangle=\left\langle T,R\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
-**$\left\langle S,U\right\rangle$.** 计算 $S^{-1}TS$:
+$\left\langle S,U\right\rangle$. 计算 $S^{-1}TS$:
 
 $$
 S^{-1}TS=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}=\begin{bmatrix}1&0\\-1&1\end{bmatrix}=U^{-1}.
@@ -96,9 +96,9 @@ $$
 
 故 $T=SU^{-1}S^{-1}\in\left\langle S,U\right\rangle$, 于是 $\left\langle S,U\right\rangle\supseteq\left\langle S,T\right\rangle$. 又 $U=S^{-1}T^{-1}S\in\left\langle S,T\right\rangle$, 故 $\left\langle S,U\right\rangle\subseteq\left\langle S,T\right\rangle$. 因此 $\left\langle S,U\right\rangle=\left\langle S,T\right\rangle=SL\left(2,\mathbb Z\right)$.
 
-**$\left\langle T,U\right\rangle$.** $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$, $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$ 正是初等行变换与辗转相除法中的两类初等变换矩阵, 由辗转相除法仅用这两类初等行变换即可将任一 $SL\left(2,\mathbb Z\right)$ 中元化为 $\pm I$, 故 $\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$.
+$\left\langle T,U\right\rangle$. $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$, $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$ 正是初等行变换与辗转相除法中的两类初等变换矩阵, 由辗转相除法仅用这两类初等行变换即可将任一 $SL\left(2,\mathbb Z\right)$ 中元化为 $\pm I$, 故 $\left\langle T,U\right\rangle=SL\left(2,\mathbb Z\right)$.
 
-**$\left\langle R,U\right\rangle$.** 由 $R=ST$ 得 $T=S^{-1}R$, 又 $U^{-1}=S^{-1}TS$, 代入得
+$\left\langle R,U\right\rangle$. 由 $R=ST$ 得 $T=S^{-1}R$, 又 $U^{-1}=S^{-1}TS$, 代入得
 
 $$
 U^{-1}=S^{-1}\left(S^{-1}R\right)S=S^{-2}RS.

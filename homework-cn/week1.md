@@ -24,13 +24,13 @@
 
 取 $S=\mathbb N$ (非负整数的全体), 运算为通常的加法 $+$.
 
-**第一步: 验证 $\left(\mathbb N,+\right)$ 是交换半群.** 由非负整数加法的基本性质, $\mathbb N$ 对加法封闭, 且加法满足结合律与交换律. 故 $\mathbb N$ 上定义了一个满足结合律与交换律的二元运算 $+$, 依据**定义 1.1.4 (半群与幺半群)**, $\left(\mathbb N,+\right)$ 是交换半群.
+第一步: 验证 $\left(\mathbb N,+\right)$ 是交换半群. 由非负整数加法的基本性质, $\mathbb N$ 对加法封闭, 且加法满足结合律与交换律. 故 $\mathbb N$ 上定义了一个满足结合律与交换律的二元运算 $+$, 依据**定义 1.1.4 (半群与幺半群)**, $\left(\mathbb N,+\right)$ 是交换半群.
 
-**第二步: 验证 $\left(\mathbb N,+\right)$ 是交换幺半群.** 由非负整数加法的基本性质, $0\in\mathbb N$, 且对任意 $a\in\mathbb N$ 有 $0+a=a+0=a$. 故 $0$ 是 $\left(\mathbb N,+\right)$ 的幺元, 依据**定义 1.1.4 (半群与幺半群)**, 含幺元的半群是幺半群, 故 $\left(\mathbb N,+\right)$ 是交换幺半群.
+第二步: 验证 $\left(\mathbb N,+\right)$ 是交换幺半群. 由非负整数加法的基本性质, $0\in\mathbb N$, 且对任意 $a\in\mathbb N$ 有 $0+a=a+0=a$. 故 $0$ 是 $\left(\mathbb N,+\right)$ 的幺元, 依据**定义 1.1.4 (半群与幺半群)**, 含幺元的半群是幺半群, 故 $\left(\mathbb N,+\right)$ 是交换幺半群.
 
-**第三步: 验证消去律.** 对任意 $a,b,c\in\mathbb N$, 若 $a+c=b+c$, 由非负整数加法的基本性质 (加法消去律), 得 $a=b$. 故 $\left(\mathbb N,+\right)$ 满足左(右)消去律.
+第三步: 验证消去律. 对任意 $a,b,c\in\mathbb N$, 若 $a+c=b+c$, 由非负整数加法的基本性质 (加法消去律), 得 $a=b$. 故 $\left(\mathbb N,+\right)$ 满足左(右)消去律.
 
-**第四步: 验证 $\left(\mathbb N,+\right)$ 不是群.** 由非负整数加法的基本性质, 对任意 $b\in\mathbb N$ 有 $1+b\ge1> 0$, 故不存在 $b\in\mathbb N$ 使 $1+b=0$. 因此 $1\in\mathbb N$ 不存在加法逆元, 即并非每个元素都可逆. 依据**定义 1.1.10 (逆元)** 与**定义 1.1.14 (群与阿贝尔群)**, 群要求每个元素都是可逆元, 故 $\left(\mathbb N,+\right)$ 不是群.
+第四步: 验证 $\left(\mathbb N,+\right)$ 不是群. 由非负整数加法的基本性质, 对任意 $b\in\mathbb N$ 有 $1+b\ge1> 0$, 故不存在 $b\in\mathbb N$ 使 $1+b=0$. 因此 $1\in\mathbb N$ 不存在加法逆元, 即并非每个元素都可逆. 依据**定义 1.1.10 (逆元)** 与**定义 1.1.14 (群与阿贝尔群)**, 群要求每个元素都是可逆元, 故 $\left(\mathbb N,+\right)$ 不是群.
 
 综上, $\left(\mathbb N,+\right)$ 是无限交换半群, 有单位元且满足消去律, 但不是群. $\blacksquare$
 
@@ -48,15 +48,15 @@ $$
 
 对任意 $A\in P\left(X\right)$, 用指示函数 $\chi_A:X\to\left\{0,1\right\}$ 刻画 $A$. 由幂集,指示函数与对称差, $A\mapsto\chi_A$ 是单射, 且 $\chi_{A\triangle B}=\chi_A+\chi_B\pmod2$.
 
-**第一步: 封闭性.** 对任意 $A,B\in P\left(X\right)$, 由幂集,指示函数与对称差, $A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)\subseteq X$, 故 $A\triangle B\in P\left(X\right)$. 因此 $\triangle$ 是 $P\left(X\right)$ 上的二元运算.
+第一步: 封闭性. 对任意 $A,B\in P\left(X\right)$, 由幂集,指示函数与对称差, $A\triangle B=\left(A\setminus B\right)\cup\left(B\setminus A\right)\subseteq X$, 故 $A\triangle B\in P\left(X\right)$. 因此 $\triangle$ 是 $P\left(X\right)$ 上的二元运算.
 
-**第二步: 结合律.** 对任意 $A,B,C\in P\left(X\right)$, 由幂集,指示函数与对称差, $\chi_{\left(A\triangle B\right)\triangle C}=\left(\chi_A+\chi_B\right)+\chi_C\pmod2$ 且 $\chi_{A\triangle\left(B\triangle C\right)}=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 由模 2 加法 (结合律), $\left(\chi_A+\chi_B\right)+\chi_C=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 故 $\chi_{\left(A\triangle B\right)\triangle C}=\chi_{A\triangle\left(B\triangle C\right)}$. 因 $A\mapsto\chi_A$ 是单射 (幂集,指示函数与对称差), $\left(A\triangle B\right)\triangle C=A\triangle\left(B\triangle C\right)$. 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是半群.
+第二步: 结合律. 对任意 $A,B,C\in P\left(X\right)$, 由幂集,指示函数与对称差, $\chi_{\left(A\triangle B\right)\triangle C}=\left(\chi_A+\chi_B\right)+\chi_C\pmod2$ 且 $\chi_{A\triangle\left(B\triangle C\right)}=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 由模 2 加法 (结合律), $\left(\chi_A+\chi_B\right)+\chi_C=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 故 $\chi_{\left(A\triangle B\right)\triangle C}=\chi_{A\triangle\left(B\triangle C\right)}$. 因 $A\mapsto\chi_A$ 是单射 (幂集,指示函数与对称差), $\left(A\triangle B\right)\triangle C=A\triangle\left(B\triangle C\right)$. 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是半群.
 
-**第三步: 幺元.** 对任意 $A\in P\left(X\right)$, 由对称差定义 (幂集,指示函数与对称差), $A\triangle\varnothing=\left(A\setminus\varnothing\right)\cup\left(\varnothing\setminus A\right)=A$. 故 $\varnothing$ 是幺元, 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是幺半群.
+第三步: 幺元. 对任意 $A\in P\left(X\right)$, 由对称差定义 (幂集,指示函数与对称差), $A\triangle\varnothing=\left(A\setminus\varnothing\right)\cup\left(\varnothing\setminus A\right)=A$. 故 $\varnothing$ 是幺元, 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是幺半群.
 
-**第四步: 逆元.** 对任意 $A\in P\left(X\right)$, 由对称差定义, $A\triangle A=\left(A\setminus A\right)\cup\left(A\setminus A\right)=\varnothing$. 故 $A\triangle A=\varnothing$, 即 $A$ 以自身为逆元, 依据**定义 1.1.10 (逆元)**, 每个元素 $A\in P\left(X\right)$ 都可逆 (逆元为其自身).
+第四步: 逆元. 对任意 $A\in P\left(X\right)$, 由对称差定义, $A\triangle A=\left(A\setminus A\right)\cup\left(A\setminus A\right)=\varnothing$. 故 $A\triangle A=\varnothing$, 即 $A$ 以自身为逆元, 依据**定义 1.1.10 (逆元)**, 每个元素 $A\in P\left(X\right)$ 都可逆 (逆元为其自身).
 
-**第五步: 成群.** 由第二至四步, $\left(P\left(X\right),\triangle\right)$ 是幺半群且每个元素都可逆, 依据**定义 1.1.14 (群与阿贝尔群)**, $\left(P\left(X\right),\triangle\right)$ 是一个群.
+第五步: 成群. 由第二至四步, $\left(P\left(X\right),\triangle\right)$ 是幺半群且每个元素都可逆, 依据**定义 1.1.14 (群与阿贝尔群)**, $\left(P\left(X\right),\triangle\right)$ 是一个群.
 
 当 $X=\left\{1,2\right\}$ 时, $P\left(X\right)=\left\{\varnothing,\left\{1\right\},\left\{2\right\},\left\{1,2\right\}\right\}$. 记 $0=\varnothing$, $a=\left\{1\right\}$, $b=\left\{2\right\}$, $c=\left\{1,2\right\}$. 由第四步, 各元素均以自身为逆元. 由对称差定义 (幂集,指示函数与对称差) 逐项计算 $a\triangle b=\left\{1,2\right\}=c$, $a\triangle c=\left\{2\right\}=b$, $b\triangle c=\left\{1\right\}=a$, 得群表
 
@@ -86,17 +86,17 @@ $$
 
 ### 解答 1.1-16
 
-**(1) 证明 $T_{\left(A,\beta\right)}$ 是双射.** 设 $\left|A\right|\ne0$. 由方阵可逆性与行列式, $A$ 可逆.
+(1) 证明 $T_{\left(A,\beta\right)}$ 是双射. 设 $\left|A\right|\ne0$. 由方阵可逆性与行列式, $A$ 可逆.
 
-**单射**: 若 $T_{\left(A,\beta\right)}\left(\alpha_1\right)=T_{\left(A,\beta\right)}\left(\alpha_2\right)$, 则 $A\alpha_1+\beta=A\alpha_2+\beta$, 故 $A\left(\alpha_1-\alpha_2\right)=0$. 因 $A$ 可逆, 左乘 $A^{-1}$ 得 $\alpha_1-\alpha_2=0$, 即 $\alpha_1=\alpha_2$. 故 $T_{\left(A,\beta\right)}$ 是单射.
+单射: 若 $T_{\left(A,\beta\right)}\left(\alpha_1\right)=T_{\left(A,\beta\right)}\left(\alpha_2\right)$, 则 $A\alpha_1+\beta=A\alpha_2+\beta$, 故 $A\left(\alpha_1-\alpha_2\right)=0$. 因 $A$ 可逆, 左乘 $A^{-1}$ 得 $\alpha_1-\alpha_2=0$, 即 $\alpha_1=\alpha_2$. 故 $T_{\left(A,\beta\right)}$ 是单射.
 
-**满射**: 对任意 $\gamma\in\mathbb R^n$, 取 $\alpha=A^{-1}\left(\gamma-\beta\right)$, 则由矩阵乘法结合律与逆矩阵定义 (矩阵乘法结合律, 方阵可逆性与行列式), $T_{\left(A,\beta\right)}\left(\alpha\right)=A\left(A^{-1}\left(\gamma-\beta\right)\right)+\beta=\left(\gamma-\beta\right)+\beta=\gamma$. 故 $T_{\left(A,\beta\right)}$ 是满射.
+满射: 对任意 $\gamma\in\mathbb R^n$, 取 $\alpha=A^{-1}\left(\gamma-\beta\right)$, 则由矩阵乘法结合律与逆矩阵定义 (矩阵乘法结合律, 方阵可逆性与行列式), $T_{\left(A,\beta\right)}\left(\alpha\right)=A\left(A^{-1}\left(\gamma-\beta\right)\right)+\beta=\left(\gamma-\beta\right)+\beta=\gamma$. 故 $T_{\left(A,\beta\right)}$ 是满射.
 
 综上, $T_{\left(A,\beta\right)}$ 是双射.
 
-**(2) 证明 $\mathrm{Aff}\left(n,\mathbb R\right)$ 是群.** 由**例 1.1.7 (变换幺半群)**, $M\left(\mathbb R^n\right)$ (所有变换的集合) 在复合下是幺半群, 故复合满足结合律且恒等变换是幺元. 由于每个 $T_{\left(A,\beta\right)}$ 都是 $\mathbb R^n$ 上的变换, $\mathrm{Aff}\left(n,\mathbb R\right)\subseteq M\left(\mathbb R^n\right)$. 下面逐条验证 $\mathrm{Aff}\left(n,\mathbb R\right)$ 关于复合构成群.
+(2) 证明 $\mathrm{Aff}\left(n,\mathbb R\right)$ 是群. 由**例 1.1.7 (变换幺半群)**, $M\left(\mathbb R^n\right)$ (所有变换的集合) 在复合下是幺半群, 故复合满足结合律且恒等变换是幺元. 由于每个 $T_{\left(A,\beta\right)}$ 都是 $\mathbb R^n$ 上的变换, $\mathrm{Aff}\left(n,\mathbb R\right)\subseteq M\left(\mathbb R^n\right)$. 下面逐条验证 $\mathrm{Aff}\left(n,\mathbb R\right)$ 关于复合构成群.
 
-**封闭性**: 对任意 $T_{\left(A,\beta\right)},T_{\left(C,\delta\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$ 与任意 $\alpha\in\mathbb R^n$, 由矩阵乘法结合律与分配律 (矩阵乘法结合律),
+封闭性: 对任意 $T_{\left(A,\beta\right)},T_{\left(C,\delta\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$ 与任意 $\alpha\in\mathbb R^n$, 由矩阵乘法结合律与分配律 (矩阵乘法结合律),
 
 $$
 T_{\left(A,\beta\right)}\circ T_{\left(C,\delta\right)}\left(\alpha\right)=A\left(C\alpha+\delta\right)+\beta=\left(AC\right)\alpha+\left(A\delta+\beta\right)=T_{\left(AC,A\delta+\beta\right)}\left(\alpha\right).
@@ -104,11 +104,11 @@ $$
 
 由方阵可逆性与行列式, $\left|AC\right|=\left|A\right|\left|C\right|\ne0$, 故 $T_{\left(AC,A\delta+\beta\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$. 因此复合在 $\mathrm{Aff}\left(n,\mathbb R\right)$ 上封闭.
 
-**结合律**: 由**例 1.1.7 (变换幺半群)**, 复合满足结合律.
+结合律: 由**例 1.1.7 (变换幺半群)**, 复合满足结合律.
 
-**幺元**: 恒等变换 $T_{\left(I,0\right)}$ 满足 $\left|I\right|=1\ne0$ (方阵可逆性与行列式), 故 $T_{\left(I,0\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$. 由**例 1.1.7 (变换幺半群)**, 恒等变换是复合的幺元, 故对任意 $T_{\left(A,\beta\right)}$ 有 $T_{\left(A,\beta\right)}\circ T_{\left(I,0\right)}=T_{\left(A,\beta\right)}=T_{\left(I,0\right)}\circ T_{\left(A,\beta\right)}$.
+幺元: 恒等变换 $T_{\left(I,0\right)}$ 满足 $\left|I\right|=1\ne0$ (方阵可逆性与行列式), 故 $T_{\left(I,0\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$. 由**例 1.1.7 (变换幺半群)**, 恒等变换是复合的幺元, 故对任意 $T_{\left(A,\beta\right)}$ 有 $T_{\left(A,\beta\right)}\circ T_{\left(I,0\right)}=T_{\left(A,\beta\right)}=T_{\left(I,0\right)}\circ T_{\left(A,\beta\right)}$.
 
-**逆元**: 对 $T_{\left(A,\beta\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$, 因 $\left|A\right|\ne0$, 由方阵可逆性与行列式, $A^{-1}$ 可逆且 $\left|A^{-1}\right|\ne0$, 故 $T_{\left(A^{-1},-A^{-1}\beta\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$. 对任意 $\alpha\in\mathbb R^n$, 由矩阵乘法结合律与分配律,
+逆元: 对 $T_{\left(A,\beta\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$, 因 $\left|A\right|\ne0$, 由方阵可逆性与行列式, $A^{-1}$ 可逆且 $\left|A^{-1}\right|\ne0$, 故 $T_{\left(A^{-1},-A^{-1}\beta\right)}\in\mathrm{Aff}\left(n,\mathbb R\right)$. 对任意 $\alpha\in\mathbb R^n$, 由矩阵乘法结合律与分配律,
 
 $$
 T_{\left(A^{-1},-A^{-1}\beta\right)}\circ T_{\left(A,\beta\right)}\left(\alpha\right)=A^{-1}\left(A\alpha+\beta\right)-A^{-1}\beta=\alpha,
@@ -142,13 +142,13 @@ $$
 
 ### 解答 1.1-20
 
-**(1) 证明 $\left(S,*\right)$ 是交换幺半群.** 依据**定义 1.1.4 (半群与幺半群)**, 逐条验证.
+(1) 证明 $\left(S,*\right)$ 是交换幺半群. 依据**定义 1.1.4 (半群与幺半群)**, 逐条验证.
 
-**封闭性**: 对任意 $f,g\in S$, 由数论函数与狄利克雷卷积, 对每个 $n\in\mathbb N^*$, $\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)$ 是有限个复数的和, 故为 $\mathbb C$ 中的元素, 即 $f*g$ 是 $\mathbb N^*\to\mathbb C$ 的映射, 故 $f*g\in S$.
+封闭性: 对任意 $f,g\in S$, 由数论函数与狄利克雷卷积, 对每个 $n\in\mathbb N^*$, $\left(f*g\right)\left(n\right)=\sum_{d\mid n}f\left(d\right)g\left(\frac{n}{d}\right)$ 是有限个复数的和, 故为 $\mathbb C$ 中的元素, 即 $f*g$ 是 $\mathbb N^*\to\mathbb C$ 的映射, 故 $f*g\in S$.
 
-**交换性**: 对任意 $f,g\in S$ 与 $n\in\mathbb N^*$, 由数论函数与狄利克雷卷积, $\left(f*g\right)\left(n\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$. 交换求和指标 $a,b$ 得 $\sum_{ab=n}f\left(a\right)g\left(b\right)=\sum_{ba=n}g\left(b\right)f\left(a\right)=\left(g*f\right)\left(n\right)$. 故 $f*g=g*f$, 即 $*$ 满足交换律.
+交换性: 对任意 $f,g\in S$ 与 $n\in\mathbb N^*$, 由数论函数与狄利克雷卷积, $\left(f*g\right)\left(n\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$. 交换求和指标 $a,b$ 得 $\sum_{ab=n}f\left(a\right)g\left(b\right)=\sum_{ba=n}g\left(b\right)f\left(a\right)=\left(g*f\right)\left(n\right)$. 故 $f*g=g*f$, 即 $*$ 满足交换律.
 
-**结合律**: 对任意 $f,g,h\in S$ 与 $n\in\mathbb N^*$, 由数论函数与狄利克雷卷积及有限和可重排,
+结合律: 对任意 $f,g,h\in S$ 与 $n\in\mathbb N^*$, 由数论函数与狄利克雷卷积及有限和可重排,
 
 $$
 \left(\left(f*g\right)*h\right)\left(n\right)=\sum_{d\mid n}\left(f*g\right)\left(d\right)h\left(\frac{n}{d}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),
@@ -162,15 +162,15 @@ $$
 
 两者同为三重和 $\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$, 故 $\left(f*g\right)*h=f*\left(g*h\right)$, 即 $*$ 满足结合律.
 
-**幺元**: 由数论函数与狄利克雷卷积, $e\left(1\right)=1$ 且 $n> 1$ 时 $e\left(n\right)=0$, 故 $e\in S$. 对任意 $f\in S$ 与 $n\in\mathbb N^*$, $\left(e*f\right)\left(n\right)=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)$. 因 $e\left(d\right)=0$ 除非 $d=1$, 故 $\left(e*f\right)\left(n\right)=e\left(1\right)f\left(n\right)=f\left(n\right)$, 即 $e*f=f$; 同理 $f*e=f$. 故 $e$ 是幺元.
+幺元: 由数论函数与狄利克雷卷积, $e\left(1\right)=1$ 且 $n> 1$ 时 $e\left(n\right)=0$, 故 $e\in S$. 对任意 $f\in S$ 与 $n\in\mathbb N^*$, $\left(e*f\right)\left(n\right)=\sum_{d\mid n}e\left(d\right)f\left(\frac{n}{d}\right)$. 因 $e\left(d\right)=0$ 除非 $d=1$, 故 $\left(e*f\right)\left(n\right)=e\left(1\right)f\left(n\right)=f\left(n\right)$, 即 $e*f=f$; 同理 $f*e=f$. 故 $e$ 是幺元.
 
 由封闭性,交换性,结合律,幺元全部成立, 依据**定义 1.1.4 (半群与幺半群)**, $\left(S,*\right)$ 是交换幺半群.
 
-**(2) 证明 $f$ 可逆当且仅当 $f\left(1\right)\ne0$.**
+(2) 证明 $f$ 可逆当且仅当 $f\left(1\right)\ne0$.
 
-**必要性**: 若 $f$ 可逆, 由**定义 1.1.10 (逆元)**, 存在 $g\in S$ 使 $f*g=e$. 则 $\left(f*g\right)\left(1\right)=\sum_{d\mid 1}f\left(d\right)g\left(\frac{1}{d}\right)=f\left(1\right)g\left(1\right)$, 而 $e\left(1\right)=1$, 故 $f\left(1\right)g\left(1\right)=1$, 于是 $f\left(1\right)\ne0$.
+必要性: 若 $f$ 可逆, 由**定义 1.1.10 (逆元)**, 存在 $g\in S$ 使 $f*g=e$. 则 $\left(f*g\right)\left(1\right)=\sum_{d\mid 1}f\left(d\right)g\left(\frac{1}{d}\right)=f\left(1\right)g\left(1\right)$, 而 $e\left(1\right)=1$, 故 $f\left(1\right)g\left(1\right)=1$, 于是 $f\left(1\right)\ne0$.
 
-**充分性**: 设 $f\left(1\right)\ne0$. 由数论函数与狄利克雷卷积归纳构造 $g\in S$: 令 $g\left(1\right)=f\left(1\right)^{-1}$; 对 $n> 1$, 要求 $\left(f*g\right)\left(n\right)=0$, 即
+充分性: 设 $f\left(1\right)\ne0$. 由数论函数与狄利克雷卷积归纳构造 $g\in S$: 令 $g\left(1\right)=f\left(1\right)^{-1}$; 对 $n> 1$, 要求 $\left(f*g\right)\left(n\right)=0$, 即
 
 $$
 f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid n\\d> 1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
@@ -184,11 +184,11 @@ $$
 
 右端只涉及下标 $\frac{n}{d}< n$ (因 $d> 1$) 处已定义的 $g$, 故可递归定义出 $g\in S$, 且使 $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1=e\left(1\right)$, 对 $n> 1$ 有 $\left(f*g\right)\left(n\right)=0=e\left(n\right)$, 即 $f*g=e$. 依据**定义 1.1.10 (逆元)**, $f$ 可逆.
 
-**(3) 证明非零积性函数全体 $F$ 在 $*$ 下构成阿贝尔群.**
+(3) 证明非零积性函数全体 $F$ 在 $*$ 下构成阿贝尔群.
 
 先证 $F$ 中元素满足 $f\left(1\right)=1$. 对 $f\in F$, 因 $f\ne0$, 存在 $m\in\mathbb N^*$ 使 $f\left(m\right)\ne0$. 因 $\left(1,1\right)=1$, 由积性 (积性函数与完全积性函数), $f\left(1\right)=f\left(1\cdot1\right)=f\left(1\right)f\left(1\right)$, 故 $f\left(1\right)=0$ 或 $1$. 若 $f\left(1\right)=0$, 则 $f\left(m\right)=f\left(1\cdot m\right)=f\left(1\right)f\left(m\right)=0$, 与 $f\left(m\right)\ne0$ 矛盾. 故 $f\left(1\right)=1\ne0$.
 
-**封闭性**: 对 $f,g\in F$ 与 $\left(m,n\right)=1$, 由互素因子的唯一分解, $d\mid mn$ 唯一地分解为 $d=d_1d_2$, 其中 $d_1\mid m$, $d_2\mid n$, 且 $\left(d_1,d_2\right)=1$, $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$. 由 $f,g$ 的积性, $f\left(d_1d_2\right)=f\left(d_1\right)f\left(d_2\right)$, $g\left(\frac{mn}{d_1d_2}\right)=g\left(\frac{m}{d_1}\frac{n}{d_2}\right)=g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)$. 故
+封闭性: 对 $f,g\in F$ 与 $\left(m,n\right)=1$, 由互素因子的唯一分解, $d\mid mn$ 唯一地分解为 $d=d_1d_2$, 其中 $d_1\mid m$, $d_2\mid n$, 且 $\left(d_1,d_2\right)=1$, $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$. 由 $f,g$ 的积性, $f\left(d_1d_2\right)=f\left(d_1\right)f\left(d_2\right)$, $g\left(\frac{mn}{d_1d_2}\right)=g\left(\frac{m}{d_1}\frac{n}{d_2}\right)=g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)$. 故
 
 $$
 \left(f*g\right)\left(mn\right)=\sum_{d_1\mid m}\sum_{d_2\mid n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)=\left(f*g\right)\left(m\right)\left(f*g\right)\left(n\right),
@@ -196,9 +196,9 @@ $$
 
 即 $f*g$ 是积性函数. 又 $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1\ne0$, 故 $f*g\ne0$, 于是 $f*g\in F$.
 
-**幺元**: 由数论函数与狄利克雷卷积, $e\left(1\right)=1$ 且 $n> 1$ 时 $e\left(n\right)=0$. 对 $\left(m,n\right)=1$, 若 $mn=1$ 则 $m=n=1$; 否则 $mn> 1$, $e\left(mn\right)=0$, 而 $e\left(m\right)e\left(n\right)=0$ (因 $m,n$ 至少其一 $> 1$), 故 $e$ 是积性函数. 又 $e\left(1\right)=1\ne0$, 故 $e\in F$.
+幺元: 由数论函数与狄利克雷卷积, $e\left(1\right)=1$ 且 $n> 1$ 时 $e\left(n\right)=0$. 对 $\left(m,n\right)=1$, 若 $mn=1$ 则 $m=n=1$; 否则 $mn> 1$, $e\left(mn\right)=0$, 而 $e\left(m\right)e\left(n\right)=0$ (因 $m,n$ 至少其一 $> 1$), 故 $e$ 是积性函数. 又 $e\left(1\right)=1\ne0$, 故 $e\in F$.
 
-**逆元**: 对 $f\in F$, 由 (2) 及 $f\left(1\right)=1\ne0$, $f$ 在 $S$ 中可逆, 设 $f*g=e$. 下面用强归纳证明 $g$ 是积性函数: 对 $\left(m,n\right)=1$, 设对所有 $\left(k,l\right)=1$ 且 $kl< mn$ 已证 $g\left(kl\right)=g\left(k\right)g\left(l\right)$, 证明 $g\left(mn\right)=g\left(m\right)g\left(n\right)$. 因 $mn> 1$, $\left(f*g\right)\left(mn\right)=0$, 由互素因子的唯一分解与 $f$ 的积性,
+逆元: 对 $f\in F$, 由 (2) 及 $f\left(1\right)=1\ne0$, $f$ 在 $S$ 中可逆, 设 $f*g=e$. 下面用强归纳证明 $g$ 是积性函数: 对 $\left(m,n\right)=1$, 设对所有 $\left(k,l\right)=1$ 且 $kl< mn$ 已证 $g\left(kl\right)=g\left(k\right)g\left(l\right)$, 证明 $g\left(mn\right)=g\left(m\right)g\left(n\right)$. 因 $mn> 1$, $\left(f*g\right)\left(mn\right)=0$, 由互素因子的唯一分解与 $f$ 的积性,
 
 $$
 0=\left(f*g\right)\left(mn\right)=\sum_{d_1\mid m}\sum_{d_2\mid n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\frac{n}{d_2}\right).
@@ -212,11 +212,11 @@ $$
 
 两式右端的和除首项外逐项相等, 而 $f\left(1\right)=1$, 故 $g\left(mn\right)=g\left(m\right)g\left(n\right)$. 因此 $g$ 是积性函数. 又由 $f*g=e$, $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1$, 且 $f\left(1\right)=1$, 故 $g\left(1\right)=1\ne0$, 于是 $g\in F$, 即 $f$ 在 $F$ 中有逆元 $g$.
 
-**交换性**: 由 (1), $*$ 满足交换律.
+交换性: 由 (1), $*$ 满足交换律.
 
 由封闭性,幺元,逆元,交换性全部成立, 依据**定义 1.1.14 (群与阿贝尔群)**, $F$ 在 $*$ 下构成阿贝尔群.
 
-**(4) 结论: 不构成.** 事实上, 非零完全积性函数的全体在 $*$ 下不封闭. 取 $f\left(n\right)=1$ (常数函数), 对任意 $m,n\in\mathbb N^*$ 有 $f\left(mn\right)=1=f\left(m\right)f\left(n\right)$, 故 $f$ 是完全积性的, 且 $f\ne0$. 由数论函数与狄利克雷卷积,
+(4) 结论: 不构成. 事实上, 非零完全积性函数的全体在 $*$ 下不封闭. 取 $f\left(n\right)=1$ (常数函数), 对任意 $m,n\in\mathbb N^*$ 有 $f\left(mn\right)=1=f\left(m\right)f\left(n\right)$, 故 $f$ 是完全积性的, 且 $f\ne0$. 由数论函数与狄利克雷卷积,
 
 $$
 \left(f*f\right)\left(n\right)=\sum_{d\mid n}1=\tau\left(n\right),

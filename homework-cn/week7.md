@@ -57,11 +57,11 @@ $$
 
 再考虑西罗 $2$-子群的个数 $n_{2}$. 由**定理 1.10.10 (西罗第三定理)**, $n_{2}\mid15$ 且 $n_{2}\equiv1\pmod2$, 故 $n_{2}\in\left\{1,3,5,15\right\}$. 由西罗子群与元素计数, $G$ 单故 $n_{2}\ne1$.
 
-**排除 $n_{2}=3$.** 由群在陪集空间上的作用, $G$ 通过共轭作用在 $3$ 个西罗 $2$-子群上, 给出同态 $\pi:G\to S_3$. 其核 $\ker\pi$ 是 $G$ 的正规子群. 因 $G$ 单, $\ker\pi=\left\{e\right\}$ 或 $G$. 作用可递故非平凡, $\ker\pi\ne G$; 若 $\ker\pi=\left\{e\right\}$, 则 $G$ 同构于 $S_3$ 的子群, 而 $\left|S_3\right|=6< 60$, 矛盾. 故 $n_{2}\ne3$.
+排除 $n_{2}=3$. 由群在陪集空间上的作用, $G$ 通过共轭作用在 $3$ 个西罗 $2$-子群上, 给出同态 $\pi:G\to S_3$. 其核 $\ker\pi$ 是 $G$ 的正规子群. 因 $G$ 单, $\ker\pi=\left\{e\right\}$ 或 $G$. 作用可递故非平凡, $\ker\pi\ne G$; 若 $\ker\pi=\left\{e\right\}$, 则 $G$ 同构于 $S_3$ 的子群, 而 $\left|S_3\right|=6< 60$, 矛盾. 故 $n_{2}\ne3$.
 
-**处理 $n_{2}=5$.** 由群在陪集空间上的作用, $G$ 共轭作用在 $5$ 个西罗 $2$-子群上, 给出同态 $\pi:G\to S_5$. 同理 $\ker\pi$ 为正规子群且非 $G$; 若 $\ker\pi=\left\{e\right\}$, 则 $G$ 同构于 $S_5$ 的一个 $60$ 阶子群. $S_5$ 的阶为 $120$, 该 $60$ 阶子群指数为 $2$, 由指数为 $2$ 的子群与 $S_n$ 的交错子群 必为正规子群且唯一, 即 $A_5$. 故 $G\cong A_5$, 结论成立.
+处理 $n_{2}=5$. 由群在陪集空间上的作用, $G$ 共轭作用在 $5$ 个西罗 $2$-子群上, 给出同态 $\pi:G\to S_5$. 同理 $\ker\pi$ 为正规子群且非 $G$; 若 $\ker\pi=\left\{e\right\}$, 则 $G$ 同构于 $S_5$ 的一个 $60$ 阶子群. $S_5$ 的阶为 $120$, 该 $60$ 阶子群指数为 $2$, 由指数为 $2$ 的子群与 $S_n$ 的交错子群 必为正规子群且唯一, 即 $A_5$. 故 $G\cong A_5$, 结论成立.
 
-**排除 $n_{2}=15$.** 若任意两个不同的西罗 $2$-子群交为 $\left\{e\right\}$, 则每个 $4$ 阶西罗 $2$-子群贡献 $3$ 个非单位元 (由$4$ 阶群是交换群 与西罗子群与元素计数), 共 $15\times3=45$ 个 $2$ 阶或 $4$ 阶元, 加上 $24$ 个 $5$ 阶元, 总数 $45+24=69> 60$, 矛盾. 故存在两个不同的西罗 $2$-子群 $P,Q$ 使 $\left|P\cap Q\right|=2$.
+排除 $n_{2}=15$. 若任意两个不同的西罗 $2$-子群交为 $\left\{e\right\}$, 则每个 $4$ 阶西罗 $2$-子群贡献 $3$ 个非单位元 (由$4$ 阶群是交换群 与西罗子群与元素计数), 共 $15\times3=45$ 个 $2$ 阶或 $4$ 阶元, 加上 $24$ 个 $5$ 阶元, 总数 $45+24=69> 60$, 矛盾. 故存在两个不同的西罗 $2$-子群 $P,Q$ 使 $\left|P\cap Q\right|=2$.
 
 设 $P\cap Q=\left\langle x\right\rangle$, 其中 $x$ 为 $2$ 阶元. 因 $P,Q$ 均为 $4$ 阶群, 由$4$ 阶群是交换群 皆交换, 且 $x\in P\cap Q$, 故 $P,Q\subseteq N_{G}\left(\left\langle x\right\rangle\right)$. 又 $P\ne Q$, 故 $\left|N_{G}\left(\left\langle x\right\rangle\right)\right|> 4$. 同时 $\left|N_{G}\left(\left\langle x\right\rangle\right)\right|\mid60$ 且被 $4$ 整除 (因含 $4$ 阶子群 $P$), 故只能为 $12,20$ 或 $60$. 若为 $60$, 则 $\left\langle x\right\rangle\triangleleft G$, 与 $G$ 单矛盾. 故 $\left|N_{G}\left(\left\langle x\right\rangle\right)\right|=12$ 或 $20$, 对应指数 $5$ 或 $3$.
 
@@ -225,7 +225,7 @@ $$
 \left(bX^{-1}-a^{-1}\right)\cdot a\left(ba-e\right)=bX^{-1}a\left(ba-e\right)-a^{-1}a\left(ba-e\right)=\left[bX^{-1}a-e\right]\left(ba-e\right).
 $$
 
-由 **2.1-15 题** 的华罗庚恒等式,
+由 2.1-15 题 的华罗庚恒等式,
 
 $$
 \left(e-ba\right)^{-1}=e+b\left(e-ab\right)^{-1}a.
@@ -293,7 +293,7 @@ $$
 
 ### 解答 2.2-6
 
-**先证 $R$ 有幺元.** 因 $R$ 是无零因子环, 由**定义 2.1.8 (无零因子环)**, $R$ 不是零环, 故存在 $0\ne a\in R$. 考虑左理想的降链
+先证 $R$ 有幺元. 因 $R$ 是无零因子环, 由**定义 2.1.8 (无零因子环)**, $R$ 不是零环, 故存在 $0\ne a\in R$. 考虑左理想的降链
 
 $$
 R\supseteq Ra\supseteq Ra^{2}\supseteq\cdots.
@@ -317,7 +317,7 @@ $$
 
 其中用到右单位元给出 $e^{2}=e\cdot e=e$. 因 $e\ne0$ 且 $e\left(ex-x\right)=0$, 由可逆元的消去, 得 $ex-x=0$, 即 $ex=x$. 故 $e$ 同时是左单位元, 即 $e$ 是 $R$ 的幺元.
 
-**再证每个非零元可逆.** 任取 $0\ne x\in R$. 同理, 左理想降链 $Rx\supseteq Rx^{2}\supseteq\cdots$ 因只有有限个左理想而稳定, 存在 $n$ 使 $Rx^{n}=Rx^{n+1}$. 于是存在 $y\in R$ 使 $x^{n}=yx^{n+1}=\left(yx\right)x^{n}$, 即 $\left(e-yx\right)x^{n}=0$. 因 $x^{n}\ne0$, 由可逆元的消去, 得 $e-yx=0$, 即 $yx=e$. 故 $y$ 是 $x$ 的左逆元.
+再证每个非零元可逆. 任取 $0\ne x\in R$. 同理, 左理想降链 $Rx\supseteq Rx^{2}\supseteq\cdots$ 因只有有限个左理想而稳定, 存在 $n$ 使 $Rx^{n}=Rx^{n+1}$. 于是存在 $y\in R$ 使 $x^{n}=yx^{n+1}=\left(yx\right)x^{n}$, 即 $\left(e-yx\right)x^{n}=0$. 因 $x^{n}\ne0$, 由可逆元的消去, 得 $e-yx=0$, 即 $yx=e$. 故 $y$ 是 $x$ 的左逆元.
 
 又
 
@@ -341,7 +341,7 @@ $$
 
 ### 解答 2.2-11
 
-**先证 $\sqrt{I}$ 是理想.** 用**命题 2.2.11 (理想判别法)** 验证.
+先证 $\sqrt{I}$ 是理想. 用**命题 2.2.11 (理想判别法)** 验证.
 
 首先 $0\in\sqrt{I}$ (取 $n=1$, $0\in I$), 故 $\sqrt{I}$ 非空.
 
@@ -357,7 +357,7 @@ $$
 
 由**命题 2.2.11 (理想判别法)**, $\sqrt{I}$ 是 $R$ 的理想. 取 $I=\left\{0\right\}$, 则 $\sqrt{\left\{0\right\}}$ 恰为 $R$ 中所有幂零元 (即满足 $a^{n}=0$ 的元) 的集合, 它构成理想, 即幂零根基 $\mathrm{Rad}\,R$.
 
-**再证 $\sqrt{\sqrt{I}}=\sqrt{I}$.**
+再证 $\sqrt{\sqrt{I}}=\sqrt{I}$.
 
 先证 $\sqrt{I}\subseteq\sqrt{\sqrt{I}}$: 设 $a\in\sqrt{I}$, 则 $a^{n}\in I$ 对某 $n$ 成立. 因 $I\subseteq\sqrt{I}$ ($x\in I$ 时 $x^{1}\in I$, 故 $x\in\sqrt{I}$), 故 $a^{n}\in\sqrt{I}$, 即 $a\in\sqrt{\sqrt{I}}$.
 
@@ -375,7 +375,7 @@ $$
 
 ### 解答 2.2-13
 
-**第 (1) 部分.** 对任意 $a,b,c\in R$, 由**定义 2.1.1 (环)** 的分配律展开:
+第 (1) 部分. 对任意 $a,b,c\in R$, 由**定义 2.1.1 (环)** 的分配律展开:
 
 $$
 \left(a\circ b\right)\circ c=\left(a+b-ab\right)\circ c=\left(a+b-ab\right)+c-\left(a+b-ab\right)c=a+b+c-ab-ac-bc+abc,
@@ -395,7 +395,7 @@ $$
 
 此外因 $R$ 交换, $a\circ b=a+b-ab=b+a-ba=b\circ a$, 故 $\circ$ 也满足交换律.
 
-**第 (2) 部分.** 作映射 $\psi:R\to R$, $\psi\left(x\right)=e-x$. 显然 $\psi$ 是双射 (其逆为自身), 且 $\psi\left(0\right)=e$, $\psi\left(e\right)=0$. 对任意 $a,b\in R$,
+第 (2) 部分. 作映射 $\psi:R\to R$, $\psi\left(x\right)=e-x$. 显然 $\psi$ 是双射 (其逆为自身), 且 $\psi\left(0\right)=e$, $\psi\left(e\right)=0$. 对任意 $a,b\in R$,
 
 $$
 \psi\left(a\right)\circ\psi\left(b\right)=\left(e-a\right)\circ\left(e-b\right)=\left(e-a\right)+\left(e-b\right)-\left(e-a\right)\left(e-b\right)=e-ab=\psi\left(ab\right).

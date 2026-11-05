@@ -48,7 +48,7 @@ $$
 N\left(\alpha\right)=\alpha\overline\alpha=a^{2}+b^{2}+c^{2}+d^{2}.
 $$
 
-**第 (1) 部分.** 因 $a,b,c,d\in\mathbb R$, 各项平方均非负, 故
+第 (1) 部分. 因 $a,b,c,d\in\mathbb R$, 各项平方均非负, 故
 
 $$
 N\left(\alpha\right)=a^{2}+b^{2}+c^{2}+d^{2}\ge0.
@@ -56,7 +56,7 @@ $$
 
 $N\left(\alpha\right)=0$ 当且仅当 $a^{2}+b^{2}+c^{2}+d^{2}=0$, 当且仅当 $a=b=c=d=0$, 即 $\alpha=0$. 故 (1) 得证.
 
-**第 (2) 部分.** 把 $\alpha,\beta$ 看成 $\mathbb R^{4}$ 中的向量, 由欧氏范数的三角不等式, $N\left(\alpha\right)=\left\|\alpha\right\|^{2}$, 于是
+第 (2) 部分. 把 $\alpha,\beta$ 看成 $\mathbb R^{4}$ 中的向量, 由欧氏范数的三角不等式, $N\left(\alpha\right)=\left\|\alpha\right\|^{2}$, 于是
 
 $$
 \sqrt{N\left(\alpha+\beta\right)}=\left\|\alpha+\beta\right\|\le\left\|\alpha\right\|+\left\|\beta\right\|=\sqrt{N\left(\alpha\right)}+\sqrt{N\left(\beta\right)}.
@@ -64,7 +64,7 @@ $$
 
 且等号成立当且仅当 $\alpha,\beta$ 实线性相关 (由欧氏范数的三角不等式). 故 (2) 得证.
 
-**第 (3) 部分.** 对 $\lambda\in\mathbb R$, $\lambda\alpha=\lambda a+\lambda b\,i+\lambda c\,j+\lambda d\,k$, 由四元数与共轭,
+第 (3) 部分. 对 $\lambda\in\mathbb R$, $\lambda\alpha=\lambda a+\lambda b\,i+\lambda c\,j+\lambda d\,k$, 由四元数与共轭,
 
 $$
 N\left(\lambda\alpha\right)=\left(\lambda a\right)^{2}+\left(\lambda b\right)^{2}+\left(\lambda c\right)^{2}+\left(\lambda d\right)^{2}=\lambda^{2}\left(a^{2}+b^{2}+c^{2}+d^{2}\right)=\lambda^{2}N\left(\alpha\right).
@@ -72,7 +72,7 @@ $$
 
 故 (3) 得证.
 
-**第 (4) 部分.** 由四元数与共轭, $\overline\alpha=a-bi-cj-dk$, 故
+第 (4) 部分. 由四元数与共轭, $\overline\alpha=a-bi-cj-dk$, 故
 
 $$
 N\left(\overline\alpha\right)=a^{2}+\left(-b\right)^{2}+\left(-c\right)^{2}+\left(-d\right)^{2}=a^{2}+b^{2}+c^{2}+d^{2}=N\left(\alpha\right).
@@ -80,7 +80,7 @@ $$
 
 故 (4) 得证.
 
-**第 (5) 部分.** 由共轭的反序性质 $\overline{\alpha\beta}=\overline\beta\,\overline\alpha$ (见四元数与共轭), 以及 $N\left(\beta\right)=\beta\overline\beta$ 为实数而可与任意四元数交换, 得
+第 (5) 部分. 由共轭的反序性质 $\overline{\alpha\beta}=\overline\beta\,\overline\alpha$ (见四元数与共轭), 以及 $N\left(\beta\right)=\beta\overline\beta$ 为实数而可与任意四元数交换, 得
 
 $$
 N\left(\alpha\beta\right)=\left(\alpha\beta\right)\overline{\left(\alpha\beta\right)}=\alpha\beta\overline\beta\,\overline\alpha=\alpha\left(\beta\overline\beta\right)\overline\alpha=N\left(\beta\right)\alpha\overline\alpha=N\left(\alpha\right)N\left(\beta\right).
@@ -130,7 +130,7 @@ $$
 
 设 $\varphi:\mathbb R\to\mathbb R$ 为域自同构. 由**定义 2.4.1 (环同态与同构)** 与环自同构固定素域, $\varphi\left(1\right)=1$, 故 $\varphi$ 在 $\mathbb Q$ 上恒等: $\varphi\left(n\right)=n$ 对整数 $n$, 且 $\varphi\left(m/n\right)=m/n$ 对 $\frac{m}{n}\in\mathbb Q$.
 
-**保序性**: 若 $x> 0$, 由实数域的保序性, 存在 $y\ne0$ 使 $x=y^{2}$; 则
+保序性: 若 $x> 0$, 由实数域的保序性, 存在 $y\ne0$ 使 $x=y^{2}$; 则
 
 $$
 \varphi\left(x\right)=\varphi\left(y^{2}\right)=\varphi\left(y\right)^{2}> 0
@@ -138,7 +138,7 @@ $$
 
 (因 $\varphi\left(y\right)\ne0$, 平方为正). 因而当 $x> y$ 时, $x-y> 0$ 给出 $\varphi\left(x\right)-\varphi\left(y\right)=\varphi\left(x-y\right)> 0$, 即 $\varphi$ 严格递增.
 
-**恒等性**: 反设存在 $x\in\mathbb R$ 使 $\varphi\left(x\right)\ne x$. 若 $\varphi\left(x\right)> x$, 由实数域的保序性 (有理数稠密), 取 $q\in\mathbb Q$ 使 $x< q< \varphi\left(x\right)$. 由 $x< q$ 及 $\varphi$ 严格递增, $\varphi\left(x\right)< \varphi\left(q\right)=q$, 与 $q< \varphi\left(x\right)$ 矛盾. 若 $\varphi\left(x\right)< x$, 同理取 $q\in\mathbb Q$ 使 $\varphi\left(x\right)< q< x$; 由 $\varphi$ 严格递增及 $q=\varphi\left(q\right)$, 得 $q< \varphi\left(x\right)$, 矛盾.
+恒等性: 反设存在 $x\in\mathbb R$ 使 $\varphi\left(x\right)\ne x$. 若 $\varphi\left(x\right)> x$, 由实数域的保序性 (有理数稠密), 取 $q\in\mathbb Q$ 使 $x< q< \varphi\left(x\right)$. 由 $x< q$ 及 $\varphi$ 严格递增, $\varphi\left(x\right)< \varphi\left(q\right)=q$, 与 $q< \varphi\left(x\right)$ 矛盾. 若 $\varphi\left(x\right)< x$, 同理取 $q\in\mathbb Q$ 使 $\varphi\left(x\right)< q< x$; 由 $\varphi$ 严格递增及 $q=\varphi\left(q\right)$, 得 $q< \varphi\left(x\right)$, 矛盾.
 
 故 $\varphi\left(x\right)=x$ 对一切 $x\in\mathbb R$ 成立, 即 $\varphi$ 为恒等同构. $\blacksquare$
 
@@ -150,13 +150,13 @@ $$
 
 记 $\varphi:\mathbb C\to\mathbb C$, $\varphi\left(a+bi\right)=a-bi$, 其中 $a,b\in\mathbb R$.
 
-**保加法**: 对 $a+bi$, $c+di\in\mathbb C$,
+保加法: 对 $a+bi$, $c+di\in\mathbb C$,
 
 $$
 \varphi\left(\left(a+bi\right)+\left(c+di\right)\right)=\varphi\left(\left(a+c\right)+\left(b+d\right)i\right)=\left(a+c\right)-\left(b+d\right)i=\left(a-bi\right)+\left(c-di\right)=\varphi\left(a+bi\right)+\varphi\left(c+di\right).
 $$
 
-**保乘法**: 
+保乘法: 
 
 $$
 \varphi\left(\left(a+bi\right)\left(c+di\right)\right)=\varphi\left(\left(ac-bd\right)+\left(ad+bc\right)i\right)=\left(ac-bd\right)-\left(ad+bc\right)i,
@@ -208,11 +208,11 @@ $$
 
 ### 解答 2.4-19
 
-**第 (1) 部分.** 因 $R$ 为整环, 由整环的无零因子, 当 $b,d\ne0$ 时 $bd\ne0$, 故 $R\times R^{*}$ 对加法与乘法封闭. 交换律与结合律由 $R$ 中相应运算的交换律,结合律逐分量直接验证. 对加法, $\left(a,b\right)+\left(0,1\right)=\left(a\cdot1+b\cdot0,b\cdot1\right)=\left(a,b\right)$; 对乘法, $\left(a,b\right)\left(1,1\right)=\left(a\cdot1,b\cdot1\right)=\left(a,b\right)$. 故二者分别是以 $\left(0,1\right)$, $\left(1,1\right)$ 为单位元的交换幺半群.
+第 (1) 部分. 因 $R$ 为整环, 由整环的无零因子, 当 $b,d\ne0$ 时 $bd\ne0$, 故 $R\times R^{*}$ 对加法与乘法封闭. 交换律与结合律由 $R$ 中相应运算的交换律,结合律逐分量直接验证. 对加法, $\left(a,b\right)+\left(0,1\right)=\left(a\cdot1+b\cdot0,b\cdot1\right)=\left(a,b\right)$; 对乘法, $\left(a,b\right)\left(1,1\right)=\left(a\cdot1,b\cdot1\right)=\left(a,b\right)$. 故二者分别是以 $\left(0,1\right)$, $\left(1,1\right)$ 为单位元的交换幺半群.
 
-**第 (2) 部分. 等价关系**: 自反: $\left(a,b\right)\sim\left(a,b\right)$ 即 $ab=ba$, 成立. 对称: $ad=bc$ 即 $bc=ad$, 故 $\left(a,b\right)\sim\left(c,d\right)$ 蕴含 $\left(c,d\right)\sim\left(a,b\right)$. 传递: 设 $\left(a,b\right)\sim\left(c,d\right)$, $\left(c,d\right)\sim\left(e,f\right)$, 即 $ad=bc$, $cf=de$. 两式分别乘 $f$ 与 $b$ 得 $adf=bcf=bde$, 即 $d\left(af\right)=d\left(be\right)$; 因 $d\ne0$, 由整环的无零因子 消去得 $af=be$, 故 $\left(a,b\right)\sim\left(e,f\right)$. 故 $\sim$ 为等价关系.
+第 (2) 部分. 等价关系: 自反: $\left(a,b\right)\sim\left(a,b\right)$ 即 $ab=ba$, 成立. 对称: $ad=bc$ 即 $bc=ad$, 故 $\left(a,b\right)\sim\left(c,d\right)$ 蕴含 $\left(c,d\right)\sim\left(a,b\right)$. 传递: 设 $\left(a,b\right)\sim\left(c,d\right)$, $\left(c,d\right)\sim\left(e,f\right)$, 即 $ad=bc$, $cf=de$. 两式分别乘 $f$ 与 $b$ 得 $adf=bcf=bde$, 即 $d\left(af\right)=d\left(be\right)$; 因 $d\ne0$, 由整环的无零因子 消去得 $af=be$, 故 $\left(a,b\right)\sim\left(e,f\right)$. 故 $\sim$ 为等价关系.
 
-**同余关系 (乘法)**: 设 $\left(a,b\right)\sim\left(a',b'\right)$, $\left(c,d\right)\sim\left(c',d'\right)$, 即 $ab'=a'b$, $cd'=c'd$. 则
+同余关系 (乘法): 设 $\left(a,b\right)\sim\left(a',b'\right)$, $\left(c,d\right)\sim\left(c',d'\right)$, 即 $ab'=a'b$, $cd'=c'd$. 则
 
 $$
 \left(ab'\right)\left(cd'\right)=\left(a'b\right)\left(c'd\right),
@@ -224,7 +224,7 @@ $$
 \left(a,b\right)\left(c,d\right)=\left(ac,bd\right)\sim\left(a'c',b'd'\right)=\left(a',b'\right)\left(c',d'\right).
 $$
 
-**同余关系 (加法)**: 同上有
+同余关系 (加法): 同上有
 
 $$
 \left(ad+bc\right)b'd'=ab'dd'+cd'bb'=a'bdd'+c'dbb'=bd\left(a'd'+b'c'\right),
@@ -232,9 +232,9 @@ $$
 
 故 $\left(ad+bc,bd\right)\sim\left(a'd'+b'c',b'd'\right)$, 即 $\left(a,b\right)+\left(c,d\right)\sim\left(a',b'\right)+\left(c',d'\right)$. 故 $\sim$ 对乘法与加法均为同余关系.
 
-**第 (3) 部分.** 由第 (2) 部分与同余关系与商结构, $F$ 上加法与乘法定义合理, 且保持交换律,结合律,分配律. $0/1$ 为加法零元, $1/1$ 为乘法幺元. $a/b$ 的负元为 $\left(-a\right)/b$, 因为 $\frac{a}{b}+\frac{-a}{b}=\frac{ab-ab}{b\cdot b}=\frac{0}{b^{2}}=\frac{0}{1}$. 若 $a/b\ne0/1$, 则 $a\ne0$ (否则 $\left(a,b\right)\sim\left(0,1\right)$ 即 $a\cdot1=b\cdot0$, $a=0$); 此时由域中逆元, 其乘法逆元为 $b/a$, 因为 $\frac{a}{b}\cdot\frac{b}{a}=\frac{ab}{ab}=\frac{1}{1}$. 故 $F$ 是交换幺环且每个非零元可逆. 由**定义 2.2.20 (整环,除环与域)**, $F$ 为域.
+第 (3) 部分. 由第 (2) 部分与同余关系与商结构, $F$ 上加法与乘法定义合理, 且保持交换律,结合律,分配律. $0/1$ 为加法零元, $1/1$ 为乘法幺元. $a/b$ 的负元为 $\left(-a\right)/b$, 因为 $\frac{a}{b}+\frac{-a}{b}=\frac{ab-ab}{b\cdot b}=\frac{0}{b^{2}}=\frac{0}{1}$. 若 $a/b\ne0/1$, 则 $a\ne0$ (否则 $\left(a,b\right)\sim\left(0,1\right)$ 即 $a\cdot1=b\cdot0$, $a=0$); 此时由域中逆元, 其乘法逆元为 $b/a$, 因为 $\frac{a}{b}\cdot\frac{b}{a}=\frac{ab}{ab}=\frac{1}{1}$. 故 $F$ 是交换幺环且每个非零元可逆. 由**定义 2.2.20 (整环,除环与域)**, $F$ 为域.
 
-**第 (4) 部分.** 作映射 $\iota:R\to F$, $\iota\left(a\right)=a/1$. 则
+第 (4) 部分. 作映射 $\iota:R\to F$, $\iota\left(a\right)=a/1$. 则
 
 $$
 \iota\left(a+b\right)=\frac{a+b}{1}=\frac{a}{1}+\frac{b}{1}=\iota\left(a\right)+\iota\left(b\right),
@@ -246,7 +246,7 @@ $$
 
 且 $a/1=0/1$ 当且仅当 $a\cdot1=1\cdot0$, 即 $a=0$, 故 $\iota$ 为单同态 (由**定义 2.4.1 (环同态与同构)**). 由此可把 $R$ 等同于 $\iota\left(R\right)\subseteq F$. 对任意 $a/b\in F$, 有 $a/b=\left(a/1\right)\left(b/1\right)^{-1}$, 即 $F$ 中每一元均可写为 $R$ (经 $\iota$ 嵌入) 中两元之商, 故 $F$ 是 $R$ 的分式域 (按题中定义).
 
-**第 (5) 部分.** 在 $K$ 中令
+第 (5) 部分. 在 $K$ 中令
 
 $$
 F_2=\left\{ab^{-1}\mid a,b\in R,\;b\ne0\right\}.
@@ -266,7 +266,7 @@ $F_2$ 对加法封闭 ($ab^{-1}+cd^{-1}=\left(ad+bc\right)\left(bd\right)^{-1}$,
 
 在 $R$ 上由整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数 定义范数 $N\left(x+y\sqrt{-5}\right)=x^{2}+5y^{2}$, 则 $N$ 积性, $\xi$ 为单位当且仅当 $N\left(\xi\right)=1$.
 
-**第 (1) 部分.** 设 $\gamma=a+b\sqrt{-5}$, 则 $N\left(\gamma\right)=a^{2}+5b^{2}=9\ne1$, 故 $\gamma$ 非单位, 即 $\gamma\in R^{*}\setminus U$. 反设 $\gamma=\xi\eta$ 为非平凡分解 (即 $\xi,\eta$ 均非单位), 则
+第 (1) 部分. 设 $\gamma=a+b\sqrt{-5}$, 则 $N\left(\gamma\right)=a^{2}+5b^{2}=9\ne1$, 故 $\gamma$ 非单位, 即 $\gamma\in R^{*}\setminus U$. 反设 $\gamma=\xi\eta$ 为非平凡分解 (即 $\xi,\eta$ 均非单位), 则
 
 $$
 N\left(\xi\right)N\left(\eta\right)=N\left(\gamma\right)=9.
@@ -274,7 +274,7 @@ $$
 
 由整环 $\mathbb Z\left[\sqrt{-5}\right]$ 的范数, $N$ 取非负整数值, 且不存在范数为 $3$ 的元素. 故 $N\left(\xi\right),N\left(\eta\right)$ 只能取 $1$ 或 $9$: 若 $N\left(\xi\right)=1$ 则 $\xi$ 为单位, 若 $N\left(\xi\right)=9$ 则 $N\left(\eta\right)=1$ 从而 $\eta$ 为单位. 无论何种情形, $\gamma$ 的分解中必有一个因子为单位, 与 $\gamma=\xi\eta$ 为非平凡分解矛盾. 故 $\gamma$ 不存在非平凡因子, 由**定义 2.5.6 (不可约元素)**, $\gamma$ 为不可约元素.
 
-**第 (2) 部分.** 先作分解:
+第 (2) 部分. 先作分解:
 
 $$
 \beta=9=\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right),
@@ -288,7 +288,7 @@ $$
 
 $3$ 同时整除 $\alpha$ 与 $\beta$ ($9=3\cdot3$), $2+\sqrt{-5}$ 也同时整除 $\alpha$ 与 $\beta$, 故二者都是公因子.
 
-**$2-\sqrt{-5}$ 不整除 $\alpha$**: 若存在 $\gamma\in R$ 使 $\gamma\left(2-\sqrt{-5}\right)=\alpha=3\left(2+\sqrt{-5}\right)$, 两端同乘 $2+\sqrt{-5}$ 并由 $\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right)=9$ 得
+$2-\sqrt{-5}$ 不整除 $\alpha$: 若存在 $\gamma\in R$ 使 $\gamma\left(2-\sqrt{-5}\right)=\alpha=3\left(2+\sqrt{-5}\right)$, 两端同乘 $2+\sqrt{-5}$ 并由 $\left(2+\sqrt{-5}\right)\left(2-\sqrt{-5}\right)=9$ 得
 
 $$
 \gamma\cdot9=3\left(2+\sqrt{-5}\right)^{2}=3\left(-1+4\sqrt{-5}\right),
@@ -296,7 +296,7 @@ $$
 
 故 $\gamma=\left(-1+4\sqrt{-5}\right)/3=-\frac{1}{3}+\frac{4}{3}\sqrt{-5}\notin R$, 矛盾.
 
-**$3$ 与 $2+\sqrt{-5}$ 互不整除**: $3\nmid\left(2+\sqrt{-5}\right)$ (否则 $\left(2+\sqrt{-5}\right)/3\notin R$); 且 $\left(2+\sqrt{-5}\right)\nmid3$, 因为否则 $3/\left(2+\sqrt{-5}\right)=\left(2-\sqrt{-5}\right)/3\notin R$.
+$3$ 与 $2+\sqrt{-5}$ 互不整除: $3\nmid\left(2+\sqrt{-5}\right)$ (否则 $\left(2+\sqrt{-5}\right)/3\notin R$); 且 $\left(2+\sqrt{-5}\right)\nmid3$, 因为否则 $3/\left(2+\sqrt{-5}\right)=\left(2-\sqrt{-5}\right)/3\notin R$.
 
 反设 $d$ 是 $\alpha,\beta$ 的最大公因子. 由**定义 2.5.14 (公因子与最大公因子)**, 每个公因子都整除 $d$, 特别地 $3\mid d$ 且 $\left(2+\sqrt{-5}\right)\mid d$. 又 $d\mid\beta=9$, 而 $9$ 在相伴意义下的因子只有 $1,3,2+\sqrt{-5},2-\sqrt{-5},9$ (由第 (1) 部分, 范数 $9$ 的因子只有 $3,2\pm\sqrt{-5}$, 且无范数 $3$ 的元素). 逐一检查: $d=1$ 不被 $3$ 整除; $d=3$ 不被 $2+\sqrt{-5}$ 整除; $d=2+\sqrt{-5}$ 不被 $3$ 整除; $d=2-\sqrt{-5}$ 不整除 $\alpha$ (如上); $d=9$ 不整除 $\alpha$ (否则 $\alpha/9=\left(2+\sqrt{-5}\right)/3\notin R$). 均与 $3\mid d$, $\left(2+\sqrt{-5}\right)\mid d$, $d\mid\alpha$ 同时成立矛盾.
 

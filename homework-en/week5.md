@@ -94,7 +94,7 @@ Prove that $\mathrm{Aut}\left(S_n\right)\cong S_n$ when $n\ne2,6$. Also find $\m
 
 ### Solution to 1.6-14
 
-**First prove that $\mathrm{Aut}\left(S_n\right)\cong S_n$ for $n\ne2,6$.** By The Center and Inner Automorphisms of a Group, $\mathrm{Inn}\left(S_n\right)\cong S_n/C\left(S_n\right)$, and for $n\ge3$ we have $C\left(S_n\right)=\left\{e\right\}$, so $\mathrm{Inn}\left(S_n\right)\cong S_n$. It therefore suffices to prove $\mathrm{Aut}\left(S_n\right)=\mathrm{Inn}\left(S_n\right)$, i.e. every automorphism is inner.
+First prove that $\mathrm{Aut}\left(S_n\right)\cong S_n$ for $n\ne2,6$. By The Center and Inner Automorphisms of a Group, $\mathrm{Inn}\left(S_n\right)\cong S_n/C\left(S_n\right)$, and for $n\ge3$ we have $C\left(S_n\right)=\left\{e\right\}$, so $\mathrm{Inn}\left(S_n\right)\cong S_n$. It therefore suffices to prove $\mathrm{Aut}\left(S_n\right)=\mathrm{Inn}\left(S_n\right)$, i.e. every automorphism is inner.
 
 Let $\varphi\in\mathrm{Aut}\left(S_n\right)$. An automorphism preserves the order of elements, so involutions are mapped to involutions. By Centralizers of Transpositions and Recognizing Transpositions, for $n\ne6$ the transpositions form the unique conjugacy class of involutions of this type (with centralizer size $2\left(n-2\right)!$), and an automorphism preserves conjugacy classes and centralizer sizes, so $\varphi$ maps transpositions to transpositions.
 
@@ -110,9 +110,9 @@ $$
 \mathrm{Aut}\left(S_n\right)=\mathrm{Inn}\left(S_n\right)\cong S_n.
 $$
 
-**Find $\mathrm{Aut}\left(S_2\right)$.** $S_2=\left\{e,\left(12\right)\right\}$ is a cyclic group of order two, and an automorphism must fix the identity $e$, so $\mathrm{Aut}\left(S_2\right)=\left\{\mathrm{id}\right\}$ is the trivial group.
+Find $\mathrm{Aut}\left(S_2\right)$. $S_2=\left\{e,\left(12\right)\right\}$ is a cyclic group of order two, and an automorphism must fix the identity $e$, so $\mathrm{Aut}\left(S_2\right)=\left\{\mathrm{id}\right\}$ is the trivial group.
 
-**Find $\mathrm{Aut}\left(S_6\right)$.** By The Outer Automorphisms of $S_6$, $\mathrm{Out}\left(S_6\right)\cong\mathbb Z_2$ and $\left|\mathrm{Inn}\left(S_6\right)\right|=\left|S_6\right|=720$ (since $C\left(S_6\right)=\left\{e\right\}$), so $\left|\mathrm{Aut}\left(S_6\right)\right|=\left|\mathrm{Out}\left(S_6\right)\right|\cdot\left|\mathrm{Inn}\left(S_6\right)\right|=2\cdot720=1440$. $\blacksquare$
+Find $\mathrm{Aut}\left(S_6\right)$. By The Outer Automorphisms of $S_6$, $\mathrm{Out}\left(S_6\right)\cong\mathbb Z_2$ and $\left|\mathrm{Inn}\left(S_6\right)\right|=\left|S_6\right|=720$ (since $C\left(S_6\right)=\left\{e\right\}$), so $\left|\mathrm{Aut}\left(S_6\right)\right|=\left|\mathrm{Out}\left(S_6\right)\right|\cdot\left|\mathrm{Inn}\left(S_6\right)\right|=2\cdot720=1440$. $\blacksquare$
 
 ## 1.7-11
 
@@ -136,17 +136,17 @@ be two composition series of $G$, with $G_2\ne H_2$. Let $K_3=G_2\cap H_2$. Take
 
 ### Solution to 1.7-11
 
-**Step 1: prove that $G_2H_2=G$.** Since $H_2\triangleleft G$, by Surjective Homomorphisms Preserve Normal Subgroups, the image $\pi\left(H_2\right)$ under the natural homomorphism $\pi:G\to G/G_2$ is a normal subgroup of $G/G_2$. Moreover $\pi\left(H_2\right)=\left\{hG_2\mid h\in H_2\right\}=\left(G_2H_2\right)/G_2$ (since $G_2\subseteq G_2H_2$), so $\left(G_2H_2\right)/G_2\triangleleft G/G_2$. Since $G/G_2$ is a composition factor and hence simple, $\left(G_2H_2\right)/G_2$ must be trivial or all of $G/G_2$, i.e. $G_2H_2=G_2$ or $G$.
+Step 1: prove that $G_2H_2=G$. Since $H_2\triangleleft G$, by Surjective Homomorphisms Preserve Normal Subgroups, the image $\pi\left(H_2\right)$ under the natural homomorphism $\pi:G\to G/G_2$ is a normal subgroup of $G/G_2$. Moreover $\pi\left(H_2\right)=\left\{hG_2\mid h\in H_2\right\}=\left(G_2H_2\right)/G_2$ (since $G_2\subseteq G_2H_2$), so $\left(G_2H_2\right)/G_2\triangleleft G/G_2$. Since $G/G_2$ is a composition factor and hence simple, $\left(G_2H_2\right)/G_2$ must be trivial or all of $G/G_2$, i.e. $G_2H_2=G_2$ or $G$.
 
 Similarly, since $G_2\triangleleft G$, the image $\pi'\left(G_2\right)=\left(G_2H_2\right)/H_2$ under the natural homomorphism $\pi':G\to G/H_2$ is a normal subgroup of $G/H_2$; since $G/H_2$ is simple, $G_2H_2=H_2$ or $G$.
 
-**Claim: $G_2H_2\ne G_2$.** If $G_2H_2=G_2$, then $H_2\subseteq G_2$. From the previous paragraph $G_2H_2\in\left\{H_2,G\right\}$, i.e. $G_2=H_2$ or $G_2=G$; the former contradicts $G_2\ne H_2$, and the latter contradicts the fact that $G_2$ is a proper subgroup of $G$ (since $G/G_2$ is a nontrivial simple group). Hence $G_2H_2\ne G_2$.
+Claim: $G_2H_2\ne G_2$. If $G_2H_2=G_2$, then $H_2\subseteq G_2$. From the previous paragraph $G_2H_2\in\left\{H_2,G\right\}$, i.e. $G_2=H_2$ or $G_2=G$; the former contradicts $G_2\ne H_2$, and the latter contradicts the fact that $G_2$ is a proper subgroup of $G$ (since $G/G_2$ is a nontrivial simple group). Hence $G_2H_2\ne G_2$.
 
-**Claim: $G_2H_2\ne H_2$.** If $G_2H_2=H_2$, then $G_2\subseteq H_2$. From $G_2H_2\in\left\{G_2,G\right\}$, we get $H_2=G_2$ or $H_2=G$; the former contradicts $G_2\ne H_2$, and the latter contradicts the fact that $H_2$ is a proper subgroup. Hence $G_2H_2\ne H_2$.
+Claim: $G_2H_2\ne H_2$. If $G_2H_2=H_2$, then $G_2\subseteq H_2$. From $G_2H_2\in\left\{G_2,G\right\}$, we get $H_2=G_2$ or $H_2=G$; the former contradicts $G_2\ne H_2$, and the latter contradicts the fact that $H_2$ is a proper subgroup. Hence $G_2H_2\ne H_2$.
 
 Therefore the only possibility is $G_2H_2=G$.
 
-**Step for (1): prove that both refined series are composition series.** By **Theorem 1.4.23 (3) (Second Isomorphism Theorem)**, taking $H=G_2$ and $N=H_2$, we get
+Step for (1): prove that both refined series are composition series. By **Theorem 1.4.23 (3) (Second Isomorphism Theorem)**, taking $H=G_2$ and $N=H_2$, we get
 
 $$
 G_2/K_3=G_2/\left(G_2\cap H_2\right)\cong G_2H_2/H_2=G/H_2,
@@ -178,7 +178,7 @@ $$
 
 are simple, so by **Definition 1.7.9 (Subnormal Series and Composition Series)** it is also a composition series of $G$.
 
-**Step for (2): prove that the four composition series are equivalent.** Write the four composition series as
+Step for (2): prove that the four composition series are equivalent. Write the four composition series as
 
 $$
 \begin{aligned}
@@ -189,9 +189,9 @@ S_4&:G\triangleright H_2\triangleright K_3\triangleright K_4\triangleright\cdots
 \end{aligned}
 $$
 
-**First prove that $S_3$ and $S_4$ are isomorphic.** The factors of $S_3$ are $G/G_2$, $G_2/K_3\cong G/H_2$, $K_3/K_4$, ..., $K_{r-1}/K_r$; the factors of $S_4$ are $G/H_2$, $H_2/K_3\cong G/G_2$, $K_3/K_4$, ..., $K_{r-1}/K_r$. As multisets the two families differ only in the first two entries: $G/G_2$ and $G/H_2$ are interchanged, and all remaining factors are identical. Hence by **Definition 1.7.12 (Isomorphic Series)**, $S_3$ and $S_4$ are isomorphic.
+First prove that $S_3$ and $S_4$ are isomorphic. The factors of $S_3$ are $G/G_2$, $G_2/K_3\cong G/H_2$, $K_3/K_4$, ..., $K_{r-1}/K_r$; the factors of $S_4$ are $G/H_2$, $H_2/K_3\cong G/G_2$, $K_3/K_4$, ..., $K_{r-1}/K_r$. As multisets the two families differ only in the first two entries: $G/G_2$ and $G/H_2$ are interchanged, and all remaining factors are identical. Hence by **Definition 1.7.12 (Isomorphic Series)**, $S_3$ and $S_4$ are isomorphic.
 
-**Next prove that $S_1$ and $S_3$ are isomorphic.** The first factors of $S_1$ and $S_3$ are both $G/G_2$. After removing the first term, the two tails
+Next prove that $S_1$ and $S_3$ are isomorphic. The first factors of $S_1$ and $S_3$ are both $G/G_2$. After removing the first term, the two tails
 
 $$
 G_2\triangleright G_3\triangleright\cdots\triangleright G_t=\left\{e\right\}
@@ -201,7 +201,7 @@ $$
 
 are both composition series of $G_2$. By **Theorem 1.7.13 (Jordan-Holder Theorem)**, these two composition series of the group $G_2$ are isomorphic. After adding back their common first factor $G/G_2$, by **Definition 1.7.12 (Isomorphic Series)**, $S_1$ and $S_3$ are isomorphic.
 
-**Similarly prove that $S_2$ and $S_4$ are isomorphic.** The first factors of $S_2$ and $S_4$ are both $G/H_2$; the tails $H_2\triangleright H_3\triangleright\cdots\triangleright\left\{e\right\}$ and $H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright\left\{e\right\}$ are both composition series of $H_2$, hence isomorphic by **Theorem 1.7.13 (Jordan-Holder Theorem)**; after adding back the common first factor $G/H_2$, $S_2$ and $S_4$ are isomorphic.
+Similarly prove that $S_2$ and $S_4$ are isomorphic. The first factors of $S_2$ and $S_4$ are both $G/H_2$; the tails $H_2\triangleright H_3\triangleright\cdots\triangleright\left\{e\right\}$ and $H_2\triangleright K_3\triangleright K_4\triangleright\cdots\triangleright\left\{e\right\}$ are both composition series of $H_2$, hence isomorphic by **Theorem 1.7.13 (Jordan-Holder Theorem)**; after adding back the common first factor $G/H_2$, $S_2$ and $S_4$ are isomorphic.
 
 In summary, $S_1\cong S_3\cong S_4\cong S_2$, so the four composition series are equivalent. $\blacksquare$
 
@@ -211,11 +211,11 @@ Let $G$ be a solvable group of order $n$, and let $B$ be the set of all invertib
 
 ### Solution to 1.8-12
 
-**First prove the first part.** By Faithful Representations via Permutation Matrices and **Theorem 1.4.10 (Cayley's Theorem)**, the solvable group $G$ of order $n$ is isomorphic to a subgroup of $\mathrm{GL}\left(V\right)$, where $V=\mathbb C^{n}$; by Solvability Is Preserved under Isomorphism, we may assume $G$ itself is a solvable subgroup of $\mathrm{GL}\left(V\right)$. We now induct on $\dim V$ to prove that $G$ can be simultaneously triangularized, i.e. $G$ is conjugate to a subgroup of the upper triangular matrix group $B$.
+First prove the first part. By Faithful Representations via Permutation Matrices and **Theorem 1.4.10 (Cayley's Theorem)**, the solvable group $G$ of order $n$ is isomorphic to a subgroup of $\mathrm{GL}\left(V\right)$, where $V=\mathbb C^{n}$; by Solvability Is Preserved under Isomorphism, we may assume $G$ itself is a solvable subgroup of $\mathrm{GL}\left(V\right)$. We now induct on $\dim V$ to prove that $G$ can be simultaneously triangularized, i.e. $G$ is conjugate to a subgroup of the upper triangular matrix group $B$.
 
-**Base case**: When $\dim V=1$, $\mathrm{GL}\left(V\right)\cong\mathbb C^{*}$ is itself the upper triangular matrix group, so the conclusion holds.
+Base case: When $\dim V=1$, $\mathrm{GL}\left(V\right)\cong\mathbb C^{*}$ is itself the upper triangular matrix group, so the conclusion holds.
 
-**Inductive step**: Let $\dim V=n> 1$. By **Definition 1.8.7 (Solvable and Nilpotent Groups)**, the commutator subgroup $G^{\prime}=\left[G,G\right]$ is a proper normal subgroup of $G$; by **Lemma 1.8.5**, $G/G^{\prime}$ is an Abelian group. By **Lemma 1.8.8 (Heredity of Solvability)**, $G^{\prime}$ is solvable. By the induction hypothesis (repeatedly applying the base-case result to $G^{\prime}$ acting on $V$), $G^{\prime}$ has a common eigenvector in $V$; let $\lambda$ be a character of $G^{\prime}$, and write its eigenspace as
+Inductive step: Let $\dim V=n> 1$. By **Definition 1.8.7 (Solvable and Nilpotent Groups)**, the commutator subgroup $G^{\prime}=\left[G,G\right]$ is a proper normal subgroup of $G$; by **Lemma 1.8.5**, $G/G^{\prime}$ is an Abelian group. By **Lemma 1.8.8 (Heredity of Solvability)**, $G^{\prime}$ is solvable. By the induction hypothesis (repeatedly applying the base-case result to $G^{\prime}$ acting on $V$), $G^{\prime}$ has a common eigenvector in $V$; let $\lambda$ be a character of $G^{\prime}$, and write its eigenspace as
 
 $$
 V_{\lambda}=\left\{v\in V\mid\sigma v=\lambda\left(\sigma\right)v,\ \forall\sigma\in G^{\prime}\right\}.
@@ -233,7 +233,7 @@ On $W$, since $G/G^{\prime}$ is Abelian while $G^{\prime}$ acts by scalars on $W
 
 Hence $G$ induces a solvable subgroup on the quotient space $V/L$ (by Solvability Is Preserved under Isomorphism and the solvability of quotients, or **Lemma 1.8.8 (Heredity of Solvability)**); by the induction hypothesis, $G$ can be triangularized on $V/L$. Thus we may choose a basis of $V$ in which $L$ is spanned by the first basis vector, and the triangularization of the quotient gives an upper triangular matrix representation of $G$ on $V$. Hence $G$ is conjugate to a subgroup of $B$, i.e. $G$ is isomorphic to a subgroup of $B$. $\blacksquare$
 
-**Then answer the second part.** The answer is no: a nontrivial finite nilpotent group $G$ cannot be isomorphic to a subgroup of $N$.
+Then answer the second part. The answer is no: a nontrivial finite nilpotent group $G$ cannot be isomorphic to a subgroup of $N$.
 
 Indeed, let $A\in N$, i.e. $A$ is a complex upper triangular matrix whose diagonal entries are all $1$; then $A=I+M$, where $M$ is strictly upper triangular. By Nilpotent Matrices and Elements of Finite Order, $M$ is nilpotent, and if $A$ has finite order then $M=0$, i.e. $A=I$. This shows that the only element of finite order in $N$ is the identity matrix $I$ itself.
 
@@ -249,7 +249,7 @@ Therefore the only finite subgroup of $N$ is the trivial group $\left\{I\right\}
 
 ### Solution to 1.9-4
 
-**Part (1): the action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$.** By Linear Maps Preserve Dimension of Subspaces, for $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$ and a $1$-dimensional subspace $W=\mathbb Rv$, $\rho\left(W\right)$ is again a $1$-dimensional subspace. For $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ and $W=\mathbb Rv$,
+Part (1): the action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$. By Linear Maps Preserve Dimension of Subspaces, for $\rho\in\mathrm{GL}\left(n,\mathbb R\right)$ and a $1$-dimensional subspace $W=\mathbb Rv$, $\rho\left(W\right)$ is again a $1$-dimensional subspace. For $\rho,\tau\in\mathrm{GL}\left(n,\mathbb R\right)$ and $W=\mathbb Rv$,
 
 $$
 \rho\left(\tau\left(W\right)\right)=\rho\left(\tau\left(\mathbb Rv\right)\right)=\rho\left(\mathbb R\tau\left(v\right)\right)=\mathbb R\rho\left(\tau\left(v\right)\right)=\left(\rho\tau\right)\left(W\right),
@@ -257,25 +257,25 @@ $$
 
 and the identity matrix $I$ satisfies $I\left(W\right)=W$. By **Definition 1.9.1 (Group Action)**, this is an action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$.
 
-**Transitivity**: Take any two lines $W_1=\mathbb Rv$, $W_2=\mathbb Rw$ ($v,w\ne0$). By Linear Maps Preserve Dimension of Subspaces, there exists an invertible matrix $\rho$ with $\rho v=w$, so $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
+Transitivity: Take any two lines $W_1=\mathbb Rv$, $W_2=\mathbb Rw$ ($v,w\ne0$). By Linear Maps Preserve Dimension of Subspaces, there exists an invertible matrix $\rho$ with $\rho v=w$, so $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
 
-**Stabilizer**: Take $W_0=\mathbb Re_1$, where $e_1=\left(1,0,\cdots,0\right)^{\top}$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho e_1\in\mathbb Re_1$, i.e. the first column of $\rho$ is $\left(a,0,\cdots,0\right)^{\top}$ with $a\ne0$. Hence by **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer of $W_0$ is
+Stabilizer: Take $W_0=\mathbb Re_1$, where $e_1=\left(1,0,\cdots,0\right)^{\top}$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho e_1\in\mathbb Re_1$, i.e. the first column of $\rho$ is $\left(a,0,\cdots,0\right)^{\top}$ with $a\ne0$. Hence by **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer of $W_0$ is
 
 $$
 F_{W_0}=\left\{\begin{bmatrix}a & *\\0 & A\end{bmatrix}\;\middle|\;a\in\mathbb R^{*},\;A\in\mathrm{GL}\left(n-1,\mathbb R\right)\right\}.
 $$
 
-**Part (2): the action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $\mathrm{Gr}\left(k,n\right)$.** Similarly $\rho\left(\tau\left(W\right)\right)=\left(\rho\tau\right)\left(W\right)$ and $I\left(W\right)=W$, so by **Definition 1.9.1 (Group Action)** this is an action.
+Part (2): the action of $\mathrm{GL}\left(n,\mathbb R\right)$ on $\mathrm{Gr}\left(k,n\right)$. Similarly $\rho\left(\tau\left(W\right)\right)=\left(\rho\tau\right)\left(W\right)$ and $I\left(W\right)=W$, so by **Definition 1.9.1 (Group Action)** this is an action.
 
-**Transitivity**: Take two $k$-dimensional subspaces $W_1,W_2$ with bases $\left\{v_1,\cdots,v_k\right\}$ and $\left\{w_1,\cdots,w_k\right\}$; extend them to bases of $\mathbb R^n$. By Linear Maps Preserve Dimension of Subspaces, define an invertible linear map $\rho$ with $\rho v_i=w_i$ ($i=1,\cdots,k$); then $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
+Transitivity: Take two $k$-dimensional subspaces $W_1,W_2$ with bases $\left\{v_1,\cdots,v_k\right\}$ and $\left\{w_1,\cdots,w_k\right\}$; extend them to bases of $\mathbb R^n$. By Linear Maps Preserve Dimension of Subspaces, define an invertible linear map $\rho$ with $\rho v_i=w_i$ ($i=1,\cdots,k$); then $\rho\left(W_1\right)=W_2$. By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
 
-**Stabilizer**: Take $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho$ mapping each $e_i$ ($i\le k$) back into $W_0$, i.e. the first $k$ columns of $\rho$ have zero entries in rows $k+1,\cdots,n$, namely $\rho$ is a block upper triangular matrix. Hence by **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer is
+Stabilizer: Take $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$. The condition $\rho\left(W_0\right)=W_0$ is equivalent to $\rho$ mapping each $e_i$ ($i\le k$) back into $W_0$, i.e. the first $k$ columns of $\rho$ have zero entries in rows $k+1,\cdots,n$, namely $\rho$ is a block upper triangular matrix. Hence by **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer is
 
 $$
 F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb R\right),\;C\in\mathrm{GL}\left(n-k,\mathbb R\right),\;B\in\mathbb R^{k\times\left(n-k\right)}\right\}.
 $$
 
-**Part (3): determine transitivity.** The action of $\mathrm{SL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$ and on $\mathrm{Gr}\left(k,n\right)$ is transitive: in the map $\rho$ constructed in Parts (1)(2), if its determinant is not $1$, multiply the last row by a nonzero scalar to adjust the determinant to $1$, without changing the action on subspaces.
+Part (3): determine transitivity. The action of $\mathrm{SL}\left(n,\mathbb R\right)$ on $P^{n-1}\left(\mathbb R\right)$ and on $\mathrm{Gr}\left(k,n\right)$ is transitive: in the map $\rho$ constructed in Parts (1)(2), if its determinant is not $1$, multiply the last row by a nonzero scalar to adjust the determinant to $1$, without changing the action on subspaces.
 
 $O\left(n\right)$ acts transitively on $P^{n-1}\left(\mathbb R\right)$: by Orthogonal and Unitary Transformations, any two unit lines can be related by an orthogonal transformation. $O\left(n\right)$ also acts transitively on $\mathrm{Gr}\left(k,n\right)$: bases of two $k$-dimensional subspaces can be extended to two orthonormal bases, which are related by an orthogonal map by Orthogonal and Unitary Transformations.
 

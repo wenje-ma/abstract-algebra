@@ -62,19 +62,19 @@ and $G=H_{1}H_{2}$.
 
 ### Solution to 1.2-20
 
-**First prove the inequality.** Consider the map
+First prove the inequality. Consider the map
 
 $$
 \varphi:G/\left(H_{1}\cap H_{2}\right)\to G/H_{1}\times G/H_{2},\quad g\left(H_{1}\cap H_{2}\right)\mapsto\left(gH_{1},gH_{2}\right).
 $$
 
-**Well-defined**: if $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$, then by **Lemma 1.2.12 (Coset Coincidence Criterion)**, $g^{-1}g'\in H_{1}\cap H_{2}$, so $g^{-1}g'\in H_{1}$ and $g^{-1}g'\in H_{2}$, and by **Lemma 1.2.12 (Coset Coincidence Criterion)** again, $gH_{1}=g'H_{1}$ and $gH_{2}=g'H_{2}$; hence $\varphi$ is well-defined.
+Well-defined: if $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$, then by **Lemma 1.2.12 (Coset Coincidence Criterion)**, $g^{-1}g'\in H_{1}\cap H_{2}$, so $g^{-1}g'\in H_{1}$ and $g^{-1}g'\in H_{2}$, and by **Lemma 1.2.12 (Coset Coincidence Criterion)** again, $gH_{1}=g'H_{1}$ and $gH_{2}=g'H_{2}$; hence $\varphi$ is well-defined.
 
-**Injectivity**: if $\left(gH_{1},gH_{2}\right)=\left(g'H_{1},g'H_{2}\right)$, then by **Lemma 1.2.12 (Coset Coincidence Criterion)**, $g^{-1}g'\in H_{1}$ and $g^{-1}g'\in H_{2}$, so $g^{-1}g'\in H_{1}\cap H_{2}$, and by **Lemma 1.2.12 (Coset Coincidence Criterion)** again, $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$. Hence $\varphi$ is injective.
+Injectivity: if $\left(gH_{1},gH_{2}\right)=\left(g'H_{1},g'H_{2}\right)$, then by **Lemma 1.2.12 (Coset Coincidence Criterion)**, $g^{-1}g'\in H_{1}$ and $g^{-1}g'\in H_{2}$, so $g^{-1}g'\in H_{1}\cap H_{2}$, and by **Lemma 1.2.12 (Coset Coincidence Criterion)** again, $g\left(H_{1}\cap H_{2}\right)=g'\left(H_{1}\cap H_{2}\right)$. Hence $\varphi$ is injective.
 
 Therefore $\left[G:H_{1}\cap H_{2}\right]=\left|G/\left(H_{1}\cap H_{2}\right)\right|\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
 
-**Next prove equality in the coprime case.** By **Corollary 1.2.23 (Multiplicativity of the Index)**, since $H_{1}\cap H_{2}< H_{1}< G$,
+Next prove equality in the coprime case. By **Corollary 1.2.23 (Multiplicativity of the Index)**, since $H_{1}\cap H_{2}< H_{1}< G$,
 
 $$
 \left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[H_{1}:H_{1}\cap H_{2}\right].
@@ -82,7 +82,7 @@ $$
 
 Hence $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. Similarly, from $H_{1}\cap H_{2}< H_{2}< G$, we get $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. Since $\left[G:H_{1}\right]$ and $\left[G:H_{2}\right]$ are coprime, by Greatest Common Divisor and Least Common Multiple, $\left[G:H_{1}\right]\left[G:H_{2}\right]\mid\left[G:H_{1}\cap H_{2}\right]$. Combined with the inequality $\left[G:H_{1}\cap H_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right]$ just proved, we get $\left[G:H_{1}\cap H_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
 
-**Finally prove $G=H_{1}H_{2}$.** By Order of a Product of Finite Subsets,
+Finally prove $G=H_{1}H_{2}$. By Order of a Product of Finite Subsets,
 
 $$
 \left|H_{1}H_{2}\right|=\frac{\left|H_{1}\right|\left|H_{2}\right|}{\left|H_{1}\cap H_{2}\right|}.
@@ -110,11 +110,11 @@ Prove that the conjugacy relation on a group $G$ is an equivalence relation, and
 
 Define a relation $R$ on $G$ by: $aRb$ if and only if there exists $g\in G$ such that $b=gag^{-1}$, i.e. $a,b$ are conjugate. We verify the three conditions of an equivalence relation.
 
-**Reflexivity**: For any $a\in G$, take $g=e$; then $a=eae^{-1}$, so $aRa$.
+Reflexivity: For any $a\in G$, take $g=e$; then $a=eae^{-1}$, so $aRa$.
 
-**Symmetry**: If $aRb$, i.e. there exists $g\in G$ with $b=gag^{-1}$, then $a=g^{-1}bg$. Since $\left(g^{-1}\right)^{-1}=g$, we have $a=g^{-1}b\left(g^{-1}\right)^{-1}$, hence $bRa$.
+Symmetry: If $aRb$, i.e. there exists $g\in G$ with $b=gag^{-1}$, then $a=g^{-1}bg$. Since $\left(g^{-1}\right)^{-1}=g$, we have $a=g^{-1}b\left(g^{-1}\right)^{-1}$, hence $bRa$.
 
-**Transitivity**: If $aRb$ and $bRc$, i.e. there exist $g,h\in G$ with $b=gag^{-1}$ and $c=hbh^{-1}$, then
+Transitivity: If $aRb$ and $bRc$, i.e. there exist $g,h\in G$ with $b=gag^{-1}$ and $c=hbh^{-1}$, then
 
 $$
 c=hbh^{-1}=h\left(gag^{-1}\right)h^{-1}=\left(hg\right)a\left(hg\right)^{-1},
@@ -130,7 +130,7 @@ Let $H,K$ be two subgroups of a group $G$. Prove that if one of $H,K$ is a norma
 
 ### Solution to 1.3-9
 
-**First prove that if one of $H,K$ is normal, then $HK< G$.** Without loss of generality suppose $H\triangleleft G$. By **Theorem 1.3.5 (Equivalent Conditions for Normal Subgroups)** (condition (2)), $kH=Hk$ for every $k\in K$. Hence
+First prove that if one of $H,K$ is normal, then $HK< G$. Without loss of generality suppose $H\triangleleft G$. By **Theorem 1.3.5 (Equivalent Conditions for Normal Subgroups)** (condition (2)), $kH=Hk$ for every $k\in K$. Hence
 
 $$
 KH=\bigcup_{k\in K}kH=\bigcup_{k\in K}Hk=HK,
@@ -138,7 +138,7 @@ $$
 
 i.e. $HK=KH$. By Product of Subgroups, $HK< G$. Similarly, if $K\triangleleft G$, the symmetric argument gives $HK< G$.
 
-**Next prove that if both $H,K$ are normal, then $HK\triangleleft G$.** By the previous paragraph, $HK< G$. We now prove normality. For any $g\in G$ and $hk\in HK$,
+Next prove that if both $H,K$ are normal, then $HK\triangleleft G$. By the previous paragraph, $HK< G$. We now prove normality. For any $g\in G$ and $hk\in HK$,
 
 $$
 g\left(hk\right)g^{-1}=\left(ghg^{-1}\right)\left(gkg^{-1}\right).
@@ -154,7 +154,7 @@ If a group $G$ has exactly one subgroup $H$ of order $m$, prove that $H\triangle
 
 For any $g\in G$, consider the set $gHg^{-1}=\left\{ghg^{-1}\mid h\in H\right\}$.
 
-**Step 1: verify that $gHg^{-1}< G$.** For any $x,y\in gHg^{-1}$, there exist $h_1,h_2\in H$ with $x=gh_1g^{-1}$, $y=gh_2g^{-1}$, and then
+Step 1: verify that $gHg^{-1}< G$. For any $x,y\in gHg^{-1}$, there exist $h_1,h_2\in H$ with $x=gh_1g^{-1}$, $y=gh_2g^{-1}$, and then
 
 $$
 xy^{-1}=gh_1g^{-1}\left(gh_2g^{-1}\right)^{-1}=gh_1g^{-1}gh_2^{-1}g^{-1}=g\left(h_1h_2^{-1}\right)g^{-1}\in gHg^{-1}.
@@ -162,11 +162,11 @@ $$
 
 By **Theorem 1.2.2 (Subgroup Criterion)** (condition (3)), $gHg^{-1}< G$.
 
-**Step 2: compute $\left|gHg^{-1}\right|$.** By Conjugacy Maps Preserve Order, the map $h\mapsto ghg^{-1}$ is a bijection from $H$ to $gHg^{-1}$, so $\left|gHg^{-1}\right|=\left|H\right|=m$.
+Step 2: compute $\left|gHg^{-1}\right|$. By Conjugacy Maps Preserve Order, the map $h\mapsto ghg^{-1}$ is a bijection from $H$ to $gHg^{-1}$, so $\left|gHg^{-1}\right|=\left|H\right|=m$.
 
-**Step 3: uniqueness gives $gHg^{-1}=H$.** Since $G$ has exactly one subgroup $H$ of order $m$, and $gHg^{-1}$ is also a subgroup of $G$ of order $m$, we have $gHg^{-1}=H$.
+Step 3: uniqueness gives $gHg^{-1}=H$. Since $G$ has exactly one subgroup $H$ of order $m$, and $gHg^{-1}$ is also a subgroup of $G$ of order $m$, we have $gHg^{-1}=H$.
 
-**Step 4: prove that $H\triangleleft G$.** For any $g\in G$ and $h\in H$, since $gHg^{-1}=H$, we have $ghg^{-1}\in H$. By **Definition 1.3.1 (Normal Subgroup)**, $H\triangleleft G$. $\blacksquare$
+Step 4: prove that $H\triangleleft G$. For any $g\in G$ and $h\in H$, since $gHg^{-1}=H$, we have $ghg^{-1}\in H$. By **Definition 1.3.1 (Normal Subgroup)**, $H\triangleleft G$. $\blacksquare$
 
 ## 1.4-3
 
@@ -176,7 +176,7 @@ Let $G$ be a group. Define $R:G\to S_{G}$ by $R\left(a\right)=R_{a}$, where $R_{
 
 For any $g\in G$, by **Definition 1.4.9 (Left and Right Translations)**, $R_a\left(g\right)=ga$.
 
-**Step 1: prove that $R$ is an anti-homomorphism.** For any $g\in G$,
+Step 1: prove that $R$ is an anti-homomorphism. For any $g\in G$,
 
 $$
 R\left(ab\right)\left(g\right)=R_{ab}\left(g\right)=g\left(ab\right)=\left(ga\right)b=R_b\left(ga\right)=R_b\left(R_a\left(g\right)\right)=\left(R_b\circ R_a\right)\left(g\right)=R\left(b\right)R\left(a\right)\left(g\right).
@@ -184,9 +184,9 @@ $$
 
 Since $g$ is arbitrary, $R\left(ab\right)=R\left(b\right)R\left(a\right)$, and by Anti-Homomorphism and Anti-Isomorphism, $R$ is an anti-homomorphism from $G$ to $S_G$.
 
-**Step 2: prove that $R$ is injective.** If $R\left(a\right)=R\left(b\right)$, then $R_a=R_b$. In particular $R_a\left(e\right)=R_b\left(e\right)$, i.e. $ea=eb$, so $a=b$. Hence $R$ is injective.
+Step 2: prove that $R$ is injective. If $R\left(a\right)=R\left(b\right)$, then $R_a=R_b$. In particular $R_a\left(e\right)=R_b\left(e\right)$, i.e. $ea=eb$, so $a=b$. Hence $R$ is injective.
 
-**Step 3: prove that the image of $R$ is a subgroup of $S_G$.** Write $R_G=\left\{R_a\mid a\in G\right\}$. By definition, $R:G\to R_G$ is surjective. Also, by Symmetric Groups and Bijective Transformations, $R_a$ is a bijection of $G$ (with inverse $R_{a^{-1}}$), so $R_G\subseteq S_G$, and $R_G$ is a subgroup of $S_G$ (closed under composition and inverses in $R_G$, since $R_aR_b=R_{ba}$ and $R_a^{-1}=R_{a^{-1}}$).
+Step 3: prove that the image of $R$ is a subgroup of $S_G$. Write $R_G=\left\{R_a\mid a\in G\right\}$. By definition, $R:G\to R_G$ is surjective. Also, by Symmetric Groups and Bijective Transformations, $R_a$ is a bijection of $G$ (with inverse $R_{a^{-1}}$), so $R_G\subseteq S_G$, and $R_G$ is a subgroup of $S_G$ (closed under composition and inverses in $R_G$, since $R_aR_b=R_{ba}$ and $R_a^{-1}=R_{a^{-1}}$).
 
 In summary, $R:G\to R_G$ is a bijective anti-homomorphism, and by Anti-Homomorphism and Anti-Isomorphism, $R$ is an anti-isomorphism; that is, $G$ is anti-isomorphic to the subgroup $R_G$ of $S_G$. $\blacksquare$
 
@@ -196,7 +196,7 @@ Prove that $f\left(x\right)=\cos x+\sqrt{-1}\sin x$ is a group homomorphism from
 
 ### Solution to 1.4-7
 
-**Step 1: prove that $f$ is a group homomorphism.** For any $x,y\in\mathbb R$, by Addition Formulas for Trigonometric Functions,
+Step 1: prove that $f$ is a group homomorphism. For any $x,y\in\mathbb R$, by Addition Formulas for Trigonometric Functions,
 
 $$
 f\left(x+y\right)=\cos\left(x+y\right)+\sqrt{-1}\sin\left(x+y\right)=\left(\cos x\cos y-\sin x\sin y\right)+\sqrt{-1}\left(\sin x\cos y+\cos x\sin y\right)=\left(\cos x+\sqrt{-1}\sin x\right)\left(\cos y+\sqrt{-1}\sin y\right)=f\left(x\right)f\left(y\right).
@@ -204,7 +204,7 @@ $$
 
 Moreover $f\left(x\right)\ne0$ for all $x\in\mathbb R$ (since $\cos^2x+\sin^2x=1$) (Complex Exponentials and the Unit Circle), so $f:\mathbb R\to\mathbb C^{*}$ is well-defined. By **Definition 1.4.1 (Group Homomorphism and Isomorphism)**, $f$ is a group homomorphism from $\left(\mathbb R,+\right)$ to $\left(\mathbb C^{*},\cdot\right)$.
 
-**Step 2: find $\ker f$.** By **Definition 1.4.11 (Kernel and Image of a Homomorphism)**, $\ker f=\left\{x\in\mathbb R\mid f\left(x\right)=1\right\}$. By Complex Exponentials and the Unit Circle, $f\left(x\right)=\cos x+\sqrt{-1}\sin x=1$ if and only if $x=2k\pi$, $k\in\mathbb Z$. Hence
+Step 2: find $\ker f$. By **Definition 1.4.11 (Kernel and Image of a Homomorphism)**, $\ker f=\left\{x\in\mathbb R\mid f\left(x\right)=1\right\}$. By Complex Exponentials and the Unit Circle, $f\left(x\right)=\cos x+\sqrt{-1}\sin x=1$ if and only if $x=2k\pi$, $k\in\mathbb Z$. Hence
 
 $$
 \ker f=2\pi\mathbb Z=\left\{2k\pi\mid k\in\mathbb Z\right\}.
@@ -226,9 +226,9 @@ Prove that this set is a group, called the semidirect product of $G$ and $H$, de
 
 Write $G\ltimes H=\left\{\left(g,h\right)\mid g\in G,h\in H\right\}$, with the multiplication defined as in the problem. We verify the group axioms one by one.
 
-**Closure**: For any $\left(g_1,h_1\right),\left(g_2,h_2\right)\in G\ltimes H$, since $g_1g_2\in G$, and $\varphi\left(g_2^{-1}\right)\left(h_1\right)\in H$ (as $\varphi\left(g_2^{-1}\right)\in\mathrm{Aut}\left(H\right)$) and $h_2\in H$, we have $\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\in H$ (Properties of Homomorphisms into Automorphism Groups). Hence $\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\in G\ltimes H$, so closure holds.
+Closure: For any $\left(g_1,h_1\right),\left(g_2,h_2\right)\in G\ltimes H$, since $g_1g_2\in G$, and $\varphi\left(g_2^{-1}\right)\left(h_1\right)\in H$ (as $\varphi\left(g_2^{-1}\right)\in\mathrm{Aut}\left(H\right)$) and $h_2\in H$, we have $\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\in H$ (Properties of Homomorphisms into Automorphism Groups). Hence $\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\in G\ltimes H$, so closure holds.
 
-**Associativity**: For any $\left(g_1,h_1\right),\left(g_2,h_2\right),\left(g_3,h_3\right)\in G\ltimes H$, on one hand
+Associativity: For any $\left(g_1,h_1\right),\left(g_2,h_2\right),\left(g_3,h_3\right)\in G\ltimes H$, on one hand
 
 $$
 \left(\left(g_1,h_1\right)\left(g_2,h_2\right)\right)\left(g_3,h_3\right)=\left(g_1g_2,\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)\left(g_3,h_3\right)=\left(\left(g_1g_2\right)g_3,\ \varphi\left(g_3^{-1}\right)\left(\varphi\left(g_2^{-1}\right)\left(h_1\right)h_2\right)h_3\right).
@@ -248,7 +248,7 @@ $$
 
 Since $G$ satisfies associativity, $\left(g_1g_2\right)g_3=g_1\left(g_2g_3\right)$; the second components of the two right-hand sides coincide, so associativity holds.
 
-**Identity**: Consider $\left(e_G,e_H\right)$. For any $\left(g,h\right)\in G\ltimes H$, since $\varphi\left(e_G\right)=\mathrm{id}_H$ (Properties of Homomorphisms into Automorphism Groups), we have $\varphi\left(e_G^{-1}\right)\left(h\right)=\mathrm{id}_H\left(h\right)=h$, and hence
+Identity: Consider $\left(e_G,e_H\right)$. For any $\left(g,h\right)\in G\ltimes H$, since $\varphi\left(e_G\right)=\mathrm{id}_H$ (Properties of Homomorphisms into Automorphism Groups), we have $\varphi\left(e_G^{-1}\right)\left(h\right)=\mathrm{id}_H\left(h\right)=h$, and hence
 
 $$
 \left(g,h\right)\left(e_G,e_H\right)=\left(g,\varphi\left(e_G^{-1}\right)\left(h\right)e_H\right)=\left(g,h\right),
@@ -262,7 +262,7 @@ $$
 
 Hence $\left(e_G,e_H\right)$ is the identity.
 
-**Inverse**: For $\left(g,h\right)\in G\ltimes H$, consider $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$. Since $\varphi\left(\left(g^{-1}\right)^{-1}\right)=\varphi\left(g\right)$, and $\varphi\left(g^{-1}\right)\varphi\left(g\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$ (Properties of Homomorphisms into Automorphism Groups), we have
+Inverse: For $\left(g,h\right)\in G\ltimes H$, consider $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$. Since $\varphi\left(\left(g^{-1}\right)^{-1}\right)=\varphi\left(g\right)$, and $\varphi\left(g^{-1}\right)\varphi\left(g\right)=\mathrm{id}_H$, $\varphi\left(g\right)\varphi\left(g^{-1}\right)=\mathrm{id}_H$ (Properties of Homomorphisms into Automorphism Groups), we have
 
 $$
 \left(g,h\right)\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_G,\ \varphi\left(g\right)\left(h\right)\cdot\varphi\left(g\right)\left(h^{-1}\right)\right)=\left(e_G,\varphi\left(g\right)\left(hh^{-1}\right)\right)=\left(e_G,e_H\right),
@@ -278,7 +278,7 @@ Hence $\left(g^{-1},\varphi\left(g\right)\left(h^{-1}\right)\right)$ is the inve
 
 Since closure, associativity, identity and inverse all hold, $G\ltimes H$ is a group.
 
-**Verify $G_1< G\ltimes H$.** $\left(e_G,e_H\right)\in G_1$, so $G_1$ is nonempty. For $\left(g_1,e_H\right),\left(g_2,e_H\right)\in G_1$, by the inverse formula, $\left(g_2,e_H\right)^{-1}=\left(g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_2^{-1},e_H\right)$, and hence
+Verify $G_1< G\ltimes H$. $\left(e_G,e_H\right)\in G_1$, so $G_1$ is nonempty. For $\left(g_1,e_H\right),\left(g_2,e_H\right)\in G_1$, by the inverse formula, $\left(g_2,e_H\right)^{-1}=\left(g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_2^{-1},e_H\right)$, and hence
 
 $$
 \left(g_1,e_H\right)\left(g_2,e_H\right)^{-1}=\left(g_1,e_H\right)\left(g_2^{-1},e_H\right)=\left(g_1g_2^{-1},\varphi\left(\left(g_2^{-1}\right)^{-1}\right)\left(e_H\right)e_H\right)=\left(g_1g_2^{-1},\varphi\left(g_2\right)\left(e_H\right)\right)=\left(g_1g_2^{-1},e_H\right)\in G_1.
@@ -286,7 +286,7 @@ $$
 
 By **Theorem 1.2.2 (Subgroup Criterion)**, $G_1< G\ltimes H$.
 
-**Verify $H_1\triangleleft G\ltimes H$.** First prove $H_1< G\ltimes H$: $\left(e_G,e_H\right)\in H_1$, nonempty; for $\left(e_G,h_1\right),\left(e_G,h_2\right)\in H_1$, by the inverse formula, $\left(e_G,h_2\right)^{-1}=\left(e_G,\varphi\left(e_G\right)\left(h_2^{-1}\right)\right)=\left(e_G,h_2^{-1}\right)$, and hence
+Verify $H_1\triangleleft G\ltimes H$. First prove $H_1< G\ltimes H$: $\left(e_G,e_H\right)\in H_1$, nonempty; for $\left(e_G,h_1\right),\left(e_G,h_2\right)\in H_1$, by the inverse formula, $\left(e_G,h_2\right)^{-1}=\left(e_G,\varphi\left(e_G\right)\left(h_2^{-1}\right)\right)=\left(e_G,h_2^{-1}\right)$, and hence
 
 $$
 \left(e_G,h_1\right)\left(e_G,h_2\right)^{-1}=\left(e_G,h_1\right)\left(e_G,h_2^{-1}\right)=\left(e_G,\varphi\left(e_G^{-1}\right)\left(h_1\right)h_2^{-1}\right)=\left(e_G,h_1h_2^{-1}\right)\in H_1.

@@ -48,9 +48,9 @@ $$
 
 is closed under multiplication ($\omega^{2}=\omega-1\in R$).
 
-**Part (1).** $R\subseteq\mathbb C$. $R$ is closed under addition (componentwise), closed under multiplication, and contains the identity $1$. Since $\mathbb C$ has no zero divisors, $R$ is a commutative unital ring without zero divisors, hence an integral domain.
+Part (1). $R\subseteq\mathbb C$. $R$ is closed under addition (componentwise), closed under multiplication, and contains the identity $1$. Since $\mathbb C$ has no zero divisors, $R$ is a commutative unital ring without zero divisors, hence an integral domain.
 
-**Part (2).** By The Norm on the Ring of Integers $\mathbb Z\left[\omega\right]$, define
+Part (2). By The Norm on the Ring of Integers $\mathbb Z\left[\omega\right]$, define
 
 $$
 N\left(m+n\omega\right)=\left(m+n\omega\right)\left(m+n\overline\omega\right)=m^{2}+mn+n^{2},
@@ -70,7 +70,7 @@ $$
 
 The corresponding elements are $\pm1$, $\pm\omega$, $\pm\left(1-\omega\right)$. Since $\omega=\frac{1+\sqrt{-3}}{2}$ and $1-\omega=\frac{1-\sqrt{-3}}{2}$, all units of $R$ are $\pm1$ and $\frac{\pm1\pm\sqrt{-3}}{2}$.
 
-**Part (3).** Since $1+\sqrt{-3}=2\omega$ and $\omega$ is a unit ($N\left(\omega\right)=1$), i.e. $1+\sqrt{-3}=2\cdot\omega$ with $\omega$ a unit, by **Definition 2.5.2 (Associates)** the elements $2$ and $1+\sqrt{-3}$ are associates. $\blacksquare$
+Part (3). Since $1+\sqrt{-3}=2\omega$ and $\omega$ is a unit ($N\left(\omega\right)=1$), i.e. $1+\sqrt{-3}=2\cdot\omega$ with $\omega$ a unit, by **Definition 2.5.2 (Associates)** the elements $2$ and $1+\sqrt{-3}$ are associates. $\blacksquare$
 
 ## 2.5-15
 
@@ -98,9 +98,9 @@ Let $R$ be a unique factorization domain and $p\in R^{*}$. Prove: $p$ is an irre
 
 Suppose $p\in R^{*}\setminus U$ (if $p$ is zero or a unit, the conclusion is trivial and not discussed).
 
-**Necessity**: Suppose $p$ is an irreducible element. Since $R$ is a unique factorization domain, by **Theorem 2.5.15 (Equivalent Conditions for a Unique Factorization Domain)** $p$ is a prime element, i.e. $p\mid ab$ implies $p\mid a$ or $p\mid b$. By Principal Ideals and Divisibility, $ab\in\left(p\right)$ is equivalent to $p\mid ab$, $a\in\left(p\right)$ to $p\mid a$, and $b\in\left(p\right)$ to $p\mid b$. Hence $ab\in\left(p\right)$ implies $a\in\left(p\right)$ or $b\in\left(p\right)$. Moreover, since $p$ is not a unit, by Principal Ideals and Divisibility $1\notin\left(p\right)$ (otherwise $p\mid1$, making $p$ a unit), so $\left(p\right)\ne R$. By **Definition 2.6.1 (Prime Ideal)**, $\left(p\right)$ is a prime ideal.
+Necessity: Suppose $p$ is an irreducible element. Since $R$ is a unique factorization domain, by **Theorem 2.5.15 (Equivalent Conditions for a Unique Factorization Domain)** $p$ is a prime element, i.e. $p\mid ab$ implies $p\mid a$ or $p\mid b$. By Principal Ideals and Divisibility, $ab\in\left(p\right)$ is equivalent to $p\mid ab$, $a\in\left(p\right)$ to $p\mid a$, and $b\in\left(p\right)$ to $p\mid b$. Hence $ab\in\left(p\right)$ implies $a\in\left(p\right)$ or $b\in\left(p\right)$. Moreover, since $p$ is not a unit, by Principal Ideals and Divisibility $1\notin\left(p\right)$ (otherwise $p\mid1$, making $p$ a unit), so $\left(p\right)\ne R$. By **Definition 2.6.1 (Prime Ideal)**, $\left(p\right)$ is a prime ideal.
 
-**Sufficiency**: Suppose $\left(p\right)$ is a prime ideal. Assume, toward contradiction, that $p$ is reducible, i.e. there exist $a,b\in R$, both non-units, with $p=ab$. Since $ab=p\in\left(p\right)$, by **Definition 2.6.1 (Prime Ideal)** we have $a\in\left(p\right)$ or $b\in\left(p\right)$. If $a\in\left(p\right)$, by Principal Ideals and Divisibility there exists $r\in R$ with $a=pr$; then $p=ab=prb$. Since $p\ne0$ (as $p\in R^{*}$) and $R$ is an integral domain, by Cancellation in an Integral Domain we cancel $p$ to get $1=rb$, so $b$ is a unit, contradicting that $b$ is not a unit. If $b\in\left(p\right)$, similarly there exists $r\in R$ with $b=pr$, hence $p=ab=apr$; canceling $p$ gives $1=ar$, so $a$ is a unit, also a contradiction.
+Sufficiency: Suppose $\left(p\right)$ is a prime ideal. Assume, toward contradiction, that $p$ is reducible, i.e. there exist $a,b\in R$, both non-units, with $p=ab$. Since $ab=p\in\left(p\right)$, by **Definition 2.6.1 (Prime Ideal)** we have $a\in\left(p\right)$ or $b\in\left(p\right)$. If $a\in\left(p\right)$, by Principal Ideals and Divisibility there exists $r\in R$ with $a=pr$; then $p=ab=prb$. Since $p\ne0$ (as $p\in R^{*}$) and $R$ is an integral domain, by Cancellation in an Integral Domain we cancel $p$ to get $1=rb$, so $b$ is a unit, contradicting that $b$ is not a unit. If $b\in\left(p\right)$, similarly there exists $r\in R$ with $b=pr$, hence $p=ab=apr$; canceling $p$ gives $1=ar$, so $a$ is a unit, also a contradiction.
 
 Hence $p$ is an irreducible element. $\blacksquare$
 
@@ -202,13 +202,13 @@ $$
 a^{2}+ab+5b^{2}=\left(a+\frac{b}{2}\right)^{2}+\frac{19}{4}b^{2}\ge\frac{19}{4}> 4.
 $$
 
-**Part (1).** If $\alpha=a+b\omega$ is a unit, by The Norm on the Ring of Algebraic Integers we have $N\left(\alpha\right)=1$. If $b\ne0$, the inequality above gives $N\left(\alpha\right)\ge\frac{19}{4}> 1$, a contradiction. Hence $b=0$, $a^{2}=1$, $a=\pm1$. Thus the units of $R$ are only $1$ and $-1$.
+Part (1). If $\alpha=a+b\omega$ is a unit, by The Norm on the Ring of Algebraic Integers we have $N\left(\alpha\right)=1$. If $b\ne0$, the inequality above gives $N\left(\alpha\right)\ge\frac{19}{4}> 1$, a contradiction. Hence $b=0$, $a^{2}=1$, $a=\pm1$. Thus the units of $R$ are only $1$ and $-1$.
 
-**Part (2).** First prove $2$ is irreducible. If $2=\alpha\beta$ is a nontrivial factorization, then $\alpha,\beta$ are both non-units and $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$; by The Norm on the Ring of Algebraic Integers, $N\left(\alpha\right),N\left(\beta\right)> 1$, so $N\left(\alpha\right)=2$. But $a^{2}+ab+5b^{2}=2$ has no integer solution: for $b=0$ we need $a^{2}=2$, impossible; for $\left|b\right|\ge1$ the left side is $\ge\frac{19}{4}> 2$. A contradiction, so $2$ is irreducible.
+Part (2). First prove $2$ is irreducible. If $2=\alpha\beta$ is a nontrivial factorization, then $\alpha,\beta$ are both non-units and $N\left(\alpha\right)N\left(\beta\right)=N\left(2\right)=4$; by The Norm on the Ring of Algebraic Integers, $N\left(\alpha\right),N\left(\beta\right)> 1$, so $N\left(\alpha\right)=2$. But $a^{2}+ab+5b^{2}=2$ has no integer solution: for $b=0$ we need $a^{2}=2$, impossible; for $\left|b\right|\ge1$ the left side is $\ge\frac{19}{4}> 2$. A contradiction, so $2$ is irreducible.
 
 Similarly, if $3=\alpha\beta$ is a nontrivial factorization, then $N\left(\alpha\right)=3$, but $a^{2}+ab+5b^{2}=3$ also has no integer solution (by the same argument). Hence $3$ is irreducible.
 
-**Part (3).** By contradiction. Suppose $\left(R,\delta\right)$ is a Euclidean ring, and choose $m\in R\setminus\left\{0,\pm1\right\}$ with $\delta\left(m\right)$ minimal. Apply division with remainder to $a=2$, $b=m$: $2=qm+r$; by the minimality of $m$, $r\in\left\{0,\pm1\right\}$, so $qm\in\left\{1,2,3\right\}$. Taking norms, $N\left(q\right)N\left(m\right)\in\left\{1,4,9\right\}$.
+Part (3). By contradiction. Suppose $\left(R,\delta\right)$ is a Euclidean ring, and choose $m\in R\setminus\left\{0,\pm1\right\}$ with $\delta\left(m\right)$ minimal. Apply division with remainder to $a=2$, $b=m$: $2=qm+r$; by the minimality of $m$, $r\in\left\{0,\pm1\right\}$, so $qm\in\left\{1,2,3\right\}$. Taking norms, $N\left(q\right)N\left(m\right)\in\left\{1,4,9\right\}$.
 
 By the estimate in Part (1), the smallest norm of $R$ greater than $1$ is $4$ (attained by $\pm2$), and the next is $5$ (attained by $\omega$ etc., since $N\left(\omega\right)=5$). Since $5$ divides none of $1,4,9$, $N\left(m\right)$ can only be $4$ or $9$, and $N\left(q\right)=1$. Hence $q=\pm1$, so $m=\pm2$ or $m=\pm3$.
 
@@ -220,13 +220,13 @@ $$
 
 and comparing the coefficient of $\omega$ gives $2b'=1$, so $b'=\frac12\notin\mathbb Z$, a contradiction. If $m=\pm3$, comparing the coefficient of $\omega$ gives $3b'=1$, so $b'=\frac13\notin\mathbb Z$, a contradiction. Hence $R$ is not a Euclidean ring.
 
-**Part (4).** Take any nonzero ideal $I$, and choose $b\in I$ of minimal complex modulus $\left|b\right|$. For any $a\in I$, put
+Part (4). Take any nonzero ideal $I$, and choose $b\in I$ of minimal complex modulus $\left|b\right|$. For any $a\in I$, put
 
 $$
 z=\frac{a}{b}=x+y\omega\in\mathbb Q\left(\sqrt{-19}\right).
 $$
 
-**Part (5).** If $y$ is far from $\frac12$ (i.e. $\left|v\right|\le\frac{2}{\sqrt{19}}$, where $v$ is the deviation of $y$ from the nearest integer), then by A Bound for a Quadratic Form, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ attains its minimum in $u$ at $u=-\frac v2$. Choose the integer $m$ as the nearest integer to $x+\frac v2$ and the integer $n$ as the nearest integer to $y$, and put $q=m+n\omega$; then $\left|u+\frac v2\right|\le\frac12$ and
+Part (5). If $y$ is far from $\frac12$ (i.e. $\left|v\right|\le\frac{2}{\sqrt{19}}$, where $v$ is the deviation of $y$ from the nearest integer), then by A Bound for a Quadratic Form, $N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}$ attains its minimum in $u$ at $u=-\frac v2$. Choose the integer $m$ as the nearest integer to $x+\frac v2$ and the integer $n$ as the nearest integer to $y$, and put $q=m+n\omega$; then $\left|u+\frac v2\right|\le\frac12$ and
 
 $$
 N\left(z-q\right)=N\left(u+v\omega\right)=\left(u+\frac v2\right)^{2}+\frac{19}{4}v^{2}\le\frac14+\frac{19}{4}\cdot\frac{4}{19}=\frac54.
@@ -238,7 +238,7 @@ $$
 N\left(z-q\right)< 1.
 $$
 
-**Part (6).** If the direct choice above cannot achieve $N\left(z-q\right)< 1$, then $\left|v\right|$ must be near $\frac12$ (hence $\frac{19}{4}v^{2}> 1$ and $v$ near $\pm\frac12$). In this case consider $2z=\frac{2a}{b}=2x+2y\omega$, whose $\omega$-coordinate is $2y$. Since $y$ is near $\frac12$, $2y$ is near $1$, so the deviation $\left|v'\right|$ of $2y$ from the nearest integer satisfies $\left|v'\right|\le\frac14< \frac{2}{\sqrt{19}}$; by Part (5) there exists $q'\in R$ with
+Part (6). If the direct choice above cannot achieve $N\left(z-q\right)< 1$, then $\left|v\right|$ must be near $\frac12$ (hence $\frac{19}{4}v^{2}> 1$ and $v$ near $\pm\frac12$). In this case consider $2z=\frac{2a}{b}=2x+2y\omega$, whose $\omega$-coordinate is $2y$. Since $y$ is near $\frac12$, $2y$ is near $1$, so the deviation $\left|v'\right|$ of $2y$ from the nearest integer satisfies $\left|v'\right|\le\frac14< \frac{2}{\sqrt{19}}$; by Part (5) there exists $q'\in R$ with
 
 $$
 N\left(2z-q'\right)< 1,
@@ -248,4 +248,4 @@ i.e. $N\left(2a-q'b\right)=N\left(b\right)N\left(2z-q'\right)< N\left(b\right)$,
 
 Now handle $a$ itself: since $2a=q'b$ and $a\in I$, applying Part (5) or the above argument to $a$ again (dividing by $2$ repeatedly if necessary) ultimately yields some $q\in R$ with $a-qb=0$, i.e. $a\in\left(b\right)$. Hence for every $a\in I$ there exists $q\in R$ with $a-qb=0$ and $\left|a-qb\right|=0< \left|b\right|$, satisfying the requirement of Part (4).
 
-**Part (7).** By Parts (5) and (6), for every $a\in I$ there exists $q\in R$ with $a=qb\in\left(b\right)$, so $I\subseteq\left(b\right)$. Conversely, since $b\in I$ and $I$ is an ideal, $\left(b\right)\subseteq I$. Hence $I=\left(b\right)$, i.e. every nonzero ideal of $R$ is principal (the zero ideal $\left\{0\right\}$ is also principal). By **Definition 2.7.1 (Principal Ideal Ring)**, $R$ is a principal ideal domain. Combined with Part (3), $R$ is a principal ideal domain but not a Euclidean ring. $\blacksquare$
+Part (7). By Parts (5) and (6), for every $a\in I$ there exists $q\in R$ with $a=qb\in\left(b\right)$, so $I\subseteq\left(b\right)$. Conversely, since $b\in I$ and $I$ is an ideal, $\left(b\right)\subseteq I$. Hence $I=\left(b\right)$, i.e. every nonzero ideal of $R$ is principal (the zero ideal $\left\{0\right\}$ is also principal). By **Definition 2.7.1 (Principal Ideal Ring)**, $R$ is a principal ideal domain. Combined with Part (3), $R$ is a principal ideal domain but not a Euclidean ring. $\blacksquare$

@@ -68,9 +68,9 @@ $$
 
 依分式域的泛性质, 分三步验证.
 
-**良定义.** 设 $ab^{-1}=cd^{-1}$, $a,b,c,d\in R$, $b,d\ne0$. 则 $ad=bc$. 由 $\sigma$ 为环同态, $\sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right)$, 故 $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, 即 $\overline\sigma\left(ab^{-1}\right)=\overline\sigma\left(cd^{-1}\right)$. 定义与代表元选取无关.
+良定义. 设 $ab^{-1}=cd^{-1}$, $a,b,c,d\in R$, $b,d\ne0$. 则 $ad=bc$. 由 $\sigma$ 为环同态, $\sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right)$, 故 $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, 即 $\overline\sigma\left(ab^{-1}\right)=\overline\sigma\left(cd^{-1}\right)$. 定义与代表元选取无关.
 
-**环同态.** 对 $x=ab^{-1}$, $y=cd^{-1}\in E$, 有
+环同态. 对 $x=ab^{-1}$, $y=cd^{-1}\in E$, 有
 
 $$
 \overline\sigma\left(xy\right)=\overline\sigma\left(ac\left(bd\right)^{-1}\right)=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}=\overline\sigma\left(x\right)\overline\sigma\left(y\right),
@@ -84,7 +84,7 @@ $$
 
 又 $\overline\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, 故 $\overline\sigma$ 为环同态.
 
-**双射.** 因 $\sigma$ 是 $R$ 的自同构, 其逆 $\tau=\sigma^{-1}$ 亦为 $R$ 的自同构. 直接验证可知 $\overline\tau$ 为 $\overline\sigma$ 的逆映射: 对 $x=ab^{-1}\in E$,
+双射. 因 $\sigma$ 是 $R$ 的自同构, 其逆 $\tau=\sigma^{-1}$ 亦为 $R$ 的自同构. 直接验证可知 $\overline\tau$ 为 $\overline\sigma$ 的逆映射: 对 $x=ab^{-1}\in E$,
 
 $$
 \overline\tau\circ\overline\sigma\left(x\right)=\overline\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}=ab^{-1}=x.
@@ -192,9 +192,9 @@ $f\left(x\right)$ 中 $x^{k-1}$ 的系数为 $-k\theta$. 因 $f\in E\left[x\righ
 
 ### 解答 4.4-5
 
-**必要性.** 设 $x^p-c$ 在 $F$ 中有根 $\alpha$, 即 $\alpha^p=c$, $\alpha\in F$. 由特征 $p$ 下的弗罗贝尼乌斯映射, $x^p-c=x^p-\alpha^p=\left(x-\alpha\right)^p$. 因 $p\ge2$, 上式给出 $x^p-c$ 在 $F\left[x\right]$ 中的非平凡分解, 故 $x^p-c$ 可约. 因而不可约必有根的反面成立, 即不可约推出 $x^p-c$ 在 $F$ 中无根.
+必要性. 设 $x^p-c$ 在 $F$ 中有根 $\alpha$, 即 $\alpha^p=c$, $\alpha\in F$. 由特征 $p$ 下的弗罗贝尼乌斯映射, $x^p-c=x^p-\alpha^p=\left(x-\alpha\right)^p$. 因 $p\ge2$, 上式给出 $x^p-c$ 在 $F\left[x\right]$ 中的非平凡分解, 故 $x^p-c$ 可约. 因而不可约必有根的反面成立, 即不可约推出 $x^p-c$ 在 $F$ 中无根.
 
-**充分性.** 反设 $x^p-c$ 在 $F$ 中无根, 但 $x^p-c$ 在 $F\left[x\right]$ 中可约, 即存在非常数首一多项式 $f\left(x\right),g\left(x\right)\in F\left[x\right]$ 使 $x^p-c=f\left(x\right)g\left(x\right)$, 其中 $1\le\deg f=k< p$.
+充分性. 反设 $x^p-c$ 在 $F$ 中无根, 但 $x^p-c$ 在 $F\left[x\right]$ 中可约, 即存在非常数首一多项式 $f\left(x\right),g\left(x\right)\in F\left[x\right]$ 使 $x^p-c=f\left(x\right)g\left(x\right)$, 其中 $1\le\deg f=k< p$.
 
 设 $E$ 为 $x^p-c$ 的分裂域, $\alpha\in E$ 为其根. 由特征 $p$ 下的弗罗贝尼乌斯映射, 在 $E\left[x\right]$ 中有 $x^p-c=\left(x-\alpha\right)^p$. 因 $f$ 首一, 比较分解得 $f\left(x\right)=\left(x-\alpha\right)^k$.
 

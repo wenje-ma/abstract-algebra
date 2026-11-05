@@ -48,11 +48,11 @@
 
 ### 解答 2.9-4
 
-对 $s$ 作归纳. 当 $s=1$ 时, 即**2.9-3** 的结论.
+对 $s$ 作归纳. 当 $s=1$ 时, 即2.9-3 的结论.
 
 设结论对 $s-1$ 成立, 即 $\prod_{i=1}^{s-1}\left(x-a_i\right)\mid f\left(x\right)$. 写 $f\left(x\right)=g\left(x\right)\prod_{i=1}^{s-1}\left(x-a_i\right)$. 将 $x=a_s$ 代入, 因 $a_s$ 是 $f$ 的根, $f\left(a_s\right)=0$, 故 $0=g\left(a_s\right)\prod_{i=1}^{s-1}\left(a_s-a_i\right)$.
 
-由于 $a_1,\cdots,a_s$ 两两不同, $a_s-a_i\ne0$ ($1\le i\le s-1$). 又 $R$ 是整环, 无零因子, 故 $g\left(a_s\right)=0$. 由**2.9-3**, $\left(x-a_s\right)\mid g\left(x\right)$, 记 $g\left(x\right)=h\left(x\right)\left(x-a_s\right)$. 于是 $f\left(x\right)=h\left(x\right)\prod_{i=1}^{s}\left(x-a_i\right)$, 即 $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. 归纳完成.
+由于 $a_1,\cdots,a_s$ 两两不同, $a_s-a_i\ne0$ ($1\le i\le s-1$). 又 $R$ 是整环, 无零因子, 故 $g\left(a_s\right)=0$. 由2.9-3, $\left(x-a_s\right)\mid g\left(x\right)$, 记 $g\left(x\right)=h\left(x\right)\left(x-a_s\right)$. 于是 $f\left(x\right)=h\left(x\right)\prod_{i=1}^{s}\left(x-a_i\right)$, 即 $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. 归纳完成.
 
 现设 $f\left(x\right)\ne0$ 次数为 $m$, 有 $s$ 个不同根 $a_1,\cdots,a_s$. 由上, $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. 该乘积为 $s$ 次多项式, 它整除 $m$ 次多项式, 故次数 $s\le m$. 即整环上次数为 $m$ 的非零多项式的不同根的个数最多为 $m$. $\blacksquare$
 
@@ -120,9 +120,9 @@ $$
 
 ### 解答 3.1-13
 
-**必要性.** 设 $M=M_1\oplus\cdots\oplus M_s$ 为内直和, 则 (1) 显然. 若 $x\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)$, 则 $x$ 既可写成 $M_j$ 中元素, 又可写成 $M_1,\cdots,M_{j-1}$ 中元素之和, 这给出 $0$ 的一个非平凡表示 (除 $M_j$ 分量外其余分量和为 $-x$), 与直和分解的唯一性矛盾. 故 $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
+必要性. 设 $M=M_1\oplus\cdots\oplus M_s$ 为内直和, 则 (1) 显然. 若 $x\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)$, 则 $x$ 既可写成 $M_j$ 中元素, 又可写成 $M_1,\cdots,M_{j-1}$ 中元素之和, 这给出 $0$ 的一个非平凡表示 (除 $M_j$ 分量外其余分量和为 $-x$), 与直和分解的唯一性矛盾. 故 $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
 
-**充分性.** 设 (1)(2) 成立. 只需证 $M$ 中零元素的表示唯一. 设 $m_1+m_2+\cdots+m_s=0$, $m_i\in M_i$. 设 $j$ 为最大的使 $m_j\ne0$ 的下标, 则 $j\ge2$ (否则 $m_1=0$). 移项得 $m_j=-\left(m_1+\cdots+m_{j-1}\right)\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$, 故 $m_j=0$, 矛盾. 因此所有 $m_i=0$, 零元素表示唯一. 由**定理 3.1.10 (直和判据)**, $M=M_1\oplus\cdots\oplus M_s$. $\blacksquare$
+充分性. 设 (1)(2) 成立. 只需证 $M$ 中零元素的表示唯一. 设 $m_1+m_2+\cdots+m_s=0$, $m_i\in M_i$. 设 $j$ 为最大的使 $m_j\ne0$ 的下标, 则 $j\ge2$ (否则 $m_1=0$). 移项得 $m_j=-\left(m_1+\cdots+m_{j-1}\right)\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$, 故 $m_j=0$, 矛盾. 因此所有 $m_i=0$, 零元素表示唯一. 由**定理 3.1.10 (直和判据)**, $M=M_1\oplus\cdots\oplus M_s$. $\blacksquare$
 
 ## 3.1-14
 

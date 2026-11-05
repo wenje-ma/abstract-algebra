@@ -68,9 +68,9 @@ Let $E$ be the field of fractions of an integral domain $R$. For any automorphis
 
 By Universal Property of the Field of Fractions, verify in three steps.
 
-**Well-definedness.** Suppose $ab^{-1}=cd^{-1}$ with $a,b,c,d\in R$, $b,d\ne0$. Then $ad=bc$. Since $\sigma$ is a ring homomorphism, $\sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right)$, so $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, i.e. $\overline\sigma\left(ab^{-1}\right)=\overline\sigma\left(cd^{-1}\right)$. The definition is independent of the choice of representatives.
+Well-definedness. Suppose $ab^{-1}=cd^{-1}$ with $a,b,c,d\in R$, $b,d\ne0$. Then $ad=bc$. Since $\sigma$ is a ring homomorphism, $\sigma\left(a\right)\sigma\left(d\right)=\sigma\left(ad\right)=\sigma\left(bc\right)=\sigma\left(b\right)\sigma\left(c\right)$, so $\sigma\left(a\right)\sigma\left(b\right)^{-1}=\sigma\left(c\right)\sigma\left(d\right)^{-1}$, i.e. $\overline\sigma\left(ab^{-1}\right)=\overline\sigma\left(cd^{-1}\right)$. The definition is independent of the choice of representatives.
 
-**Ring homomorphism.** For $x=ab^{-1}$ and $y=cd^{-1}\in E$,
+Ring homomorphism. For $x=ab^{-1}$ and $y=cd^{-1}\in E$,
 
 $$
 \overline\sigma\left(xy\right)=\overline\sigma\left(ac\left(bd\right)^{-1}\right)=\sigma\left(ac\right)\sigma\left(bd\right)^{-1}=\sigma\left(a\right)\sigma\left(c\right)\sigma\left(b\right)^{-1}\sigma\left(d\right)^{-1}=\overline\sigma\left(x\right)\overline\sigma\left(y\right),
@@ -84,7 +84,7 @@ $$
 
 Also $\overline\sigma\left(1\right)=\sigma\left(1\right)\sigma\left(1\right)^{-1}=1$, so $\overline\sigma$ is a ring homomorphism.
 
-**Bijectivity.** Since $\sigma$ is an automorphism of $R$, its inverse $\tau=\sigma^{-1}$ is also an automorphism of $R$. A direct check shows that $\overline\tau$ is the inverse of $\overline\sigma$: for $x=ab^{-1}\in E$,
+Bijectivity. Since $\sigma$ is an automorphism of $R$, its inverse $\tau=\sigma^{-1}$ is also an automorphism of $R$. A direct check shows that $\overline\tau$ is the inverse of $\overline\sigma$: for $x=ab^{-1}\in E$,
 
 $$
 \overline\tau\circ\overline\sigma\left(x\right)=\overline\tau\left(\sigma\left(a\right)\sigma\left(b\right)^{-1}\right)=\tau\left(\sigma\left(a\right)\right)\tau\left(\sigma\left(b\right)\right)^{-1}=ab^{-1}=x.
@@ -192,9 +192,9 @@ Let $F$ be a field, $c\in F$, and $\mathrm{char}\,F=p\ne0$. Prove that $x^p-c$ i
 
 ### Solution to 4.4-5
 
-**Necessity.** Suppose $x^p-c$ has a root $\alpha$ in $F$, i.e. $\alpha^p=c$ with $\alpha\in F$. By Frobenius Map in Characteristic $p$, $x^p-c=x^p-\alpha^p=\left(x-\alpha\right)^p$. Since $p\ge2$, this gives a nontrivial factorization of $x^p-c$ in $F\left[x\right]$, so $x^p-c$ is reducible. Hence the contrapositive holds: irreducible implies $x^p-c$ has no root in $F$.
+Necessity. Suppose $x^p-c$ has a root $\alpha$ in $F$, i.e. $\alpha^p=c$ with $\alpha\in F$. By Frobenius Map in Characteristic $p$, $x^p-c=x^p-\alpha^p=\left(x-\alpha\right)^p$. Since $p\ge2$, this gives a nontrivial factorization of $x^p-c$ in $F\left[x\right]$, so $x^p-c$ is reducible. Hence the contrapositive holds: irreducible implies $x^p-c$ has no root in $F$.
 
-**Sufficiency.** Suppose, for contradiction, that $x^p-c$ has no root in $F$ but is reducible in $F\left[x\right]$, i.e. there exist nonconstant monic polynomials $f\left(x\right),g\left(x\right)\in F\left[x\right]$ with $x^p-c=f\left(x\right)g\left(x\right)$, where $1\le\deg f=k< p$.
+Sufficiency. Suppose, for contradiction, that $x^p-c$ has no root in $F$ but is reducible in $F\left[x\right]$, i.e. there exist nonconstant monic polynomials $f\left(x\right),g\left(x\right)\in F\left[x\right]$ with $x^p-c=f\left(x\right)g\left(x\right)$, where $1\le\deg f=k< p$.
 
 Let $E$ be a splitting field of $x^p-c$, and let $\alpha\in E$ be a root. By Frobenius Map in Characteristic $p$, in $E\left[x\right]$ we have $x^p-c=\left(x-\alpha\right)^p$. Since $f$ is monic, comparing factorizations gives $f\left(x\right)=\left(x-\alpha\right)^k$.
 

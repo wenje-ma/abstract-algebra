@@ -48,11 +48,11 @@ Let $R$ be an integral domain and $f\left(x\right)\in R\left[x\right]$, with $a_
 
 ### Solution to 2.9-4
 
-Induct on $s$. For $s=1$, this is the result of **2.9-3**.
+Induct on $s$. For $s=1$, this is the result of 2.9-3.
 
 Assume the result holds for $s-1$, i.e. $\prod_{i=1}^{s-1}\left(x-a_i\right)\mid f\left(x\right)$. Write $f\left(x\right)=g\left(x\right)\prod_{i=1}^{s-1}\left(x-a_i\right)$. Substituting $x=a_s$, since $a_s$ is a root of $f$, $f\left(a_s\right)=0$, gives $0=g\left(a_s\right)\prod_{i=1}^{s-1}\left(a_s-a_i\right)$.
 
-Since $a_1,\cdots,a_s$ are pairwise distinct, $a_s-a_i\ne0$ for $1\le i\le s-1$. As $R$ is an integral domain with no zero divisors, $g\left(a_s\right)=0$. By **2.9-3**, $\left(x-a_s\right)\mid g\left(x\right)$; write $g\left(x\right)=h\left(x\right)\left(x-a_s\right)$. Then $f\left(x\right)=h\left(x\right)\prod_{i=1}^{s}\left(x-a_i\right)$, i.e. $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. This completes the induction.
+Since $a_1,\cdots,a_s$ are pairwise distinct, $a_s-a_i\ne0$ for $1\le i\le s-1$. As $R$ is an integral domain with no zero divisors, $g\left(a_s\right)=0$. By 2.9-3, $\left(x-a_s\right)\mid g\left(x\right)$; write $g\left(x\right)=h\left(x\right)\left(x-a_s\right)$. Then $f\left(x\right)=h\left(x\right)\prod_{i=1}^{s}\left(x-a_i\right)$, i.e. $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. This completes the induction.
 
 Now let $f\left(x\right)\ne0$ have degree $m$ and $s$ distinct roots $a_1,\cdots,a_s$. By the above, $\prod_{i=1}^{s}\left(x-a_i\right)\mid f\left(x\right)$. This product is degree $s$, and it divides a degree-$m$ polynomial, so $s\le m$. Thus a nonzero polynomial of degree $m$ over an integral domain has at most $m$ distinct roots. $\blacksquare$
 
@@ -120,9 +120,9 @@ Let $M$ be a module and $M_1,M_2,\cdots,M_s$ submodules of $M$. Prove that $M=M_
 
 ### Solution to 3.1-13
 
-**Necessity.** Suppose $M=M_1\oplus\cdots\oplus M_s$ is an internal direct sum. Then (1) is immediate. If $x\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)$, then $x$ is both an element of $M_j$ and a sum of elements of $M_1,\cdots,M_{j-1}$, which gives a nontrivial representation of $0$ (the components other than the $M_j$ component sum to $-x$), contradicting the uniqueness of the direct-sum decomposition. Hence $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
+Necessity. Suppose $M=M_1\oplus\cdots\oplus M_s$ is an internal direct sum. Then (1) is immediate. If $x\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)$, then $x$ is both an element of $M_j$ and a sum of elements of $M_1,\cdots,M_{j-1}$, which gives a nontrivial representation of $0$ (the components other than the $M_j$ component sum to $-x$), contradicting the uniqueness of the direct-sum decomposition. Hence $M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$.
 
-**Sufficiency.** Assume (1) and (2). It suffices to prove that the representation of $0$ in $M$ is unique. Suppose $m_1+m_2+\cdots+m_s=0$ with $m_i\in M_i$. Let $j$ be the largest index with $m_j\ne0$; then $j\ge2$ (otherwise $m_1=0$). Rearranging gives $m_j=-\left(m_1+\cdots+m_{j-1}\right)\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$, so $m_j=0$, a contradiction. Hence all $m_i=0$, and the representation of $0$ is unique. By **Theorem 3.1.10 (Criterion for a Direct Sum)**, $M=M_1\oplus\cdots\oplus M_s$. $\blacksquare$
+Sufficiency. Assume (1) and (2). It suffices to prove that the representation of $0$ in $M$ is unique. Suppose $m_1+m_2+\cdots+m_s=0$ with $m_i\in M_i$. Let $j$ be the largest index with $m_j\ne0$; then $j\ge2$ (otherwise $m_1=0$). Rearranging gives $m_j=-\left(m_1+\cdots+m_{j-1}\right)\in M_j\cap\left(M_1+\cdots+M_{j-1}\right)=\left\{0\right\}$, so $m_j=0$, a contradiction. Hence all $m_i=0$, and the representation of $0$ is unique. By **Theorem 3.1.10 (Criterion for a Direct Sum)**, $M=M_1\oplus\cdots\oplus M_s$. $\blacksquare$
 
 ## 3.1-14
 

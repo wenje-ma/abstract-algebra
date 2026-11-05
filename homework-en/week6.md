@@ -44,7 +44,7 @@ Verify that this is a transitive action of $O\left(n\right)$ on $V_k\left(\mathb
 
 ### Solution to 1.9-5
 
-**Verify the action**: By Orthogonal and Unitary Transformations, an orthogonal transformation preserves the inner product, so if $\left(\alpha_1,\cdots,\alpha_k\right)$ is an orthonormal set then $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ is too, i.e. $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. Moreover
+Verify the action: By Orthogonal and Unitary Transformations, an orthogonal transformation preserves the inner product, so if $\left(\alpha_1,\cdots,\alpha_k\right)$ is an orthonormal set then $\left(\rho\alpha_1,\cdots,\rho\alpha_k\right)$ is too, i.e. $\rho\left(\alpha_1,\cdots,\alpha_k\right)\in V_k\left(\mathbb R^n\right)$. Moreover
 
 $$
 \rho\left(\tau\left(\alpha_1,\cdots,\alpha_k\right)\right)=\rho\left(\tau\alpha_1,\cdots,\tau\alpha_k\right)=\left(\rho\tau\alpha_1,\cdots,\rho\tau\alpha_k\right)=\left(\rho\tau\right)\left(\alpha_1,\cdots,\alpha_k\right),
@@ -52,7 +52,7 @@ $$
 
 and the identity matrix acts trivially. By **Definition 1.9.1 (Group Action)**, this is an action of $O\left(n\right)$ on $V_k\left(\mathbb R^n\right)$.
 
-**Transitivity**: Take two orthonormal sets $\left(\alpha_1,\cdots,\alpha_k\right)$ and $\left(\beta_1,\cdots,\beta_k\right)$. By Orthogonal and Unitary Transformations, extend them to orthonormal bases $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ and $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$ of $\mathbb R^n$. Define the linear map $\rho\alpha_i=\beta_i$ for $i=1,\cdots,n$; then $\rho\in O\left(n\right)$ and
+Transitivity: Take two orthonormal sets $\left(\alpha_1,\cdots,\alpha_k\right)$ and $\left(\beta_1,\cdots,\beta_k\right)$. By Orthogonal and Unitary Transformations, extend them to orthonormal bases $\left(\alpha_1,\cdots,\alpha_k,\cdots,\alpha_n\right)$ and $\left(\beta_1,\cdots,\beta_k,\cdots,\beta_n\right)$ of $\mathbb R^n$. Define the linear map $\rho\alpha_i=\beta_i$ for $i=1,\cdots,n$; then $\rho\in O\left(n\right)$ and
 
 $$
 \rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\beta_1,\cdots,\beta_k\right).
@@ -60,7 +60,7 @@ $$
 
 By **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
 
-**Stabilizer**: Take the reference tuple $\left(e_1,\cdots,e_k\right)$. The condition $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) means that $\rho$ is the identity on the first $k$ standard basis vectors, i.e. $\rho$ is a block diagonal matrix. By **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer is
+Stabilizer: Take the reference tuple $\left(e_1,\cdots,e_k\right)$. The condition $\rho\left(e_i\right)=e_i$ ($i=1,\cdots,k$) means that $\rho$ is the identity on the first $k$ standard basis vectors, i.e. $\rho$ is a block diagonal matrix. By **Definition 1.9.9 (Orbits and Stabilizers)**, the stabilizer is
 
 $$
 F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in O\left(n-k\right)\right\}.
@@ -74,7 +74,7 @@ Extend the actions in Problems 1.9-4 and 1.9-5 to the complex case.
 
 ### Solution to 1.9-6
 
-**Complex projective space and complex Grassmannian.** Let $P^{n-1}\left(\mathbb C\right)$ be the set of all $1$-dimensional complex subspaces of $\mathbb C^n$, and let $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ be the set of all $k$-dimensional complex subspaces of $\mathbb C^n$. $\mathrm{GL}\left(n,\mathbb C\right)$ acts on each by $\rho\left(W\right)=\rho W$. By Linear Maps Preserve Dimension of Subspaces and the complex analogue of the real argument, by **Definition 1.9.1 (Group Action)** and **Definition 1.9.7 (Transitive and Effective Actions)** these are two transitive actions.
+Complex projective space and complex Grassmannian. Let $P^{n-1}\left(\mathbb C\right)$ be the set of all $1$-dimensional complex subspaces of $\mathbb C^n$, and let $\mathrm{Gr}_{\mathbb C}\left(k,n\right)$ be the set of all $k$-dimensional complex subspaces of $\mathbb C^n$. $\mathrm{GL}\left(n,\mathbb C\right)$ acts on each by $\rho\left(W\right)=\rho W$. By Linear Maps Preserve Dimension of Subspaces and the complex analogue of the real argument, by **Definition 1.9.1 (Group Action)** and **Definition 1.9.7 (Transitive and Effective Actions)** these are two transitive actions.
 
 By **Definition 1.9.9 (Orbits and Stabilizers)**, taking $W_0=\mathbb Ce_1$ and $W_0=\mathrm{span}\left(e_1,\cdots,e_k\right)$ respectively, the stabilizers are
 
@@ -88,7 +88,7 @@ $$
 F_{W_0}=\left\{\begin{bmatrix}A & B\\0 & C\end{bmatrix}\;\middle|\;A\in\mathrm{GL}\left(k,\mathbb C\right),\;C\in\mathrm{GL}\left(n-k,\mathbb C\right),\;B\in\mathbb C^{k\times\left(n-k\right)}\right\}.
 $$
 
-**Complex Stiefel manifold.** Let $V_k\left(\mathbb C^n\right)$ be the set of all ordered $k$-tuples of orthonormal vectors in $\mathbb C^n$ (with respect to the standard Hermitian inner product). $U\left(n\right)$ acts on it by
+Complex Stiefel manifold. Let $V_k\left(\mathbb C^n\right)$ be the set of all ordered $k$-tuples of orthonormal vectors in $\mathbb C^n$ (with respect to the standard Hermitian inner product). $U\left(n\right)$ acts on it by
 
 $$
 \rho\left(\alpha_1,\cdots,\alpha_k\right)=\left(\rho\alpha_1,\cdots,\rho\alpha_k\right).
@@ -100,7 +100,7 @@ $$
 F=\left\{\begin{bmatrix}I_k & 0\\0 & A\end{bmatrix}\;\middle|\;A\in U\left(n-k\right)\right\}.
 $$
 
-**Transitivity**. $\mathrm{SL}\left(n,\mathbb C\right)$ acts transitively on the complex projective space and the complex Grassmannian (adjust the determinant as in the real case); $U\left(n\right)$ acts transitively on the complex projective space, the complex Grassmannian and the complex Stiefel manifold; $\mathrm{SU}\left(n\right)$ acts transitively on the corresponding sets when the dimension is large enough. $\blacksquare$
+Transitivity. $\mathrm{SL}\left(n,\mathbb C\right)$ acts transitively on the complex projective space and the complex Grassmannian (adjust the determinant as in the real case); $U\left(n\right)$ acts transitively on the complex projective space, the complex Grassmannian and the complex Stiefel manifold; $\mathrm{SU}\left(n\right)$ acts transitively on the corresponding sets when the dimension is large enough. $\blacksquare$
 
 ## 1.9-8
 
@@ -126,7 +126,7 @@ Verify that this defines an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $
 
 ### Solution to 1.9-8
 
-**Step 1: verify that $g\circ z\in H$.** For $z=x+iy$ ($y> 0$), since $\det g=ad-bc=1$, computing the imaginary part directly:
+Step 1: verify that $g\circ z\in H$. For $z=x+iy$ ($y> 0$), since $\det g=ad-bc=1$, computing the imaginary part directly:
 
 $$
 \mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}> 0,
@@ -134,9 +134,9 @@ $$
 
 so $g\circ z\in H$ and the definition is well-posed.
 
-**Step 2: verify the action axioms.** The identity matrix $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ gives $I\circ z=z$. By Mobius Transformations, composition of fractional linear transformations corresponds to matrix multiplication, i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. By **Definition 1.9.1 (Group Action)**, this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
+Step 2: verify the action axioms. The identity matrix $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ gives $I\circ z=z$. By Mobius Transformations, composition of fractional linear transformations corresponds to matrix multiplication, i.e. $\left(g_1g_2\right)\circ z=g_1\circ\left(g_2\circ z\right)$. By **Definition 1.9.1 (Group Action)**, this is an action of $\mathrm{SL}\left(2,\mathbb R\right)$ on $H$.
 
-**Step 3: determine transitivity.** For any $z=x+iy\in H$ ($y> 0$), take
+Step 3: determine transitivity. For any $z=x+iy\in H$ ($y> 0$), take
 
 $$
 g=\begin{bmatrix}\sqrt y & x/\sqrt y\\0 & 1/\sqrt y\end{bmatrix},
@@ -150,13 +150,13 @@ $$
 
 Hence $i$ can be mapped to any $z\in H$; by **Definition 1.9.7 (Transitive and Effective Actions)**, the action is transitive.
 
-**Step 4: determine effectiveness.** If $g\circ z=z$ for all $z\in H$, then the fractional linear transformation $\frac{az+b}{cz+d}$ has infinitely many fixed points; by Mobius Transformations, it must be the identity, so $c=0$, $b=0$, $a=d$; combined with $\det g=ad-bc=a^{2}=1$, we get $g=\pm I$. Here $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ also satisfies $\left(-I\right)\circ z=\frac{-z}{-1}=z$ for all $z$. Hence the kernel of the action is $\left\{\pm I\right\}$; by **Definition 1.9.7 (Transitive and Effective Actions)**, the action is not effective; its effective quotient group is
+Step 4: determine effectiveness. If $g\circ z=z$ for all $z\in H$, then the fractional linear transformation $\frac{az+b}{cz+d}$ has infinitely many fixed points; by Mobius Transformations, it must be the identity, so $c=0$, $b=0$, $a=d$; combined with $\det g=ad-bc=a^{2}=1$, we get $g=\pm I$. Here $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ also satisfies $\left(-I\right)\circ z=\frac{-z}{-1}=z$ for all $z$. Hence the kernel of the action is $\left\{\pm I\right\}$; by **Definition 1.9.7 (Transitive and Effective Actions)**, the action is not effective; its effective quotient group is
 
 $$
 \mathrm{PSL}\left(2,\mathbb R\right)=\mathrm{SL}\left(2,\mathbb R\right)/\left\{\pm I\right\}.
 $$
 
-**Step 5: find the stabilizer of $i$.** From $g\circ i=i$, i.e.
+Step 5: find the stabilizer of $i$. From $g\circ i=i$, i.e.
 
 $$
 \frac{ai+b}{ci+d}=i,\quad\Longrightarrow\quad ai+b=i\left(ci+d\right)=ci^{2}+di=-c+di.
@@ -203,7 +203,7 @@ Prove that the two maps above respectively define two actions of $\mathbb Z_2$ o
 
 ### Solution to 1.9-19
 
-**First verify that $p_1$ defines an action of $\mathbb Z_2$.** $p_1$ swaps $y,z$; clearly $p_1^{2}=\mathrm{id}$, and
+First verify that $p_1$ defines an action of $\mathbb Z_2$. $p_1$ swaps $y,z$; clearly $p_1^{2}=\mathrm{id}$, and
 
 $$
 x^{2}+4zy=x^{2}+4yz=p,
@@ -211,9 +211,9 @@ $$
 
 so $p_1\left(X\right)\subseteq X$. By **Definition 1.9.1 (Group Action)**, $p_1$ is an involution on $X$, defining an action of $\mathbb Z_2=\left\{1,p_1\right\}$ on $X$.
 
-**Next verify $p_2$.** A direct substitution verifies that in all three branches $p_2$ preserves the equation $x^{2}+4yz=p$, and $p_2^{2}=\mathrm{id}$ (the three branches are mutual inverses and agree on the boundaries). By **Definition 1.9.1 (Group Action)**, $p_2$ is also an involution on $X$, defining another action of $\mathbb Z_2$.
+Next verify $p_2$. A direct substitution verifies that in all three branches $p_2$ preserves the equation $x^{2}+4yz=p$, and $p_2^{2}=\mathrm{id}$ (the three branches are mutual inverses and agree on the boundaries). By **Definition 1.9.1 (Group Action)**, $p_2$ is also an involution on $X$, defining another action of $\mathbb Z_2$.
 
-**Find the fixed points of $p_2$.** Setting $p_2\left(x,y,z\right)=\left(x,y,z\right)$ in each of the three cases:
+Find the fixed points of $p_2$. Setting $p_2\left(x,y,z\right)=\left(x,y,z\right)$ in each of the three cases:
 
 Case one $x< y-z$: from $x+2z=x$ we get $z=0$, contradicting $z\in\mathbb N^{+}$; no fixed points.
 
@@ -283,13 +283,13 @@ $$
 S=\left\{\left(g,x\right)\in G\times X\mid gx=x\right\}.
 $$
 
-**Counting by $g$**: For fixed $g\in G$, there are exactly $F\left(g\right)$ elements $x$ with $gx=x$, so
+Counting by $g$: For fixed $g\in G$, there are exactly $F\left(g\right)$ elements $x$ with $gx=x$, so
 
 $$
 \left|S\right|=\sum_{g\in G}F\left(g\right).
 $$
 
-**Counting by $x$**: For fixed $x\in X$, the elements $g$ with $gx=x$ are exactly the elements of the stabilizer $F_x=\left\{g\in G\mid gx=x\right\}$, so
+Counting by $x$: For fixed $x\in X$, the elements $g$ with $gx=x$ are exactly the elements of the stabilizer $F_x=\left\{g\in G\mid gx=x\right\}$, so
 
 $$
 \left|S\right|=\sum_{x\in X}\left|F_x\right|.
