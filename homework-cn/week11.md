@@ -166,7 +166,7 @@ $$
 
 由3.6-9 的结论, 每个约当块 $J_i$ 可写为 $J_i=P_iQ_i$, 其中 $P_i,Q_i$ 均为对称矩阵. 令 $P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right)$, $Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right)$, 则 $P,Q$ 均为对称矩阵, 且 $J=PQ$.
 
-于是 $A=SJS^{-1}=SPQS^{-1}=\left(SPS^\top\right)\left(S^{-T}QS^{-1}\right)$. 其中 $SPS^\top$ 为对称矩阵, 因其转置为 $\left(SPS^\top\right)^\top=SP^\topS^\top=SPS^\top$; 同理 $S^{-T}QS^{-1}=\left(S^{-1}\right)^\topQS^{-1}$ 亦为对称矩阵. 故 $A$ 为两个对称矩阵之积. $\blacksquare$
+于是 $A=SJS^{-1}=SPQS^{-1}=\left(SPS^{\top}\right)\left(S^{-T}QS^{-1}\right)$. 其中 $SPS^{\top}$ 为对称矩阵, 因其转置为 $\left(SPS^{\top}\right)^{\top}=SP^{\top}S^{\top}=SPS^{\top}$; 同理 $S^{-T}QS^{-1}=\left(S^{-1}\right)^{\top}QS^{-1}$ 亦为对称矩阵. 故 $A$ 为两个对称矩阵之积. $\blacksquare$
 
 ## 3.6-11
 

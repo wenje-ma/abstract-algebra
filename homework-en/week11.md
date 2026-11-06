@@ -166,7 +166,7 @@ Let $A$ be an $n\times{n}$ matrix over $F$. By **Theorem 3.6.3 (Jordan Normal Fo
 
 By the result of 3.6-9, each Jordan block $J_i$ can be written as $J_i=P_iQ_i$ with $P_i,Q_i$ symmetric. Set $P=\mathrm{diag}\left(P_1,P_2,\cdots,P_s\right)$ and $Q=\mathrm{diag}\left(Q_1,Q_2,\cdots,Q_s\right)$; then $P,Q$ are symmetric and $J=PQ$.
 
-Hence $A=SJS^{-1}=SPQS^{-1}=\left(SPS^\top\right)\left(S^{-T}QS^{-1}\right)$. Here $SPS^\top$ is symmetric, since its transpose is $\left(SPS^\top\right)^\top=SP^\topS^\top=SPS^\top$; similarly $S^{-T}QS^{-1}=\left(S^{-1}\right)^\topQS^{-1}$ is symmetric. Thus $A$ is a product of two symmetric matrices. $\blacksquare$
+Hence $A=SJS^{-1}=SPQS^{-1}=\left(SPS^{\top}\right)\left(S^{-T}QS^{-1}\right)$. Here $SPS^{\top}$ is symmetric, since its transpose is $\left(SPS^{\top}\right)^{\top}=SP^{\top}S^{\top}=SPS^{\top}$; similarly $S^{-T}QS^{-1}=\left(S^{-1}\right)^{\top}QS^{-1}$ is symmetric. Thus $A$ is a product of two symmetric matrices. $\blacksquare$
 
 ## 3.6-11
 
