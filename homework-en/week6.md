@@ -193,9 +193,9 @@ $$
 $$
 p_2:\left(x,y,z\right)\mapsto
 \begin{cases}
-\left(x+2z,\,z,\,y-x-z\right),&x<{}y-z,\\
-\left(2y-x,\,y,\,x-y+z\right),&y-z\le{x}<2y,\\
-\left(x-2y,\,x-y+z,\,y\right),&x\ge2y.
+\left(x+2z,z,y-x-z\right),&x<{}y-z,\\
+\left(2y-x,y,x-y+z\right),&y-z\le{x}<2y,\\
+\left(x-2y,x-y+z,y\right),&x\ge2y.
 \end{cases}
 $$
 

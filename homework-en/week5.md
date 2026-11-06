@@ -218,7 +218,7 @@ Base case: When $\dim{V}=1$, $\mathrm{GL}\left(V\right)\cong\mathbb{C}^{*}$ is i
 Inductive step: Let $\dim{V}=n>1$. By **Definition 1.8.7 (Solvable and Nilpotent Groups)**, the commutator subgroup $G^{\prime}=\left[G,G\right]$ is a proper normal subgroup of $G$; by **Lemma 1.8.5**, $G/G^{\prime}$ is an Abelian group. By **Lemma 1.8.8 (Heredity of Solvability)**, $G^{\prime}$ is solvable. By the induction hypothesis (repeatedly applying the base-case result to $G^{\prime}$ acting on $V$), $G^{\prime}$ has a common eigenvector in $V$; let $\lambda$ be a character of $G^{\prime}$, and write its eigenspace as
 
 $$
-V_{\lambda}=\left\{v\in{V}\mid\sigma{v}=\lambda\left(\sigma\right)v,\,\forall\sigma\in{G}^{\prime}\right\}.
+V_{\lambda}=\left\{v\in{V}\mid\sigma{v}=\lambda\left(\sigma\right)v,\forall\sigma\in{G}^{\prime}\right\}.
 $$
 
 Since $G^{\prime}\trianglelefteq{G}$, for any $\tau\in{G}$, $\sigma\in{G}^{\prime}$ and $v\in{V}_{\lambda}$, by **Lemma 1.8.3 (Properties of Commutators)** (2) (taking $\varphi=\mathrm{Ad}_{\tau}$), we have $\tau\sigma\tau^{-1}\in{G}^{\prime}$, and

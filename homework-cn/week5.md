@@ -218,7 +218,7 @@ $$
 归纳步: 设 $\dim{V}=n>1$. 由**定义 1.8.7 (可解群与幂零群)**, $G$ 的换位子群 $G^{\prime}=\left[G,G\right]$ 是 $G$ 的真正规子群; 由**引理 1.8.5**, $G/G^{\prime}$ 为 阿贝尔群. 由**引理 1.8.8 (可解群的遗传性)**, $G^{\prime}$ 是可解群. 由归纳假设 (对 $G^{\prime}$ 在 $V$ 上反复运用基础情形的结果), $G^{\prime}$ 在 $V$ 上有公共特征向量; 设 $\lambda$ 是 $G^{\prime}$ 的一个特征标, 记其特征子空间为
 
 $$
-V_{\lambda}=\left\{v\in{V}\mid\sigma{v}=\lambda\left(\sigma\right)v,\,\forall\sigma\in{G}^{\prime}\right\}.
+V_{\lambda}=\left\{v\in{V}\mid\sigma{v}=\lambda\left(\sigma\right)v,\forall\sigma\in{G}^{\prime}\right\}.
 $$
 
 因 $G^{\prime}\trianglelefteq{G}$, 对任意 $\tau\in{G}$, $\sigma\in{G}^{\prime}$ 及 $v\in{V}_{\lambda}$, 由**引理 1.8.3 (换位子性质)** (2) (取 $\varphi=\mathrm{Ad}_{\tau}$), $\tau\sigma\tau^{-1}\in{G}^{\prime}$, 且

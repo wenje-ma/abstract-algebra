@@ -78,7 +78,7 @@ a&a&b&c\\
 b&b&c&a\\
 c&c&a&b
 \end{array}
-\qquad
+\quad
 \begin{array}{c\right|ccc}
 \cdot&a&b&c\\\hline
 a&a&a&a\\
