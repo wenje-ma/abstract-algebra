@@ -76,7 +76,7 @@ $\blacksquare$
 
 对任意 $g\in{G}$, 考虑集合 $gHg^{-1}=\left\{ghg^{-1}\mid{h}\in{H}\right\}$.
 
-第一步: 验证 $gHg^{-1}<{}G$. 对任意 $x,y\in{g}Hg^{-1}$, 存在 $h_1,h_2\in{H}$ 使 $x=gh_1g^{-1}$, $y=gh_2g^{-1}$, 则
+先验证 $gHg^{-1}<{}G$. 对任意 $x,y\in{g}Hg^{-1}$, 存在 $h_1,h_2\in{H}$ 使 $x=gh_1g^{-1}$, $y=gh_2g^{-1}$, 则
 
 $$
 xy^{-1}=gh_1g^{-1}\left(gh_2g^{-1}\right)^{-1}=gh_1g^{-1}gh_2^{-1}g^{-1}=g\left(h_1h_2^{-1}\right)g^{-1}\in{g}Hg^{-1}.
@@ -84,11 +84,11 @@ $$
 
 由**定理 1.2.2 (子群判别法)** (条件 (3)), $gHg^{-1}<{}G$.
 
-第二步: 求 $\left|gHg^{-1}\right|$. 由共轭映射保持阶, 映射 $h\mapsto{g}hg^{-1}$ 是 $H$ 到 $gHg^{-1}$ 的双射, 故 $\left|gHg^{-1}\right|=\left|H\right|=m$.
+再求 $\left|gHg^{-1}\right|$. 由共轭映射保持阶, 映射 $h\mapsto{g}hg^{-1}$ 是 $H$ 到 $gHg^{-1}$ 的双射, 故 $\left|gHg^{-1}\right|=\left|H\right|=m$.
 
-第三步: 由唯一性得 $gHg^{-1}=H$. 因 $G$ 只有一个阶为 $m$ 的子群 $H$, 而 $gHg^{-1}$ 也是 $G$ 的阶为 $m$ 的子群, 故 $gHg^{-1}=H$.
+接着由唯一性得 $gHg^{-1}=H$. 因 $G$ 只有一个阶为 $m$ 的子群 $H$, 而 $gHg^{-1}$ 也是 $G$ 的阶为 $m$ 的子群, 故 $gHg^{-1}=H$.
 
-第四步: 证明 $H\triangleleft{G}$. 对任意 $g\in{G}$, $h\in{H}$, 因 $gHg^{-1}=H$, 故 $ghg^{-1}\in{H}$. 依据**定义 1.3.1 (正规子群)**, $H\triangleleft{G}$.
+最后证明 $H\triangleleft{G}$. 对任意 $g\in{G}$, $h\in{H}$, 因 $gHg^{-1}=H$, 故 $ghg^{-1}\in{H}$. 依据**定义 1.3.1 (正规子群)**, $H\triangleleft{G}$.
 
 $\blacksquare$
 
@@ -100,7 +100,7 @@ $\blacksquare$
 
 对任意 $g\in{G}$, 由**定义 1.4.9 (左平移与右平移)**, $R_a\left(g\right)=ga$.
 
-第一步: 证明 $R$ 是反同态. 对任意 $g\in{G}$,
+先证明 $R$ 是反同态. 对任意 $g\in{G}$,
 
 $$
 R\left(ab\right)\left(g\right)=R_{ab}\left(g\right)=g\left(ab\right)=\left(ga\right)b=R_b\left(ga\right)=R_b\left(R_a\left(g\right)\right)=\left(R_b\circ{R}_a\right)\left(g\right)=R\left(b\right)R\left(a\right)\left(g\right).
@@ -108,9 +108,9 @@ $$
 
 由 $g$ 的任意性, $R\left(ab\right)=R\left(b\right)R\left(a\right)$, 依据反同态与反同构, $R$ 是 $G$ 到 $S_G$ 的反同态.
 
-第二步: 证明 $R$ 是单射. 若 $R\left(a\right)=R\left(b\right)$, 则 $R_a=R_b$. 特别地, $R_a\left(e\right)=R_b\left(e\right)$, 即 $ea=eb$, 故 $a=b$. 因此 $R$ 是单射.
+再证明 $R$ 是单射. 若 $R\left(a\right)=R\left(b\right)$, 则 $R_a=R_b$. 特别地, $R_a\left(e\right)=R_b\left(e\right)$, 即 $ea=eb$, 故 $a=b$. 因此 $R$ 是单射.
 
-第三步: 证明 $R$ 的像集是 $S_G$ 的子群. 记 $R_G=\left\{R_a\mid{a}\in{G}\right\}$. 由定义, $R:G\to{R}_G$ 是满射. 又由对称群与双射变换, $R_a$ 是 $G$ 上的双射 (逆为 $R_{a^{-1}}$), 故 $R_G\subseteq{S}_G$, 且 $R_G$ 是 $S_G$ 的子群 (复合与逆均封闭于 $R_G$, 因 $R_aR_b=R_{ba}$, $R_a^{-1}=R_{a^{-1}}$).
+最后证明 $R$ 的像集是 $S_G$ 的子群. 记 $R_G=\left\{R_a\mid{a}\in{G}\right\}$. 由定义, $R:G\to{R}_G$ 是满射. 又由对称群与双射变换, $R_a$ 是 $G$ 上的双射 (逆为 $R_{a^{-1}}$), 故 $R_G\subseteq{S}_G$, 且 $R_G$ 是 $S_G$ 的子群 (复合与逆均封闭于 $R_G$, 因 $R_aR_b=R_{ba}$, $R_a^{-1}=R_{a^{-1}}$).
 
 综上, $R:G\to{R}_G$ 是双射反同态, 依据反同态与反同构, $R$ 是反同构, 即 $G$ 与 $S_G$ 的子群 $R_G$ 反同构.
 
@@ -122,7 +122,7 @@ $\blacksquare$
 
 ### 解答 1.4-7
 
-第一步: 证明 $f$ 是群同态. 对任意 $x,y\in\mathbb{R}$, 由三角函数的和角公式,
+先证明 $f$ 是群同态. 对任意 $x,y\in\mathbb{R}$, 由三角函数的和角公式,
 
 $$
 f\left(x+y\right)=\cos\left(x+y\right)+\sqrt{-1}\sin\left(x+y\right)=\left(\cos{x}\cos{y}-\sin{x}\sin{y}\right)+\sqrt{-1}\left(\sin{x}\cos{y}+\cos{x}\sin{y}\right)=\left(\cos{x}+\sqrt{-1}\sin{x}\right)\left(\cos{y}+\sqrt{-1}\sin{y}\right)=f\left(x\right)f\left(y\right).
@@ -130,7 +130,7 @@ $$
 
 又 $f\left(x\right)\ne0$ 对任意 $x\in\mathbb{R}$ (因 $\cos^2x+\sin^2x=1$) (复指数与单位圆), 故 $f:\mathbb{R}\to\mathbb{C}^{*}$ 良定义. 由**定义 1.4.1 (群同态与同构)**, $f$ 是 $\left(\mathbb{R},+\right)$ 到 $\left(\mathbb{C}^{*},\cdot\right)$ 的群同态.
 
-第二步: 求 $\ker{f}$. 由**定义 1.4.11 (同态的核与像)**, $\ker{f}=\left\{x\in\mathbb{R}\mid{f}\left(x\right)=1\right\}$. 由复指数与单位圆, $f\left(x\right)=\cos{x}+\sqrt{-1}\sin{x}=1$ 当且仅当 $x=2k\pi$, $k\in\mathbb{Z}$. 故
+最后求 $\ker{f}$. 由**定义 1.4.11 (同态的核与像)**, $\ker{f}=\left\{x\in\mathbb{R}\mid{f}\left(x\right)=1\right\}$. 由复指数与单位圆, $f\left(x\right)=\cos{x}+\sqrt{-1}\sin{x}=1$ 当且仅当 $x=2k\pi$, $k\in\mathbb{Z}$. 故
 
 $$
 \ker{f}=2\pi\mathbb{Z}=\left\{2k\pi\mid{k}\in\mathbb{Z}\right\}.

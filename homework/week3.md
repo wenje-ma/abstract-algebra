@@ -128,11 +128,11 @@ $\blacksquare$
 
 ### 解答 1.6-11
 
-第一步: 构造群同态 $\psi:G\to\left\{1,-1\right\}$. 由**定理 1.4.10 (凯莱定理)**, 左正则表示 $\lambda:G\to{S}_G$, $g\mapsto{L}_g$ (其中 $L_g\left(x\right)=gx$) 是单同态; 视 $S_G$ 为 $S_{2n}$ (因 $\left|G\right|=2n$). 由**例 1.4.17** 及符号同态, 符号同态 $\mathrm{sgn}:S_{2n}\to\left\{1,-1\right\}$ 是群同态. 复合得 $\psi=\mathrm{sgn}\circ\lambda:G\to\left\{1,-1\right\}$ 是群同态.
+先构造群同态 $\psi:G\to\left\{1,-1\right\}$. 由**定理 1.4.10 (凯莱定理)**, 左正则表示 $\lambda:G\to{S}_G$, $g\mapsto{L}_g$ (其中 $L_g\left(x\right)=gx$) 是单同态; 视 $S_G$ 为 $S_{2n}$ (因 $\left|G\right|=2n$). 由**例 1.4.17** 及符号同态, 符号同态 $\mathrm{sgn}:S_{2n}\to\left\{1,-1\right\}$ 是群同态. 复合得 $\psi=\mathrm{sgn}\circ\lambda:G\to\left\{1,-1\right\}$ 是群同态.
 
-第二步: 证明 $\psi$ 是满射. 由偶数阶群有二阶元, $G$ 中存在二阶元 $a$ (因 $\left|G\right|=2n$ 为偶数). 则 $\lambda\left(a\right)=L_a$, 且对任意 $x\in{G}$, $L_a^2\left(x\right)=a^2x=x$, 故 $L_a$ 是对合; 又 $a\ne{e}$, 若 $L_a\left(x\right)=x$ 即 $ax=x$, 则 $a=e$, 矛盾, 故 $L_a$ 无不动点. 因此 $L_a$ 是 $G$ (共 $2n$ 个文字) 上的 $n$ 个不相交对换之积, 由符号同态, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (因 $n$ 为奇数). 故 $\psi\left(a\right)=-1$, 而 $\psi\left(e\right)=1$, 于是 $\psi:G\to\left\{1,-1\right\}$ 是满同态.
+再证明 $\psi$ 是满射. 由偶数阶群有二阶元, $G$ 中存在二阶元 $a$ (因 $\left|G\right|=2n$ 为偶数). 则 $\lambda\left(a\right)=L_a$, 且对任意 $x\in{G}$, $L_a^2\left(x\right)=a^2x=x$, 故 $L_a$ 是对合; 又 $a\ne{e}$, 若 $L_a\left(x\right)=x$ 即 $ax=x$, 则 $a=e$, 矛盾, 故 $L_a$ 无不动点. 因此 $L_a$ 是 $G$ (共 $2n$ 个文字) 上的 $n$ 个不相交对换之积, 由符号同态, $\mathrm{sgn}\left(L_a\right)=\left(-1\right)^{n}=-1$ (因 $n$ 为奇数). 故 $\psi\left(a\right)=-1$, 而 $\psi\left(e\right)=1$, 于是 $\psi:G\to\left\{1,-1\right\}$ 是满同态.
 
-第三步: 取核得指数为 $2$ 的正规子群. 令 $H=\ker\psi$. 由**引理 1.4.13**, $H\triangleleft{G}$. 由**定理 1.4.19 (群的同态基本定理)**, $G/H\cong\left\{1,-1\right\}$, 故 $\left|G/H\right|=2$, 即 $\left[G:H\right]=2$. 因此 $G$ 有指数为 $2$ 的正规子群 $H$.
+最后取核得指数为 $2$ 的正规子群. 令 $H=\ker\psi$. 由**引理 1.4.13**, $H\triangleleft{G}$. 由**定理 1.4.19 (群的同态基本定理)**, $G/H\cong\left\{1,-1\right\}$, 故 $\left|G/H\right|=2$, 即 $\left[G:H\right]=2$. 因此 $G$ 有指数为 $2$ 的正规子群 $H$.
 
 $\blacksquare$
 
@@ -158,7 +158,7 @@ $$
 
 ### 解答 1.7-11
 
-第一步: 证明 $G_2H_2=G$. 因 $H_2\triangleleft{G}$, 由满同态保持正规子群, 自然同态 $\pi:G\to{G}/G_2$ 的像 $\pi\left(H_2\right)$ 是 $G/G_2$ 的正规子群. 又 $\pi\left(H_2\right)=\left\{hG_2\mid{h}\in{H}_2\right\}=\left(G_2H_2\right)/G_2$ (因 $G_2\subseteq{G}_2H_2$), 故 $\left(G_2H_2\right)/G_2\triangleleft{G}/G_2$. 因 $G/G_2$ 是合成因子, 为单群, 故 $\left(G_2H_2\right)/G_2$ 只能是平凡群或 $G/G_2$, 即 $G_2H_2=G_2$ 或 $G$.
+证明 $G_2H_2=G$. 因 $H_2\triangleleft{G}$, 由满同态保持正规子群, 自然同态 $\pi:G\to{G}/G_2$ 的像 $\pi\left(H_2\right)$ 是 $G/G_2$ 的正规子群. 又 $\pi\left(H_2\right)=\left\{hG_2\mid{h}\in{H}_2\right\}=\left(G_2H_2\right)/G_2$ (因 $G_2\subseteq{G}_2H_2$), 故 $\left(G_2H_2\right)/G_2\triangleleft{G}/G_2$. 因 $G/G_2$ 是合成因子, 为单群, 故 $\left(G_2H_2\right)/G_2$ 只能是平凡群或 $G/G_2$, 即 $G_2H_2=G_2$ 或 $G$.
 
 同理, 由 $G_2\triangleleft{G}$, 自然同态 $\pi':G\to{G}/H_2$ 的像 $\pi'\left(G_2\right)=\left(G_2H_2\right)/H_2\triangleleft{G}/H_2$; 因 $G/H_2$ 为单群, 故 $G_2H_2=H_2$ 或 $G$.
 

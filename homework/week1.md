@@ -24,13 +24,13 @@
 
 取 $S=\mathbb{N}$ (非负整数的全体), 运算为通常的加法 $+$.
 
-第一步: 验证 $\left(\mathbb{N},+\right)$ 是交换半群. 由非负整数加法的基本性质, $\mathbb{N}$ 对加法封闭, 且加法满足结合律与交换律. 故 $\mathbb{N}$ 上定义了一个满足结合律与交换律的二元运算 $+$, 依据**定义 1.1.4 (半群与幺半群)**, $\left(\mathbb{N},+\right)$ 是交换半群.
+先验证 $\left(\mathbb{N},+\right)$ 是交换半群. 由非负整数加法的基本性质, $\mathbb{N}$ 对加法封闭, 且加法满足结合律与交换律. 故 $\mathbb{N}$ 上定义了一个满足结合律与交换律的二元运算 $+$, 依据**定义 1.1.4 (半群与幺半群)**, $\left(\mathbb{N},+\right)$ 是交换半群.
 
-第二步: 验证 $\left(\mathbb{N},+\right)$ 是交换幺半群. 由非负整数加法的基本性质, $0\in\mathbb{N}$, 且对任意 $a\in\mathbb{N}$ 有 $0+a=a+0=a$. 故 $0$ 是 $\left(\mathbb{N},+\right)$ 的幺元, 依据**定义 1.1.4 (半群与幺半群)**, 含幺元的半群是幺半群, 故 $\left(\mathbb{N},+\right)$ 是交换幺半群.
+再验证 $\left(\mathbb{N},+\right)$ 是交换幺半群. 由非负整数加法的基本性质, $0\in\mathbb{N}$, 且对任意 $a\in\mathbb{N}$ 有 $0+a=a+0=a$. 故 $0$ 是 $\left(\mathbb{N},+\right)$ 的幺元, 依据**定义 1.1.4 (半群与幺半群)**, 含幺元的半群是幺半群, 故 $\left(\mathbb{N},+\right)$ 是交换幺半群.
 
-第三步: 验证消去律. 对任意 $a,b,c\in\mathbb{N}$, 若 $a+c=b+c$, 由非负整数加法的基本性质 (加法消去律), 得 $a=b$. 故 $\left(\mathbb{N},+\right)$ 满足左(右)消去律.
+接着验证消去律. 对任意 $a,b,c\in\mathbb{N}$, 若 $a+c=b+c$, 由非负整数加法的基本性质 (加法消去律), 得 $a=b$. 故 $\left(\mathbb{N},+\right)$ 满足左(右)消去律.
 
-第四步: 验证 $\left(\mathbb{N},+\right)$ 不是群. 由非负整数加法的基本性质, 对任意 $b\in\mathbb{N}$ 有 $1+b\ge1>0$, 故不存在 $b\in\mathbb{N}$ 使 $1+b=0$. 因此 $1\in\mathbb{N}$ 不存在加法逆元, 即并非每个元素都可逆. 依据**定义 1.1.10 (逆元)** 与**定义 1.1.14 (群与阿贝尔群)**, 群要求每个元素都是可逆元, 故 $\left(\mathbb{N},+\right)$ 不是群.
+最后验证 $\left(\mathbb{N},+\right)$ 不是群. 由非负整数加法的基本性质, 对任意 $b\in\mathbb{N}$ 有 $1+b\ge1>0$, 故不存在 $b\in\mathbb{N}$ 使 $1+b=0$. 因此 $1\in\mathbb{N}$ 不存在加法逆元, 即并非每个元素都可逆. 依据**定义 1.1.10 (逆元)** 与**定义 1.1.14 (群与阿贝尔群)**, 群要求每个元素都是可逆元, 故 $\left(\mathbb{N},+\right)$ 不是群.
 
 综上, $\left(\mathbb{N},+\right)$ 是无限交换半群, 有单位元且满足消去律, 但不是群.
 
@@ -50,17 +50,17 @@ $$
 
 对任意 $A\in{P}\left(X\right)$, 用指示函数 $\chi_A:X\to\left\{0,1\right\}$ 刻画 $A$. 由幂集,指示函数与对称差, $A\mapsto\chi_A$ 是单射, 且 $\chi_{A\triangle{B}}=\chi_A+\chi_B\pmod2$.
 
-第一步: 封闭性. 对任意 $A,B\in{P}\left(X\right)$, 由幂集,指示函数与对称差, $A\triangle{B}=\left(A\setminus{B}\right)\cup\left(B\setminus{A}\right)\subseteq{X}$, 故 $A\triangle{B}\in{P}\left(X\right)$. 因此 $\triangle$ 是 $P\left(X\right)$ 上的二元运算.
+先证封闭性. 对任意 $A,B\in{P}\left(X\right)$, 由幂集,指示函数与对称差, $A\triangle{B}=\left(A\setminus{B}\right)\cup\left(B\setminus{A}\right)\subseteq{X}$, 故 $A\triangle{B}\in{P}\left(X\right)$. 因此 $\triangle$ 是 $P\left(X\right)$ 上的二元运算.
 
-第二步: 结合律. 对任意 $A,B,C\in{P}\left(X\right)$, 由幂集,指示函数与对称差, $\chi_{\left(A\triangle{B}\right)\triangle{C}}=\left(\chi_A+\chi_B\right)+\chi_C\pmod2$ 且 $\chi_{A\triangle\left(B\triangle{C}\right)}=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 由模 2 加法 (结合律), $\left(\chi_A+\chi_B\right)+\chi_C=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 故 $\chi_{\left(A\triangle{B}\right)\triangle{C}}=\chi_{A\triangle\left(B\triangle{C}\right)}$. 因 $A\mapsto\chi_A$ 是单射 (幂集,指示函数与对称差), $\left(A\triangle{B}\right)\triangle{C}=A\triangle\left(B\triangle{C}\right)$. 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是半群.
+再证结合律. 对任意 $A,B,C\in{P}\left(X\right)$, 由幂集,指示函数与对称差, $\chi_{\left(A\triangle{B}\right)\triangle{C}}=\left(\chi_A+\chi_B\right)+\chi_C\pmod2$ 且 $\chi_{A\triangle\left(B\triangle{C}\right)}=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 由模 2 加法 (结合律), $\left(\chi_A+\chi_B\right)+\chi_C=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 故 $\chi_{\left(A\triangle{B}\right)\triangle{C}}=\chi_{A\triangle\left(B\triangle{C}\right)}$. 因 $A\mapsto\chi_A$ 是单射 (幂集,指示函数与对称差), $\left(A\triangle{B}\right)\triangle{C}=A\triangle\left(B\triangle{C}\right)$. 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是半群.
 
-第三步: 幺元. 对任意 $A\in{P}\left(X\right)$, 由对称差定义 (幂集,指示函数与对称差), $A\triangle\emptyset=\left(A\setminus\emptyset\right)\cup\left(\emptyset\setminus{A}\right)=A$. 故 $\emptyset$ 是幺元, 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是幺半群.
+接着证幺元. 对任意 $A\in{P}\left(X\right)$, 由对称差定义 (幂集,指示函数与对称差), $A\triangle\emptyset=\left(A\setminus\emptyset\right)\cup\left(\emptyset\setminus{A}\right)=A$. 故 $\emptyset$ 是幺元, 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是幺半群.
 
-第四步: 逆元. 对任意 $A\in{P}\left(X\right)$, 由对称差定义, $A\triangle{A}=\left(A\setminus{A}\right)\cup\left(A\setminus{A}\right)=\emptyset$. 故 $A\triangle{A}=\emptyset$, 即 $A$ 以自身为逆元, 依据**定义 1.1.10 (逆元)**, 每个元素 $A\in{P}\left(X\right)$ 都可逆 (逆元为其自身).
+然后证逆元. 对任意 $A\in{P}\left(X\right)$, 由对称差定义, $A\triangle{A}=\left(A\setminus{A}\right)\cup\left(A\setminus{A}\right)=\emptyset$. 故 $A\triangle{A}=\emptyset$, 即 $A$ 以自身为逆元, 依据**定义 1.1.10 (逆元)**, 每个元素 $A\in{P}\left(X\right)$ 都可逆 (逆元为其自身).
 
-第五步: 成群. 由第二至四步, $\left(P\left(X\right),\triangle\right)$ 是幺半群且每个元素都可逆, 依据**定义 1.1.14 (群与阿贝尔群)**, $\left(P\left(X\right),\triangle\right)$ 是一个群.
+最后证成群. 由上面几段, $\left(P\left(X\right),\triangle\right)$ 是幺半群且每个元素都可逆, 依据**定义 1.1.14 (群与阿贝尔群)**, $\left(P\left(X\right),\triangle\right)$ 是一个群.
 
-当 $X=\left\{1,2\right\}$ 时, $P\left(X\right)=\left\{\emptyset,\left\{1\right\},\left\{2\right\},\left\{1,2\right\}\right\}$. 记 $0=\emptyset$, $a=\left\{1\right\}$, $b=\left\{2\right\}$, $c=\left\{1,2\right\}$. 由第四步, 各元素均以自身为逆元. 由对称差定义 (幂集,指示函数与对称差) 逐项计算 $a\triangle{b}=\left\{1,2\right\}=c$, $a\triangle{c}=\left\{2\right\}=b$, $b\triangle{c}=\left\{1\right\}=a$, 得群表
+当 $X=\left\{1,2\right\}$ 时, $P\left(X\right)=\left\{\emptyset,\left\{1\right\},\left\{2\right\},\left\{1,2\right\}\right\}$. 记 $0=\emptyset$, $a=\left\{1\right\}$, $b=\left\{2\right\}$, $c=\left\{1,2\right\}$. 由上面的论证, 各元素均以自身为逆元. 由对称差定义 (幂集,指示函数与对称差) 逐项计算 $a\triangle{b}=\left\{1,2\right\}=c$, $a\triangle{c}=\left\{2\right\}=b$, $b\triangle{c}=\left\{1\right\}=a$, 得群表
 
 $$
 \begin{array}{c|cccc}

@@ -130,7 +130,7 @@ $$
 
 ### 解答 1.9-8
 
-第一步: 验证 $g\circ{z}\in{H}$. 对 $z=x+iy$ ($y>0$), 因 $\det{g}=ad-bc=1$, 直接计算虚部:
+先验证 $g\circ{z}\in{H}$. 对 $z=x+iy$ ($y>0$), 因 $\det{g}=ad-bc=1$, 直接计算虚部:
 
 $$
 \mathrm{Im}\left(\frac{az+b}{cz+d}\right)=\frac{\left(ad-bc\right)y}{\left|cz+d\right|^{2}}=\frac{y}{\left|cz+d\right|^{2}}>0,
@@ -138,9 +138,9 @@ $$
 
 故 $g\circ{z}\in{H}$, 定义合理.
 
-第二步: 验证作用公理. 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ{z}=z$. 又由分式线性变换, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ{z}=g_1\circ\left(g_2\circ{z}\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb{R}\right)$ 在 $H$ 上的作用.
+再验证作用公理. 单位矩阵 $I=\begin{bmatrix}1&0\\0&1\end{bmatrix}$ 给出 $I\circ{z}=z$. 又由分式线性变换, 分式线性变换的复合对应矩阵乘法, 即 $\left(g_1g_2\right)\circ{z}=g_1\circ\left(g_2\circ{z}\right)$. 由**定义 1.9.1 (群作用)**, 这是 $\mathrm{SL}\left(2,\mathbb{R}\right)$ 在 $H$ 上的作用.
 
-第三步: 判断可递性. 任取 $z=x+iy\in{H}$ ($y>0$), 取
+接着判断可递性. 任取 $z=x+iy\in{H}$ ($y>0$), 取
 
 $$
 g=\begin{bmatrix}\sqrt{y}&x/\sqrt{y}\\0&1/\sqrt{y}\end{bmatrix},
@@ -154,13 +154,13 @@ $$
 
 故 $i$ 可映到任意 $z\in{H}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用可递.
 
-第四步: 判断有效性. 若 $g\circ{z}=z$ 对一切 $z\in{H}$ 成立, 则分式线性变换 $\frac{az+b}{cz+d}$ 有无穷多个不动点, 由分式线性变换, 它必为恒等变换, 故 $c=0$, $b=0$, $a=d$; 结合 $\det{g}=ad-bc=a^{2}=1$, 得 $g=\pm{I}$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ{z}=\frac{-z}{-1}=z$. 故作用的核为 $\left\{\pm{I}\right\}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用不是有效的; 其有效商群为
+然后判断有效性. 若 $g\circ{z}=z$ 对一切 $z\in{H}$ 成立, 则分式线性变换 $\frac{az+b}{cz+d}$ 有无穷多个不动点, 由分式线性变换, 它必为恒等变换, 故 $c=0$, $b=0$, $a=d$; 结合 $\det{g}=ad-bc=a^{2}=1$, 得 $g=\pm{I}$. 其中 $-I=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}$ 对一切 $z$ 也有 $\left(-I\right)\circ{z}=\frac{-z}{-1}=z$. 故作用的核为 $\left\{\pm{I}\right\}$, 由**定义 1.9.7 (可递作用与有效作用)**, 作用不是有效的; 其有效商群为
 
 $$
 \mathrm{PSL}\left(2,\mathbb{R}\right)=\mathrm{SL}\left(2,\mathbb{R}\right)/\left\{\pm{I}\right\}.
 $$
 
-第五步: 求 $i$ 的迷向子群. 由 $g\circ{i}=i$, 即
+最后求 $i$ 的迷向子群. 由 $g\circ{i}=i$, 即
 
 $$
 \frac{ai+b}{ci+d}=i,\quad\Longrightarrow\quad{a}i+b=i\left(ci+d\right)=ci^{2}+di=-c+di.
