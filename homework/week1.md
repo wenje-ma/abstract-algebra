@@ -2,7 +2,7 @@
 
 > **定义 1.1.4 (半群与幺半群)**
 > 
-> 若非空集合 $S$ 中定义了一个满足结合律的二元运算 $*$, 则称 $\left\{S;*\right\}$ 为一个半群, 将 $a*b$ 简记为 $ab$. 若半群 $S$ 中存在元素 $e$, 对任意 $a\in{S}$ 有 $ea=a$ (或 $ae=a$), 则称 $e$ 为 $S$ 的左(右)幺元; 若 $e$ 既是左幺元又是右幺元, 则称 $e$ 为 $S$ 的幺元, 含幺元的半群称为幺半群; 若 $S$ 中的运算还满足交换律, 则称 $S$ 为交换幺半群.
+> 若非空集合 $S$ 中定义了一个满足结合律的二元运算 $*$, 则称 $\left\{S;*\right\}$ 为一个半群, 将 $a*b$ 简记为 $ab$. 若半群 $S$ 中存在元素 $e$, 对任意 $a\in{}S$ 有 $ea=a$ (或 $ae=a$), 则称 $e$ 为 $S$ 的左(右)幺元; 若 $e$ 既是左幺元又是右幺元, 则称 $e$ 为 $S$ 的幺元, 含幺元的半群称为幺半群; 若 $S$ 中的运算还满足交换律, 则称 $S$ 为交换幺半群.
 
 > **例 1.1.7 (变换幺半群)**
 > 
@@ -10,7 +10,7 @@
 
 > **定义 1.1.10 (逆元)**
 > 
-> 设 $S$ 是幺半群, $e$ 是幺元, $a\in{S}$. 若存在 $b\in{S}$ 使得 $ba=e$ ($ab=e$), 则称 $b$ 为 $a$ 的左(右)逆元. 若 $b$ 既是 $a$ 的左逆元又是 $a$ 的右逆元, 即有 $ba=ab=e$, 则称 $b$ 为 $a$ 的逆元, 这时称 $a$ 为可逆元.
+> 设 $S$ 是幺半群, $e$ 是幺元, $a\in{}S$. 若存在 $b\in{}S$ 使得 $ba=e$ ($ab=e$), 则称 $b$ 为 $a$ 的左(右)逆元. 若 $b$ 既是 $a$ 的左逆元又是 $a$ 的右逆元, 即有 $ba=ab=e$, 则称 $b$ 为 $a$ 的逆元, 这时称 $a$ 为可逆元.
 
 > **定义 1.1.14 (群与阿贝尔群)**
 > 
@@ -38,29 +38,29 @@ $\blacksquare$
 
 ## 1.1-9
 
-设 $P\left(X\right)$ 为非空集合 $X$ 的幂集. 对任意 $A,B\in{P}\left(X\right)$, 定义 $A$ 与 $B$ 的对称差为
+设 $P\left(X\right)$ 为非空集合 $X$ 的幂集. 对任意 $A,B\in{}P\left(X\right)$, 定义 $A$ 与 $B$ 的对称差为
 
 $$
-A\triangle{B}=\left(A\setminus{B}\right)\cup\left(B\setminus{A}\right).
+A\triangle{}B=\left(A\setminus{}B\right)\cup\left(B\setminus{}A\right).
 $$
 
-这里 $A\setminus{B}=\left\{x\in{A}\mid{x}\notin{B}\right\}$. 试证 $\left(P\left(X\right),\triangle\right)$ 为一个群. 当 $X$ 只含有两个元素时, 试给出该群的群表, 此时称该群为克莱因群.
+这里 $A\setminus{}B=\left\{x\in{}A\mid{}x\notin{}B\right\}$. 试证 $\left(P\left(X\right),\triangle\right)$ 为一个群. 当 $X$ 只含有两个元素时, 试给出该群的群表, 此时称该群为克莱因群.
 
 ### 解答 1.1-9
 
-对任意 $A\in{P}\left(X\right)$, 用指示函数 $\chi_A:X\to\left\{0,1\right\}$ 刻画 $A$. 由幂集,指示函数与对称差, $A\mapsto\chi_A$ 是单射, 且 $\chi_{A\triangle{B}}=\chi_A+\chi_B\pmod2$.
+对任意 $A\in{}P\left(X\right)$, 用指示函数 $\chi_A:X\to\left\{0,1\right\}$ 刻画 $A$. 由幂集,指示函数与对称差, $A\mapsto\chi_A$ 是单射, 且 $\chi_{A\triangle{}B}=\chi_A+\chi_B\pmod2$.
 
-先证封闭性. 对任意 $A,B\in{P}\left(X\right)$, 由幂集,指示函数与对称差, $A\triangle{B}=\left(A\setminus{B}\right)\cup\left(B\setminus{A}\right)\subseteq{X}$, 故 $A\triangle{B}\in{P}\left(X\right)$. 因此 $\triangle$ 是 $P\left(X\right)$ 上的二元运算.
+先证封闭性. 对任意 $A,B\in{}P\left(X\right)$, 由幂集,指示函数与对称差, $A\triangle{}B=\left(A\setminus{}B\right)\cup\left(B\setminus{}A\right)\subseteq{}X$, 故 $A\triangle{}B\in{}P\left(X\right)$. 因此 $\triangle$ 是 $P\left(X\right)$ 上的二元运算.
 
-再证结合律. 对任意 $A,B,C\in{P}\left(X\right)$, 由幂集,指示函数与对称差, $\chi_{\left(A\triangle{B}\right)\triangle{C}}=\left(\chi_A+\chi_B\right)+\chi_C\pmod2$ 且 $\chi_{A\triangle\left(B\triangle{C}\right)}=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 由模 2 加法 (结合律), $\left(\chi_A+\chi_B\right)+\chi_C=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 故 $\chi_{\left(A\triangle{B}\right)\triangle{C}}=\chi_{A\triangle\left(B\triangle{C}\right)}$. 因 $A\mapsto\chi_A$ 是单射 (幂集,指示函数与对称差), $\left(A\triangle{B}\right)\triangle{C}=A\triangle\left(B\triangle{C}\right)$. 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是半群.
+再证结合律. 对任意 $A,B,C\in{}P\left(X\right)$, 由幂集,指示函数与对称差, $\chi_{\left(A\triangle{}B\right)\triangle{}C}=\left(\chi_A+\chi_B\right)+\chi_C\pmod2$ 且 $\chi_{A\triangle\left(B\triangle{}C\right)}=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 由模 2 加法 (结合律), $\left(\chi_A+\chi_B\right)+\chi_C=\chi_A+\left(\chi_B+\chi_C\right)\pmod2$. 故 $\chi_{\left(A\triangle{}B\right)\triangle{}C}=\chi_{A\triangle\left(B\triangle{}C\right)}$. 因 $A\mapsto\chi_A$ 是单射 (幂集,指示函数与对称差), $\left(A\triangle{}B\right)\triangle{}C=A\triangle\left(B\triangle{}C\right)$. 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是半群.
 
-接着证幺元. 对任意 $A\in{P}\left(X\right)$, 由对称差定义 (幂集,指示函数与对称差), $A\triangle\emptyset=\left(A\setminus\emptyset\right)\cup\left(\emptyset\setminus{A}\right)=A$. 故 $\emptyset$ 是幺元, 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是幺半群.
+接着证幺元. 对任意 $A\in{}P\left(X\right)$, 由对称差定义 (幂集,指示函数与对称差), $A\triangle\emptyset=\left(A\setminus\emptyset\right)\cup\left(\emptyset\setminus{}A\right)=A$. 故 $\emptyset$ 是幺元, 依据**定义 1.1.4 (半群与幺半群)**, $\left(P\left(X\right),\triangle\right)$ 是幺半群.
 
-然后证逆元. 对任意 $A\in{P}\left(X\right)$, 由对称差定义, $A\triangle{A}=\left(A\setminus{A}\right)\cup\left(A\setminus{A}\right)=\emptyset$. 故 $A\triangle{A}=\emptyset$, 即 $A$ 以自身为逆元, 依据**定义 1.1.10 (逆元)**, 每个元素 $A\in{P}\left(X\right)$ 都可逆 (逆元为其自身).
+然后证逆元. 对任意 $A\in{}P\left(X\right)$, 由对称差定义, $A\triangle{}A=\left(A\setminus{}A\right)\cup\left(A\setminus{}A\right)=\emptyset$. 故 $A\triangle{}A=\emptyset$, 即 $A$ 以自身为逆元, 依据**定义 1.1.10 (逆元)**, 每个元素 $A\in{}P\left(X\right)$ 都可逆 (逆元为其自身).
 
 最后证成群. 由上面几段, $\left(P\left(X\right),\triangle\right)$ 是幺半群且每个元素都可逆, 依据**定义 1.1.14 (群与阿贝尔群)**, $\left(P\left(X\right),\triangle\right)$ 是一个群.
 
-当 $X=\left\{1,2\right\}$ 时, $P\left(X\right)=\left\{\emptyset,\left\{1\right\},\left\{2\right\},\left\{1,2\right\}\right\}$. 记 $0=\emptyset$, $a=\left\{1\right\}$, $b=\left\{2\right\}$, $c=\left\{1,2\right\}$. 由上面的论证, 各元素均以自身为逆元. 由对称差定义 (幂集,指示函数与对称差) 逐项计算 $a\triangle{b}=\left\{1,2\right\}=c$, $a\triangle{c}=\left\{2\right\}=b$, $b\triangle{c}=\left\{1\right\}=a$, 得群表
+当 $X=\left\{1,2\right\}$ 时, $P\left(X\right)=\left\{\emptyset,\left\{1\right\},\left\{2\right\},\left\{1,2\right\}\right\}$. 记 $0=\emptyset$, $a=\left\{1\right\}$, $b=\left\{2\right\}$, $c=\left\{1,2\right\}$. 由上面的论证, 各元素均以自身为逆元. 由对称差定义 (幂集,指示函数与对称差) 逐项计算 $a\triangle{}b=\left\{1,2\right\}=c$, $a\triangle{}c=\left\{2\right\}=b$, $b\triangle{}c=\left\{1\right\}=a$, 得群表
 
 $$
 \begin{array}{c|cccc}
@@ -78,7 +78,7 @@ $\blacksquare$
 
 ## 1.1-16
 
-设 $A\in\mathbb{R}^{n\times{n}}$, $\beta\in\mathbb{R}^n$, 定义 $\mathbb{R}^n$ 上的变换 $T_{\left(A,\beta\right)}$ 为
+设 $A\in\mathbb{R}^{n\times{}n}$, $\beta\in\mathbb{R}^n$, 定义 $\mathbb{R}^n$ 上的变换 $T_{\left(A,\beta\right)}$ 为
 
 $$
 T_{\left(A,\beta\right)}\left(\alpha\right)=A\alpha+\beta,\quad\forall\alpha\in\mathbb{R}^n.
@@ -98,33 +98,33 @@ $$
 
 综上, $T_{\left(A,\beta\right)}$ 是双射.
 
-(2) 证明 $\mathrm{Aff}\left(n,\mathbb{R}\right)$ 是群. 由**例 1.1.7 (变换幺半群)**, $M\left(\mathbb{R}^n\right)$ (所有变换的集合) 在复合下是幺半群, 故复合满足结合律且恒等变换是幺元. 由于每个 $T_{\left(A,\beta\right)}$ 都是 $\mathbb{R}^n$ 上的变换, $\mathrm{Aff}\left(n,\mathbb{R}\right)\subseteq{M}\left(\mathbb{R}^n\right)$. 下面逐条验证 $\mathrm{Aff}\left(n,\mathbb{R}\right)$ 关于复合构成群.
+(2) 证明 $\mathrm{Aff}\left(n,\mathbb{R}\right)$ 是群. 由**例 1.1.7 (变换幺半群)**, $M\left(\mathbb{R}^n\right)$ (所有变换的集合) 在复合下是幺半群, 故复合满足结合律且恒等变换是幺元. 由于每个 $T_{\left(A,\beta\right)}$ 都是 $\mathbb{R}^n$ 上的变换, $\mathrm{Aff}\left(n,\mathbb{R}\right)\subseteq{}M\left(\mathbb{R}^n\right)$. 下面逐条验证 $\mathrm{Aff}\left(n,\mathbb{R}\right)$ 关于复合构成群.
 
 封闭性: 对任意 $T_{\left(A,\beta\right)},T_{\left(C,\delta\right)}\in\mathrm{Aff}\left(n,\mathbb{R}\right)$ 与任意 $\alpha\in\mathbb{R}^n$, 由矩阵乘法结合律与分配律 (矩阵乘法结合律),
 
 $$
-T_{\left(A,\beta\right)}\circ{T}_{\left(C,\delta\right)}\left(\alpha\right)=A\left(C\alpha+\delta\right)+\beta=\left(AC\right)\alpha+\left(A\delta+\beta\right)=T_{\left(AC,A\delta+\beta\right)}\left(\alpha\right).
+T_{\left(A,\beta\right)}\circ{}T_{\left(C,\delta\right)}\left(\alpha\right)=A\left(C\alpha+\delta\right)+\beta=\left(AC\right)\alpha+\left(A\delta+\beta\right)=T_{\left(AC,A\delta+\beta\right)}\left(\alpha\right).
 $$
 
 由方阵可逆性与行列式, $\left|AC\right|=\left|A\right|\left|C\right|\ne0$, 故 $T_{\left(AC,A\delta+\beta\right)}\in\mathrm{Aff}\left(n,\mathbb{R}\right)$. 因此复合在 $\mathrm{Aff}\left(n,\mathbb{R}\right)$ 上封闭.
 
 结合律: 由**例 1.1.7 (变换幺半群)**, 复合满足结合律.
 
-幺元: 恒等变换 $T_{\left(I,0\right)}$ 满足 $\left|I\right|=1\ne0$ (方阵可逆性与行列式), 故 $T_{\left(I,0\right)}\in\mathrm{Aff}\left(n,\mathbb{R}\right)$. 由**例 1.1.7 (变换幺半群)**, 恒等变换是复合的幺元, 故对任意 $T_{\left(A,\beta\right)}$ 有 $T_{\left(A,\beta\right)}\circ{T}_{\left(I,0\right)}=T_{\left(A,\beta\right)}=T_{\left(I,0\right)}\circ{T}_{\left(A,\beta\right)}$.
+幺元: 恒等变换 $T_{\left(I,0\right)}$ 满足 $\left|I\right|=1\ne0$ (方阵可逆性与行列式), 故 $T_{\left(I,0\right)}\in\mathrm{Aff}\left(n,\mathbb{R}\right)$. 由**例 1.1.7 (变换幺半群)**, 恒等变换是复合的幺元, 故对任意 $T_{\left(A,\beta\right)}$ 有 $T_{\left(A,\beta\right)}\circ{}T_{\left(I,0\right)}=T_{\left(A,\beta\right)}=T_{\left(I,0\right)}\circ{}T_{\left(A,\beta\right)}$.
 
 逆元: 对 $T_{\left(A,\beta\right)}\in\mathrm{Aff}\left(n,\mathbb{R}\right)$, 因 $\left|A\right|\ne0$, 由方阵可逆性与行列式, $A^{-1}$ 可逆且 $\left|A^{-1}\right|\ne0$, 故 $T_{\left(A^{-1},-A^{-1}\beta\right)}\in\mathrm{Aff}\left(n,\mathbb{R}\right)$. 对任意 $\alpha\in\mathbb{R}^n$, 由矩阵乘法结合律与分配律,
 
 $$
-T_{\left(A^{-1},-A^{-1}\beta\right)}\circ{T}_{\left(A,\beta\right)}\left(\alpha\right)=A^{-1}\left(A\alpha+\beta\right)-A^{-1}\beta=\alpha,
+T_{\left(A^{-1},-A^{-1}\beta\right)}\circ{}T_{\left(A,\beta\right)}\left(\alpha\right)=A^{-1}\left(A\alpha+\beta\right)-A^{-1}\beta=\alpha,
 $$
 
 且
 
 $$
-T_{\left(A,\beta\right)}\circ{T}_{\left(A^{-1},-A^{-1}\beta\right)}\left(\alpha\right)=A\left(A^{-1}\alpha-A^{-1}\beta\right)+\beta=\alpha,
+T_{\left(A,\beta\right)}\circ{}T_{\left(A^{-1},-A^{-1}\beta\right)}\left(\alpha\right)=A\left(A^{-1}\alpha-A^{-1}\beta\right)+\beta=\alpha,
 $$
 
-故 $T_{\left(A^{-1},-A^{-1}\beta\right)}\circ{T}_{\left(A,\beta\right)}=T_{\left(I,0\right)}=T_{\left(A,\beta\right)}\circ{T}_{\left(A^{-1},-A^{-1}\beta\right)}$. 依据**定义 1.1.10 (逆元)**, $T_{\left(A^{-1},-A^{-1}\beta\right)}$ 是 $T_{\left(A,\beta\right)}$ 的逆元.
+故 $T_{\left(A^{-1},-A^{-1}\beta\right)}\circ{}T_{\left(A,\beta\right)}=T_{\left(I,0\right)}=T_{\left(A,\beta\right)}\circ{}T_{\left(A^{-1},-A^{-1}\beta\right)}$. 依据**定义 1.1.10 (逆元)**, $T_{\left(A^{-1},-A^{-1}\beta\right)}$ 是 $T_{\left(A,\beta\right)}$ 的逆元.
 
 由封闭性,结合律,幺元,逆元全部成立, 依据**定义 1.1.14 (群与阿贝尔群)**, $\mathrm{Aff}\left(n,\mathbb{R}\right)$ 关于映射的复合构成群.
 
@@ -132,10 +132,10 @@ $\blacksquare$
 
 ## 1.1-20
 
-设 $S$ 是所有数论函数 (即 $\mathbb{N}^*\to\mathbb{C}$ 的映射) 的全体. 对 $f,g\in{S}$, 定义狄利克雷卷积为
+设 $S$ 是所有数论函数 (即 $\mathbb{N}^*\to\mathbb{C}$ 的映射) 的全体. 对 $f,g\in{}S$, 定义狄利克雷卷积为
 
 $$
-f*g\left(n\right)=\sum_{d\mid{n}}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right).
+f*g\left(n\right)=\sum_{d\mid{}n}f\left(d\right)g\left(\frac{n}{d}\right)=\sum_{ab=n}f\left(a\right)g\left(b\right).
 $$
 
 (1) 证明: $\left(S,*\right)$ 为一个交换幺半群;
@@ -150,73 +150,73 @@ $$
 
 (1) 证明 $\left(S,*\right)$ 是交换幺半群. 依据**定义 1.1.4 (半群与幺半群)**, 逐条验证.
 
-封闭性: 对任意 $f,g\in{S}$, 由数论函数与狄利克雷卷积, 对每个 $n\in\mathbb{N}^*$, $\left(f*g\right)\left(n\right)=\sum_{d\mid{n}}f\left(d\right)g\left(\frac{n}{d}\right)$ 是有限个复数的和, 故为 $\mathbb{C}$ 中的元素, 即 $f*g$ 是 $\mathbb{N}^*\to\mathbb{C}$ 的映射, 故 $f*g\in{S}$.
+封闭性: 对任意 $f,g\in{}S$, 由数论函数与狄利克雷卷积, 对每个 $n\in\mathbb{N}^*$, $\left(f*g\right)\left(n\right)=\sum_{d\mid{}n}f\left(d\right)g\left(\frac{n}{d}\right)$ 是有限个复数的和, 故为 $\mathbb{C}$ 中的元素, 即 $f*g$ 是 $\mathbb{N}^*\to\mathbb{C}$ 的映射, 故 $f*g\in{}S$.
 
-交换性: 对任意 $f,g\in{S}$ 与 $n\in\mathbb{N}^*$, 由数论函数与狄利克雷卷积, $\left(f*g\right)\left(n\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$. 交换求和指标 $a,b$ 得 $\sum_{ab=n}f\left(a\right)g\left(b\right)=\sum_{ba=n}g\left(b\right)f\left(a\right)=\left(g*f\right)\left(n\right)$. 故 $f*g=g*f$, 即 $*$ 满足交换律.
+交换性: 对任意 $f,g\in{}S$ 与 $n\in\mathbb{N}^*$, 由数论函数与狄利克雷卷积, $\left(f*g\right)\left(n\right)=\sum_{ab=n}f\left(a\right)g\left(b\right)$. 交换求和指标 $a,b$ 得 $\sum_{ab=n}f\left(a\right)g\left(b\right)=\sum_{ba=n}g\left(b\right)f\left(a\right)=\left(g*f\right)\left(n\right)$. 故 $f*g=g*f$, 即 $*$ 满足交换律.
 
-结合律: 对任意 $f,g,h\in{S}$ 与 $n\in\mathbb{N}^*$, 由数论函数与狄利克雷卷积及有限和可重排,
+结合律: 对任意 $f,g,h\in{}S$ 与 $n\in\mathbb{N}^*$, 由数论函数与狄利克雷卷积及有限和可重排,
 
 $$
-\left(\left(f*g\right)*h\right)\left(n\right)=\sum_{d\mid{n}}\left(f*g\right)\left(d\right)h\left(\frac{n}{d}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),
+\left(\left(f*g\right)*h\right)\left(n\right)=\sum_{d\mid{}n}\left(f*g\right)\left(d\right)h\left(\frac{n}{d}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right),
 $$
 
 且
 
 $$
-\left(f*\left(g*h\right)\right)\left(n\right)=\sum_{d\mid{n}}f\left(d\right)\left(g*h\right)\left(\frac{n}{d}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right).
+\left(f*\left(g*h\right)\right)\left(n\right)=\sum_{d\mid{}n}f\left(d\right)\left(g*h\right)\left(\frac{n}{d}\right)=\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right).
 $$
 
 两者同为三重和 $\sum_{aby=n}f\left(a\right)g\left(b\right)h\left(y\right)$, 故 $\left(f*g\right)*h=f*\left(g*h\right)$, 即 $*$ 满足结合律.
 
-幺元: 由数论函数与狄利克雷卷积, $e\left(1\right)=1$ 且 $n>1$ 时 $e\left(n\right)=0$, 故 $e\in{S}$. 对任意 $f\in{S}$ 与 $n\in\mathbb{N}^*$, $\left(e*f\right)\left(n\right)=\sum_{d\mid{n}}e\left(d\right)f\left(\frac{n}{d}\right)$. 因 $e\left(d\right)=0$ 除非 $d=1$, 故 $\left(e*f\right)\left(n\right)=e\left(1\right)f\left(n\right)=f\left(n\right)$, 即 $e*f=f$; 同理 $f*e=f$. 故 $e$ 是幺元.
+幺元: 由数论函数与狄利克雷卷积, $e\left(1\right)=1$ 且 $n>1$ 时 $e\left(n\right)=0$, 故 $e\in{}S$. 对任意 $f\in{}S$ 与 $n\in\mathbb{N}^*$, $\left(e*f\right)\left(n\right)=\sum_{d\mid{}n}e\left(d\right)f\left(\frac{n}{d}\right)$. 因 $e\left(d\right)=0$ 除非 $d=1$, 故 $\left(e*f\right)\left(n\right)=e\left(1\right)f\left(n\right)=f\left(n\right)$, 即 $e*f=f$; 同理 $f*e=f$. 故 $e$ 是幺元.
 
 由封闭性,交换性,结合律,幺元全部成立, 依据**定义 1.1.4 (半群与幺半群)**, $\left(S,*\right)$ 是交换幺半群.
 
 (2) 证明 $f$ 可逆当且仅当 $f\left(1\right)\ne0$.
 
-必要性: 若 $f$ 可逆, 由**定义 1.1.10 (逆元)**, 存在 $g\in{S}$ 使 $f*g=e$. 则 $\left(f*g\right)\left(1\right)=\sum_{d\mid1}f\left(d\right)g\left(\frac{1}{d}\right)=f\left(1\right)g\left(1\right)$, 而 $e\left(1\right)=1$, 故 $f\left(1\right)g\left(1\right)=1$, 于是 $f\left(1\right)\ne0$.
+必要性: 若 $f$ 可逆, 由**定义 1.1.10 (逆元)**, 存在 $g\in{}S$ 使 $f*g=e$. 则 $\left(f*g\right)\left(1\right)=\sum_{d\mid1}f\left(d\right)g\left(\frac{1}{d}\right)=f\left(1\right)g\left(1\right)$, 而 $e\left(1\right)=1$, 故 $f\left(1\right)g\left(1\right)=1$, 于是 $f\left(1\right)\ne0$.
 
-充分性: 设 $f\left(1\right)\ne0$. 由数论函数与狄利克雷卷积归纳构造 $g\in{S}$: 令 $g\left(1\right)=f\left(1\right)^{-1}$; 对 $n>1$, 要求 $\left(f*g\right)\left(n\right)=0$, 即
+充分性: 设 $f\left(1\right)\ne0$. 由数论函数与狄利克雷卷积归纳构造 $g\in{}S$: 令 $g\left(1\right)=f\left(1\right)^{-1}$; 对 $n>1$, 要求 $\left(f*g\right)\left(n\right)=0$, 即
 
 $$
-f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid{n}\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
+f\left(1\right)g\left(n\right)+\sum_{\substack{d\mid{}n\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right)=0,
 $$
 
 解得
 
 $$
-g\left(n\right)=-f\left(1\right)^{-1}\sum_{\substack{d\mid{n}\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right).
+g\left(n\right)=-f\left(1\right)^{-1}\sum_{\substack{d\mid{}n\\d>1}}f\left(d\right)g\left(\frac{n}{d}\right).
 $$
 
-右端只涉及下标 $\frac{n}{d}<{}n$ (因 $d>1$) 处已定义的 $g$, 故可递归定义出 $g\in{S}$, 且使 $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1=e\left(1\right)$, 对 $n>1$ 有 $\left(f*g\right)\left(n\right)=0=e\left(n\right)$, 即 $f*g=e$. 依据**定义 1.1.10 (逆元)**, $f$ 可逆.
+右端只涉及下标 $\frac{n}{d}<{}n$ (因 $d>1$) 处已定义的 $g$, 故可递归定义出 $g\in{}S$, 且使 $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1=e\left(1\right)$, 对 $n>1$ 有 $\left(f*g\right)\left(n\right)=0=e\left(n\right)$, 即 $f*g=e$. 依据**定义 1.1.10 (逆元)**, $f$ 可逆.
 
 (3) 证明非零积性函数全体 $F$ 在 $*$ 下构成阿贝尔群.
 
-先证 $F$ 中元素满足 $f\left(1\right)=1$. 对 $f\in{F}$, 因 $f\ne0$, 存在 $m\in\mathbb{N}^*$ 使 $f\left(m\right)\ne0$. 因 $\left(1,1\right)=1$, 由积性 (积性函数与完全积性函数), $f\left(1\right)=f\left(1\cdot1\right)=f\left(1\right)f\left(1\right)$, 故 $f\left(1\right)=0$ 或 $1$. 若 $f\left(1\right)=0$, 则 $f\left(m\right)=f\left(1\cdot{m}\right)=f\left(1\right)f\left(m\right)=0$, 与 $f\left(m\right)\ne0$ 矛盾. 故 $f\left(1\right)=1\ne0$.
+先证 $F$ 中元素满足 $f\left(1\right)=1$. 对 $f\in{}F$, 因 $f\ne0$, 存在 $m\in\mathbb{N}^*$ 使 $f\left(m\right)\ne0$. 因 $\left(1,1\right)=1$, 由积性 (积性函数与完全积性函数), $f\left(1\right)=f\left(1\cdot1\right)=f\left(1\right)f\left(1\right)$, 故 $f\left(1\right)=0$ 或 $1$. 若 $f\left(1\right)=0$, 则 $f\left(m\right)=f\left(1\cdot{}m\right)=f\left(1\right)f\left(m\right)=0$, 与 $f\left(m\right)\ne0$ 矛盾. 故 $f\left(1\right)=1\ne0$.
 
-封闭性: 对 $f,g\in{F}$ 与 $\left(m,n\right)=1$, 由互素因子的唯一分解, $d\mid{m}n$ 唯一地分解为 $d=d_1d_2$, 其中 $d_1\mid{m}$, $d_2\mid{n}$, 且 $\left(d_1,d_2\right)=1$, $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$. 由 $f,g$ 的积性, $f\left(d_1d_2\right)=f\left(d_1\right)f\left(d_2\right)$, $g\left(\frac{mn}{d_1d_2}\right)=g\left(\frac{m}{d_1}\frac{n}{d_2}\right)=g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)$. 故
-
-$$
-\left(f*g\right)\left(mn\right)=\sum_{d_1\mid{m}}\sum_{d_2\mid{n}}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)=\left(f*g\right)\left(m\right)\left(f*g\right)\left(n\right),
-$$
-
-即 $f*g$ 是积性函数. 又 $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1\ne0$, 故 $f*g\ne0$, 于是 $f*g\in{F}$.
-
-幺元: 由数论函数与狄利克雷卷积, $e\left(1\right)=1$ 且 $n>1$ 时 $e\left(n\right)=0$. 对 $\left(m,n\right)=1$, 若 $mn=1$ 则 $m=n=1$; 否则 $mn>1$, $e\left(mn\right)=0$, 而 $e\left(m\right)e\left(n\right)=0$ (因 $m,n$ 至少其一 $>1$), 故 $e$ 是积性函数. 又 $e\left(1\right)=1\ne0$, 故 $e\in{F}$.
-
-逆元: 对 $f\in{F}$, 由 (2) 及 $f\left(1\right)=1\ne0$, $f$ 在 $S$ 中可逆, 设 $f*g=e$. 下面用强归纳证明 $g$ 是积性函数: 对 $\left(m,n\right)=1$, 设对所有 $\left(k,l\right)=1$ 且 $kl<{}mn$ 已证 $g\left(kl\right)=g\left(k\right)g\left(l\right)$, 证明 $g\left(mn\right)=g\left(m\right)g\left(n\right)$. 因 $mn>1$, $\left(f*g\right)\left(mn\right)=0$, 由互素因子的唯一分解与 $f$ 的积性,
+封闭性: 对 $f,g\in{}F$ 与 $\left(m,n\right)=1$, 由互素因子的唯一分解, $d\mid{}mn$ 唯一地分解为 $d=d_1d_2$, 其中 $d_1\mid{}m$, $d_2\mid{}n$, 且 $\left(d_1,d_2\right)=1$, $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$. 由 $f,g$ 的积性, $f\left(d_1d_2\right)=f\left(d_1\right)f\left(d_2\right)$, $g\left(\frac{mn}{d_1d_2}\right)=g\left(\frac{m}{d_1}\frac{n}{d_2}\right)=g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)$. 故
 
 $$
-0=\left(f*g\right)\left(mn\right)=\sum_{d_1\mid{m}}\sum_{d_2\mid{n}}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\frac{n}{d_2}\right).
+\left(f*g\right)\left(mn\right)=\sum_{d_1\mid{}m}\sum_{d_2\mid{}n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)=\left(f*g\right)\left(m\right)\left(f*g\right)\left(n\right),
+$$
+
+即 $f*g$ 是积性函数. 又 $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1\ne0$, 故 $f*g\ne0$, 于是 $f*g\in{}F$.
+
+幺元: 由数论函数与狄利克雷卷积, $e\left(1\right)=1$ 且 $n>1$ 时 $e\left(n\right)=0$. 对 $\left(m,n\right)=1$, 若 $mn=1$ 则 $m=n=1$; 否则 $mn>1$, $e\left(mn\right)=0$, 而 $e\left(m\right)e\left(n\right)=0$ (因 $m,n$ 至少其一 $>1$), 故 $e$ 是积性函数. 又 $e\left(1\right)=1\ne0$, 故 $e\in{}F$.
+
+逆元: 对 $f\in{}F$, 由 (2) 及 $f\left(1\right)=1\ne0$, $f$ 在 $S$ 中可逆, 设 $f*g=e$. 下面用强归纳证明 $g$ 是积性函数: 对 $\left(m,n\right)=1$, 设对所有 $\left(k,l\right)=1$ 且 $kl<{}mn$ 已证 $g\left(kl\right)=g\left(k\right)g\left(l\right)$, 证明 $g\left(mn\right)=g\left(m\right)g\left(n\right)$. 因 $mn>1$, $\left(f*g\right)\left(mn\right)=0$, 由互素因子的唯一分解与 $f$ 的积性,
+
+$$
+0=\left(f*g\right)\left(mn\right)=\sum_{d_1\mid{}m}\sum_{d_2\mid{}n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\frac{n}{d_2}\right).
 $$
 
 在右端和中, 当 $\left(d_1,d_2\right)=\left(1,1\right)$ 时 $\frac{m}{d_1}\frac{n}{d_2}=mn$, 其余项 $\frac{m}{d_1}\frac{n}{d_2}<{}mn$ 且 $\left(\frac{m}{d_1},\frac{n}{d_2}\right)=1$, 由归纳假设 $g\left(\frac{m}{d_1}\frac{n}{d_2}\right)=g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right)$. 另一方面, 由 $\left(f*g\right)\left(m\right)=0$ 与 $\left(f*g\right)\left(n\right)=0$ 相乘, 得
 
 $$
-0=\sum_{d_1\mid{m}}\sum_{d_2\mid{n}}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right).
+0=\sum_{d_1\mid{}m}\sum_{d_2\mid{}n}f\left(d_1\right)f\left(d_2\right)g\left(\frac{m}{d_1}\right)g\left(\frac{n}{d_2}\right).
 $$
 
-两式右端的和除首项外逐项相等, 而 $f\left(1\right)=1$, 故 $g\left(mn\right)=g\left(m\right)g\left(n\right)$. 因此 $g$ 是积性函数. 又由 $f*g=e$, $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1$, 且 $f\left(1\right)=1$, 故 $g\left(1\right)=1\ne0$, 于是 $g\in{F}$, 即 $f$ 在 $F$ 中有逆元 $g$.
+两式右端的和除首项外逐项相等, 而 $f\left(1\right)=1$, 故 $g\left(mn\right)=g\left(m\right)g\left(n\right)$. 因此 $g$ 是积性函数. 又由 $f*g=e$, $\left(f*g\right)\left(1\right)=f\left(1\right)g\left(1\right)=1$, 且 $f\left(1\right)=1$, 故 $g\left(1\right)=1\ne0$, 于是 $g\in{}F$, 即 $f$ 在 $F$ 中有逆元 $g$.
 
 交换性: 由 (1), $*$ 满足交换律.
 
@@ -225,7 +225,7 @@ $$
 (4) 结论: 不构成. 事实上, 非零完全积性函数的全体在 $*$ 下不封闭. 取 $f\left(n\right)=1$ (常数函数), 对任意 $m,n\in\mathbb{N}^*$ 有 $f\left(mn\right)=1=f\left(m\right)f\left(n\right)$, 故 $f$ 是完全积性的, 且 $f\ne0$. 由数论函数与狄利克雷卷积,
 
 $$
-\left(f*f\right)\left(n\right)=\sum_{d\mid{n}}1=\tau\left(n\right),
+\left(f*f\right)\left(n\right)=\sum_{d\mid{}n}1=\tau\left(n\right),
 $$
 
 其中 $\tau\left(n\right)$ 为 $n$ 的正因子个数. 取 $n=2$, 则由正因子个数函数, $\tau\left(2\right)=2$, $\tau\left(4\right)=3$. 于是 $\tau\left(2\cdot2\right)=\tau\left(4\right)=3\ne4=\tau\left(2\right)\tau\left(2\right)$, 即 $\tau$ 不是完全积性函数. 故 $f*f=\tau$ 不是完全积性函数, 即 $f*f$ 不属于非零完全积性函数全体. 因此该集合对 $*$ 不封闭, 不构成阿贝尔群.
@@ -242,45 +242,45 @@ $\blacksquare$
 
 ### 解答 1.2-13
 
-(1) 证明 $SL\left(n,\mathbb{Z}\right)<{}GL\left(n,\mathbb{R}\right)$. 单位矩阵 $I_n$ 的元素均为整数且 $\left|I_n\right|=1$, 故 $SL\left(n,\mathbb{Z}\right)$ 非空. 对任意 $A,B\in{S}L\left(n,\mathbb{Z}\right)$, $B$ 的元素均为整数且 $\left|B\right|=1$, 由整数矩阵的伴随矩阵与行列式, $B^{-1}$ 的元素均为整数, 故 $AB^{-1}$ 的元素均为整数. 又由整数矩阵的伴随矩阵与行列式, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. 故 $AB^{-1}\in{S}L\left(n,\mathbb{Z}\right)$. 依据**定理 1.2.2 (子群判别法)** (条件 (3)), $SL\left(n,\mathbb{Z}\right)<{}GL\left(n,\mathbb{R}\right)$.
+(1) 证明 $SL\left(n,\mathbb{Z}\right)<{}GL\left(n,\mathbb{R}\right)$. 单位矩阵 $I_n$ 的元素均为整数且 $\left|I_n\right|=1$, 故 $SL\left(n,\mathbb{Z}\right)$ 非空. 对任意 $A,B\in{}SL\left(n,\mathbb{Z}\right)$, $B$ 的元素均为整数且 $\left|B\right|=1$, 由整数矩阵的伴随矩阵与行列式, $B^{-1}$ 的元素均为整数, 故 $AB^{-1}$ 的元素均为整数. 又由整数矩阵的伴随矩阵与行列式, $\left|AB^{-1}\right|=\frac{\left|A\right|}{\left|B\right|}=\frac{1}{1}=1$. 故 $AB^{-1}\in{}SL\left(n,\mathbb{Z}\right)$. 依据**定理 1.2.2 (子群判别法)** (条件 (3)), $SL\left(n,\mathbb{Z}\right)<{}GL\left(n,\mathbb{R}\right)$.
 
-(2) 证明 $S,T,R,U$ 中任两个都生成 $SL\left(2,\mathbb{Z}\right)$. 首先验证 $S,T,R,U\in{S}L\left(2,\mathbb{Z}\right)$: 各矩阵的元素均为整数, 且直接计算得 $\left|S\right|=\left|T\right|=\left|R\right|=\left|U\right|=1$.
+(2) 证明 $S,T,R,U$ 中任两个都生成 $SL\left(2,\mathbb{Z}\right)$. 首先验证 $S,T,R,U\in{}SL\left(2,\mathbb{Z}\right)$: 各矩阵的元素均为整数, 且直接计算得 $\left|S\right|=\left|T\right|=\left|R\right|=\left|U\right|=1$.
 
-先证 $\left\langle{S},T\right\rangle=SL\left(2,\mathbb{Z}\right)$. 对任意 $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\in{S}L\left(2,\mathbb{Z}\right)$, 由初等行变换与辗转相除法, 反复用左乘 $T^{k}$ 与 $U^{k}$ (即两类初等行变换) 配合辗转相除法可将 $A$ 化为对角矩阵; 又因 $\left|A\right|=1$ 且初等变换不改变行列式的绝对值, 所得对角矩阵的对角元必为 $\pm1$ 且乘积为 $\pm1$. 再由 $S^{2}=-I$ 可将 $-I$ 表出, 从而 $A$ 可由 $S,T$ 化为单位矩阵 $I$. 反之 $S,T\in{S}L\left(2,\mathbb{Z}\right)$, 故 $\left\langle{S},T\right\rangle=SL\left(2,\mathbb{Z}\right)$.
+先证 $\left\langle{}S,T\right\rangle=SL\left(2,\mathbb{Z}\right)$. 对任意 $A=\begin{bmatrix}a&b\\c&d\end{bmatrix}\in{}SL\left(2,\mathbb{Z}\right)$, 由初等行变换与辗转相除法, 反复用左乘 $T^{k}$ 与 $U^{k}$ (即两类初等行变换) 配合辗转相除法可将 $A$ 化为对角矩阵; 又因 $\left|A\right|=1$ 且初等变换不改变行列式的绝对值, 所得对角矩阵的对角元必为 $\pm1$ 且乘积为 $\pm1$. 再由 $S^{2}=-I$ 可将 $-I$ 表出, 从而 $A$ 可由 $S,T$ 化为单位矩阵 $I$. 反之 $S,T\in{}SL\left(2,\mathbb{Z}\right)$, 故 $\left\langle{}S,T\right\rangle=SL\left(2,\mathbb{Z}\right)$.
 
-下面证明其余各对生成的子群都等于 $\left\langle{S},T\right\rangle$.
+下面证明其余各对生成的子群都等于 $\left\langle{}S,T\right\rangle$.
 
-$\left\langle{S},R\right\rangle$ 与 $\left\langle{T},R\right\rangle$. 直接计算
+$\left\langle{}S,R\right\rangle$ 与 $\left\langle{}T,R\right\rangle$. 直接计算
 
 $$
 ST=\begin{bmatrix}0&-1\\1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}=\begin{bmatrix}0&-1\\1&1\end{bmatrix}=R.
 $$
 
-故 $R=ST$, 即 $R\in\left\langle{S},T\right\rangle$, 且 $T=S^{-1}R\in\left\langle{S},R\right\rangle$, $S=RT^{-1}\in\left\langle{T},R\right\rangle$. 于是 $\left\langle{S},R\right\rangle\supseteq\left\langle{S},T\right\rangle$ 且 $\left\langle{T},R\right\rangle\supseteq\left\langle{S},T\right\rangle$; 又 $S,T$ 是 $S,R$ (或 $T,R$) 的表达式中出现的矩阵, 反包含显然, 故 $\left\langle{S},R\right\rangle=\left\langle{T},R\right\rangle=\left\langle{S},T\right\rangle=SL\left(2,\mathbb{Z}\right)$.
+故 $R=ST$, 即 $R\in\left\langle{}S,T\right\rangle$, 且 $T=S^{-1}R\in\left\langle{}S,R\right\rangle$, $S=RT^{-1}\in\left\langle{}T,R\right\rangle$. 于是 $\left\langle{}S,R\right\rangle\supseteq\left\langle{}S,T\right\rangle$ 且 $\left\langle{}T,R\right\rangle\supseteq\left\langle{}S,T\right\rangle$; 又 $S,T$ 是 $S,R$ (或 $T,R$) 的表达式中出现的矩阵, 反包含显然, 故 $\left\langle{}S,R\right\rangle=\left\langle{}T,R\right\rangle=\left\langle{}S,T\right\rangle=SL\left(2,\mathbb{Z}\right)$.
 
-$\left\langle{S},U\right\rangle$. 计算 $S^{-1}TS$:
+$\left\langle{}S,U\right\rangle$. 计算 $S^{-1}TS$:
 
 $$
 S^{-1}TS=\begin{bmatrix}0&1\\-1&0\end{bmatrix}\begin{bmatrix}1&1\\0&1\end{bmatrix}\begin{bmatrix}0&-1\\1&0\end{bmatrix}=\begin{bmatrix}1&0\\-1&1\end{bmatrix}=U^{-1}.
 $$
 
-故 $T=SU^{-1}S^{-1}\in\left\langle{S},U\right\rangle$, 于是 $\left\langle{S},U\right\rangle\supseteq\left\langle{S},T\right\rangle$. 又 $U=S^{-1}T^{-1}S\in\left\langle{S},T\right\rangle$, 故 $\left\langle{S},U\right\rangle\subseteq\left\langle{S},T\right\rangle$. 因此 $\left\langle{S},U\right\rangle=\left\langle{S},T\right\rangle=SL\left(2,\mathbb{Z}\right)$.
+故 $T=SU^{-1}S^{-1}\in\left\langle{}S,U\right\rangle$, 于是 $\left\langle{}S,U\right\rangle\supseteq\left\langle{}S,T\right\rangle$. 又 $U=S^{-1}T^{-1}S\in\left\langle{}S,T\right\rangle$, 故 $\left\langle{}S,U\right\rangle\subseteq\left\langle{}S,T\right\rangle$. 因此 $\left\langle{}S,U\right\rangle=\left\langle{}S,T\right\rangle=SL\left(2,\mathbb{Z}\right)$.
 
-$\left\langle{T},U\right\rangle$. $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$, $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$ 正是初等行变换与辗转相除法中的两类初等变换矩阵, 由辗转相除法仅用这两类初等行变换即可将任一 $SL\left(2,\mathbb{Z}\right)$ 中元化为 $\pm{I}$, 故 $\left\langle{T},U\right\rangle=SL\left(2,\mathbb{Z}\right)$.
+$\left\langle{}T,U\right\rangle$. $T=\begin{bmatrix}1&1\\0&1\end{bmatrix}$, $U=\begin{bmatrix}1&0\\1&1\end{bmatrix}$ 正是初等行变换与辗转相除法中的两类初等变换矩阵, 由辗转相除法仅用这两类初等行变换即可将任一 $SL\left(2,\mathbb{Z}\right)$ 中元化为 $\pm{}I$, 故 $\left\langle{}T,U\right\rangle=SL\left(2,\mathbb{Z}\right)$.
 
-$\left\langle{R},U\right\rangle$. 由 $R=ST$ 得 $T=S^{-1}R$, 又 $U^{-1}=S^{-1}TS$, 代入得
+$\left\langle{}R,U\right\rangle$. 由 $R=ST$ 得 $T=S^{-1}R$, 又 $U^{-1}=S^{-1}TS$, 代入得
 
 $$
 U^{-1}=S^{-1}\left(S^{-1}R\right)S=S^{-2}RS.
 $$
 
-因 $S^{2}=-I$, 故 $S^{-2}=\left(-I\right)^{-1}=-I$, 于是 $U^{-1}=-IRS=-RS$, 即 $S=-R^{-1}U^{-1}$. 直接计算 $R^{3}=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}=-I$, 故 $-I=R^{3}\in\left\langle{R},U\right\rangle$, 从而
+因 $S^{2}=-I$, 故 $S^{-2}=\left(-I\right)^{-1}=-I$, 于是 $U^{-1}=-IRS=-RS$, 即 $S=-R^{-1}U^{-1}$. 直接计算 $R^{3}=\begin{bmatrix}-1&0\\0&-1\end{bmatrix}=-I$, 故 $-I=R^{3}\in\left\langle{}R,U\right\rangle$, 从而
 
 $$
-S=\left(-I\right)\left(-S\right)=\left(-I\right)\left(R^{-1}U^{-1}\right)=R^{3}R^{-1}U^{-1}=R^{2}U^{-1}\in\left\langle{R},U\right\rangle.
+S=\left(-I\right)\left(-S\right)=\left(-I\right)\left(R^{-1}U^{-1}\right)=R^{3}R^{-1}U^{-1}=R^{2}U^{-1}\in\left\langle{}R,U\right\rangle.
 $$
 
-于是 $T=S^{-1}R\in\left\langle{R},U\right\rangle$, 故 $\left\langle{R},U\right\rangle\supseteq\left\langle{S},T\right\rangle$. 又 $R,U\in{S}L\left(2,\mathbb{Z}\right)$, 反包含 $\left\langle{R},U\right\rangle\subseteq\left\langle{S},T\right\rangle$ 显然. 因此 $\left\langle{R},U\right\rangle=\left\langle{S},T\right\rangle=SL\left(2,\mathbb{Z}\right)$.
+于是 $T=S^{-1}R\in\left\langle{}R,U\right\rangle$, 故 $\left\langle{}R,U\right\rangle\supseteq\left\langle{}S,T\right\rangle$. 又 $R,U\in{}SL\left(2,\mathbb{Z}\right)$, 反包含 $\left\langle{}R,U\right\rangle\subseteq\left\langle{}S,T\right\rangle$ 显然. 因此 $\left\langle{}R,U\right\rangle=\left\langle{}S,T\right\rangle=SL\left(2,\mathbb{Z}\right)$.
 
 综上, $S,T,R,U$ 中任两个元素都生成 $SL\left(2,\mathbb{Z}\right)$.
 
@@ -291,13 +291,13 @@ $\blacksquare$
 设 $H_{1},H_{2}$ 为有限群 $G$ 的两个子群, 证明
 
 $$
-\left[G:H_{1}\cap{H}_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right].
+\left[G:H_{1}\cap{}H_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right].
 $$
 
 又若 $\left[G:H_{1}\right]$ 与 $\left[G:H_{2}\right]$ 互素, 则
 
 $$
-\left[G:H_{1}\cap{H}_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]
+\left[G:H_{1}\cap{}H_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]
 $$
 
 且 $G=H_{1}H_{2}$.
@@ -307,10 +307,10 @@ $$
 先证不等式. 考虑映射
 
 $$
-\varphi:G/\left(H_{1}\cap{H}_{2}\right)\to{G}/H_{1}\times{G}/H_{2},\quad{g}\left(H_{1}\cap{H}_{2}\right)\mapsto\left(gH_{1},gH_{2}\right).
+\varphi:G/\left(H_{1}\cap{}H_{2}\right)\to{}G/H_{1}\times{}G/H_{2},\quad{}g\left(H_{1}\cap{}H_{2}\right)\mapsto\left(gH_{1},gH_{2}\right).
 $$
 
-良定义: 若 $g\left(H_{1}\cap{H}_{2}\right)=g'\left(H_{1}\cap{H}_{2}\right)$, 则由**引理 1.2.12 (陪集重合条件)**, $g^{-1}g'\in{H}_{1}\cap{H}_{2}$, 故 $g^{-1}g'\in{H}_{1}$ 且 $g^{-1}g'\in{H}_{2}$, 再由**引理 1.2.12 (陪集重合条件)**, $gH_{1}=g'H_{1}$, $gH_{2}=g'H_{2}$, 于是 $\varphi$ 良定义.
+良定义: 若 $g\left(H_{1}\cap{}H_{2}\right)=g'\left(H_{1}\cap{}H_{2}\right)$, 则由**引理 1.2.12 (陪集重合条件)**, $g^{-1}g'\in{}H_{1}\cap{}H_{2}$, 故 $g^{-1}g'\in{}H_{1}$ 且 $g^{-1}g'\in{}H_{2}$, 再由**引理 1.2.12 (陪集重合条件)**, $gH_{1}=g'H_{1}$, $gH_{2}=g'H_{2}$, 于是 $\varphi$ 良定义.
 
 Wait, I used 定理1.2.19 which isn't in my citation env. Let me add it, or use 引理1.2.12 (aH=bH iff a^{-1}b∈H). Let me use 引理1.2.12. I need to add 引理1.2.12 to the citation env.
 
@@ -318,28 +318,28 @@ Let me revise: use 引理1.2.12 (aH=bH iff a^{-1}b∈H). I'll add it to the cita
 
 Let me rewrite that part with 引理1.2.12.
 
-单射: 若 $\left(gH_{1},gH_{2}\right)=\left(g'H_{1},g'H_{2}\right)$, 则由**引理 1.2.12 (陪集重合条件)**, $g^{-1}g'\in{H}_{1}$ 且 $g^{-1}g'\in{H}_{2}$, 故 $g^{-1}g'\in{H}_{1}\cap{H}_{2}$, 再由**引理 1.2.12 (陪集重合条件)**, $g\left(H_{1}\cap{H}_{2}\right)=g'\left(H_{1}\cap{H}_{2}\right)$. 故 $\varphi$ 是单射.
+单射: 若 $\left(gH_{1},gH_{2}\right)=\left(g'H_{1},g'H_{2}\right)$, 则由**引理 1.2.12 (陪集重合条件)**, $g^{-1}g'\in{}H_{1}$ 且 $g^{-1}g'\in{}H_{2}$, 故 $g^{-1}g'\in{}H_{1}\cap{}H_{2}$, 再由**引理 1.2.12 (陪集重合条件)**, $g\left(H_{1}\cap{}H_{2}\right)=g'\left(H_{1}\cap{}H_{2}\right)$. 故 $\varphi$ 是单射.
 
-于是 $\left[G:H_{1}\cap{H}_{2}\right]=\left|G/\left(H_{1}\cap{H}_{2}\right)\right|\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
+于是 $\left[G:H_{1}\cap{}H_{2}\right]=\left|G/\left(H_{1}\cap{}H_{2}\right)\right|\le\left|G/H_{1}\right|\cdot\left|G/H_{2}\right|=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
 
-再证互素情形下的等号. 由**推论 1.2.23 (指数的乘法)**, 因 $H_{1}\cap{H}_{2}<{}H_{1}<{}G$,
+再证互素情形下的等号. 由**推论 1.2.23 (指数的乘法)**, 因 $H_{1}\cap{}H_{2}<{}H_{1}<{}G$,
 
 $$
-\left[G:H_{1}\cap{H}_{2}\right]=\left[G:H_{1}\right]\left[H_{1}:H_{1}\cap{H}_{2}\right].
+\left[G:H_{1}\cap{}H_{2}\right]=\left[G:H_{1}\right]\left[H_{1}:H_{1}\cap{}H_{2}\right].
 $$
 
-故 $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap{H}_{2}\right]$. 同理, 由 $H_{1}\cap{H}_{2}<{}H_{2}<{}G$, $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap{H}_{2}\right]$. 因 $\left[G:H_{1}\right]$ 与 $\left[G:H_{2}\right]$ 互素, 由最大公因数与最小公倍数, $\left[G:H_{1}\right]\left[G:H_{2}\right]\mid\left[G:H_{1}\cap{H}_{2}\right]$. 结合已证不等式 $\left[G:H_{1}\cap{H}_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right]$, 得 $\left[G:H_{1}\cap{H}_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
+故 $\left[G:H_{1}\right]\mid\left[G:H_{1}\cap{}H_{2}\right]$. 同理, 由 $H_{1}\cap{}H_{2}<{}H_{2}<{}G$, $\left[G:H_{2}\right]\mid\left[G:H_{1}\cap{}H_{2}\right]$. 因 $\left[G:H_{1}\right]$ 与 $\left[G:H_{2}\right]$ 互素, 由最大公因数与最小公倍数, $\left[G:H_{1}\right]\left[G:H_{2}\right]\mid\left[G:H_{1}\cap{}H_{2}\right]$. 结合已证不等式 $\left[G:H_{1}\cap{}H_{2}\right]\le\left[G:H_{1}\right]\left[G:H_{2}\right]$, 得 $\left[G:H_{1}\cap{}H_{2}\right]=\left[G:H_{1}\right]\left[G:H_{2}\right]$.
 
 最后证 $G=H_{1}H_{2}$. 由有限集乘积的阶,
 
 $$
-\left|H_{1}H_{2}\right|=\frac{\left|H_{1}\right|\left|H_{2}\right|}{\left|H_{1}\cap{H}_{2}\right|}.
+\left|H_{1}H_{2}\right|=\frac{\left|H_{1}\right|\left|H_{2}\right|}{\left|H_{1}\cap{}H_{2}\right|}.
 $$
 
 由**定理 1.2.22 (拉格朗日定理)**, $\left|H_{1}\right|=\frac{\left|G\right|}{\left[G:H_{1}\right]}$, $\left|H_{2}\right|=\frac{\left|G\right|}{\left[G:H_{2}\right]}$, 且
 
 $$
-\left|H_{1}\cap{H}_{2}\right|=\frac{\left|G\right|}{\left[G:H_{1}\cap{H}_{2}\right]}=\frac{\left|G\right|}{\left[G:H_{1}\right]\left[G:H_{2}\right]}.
+\left|H_{1}\cap{}H_{2}\right|=\frac{\left|G\right|}{\left[G:H_{1}\cap{}H_{2}\right]}=\frac{\left|G\right|}{\left[G:H_{1}\right]\left[G:H_{2}\right]}.
 $$
 
 代入得
@@ -348,7 +348,7 @@ $$
 \left|H_{1}H_{2}\right|=\frac{\frac{\left|G\right|}{\left[G:H_{1}\right]}\cdot\frac{\left|G\right|}{\left[G:H_{2}\right]}}{\frac{\left|G\right|}{\left[G:H_{1}\right]\left[G:H_{2}\right]}}=\left|G\right|.
 $$
 
-因 $H_{1}H_{2}\subseteq{G}$ 且两者元素个数相等, 故 $G=H_{1}H_{2}$.
+因 $H_{1}H_{2}\subseteq{}G$ 且两者元素个数相等, 故 $G=H_{1}H_{2}$.
 
 $\blacksquare$
 
@@ -358,13 +358,13 @@ $\blacksquare$
 
 ### 解答 1.3-7
 
-定义 $G$ 上的关系 $R$: $aRb$ 当且仅当存在 $g\in{G}$ 使得 $b=gag^{-1}$, 即 $a,b$ 共轭. 下面验证等价关系的三个条件.
+定义 $G$ 上的关系 $R$: $aRb$ 当且仅当存在 $g\in{}G$ 使得 $b=gag^{-1}$, 即 $a,b$ 共轭. 下面验证等价关系的三个条件.
 
-反身性: 对任意 $a\in{G}$, 取 $g=e$, 则 $a=eae^{-1}$, 故 $aRa$.
+反身性: 对任意 $a\in{}G$, 取 $g=e$, 则 $a=eae^{-1}$, 故 $aRa$.
 
-对称性: 若 $aRb$, 即存在 $g\in{G}$ 使 $b=gag^{-1}$, 则 $a=g^{-1}bg$. 因 $\left(g^{-1}\right)^{-1}=g$, 故 $a=g^{-1}b\left(g^{-1}\right)^{-1}$, 从而 $bRa$.
+对称性: 若 $aRb$, 即存在 $g\in{}G$ 使 $b=gag^{-1}$, 则 $a=g^{-1}bg$. 因 $\left(g^{-1}\right)^{-1}=g$, 故 $a=g^{-1}b\left(g^{-1}\right)^{-1}$, 从而 $bRa$.
 
-传递性: 若 $aRb$ 且 $bRc$, 即存在 $g,h\in{G}$ 使 $b=gag^{-1}$, $c=hbh^{-1}$, 则
+传递性: 若 $aRb$ 且 $bRc$, 即存在 $g,h\in{}G$ 使 $b=gag^{-1}$, $c=hbh^{-1}$, 则
 
 $$
 c=hbh^{-1}=h\left(gag^{-1}\right)h^{-1}=\left(hg\right)a\left(hg\right)^{-1},
